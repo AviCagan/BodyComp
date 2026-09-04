@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: typecheck · lint · format · tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Typecheck
+        run: npx tsc --noEmit
+      - name: Lint
+        run: npx expo lint --max-warnings 0
+      - name: Format
+        run: npx prettier --check .
+      - name: Migrations are up to date
+        run: |
+          npx drizzle-kit generate
+          git diff --exit-code -- src/db/migrations
+      - name: Tests
+        run: npx jest --ci
+  assets:
+    name: 3D asset contract
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Validate body-female.glb and body-male.glb
+        run: npx tsx tools/model-pipeline/validate.ts assets/models
