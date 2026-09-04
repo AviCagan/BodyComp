@@ -1,0 +1,15 @@
+{
+  "source": "https://github.com/yuhonas/free-exercise-db",
+  "revision": "a859101d633a",
+  "license": "Unlicense (public domain)",
+  "importedAt": "2026-09-04",
+  "excludedCategories": [
+    "stretching",
+    "cardio"
+  ],
+  "total": 876,
+  "excluded": 137,
+  "imported": 739,
+  "flaggedExercises": 79,
+  "overrides": 11
+}
