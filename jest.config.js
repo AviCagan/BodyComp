@@ -10,21 +10,22 @@ module.exports = {
     {
       displayName: 'node',
       testEnvironment: 'node',
-      testMatch: [
-        '<rootDir>/src/engine/**/*.test.ts',
-        '<rootDir>/src/data/**/*.test.ts',
-        '<rootDir>/src/db/**/*.test.ts',
-        '<rootDir>/tools/**/*.test.ts',
-      ],
+      testMatch: ['<rootDir>/src/(engine|data|db|lib)/**/*.test.ts', '<rootDir>/tools/**/*.test.ts'],
       transform: nodeTransform,
       moduleNameMapper: { '^@/(.*)$': '<rootDir>/src/$1', '^expo-crypto$': '<rootDir>/test/mocks/expo-crypto.ts' },
     },
     {
       displayName: 'app',
       preset: 'jest-expo',
-      testMatch: ['<rootDir>/src/**/*.test.tsx', '<rootDir>/app/**/*.test.tsx'],
+      // everything under src/ that the node project does not own, so no test is silently skipped
+      testMatch: ['<rootDir>/src/**/*.test.{ts,tsx}', '<rootDir>/app/**/*.test.{ts,tsx}'],
+      testPathIgnorePatterns: ['/node_modules/', '<rootDir>/src/(engine|data|db|lib)/'],
       setupFiles: ['<rootDir>/test/setup.app.ts'],
-      moduleNameMapper: { '^@/(.*)$': '<rootDir>/src/$1' },
+      moduleNameMapper: {
+        '^@/(.*)$': '<rootDir>/src/$1',
+        // binary 3D assets are Metro assets (metro.config.js assetExts); stub them like images
+        '\\.(glb|gltf)$': '<rootDir>/test/mocks/asset-module.ts',
+      },
       transformIgnorePatterns: [
         'node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@sentry/react-native|native-base|react-native-svg|three|three-stdlib|@react-three/.*|zustand|drizzle-orm)',
       ],

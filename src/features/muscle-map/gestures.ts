@@ -78,6 +78,8 @@ export function useMapGestures({ enabled, autoRotate, onRigChange, onTap }: UseM
   const distance = useSharedValue<number>(CAMERA.distance);
   const panY = useSharedValue(0);
   const startDistance = useSharedValue<number>(CAMERA.distance);
+  // RNGH reports numberOfPointers = 1 on the final release of a two-finger pan, so the mode is tracked here.
+  const twoFinger = useSharedValue(false);
 
   // Preallocated JS-side mirror: no per-frame allocations on the JS thread.
   const rigRef = useRef<RigState>({ yaw: 0, pitch: 0, distance: CAMERA.distance, panY: 0 });
@@ -136,6 +138,7 @@ export function useMapGestures({ enabled, autoRotate, onRigChange, onTap }: UseM
       .maxPointers(2)
       .averageTouches(true)
       .onBegin(() => {
+        twoFinger.set(false);
         // touch-down stops any inertia or snap immediately
         cancelAnimation(yawDeg);
         cancelAnimation(pitchDeg);
@@ -144,19 +147,21 @@ export function useMapGestures({ enabled, autoRotate, onRigChange, onTap }: UseM
       })
       .onChange((e) => {
         if (e.numberOfPointers >= 2) {
+          twoFinger.set(true);
           panY.set(
             clamp(panY.get() + e.changeY * GESTURE.panPerPoint * distance.get(), CAMERA.minPanY, CAMERA.maxPanY),
           );
-        } else {
-          yawDeg.set(yawDeg.get() + e.changeX * GESTURE.yawDegPerPoint);
+        } else if (!twoFinger.get()) {
+          // Model follows the finger: dragging right turns the body to the viewer's right.
+          yawDeg.set(yawDeg.get() - e.changeX * GESTURE.yawDegPerPoint);
           pitchDeg.set(
             clamp(pitchDeg.get() + e.changeY * GESTURE.pitchDegPerPoint, -GESTURE.maxPitchDeg, GESTURE.maxPitchDeg),
           );
         }
       })
       .onEnd((e) => {
-        if (e.numberOfPointers >= 2) return;
-        yawDeg.set(fling(yawDeg.get(), e.velocityX * GESTURE.yawDegPerPoint));
+        if (twoFinger.get()) return;
+        yawDeg.set(fling(yawDeg.get(), -e.velocityX * GESTURE.yawDegPerPoint));
         pitchDeg.set(
           fling(pitchDeg.get(), e.velocityY * GESTURE.pitchDegPerPoint, -GESTURE.maxPitchDeg, GESTURE.maxPitchDeg),
         );

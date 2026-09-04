@@ -78,7 +78,7 @@ export const DEFAULT_GROUP_IDS: readonly GroupId[] = GROUP_IDS.filter((g) => !OP
 /** Non-tracked mesh in the GLB (deep muscles, skull, hands, feet, skeleton). */
 export const BODY_BASE_MESH = 'body_base';
 
-const REGION_TO_GROUP: Record<string, GroupId> = {};
+const REGION_TO_GROUP: Record<string, GroupId> = Object.create(null) as Record<string, GroupId>;
 for (const g of GROUP_IDS) {
   for (const r of GROUP_REGIONS[g]) REGION_TO_GROUP[r] = g;
 }
@@ -92,7 +92,7 @@ export function isGroupId(id: string): id is GroupId {
 }
 
 export function isRegionId(id: string): id is RegionId {
-  return id in REGION_TO_GROUP;
+  return Object.hasOwn(REGION_TO_GROUP, id);
 }
 
 /** True when the group has more than one region (so region distributions matter). */

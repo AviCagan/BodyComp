@@ -123,26 +123,8 @@
  },
  {
   "exerciseId": "Alternate_Leg_Diagonal_Bound",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Alternate_Leg_Diagonal_Bound",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Alternate_Leg_Diagonal_Bound",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Alternating_Cable_Shoulder_Press",
@@ -1081,24 +1063,6 @@
   "weight": 0.5
  },
  {
-  "exerciseId": "Barbell_Full_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Barbell_Full_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Barbell_Glute_Bridge",
   "groupId": "glutes",
   "weight": 1,
@@ -1174,29 +1138,11 @@
  },
  {
   "exerciseId": "Barbell_Hack_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Barbell_Hack_Squat",
   "groupId": "forearms",
   "weight": 0.5,
   "regionDistribution": {
    "forearm_flexors": 0.5,
    "forearm_extensors_brachioradialis": 0.5
-  }
- },
- {
-  "exerciseId": "Barbell_Hack_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
   }
  },
  {
@@ -1294,24 +1240,6 @@
   "exerciseId": "Barbell_Lunge",
   "groupId": "adductors",
   "weight": 0.25
- },
- {
-  "exerciseId": "Barbell_Lunge",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Barbell_Lunge",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
  },
  {
   "exerciseId": "Barbell_Rear_Delt_Row",
@@ -1480,24 +1408,6 @@
  },
  {
   "exerciseId": "Barbell_Side_Split_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Barbell_Side_Split_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Barbell_Side_Split_Squat",
   "groupId": "erectors",
   "weight": 0.5
  },
@@ -1558,24 +1468,6 @@
   "weight": 0.5
  },
  {
-  "exerciseId": "Barbell_Squat_To_A_Bench",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Barbell_Squat_To_A_Bench",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Barbell_Step_Ups",
   "groupId": "quads",
   "weight": 1,
@@ -1599,24 +1491,6 @@
   "weight": 0.25
  },
  {
-  "exerciseId": "Barbell_Step_Ups",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Barbell_Step_Ups",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
   "exerciseId": "Barbell_Walking_Lunge",
   "groupId": "quads",
   "weight": 1,
@@ -1638,24 +1512,6 @@
   "exerciseId": "Barbell_Walking_Lunge",
   "groupId": "adductors",
   "weight": 0.25
- },
- {
-  "exerciseId": "Barbell_Walking_Lunge",
-  "groupId": "hamstrings",
-  "weight": 0.5,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Barbell_Walking_Lunge",
-  "groupId": "calves",
-  "weight": 0.5,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
  },
  {
   "exerciseId": "Battling_Ropes",
@@ -1768,24 +1624,6 @@
   "regionDistribution": {
    "glute_max": 0.9,
    "glute_med": 0.1
-  }
- },
- {
-  "exerciseId": "Bench_Jump",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Bench_Jump",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
   }
  },
  {
@@ -2379,15 +2217,6 @@
   "weight": 0.5
  },
  {
-  "exerciseId": "Bodyweight_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Bodyweight_Walking_Lunge",
   "groupId": "quads",
   "weight": 1,
@@ -2409,24 +2238,6 @@
   "exerciseId": "Bodyweight_Walking_Lunge",
   "groupId": "adductors",
   "weight": 0.25
- },
- {
-  "exerciseId": "Bodyweight_Walking_Lunge",
-  "groupId": "hamstrings",
-  "weight": 0.5,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Bodyweight_Walking_Lunge",
-  "groupId": "calves",
-  "weight": 0.5,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
  },
  {
   "exerciseId": "Bosu_Ball_Cable_Crunch_With_Side_Bends",
@@ -2480,23 +2291,14 @@
   "groupId": "glutes",
   "weight": 0.5,
   "regionDistribution": {
-   "glute_max": 0.2,
-   "glute_med": 0.8
+   "glute_max": 0.8,
+   "glute_med": 0.2
   }
  },
  {
   "exerciseId": "Box_Jump_Multiple_Response",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Box_Jump_Multiple_Response",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
  },
  {
   "exerciseId": "Box_Jump_Multiple_Response",
@@ -2521,8 +2323,8 @@
   "groupId": "glutes",
   "weight": 0.5,
   "regionDistribution": {
-   "glute_max": 0.2,
-   "glute_med": 0.8
+   "glute_max": 0.8,
+   "glute_med": 0.2
   }
  },
  {
@@ -2568,26 +2370,8 @@
  },
  {
   "exerciseId": "Box_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Box_Squat",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Box_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Box_Squat",
@@ -2614,26 +2398,8 @@
  },
  {
   "exerciseId": "Box_Squat_with_Bands",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Box_Squat_with_Bands",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Box_Squat_with_Bands",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Box_Squat_with_Bands",
@@ -2660,26 +2426,8 @@
  },
  {
   "exerciseId": "Box_Squat_with_Chains",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Box_Squat_with_Chains",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Box_Squat_with_Chains",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Box_Squat_with_Chains",
@@ -2881,8 +2629,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.5,
+   "triceps_lateral_medial": 0.5
   }
  },
  {
@@ -3148,8 +2896,8 @@
   "groupId": "glutes",
   "weight": 0.5,
   "regionDistribution": {
-   "glute_max": 0.2,
-   "glute_med": 0.8
+   "glute_max": 0.8,
+   "glute_med": 0.2
   }
  },
  {
@@ -3259,24 +3007,6 @@
   "exerciseId": "Chair_Squat",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Chair_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Chair_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Chest_Push_from_3_point_stance",
@@ -4519,8 +4249,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.5,
+   "triceps_lateral_medial": 0.5
   }
  },
  {
@@ -4528,8 +4258,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.5,
+   "triceps_lateral_medial": 0.5
   }
  },
  {
@@ -4547,9 +4277,9 @@
   "groupId": "chest",
   "weight": 1,
   "regionDistribution": {
-   "chest_upper": 0.1,
-   "chest_mid": 0.4,
-   "chest_lower": 0.5
+   "chest_upper": 0.6,
+   "chest_mid": 0.35,
+   "chest_lower": 0.05
   }
  },
  {
@@ -4680,26 +4410,8 @@
  },
  {
   "exerciseId": "Depth_Jump_Leap",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Depth_Jump_Leap",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Depth_Jump_Leap",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Dip_Machine",
@@ -4723,11 +4435,6 @@
  {
   "exerciseId": "Dip_Machine",
   "groupId": "delt_front",
-  "weight": 0.5
- },
- {
-  "exerciseId": "Dip_Machine",
-  "groupId": "delt_rear",
   "weight": 0.5
  },
  {
@@ -5377,24 +5084,6 @@
   "weight": 0.25
  },
  {
-  "exerciseId": "Dumbbell_Lunges",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Dumbbell_Lunges",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
   "exerciseId": "Dumbbell_Lying_One-Arm_Rear_Lateral_Raise",
   "groupId": "delt_rear",
   "weight": 1
@@ -5455,8 +5144,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.4,
+   "triceps_lateral_medial": 0.6
   }
  },
  {
@@ -5490,7 +5179,14 @@
  {
   "exerciseId": "Dumbbell_Raise",
   "groupId": "delt_side",
-  "weight": 1
+  "weight": 1,
+  "needsReview": true
+ },
+ {
+  "exerciseId": "Dumbbell_Raise",
+  "groupId": "delt_front",
+  "weight": 0.5,
+  "needsReview": true
  },
  {
   "exerciseId": "Dumbbell_Raise",
@@ -5525,24 +5221,6 @@
   "weight": 0.25
  },
  {
-  "exerciseId": "Dumbbell_Rear_Lunge",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Dumbbell_Rear_Lunge",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
   "exerciseId": "Dumbbell_Scaption",
   "groupId": "delt_side",
   "weight": 1
@@ -5568,24 +5246,6 @@
   "regionDistribution": {
    "glute_max": 0.9,
    "glute_med": 0.1
-  }
- },
- {
-  "exerciseId": "Dumbbell_Seated_Box_Jump",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Dumbbell_Seated_Box_Jump",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
   }
  },
  {
@@ -5656,24 +5316,6 @@
  },
  {
   "exerciseId": "Dumbbell_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Dumbbell_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Dumbbell_Squat",
   "groupId": "erectors",
   "weight": 0.5
  },
@@ -5702,24 +5344,6 @@
  },
  {
   "exerciseId": "Dumbbell_Squat_To_A_Bench",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Dumbbell_Squat_To_A_Bench",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Dumbbell_Squat_To_A_Bench",
   "groupId": "erectors",
   "weight": 0.5
  },
@@ -5745,24 +5369,6 @@
   "exerciseId": "Dumbbell_Step_Ups",
   "groupId": "adductors",
   "weight": 0.25
- },
- {
-  "exerciseId": "Dumbbell_Step_Ups",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Dumbbell_Step_Ups",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
  },
  {
   "exerciseId": "Dumbbell_Tricep_Extension_-Pronated_Grip",
@@ -5827,15 +5433,6 @@
   "exerciseId": "Elevated_Back_Lunge",
   "groupId": "adductors",
   "weight": 0.25
- },
- {
-  "exerciseId": "Elevated_Back_Lunge",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Elevated_Cable_Rows",
@@ -6297,24 +5894,6 @@
   }
  },
  {
-  "exerciseId": "Freehand_Jump_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Freehand_Jump_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Frog_Sit-Ups",
   "groupId": "abs",
   "weight": 1
@@ -6353,24 +5932,6 @@
   "weight": 0.5
  },
  {
-  "exerciseId": "Front_Barbell_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Front_Barbell_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Front_Barbell_Squat_To_A_Bench",
   "groupId": "quads",
   "weight": 1,
@@ -6399,24 +5960,6 @@
   "weight": 0.5
  },
  {
-  "exerciseId": "Front_Barbell_Squat_To_A_Bench",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Front_Barbell_Squat_To_A_Bench",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Front_Box_Jump",
   "groupId": "hamstrings",
   "weight": 1,
@@ -6430,23 +5973,14 @@
   "groupId": "glutes",
   "weight": 0.5,
   "regionDistribution": {
-   "glute_max": 0.2,
-   "glute_med": 0.8
+   "glute_max": 0.8,
+   "glute_med": 0.2
   }
  },
  {
   "exerciseId": "Front_Box_Jump",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Front_Box_Jump",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
  },
  {
   "exerciseId": "Front_Box_Jump",
@@ -6482,35 +6016,17 @@
  },
  {
   "exerciseId": "Front_Cone_Hops_or_hurdle_hops",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Front_Cone_Hops_or_hurdle_hops",
   "groupId": "adductors",
   "weight": 0.5
  },
  {
-  "exerciseId": "Front_Cone_Hops_or_hurdle_hops",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Front_Dumbbell_Raise",
-  "groupId": "delt_side",
+  "groupId": "delt_front",
   "weight": 1
  },
  {
   "exerciseId": "Front_Incline_Dumbbell_Raise",
-  "groupId": "delt_side",
+  "groupId": "delt_front",
   "weight": 1
  },
  {
@@ -6618,17 +6134,8 @@
   "weight": 0.5
  },
  {
-  "exerciseId": "Front_Squats_With_Two_Kettlebells",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
   "exerciseId": "Front_Two-Dumbbell_Raise",
-  "groupId": "delt_side",
+  "groupId": "delt_front",
   "weight": 1
  },
  {
@@ -6757,24 +6264,6 @@
  },
  {
   "exerciseId": "Goblet_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Goblet_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Goblet_Squat",
   "groupId": "delt_front",
   "weight": 0.5
  },
@@ -6875,24 +6364,6 @@
   "exerciseId": "Hack_Squat",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Hack_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Hack_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Hammer_Curls",
@@ -7446,23 +6917,14 @@
   "groupId": "glutes",
   "weight": 0.5,
   "regionDistribution": {
-   "glute_max": 0.2,
-   "glute_med": 0.8
+   "glute_max": 0.8,
+   "glute_med": 0.2
   }
  },
  {
   "exerciseId": "Hurdle_Hops",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Hurdle_Hops",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
  },
  {
   "exerciseId": "Hyperextensions_Back_Extensions",
@@ -7696,9 +7158,9 @@
   "groupId": "chest",
   "weight": 1,
   "regionDistribution": {
-   "chest_upper": 0.6,
-   "chest_mid": 0.35,
-   "chest_lower": 0.05
+   "chest_upper": 0.1,
+   "chest_mid": 0.4,
+   "chest_lower": 0.5
   }
  },
  {
@@ -7744,9 +7206,9 @@
   "groupId": "chest",
   "weight": 1,
   "regionDistribution": {
-   "chest_upper": 0.6,
-   "chest_mid": 0.35,
-   "chest_lower": 0.05
+   "chest_upper": 0.1,
+   "chest_mid": 0.4,
+   "chest_lower": 0.5
   }
  },
  {
@@ -7768,9 +7230,9 @@
   "groupId": "chest",
   "weight": 1,
   "regionDistribution": {
-   "chest_upper": 0.6,
-   "chest_mid": 0.35,
-   "chest_lower": 0.05
+   "chest_upper": 0.1,
+   "chest_mid": 0.4,
+   "chest_lower": 0.5
   }
  },
  {
@@ -7797,9 +7259,9 @@
   "groupId": "chest",
   "weight": 1,
   "regionDistribution": {
-   "chest_upper": 0.6,
-   "chest_mid": 0.35,
-   "chest_lower": 0.05
+   "chest_upper": 0.1,
+   "chest_mid": 0.4,
+   "chest_lower": 0.5
   }
  },
  {
@@ -7826,9 +7288,9 @@
   "groupId": "chest",
   "weight": 1,
   "regionDistribution": {
-   "chest_upper": 0.6,
-   "chest_mid": 0.35,
-   "chest_lower": 0.05
+   "chest_upper": 0.1,
+   "chest_mid": 0.4,
+   "chest_lower": 0.5
   }
  },
  {
@@ -7993,8 +7455,8 @@
   "groupId": "neck",
   "weight": 1,
   "regionDistribution": {
-   "neck_flexors": 0,
-   "neck_extensors": 1
+   "neck_flexors": 0.5,
+   "neck_extensors": 0.5
   }
  },
  {
@@ -8101,24 +7563,6 @@
   "exerciseId": "Jefferson_Squats",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Jefferson_Squats",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Jefferson_Squats",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Jefferson_Squats",
@@ -8632,24 +8076,6 @@
  },
  {
   "exerciseId": "Kettlebell_Pistol_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Kettlebell_Pistol_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Kettlebell_Pistol_Squat",
   "groupId": "delt_front",
   "weight": 0.5
  },
@@ -8792,15 +8218,6 @@
  },
  {
   "exerciseId": "Kettlebell_Turkish_Get-Up_Lunge_style",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Kettlebell_Turkish_Get-Up_Lunge_style",
   "groupId": "quads",
   "weight": 0.5,
   "regionDistribution": {
@@ -8831,24 +8248,6 @@
   "exerciseId": "Kettlebell_Turkish_Get-Up_Squat_style",
   "groupId": "abs",
   "weight": 0.5
- },
- {
-  "exerciseId": "Kettlebell_Turkish_Get-Up_Squat_style",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Kettlebell_Turkish_Get-Up_Squat_style",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Kettlebell_Turkish_Get-Up_Squat_style",
@@ -8976,23 +8375,14 @@
   "groupId": "glutes",
   "weight": 0.5,
   "regionDistribution": {
-   "glute_max": 0.2,
-   "glute_med": 0.8
+   "glute_max": 0.8,
+   "glute_med": 0.2
   }
  },
  {
   "exerciseId": "Knee_Tuck_Jump",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Knee_Tuck_Jump",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
  },
  {
   "exerciseId": "Knee_Tuck_Jump",
@@ -9035,8 +8425,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.4,
+   "triceps_lateral_medial": 0.6
   }
  },
  {
@@ -9138,15 +8528,6 @@
   "exerciseId": "Kneeling_Squat",
   "groupId": "abs",
   "weight": 0.5
- },
- {
-  "exerciseId": "Kneeling_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Kneeling_Squat",
@@ -9253,26 +8634,8 @@
   "groupId": "glutes",
   "weight": 0.5,
   "regionDistribution": {
-   "glute_max": 0.2,
-   "glute_med": 0.8
-  }
- },
- {
-  "exerciseId": "Lateral_Bound",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Lateral_Bound",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
+   "glute_max": 0.8,
+   "glute_med": 0.2
   }
  },
  {
@@ -9294,26 +8657,8 @@
   "groupId": "glutes",
   "weight": 0.5,
   "regionDistribution": {
-   "glute_max": 0.2,
-   "glute_med": 0.8
-  }
- },
- {
-  "exerciseId": "Lateral_Box_Jump",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Lateral_Box_Jump",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
+   "glute_max": 0.8,
+   "glute_med": 0.2
   }
  },
  {
@@ -9335,26 +8680,8 @@
   "groupId": "glutes",
   "weight": 0.5,
   "regionDistribution": {
-   "glute_max": 0.2,
-   "glute_med": 0.8
-  }
- },
- {
-  "exerciseId": "Lateral_Cone_Hops",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Lateral_Cone_Hops",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
+   "glute_max": 0.8,
+   "glute_med": 0.2
   }
  },
  {
@@ -9444,24 +8771,6 @@
   "exerciseId": "Leg_Press",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Leg_Press",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Leg_Press",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Leg_Pull-In",
@@ -9733,24 +9042,6 @@
   }
  },
  {
-  "exerciseId": "Linear_Depth_Jump",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Linear_Depth_Jump",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Log_Lift",
   "groupId": "delt_side",
   "weight": 1,
@@ -9893,8 +9184,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.4,
+   "triceps_lateral_medial": 0.6
   }
  },
  {
@@ -9943,15 +9234,6 @@
  },
  {
   "exerciseId": "Lunge_Pass_Through",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Lunge_Pass_Through",
   "groupId": "glutes",
   "weight": 0.5,
   "regionDistribution": {
@@ -9990,24 +9272,6 @@
   "exerciseId": "Lunge_Sprint",
   "groupId": "adductors",
   "weight": 0.25
- },
- {
-  "exerciseId": "Lunge_Sprint",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Lunge_Sprint",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
  },
  {
   "exerciseId": "Lying_Cable_Curl",
@@ -10082,21 +9346,6 @@
    "triceps_long": 0.5,
    "triceps_lateral_medial": 0.5
   }
- },
- {
-  "exerciseId": "Lying_Close-Grip_Barbell_Triceps_Press_To_Chin",
-  "groupId": "chest",
-  "weight": 0.5,
-  "regionDistribution": {
-   "chest_upper": 0.25,
-   "chest_mid": 0.5,
-   "chest_lower": 0.25
-  }
- },
- {
-  "exerciseId": "Lying_Close-Grip_Barbell_Triceps_Press_To_Chin",
-  "groupId": "delt_front",
-  "weight": 0.5
  },
  {
   "exerciseId": "Lying_Dumbbell_Tricep_Extension",
@@ -10180,24 +9429,6 @@
   "exerciseId": "Lying_Machine_Squat",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Lying_Machine_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Lying_Machine_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Lying_One-Arm_Lateral_Raise",
@@ -10326,8 +9557,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.4,
+   "triceps_lateral_medial": 0.6
   }
  },
  {
@@ -10660,24 +9891,6 @@
   "weight": 0.5
  },
  {
-  "exerciseId": "Narrow_Stance_Hack_Squats",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Narrow_Stance_Hack_Squats",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Narrow_Stance_Leg_Press",
   "groupId": "quads",
   "weight": 1,
@@ -10701,24 +9914,6 @@
   "weight": 0.5
  },
  {
-  "exerciseId": "Narrow_Stance_Leg_Press",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Narrow_Stance_Leg_Press",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Narrow_Stance_Squats",
   "groupId": "quads",
   "weight": 1,
@@ -10740,24 +9935,6 @@
   "exerciseId": "Narrow_Stance_Squats",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Narrow_Stance_Squats",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Narrow_Stance_Squats",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Narrow_Stance_Squats",
@@ -11455,24 +10632,6 @@
  },
  {
   "exerciseId": "One-Arm_Overhead_Kettlebell_Squats",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "One-Arm_Overhead_Kettlebell_Squats",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "One-Arm_Overhead_Kettlebell_Squats",
   "groupId": "delt_front",
   "weight": 0.5
  },
@@ -11677,8 +10836,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.4,
+   "triceps_lateral_medial": 0.6
   }
  },
  {
@@ -11686,8 +10845,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.4,
+   "triceps_lateral_medial": 0.6
   }
  },
  {
@@ -11717,24 +10876,6 @@
   "exerciseId": "One_Leg_Barbell_Squat",
   "groupId": "erectors",
   "weight": 0.5
- },
- {
-  "exerciseId": "One_Leg_Barbell_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "One_Leg_Barbell_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Open_Palm_Kettlebell_Clean",
@@ -11958,8 +11099,8 @@
   "groupId": "forearms",
   "weight": 1,
   "regionDistribution": {
-   "forearm_flexors": 0.8,
-   "forearm_extensors_brachioradialis": 0.2
+   "forearm_flexors": 0.2,
+   "forearm_extensors_brachioradialis": 0.8
   }
  },
  {
@@ -11967,8 +11108,8 @@
   "groupId": "forearms",
   "weight": 1,
   "regionDistribution": {
-   "forearm_flexors": 0.8,
-   "forearm_extensors_brachioradialis": 0.2
+   "forearm_flexors": 0.2,
+   "forearm_extensors_brachioradialis": 0.8
   }
  },
  {
@@ -12147,24 +11288,6 @@
   "exerciseId": "Plie_Dumbbell_Squat",
   "groupId": "abs",
   "weight": 0.5
- },
- {
-  "exerciseId": "Plie_Dumbbell_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Plie_Dumbbell_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Plyo_Kettlebell_Pushups",
@@ -13214,15 +12337,6 @@
  },
  {
   "exerciseId": "Reverse_Band_Box_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Reverse_Band_Box_Squat",
   "groupId": "adductors",
   "weight": 0.5
  },
@@ -13233,15 +12347,6 @@
   "regionDistribution": {
    "forearm_flexors": 0.5,
    "forearm_extensors_brachioradialis": 0.5
-  }
- },
- {
-  "exerciseId": "Reverse_Band_Box_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
   }
  },
  {
@@ -13348,24 +12453,6 @@
  },
  {
   "exerciseId": "Reverse_Band_Power_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Reverse_Band_Power_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Reverse_Band_Power_Squat",
   "groupId": "erectors",
   "weight": 0.5
  },
@@ -13383,8 +12470,8 @@
   "groupId": "glutes",
   "weight": 0.5,
   "regionDistribution": {
-   "glute_max": 0.2,
-   "glute_med": 0.8
+   "glute_max": 0.8,
+   "glute_med": 0.2
   }
  },
  {
@@ -13743,7 +12830,7 @@
  {
   "exerciseId": "Rickshaw_Deadlift",
   "groupId": "traps_upper",
-  "weight": 0.5,
+  "weight": 0.75,
   "needsReview": true
  },
  {
@@ -13786,24 +12873,6 @@
   "regionDistribution": {
    "glute_max": 0.9,
    "glute_med": 0.1
-  }
- },
- {
-  "exerciseId": "Rocket_Jump",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Rocket_Jump",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
   }
  },
  {
@@ -14120,24 +13189,6 @@
   }
  },
  {
-  "exerciseId": "Scissors_Jump",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Scissors_Jump",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Seated_Band_Hamstring_Curl",
   "groupId": "hamstrings",
   "weight": 1,
@@ -14180,8 +13231,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.4,
+   "triceps_lateral_medial": 0.6
   }
  },
  {
@@ -14194,8 +13245,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.4,
+   "triceps_lateral_medial": 0.6
   }
  },
  {
@@ -14286,8 +13337,8 @@
   "groupId": "forearms",
   "weight": 1,
   "regionDistribution": {
-   "forearm_flexors": 0.8,
-   "forearm_extensors_brachioradialis": 0.2
+   "forearm_flexors": 0.2,
+   "forearm_extensors_brachioradialis": 0.8
   }
  },
  {
@@ -14374,8 +13425,8 @@
   "groupId": "forearms",
   "weight": 1,
   "regionDistribution": {
-   "forearm_flexors": 0.8,
-   "forearm_extensors_brachioradialis": 0.2
+   "forearm_flexors": 0.2,
+   "forearm_extensors_brachioradialis": 0.8
   }
  },
  {
@@ -14434,8 +13485,8 @@
   "groupId": "forearms",
   "weight": 1,
   "regionDistribution": {
-   "forearm_flexors": 0.8,
-   "forearm_extensors_brachioradialis": 0.2
+   "forearm_flexors": 0.2,
+   "forearm_extensors_brachioradialis": 0.8
   }
  },
  {
@@ -14557,26 +13608,8 @@
  },
  {
   "exerciseId": "Side_Hop-Sprint",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Side_Hop-Sprint",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Side_Hop-Sprint",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Side_Jackknife",
@@ -14600,7 +13633,7 @@
  },
  {
   "exerciseId": "Side_Laterals_to_Front_Raise",
-  "groupId": "delt_side",
+  "groupId": "delt_front",
   "weight": 1
  },
  {
@@ -14624,24 +13657,6 @@
   "regionDistribution": {
    "glute_max": 0.9,
    "glute_med": 0.1
-  }
- },
- {
-  "exerciseId": "Side_Standing_Long_Jump",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Side_Standing_Long_Jump",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
   }
  },
  {
@@ -14845,24 +13860,6 @@
   }
  },
  {
-  "exerciseId": "Single-Leg_High_Box_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Single-Leg_High_Box_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Single-Leg_Hop_Progression",
   "groupId": "quads",
   "weight": 1,
@@ -14882,26 +13879,8 @@
  },
  {
   "exerciseId": "Single-Leg_Hop_Progression",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Single-Leg_Hop_Progression",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Single-Leg_Hop_Progression",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Single-Leg_Lateral_Hop",
@@ -14923,26 +13902,8 @@
  },
  {
   "exerciseId": "Single-Leg_Lateral_Hop",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Single-Leg_Lateral_Hop",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Single-Leg_Lateral_Hop",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Single-Leg_Leg_Extension",
@@ -14973,31 +13934,20 @@
  },
  {
   "exerciseId": "Single-Leg_Stride_Jump",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Single-Leg_Stride_Jump",
   "groupId": "adductors",
   "weight": 0.5
  },
  {
-  "exerciseId": "Single-Leg_Stride_Jump",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
+  "exerciseId": "Single_Dumbbell_Raise",
+  "groupId": "delt_side",
+  "weight": 1,
+  "needsReview": true
  },
  {
   "exerciseId": "Single_Dumbbell_Raise",
-  "groupId": "delt_side",
-  "weight": 1
+  "groupId": "delt_front",
+  "weight": 0.5,
+  "needsReview": true
  },
  {
   "exerciseId": "Single_Dumbbell_Raise",
@@ -15366,7 +14316,7 @@
  },
  {
   "exerciseId": "Smith_Machine_Behind_the_Back_Shrug",
-  "groupId": "delt_rear",
+  "groupId": "delt_front",
   "weight": 0.5
  },
  {
@@ -15395,17 +14345,22 @@
  },
  {
   "exerciseId": "Smith_Machine_Bent_Over_Row",
-  "groupId": "lats",
-  "weight": 1
- },
- {
-  "exerciseId": "Smith_Machine_Bent_Over_Row",
   "groupId": "upper_back",
-  "weight": 0.5,
+  "weight": 1,
   "regionDistribution": {
    "traps_mid_lower": 0.5,
    "rhomboids": 0.5
   }
+ },
+ {
+  "exerciseId": "Smith_Machine_Bent_Over_Row",
+  "groupId": "lats",
+  "weight": 0.75
+ },
+ {
+  "exerciseId": "Smith_Machine_Bent_Over_Row",
+  "groupId": "delt_rear",
+  "weight": 0.5
  },
  {
   "exerciseId": "Smith_Machine_Bent_Over_Row",
@@ -15418,8 +14373,8 @@
  },
  {
   "exerciseId": "Smith_Machine_Bent_Over_Row",
-  "groupId": "delt_rear",
-  "weight": 0.5
+  "groupId": "erectors",
+  "weight": 0.25
  },
  {
   "exerciseId": "Smith_Machine_Calf_Raise",
@@ -15512,7 +14467,7 @@
  },
  {
   "exerciseId": "Smith_Machine_Hang_Power_Clean",
-  "groupId": "delt_rear",
+  "groupId": "delt_front",
   "weight": 0.5
  },
  {
@@ -15571,24 +14526,6 @@
   "exerciseId": "Smith_Machine_Leg_Press",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Smith_Machine_Leg_Press",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Smith_Machine_Leg_Press",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Smith_Machine_One-Arm_Upright_Row",
@@ -15657,24 +14594,6 @@
   "weight": 0.5
  },
  {
-  "exerciseId": "Smith_Machine_Pistol_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Smith_Machine_Pistol_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Smith_Machine_Reverse_Calf_Raises",
   "groupId": "calves",
   "weight": 1,
@@ -15710,24 +14629,6 @@
   "exerciseId": "Smith_Machine_Squat",
   "groupId": "erectors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Smith_Machine_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Smith_Machine_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Smith_Machine_Stiff-Legged_Deadlift",
@@ -15802,24 +14703,6 @@
   "exerciseId": "Smith_Single-Leg_Split_Squat",
   "groupId": "adductors",
   "weight": 0.25
- },
- {
-  "exerciseId": "Smith_Single-Leg_Split_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Smith_Single-Leg_Split_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
  },
  {
   "exerciseId": "Snatch",
@@ -16171,24 +15054,6 @@
   }
  },
  {
-  "exerciseId": "Speed_Box_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Speed_Box_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Speed_Squats",
   "groupId": "quads",
   "weight": 1,
@@ -16210,24 +15075,6 @@
   "exerciseId": "Speed_Squats",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Speed_Squats",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Speed_Squats",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Speed_Squats",
@@ -16424,24 +15271,6 @@
   }
  },
  {
-  "exerciseId": "Split_Jump",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Split_Jump",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Split_Snatch",
   "groupId": "hamstrings",
   "weight": 1,
@@ -16543,15 +15372,6 @@
   "weight": 0.25
  },
  {
-  "exerciseId": "Split_Squat_with_Dumbbells",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Squat_Jerk",
   "groupId": "quads",
   "weight": 1,
@@ -16631,24 +15451,6 @@
  },
  {
   "exerciseId": "Squat_with_Bands",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Squat_with_Bands",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Squat_with_Bands",
   "groupId": "erectors",
   "weight": 0.5
  },
@@ -16674,24 +15476,6 @@
   "exerciseId": "Squat_with_Chains",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Squat_with_Chains",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Squat_with_Chains",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Squat_with_Chains",
@@ -16722,24 +15506,6 @@
   "weight": 0.5
  },
  {
-  "exerciseId": "Squat_with_Plate_Movers",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Squat_with_Plate_Movers",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Squats_-_With_Bands",
   "groupId": "quads",
   "weight": 1,
@@ -16761,24 +15527,6 @@
   "exerciseId": "Squats_-_With_Bands",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Squats_-_With_Bands",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Squats_-_With_Bands",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Squats_-_With_Bands",
@@ -16837,8 +15585,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.4,
+   "triceps_lateral_medial": 0.6
   }
  },
  {
@@ -16851,8 +15599,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.4,
+   "triceps_lateral_medial": 0.6
   }
  },
  {
@@ -17007,15 +15755,8 @@
  },
  {
   "exerciseId": "Standing_Dumbbell_Straight-Arm_Front_Delt_Raise_Above_Head",
-  "groupId": "delt_side",
-  "weight": 1,
-  "needsReview": true
- },
- {
-  "exerciseId": "Standing_Dumbbell_Straight-Arm_Front_Delt_Raise_Above_Head",
   "groupId": "delt_front",
-  "weight": 0.5,
-  "needsReview": true
+  "weight": 1
  },
  {
   "exerciseId": "Standing_Dumbbell_Triceps_Extension",
@@ -17047,15 +15788,8 @@
  },
  {
   "exerciseId": "Standing_Front_Barbell_Raise_Over_Head",
-  "groupId": "delt_side",
-  "weight": 1,
-  "needsReview": true
- },
- {
-  "exerciseId": "Standing_Front_Barbell_Raise_Over_Head",
   "groupId": "delt_front",
-  "weight": 0.5,
-  "needsReview": true
+  "weight": 1
  },
  {
   "exerciseId": "Standing_Inner-Biceps_Curl",
@@ -17094,24 +15828,6 @@
   }
  },
  {
-  "exerciseId": "Standing_Long_Jump",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Standing_Long_Jump",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Standing_Low-Pulley_Deltoid_Raise",
   "groupId": "delt_side",
   "weight": 1
@@ -17130,8 +15846,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.4,
+   "triceps_lateral_medial": 0.6
   }
  },
  {
@@ -17209,8 +15925,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.4,
+   "triceps_lateral_medial": 0.6
   }
  },
  {
@@ -17299,8 +16015,8 @@
   "groupId": "triceps",
   "weight": 1,
   "regionDistribution": {
-   "triceps_long": 0.7,
-   "triceps_lateral_medial": 0.3
+   "triceps_long": 0.4,
+   "triceps_lateral_medial": 0.6
   }
  },
  {
@@ -17350,24 +16066,6 @@
  },
  {
   "exerciseId": "Star_Jump",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Star_Jump",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Star_Jump",
   "groupId": "delt_front",
   "weight": 0.5
  },
@@ -17378,15 +16076,6 @@
   "regionDistribution": {
    "glute_max": 0.7,
    "glute_med": 0.3
-  }
- },
- {
-  "exerciseId": "Step-up_with_Knee_Raise",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
   }
  },
  {
@@ -17589,26 +16278,8 @@
  },
  {
   "exerciseId": "Stride_Jump_Crossover",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Stride_Jump_Crossover",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Stride_Jump_Crossover",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Sumo_Deadlift",
@@ -17744,8 +16415,8 @@
   "groupId": "glutes",
   "weight": 0.5,
   "regionDistribution": {
-   "glute_max": 0.2,
-   "glute_med": 0.8
+   "glute_max": 0.8,
+   "glute_med": 0.2
   }
  },
  {
@@ -17975,24 +16646,6 @@
   "weight": 0.5
  },
  {
-  "exerciseId": "Suspended_Split_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Suspended_Split_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
   "exerciseId": "Svend_Press",
   "groupId": "chest",
   "weight": 1,
@@ -18087,8 +16740,8 @@
   "groupId": "glutes",
   "weight": 1,
   "regionDistribution": {
-   "glute_max": 0.2,
-   "glute_med": 0.8
+   "glute_max": 0.8,
+   "glute_med": 0.2
   }
  },
  {
@@ -18659,24 +17312,6 @@
  },
  {
   "exerciseId": "Weighted_Jump_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Weighted_Jump_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
-  "exerciseId": "Weighted_Jump_Squat",
   "groupId": "erectors",
   "weight": 0.5
  },
@@ -18727,24 +17362,6 @@
   "weight": 0.5
  },
  {
-  "exerciseId": "Weighted_Sissy_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Weighted_Sissy_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Weighted_Sit-Ups_-_With_Bands",
   "groupId": "abs",
   "weight": 1
@@ -18776,24 +17393,6 @@
   "exerciseId": "Weighted_Squat",
   "groupId": "adductors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Weighted_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Weighted_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Wide-Grip_Barbell_Bench_Press",
@@ -18989,24 +17588,6 @@
   "weight": 0.5
  },
  {
-  "exerciseId": "Wide_Stance_Barbell_Squat",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Wide_Stance_Barbell_Squat",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
- },
- {
   "exerciseId": "Wide_Stance_Stiff_Legs",
   "groupId": "hamstrings",
   "weight": 1,
@@ -19087,8 +17668,8 @@
   "groupId": "glutes",
   "weight": 0.5,
   "regionDistribution": {
-   "glute_max": 0.2,
-   "glute_med": 0.8
+   "glute_max": 0.8,
+   "glute_med": 0.2
   },
   "needsReview": true
  },
@@ -19151,24 +17732,6 @@
   "exerciseId": "Zercher_Squats",
   "groupId": "erectors",
   "weight": 0.5
- },
- {
-  "exerciseId": "Zercher_Squats",
-  "groupId": "calves",
-  "weight": 0.25,
-  "regionDistribution": {
-   "gastrocnemius": 0.7,
-   "soleus": 0.3
-  }
- },
- {
-  "exerciseId": "Zercher_Squats",
-  "groupId": "hamstrings",
-  "weight": 0.25,
-  "regionDistribution": {
-   "hamstrings_hip_ext": 0.8,
-   "hamstrings_bf_short": 0.2
-  }
  },
  {
   "exerciseId": "Zottman_Curl",

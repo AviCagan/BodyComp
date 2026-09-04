@@ -3,7 +3,6 @@
   "id": "3_4_Sit-Up",
   "name": "3/4 Sit-Up",
   "aliases": [
-   "3/4 Sit",
    "3/4 Sit Up"
   ],
   "equipment": "bodyweight",
@@ -365,7 +364,6 @@
   "id": "Anti-Gravity_Press",
   "name": "Anti-Gravity Press",
   "aliases": [
-   "Anti",
    "Anti Gravity Press"
   ],
   "equipment": "barbell",
@@ -613,7 +611,6 @@
   "id": "Band_Assisted_Pull-Up",
   "name": "Band Assisted Pull-Up",
   "aliases": [
-   "Band Assisted Pull",
    "Band Assisted Pull Up"
   ],
   "equipment": "other",
@@ -658,9 +655,7 @@
  {
   "id": "Band_Good_Morning_Pull_Through",
   "name": "Band Good Morning (Pull Through)",
-  "aliases": [
-   "Band Good Morning"
-  ],
+  "aliases": [],
   "equipment": "bands",
   "mechanic": "compound",
   "pattern": "hinge",
@@ -771,7 +766,6 @@
   "id": "Barbell_Ab_Rollout_-_On_Knees",
   "name": "Barbell Ab Rollout - On Knees",
   "aliases": [
-   "Barbell Ab Rollout",
    "Barbell Ab Rollout On Knees"
   ],
   "equipment": "barbell",
@@ -1354,7 +1348,7 @@
   "aliases": [],
   "equipment": "barbell",
   "mechanic": "compound",
-  "pattern": "carry",
+  "pattern": "lunge",
   "force": "push",
   "level": "beginner",
   "category": "strength",
@@ -1558,7 +1552,6 @@
   "id": "Bent-Arm_Barbell_Pullover",
   "name": "Bent-Arm Barbell Pullover",
   "aliases": [
-   "Bent",
    "Bent Arm Barbell Pullover"
   ],
   "equipment": "barbell",
@@ -1584,7 +1577,6 @@
   "id": "Bent-Arm_Dumbbell_Pullover",
   "name": "Bent-Arm Dumbbell Pullover",
   "aliases": [
-   "Bent",
    "Bent Arm Dumbbell Pullover"
   ],
   "equipment": "dumbbell",
@@ -1611,7 +1603,6 @@
   "id": "Bent-Knee_Hip_Raise",
   "name": "Bent-Knee Hip Raise",
   "aliases": [
-   "Bent",
    "Bent Knee Hip Raise"
   ],
   "equipment": "bodyweight",
@@ -1686,7 +1677,6 @@
   "id": "Bent_Over_Low-Pulley_Side_Lateral",
   "name": "Bent Over Low-Pulley Side Lateral",
   "aliases": [
-   "Bent Over Low",
    "Bent Over Low Pulley Side Lateral"
   ],
   "equipment": "cable",
@@ -1712,7 +1702,6 @@
   "id": "Bent_Over_One-Arm_Long_Bar_Row",
   "name": "Bent Over One-Arm Long Bar Row",
   "aliases": [
-   "Bent Over One",
    "Bent Over One Arm Long Bar Row"
   ],
   "equipment": "barbell",
@@ -1739,7 +1728,6 @@
   "id": "Bent_Over_Two-Arm_Long_Bar_Row",
   "name": "Bent Over Two-Arm Long Bar Row",
   "aliases": [
-   "Bent Over Two",
    "Bent Over Two Arm Long Bar Row"
   ],
   "equipment": "barbell",
@@ -1766,7 +1754,6 @@
   "id": "Bent_Over_Two-Dumbbell_Row",
   "name": "Bent Over Two-Dumbbell Row",
   "aliases": [
-   "Bent Over Two",
    "Bent Over Two Dumbbell Row"
   ],
   "equipment": "dumbbell",
@@ -1791,7 +1778,6 @@
   "id": "Bent_Over_Two-Dumbbell_Row_With_Palms_In",
   "name": "Bent Over Two-Dumbbell Row With Palms In",
   "aliases": [
-   "Bent Over Two",
    "Bent Over Two Dumbbell Row With Palms In"
   ],
   "equipment": "dumbbell",
@@ -1859,7 +1845,6 @@
   "id": "Body-Up",
   "name": "Body-Up",
   "aliases": [
-   "Body",
    "Body Up"
   ],
   "equipment": "bodyweight",
@@ -1974,7 +1959,7 @@
   "aliases": [],
   "equipment": "bodyweight",
   "mechanic": "compound",
-  "pattern": "carry",
+  "pattern": "lunge",
   "force": "push",
   "level": "beginner",
   "category": "strength",
@@ -2022,7 +2007,6 @@
   "id": "Bottoms-Up_Clean_From_The_Hang_Position",
   "name": "Bottoms-Up Clean From The Hang Position",
   "aliases": [
-   "Bottoms",
    "Bottoms Up Clean From The Hang Position"
   ],
   "equipment": "kettlebell",
@@ -2203,7 +2187,6 @@
   "id": "Butt-Ups",
   "name": "Butt-Ups",
   "aliases": [
-   "Butt",
    "Butt Ups"
   ],
   "equipment": "bodyweight",
@@ -2233,7 +2216,7 @@
   ],
   "equipment": "bodyweight",
   "mechanic": "isolation",
-  "pattern": "hinge",
+  "pattern": "isolation",
   "force": "push",
   "level": "beginner",
   "category": "strength",
@@ -2320,8 +2303,7 @@
   "id": "Cable_Crunch",
   "name": "Cable Crunch",
   "aliases": [
-   "Kneeling Cable Crunch",
-   "Rope Crunch"
+   "Kneeling Cable Crunch"
   ],
   "equipment": "cable",
   "mechanic": "isolation",
@@ -2679,7 +2661,6 @@
   "id": "Cable_Rope_Rear-Delt_Rows",
   "name": "Cable Rope Rear-Delt Rows",
   "aliases": [
-   "Cable Rope Rear",
    "Cable Rope Rear Delt Rows"
   ],
   "equipment": "cable",
@@ -2848,7 +2829,6 @@
   "id": "Calf-Machine_Shoulder_Shrug",
   "name": "Calf-Machine Shoulder Shrug",
   "aliases": [
-   "Calf",
    "Calf Machine Shoulder Shrug"
   ],
   "equipment": "machine",
@@ -3209,8 +3189,7 @@
   "name": "Chin-Up",
   "aliases": [
    "Chin Up",
-   "Chinup",
-   "Chin"
+   "Chinup"
   ],
   "equipment": "bodyweight",
   "mechanic": "compound",
@@ -3416,7 +3395,6 @@
   "id": "Clock_Push-Up",
   "name": "Clock Push-Up",
   "aliases": [
-   "Clock Push",
    "Clock Push Up"
   ],
   "equipment": "bodyweight",
@@ -3445,7 +3423,6 @@
   "aliases": [
    "Close Grip Bench",
    "CGBP",
-   "Close",
    "Close Grip Barbell Bench Press"
   ],
   "equipment": "barbell",
@@ -3471,7 +3448,6 @@
   "id": "Close-Grip_Dumbbell_Press",
   "name": "Close-Grip Dumbbell Press",
   "aliases": [
-   "Close",
    "Close Grip Dumbbell Press"
   ],
   "equipment": "dumbbell",
@@ -3497,7 +3473,6 @@
   "id": "Close-Grip_EZ-Bar_Curl_with_Band",
   "name": "Close-Grip EZ-Bar Curl with Band",
   "aliases": [
-   "Close-Grip EZ",
    "Close Grip EZ Bar Curl with Band"
   ],
   "equipment": "ez_bar",
@@ -3523,7 +3498,6 @@
   "id": "Close-Grip_EZ-Bar_Press",
   "name": "Close-Grip EZ-Bar Press",
   "aliases": [
-   "Close-Grip EZ",
    "Close Grip EZ Bar Press"
   ],
   "equipment": "ez_bar",
@@ -3549,7 +3523,6 @@
   "id": "Close-Grip_EZ_Bar_Curl",
   "name": "Close-Grip EZ Bar Curl",
   "aliases": [
-   "Close",
    "Close Grip EZ Bar Curl"
   ],
   "equipment": "barbell",
@@ -3575,7 +3548,6 @@
   "id": "Close-Grip_Front_Lat_Pulldown",
   "name": "Close-Grip Front Lat Pulldown",
   "aliases": [
-   "Close",
    "Close Grip Front Lat Pulldown"
   ],
   "equipment": "cable",
@@ -3602,7 +3574,6 @@
   "id": "Close-Grip_Push-Up_off_of_a_Dumbbell",
   "name": "Close-Grip Push-Up off of a Dumbbell",
   "aliases": [
-   "Close-Grip Push",
    "Close Grip Push Up off of a Dumbbell"
   ],
   "equipment": "bodyweight",
@@ -3627,7 +3598,6 @@
   "id": "Close-Grip_Standing_Barbell_Curl",
   "name": "Close-Grip Standing Barbell Curl",
   "aliases": [
-   "Close",
    "Close Grip Standing Barbell Curl"
   ],
   "equipment": "barbell",
@@ -3719,7 +3689,6 @@
   "id": "Cross-Body_Crunch",
   "name": "Cross-Body Crunch",
   "aliases": [
-   "Cross",
    "Cross Body Crunch"
   ],
   "equipment": "bodyweight",
@@ -4009,7 +3978,6 @@
   "id": "Decline_Close-Grip_Bench_To_Skull_Crusher",
   "name": "Decline Close-Grip Bench To Skull Crusher",
   "aliases": [
-   "Decline Close",
    "Decline Close Grip Bench To Skull Crusher"
   ],
   "equipment": "barbell",
@@ -4178,7 +4146,6 @@
   "id": "Decline_Push-Up",
   "name": "Decline Push-Up",
   "aliases": [
-   "Decline Push",
    "Decline Push Up"
   ],
   "equipment": "bodyweight",
@@ -4819,7 +4786,6 @@
   "id": "Dumbbell_Lying_One-Arm_Rear_Lateral_Raise",
   "name": "Dumbbell Lying One-Arm Rear Lateral Raise",
   "aliases": [
-   "Dumbbell Lying One",
    "Dumbbell Lying One Arm Rear Lateral Raise"
   ],
   "equipment": "dumbbell",
@@ -4916,7 +4882,6 @@
   "id": "Dumbbell_One-Arm_Shoulder_Press",
   "name": "Dumbbell One-Arm Shoulder Press",
   "aliases": [
-   "Dumbbell One",
    "Dumbbell One Arm Shoulder Press"
   ],
   "equipment": "dumbbell",
@@ -4943,7 +4908,6 @@
   "id": "Dumbbell_One-Arm_Triceps_Extension",
   "name": "Dumbbell One-Arm Triceps Extension",
   "aliases": [
-   "Dumbbell One",
    "Dumbbell One Arm Triceps Extension"
   ],
   "equipment": "dumbbell",
@@ -4970,7 +4934,6 @@
   "id": "Dumbbell_One-Arm_Upright_Row",
   "name": "Dumbbell One-Arm Upright Row",
   "aliases": [
-   "Dumbbell One",
    "Dumbbell One Arm Upright Row"
   ],
   "equipment": "dumbbell",
@@ -5107,7 +5070,6 @@
   "id": "Dumbbell_Seated_One-Leg_Calf_Raise",
   "name": "Dumbbell Seated One-Leg Calf Raise",
   "aliases": [
-   "Dumbbell Seated One",
    "Dumbbell Seated One Leg Calf Raise"
   ],
   "equipment": "dumbbell",
@@ -5134,8 +5096,7 @@
   "id": "Dumbbell_Shoulder_Press",
   "name": "Dumbbell Shoulder Press",
   "aliases": [
-   "DB Shoulder Press",
-   "Seated Dumbbell Press"
+   "DB Shoulder Press"
   ],
   "equipment": "dumbbell",
   "mechanic": "compound",
@@ -5275,7 +5236,6 @@
   "id": "Dumbbell_Tricep_Extension_-Pronated_Grip",
   "name": "Dumbbell Tricep Extension -Pronated Grip",
   "aliases": [
-   "Dumbbell Tricep Extension",
    "Dumbbell Tricep Extension Pronated Grip"
   ],
   "equipment": "dumbbell",
@@ -5300,7 +5260,6 @@
   "id": "EZ-Bar_Curl",
   "name": "EZ-Bar Curl",
   "aliases": [
-   "EZ",
    "EZ Bar Curl"
   ],
   "equipment": "ez_bar",
@@ -5326,7 +5285,6 @@
   "id": "EZ-Bar_Skullcrusher",
   "name": "EZ-Bar Skullcrusher",
   "aliases": [
-   "EZ",
    "EZ Bar Skullcrusher"
   ],
   "equipment": "ez_bar",
@@ -5442,7 +5400,6 @@
   "id": "Exercise_Ball_Pull-In",
   "name": "Exercise Ball Pull-In",
   "aliases": [
-   "Exercise Ball Pull",
    "Exercise Ball Pull In"
   ],
   "equipment": "exercise_ball",
@@ -5468,7 +5425,6 @@
   "id": "Extended_Range_One-Arm_Kettlebell_Floor_Press",
   "name": "Extended Range One-Arm Kettlebell Floor Press",
   "aliases": [
-   "Extended Range One",
    "Extended Range One Arm Kettlebell Floor Press"
   ],
   "equipment": "kettlebell",
@@ -5675,7 +5631,6 @@
   "id": "Flat_Bench_Leg_Pull-In",
   "name": "Flat Bench Leg Pull-In",
   "aliases": [
-   "Flat Bench Leg Pull",
    "Flat Bench Leg Pull In"
   ],
   "equipment": "bodyweight",
@@ -5747,7 +5702,6 @@
   "id": "Floor_Glute-Ham_Raise",
   "name": "Floor Glute-Ham Raise",
   "aliases": [
-   "Floor Glute",
    "Floor Glute Ham Raise"
   ],
   "equipment": "other",
@@ -5904,7 +5858,6 @@
   "id": "Frog_Sit-Ups",
   "name": "Frog Sit-Ups",
   "aliases": [
-   "Frog Sit",
    "Frog Sit Ups"
   ],
   "equipment": "bodyweight",
@@ -6187,7 +6140,6 @@
   "id": "Front_Two-Dumbbell_Raise",
   "name": "Front Two-Dumbbell Raise",
   "aliases": [
-   "Front Two",
    "Front Two Dumbbell Raise"
   ],
   "equipment": "dumbbell",
@@ -6212,7 +6164,6 @@
   "id": "Full_Range-Of-Motion_Lat_Pulldown",
   "name": "Full Range-Of-Motion Lat Pulldown",
   "aliases": [
-   "Full Range-Of",
    "Full Range Of Motion Lat Pulldown"
   ],
   "equipment": "cable",
@@ -6285,7 +6236,7 @@
   "aliases": [],
   "equipment": "bodyweight",
   "mechanic": "compound",
-  "pattern": "hinge",
+  "pattern": "push",
   "force": "push",
   "level": "beginner",
   "category": "strength",
@@ -6469,7 +6420,6 @@
   "id": "Handstand_Push-Ups",
   "name": "Handstand Push-Ups",
   "aliases": [
-   "Handstand Push",
    "Handstand Push Ups"
   ],
   "equipment": "bodyweight",
@@ -6516,7 +6466,6 @@
   "id": "Hang_Clean_-_Below_the_Knees",
   "name": "Hang Clean - Below the Knees",
   "aliases": [
-   "Hang Clean",
    "Hang Clean Below the Knees"
   ],
   "equipment": "barbell",
@@ -6563,7 +6512,6 @@
   "id": "Hang_Snatch_-_Below_Knees",
   "name": "Hang Snatch - Below Knees",
   "aliases": [
-   "Hang Snatch",
    "Hang Snatch Below Knees"
   ],
   "equipment": "barbell",
@@ -6723,7 +6671,7 @@
   "aliases": [],
   "equipment": "bands",
   "mechanic": "compound",
-  "pattern": "hinge",
+  "pattern": "push",
   "force": "push",
   "level": "beginner",
   "category": "strength",
@@ -7027,7 +6975,6 @@
   "id": "Incline_Dumbbell_Flyes_-_With_A_Twist",
   "name": "Incline Dumbbell Flyes - With A Twist",
   "aliases": [
-   "Incline Dumbbell Flyes",
    "Incline Dumbbell Flyes With A Twist"
   ],
   "equipment": "dumbbell",
@@ -7126,7 +7073,6 @@
   "id": "Incline_Push-Up",
   "name": "Incline Push-Up",
   "aliases": [
-   "Incline Push",
    "Incline Push Up"
   ],
   "equipment": "bodyweight",
@@ -7150,7 +7096,6 @@
   "id": "Incline_Push-Up_Close-Grip",
   "name": "Incline Push-Up Close-Grip",
   "aliases": [
-   "Incline Push-Up Close",
    "Incline Push Up Close Grip"
   ],
   "equipment": "bodyweight",
@@ -7176,7 +7121,6 @@
   "id": "Incline_Push-Up_Depth_Jump",
   "name": "Incline Push-Up Depth Jump",
   "aliases": [
-   "Incline Push",
    "Incline Push Up Depth Jump"
   ],
   "equipment": "other",
@@ -7201,7 +7145,6 @@
   "id": "Incline_Push-Up_Medium",
   "name": "Incline Push-Up Medium",
   "aliases": [
-   "Incline Push",
    "Incline Push Up Medium"
   ],
   "equipment": "bodyweight",
@@ -7227,7 +7170,6 @@
   "id": "Incline_Push-Up_Reverse_Grip",
   "name": "Incline Push-Up Reverse Grip",
   "aliases": [
-   "Incline Push",
    "Incline Push Up Reverse Grip"
   ],
   "equipment": "bodyweight",
@@ -7253,7 +7195,6 @@
   "id": "Incline_Push-Up_Wide",
   "name": "Incline Push-Up Wide",
   "aliases": [
-   "Incline Push",
    "Incline Push Up Wide"
   ],
   "equipment": "bodyweight",
@@ -7484,7 +7425,6 @@
   "id": "Jackknife_Sit-Up",
   "name": "Jackknife Sit-Up",
   "aliases": [
-   "Jackknife Sit",
    "Jackknife Sit Up"
   ],
   "equipment": "bodyweight",
@@ -7509,7 +7449,6 @@
   "id": "Janda_Sit-Up",
   "name": "Janda Sit-Up",
   "aliases": [
-   "Janda Sit",
    "Janda Sit Up"
   ],
   "equipment": "bodyweight",
@@ -7746,7 +7685,6 @@
   "id": "Kettlebell_One-Legged_Deadlift",
   "name": "Kettlebell One-Legged Deadlift",
   "aliases": [
-   "Kettlebell One",
    "Kettlebell One Legged Deadlift"
   ],
   "equipment": "kettlebell",
@@ -7938,7 +7876,7 @@
   "id": "Kettlebell_Turkish_Get-Up_Lunge_style",
   "name": "Kettlebell Turkish Get-Up (Lunge style)",
   "aliases": [
-   "Kettlebell Turkish Get",
+   "Kettlebell Turkish Get-Up",
    "Kettlebell Turkish Get Up (Lunge style)"
   ],
   "equipment": "kettlebell",
@@ -7962,7 +7900,7 @@
   "id": "Kettlebell_Turkish_Get-Up_Squat_style",
   "name": "Kettlebell Turkish Get-Up (Squat style)",
   "aliases": [
-   "Kettlebell Turkish Get",
+   "Kettlebell Turkish Get-Up",
    "Kettlebell Turkish Get Up (Squat style)"
   ],
   "equipment": "kettlebell",
@@ -8191,7 +8129,6 @@
   "id": "Kneeling_Single-Arm_High_Pulley_Row",
   "name": "Kneeling Single-Arm High Pulley Row",
   "aliases": [
-   "Kneeling Single",
    "Kneeling Single Arm High Pulley Row"
   ],
   "equipment": "cable",
@@ -8376,7 +8313,6 @@
   "id": "Leg-Over_Floor_Press",
   "name": "Leg-Over Floor Press",
   "aliases": [
-   "Leg",
    "Leg Over Floor Press"
   ],
   "equipment": "kettlebell",
@@ -8471,7 +8407,6 @@
   "id": "Leg_Pull-In",
   "name": "Leg Pull-In",
   "aliases": [
-   "Leg Pull",
    "Leg Pull In"
   ],
   "equipment": "bodyweight",
@@ -8667,7 +8602,6 @@
   "id": "Linear_3-Part_Start_Technique",
   "name": "Linear 3-Part Start Technique",
   "aliases": [
-   "Linear 3",
    "Linear 3 Part Start Technique"
   ],
   "equipment": "bodyweight",
@@ -8759,7 +8693,7 @@
   "aliases": [],
   "equipment": "other",
   "mechanic": "compound",
-  "pattern": "hinge",
+  "pattern": "pull",
   "force": "pull",
   "level": "intermediate",
   "category": "strength",
@@ -8939,7 +8873,6 @@
   "id": "Lying_Close-Grip_Bar_Curl_On_High_Pulley",
   "name": "Lying Close-Grip Bar Curl On High Pulley",
   "aliases": [
-   "Lying Close",
    "Lying Close Grip Bar Curl On High Pulley"
   ],
   "equipment": "cable",
@@ -8967,7 +8900,6 @@
   "id": "Lying_Close-Grip_Barbell_Triceps_Extension_Behind_The_Head",
   "name": "Lying Close-Grip Barbell Triceps Extension Behind The Head",
   "aliases": [
-   "Lying Close",
    "Lying Close Grip Barbell Triceps Extension Behind The Head"
   ],
   "equipment": "barbell",
@@ -8993,7 +8925,6 @@
   "id": "Lying_Close-Grip_Barbell_Triceps_Press_To_Chin",
   "name": "Lying Close-Grip Barbell Triceps Press To Chin",
   "aliases": [
-   "Lying Close",
    "Lying Close Grip Barbell Triceps Press To Chin"
   ],
   "equipment": "ez_bar",
@@ -9156,7 +9087,6 @@
   "id": "Lying_One-Arm_Lateral_Raise",
   "name": "Lying One-Arm Lateral Raise",
   "aliases": [
-   "Lying One",
    "Lying One Arm Lateral Raise"
   ],
   "equipment": "dumbbell",
@@ -9228,7 +9158,6 @@
   "id": "Lying_T-Bar_Row",
   "name": "Lying T-Bar Row",
   "aliases": [
-   "Lying T",
    "Lying T Bar Row"
   ],
   "equipment": "machine",
@@ -9757,7 +9686,6 @@
   "id": "Oblique_Crunches_-_On_The_Floor",
   "name": "Oblique Crunches - On The Floor",
   "aliases": [
-   "Oblique Crunches",
    "Oblique Crunches On The Floor"
   ],
   "equipment": "bodyweight",
@@ -9807,7 +9735,6 @@
    "Dumbbell Row",
    "Single-Arm Row",
    "DB Row",
-   "One",
    "One Arm Dumbbell Row"
   ],
   "equipment": "dumbbell",
@@ -9835,7 +9762,6 @@
   "id": "One-Arm_Flat_Bench_Dumbbell_Flye",
   "name": "One-Arm Flat Bench Dumbbell Flye",
   "aliases": [
-   "One",
    "One Arm Flat Bench Dumbbell Flye"
   ],
   "equipment": "dumbbell",
@@ -9862,7 +9788,6 @@
   "id": "One-Arm_High-Pulley_Cable_Side_Bends",
   "name": "One-Arm High-Pulley Cable Side Bends",
   "aliases": [
-   "One-Arm High",
    "One Arm High Pulley Cable Side Bends"
   ],
   "equipment": "cable",
@@ -9891,7 +9816,6 @@
   "id": "One-Arm_Incline_Lateral_Raise",
   "name": "One-Arm Incline Lateral Raise",
   "aliases": [
-   "One",
    "One Arm Incline Lateral Raise"
   ],
   "equipment": "dumbbell",
@@ -9918,7 +9842,6 @@
   "id": "One-Arm_Kettlebell_Clean",
   "name": "One-Arm Kettlebell Clean",
   "aliases": [
-   "One",
    "One Arm Kettlebell Clean"
   ],
   "equipment": "kettlebell",
@@ -9942,7 +9865,6 @@
   "id": "One-Arm_Kettlebell_Clean_and_Jerk",
   "name": "One-Arm Kettlebell Clean and Jerk",
   "aliases": [
-   "One",
    "One Arm Kettlebell Clean and Jerk"
   ],
   "equipment": "kettlebell",
@@ -9969,7 +9891,6 @@
   "id": "One-Arm_Kettlebell_Floor_Press",
   "name": "One-Arm Kettlebell Floor Press",
   "aliases": [
-   "One",
    "One Arm Kettlebell Floor Press"
   ],
   "equipment": "kettlebell",
@@ -9993,7 +9914,6 @@
   "id": "One-Arm_Kettlebell_Jerk",
   "name": "One-Arm Kettlebell Jerk",
   "aliases": [
-   "One",
    "One Arm Kettlebell Jerk"
   ],
   "equipment": "kettlebell",
@@ -10018,7 +9938,6 @@
   "id": "One-Arm_Kettlebell_Military_Press_To_The_Side",
   "name": "One-Arm Kettlebell Military Press To The Side",
   "aliases": [
-   "One",
    "One Arm Kettlebell Military Press To The Side"
   ],
   "equipment": "kettlebell",
@@ -10042,7 +9961,6 @@
   "id": "One-Arm_Kettlebell_Para_Press",
   "name": "One-Arm Kettlebell Para Press",
   "aliases": [
-   "One",
    "One Arm Kettlebell Para Press"
   ],
   "equipment": "kettlebell",
@@ -10066,7 +9984,6 @@
   "id": "One-Arm_Kettlebell_Push_Press",
   "name": "One-Arm Kettlebell Push Press",
   "aliases": [
-   "One",
    "One Arm Kettlebell Push Press"
   ],
   "equipment": "kettlebell",
@@ -10090,7 +10007,6 @@
   "id": "One-Arm_Kettlebell_Row",
   "name": "One-Arm Kettlebell Row",
   "aliases": [
-   "One",
    "One Arm Kettlebell Row"
   ],
   "equipment": "kettlebell",
@@ -10112,7 +10028,6 @@
   "id": "One-Arm_Kettlebell_Snatch",
   "name": "One-Arm Kettlebell Snatch",
   "aliases": [
-   "One",
    "One Arm Kettlebell Snatch"
   ],
   "equipment": "kettlebell",
@@ -10136,7 +10051,6 @@
   "id": "One-Arm_Kettlebell_Split_Jerk",
   "name": "One-Arm Kettlebell Split Jerk",
   "aliases": [
-   "One",
    "One Arm Kettlebell Split Jerk"
   ],
   "equipment": "kettlebell",
@@ -10162,7 +10076,6 @@
   "id": "One-Arm_Kettlebell_Split_Snatch",
   "name": "One-Arm Kettlebell Split Snatch",
   "aliases": [
-   "One",
    "One Arm Kettlebell Split Snatch"
   ],
   "equipment": "kettlebell",
@@ -10190,7 +10103,6 @@
    "KB Swing",
    "Kettlebell Swing",
    "One-Arm Kettlebell Swing",
-   "One",
    "One Arm Kettlebell Swings"
   ],
   "equipment": "kettlebell",
@@ -10210,7 +10122,6 @@
   "id": "One-Arm_Long_Bar_Row",
   "name": "One-Arm Long Bar Row",
   "aliases": [
-   "One",
    "One Arm Long Bar Row"
   ],
   "equipment": "barbell",
@@ -10236,7 +10147,6 @@
   "id": "One-Arm_Medicine_Ball_Slam",
   "name": "One-Arm Medicine Ball Slam",
   "aliases": [
-   "One",
    "One Arm Medicine Ball Slam"
   ],
   "equipment": "medicine_ball",
@@ -10261,7 +10171,6 @@
   "id": "One-Arm_Open_Palm_Kettlebell_Clean",
   "name": "One-Arm Open Palm Kettlebell Clean",
   "aliases": [
-   "One",
    "One Arm Open Palm Kettlebell Clean"
   ],
   "equipment": "kettlebell",
@@ -10286,7 +10195,6 @@
   "id": "One-Arm_Overhead_Kettlebell_Squats",
   "name": "One-Arm Overhead Kettlebell Squats",
   "aliases": [
-   "One",
    "One Arm Overhead Kettlebell Squats"
   ],
   "equipment": "kettlebell",
@@ -10310,7 +10218,6 @@
   "id": "One-Arm_Side_Deadlift",
   "name": "One-Arm Side Deadlift",
   "aliases": [
-   "One",
    "One Arm Side Deadlift"
   ],
   "equipment": "barbell",
@@ -10337,7 +10244,6 @@
   "id": "One-Arm_Side_Laterals",
   "name": "One-Arm Side Laterals",
   "aliases": [
-   "One",
    "One Arm Side Laterals"
   ],
   "equipment": "dumbbell",
@@ -10364,12 +10270,11 @@
   "id": "One-Legged_Cable_Kickback",
   "name": "One-Legged Cable Kickback",
   "aliases": [
-   "One",
    "One Legged Cable Kickback"
   ],
   "equipment": "cable",
   "mechanic": "isolation",
-  "pattern": "hinge",
+  "pattern": "isolation",
   "force": "push",
   "level": "intermediate",
   "category": "strength",
@@ -10391,7 +10296,6 @@
   "id": "One_Arm_Chin-Up",
   "name": "One Arm Chin-Up",
   "aliases": [
-   "One Arm Chin",
    "One Arm Chin Up"
   ],
   "equipment": "other",
@@ -10613,7 +10517,6 @@
   "id": "Otis-Up",
   "name": "Otis-Up",
   "aliases": [
-   "Otis",
    "Otis Up"
   ],
   "equipment": "other",
@@ -10759,7 +10662,6 @@
   "id": "Palms-Down_Dumbbell_Wrist_Curl_Over_A_Bench",
   "name": "Palms-Down Dumbbell Wrist Curl Over A Bench",
   "aliases": [
-   "Palms",
    "Palms Down Dumbbell Wrist Curl Over A Bench"
   ],
   "equipment": "dumbbell",
@@ -10787,7 +10689,6 @@
   "id": "Palms-Down_Wrist_Curl_Over_A_Bench",
   "name": "Palms-Down Wrist Curl Over A Bench",
   "aliases": [
-   "Palms",
    "Palms Down Wrist Curl Over A Bench"
   ],
   "equipment": "barbell",
@@ -10815,7 +10716,6 @@
   "id": "Palms-Up_Barbell_Wrist_Curl_Over_A_Bench",
   "name": "Palms-Up Barbell Wrist Curl Over A Bench",
   "aliases": [
-   "Palms",
    "Palms Up Barbell Wrist Curl Over A Bench"
   ],
   "equipment": "barbell",
@@ -10843,7 +10743,6 @@
   "id": "Palms-Up_Dumbbell_Wrist_Curl_Over_A_Bench",
   "name": "Palms-Up Dumbbell Wrist Curl Over A Bench",
   "aliases": [
-   "Palms",
    "Palms Up Dumbbell Wrist Curl Over A Bench"
   ],
   "equipment": "dumbbell",
@@ -11072,7 +10971,6 @@
   "id": "Plyo_Push-up",
   "name": "Plyo Push-up",
   "aliases": [
-   "Plyo Push",
    "Plyo Push up"
   ],
   "equipment": "bodyweight",
@@ -11325,7 +11223,6 @@
   "id": "Press_Sit-Up",
   "name": "Press Sit-Up",
   "aliases": [
-   "Press Sit",
    "Press Sit Up"
   ],
   "equipment": "barbell",
@@ -11418,7 +11315,6 @@
   "id": "Push-Up_Wide",
   "name": "Push-Up Wide",
   "aliases": [
-   "Push",
    "Push Up Wide"
   ],
   "equipment": "bodyweight",
@@ -11468,7 +11364,6 @@
   "id": "Push-Ups_With_Feet_Elevated",
   "name": "Push-Ups With Feet Elevated",
   "aliases": [
-   "Push",
    "Push Ups With Feet Elevated"
   ],
   "equipment": "bodyweight",
@@ -11494,7 +11389,6 @@
   "id": "Push-Ups_With_Feet_On_An_Exercise_Ball",
   "name": "Push-Ups With Feet On An Exercise Ball",
   "aliases": [
-   "Push",
    "Push Ups With Feet On An Exercise Ball"
   ],
   "equipment": "exercise_ball",
@@ -11537,7 +11431,6 @@
   "id": "Push_Press_-_Behind_the_Neck",
   "name": "Push Press - Behind the Neck",
   "aliases": [
-   "Push Press",
    "Push Press Behind the Neck"
   ],
   "equipment": "barbell",
@@ -11609,9 +11502,7 @@
  {
   "id": "Pushups_Close_and_Wide_Hand_Positions",
   "name": "Pushups (Close and Wide Hand Positions)",
-  "aliases": [
-   "Pushups"
-  ],
+  "aliases": [],
   "equipment": "bodyweight",
   "mechanic": "compound",
   "pattern": "push",
@@ -11998,7 +11889,6 @@
   "aliases": [
    "Reverse Grip Row",
    "Underhand Row",
-   "Reverse Grip Bent",
    "Reverse Grip Bent Over Rows"
   ],
   "equipment": "barbell",
@@ -12160,7 +12050,7 @@
   "aliases": [],
   "equipment": "other",
   "mechanic": "compound",
-  "pattern": "hinge",
+  "pattern": "carry",
   "force": "pull",
   "level": "intermediate",
   "category": "strongman",
@@ -12248,7 +12138,6 @@
   "id": "Rocky_Pull-Ups_Pulldowns",
   "name": "Rocky Pull-Ups/Pulldowns",
   "aliases": [
-   "Rocky Pull",
    "Rocky Pull Ups/Pulldowns"
   ],
   "equipment": "other",
@@ -12367,7 +12256,6 @@
   "id": "Rope_Straight-Arm_Pulldown",
   "name": "Rope Straight-Arm Pulldown",
   "aliases": [
-   "Rope Straight",
    "Rope Straight Arm Pulldown"
   ],
   "equipment": "cable",
@@ -12439,7 +12327,6 @@
   "id": "Scapular_Pull-Up",
   "name": "Scapular Pull-Up",
   "aliases": [
-   "Scapular Pull",
    "Scapular Pull Up"
   ],
   "equipment": "bodyweight",
@@ -12554,7 +12441,6 @@
   "id": "Seated_Bent-Over_One-Arm_Dumbbell_Triceps_Extension",
   "name": "Seated Bent-Over One-Arm Dumbbell Triceps Extension",
   "aliases": [
-   "Seated Bent-Over One",
    "Seated Bent Over One Arm Dumbbell Triceps Extension"
   ],
   "equipment": "dumbbell",
@@ -12582,7 +12468,6 @@
   "id": "Seated_Bent-Over_Rear_Delt_Raise",
   "name": "Seated Bent-Over Rear Delt Raise",
   "aliases": [
-   "Seated Bent",
    "Seated Bent Over Rear Delt Raise"
   ],
   "equipment": "dumbbell",
@@ -12609,7 +12494,6 @@
   "id": "Seated_Bent-Over_Two-Arm_Dumbbell_Triceps_Extension",
   "name": "Seated Bent-Over Two-Arm Dumbbell Triceps Extension",
   "aliases": [
-   "Seated Bent-Over Two",
    "Seated Bent Over Two Arm Dumbbell Triceps Extension"
   ],
   "equipment": "dumbbell",
@@ -12710,7 +12594,6 @@
   "id": "Seated_Close-Grip_Concentration_Barbell_Curl",
   "name": "Seated Close-Grip Concentration Barbell Curl",
   "aliases": [
-   "Seated Close",
    "Seated Close Grip Concentration Barbell Curl"
   ],
   "equipment": "barbell",
@@ -12783,7 +12666,6 @@
   "id": "Seated_Dumbbell_Palms-Down_Wrist_Curl",
   "name": "Seated Dumbbell Palms-Down Wrist Curl",
   "aliases": [
-   "Seated Dumbbell Palms",
    "Seated Dumbbell Palms Down Wrist Curl"
   ],
   "equipment": "dumbbell",
@@ -12811,7 +12693,6 @@
   "id": "Seated_Dumbbell_Palms-Up_Wrist_Curl",
   "name": "Seated Dumbbell Palms-Up Wrist Curl",
   "aliases": [
-   "Seated Dumbbell Palms",
    "Seated Dumbbell Palms Up Wrist Curl"
   ],
   "equipment": "dumbbell",
@@ -12863,7 +12744,6 @@
   "id": "Seated_Flat_Bench_Leg_Pull-In",
   "name": "Seated Flat Bench Leg Pull-In",
   "aliases": [
-   "Seated Flat Bench Leg Pull",
    "Seated Flat Bench Leg Pull In"
   ],
   "equipment": "bodyweight",
@@ -12981,7 +12861,6 @@
   "id": "Seated_One-Arm_Dumbbell_Palms-Down_Wrist_Curl",
   "name": "Seated One-Arm Dumbbell Palms-Down Wrist Curl",
   "aliases": [
-   "Seated One-Arm Dumbbell Palms",
    "Seated One Arm Dumbbell Palms Down Wrist Curl"
   ],
   "equipment": "dumbbell",
@@ -13008,7 +12887,6 @@
   "id": "Seated_One-Arm_Dumbbell_Palms-Up_Wrist_Curl",
   "name": "Seated One-Arm Dumbbell Palms-Up Wrist Curl",
   "aliases": [
-   "Seated One-Arm Dumbbell Palms",
    "Seated One Arm Dumbbell Palms Up Wrist Curl"
   ],
   "equipment": "dumbbell",
@@ -13035,7 +12913,6 @@
   "id": "Seated_One-arm_Cable_Pulley_Rows",
   "name": "Seated One-arm Cable Pulley Rows",
   "aliases": [
-   "Seated One",
    "Seated One arm Cable Pulley Rows"
   ],
   "equipment": "cable",
@@ -13062,7 +12939,6 @@
   "id": "Seated_Palm-Up_Barbell_Wrist_Curl",
   "name": "Seated Palm-Up Barbell Wrist Curl",
   "aliases": [
-   "Seated Palm",
    "Seated Palm Up Barbell Wrist Curl"
   ],
   "equipment": "barbell",
@@ -13088,7 +12964,6 @@
   "id": "Seated_Palms-Down_Barbell_Wrist_Curl",
   "name": "Seated Palms-Down Barbell Wrist Curl",
   "aliases": [
-   "Seated Palms",
    "Seated Palms Down Barbell Wrist Curl"
   ],
   "equipment": "barbell",
@@ -13158,7 +13033,6 @@
   "id": "Seated_Two-Arm_Palms-Up_Low-Pulley_Wrist_Curl",
   "name": "Seated Two-Arm Palms-Up Low-Pulley Wrist Curl",
   "aliases": [
-   "Seated Two-Arm Palms-Up Low",
    "Seated Two Arm Palms Up Low Pulley Wrist Curl"
   ],
   "equipment": "cable",
@@ -13188,7 +13062,7 @@
   "id": "See-Saw_Press_Alternating_Side_Press",
   "name": "See-Saw Press (Alternating Side Press)",
   "aliases": [
-   "See",
+   "See-Saw Press",
    "See Saw Press (Alternating Side Press)"
   ],
   "equipment": "dumbbell",
@@ -13262,7 +13136,7 @@
   "aliases": [],
   "equipment": "bodyweight",
   "mechanic": "isolation",
-  "pattern": "hinge",
+  "pattern": "core",
   "force": "static",
   "level": "beginner",
   "category": "strength",
@@ -13277,7 +13151,6 @@
   "id": "Side_Hop-Sprint",
   "name": "Side Hop-Sprint",
   "aliases": [
-   "Side Hop",
    "Side Hop Sprint"
   ],
   "equipment": "other",
@@ -13435,7 +13308,6 @@
   "id": "Single-Arm_Cable_Crossover",
   "name": "Single-Arm Cable Crossover",
   "aliases": [
-   "Single",
    "Single Arm Cable Crossover"
   ],
   "equipment": "cable",
@@ -13461,7 +13333,6 @@
   "id": "Single-Arm_Linear_Jammer",
   "name": "Single-Arm Linear Jammer",
   "aliases": [
-   "Single",
    "Single Arm Linear Jammer"
   ],
   "equipment": "barbell",
@@ -13486,7 +13357,6 @@
   "id": "Single-Arm_Push-Up",
   "name": "Single-Arm Push-Up",
   "aliases": [
-   "Single-Arm Push",
    "Single Arm Push Up"
   ],
   "equipment": "bodyweight",
@@ -13511,7 +13381,6 @@
   "id": "Single-Cone_Sprint_Drill",
   "name": "Single-Cone Sprint Drill",
   "aliases": [
-   "Single",
    "Single Cone Sprint Drill"
   ],
   "equipment": "other",
@@ -13535,7 +13404,6 @@
   "id": "Single-Leg_High_Box_Squat",
   "name": "Single-Leg High Box Squat",
   "aliases": [
-   "Single",
    "Single Leg High Box Squat"
   ],
   "equipment": "other",
@@ -13559,7 +13427,6 @@
   "id": "Single-Leg_Hop_Progression",
   "name": "Single-Leg Hop Progression",
   "aliases": [
-   "Single",
    "Single Leg Hop Progression"
   ],
   "equipment": "other",
@@ -13584,7 +13451,6 @@
   "id": "Single-Leg_Lateral_Hop",
   "name": "Single-Leg Lateral Hop",
   "aliases": [
-   "Single",
    "Single Leg Lateral Hop"
   ],
   "equipment": "other",
@@ -13609,7 +13475,6 @@
   "id": "Single-Leg_Leg_Extension",
   "name": "Single-Leg Leg Extension",
   "aliases": [
-   "Single",
    "Single Leg Leg Extension"
   ],
   "equipment": "machine",
@@ -13634,7 +13499,6 @@
   "id": "Single-Leg_Stride_Jump",
   "name": "Single-Leg Stride Jump",
   "aliases": [
-   "Single",
    "Single Leg Stride Jump"
   ],
   "equipment": "other",
@@ -13723,7 +13587,6 @@
   "id": "Single_Leg_Push-off",
   "name": "Single Leg Push-off",
   "aliases": [
-   "Single Leg Push",
    "Single Leg Push off"
   ],
   "equipment": "other",
@@ -13747,7 +13610,6 @@
   "id": "Sit-Up",
   "name": "Sit-Up",
   "aliases": [
-   "Sit",
    "Sit Up"
   ],
   "equipment": "bodyweight",
@@ -13819,7 +13681,7 @@
   "aliases": [],
   "equipment": "other",
   "mechanic": "isolation",
-  "pattern": "carry",
+  "pattern": "isolation",
   "force": "push",
   "level": "beginner",
   "category": "strength",
@@ -13861,7 +13723,7 @@
   "aliases": [],
   "equipment": "other",
   "mechanic": "isolation",
-  "pattern": "carry",
+  "pattern": "isolation",
   "force": "pull",
   "level": "beginner",
   "category": "strength",
@@ -13905,7 +13767,7 @@
   "aliases": [],
   "equipment": "other",
   "mechanic": "compound",
-  "pattern": "carry",
+  "pattern": "hinge",
   "force": "pull",
   "level": "beginner",
   "category": "plyometrics",
@@ -14042,7 +13904,6 @@
   "id": "Smith_Machine_Close-Grip_Bench_Press",
   "name": "Smith Machine Close-Grip Bench Press",
   "aliases": [
-   "Smith Machine Close",
    "Smith Machine Close Grip Bench Press"
   ],
   "equipment": "machine",
@@ -14181,7 +14042,6 @@
   "id": "Smith_Machine_One-Arm_Upright_Row",
   "name": "Smith Machine One-Arm Upright Row",
   "aliases": [
-   "Smith Machine One",
    "Smith Machine One Arm Upright Row"
   ],
   "equipment": "machine",
@@ -14301,7 +14161,6 @@
   "id": "Smith_Machine_Stiff-Legged_Deadlift",
   "name": "Smith Machine Stiff-Legged Deadlift",
   "aliases": [
-   "Smith Machine Stiff",
    "Smith Machine Stiff Legged Deadlift"
   ],
   "equipment": "machine",
@@ -14350,7 +14209,6 @@
   "id": "Smith_Single-Leg_Split_Squat",
   "name": "Smith Single-Leg Split Squat",
   "aliases": [
-   "Smith Single",
    "Smith Single Leg Split Squat"
   ],
   "equipment": "machine",
@@ -14950,7 +14808,6 @@
   "id": "Standing_Bent-Over_One-Arm_Dumbbell_Triceps_Extension",
   "name": "Standing Bent-Over One-Arm Dumbbell Triceps Extension",
   "aliases": [
-   "Standing Bent-Over One",
    "Standing Bent Over One Arm Dumbbell Triceps Extension"
   ],
   "equipment": "dumbbell",
@@ -14977,7 +14834,6 @@
   "id": "Standing_Bent-Over_Two-Arm_Dumbbell_Triceps_Extension",
   "name": "Standing Bent-Over Two-Arm Dumbbell Triceps Extension",
   "aliases": [
-   "Standing Bent-Over Two",
    "Standing Bent Over Two Arm Dumbbell Triceps Extension"
   ],
   "equipment": "dumbbell",
@@ -15098,7 +14954,7 @@
   "aliases": [],
   "equipment": "cable",
   "mechanic": "compound",
-  "pattern": "squat",
+  "pattern": "core",
   "force": "pull",
   "level": "beginner",
   "category": "strength",
@@ -15235,7 +15091,6 @@
   "id": "Standing_Dumbbell_Straight-Arm_Front_Delt_Raise_Above_Head",
   "name": "Standing Dumbbell Straight-Arm Front Delt Raise Above Head",
   "aliases": [
-   "Standing Dumbbell Straight",
    "Standing Dumbbell Straight Arm Front Delt Raise Above Head"
   ],
   "equipment": "dumbbell",
@@ -15332,7 +15187,6 @@
   "id": "Standing_Inner-Biceps_Curl",
   "name": "Standing Inner-Biceps Curl",
   "aliases": [
-   "Standing Inner",
    "Standing Inner Biceps Curl"
   ],
   "equipment": "dumbbell",
@@ -15405,7 +15259,6 @@
   "id": "Standing_Low-Pulley_Deltoid_Raise",
   "name": "Standing Low-Pulley Deltoid Raise",
   "aliases": [
-   "Standing Low",
    "Standing Low Pulley Deltoid Raise"
   ],
   "equipment": "cable",
@@ -15432,7 +15285,6 @@
   "id": "Standing_Low-Pulley_One-Arm_Triceps_Extension",
   "name": "Standing Low-Pulley One-Arm Triceps Extension",
   "aliases": [
-   "Standing Low-Pulley One",
    "Standing Low Pulley One Arm Triceps Extension"
   ],
   "equipment": "cable",
@@ -15504,7 +15356,6 @@
   "id": "Standing_One-Arm_Cable_Curl",
   "name": "Standing One-Arm Cable Curl",
   "aliases": [
-   "Standing One",
    "Standing One Arm Cable Curl"
   ],
   "equipment": "cable",
@@ -15531,7 +15382,6 @@
   "id": "Standing_One-Arm_Dumbbell_Curl_Over_Incline_Bench",
   "name": "Standing One-Arm Dumbbell Curl Over Incline Bench",
   "aliases": [
-   "Standing One",
    "Standing One Arm Dumbbell Curl Over Incline Bench"
   ],
   "equipment": "dumbbell",
@@ -15558,7 +15408,6 @@
   "id": "Standing_One-Arm_Dumbbell_Triceps_Extension",
   "name": "Standing One-Arm Dumbbell Triceps Extension",
   "aliases": [
-   "Standing One",
    "Standing One Arm Dumbbell Triceps Extension"
   ],
   "equipment": "dumbbell",
@@ -15608,7 +15457,6 @@
   "id": "Standing_Palm-In_One-Arm_Dumbbell_Press",
   "name": "Standing Palm-In One-Arm Dumbbell Press",
   "aliases": [
-   "Standing Palm-In One",
    "Standing Palm In One Arm Dumbbell Press"
   ],
   "equipment": "dumbbell",
@@ -15636,7 +15484,6 @@
   "id": "Standing_Palms-In_Dumbbell_Press",
   "name": "Standing Palms-In Dumbbell Press",
   "aliases": [
-   "Standing Palms",
    "Standing Palms In Dumbbell Press"
   ],
   "equipment": "dumbbell",
@@ -15661,7 +15508,6 @@
   "id": "Standing_Palms-Up_Barbell_Behind_The_Back_Wrist_Curl",
   "name": "Standing Palms-Up Barbell Behind The Back Wrist Curl",
   "aliases": [
-   "Standing Palms",
    "Standing Palms Up Barbell Behind The Back Wrist Curl"
   ],
   "equipment": "barbell",
@@ -15732,7 +15578,6 @@
   "id": "Standing_Two-Arm_Overhead_Throw",
   "name": "Standing Two-Arm Overhead Throw",
   "aliases": [
-   "Standing Two",
    "Standing Two Arm Overhead Throw"
   ],
   "equipment": "medicine_ball",
@@ -15777,7 +15622,6 @@
   "id": "Step-up_with_Knee_Raise",
   "name": "Step-up with Knee Raise",
   "aliases": [
-   "Step",
    "Step up with Knee Raise"
   ],
   "equipment": "bodyweight",
@@ -15801,7 +15645,6 @@
   "id": "Stiff-Legged_Barbell_Deadlift",
   "name": "Stiff-Legged Barbell Deadlift",
   "aliases": [
-   "Stiff",
    "Stiff Legged Barbell Deadlift"
   ],
   "equipment": "barbell",
@@ -15827,7 +15670,6 @@
   "id": "Stiff-Legged_Dumbbell_Deadlift",
   "name": "Stiff-Legged Dumbbell Deadlift",
   "aliases": [
-   "Stiff",
    "Stiff Legged Dumbbell Deadlift"
   ],
   "equipment": "dumbbell",
@@ -15877,7 +15719,6 @@
   "id": "Straight-Arm_Dumbbell_Pullover",
   "name": "Straight-Arm Dumbbell Pullover",
   "aliases": [
-   "Straight",
    "Straight Arm Dumbbell Pullover"
   ],
   "equipment": "dumbbell",
@@ -15904,7 +15745,6 @@
   "id": "Straight-Arm_Pulldown",
   "name": "Straight-Arm Pulldown",
   "aliases": [
-   "Straight",
    "Straight Arm Pulldown"
   ],
   "equipment": "cable",
@@ -16085,7 +15925,6 @@
   "id": "Supine_One-Arm_Overhead_Throw",
   "name": "Supine One-Arm Overhead Throw",
   "aliases": [
-   "Supine One",
    "Supine One Arm Overhead Throw"
   ],
   "equipment": "medicine_ball",
@@ -16109,7 +15948,6 @@
   "id": "Supine_Two-Arm_Overhead_Throw",
   "name": "Supine Two-Arm Overhead Throw",
   "aliases": [
-   "Supine Two",
    "Supine Two Arm Overhead Throw"
   ],
   "equipment": "medicine_ball",
@@ -16157,7 +15995,6 @@
   "id": "Suspended_Push-Up",
   "name": "Suspended Push-Up",
   "aliases": [
-   "Suspended Push",
    "Suspended Push Up"
   ],
   "equipment": "other",
@@ -16270,7 +16107,6 @@
   "name": "T-Bar Row with Handle",
   "aliases": [
    "T-Bar Row",
-   "T",
    "T Bar Row with Handle"
   ],
   "equipment": "barbell",
@@ -16408,7 +16244,7 @@
   "aliases": [],
   "equipment": "dumbbell",
   "mechanic": "isolation",
-  "pattern": "hinge",
+  "pattern": "isolation",
   "force": "push",
   "level": "beginner",
   "category": "strength",
@@ -16478,7 +16314,6 @@
   "name": "Triceps Pushdown - Rope Attachment",
   "aliases": [
    "Rope Pushdown",
-   "Triceps Pushdown",
    "Triceps Pushdown Rope Attachment"
   ],
   "equipment": "cable",
@@ -16504,7 +16339,6 @@
   "id": "Triceps_Pushdown_-_V-Bar_Attachment",
   "name": "Triceps Pushdown - V-Bar Attachment",
   "aliases": [
-   "Triceps Pushdown - V",
    "Triceps Pushdown V Bar Attachment"
   ],
   "equipment": "cable",
@@ -16554,7 +16388,6 @@
   "id": "Two-Arm_Dumbbell_Preacher_Curl",
   "name": "Two-Arm Dumbbell Preacher Curl",
   "aliases": [
-   "Two",
    "Two Arm Dumbbell Preacher Curl"
   ],
   "equipment": "dumbbell",
@@ -16579,7 +16412,6 @@
   "id": "Two-Arm_Kettlebell_Clean",
   "name": "Two-Arm Kettlebell Clean",
   "aliases": [
-   "Two",
    "Two Arm Kettlebell Clean"
   ],
   "equipment": "kettlebell",
@@ -16603,7 +16435,6 @@
   "id": "Two-Arm_Kettlebell_Jerk",
   "name": "Two-Arm Kettlebell Jerk",
   "aliases": [
-   "Two",
    "Two Arm Kettlebell Jerk"
   ],
   "equipment": "kettlebell",
@@ -16625,7 +16456,6 @@
   "id": "Two-Arm_Kettlebell_Military_Press",
   "name": "Two-Arm Kettlebell Military Press",
   "aliases": [
-   "Two",
    "Two Arm Kettlebell Military Press"
   ],
   "equipment": "kettlebell",
@@ -16648,7 +16478,6 @@
   "id": "Two-Arm_Kettlebell_Row",
   "name": "Two-Arm Kettlebell Row",
   "aliases": [
-   "Two",
    "Two Arm Kettlebell Row"
   ],
   "equipment": "kettlebell",
@@ -16764,7 +16593,6 @@
   "id": "V-Bar_Pulldown",
   "name": "V-Bar Pulldown",
   "aliases": [
-   "V",
    "V Bar Pulldown"
   ],
   "equipment": "cable",
@@ -16791,7 +16619,6 @@
   "id": "V-Bar_Pullup",
   "name": "V-Bar Pullup",
   "aliases": [
-   "V",
    "V Bar Pullup"
   ],
   "equipment": "bodyweight",
@@ -17046,7 +16873,6 @@
   "id": "Wide-Grip_Barbell_Bench_Press",
   "name": "Wide-Grip Barbell Bench Press",
   "aliases": [
-   "Wide",
    "Wide Grip Barbell Bench Press"
   ],
   "equipment": "barbell",
@@ -17071,7 +16897,6 @@
   "id": "Wide-Grip_Decline_Barbell_Bench_Press",
   "name": "Wide-Grip Decline Barbell Bench Press",
   "aliases": [
-   "Wide",
    "Wide Grip Decline Barbell Bench Press"
   ],
   "equipment": "barbell",
@@ -17096,7 +16921,6 @@
   "id": "Wide-Grip_Decline_Barbell_Pullover",
   "name": "Wide-Grip Decline Barbell Pullover",
   "aliases": [
-   "Wide",
    "Wide Grip Decline Barbell Pullover"
   ],
   "equipment": "barbell",
@@ -17125,7 +16949,6 @@
   "aliases": [
    "Lat Pulldown",
    "Pulldown",
-   "Wide",
    "Wide Grip Lat Pulldown"
   ],
   "equipment": "cable",
@@ -17152,7 +16975,6 @@
   "id": "Wide-Grip_Pulldown_Behind_The_Neck",
   "name": "Wide-Grip Pulldown Behind The Neck",
   "aliases": [
-   "Wide",
    "Wide Grip Pulldown Behind The Neck"
   ],
   "equipment": "cable",
@@ -17179,7 +17001,6 @@
   "id": "Wide-Grip_Rear_Pull-Up",
   "name": "Wide-Grip Rear Pull-Up",
   "aliases": [
-   "Wide-Grip Rear Pull",
    "Wide Grip Rear Pull Up"
   ],
   "equipment": "bodyweight",
@@ -17205,7 +17026,6 @@
   "id": "Wide-Grip_Standing_Barbell_Curl",
   "name": "Wide-Grip Standing Barbell Curl",
   "aliases": [
-   "Wide",
    "Wide Grip Standing Barbell Curl"
   ],
   "equipment": "barbell",
@@ -17299,7 +17119,7 @@
   "aliases": [],
   "equipment": "other",
   "mechanic": "isolation",
-  "pattern": "core",
+  "pattern": "isolation",
   "force": "pull",
   "level": "beginner",
   "category": "strength",

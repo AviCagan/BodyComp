@@ -5,7 +5,9 @@
  *
  * Fails (exit 1) if either body drifts from the contract:
  *  - every id in REGION_IDS exists exactly once as a mesh node, plus body_base
- *  - no unmapped mesh nodes; one primitive per mesh; TRIANGLES mode; indexed
+ *  - no unmapped mesh nodes; one primitive per mesh; TRIANGLES mode; indexed; identity transforms
+ *  - finite data, no degenerate faces, outward winding (face normals agree with vertex normals)
+ *  - no textures, no TEXCOORDs, one material
  *  - total triangles ≤ MODEL_BUDGET.maxTriangles; file ≤ MODEL_BUDGET.maxBytes
  *  - stature normalized: min y ≈ 0, max y ≈ 1; midline centered (|x|,|z| centers small)
  *  - both bodies expose the identical region set; manifest matches the file
@@ -23,8 +25,70 @@ interface Report {
   bytes: number;
   triangles: number;
   meshNames: string[];
+  trianglesByMesh: Record<string, number>;
   bounds: { min: [number, number, number]; max: [number, number, number] };
   problems: Problem[];
+}
+
+/** Geometry sanity for one primitive: finite data, indexed, no degenerate faces, outward winding. */
+function checkGeometry(
+  name: string,
+  positions: ArrayLike<number>,
+  normals: ArrayLike<number> | null,
+  indices: ArrayLike<number> | null,
+  problems: Problem[],
+): number {
+  for (let i = 0; i < positions.length; i++)
+    if (!Number.isFinite(positions[i])) {
+      problems.push(`${name}: non-finite position data`);
+      break;
+    }
+  if (normals)
+    for (let i = 0; i < normals.length; i++)
+      if (!Number.isFinite(normals[i]!)) {
+        problems.push(`${name}: non-finite normal data`);
+        break;
+      }
+  if (!indices) {
+    problems.push(`${name}: primitive must be indexed`);
+    return positions.length / 9;
+  }
+  let degenerate = 0;
+  let flipped = 0;
+  const triCount = indices.length / 3;
+  for (let t = 0; t < triCount; t++) {
+    const ia = indices[t * 3]! * 3,
+      ib = indices[t * 3 + 1]! * 3,
+      ic = indices[t * 3 + 2]! * 3;
+    const ax = positions[ia]!,
+      ay = positions[ia + 1]!,
+      az = positions[ia + 2]!;
+    const ux = positions[ib]! - ax,
+      uy = positions[ib + 1]! - ay,
+      uz = positions[ib + 2]! - az;
+    const vx = positions[ic]! - ax,
+      vy = positions[ic + 1]! - ay,
+      vz = positions[ic + 2]! - az;
+    const nx = uy * vz - uz * vy,
+      ny = uz * vx - ux * vz,
+      nz = ux * vy - uy * vx;
+    const len = Math.hypot(nx, ny, nz);
+    if (len < 1e-12) {
+      degenerate++;
+      continue;
+    }
+    if (normals) {
+      const sx = normals[ia]! + normals[ib]! + normals[ic]!;
+      const sy = normals[ia + 1]! + normals[ib + 1]! + normals[ic + 1]!;
+      const sz = normals[ia + 2]! + normals[ib + 2]! + normals[ic + 2]!;
+      if (nx * sx + ny * sy + nz * sz < 0) flipped++;
+    }
+  }
+  const real = triCount - degenerate;
+  if (degenerate > 0) problems.push(`${name}: ${degenerate} degenerate (zero-area) triangles`);
+  if (real > 0 && flipped / real > 0.01)
+    problems.push(`${name}: ${flipped}/${real} triangles wound against their vertex normals (inside-out)`);
+  return triCount;
 }
 
 function inspect(doc: Document, body: string, bytes: number): Report {
@@ -39,6 +103,7 @@ function inspect(doc: Document, body: string, bytes: number): Report {
     });
 
   const names = meshNodes.map((n) => n.getName());
+  const trianglesByMesh: Record<string, number> = {};
   const min: [number, number, number] = [Infinity, Infinity, Infinity];
   const max: [number, number, number] = [-Infinity, -Infinity, -Infinity];
   let triangles = 0;
@@ -65,8 +130,17 @@ function inspect(doc: Document, body: string, bytes: number): Report {
         continue;
       }
       if (!prim.getAttribute('NORMAL')) problems.push(`${node.getName()}: missing NORMAL`);
-      if (prim.getMaterial()?.getBaseColorTexture()) problems.push(`${node.getName()}: textures are not allowed`);
-      triangles += idx ? idx.getCount() / 3 : pos.getCount() / 3;
+      if (prim.listAttributes().some((_a, i) => prim.listSemantics()[i]?.startsWith('TEXCOORD')))
+        problems.push(`${node.getName()}: TEXCOORD attributes are not allowed (no textures)`);
+      const tris = checkGeometry(
+        node.getName(),
+        pos.getArray()!,
+        prim.getAttribute('NORMAL')?.getArray() ?? null,
+        idx?.getArray() ?? null,
+        problems,
+      );
+      trianglesByMesh[node.getName()] = (trianglesByMesh[node.getName()] ?? 0) + tris;
+      triangles += tris;
       const pmin = pos.getMin([0, 0, 0]);
       const pmax = pos.getMax([0, 0, 0]);
       for (let i = 0; i < 3; i++) {
@@ -75,6 +149,11 @@ function inspect(doc: Document, body: string, bytes: number): Report {
       }
     }
   }
+
+  if (root.listTextures().length > 0)
+    problems.push(`${root.listTextures().length} texture(s) present; the contract forbids textures`);
+  if (root.listMaterials().length > 1)
+    problems.push(`${root.listMaterials().length} materials; expected one neutral material`);
 
   const expected = new Set<string>([...REGION_IDS, BODY_BASE_MESH]);
   const seen = new Map<string, number>();
@@ -98,7 +177,7 @@ function inspect(doc: Document, body: string, bytes: number): Report {
   if (max[0] - min[0] > 1 || max[2] - min[2] > 1) problems.push('bounding box wider than tall — is the model Y-up?');
   if (!(max[0] - min[0] > 0.15)) problems.push('bounding box implausibly narrow');
 
-  return { body, bytes, triangles, meshNames: names, bounds: { min, max }, problems };
+  return { body, bytes, triangles, meshNames: names, trianglesByMesh, bounds: { min, max }, problems };
 }
 
 async function main() {
@@ -113,6 +192,7 @@ async function main() {
         bytes: 0,
         triangles: 0,
         meshNames: [],
+        trianglesByMesh: {},
         bounds: { min: [0, 0, 0], max: [0, 0, 0] },
         problems: [`missing file ${file}`],
       });

@@ -161,9 +161,9 @@ const M = {
   fly: re('\\bfly|flye|pec deck|crossover|cross-over|cable cross'),
   pushup: re('push[- ]?up|pushup'),
   press: re('press|jerk|thruster|handstand|pike|jammer|landmine|halo|get-up|turkish'),
-  frontRaise: re('front (?:cable |dumbbell |incline dumbbell |plate |two-dumbbell )?raise|front raise'),
+  frontRaise: re('\\bfront\\b.*\\braise\\b'),
   arnold: re('arnold'),
-  lateral: re('lateral|side lateral|scaption|deltoid raise|dumbbell raise\\b|side raise|iron cross|car driver'),
+  lateral: re('lateral|side lateral|scaption|deltoid raise|side raise|iron cross|car driver'),
   rear: re(
     'rear|reverse fly|reverse flye|face pull|pull[- ]?apart|bent[- ]over.*(?:raise|lateral|fly)|lying.*(?:rear|lateral)|posterior|reverse pec|back fly|seated bent',
   ),
@@ -175,31 +175,36 @@ const M = {
   scapular: re('scapular'),
   row: re('\\brow\\b|rows\\b'),
   bentOver: re('bent[- ]over|t-bar|pendlay|barbell row|long bar'),
-  verticalPull: re('chin|pull-?up|pullup|pulldown|pull down|lat pull'),
+  verticalPull: re('\\bchin|pull-?ups?\\b|pulldown|pull down|lat pull'),
   pullover: re('pullover'),
   deadlift: re('deadlift'),
   rdl: re('romanian|stiff|straight[- ]leg'),
   goodMorning: re('good morning'),
   backExt: re('back extension|hyperextension|hyper extension|superman|reverse hyper'),
-  squat: re('squat|leg press|hack|wall sit|pistol|sissy|box jump|jump|hop|bound'),
+  squat: re('squat|leg press|hack|wall sit|pistol|sissy|\\bjump|\\bhops?\\b|\\bbound'),
   legPress: re('leg press|hack'),
   lunge: re('lunge|split squat|bulgarian|step[- ]?up|stepup'),
   legExt: re('leg extension|extensions?\\b.*leg|sissy'),
   legCurl: re('leg curl|ham(?:string)? curl|lying curl|seated curl|standing curl|glute ham|nordic|natural'),
   nordic: re('glute ham|nordic|natural glute'),
-  hipThrust: re('hip thrust|bridge|kickback|kick back|pull[- ]?through|hip extension|donkey kick'),
+  hipThrust: re(
+    'hip thrust|glute bridge|hip bridge|\\bbridge\\b|glute kickback|cable kickback|pull[- ]?through|hip extension|donkey kick',
+  ),
+  hinge: re(
+    'deadlift|romanian|stiff|straight[- ]leg|good morning|hip thrust|glute bridge|hip bridge|pull[- ]?through|\\bswing|back extension|hyperextension|hyper extension|reverse hyper',
+  ),
   abduction: re(
     'abduct|clam|fire hydrant|monster walk|band walk|lateral walk|side[- ]lying|hip circle|lying crossover',
   ),
   seatedCalf: re('seated|bent[- ]knee'),
   tibialis: re('tibialis|toe raise|dorsiflex'),
-  overheadTri: re('overhead|behind|french|seated triceps press|incline.*extension|triceps extension'),
+  overheadTri: re('overhead|behind|french|seated triceps press|incline.*extension'),
   lyingTri: re('lying|skull|nose|decline.*extension'),
   pushdownTri: re('pushdown|push down|kickback|close[- ]grip|dip|jm press|bench|tate|diamond|press'),
   hammer: re('hammer|neutral|zottman|cross body|cross-body|reverse curl|reverse barbell curl|reverse grip'),
   reverseCurl: re('reverse curl|reverse barbell|reverse grip|reverse ez'),
   wristCurl: re('wrist curl|wrist roller|behind the back'),
-  reverseWrist: re('reverse wrist|wrist extension|extensor'),
+  reverseWrist: re('reverse wrist|wrist extension|extensor|palms[- ]down|pronated'),
   grip: re('farmer|pinch|grip|hold|carry|walk|hang'),
   oblique: re(
     'oblique|side bend|twist|russian|woodchop|wood chop|windmill|side plank|bicycle|side crunch|side jackknife|saxon|landmine 180|rotation|windshield',
@@ -209,10 +214,10 @@ const M = {
   ),
   neckFlex: re('face up|flexion|front'),
   neckExt: re('face down|extension|harness|back'),
-  carry: re('carry|farmer|walk|yoke|suitcase|sled'),
+  carry: re('carry|farmer|\\bwalk|yoke|suitcase|sled (?:push|drag|pull)|rickshaw'),
   olympic: re('clean|snatch|jerk'),
   core: re(
-    'crunch|sit[- ]?up|situp|plank|leg raise|knee raise|\\bab\\b|abs\\b|oblique|russian|hollow|dead bug|rollout|roller|woodchop|knee tuck|toe touch|windshield|bicycle|v-up|flutter|scissor|dragon flag|bird dog|pallof|side bend|jackknife|wheel|l-sit',
+    'crunch|sit[- ]?up|situp|plank|leg raise|knee raise|\\bab\\b|abs\\b|oblique|russian|hollow|dead bug|rollout|ab roller|ab wheel|woodchop|knee tuck|toe touch|windshield|bicycle|v-up|flutter|scissor|dragon flag|bird dog|pallof|side bend|jackknife|wheel|l-sit',
   ),
   plyo: re('jump|hop|bound|plyo|box|sprint|throw|slam'),
 };
@@ -251,17 +256,9 @@ function equipmentOf(e: UpstreamExercise): Equipment {
 function patternOf(e: UpstreamExercise): Pattern {
   const n = e.name;
   if (e.category === 'olympic weightlifting' || M.olympic.test(n)) return 'olympic';
-  if (M.carry.test(n) && !M.row.test(n)) return 'carry';
   if (M.lunge.test(n)) return 'lunge';
-  if (
-    M.deadlift.test(n) ||
-    M.rdl.test(n) ||
-    M.goodMorning.test(n) ||
-    M.hipThrust.test(n) ||
-    M.backExt.test(n) ||
-    /swing/i.test(n)
-  )
-    return 'hinge';
+  if (M.carry.test(n) && !M.row.test(n)) return 'carry';
+  if (M.hinge.test(n)) return 'hinge';
   if (M.squat.test(n) && !M.legCurl.test(n)) return 'squat';
   if (M.core.test(n) || e.primaryMuscles.every((m) => m === 'abdominals')) return 'core';
   if (e.mechanic === 'isolation') return 'isolation';
@@ -291,7 +288,7 @@ const ALIASES: Record<string, string[]> = {
   'Chin-Up': ['Chin Up', 'Chinup'],
   Seated_Cable_Rows: ['Cable Row', 'Seated Row'],
   Barbell_Shoulder_Press: ['Overhead Press', 'OHP', 'Military Press', 'Standing Press'],
-  Dumbbell_Shoulder_Press: ['DB Shoulder Press', 'Seated Dumbbell Press'],
+  Dumbbell_Shoulder_Press: ['DB Shoulder Press'],
   Side_Lateral_Raise: ['Lateral Raise', 'Dumbbell Lateral Raise', 'Side Raise'],
   Face_Pull: ['Face Pulls', 'Rope Face Pull'],
   Barbell_Curl: ['Bicep Curl', 'Barbell Bicep Curl', 'BB Curl'],
@@ -314,7 +311,7 @@ const ALIASES: Record<string, string[]> = {
   Pushups: ['Push-Up', 'Push Up', 'Pushup'],
   Plank: ['Front Plank'],
   Hanging_Leg_Raise: ['Hanging Leg Raises'],
-  Cable_Crunch: ['Kneeling Cable Crunch', 'Rope Crunch'],
+  Cable_Crunch: ['Kneeling Cable Crunch'],
   Dumbbell_Flyes: ['Dumbbell Fly', 'DB Fly', 'Chest Fly'],
   Barbell_Shrug: ['Shrug', 'Barbell Shrugs'],
   Dumbbell_Shrug: ['DB Shrug'],
@@ -342,13 +339,13 @@ const ALIASES: Record<string, string[]> = {
 function autoAliases(name: string): string[] {
   const out = new Set<string>();
   const stripped = name
-    .replace(/\s*-\s*[^-]+$/, '')
+    .replace(/\s+-\s+[^-]+$/, '')
     .replace(/\s*\([^)]*\)\s*/g, ' ')
     .trim();
   if (stripped && stripped !== name) out.add(stripped);
   const noHyphen = name.replace(/-/g, ' ').replace(/\s+/g, ' ').trim();
   if (noHyphen !== name) out.add(noHyphen);
-  return [...out];
+  return [...out].filter((a) => a.length >= 4);
 }
 
 // ---------- muscle credit rules ----------
@@ -378,8 +375,8 @@ function shoulderTargets(e: UpstreamExercise, primary: boolean): Array<[GroupId,
       ['delt_side', w, false],
       ['traps_upper', w * 0.75, false],
     ];
-  if (M.lateral.test(n) && !M.press.test(n)) return [['delt_side', w, false]];
   if (M.frontRaise.test(n)) return [['delt_front', w, false]];
+  if (M.lateral.test(n) && !M.press.test(n)) return [['delt_side', w, false]];
   if (M.arnold.test(n) || M.press.test(n))
     return primary
       ? [
@@ -410,9 +407,12 @@ function creditsFor(e: UpstreamExercise): Credits {
         } else add(c, 'abs', w);
         if (primary && M.hipFlexor.test(n)) add(c, 'hip_flexors', 0.5);
         return;
-      case 'abductors':
-        add(c, 'glutes', w, DIST.glutes_abductors);
+      case 'abductors': {
+        // A glutes label on the same exercise decides the distribution; abductors alone means glute_med work.
+        const hasGlutes = e.primaryMuscles.includes('glutes') || e.secondaryMuscles.includes('glutes');
+        add(c, 'glutes', w, hasGlutes ? undefined : DIST.glutes_abductors);
         return;
+      }
       case 'adductors':
         add(c, 'adductors', w);
         return;
@@ -428,7 +428,17 @@ function creditsFor(e: UpstreamExercise): Credits {
         add(c, 'calves', w, M.seatedCalf.test(n) ? DIST.calves_seated : DIST.calves_standing);
         return;
       case 'chest': {
-        const dist = M.incline.test(n) ? DIST.chest_incline : M.decline.test(n) ? DIST.chest_decline : DIST.chest_flat;
+        // For push-ups the words mean the opposite of bench: incline (hands raised) loads the lower chest.
+        const pushup = M.pushup.test(n);
+        const dist = M.incline.test(n)
+          ? pushup
+            ? DIST.chest_decline
+            : DIST.chest_incline
+          : M.decline.test(n)
+            ? pushup
+              ? DIST.chest_incline
+              : DIST.chest_decline
+            : DIST.chest_flat;
         add(c, 'chest', w, dist);
         if (primary && (M.press.test(n) || M.pushup.test(n))) {
           add(c, 'delt_front', 0.5);
@@ -536,7 +546,18 @@ function creditsFor(e: UpstreamExercise): Credits {
         }
         return;
       case 'neck':
-        add(c, 'neck', w, M.neckExt.test(n) ? DIST.neck_ext : M.neckFlex.test(n) ? DIST.neck_flex : DIST.neck_default);
+        add(
+          c,
+          'neck',
+          w,
+          M.neckExt.test(n) && M.neckFlex.test(n)
+            ? DIST.neck_default
+            : M.neckExt.test(n)
+              ? DIST.neck_ext
+              : M.neckFlex.test(n)
+                ? DIST.neck_flex
+                : DIST.neck_default,
+        );
         return;
       case 'quadriceps': {
         const dist = M.legExt.test(n) && !M.squat.test(n) ? DIST.quads_extension : DIST.quads_default;
@@ -605,7 +626,7 @@ function creditsFor(e: UpstreamExercise): Credits {
         if (
           primary &&
           /close[- ]grip|\bdips?\b|jm press|floor press|board press|pin press|bench press|push-?up/i.test(n) &&
-          !/extension|pushdown|kickback/i.test(n)
+          !/extension|pushdown|kickback|skull|to chin|lying/i.test(n)
         ) {
           add(c, 'chest', 0.5, M.decline.test(n) ? DIST.chest_decline : DIST.chest_flat);
           add(c, 'delt_front', 0.5);
@@ -621,9 +642,9 @@ function creditsFor(e: UpstreamExercise): Credits {
   // Post-pass corrections that depend on the whole movement, not one label.
   const pattern = patternOf(e);
   if (pattern === 'squat' || pattern === 'lunge') {
-    // Knee-dominant work: hamstrings and calves get little stimulus (§4.2 squat row credits neither).
-    if (c.hamstrings && c.hamstrings.weight <= 0.5) c.hamstrings = { ...c.hamstrings, weight: 0.25 };
-    if (c.calves && c.calves.weight <= 0.5) c.calves = { ...c.calves, weight: 0.25 };
+    // Knee-dominant work: upstream lists hamstrings/calves as secondaries, but §4.2 credits neither for squats.
+    if (c.hamstrings && c.hamstrings.weight <= 0.5) delete c.hamstrings;
+    if (c.calves && c.calves.weight <= 0.5) delete c.calves;
   }
   if (pattern === 'carry' && c.traps_upper && c.traps_upper.weight < 0.75)
     c.traps_upper = { ...c.traps_upper, weight: 0.75 };
@@ -686,8 +707,10 @@ function main() {
   if (!existsSync(file)) throw new Error(`Not found: ${file}`);
   const raw = JSON.parse(readFileSync(file, 'utf8')) as UpstreamExercise[];
   let revision = 'unknown';
+  let revisionDate = 'unknown';
   try {
     revision = execSync('git rev-parse --short=12 HEAD', { cwd: src, encoding: 'utf8' }).trim();
+    revisionDate = execSync('git log -1 --format=%cs HEAD', { cwd: src, encoding: 'utf8' }).trim();
   } catch {
     /* not a git checkout */
   }
@@ -696,6 +719,7 @@ function main() {
     throw new Error('Expected the Unlicense (public domain) text in LICENSE.md — verify before importing.');
 
   const source = `free-exercise-db@${revision}`;
+  const allNames = new Set(raw.filter((e) => !EXCLUDED_CATEGORIES.has(e.category)).map((e) => e.name.toLowerCase()));
   const exercises: SeedExercise[] = [];
   const mappings: SeedMapping[] = [];
   const stats = { total: raw.length, excluded: 0, imported: 0, flaggedExercises: 0, overrides: 0 };
@@ -719,7 +743,9 @@ function main() {
     exercises.push({
       id: e.id,
       name: e.name,
-      aliases: [...new Set([...(ALIASES[e.id] ?? []), ...autoAliases(e.name)])].filter((a) => a !== e.name),
+      aliases: [...new Set([...(ALIASES[e.id] ?? []), ...autoAliases(e.name)])].filter(
+        (a) => a !== e.name && !allNames.has(a.toLowerCase()),
+      ),
       equipment: equipmentOf(e),
       mechanic: e.mechanic ?? (rows.length > 2 ? 'compound' : 'isolation'),
       pattern: patternOf(e),
@@ -756,7 +782,7 @@ function main() {
         source: 'https://github.com/yuhonas/free-exercise-db',
         revision,
         license: 'Unlicense (public domain)',
-        importedAt: new Date().toISOString().slice(0, 10),
+        revisionDate,
         excludedCategories: [...EXCLUDED_CATEGORIES],
         ...stats,
       },

@@ -48,6 +48,28 @@ export const strings = {
   placeholder: {
     comingSoon: (feature: string) => `${feature} arrives in a later phase.`,
   },
+  log: {
+    catalogueLoaded: (count: number) => `${count} exercises loaded. Logging arrives in Phase 2.`,
+    searchPlaceholder: 'Search exercises (name or alias)',
+  },
+  settings: {
+    bodyModel: 'Body model',
+    bodyModelHelp: 'Changes which body the map shows. It does not change targets or scoring.',
+    statusList: 'Muscle status (list)',
+    statusListSample: 'Sample data until the engine ships in Phase 3.',
+    about: 'About',
+    attribution:
+      'Exercise catalogue from free-exercise-db (public domain, Unlicense). 3D body: placeholder primitives for the Phase 0 rendering spike; the shipped anatomy will be derived from Z-Anatomy and BodyParts3D (DBCLS), CC BY-SA 4.0, with attribution here.',
+  },
+  boot: {
+    failedTitle: 'Could not start',
+    failedBody: 'Something went wrong while opening your data. Your workouts are still on this device.',
+  },
+  notFound: {
+    title: 'Not found',
+    body: 'This screen does not exist.',
+    goHome: 'Go to the Log tab',
+  },
   common: {
     close: 'Close',
     cancel: 'Cancel',

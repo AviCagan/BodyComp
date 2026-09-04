@@ -152,7 +152,7 @@ export const MuscleMapView = forwardRef<MuscleMapViewHandle, MuscleMapViewProps>
       scratchPointer.set((x / size.width) * 2 - 1, -(y / size.height) * 2 + 1);
       raycaster.setFromCamera(scratchPointer, camera);
       hitsScratch.length = 0;
-      const hits = raycaster.intersectObjects(current.root.children, false, hitsScratch);
+      const hits = raycaster.intersectObjects(current.pickables, false, hitsScratch);
       const hit = hits.find((h) => h.object.visible);
       const name = hit?.object.name ?? null;
       if (!name || name === BODY_BASE_MESH || !isRegionId(name)) {
@@ -188,6 +188,8 @@ export const MuscleMapView = forwardRef<MuscleMapViewHandle, MuscleMapViewProps>
         <SceneErrorBoundary onError={handleError}>
           <Canvas
             frameloop="demand"
+            // No tone mapping: the unlit matcap × status colour must match the legend/badge hex values.
+            flat
             // Fiber's own touch responder is disabled so react-native-gesture-handler owns every touch.
             events={null as unknown as undefined}
             pointerEvents="none"

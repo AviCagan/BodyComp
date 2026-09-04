@@ -139,6 +139,8 @@ export const templateExercises = sqliteTable(
     supersetGroup: integer('superset_group'),
     restTimerSec: integer('rest_timer_sec'),
     notes: text('notes'),
+    ...timestamps,
+    ...softDelete,
   },
   (t) => [index('template_exercises_template_idx').on(t.templateId)],
 );
@@ -155,6 +157,8 @@ export const templateSets = sqliteTable(
     targetWeightKg: real('target_weight_kg'),
     targetReps: integer('target_reps'),
     targetRir: real('target_rir'),
+    ...timestamps,
+    ...softDelete,
   },
   (t) => [index('template_sets_te_idx').on(t.templateExerciseId)],
 );
@@ -166,6 +170,8 @@ export const templateSchedule = sqliteTable('template_schedule', {
     .references(() => templates.id, { onDelete: 'cascade' }),
   /** 0 = Sunday … 6 = Saturday */
   weekday: integer('weekday').notNull(),
+  ...timestamps,
+  ...softDelete,
 });
 
 export const workouts = sqliteTable(
@@ -199,6 +205,8 @@ export const workoutExercises = sqliteTable(
     supersetGroup: integer('superset_group'),
     restTimerSec: integer('rest_timer_sec'),
     notes: text('notes'),
+    ...timestamps,
+    ...softDelete,
   },
   (t) => [
     index('workout_exercises_workout_idx').on(t.workoutId),
@@ -223,6 +231,7 @@ export const sets = sqliteTable(
     /** set when completed */
     performedAt: integer('performed_at'),
     ...timestamps,
+    ...softDelete,
   },
   (t) => [index('sets_we_idx').on(t.workoutExerciseId), index('sets_performed_idx').on(t.performedAt)],
 );
@@ -238,6 +247,7 @@ export const personalRecords = sqliteTable(
     value: real('value').notNull(),
     setId: text('set_id').references(() => sets.id, { onDelete: 'set null' }),
     achievedAt: integer('achieved_at').notNull(),
+    ...timestamps,
   },
   (t) => [index('pr_exercise_idx').on(t.exerciseId)],
 );

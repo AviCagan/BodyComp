@@ -52,27 +52,27 @@
     },
     {
       "id": "biceps",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "brachialis",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "triceps_long",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "triceps_lateral_medial",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "forearm_flexors",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "forearm_extensors_brachioradialis",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "abs",
@@ -92,43 +92,43 @@
     },
     {
       "id": "quads_rf",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "quads_vasti",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "hamstrings_hip_ext",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "hamstrings_bf_short",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "adductors",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "gastrocnemius",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "soleus",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "tibialis",
-      "triangles": 880
+      "triangles": 800
     },
     {
       "id": "neck_flexors",
-      "triangles": 440
+      "triangles": 400
     },
     {
       "id": "neck_extensors",
-      "triangles": 440
+      "triangles": 400
     },
     {
       "id": "hip_flexors",
@@ -136,8 +136,8 @@
     }
   ],
   "bodyBaseTriangles": 6600,
-  "totalTriangles": 33000,
-  "bytes": 697544,
+  "totalTriangles": 31800,
+  "bytes": 690344,
   "source": "generated",
   "sourceRevision": "phase-0",
   "license": "CC0-1.0 (generated primitives)"

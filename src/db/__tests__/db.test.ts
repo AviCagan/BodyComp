@@ -1,21 +1,27 @@
 import { randomUUID } from 'node:crypto';
 import { createTestDb } from '../test-client';
 import { seedExercises, isSeedCurrent } from '../seed';
+import { eq } from 'drizzle-orm';
 import {
   addSet,
   addWorkoutExercise,
   completeSet,
   countExercises,
   createCustomExercise,
+  deleteSet,
   ensureProfile,
   finishWorkout,
   getExerciseMuscles,
   getInProgressWorkout,
   listWorkoutSets,
+  NotFoundError,
   searchExercises,
   startWorkout,
   updateProfile,
+  updateSet,
+  WorkoutInProgressError,
 } from '../repositories';
+import { exercises } from '../schema';
 
 const NOW = Date.UTC(2026, 8, 4, 12, 0, 0);
 
@@ -98,11 +104,11 @@ describe('database', () => {
     const { db } = handle;
     seedExercises(db, NOW);
     const w = startWorkout(db, { id: randomUUID(), name: 'Push' }, NOW);
-    const we = addWorkoutExercise(db, {
-      id: randomUUID(),
-      workoutId: w.id,
-      exerciseId: 'Barbell_Bench_Press_-_Medium_Grip',
-    });
+    const we = addWorkoutExercise(
+      db,
+      { id: randomUUID(), workoutId: w.id, exerciseId: 'Barbell_Bench_Press_-_Medium_Grip' },
+      NOW,
+    );
     const s1 = addSet(db, { id: randomUUID(), workoutExerciseId: we.id, weightKg: 80, reps: 8, rir: 2 }, NOW + 1000);
     addSet(db, { id: randomUUID(), workoutExerciseId: we.id, weightKg: 80, reps: 8, setType: 'warmup' }, NOW + 2000);
     expect(getInProgressWorkout(db)?.id).toBe(w.id);
@@ -112,7 +118,37 @@ describe('database', () => {
     expect(rows[0]!.set.isCompleted).toBe(true);
     expect(rows[0]!.set.performedAt).toBe(NOW + 3000);
     expect(rows[1]!.set.sortOrder).toBe(1);
+    expect(() => startWorkout(db, { id: randomUUID(), name: 'Second' }, NOW + 3500)).toThrow(WorkoutInProgressError);
     finishWorkout(db, w.id, NOW + 4000);
     expect(getInProgressWorkout(db)).toBeUndefined();
+    deleteSet(db, s1.id, NOW + 5000);
+    expect(listWorkoutSets(db, w.id)).toHaveLength(1);
+    expect(() => updateSet(db, 'missing-id', { reps: 5 }, NOW)).toThrow(NotFoundError);
+  });
+
+  it('re-seeding keeps the mappings of a seeded exercise the user turned custom', () => {
+    const { db } = handle;
+    seedExercises(db, NOW);
+    db.update(exercises)
+      .set({ isCustom: true, name: 'My Bench' })
+      .where(eq(exercises.id, 'Barbell_Bench_Press_-_Medium_Grip'))
+      .run();
+    db.delete(exercises).where(eq(exercises.id, 'Incline_Dumbbell_Press')).run();
+    const before = getExerciseMuscles(db, 'Barbell_Bench_Press_-_Medium_Grip');
+    seedExercises(db, NOW + 1, true);
+    expect(getExerciseMuscles(db, 'Barbell_Bench_Press_-_Medium_Grip')).toEqual(before);
+    expect(searchExercises(db, { query: 'My Bench' })).toHaveLength(1);
+    expect(searchExercises(db, { query: 'Incline Dumbbell Press' }).length).toBeGreaterThan(0);
+  });
+
+  it('search treats JSON punctuation and LIKE wildcards literally', () => {
+    const { db } = handle;
+    seedExercises(db, NOW);
+    expect(searchExercises(db, { query: '[', limit: 1000 })).toHaveLength(0);
+    expect(searchExercises(db, { query: '"', limit: 1000 })).toHaveLength(0);
+    expect(searchExercises(db, { query: '%', limit: 1000 })).toHaveLength(0);
+    expect(searchExercises(db, { query: '_', limit: 1000 }).every((e) => /_/.test(e.name + e.aliases.join(' ')))).toBe(
+      true,
+    );
   });
 });

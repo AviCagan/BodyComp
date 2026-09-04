@@ -1,4 +1,4 @@
-import { and, asc, eq, isNull, like, or, sql } from 'drizzle-orm';
+import { and, asc, eq, isNull, or, sql } from 'drizzle-orm';
 import type { GroupId } from '../../engine/taxonomy';
 import { exerciseMuscles, exercises, type Exercise, type ExerciseMuscle } from '../schema';
 import type { Db } from '../types';
@@ -11,15 +11,25 @@ export interface ExerciseFilter {
   limit?: number;
 }
 
+/** Escapes LIKE metacharacters so user input matches literally (paired with ESCAPE '\\'). */
+export function likePattern(input: string): string {
+  return `%${input.trim().replace(/[\\%_]/g, (c) => `\\${c}`)}%`;
+}
+
 /**
- * Name + alias search. Aliases are a JSON array column; a LIKE over the JSON text
- * is good enough for ~900 rows and keeps the query index-free and simple.
+ * Name + alias search. Aliases are a JSON array column, searched per element with
+ * json_each so JSON punctuation in the query can never match the array structure.
  */
 export function searchExercises(db: Db, filter: ExerciseFilter = {}): Exercise[] {
   const conds = [isNull(exercises.deletedAt)];
   if (filter.query && filter.query.trim()) {
-    const q = `%${filter.query.trim().replace(/[%_]/g, '')}%`;
-    conds.push(or(like(exercises.name, q), like(sql`${exercises.aliases}`, q))!);
+    const q = likePattern(filter.query);
+    conds.push(
+      or(
+        sql`${exercises.name} LIKE ${q} ESCAPE '\\'`,
+        sql`EXISTS (SELECT 1 FROM json_each(${exercises.aliases}) WHERE json_each.value LIKE ${q} ESCAPE '\\')`,
+      )!,
+    );
   }
   if (filter.equipment) conds.push(eq(exercises.equipment, filter.equipment));
   if (filter.pattern) conds.push(eq(exercises.pattern, filter.pattern));

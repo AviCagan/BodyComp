@@ -52,8 +52,20 @@ export function isSeedCurrent(db: Db): boolean {
 export function seedExercises(db: Db, now: number, force = false): boolean {
   if (!force && isSeedCurrent(db)) return false;
   const seed = exercisesJson as SeedExercise[];
-  const mappings = mappingsJson as SeedMapping[];
-  const seededIds = seed.map((e) => e.id);
+  const allMappings = mappingsJson as SeedMapping[];
+  const allSeededIds = seed.map((e) => e.id);
+  // A seeded exercise the user turned custom keeps its row AND its mappings.
+  const protectedIds = new Set<string>();
+  for (const ids of chunk(allSeededIds, 500)) {
+    for (const row of db
+      .select({ id: exercises.id })
+      .from(exercises)
+      .where(and(eq(exercises.isCustom, true), inArray(exercises.id, ids)))
+      .all())
+      protectedIds.add(row.id);
+  }
+  const seededIds = allSeededIds.filter((id) => !protectedIds.has(id));
+  const mappings = allMappings.filter((m) => !protectedIds.has(m.exerciseId));
 
   db.transaction((tx) => {
     for (const batch of chunk(seed, 150)) {

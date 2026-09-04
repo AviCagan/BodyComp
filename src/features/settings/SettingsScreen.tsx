@@ -27,7 +27,7 @@ export function SettingsScreen() {
     <ScrollView
       style={{ backgroundColor: colors.background }}
       contentContainerStyle={{ padding: spacing.lg, paddingBottom: spacing.xxl }}>
-      <Text style={[type.label, { color: colors.textMuted }]}>Body model</Text>
+      <Text style={[type.label, { color: colors.textMuted }]}>{strings.settings.bodyModel}</Text>
       <View style={[styles.segment, { borderColor: colors.border, borderRadius: radii.md, marginTop: spacing.sm }]}>
         {(['female', 'male'] as const).map((b) => {
           const active = profile?.bodyModel === b;
@@ -46,12 +46,14 @@ export function SettingsScreen() {
         })}
       </View>
       <Text style={[type.caption, { color: colors.textMuted, marginTop: spacing.xs }]}>
-        Changes which body the map shows. It does not change targets or scoring.
+        {strings.settings.bodyModelHelp}
       </Text>
 
-      <Text style={[type.label, { color: colors.textMuted, marginTop: spacing.xl }]}>Muscle status (list)</Text>
+      <Text style={[type.label, { color: colors.textMuted, marginTop: spacing.xl }]}>
+        {strings.settings.statusList}
+      </Text>
       <Text style={[type.caption, { color: colors.textMuted, marginBottom: spacing.sm }]}>
-        Sample data until the engine ships in Phase 3.
+        {strings.settings.statusListSample}
       </Text>
       {DEFAULT_GROUP_IDS.map((g) => (
         <View key={g} style={[styles.statusRow, { borderBottomColor: colors.border }]}>
@@ -60,11 +62,9 @@ export function SettingsScreen() {
         </View>
       ))}
 
-      <Text style={[type.label, { color: colors.textMuted, marginTop: spacing.xl }]}>About</Text>
+      <Text style={[type.label, { color: colors.textMuted, marginTop: spacing.xl }]}>{strings.settings.about}</Text>
       <Text style={[type.caption, { color: colors.textMuted, marginTop: spacing.xs }]}>
-        Exercise catalogue from free-exercise-db (public domain, Unlicense). 3D body: placeholder primitives for the
-        Phase 0 rendering spike; the shipped anatomy will be derived from Z-Anatomy and BodyParts3D (DBCLS), CC BY-SA
-        4.0, with attribution here.
+        {strings.settings.attribution}
       </Text>
     </ScrollView>
   );

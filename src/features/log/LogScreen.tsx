@@ -3,6 +3,7 @@ import { FlatList, StyleSheet, Text, TextInput, View } from 'react-native';
 import { APP_NAME } from '@/config';
 import { getDb } from '@/db/client';
 import { countExercises, searchExercises } from '@/db/repositories';
+import { strings } from '@/strings';
 import { useTheme } from '@/theme';
 
 /**
@@ -22,12 +23,12 @@ export function LogScreen() {
       <View style={{ padding: spacing.lg }}>
         <Text style={[type.title, { color: colors.text }]}>{APP_NAME}</Text>
         <Text style={[type.caption, { color: colors.textMuted, marginTop: 4 }]}>
-          {total} exercises loaded. Logging arrives in Phase 2.
+          {strings.log.catalogueLoaded(total)}
         </Text>
         <TextInput
           value={query}
           onChangeText={setQuery}
-          placeholder="Search exercises (name or alias)"
+          placeholder={strings.log.searchPlaceholder}
           placeholderTextColor={colors.textMuted}
           autoCorrect={false}
           style={[

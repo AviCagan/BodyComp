@@ -10,7 +10,7 @@ interface SessionState {
   bootError: Error | null;
   profile: Profile | null;
   setBooted: (profile: Profile) => void;
-  setBootError: (error: Error) => void;
+  setBootError: (error: Error | null) => void;
   setProfile: (p: Profile) => void;
   mapMode: MapMode;
   setMapMode: (m: MapMode) => void;

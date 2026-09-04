@@ -63,6 +63,8 @@ CREATE TABLE `personal_records` (
 	`value` real NOT NULL,
 	`set_id` text,
 	`achieved_at` integer NOT NULL,
+	`created_at` integer NOT NULL,
+	`updated_at` integer NOT NULL,
 	FOREIGN KEY (`exercise_id`) REFERENCES `exercises`(`id`) ON UPDATE no action ON DELETE cascade,
 	FOREIGN KEY (`set_id`) REFERENCES `sets`(`id`) ON UPDATE no action ON DELETE set null
 );
@@ -99,6 +101,7 @@ CREATE TABLE `sets` (
 	`performed_at` integer,
 	`created_at` integer NOT NULL,
 	`updated_at` integer NOT NULL,
+	`deleted_at` integer,
 	FOREIGN KEY (`workout_exercise_id`) REFERENCES `workout_exercises`(`id`) ON UPDATE no action ON DELETE cascade
 );
 --> statement-breakpoint
@@ -112,6 +115,9 @@ CREATE TABLE `template_exercises` (
 	`superset_group` integer,
 	`rest_timer_sec` integer,
 	`notes` text,
+	`created_at` integer NOT NULL,
+	`updated_at` integer NOT NULL,
+	`deleted_at` integer,
 	FOREIGN KEY (`template_id`) REFERENCES `templates`(`id`) ON UPDATE no action ON DELETE cascade,
 	FOREIGN KEY (`exercise_id`) REFERENCES `exercises`(`id`) ON UPDATE no action ON DELETE no action
 );
@@ -121,6 +127,9 @@ CREATE TABLE `template_schedule` (
 	`id` text PRIMARY KEY NOT NULL,
 	`template_id` text NOT NULL,
 	`weekday` integer NOT NULL,
+	`created_at` integer NOT NULL,
+	`updated_at` integer NOT NULL,
+	`deleted_at` integer,
 	FOREIGN KEY (`template_id`) REFERENCES `templates`(`id`) ON UPDATE no action ON DELETE cascade
 );
 --> statement-breakpoint
@@ -132,6 +141,9 @@ CREATE TABLE `template_sets` (
 	`target_weight_kg` real,
 	`target_reps` integer,
 	`target_rir` real,
+	`created_at` integer NOT NULL,
+	`updated_at` integer NOT NULL,
+	`deleted_at` integer,
 	FOREIGN KEY (`template_exercise_id`) REFERENCES `template_exercises`(`id`) ON UPDATE no action ON DELETE cascade
 );
 --> statement-breakpoint
@@ -163,6 +175,9 @@ CREATE TABLE `workout_exercises` (
 	`superset_group` integer,
 	`rest_timer_sec` integer,
 	`notes` text,
+	`created_at` integer NOT NULL,
+	`updated_at` integer NOT NULL,
+	`deleted_at` integer,
 	FOREIGN KEY (`workout_id`) REFERENCES `workouts`(`id`) ON UPDATE no action ON DELETE cascade,
 	FOREIGN KEY (`exercise_id`) REFERENCES `exercises`(`id`) ON UPDATE no action ON DELETE no action
 );

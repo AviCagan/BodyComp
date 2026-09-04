@@ -77,12 +77,19 @@ export function BodyScene({
     map.clear();
     for (const region of REGION_IDS) {
       const mesh = loaded.meshes.get(region)!;
-      const material = new THREE.MeshMatcapMaterial({ matcap, color: paintRef.current![region].color.clone() });
+      const p = paintRef.current![region];
+      const material = new THREE.MeshMatcapMaterial({
+        matcap,
+        color: p.color.clone(),
+        opacity: p.opacity,
+        transparent: p.opacity < 0.999,
+        toneMapped: false,
+      });
       mesh.material = material;
-      map.set(region, { material, from: material.color.clone(), fromOpacity: 1 });
+      map.set(region, { material, from: material.color.clone(), fromOpacity: p.opacity });
     }
     const base = loaded.meshes.get(BODY_BASE_MESH)!;
-    base.material = new THREE.MeshMatcapMaterial({ matcap, color: new THREE.Color(neutralHex) });
+    base.material = new THREE.MeshMatcapMaterial({ matcap, color: new THREE.Color(neutralHex), toneMapped: false });
     lerpStart.current = -1;
     invalidate();
     return () => {
@@ -140,11 +147,12 @@ export function BodyScene({
       const t = Math.min(1, elapsed / ANIMATION.pulseMs);
       const pulse = Math.sin(t * Math.PI * 2) * 0.5 + 0.5; // two pulses over the window
       const boost = 1 + 0.25 * pulse * (1 - t);
+      // Applied on top of the lerped colour so the pulse and the 400 ms lerp compose instead of fighting.
       for (const region of pulseRegions) {
         const s = materials.current.get(region);
-        if (!s || lerpStart.current >= 0) continue;
-        const target = paintRef.current![region];
-        s.material.color.copy(target.color).multiplyScalar(boost);
+        if (!s) continue;
+        if (lerpStart.current < 0) s.material.color.copy(paintRef.current![region].color);
+        s.material.color.multiplyScalar(boost);
       }
       if (t < 1) keepGoing = true;
       else pulseStart.current = -1;

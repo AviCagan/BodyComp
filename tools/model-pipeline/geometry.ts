@@ -45,34 +45,42 @@ export function unitSphere(widthSegments = 20, heightSegments = 12): MeshData {
   return m;
 }
 
-/** Capsule along +Y: radius r, straight length `length` (total height = length + 2r), centered at origin. */
+/**
+ * Capsule along +Y: radius r, straight length `length` (total height = length + 2r), centered at
+ * origin. Rings run top pole → top equator → bottom equator → bottom pole with the same
+ * handedness as `unitSphere`, so triangles wind counter-clockwise seen from outside.
+ */
 export function capsule(r: number, length: number, radial = 20, capRings = 6): MeshData {
   const m: MeshData = { positions: [], normals: [], indices: [] };
   const half = length / 2;
   const rings: { y: number; rr: number; ny: number }[] = [];
-  for (let i = 0; i <= capRings; i++) {
+  // top hemisphere: pole (t = π/2) down to the equator (t = 0)
+  for (let i = capRings; i >= 0; i--) {
     const t = (i / capRings) * (Math.PI / 2);
     rings.push({ y: half + Math.sin(t) * r, rr: Math.cos(t) * r, ny: Math.sin(t) });
   }
-  rings.reverse(); // top cap from pole down to equator
-  const top = rings.slice(0, -1);
-  const bottom = rings.map(({ y, rr, ny }) => ({ y: -y, rr, ny: -ny }));
-  const all = [...top, { y: half, rr: r, ny: 0 }, { y: -half, rr: r, ny: 0 }, ...bottom.slice(1)];
-  for (const ring of all) {
+  // bottom hemisphere: equator (t = 0) down to the pole (t = π/2)
+  for (let i = 0; i <= capRings; i++) {
+    const t = (i / capRings) * (Math.PI / 2);
+    rings.push({ y: -half - Math.sin(t) * r, rr: Math.cos(t) * r, ny: -Math.sin(t) });
+  }
+  for (const ring of rings) {
+    const nxz = Math.sqrt(Math.max(0, 1 - ring.ny * ring.ny));
     for (let ix = 0; ix <= radial; ix++) {
       const phi = (ix / radial) * Math.PI * 2;
-      const nx = Math.cos(phi);
-      const nz = Math.sin(phi);
-      const n = normalize([nx * Math.sqrt(1 - ring.ny * ring.ny), ring.ny, nz * Math.sqrt(1 - ring.ny * ring.ny)]);
-      pushVertex(m, [nx * ring.rr, ring.y, nz * ring.rr], n);
+      const cx = -Math.cos(phi);
+      const cz = Math.sin(phi);
+      pushVertex(m, [cx * ring.rr, ring.y, cz * ring.rr], normalize([cx * nxz, ring.ny, cz * nxz]));
     }
   }
   const row = radial + 1;
-  for (let iy = 0; iy < all.length - 1; iy++) {
+  const last = rings.length - 2;
+  for (let iy = 0; iy <= last; iy++) {
     for (let ix = 0; ix < radial; ix++) {
       const a = iy * row + ix;
       const b = a + row;
-      m.indices.push(a, b, a + 1, a + 1, b, b + 1);
+      if (iy !== 0) m.indices.push(a, b, a + 1);
+      if (iy !== last) m.indices.push(a + 1, b, b + 1);
     }
   }
   return m;

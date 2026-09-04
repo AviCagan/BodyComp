@@ -33,7 +33,8 @@ const scratchAccent = new THREE.Color();
 /** Allocate once per region; `computePaint` then writes into these objects. */
 export function createPaintTable(): Record<RegionId, RegionPaint> {
   const table = {} as Record<RegionId, RegionPaint>;
-  for (const r of REGION_IDS) table[r] = { color: new THREE.Color(NEUTRAL.r, NEUTRAL.g, NEUTRAL.b), opacity: 1 };
+  for (const r of REGION_IDS)
+    table[r] = { color: new THREE.Color().setRGB(NEUTRAL.r, NEUTRAL.g, NEUTRAL.b, THREE.SRGBColorSpace), opacity: 1 };
   return table;
 }
 
@@ -60,14 +61,15 @@ export function computePaint(out: Record<RegionId, RegionPaint>, inputs: PaintIn
     const status = mode === 'regions' ? (regionStatuses?.[region] ?? groupStatuses[group]) : groupStatuses[group];
 
     if (optionalOff || !status) {
-      paint.color.setRGB(NEUTRAL.r, NEUTRAL.g, NEUTRAL.b);
+      paint.color.setRGB(NEUTRAL.r, NEUTRAL.g, NEUTRAL.b, THREE.SRGBColorSpace);
       paint.opacity = 1;
     } else {
       let oklch = ratioToOklch(status.ratio);
       if (status.provisional) oklch = desaturate(oklch);
       if (mode === 'regions' && status.underEmphasized) oklch = dimOneStep(oklch);
       const rgb = oklchToSrgb(oklch);
-      paint.color.setRGB(rgb.r, rgb.g, rgb.b);
+      // status-color returns gamma sRGB; three's working space is linear, so declare the source space
+      paint.color.setRGB(rgb.r, rgb.g, rgb.b, THREE.SRGBColorSpace);
       paint.opacity = status.provisional ? 0.6 : 1;
     }
 
