@@ -1,0 +1,144 @@
+{
+  "contractVersion": 1,
+  "body": "male",
+  "kind": "placeholder-primitives",
+  "note": "Phase 0 spike asset. Replaced by the Z-Anatomy-derived model in Phase 1.",
+  "forward": "+z",
+  "stature": 1,
+  "regions": [
+    {
+      "id": "chest_upper",
+      "triangles": 880
+    },
+    {
+      "id": "chest_mid",
+      "triangles": 880
+    },
+    {
+      "id": "chest_lower",
+      "triangles": 880
+    },
+    {
+      "id": "delt_front",
+      "triangles": 880
+    },
+    {
+      "id": "delt_side",
+      "triangles": 880
+    },
+    {
+      "id": "delt_rear",
+      "triangles": 880
+    },
+    {
+      "id": "lats",
+      "triangles": 880
+    },
+    {
+      "id": "traps_mid_lower",
+      "triangles": 440
+    },
+    {
+      "id": "rhomboids",
+      "triangles": 880
+    },
+    {
+      "id": "traps_upper",
+      "triangles": 880
+    },
+    {
+      "id": "erectors",
+      "triangles": 880
+    },
+    {
+      "id": "biceps",
+      "triangles": 880
+    },
+    {
+      "id": "brachialis",
+      "triangles": 880
+    },
+    {
+      "id": "triceps_long",
+      "triangles": 880
+    },
+    {
+      "id": "triceps_lateral_medial",
+      "triangles": 880
+    },
+    {
+      "id": "forearm_flexors",
+      "triangles": 880
+    },
+    {
+      "id": "forearm_extensors_brachioradialis",
+      "triangles": 880
+    },
+    {
+      "id": "abs",
+      "triangles": 440
+    },
+    {
+      "id": "obliques",
+      "triangles": 880
+    },
+    {
+      "id": "glute_max",
+      "triangles": 880
+    },
+    {
+      "id": "glute_med",
+      "triangles": 880
+    },
+    {
+      "id": "quads_rf",
+      "triangles": 880
+    },
+    {
+      "id": "quads_vasti",
+      "triangles": 880
+    },
+    {
+      "id": "hamstrings_hip_ext",
+      "triangles": 880
+    },
+    {
+      "id": "hamstrings_bf_short",
+      "triangles": 880
+    },
+    {
+      "id": "adductors",
+      "triangles": 880
+    },
+    {
+      "id": "gastrocnemius",
+      "triangles": 880
+    },
+    {
+      "id": "soleus",
+      "triangles": 880
+    },
+    {
+      "id": "tibialis",
+      "triangles": 880
+    },
+    {
+      "id": "neck_flexors",
+      "triangles": 440
+    },
+    {
+      "id": "neck_extensors",
+      "triangles": 440
+    },
+    {
+      "id": "hip_flexors",
+      "triangles": 880
+    }
+  ],
+  "bodyBaseTriangles": 5720,
+  "totalTriangles": 32120,
+  "bytes": 679172,
+  "source": "generated",
+  "sourceRevision": "phase-0",
+  "license": "CC0-1.0 (generated primitives)"
+}
