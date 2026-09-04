@@ -8,15 +8,15 @@ _Last rewritten: end of Phase 0 session 1 (2026-09-04). Branch `claude/musclemap
 
 Everything the DoD requires that can be verified without a phone is done and verified here and in GitHub Actions:
 
-| Check                                | Result                                                                                                                          |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| `npm run typecheck`                  | 0 errors (TypeScript 6, strict, `noUncheckedIndexedAccess`)                                                                     |
-| `npm run lint`                       | 0 problems (Expo flat config incl. React Compiler rules)                                                                        |
-| `npm run format:check`               | clean                                                                                                                           |
-| `npm test`                           | 27 tests, 6 suites (engine color · seed validation · DB on the real migrations · paint logic · StatusBadge · asset-stub import) |
-| `npm run models:validate`            | both bodies pass the contract incl. winding/degenerate/name checks (33 meshes, 31.8 k / 30.9 k triangles, 0.67 MB each)         |
-| `npx expo export --platform android` | bundles with exactly one `three` copy; GLBs, migrations and routes included                                                     |
-| Adversarial review                   | 37 findings from 6 reviewers, all addressed (`DECISIONS.md` ADR-0015)                                                           |
+| Check                                | Result                                                                                                                                            |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm run typecheck`                  | 0 errors (TypeScript 6, strict, `noUncheckedIndexedAccess`)                                                                                       |
+| `npm run lint`                       | 0 problems (Expo flat config incl. React Compiler rules)                                                                                          |
+| `npm run format:check`               | clean                                                                                                                                             |
+| `npm test`                           | 27 tests, 6 suites (engine color · seed validation · DB on the real migrations via `node:sqlite` · paint logic · StatusBadge · asset-stub import) |
+| `npm run models:validate`            | both bodies pass the contract incl. winding/degenerate/name checks (33 meshes, 31.8 k / 30.9 k triangles, 0.67 MB each)                           |
+| `npx expo export --platform android` | bundles with exactly one `three` copy; GLBs, migrations and routes included                                                                       |
+| Adversarial review                   | 37 findings from 6 reviewers, all addressed (`DECISIONS.md` ADR-0015)                                                                             |
 
 ## Done
 
@@ -26,8 +26,8 @@ Everything the DoD requires that can be verified without a phone is done and ver
 - DB: Drizzle schema for the whole §4.4 model with `updatedAt`/`deletedAt` on every user-owned table, generated
   migration `0000`, repositories (profile; exercise search over name + aliases via `json_each`, filters, custom
   exercises; workouts/sets with one-in-progress guard, soft delete, recovery on relaunch; muscle status cache),
-  idempotent seed loader that protects seeded exercises the user turned custom, Jest tests on better-sqlite3
-  running the same migrations.
+  idempotent seed loader that protects seeded exercises the user turned custom, Jest tests running the same
+  migrations on Node's built-in `node:sqlite` (no native module, so `npm ci` needs no compiler — ADR-0019).
 - Seed: `tools/seed/import-free-exercise-db.ts` → 739 exercises, 2 358 credit rows, region distributions,
   §4.2 overrides, 79 exercises flagged `needsReview`; Unlicense and upstream revision recorded.
 - Engine foundations: taxonomy (21 groups, 32 regions), status → OKLCH color with tests.
@@ -62,6 +62,8 @@ Everything the DoD requires that can be verified without a phone is done and ver
 
 ## What the humans need to do to close Phase 0
 
+0. **Node version.** Node 22 LTS (what CI and EAS Build use) or Node 24 both work; `package.json` requires
+   > = 22.11. There are no native dependencies, so no Visual Studio or Xcode toolchain is needed.
 1. Confirm the app name (`APP_NAME`, slug `musclemap`) — `docs/PLAN.md` open question 1.
 2. **Fastest check (minutes):** install **Expo Go** (SDK 57) from Google Play on the Pixel, connect it by USB or
    the same Wi-Fi, run `npm ci && npx expo start`, press `a` (or scan the QR). Every Phase 0 module runs in Expo Go.
