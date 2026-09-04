@@ -78,6 +78,16 @@ Everything the DoD requires that can be verified without a phone is done and ver
 5. Report fps and any crash/log in `docs/STATUS.md` (or the PR). If fiber v9 will not run cleanly, the next session
    switches to the WebView fallback behind the same `MuscleMapView` props and writes the ADR.
 
+## Homework that needs no code (do any of this while waiting)
+
+- **`docs/exercise-mapping-review.xlsx`** — the section 9 mapping review, prioritised. 79 flagged rows first,
+  then 60 common lifts, then the long tail. Fill in the Verdict and Correction columns; I regenerate
+  `src/data/exercise-muscles.json` from it in Phase 3.
+- **Release APK** — still outstanding for the Phase 0 DoD; Expo Go cannot reveal a prebuilt-binary crash.
+- **Accounts with lead time** — Expo (free), Google Play ($25, identity verification plus a closed-testing
+  period for new personal accounts), Apple Developer ($99/yr). Needed by the end of Phase 5, slow to obtain.
+- **Video channel allowlist** (Phase 5) and the open questions in `docs/PLAN.md`.
+
 ## Next steps (Phase 1, do not start before the device check passes)
 
 - `tools/model-pipeline/build.py` on the bpy 4.5 wheel (opens Z-Anatomy's `Startup.blend`, Blender 3.5.10, headless
