@@ -60,6 +60,7 @@ export interface MuscleMapViewHandle {
 const EMPTY_GROUPS: readonly GroupId[] = [];
 const scratchPointer = new THREE.Vector2();
 const raycaster = new THREE.Raycaster();
+const hitsScratch: THREE.Intersection[] = [];
 
 export const MuscleMapView = forwardRef<MuscleMapViewHandle, MuscleMapViewProps>(function MuscleMapView(props, ref) {
   const {
@@ -150,7 +151,8 @@ export const MuscleMapView = forwardRef<MuscleMapViewHandle, MuscleMapViewProps>
       const { size, camera } = state;
       scratchPointer.set((x / size.width) * 2 - 1, -(y / size.height) * 2 + 1);
       raycaster.setFromCamera(scratchPointer, camera);
-      const hits = raycaster.intersectObjects(current.root.children, false);
+      hitsScratch.length = 0;
+      const hits = raycaster.intersectObjects(current.root.children, false, hitsScratch);
       const hit = hits.find((h) => h.object.visible);
       const name = hit?.object.name ?? null;
       if (!name || name === BODY_BASE_MESH || !isRegionId(name)) {

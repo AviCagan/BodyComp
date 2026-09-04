@@ -5,15 +5,14 @@ import {
   Easing,
   useAnimatedReaction,
   useSharedValue,
-  withDecay,
   withRepeat,
   withTiming,
 } from 'react-native-reanimated';
 import { scheduleOnRN } from 'react-native-worklets';
-import { CAMERA, GESTURE, SNAP_YAW } from './constants';
+import { CAMERA, GESTURE, SNAP_YAW_DEG } from './constants';
 import type { SnapView } from './types';
 
-/** Camera rig state mirrored to the JS thread; the scene reads it in useFrame. */
+/** Camera rig state mirrored to the JS thread (radians / world units); the scene reads it in useFrame. */
 export interface RigState {
   yaw: number;
   pitch: number;
@@ -29,9 +28,11 @@ export interface UseMapGesturesArgs {
   onTap: (x: number, y: number) => void;
 }
 
-function writeRig(rig: RigState, yaw: number, pitch: number, distance: number, panY: number): RigState {
-  rig.yaw = yaw;
-  rig.pitch = pitch;
+const DEG = Math.PI / 180;
+
+function writeRig(rig: RigState, yawDeg: number, pitchDeg: number, distance: number, panY: number): RigState {
+  rig.yaw = yawDeg * DEG;
+  rig.pitch = pitchDeg * DEG;
   rig.distance = distance;
   rig.panY = panY;
   return rig;
@@ -42,32 +43,41 @@ function clamp(v: number, lo: number, hi: number): number {
   return v < lo ? lo : v > hi ? hi : v;
 }
 
-/** Nearest angle equivalent to `target` from `current` (so snaps rotate the short way). */
+/** Nearest angle (degrees) equivalent to `target` from `current`, so snaps rotate the short way. */
 function nearestTurn(current: number, target: number): number {
   'worklet';
-  const twoPi = Math.PI * 2;
-  let t = target + Math.round((current - target) / twoPi) * twoPi;
-  if (t - current > Math.PI) t -= twoPi;
-  if (current - t > Math.PI) t += twoPi;
+  let t = target + Math.round((current - target) / 360) * 360;
+  if (t - current > 180) t -= 360;
+  if (current - t > 180) t += 360;
   return t;
 }
 
 /**
- * §6.2 interaction spec on the UI thread: one-finger drag rotates (yaw unbounded,
- * pitch ±25°) with friction inertia; pinch zooms within clamps; two-finger drag pans
- * vertically; double-tap resets; tap (< 8 pt, < 250 ms) picks. Shared values are the
- * source of truth; a single animated reaction mirrors them to the JS thread and the
- * scene requests exactly one render per change (frameloop="demand").
+ * Refresh-rate independent inertia: same initial slope as the fling velocity, rests in
+ * exactly `INERTIA_MS`. (Reanimated's withDecay compounds per frame, so its time-to-rest
+ * differs ~35% between 60 Hz and 120 Hz displays, and it stops abruptly below 1 unit/s.)
+ */
+function fling(from: number, velocityPerSec: number, lo?: number, hi?: number) {
+  'worklet';
+  let target = from + (velocityPerSec * GESTURE.inertiaMs) / 3000;
+  if (lo !== undefined && hi !== undefined) target = clamp(target, lo, hi);
+  return withTiming(target, { duration: GESTURE.inertiaMs, easing: Easing.out(Easing.cubic) });
+}
+
+/**
+ * §6.2 interaction spec on the UI thread. Angles are kept in DEGREES inside shared values
+ * (Reanimated animations use unit/s thresholds) and converted to radians when mirrored to JS.
+ * One Pan handles one finger (orbit) and two fingers (vertical pan) via delta updates, so
+ * finger-count transitions are seamless; pinch runs simultaneously; taps race against them so
+ * a tap can never fire mid-drag. A single animated reaction mirrors the rig to the JS thread
+ * and the scene renders exactly once per change (frameloop="demand").
  */
 export function useMapGestures({ enabled, autoRotate, onRigChange, onTap }: UseMapGesturesArgs) {
-  const yaw = useSharedValue(0);
-  const pitch = useSharedValue(0);
+  const yawDeg = useSharedValue(0);
+  const pitchDeg = useSharedValue(0);
   const distance = useSharedValue<number>(CAMERA.distance);
   const panY = useSharedValue(0);
-  const startYaw = useSharedValue(0);
-  const startPitch = useSharedValue(0);
   const startDistance = useSharedValue<number>(CAMERA.distance);
-  const startPanY = useSharedValue(0);
 
   // Preallocated JS-side mirror: no per-frame allocations on the JS thread.
   const rigRef = useRef<RigState>({ yaw: 0, pitch: 0, distance: CAMERA.distance, panY: 0 });
@@ -79,7 +89,7 @@ export function useMapGestures({ enabled, autoRotate, onRigChange, onTap }: UseM
   );
 
   useAnimatedReaction(
-    () => [yaw.get(), pitch.get(), distance.get(), panY.get()] as const,
+    () => [yawDeg.get(), pitchDeg.get(), distance.get(), panY.get()] as const,
     (cur, prev) => {
       if (!prev || cur[0] !== prev[0] || cur[1] !== prev[1] || cur[2] !== prev[2] || cur[3] !== prev[3]) {
         scheduleOnRN(applyRig, cur[0], cur[1], cur[2], cur[3]);
@@ -90,65 +100,65 @@ export function useMapGestures({ enabled, autoRotate, onRigChange, onTap }: UseM
 
   useEffect(() => {
     if (autoRotate) {
-      yaw.set(
+      yawDeg.set(
         withRepeat(
-          withTiming(yaw.get() + Math.PI * 2, {
-            duration: GESTURE.autoRotateSecondsPerTurn * 1000,
-            easing: Easing.linear,
-          }),
+          withTiming(yawDeg.get() + 360, { duration: GESTURE.autoRotateSecondsPerTurn * 1000, easing: Easing.linear }),
           -1,
           false,
         ),
       );
     } else {
-      cancelAnimation(yaw);
+      cancelAnimation(yawDeg);
     }
-  }, [autoRotate, yaw]);
+  }, [autoRotate, yawDeg]);
 
   const snapTo = useCallback(
     (view: SnapView) => {
       const cfg = { duration: GESTURE.snapDurationMs, easing: Easing.out(Easing.cubic) };
-      const target = nearestTurn(yaw.get(), SNAP_YAW[view]);
-      yaw.set(withTiming(target, cfg));
-      pitch.set(withTiming(0, cfg));
+      yawDeg.set(withTiming(nearestTurn(yawDeg.get(), SNAP_YAW_DEG[view]), cfg));
+      pitchDeg.set(withTiming(0, cfg));
     },
-    [yaw, pitch],
+    [yawDeg, pitchDeg],
   );
 
   const resetView = useCallback(() => {
     const cfg = { duration: GESTURE.snapDurationMs, easing: Easing.out(Easing.cubic) };
-    yaw.set(withTiming(nearestTurn(yaw.get(), 0), cfg));
-    pitch.set(withTiming(0, cfg));
+    yawDeg.set(withTiming(nearestTurn(yawDeg.get(), 0), cfg));
+    pitchDeg.set(withTiming(0, cfg));
     distance.set(withTiming(CAMERA.distance, cfg));
     panY.set(withTiming(0, cfg));
-  }, [yaw, pitch, distance, panY]);
+  }, [yawDeg, pitchDeg, distance, panY]);
 
   const gesture = useMemo(() => {
-    const rotate = Gesture.Pan()
+    const pan = Gesture.Pan()
       .enabled(enabled)
-      .maxPointers(1)
+      .minPointers(1)
+      .maxPointers(2)
+      .averageTouches(true)
       .onBegin(() => {
-        cancelAnimation(yaw);
-        cancelAnimation(pitch);
+        // touch-down stops any inertia or snap immediately
+        cancelAnimation(yawDeg);
+        cancelAnimation(pitchDeg);
+        cancelAnimation(distance);
+        cancelAnimation(panY);
       })
-      .onStart(() => {
-        startYaw.set(yaw.get());
-        startPitch.set(pitch.get());
-      })
-      .onUpdate((e) => {
-        yaw.set(startYaw.get() + e.translationX * GESTURE.yawPerPoint);
-        pitch.set(
-          clamp(startPitch.get() + e.translationY * GESTURE.pitchPerPoint, -GESTURE.maxPitch, GESTURE.maxPitch),
-        );
+      .onChange((e) => {
+        if (e.numberOfPointers >= 2) {
+          panY.set(
+            clamp(panY.get() + e.changeY * GESTURE.panPerPoint * distance.get(), CAMERA.minPanY, CAMERA.maxPanY),
+          );
+        } else {
+          yawDeg.set(yawDeg.get() + e.changeX * GESTURE.yawDegPerPoint);
+          pitchDeg.set(
+            clamp(pitchDeg.get() + e.changeY * GESTURE.pitchDegPerPoint, -GESTURE.maxPitchDeg, GESTURE.maxPitchDeg),
+          );
+        }
       })
       .onEnd((e) => {
-        yaw.set(withDecay({ velocity: e.velocityX * GESTURE.yawPerPoint, deceleration: GESTURE.decayDeceleration }));
-        pitch.set(
-          withDecay({
-            velocity: e.velocityY * GESTURE.pitchPerPoint,
-            deceleration: GESTURE.decayDeceleration,
-            clamp: [-GESTURE.maxPitch, GESTURE.maxPitch],
-          }),
+        if (e.numberOfPointers >= 2) return;
+        yawDeg.set(fling(yawDeg.get(), e.velocityX * GESTURE.yawDegPerPoint));
+        pitchDeg.set(
+          fling(pitchDeg.get(), e.velocityY * GESTURE.pitchDegPerPoint, -GESTURE.maxPitchDeg, GESTURE.maxPitchDeg),
         );
       });
 
@@ -159,25 +169,6 @@ export function useMapGestures({ enabled, autoRotate, onRigChange, onTap }: UseM
       })
       .onUpdate((e) => {
         distance.set(clamp(startDistance.get() / Math.max(e.scale, 0.01), CAMERA.minDistance, CAMERA.maxDistance));
-      });
-
-    const pan = Gesture.Pan()
-      .enabled(enabled)
-      .minPointers(2)
-      .maxPointers(2)
-      .averageTouches(true)
-      .onStart(() => {
-        startPanY.set(panY.get());
-      })
-      .onUpdate((e) => {
-        // dragging up moves the camera target up so the user inspects higher regions
-        panY.set(
-          clamp(
-            startPanY.get() + e.translationY * GESTURE.panPerPoint * distance.get(),
-            CAMERA.minPanY,
-            CAMERA.maxPanY,
-          ),
-        );
       });
 
     const tap = Gesture.Tap()
@@ -191,12 +182,16 @@ export function useMapGestures({ enabled, autoRotate, onRigChange, onTap }: UseM
     const doubleTap = Gesture.Tap()
       .enabled(enabled)
       .numberOfTaps(2)
-      .maxDistance(GESTURE.tapMaxDistance)
+      .maxDelay(GESTURE.doubleTapMaxDelayMs)
+      // Android measures the distance from the first tap across the whole sequence.
+      .maxDistance(GESTURE.doubleTapMaxDistance)
       .onEnd((_e, success) => {
         if (success) scheduleOnRN(resetView);
       });
 
-    return Gesture.Simultaneous(rotate, pinch, pan, Gesture.Exclusive(doubleTap, tap));
+    // Race: whichever activates first cancels the others. Pan activates after touch slop,
+    // which fails the taps; a clean tap never moves far enough to activate the pan.
+    return Gesture.Race(Gesture.Exclusive(doubleTap, tap), Gesture.Simultaneous(pan, pinch));
     // shared values are stable; the composition changes with `enabled` and the JS callbacks
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [enabled, onTap, resetView]);

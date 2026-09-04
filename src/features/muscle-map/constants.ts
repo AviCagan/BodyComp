@@ -16,17 +16,19 @@ export const CAMERA = {
 } as const;
 
 export const GESTURE = {
-  /** radians of yaw per point of horizontal drag */
-  yawPerPoint: 0.011,
-  /** radians of pitch per point of vertical drag */
-  pitchPerPoint: 0.008,
-  maxPitch: (25 * Math.PI) / 180,
-  /** withDecay deceleration: ~1.5 s to rest */
-  decayDeceleration: 0.997,
+  /** degrees of yaw per point of horizontal drag (≈ a full turn across 570 pt) */
+  yawDegPerPoint: 0.63,
+  /** degrees of pitch per point of vertical drag */
+  pitchDegPerPoint: 0.45,
+  maxPitchDeg: 25,
+  /** inertia after a fling: time to rest (deterministic, refresh-rate independent) */
+  inertiaMs: 1500,
   /** world units of pan per point of two-finger vertical drag, scaled by distance */
   panPerPoint: 0.0022,
   tapMaxDistance: 8,
   tapMaxDurationMs: 250,
+  doubleTapMaxDelayMs: 250,
+  doubleTapMaxDistance: 24,
   snapDurationMs: 300,
   /** auto-rotate (finish screen): seconds per revolution */
   autoRotateSecondsPerTurn: 12,
@@ -41,4 +43,5 @@ export const ANIMATION = {
   dimFactor: 0.7,
 } as const;
 
-export const SNAP_YAW = { front: 0, back: Math.PI, left: Math.PI / 2, right: -Math.PI / 2 } as const;
+/** Model faces +Z; the camera orbits at yaw 0 on +Z (front). Left = the model's left side (+X). */
+export const SNAP_YAW_DEG = { front: 0, back: 180, left: 90, right: -90 } as const;
