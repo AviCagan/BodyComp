@@ -23,7 +23,7 @@ Deliverables
 
 - Expo SDK 57 app, `expo-router` tabs (Log · History · Map · Progress · Settings), theme tokens (light/dark), `APP_NAME` constant.
 - TypeScript `strict`, ESLint (flat config) + Prettier, Jest (`jest-expo` for components, a plain `node` project for the engine), GitHub Actions (typecheck · lint · format · tests · GLB validation) green.
-- DB: `expo-sqlite` + Drizzle, versioned migrations applied at boot, repository layer in `src/db`, repositories unit-tested on `better-sqlite3` against the same migrations.
+- DB: `expo-sqlite` + Drizzle, versioned migrations applied at boot, repository layer in `src/db`, repositories unit-tested on Node's built-in `node:sqlite` against the same migrations.
 - Seed import: `tools/seed/import-free-exercise-db.ts` → `src/data/exercises.json` + `src/data/exercise-muscles.json` (§4.1 taxonomy, §4.2 weights, region distributions, §4.2 table as explicit overrides), validation test, idempotent loader on first launch.
 - 3D spike: `tools/model-pipeline/generate-placeholder.ts` writes a contract-shaped primitives body (≥ 30 named meshes = all 32 region ids + `body_base`) for both `body-female.glb` and `body-male.glb`; `tools/model-pipeline/validate.ts` runs in CI; `MuscleMapView` (fiber v9 native on `expo-gl`) with drag-rotate + inertia, pinch zoom, two-finger pan, double-tap reset, tap-to-select with highlight, `frameloop="demand"`, status→color mapping, GL-failure fallback; rendered in the Map tab.
 - `docs/PLAN.md`, `CLAUDE.md`, `docs/DECISIONS.md`, `docs/STATUS.md`.
@@ -91,7 +91,7 @@ src/
   db/
     schema.ts                 Drizzle tables (§4.4)
     client.ts                 expo-sqlite client + useMigrations gate
-    test-client.ts            better-sqlite3 client for Jest (same migrations)
+    test-client.ts            node:sqlite client for Jest (same migrations, no native dep)
     migrations/               drizzle-kit output (generated, committed)
     repositories/             one module per aggregate; DI'd db handle
     seed.ts                   idempotent loader for src/data/*.json
@@ -124,7 +124,7 @@ docs/
 
 - **Rendering:** `@react-three/fiber@9.x` `/native` entry on `expo-gl`, `three` pinned, GLB parsed with `three-stdlib`'s `GLTFLoader.parse()` from bytes read via `expo-file-system` (not `fetch(file://)`), scene graph built once, status updates mutate material colors only. Gestures on the UI thread (RNGH + Reanimated worklets); a tiny JS-side bridge calls `invalidate()` while an animation is live so `frameloop="demand"` still renders inertia and snaps.
 - **Engine ↔ UI:** the engine is a library of pure functions; the app calls it after each set save inside a background task and writes `muscle_status_cache`; screens read the cache.
-- **DB:** Drizzle schema is the single source of truth; migrations are generated and committed; tests run the real migrations on `better-sqlite3`.
+- **DB:** Drizzle schema is the single source of truth; migrations are generated and committed; tests run the real migrations on Node's built-in `node:sqlite`, so a checkout needs no compiler.
 - **Weights** are stored in kilograms; `units` only affects display and entry.
 - **Copy:** every string in `src/strings.ts`; tone rules from §2 enforced by review, not code.
 

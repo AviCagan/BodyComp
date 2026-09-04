@@ -97,7 +97,8 @@ prebuilt binaries for Linux and Windows on Node 22, no toolchain needed. Convent
 columns are typed `text` in json mode, user-owned tables carry `updatedAt`/`deletedAt` now so Phase 6 sync needs
 no migration. `PRAGMA journal_mode = WAL` and `foreign_keys = ON` are set on open (expo-sqlite does not).
 Seeding is idempotent (revision recorded in `app_meta`), chunked, transactional, and never overwrites a row the
-user turned into a custom exercise.
+user turned into a custom exercise. (The test driver later moved from `better-sqlite3` to `node:sqlite` — see
+ADR-0019; everything else in this ADR still holds.)
 
 ## ADR-0010 — Jest as two projects; RNTL 14 renders asynchronously
 
@@ -187,3 +188,25 @@ an unpublished preprint — whether a shipped constant may cite a preprint is an
 (`PLAN.md`); Lasevicius 2018 is about very light loads, not low reps, and must not be cited for `repFactor`;
 Bosquet 2013 measured strength, not size, so the "a red muscle has not shrunk" copy leans on Ogasawara 2011/2013,
 Hwang 2017 and Bickel 2011. None of this changes a constant.
+
+## ADR-0019 — Test database is Node's built-in `node:sqlite`, not `better-sqlite3`
+
+`better-sqlite3` was the Jest database (ADR-0009). It is a native module, and although it ships N-API prebuilt
+binaries for every platform we target, npm can still decide to rebuild it from source — a fresh Node major with
+no matching prebuild, a cold cache, a locked file on Windows. When that happens `npm ci` fails inside
+`node-gyp` and needs Visual Studio's "Desktop development with C++" workload plus a Windows SDK. That is what
+happened on the product owner's machine (Node 24, no Windows SDK): the install aborted, so `expo` was never
+installed either, and a dependency that only the tests use blocked running the app entirely.
+
+Node 22.5+ ships `node:sqlite`, whose `DatabaseSync`/`StatementSync` are synchronous and cover everything
+drizzle's sync SQLite driver calls: `prepare`, `run`, `all`, `get`, array rows (`setReturnArrays`, matching
+better-sqlite3's sticky `.raw()`), and `exec`. `src/db/node-sqlite-adapter.ts` presents that as the
+better-sqlite3 driver surface — including a `transaction()` with the `deferred`/`immediate`/`exclusive`
+variants drizzle indexes into — and Jest maps the bare `better-sqlite3` specifier to it, because
+`drizzle-orm/better-sqlite3` requires that module at load time even when handed a live client. The
+repositories, the schema and the generated migrations are untouched; the same migrations still run in tests.
+
+Result: no native dependency anywhere in the tree, no compiler on any machine or CI runner, and `npm ci`
+verified clean. The only cost is an ExperimentalWarning from Node, filtered in `test/setup.node.ts`. If
+`node:sqlite` ever proves insufficient, `better-sqlite3` can come back as an _optional_ dependency so a failed
+build never blocks the app again.

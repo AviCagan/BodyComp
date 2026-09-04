@@ -39,12 +39,10 @@
     "@gltf-transform/functions": "^4.5.0",
     "@react-native/jest-preset": "^0.86.3",
     "@testing-library/react-native": "^14.0.1",
-    "@types/better-sqlite3": "^9.6.0",
     "@types/jest": "^29.5.14",
     "@types/react": "~19.2.2",
     "@types/three": "^0.185.4",
     "babel-plugin-inline-import": "^3.0.0",
-    "better-sqlite3": "^13.0.3",
     "drizzle-kit": "^0.31.10",
     "eslint": "^9.39.5",
     "eslint-config-expo": "~57.0.2",
@@ -72,5 +70,8 @@
     "models:validate": "tsx tools/model-pipeline/validate.ts assets/models",
     "check": "npm run typecheck && npm run lint && npm run format:check && npm test && npm run models:validate"
   },
-  "private": true
+  "private": true,
+  "engines": {
+    "node": ">=22.11.0"
+  }
 }

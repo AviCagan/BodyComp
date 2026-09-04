@@ -11,8 +11,15 @@ module.exports = {
       displayName: 'node',
       testEnvironment: 'node',
       testMatch: ['<rootDir>/src/(engine|data|db|lib)/**/*.test.ts', '<rootDir>/tools/**/*.test.ts'],
+      setupFiles: ['<rootDir>/test/setup.node.ts'],
       transform: nodeTransform,
-      moduleNameMapper: { '^@/(.*)$': '<rootDir>/src/$1', '^expo-crypto$': '<rootDir>/test/mocks/expo-crypto.ts' },
+      moduleNameMapper: {
+        '^@/(.*)$': '<rootDir>/src/$1',
+        '^expo-crypto$': '<rootDir>/test/mocks/expo-crypto.ts',
+        // drizzle's sync SQLite driver requires this specifier at module load; we serve it
+        // from Node's built-in sqlite so there is no native module to compile.
+        '^better-sqlite3$': '<rootDir>/src/db/node-sqlite-adapter.ts',
+      },
     },
     {
       displayName: 'app',
