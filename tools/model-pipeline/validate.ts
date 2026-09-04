@@ -164,6 +164,9 @@ function inspect(doc: Document, body: string, bytes: number): Report {
     if (c > 1) problems.push(`duplicate mesh: ${id} ×${c}`);
   }
   for (const n of seen.keys()) if (!expected.has(n)) problems.push(`unmapped mesh: ${n}`);
+  // three's GLTFLoader sanitizes node names (whitespace → '_', strips [ ] . : /). Ids must survive that untouched.
+  for (const n of names)
+    if (!/^[a-z0-9_]+$/.test(n)) problems.push(`mesh name "${n}" is not a GLTFLoader-safe snake_case id`);
 
   if (triangles > MODEL_BUDGET.maxTriangles)
     problems.push(`triangles ${triangles} > budget ${MODEL_BUDGET.maxTriangles}`);

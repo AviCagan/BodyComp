@@ -136,3 +136,54 @@ misbehaves — the WebView fallback in the brief is the escape hatch.
 in CI; Prettier runs separately (`printWidth` 120, single quotes). `react/no-unknown-property` ignores
 `object`, `attach`, `args` for react-three-fiber elements. `no-non-null-assertion` is off (engine/tools assert
 after explicit checks).
+
+## ADR-0015 — Adversarial review before hand-off; what it changed
+
+Before hand-off the Phase 0 code went through a six-reviewer adversarial pass (scene, gestures, DB, seed rules,
+model tools, app shell) with two independent refuters per blocker/major finding. Confirmed defects and the
+fixes now in the tree: capsule triangles were wound inward and the bottom cap ring order was reversed (regenerated;
+the validator now rejects inside-out, degenerate, non-indexed or textured geometry and checks the manifest per
+region); status colours were written as gamma sRGB into three's linear working space and passed through ACES
+tone mapping (now `setRGB(…, SRGBColorSpace)` and `flat`); materials rebuilt on a body swap ignored provisional
+opacity; the module-level body cache handed one scene graph to every mount (now a template + per-mount clone);
+the two-finger release fell through to an orbit fling and horizontal drag moved against the finger; several
+seed-rule regexes matched the wrong exercises (front raises, "Machine" rows, palms-down wrist curls, push-up
+incline/decline, squat hamstring/calf credit, abductor distributions, pattern classification, junk aliases);
+the tombstone convention was not applied to every user-owned table; alias search LIKE'd raw JSON; `startWorkout`
+allowed two open workouts; update helpers returned `undefined` typed as rows; the `app` Jest project could not
+import modules that reference `.glb` files and silently skipped `.test.ts` files outside three folders. Lesson
+kept as process: run the review workflow at the end of every phase, and make the CI validator strict enough to
+catch geometry defects rather than only counting meshes.
+
+## ADR-0016 — Asset naming: GLTFLoader-safe ids, lowercase snake_case file names
+
+three's `GLTFLoader` sanitizes node names (`PropertyBinding.sanitizeNodeName`: whitespace → `_`, strips
+`[ ] . : /`, de-duplicates with `_1`). Region ids are therefore restricted to `^[a-z0-9_]+$` and the validator
+enforces it, so `mesh.name` at runtime equals the region id. Android release builds address bundled assets by a
+derived resource identifier (lowercased, punctuation stripped), so asset file names stay lowercase snake_case
+with unique basenames (`body-female.glb` → `models_bodyfemale`). The Phase 1 Blender export must key regions on
+node names (Blender writes the shared datablock name to the glTF _mesh_ and the object name to the _node_) and
+emit pre-sanitized ids rather than `.l/.r` suffixes.
+
+## ADR-0017 — First-device path: Expo Go first, then a release APK; `buildFromSource` as the expo-gl fallback
+
+Every Phase 0 native module (expo-gl, expo-asset, expo-file-system, expo-sqlite, expo-crypto, RNGH, Reanimated)
+ships in Expo Go, and Expo Go for SDK 57 is on Google Play, so the JS stack can be smoke-tested on the Pixel with
+`npx expo start` in minutes, before any build. The one failure class that Expo Go cannot reveal is a prebuilt
+native binary mismatch: expo-gl is delivered as a precompiled AAR (the mechanism behind the expo-gl 16.0.9
+release-only SIGSEGV), so a release/preview APK is the second required check. If that crashes in expo-gl, the
+documented escape hatch is `"expo": {"autolinking": {"android": {"buildFromSource": ["expo-gl"]}}}` in
+`package.json` and a local `npx expo run:android --variant release`. There is no New-Architecture opt-out on
+SDK 55+. The expo-asset config plugin that `expo install` added is a no-op without an `assets` list and is not
+required for Metro `require()`d models.
+
+## ADR-0018 — Citation conventions for the engine constants (for Phase 3)
+
+`docs/research/science-citations.md` holds the verified references. Conventions: cite the journal issue year
+(Maeo et al. is 2023, not the 2022 e-pub year); cite Pelland et al. Sports Med 2026;56(2):481-505 (the
+published form of the 2024 SportRxiv preprint) for weekly volume and the 0.5 fractional weighting of indirect
+sets; note that the per-session diminishing-returns rule (`sessionFactor`) traces to Remmert et al. 2025, still
+an unpublished preprint — whether a shipped constant may cite a preprint is an open question for the humans
+(`PLAN.md`); Lasevicius 2018 is about very light loads, not low reps, and must not be cited for `repFactor`;
+Bosquet 2013 measured strength, not size, so the "a red muscle has not shrunk" copy leans on Ogasawara 2011/2013,
+Hwang 2017 and Bickel 2011. None of this changes a constant.

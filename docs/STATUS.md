@@ -4,36 +4,42 @@ _Last rewritten: end of Phase 0 session 1 (2026-09-04). Branch `claude/musclemap
 
 ## Where we are
 
-**Phase 0 — Scaffold + 3D spike: implemented and green in CI; awaiting the on-device check.**
+**Phase 0 — Scaffold + 3D spike: implemented, reviewed, and green in CI; awaiting the on-device check.**
 
-Everything the DoD requires that can be verified without a phone is done and verified here:
+Everything the DoD requires that can be verified without a phone is done and verified here and in GitHub Actions:
 
-| Check                                | Result                                                                                              |
-| ------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| `npm run typecheck`                  | 0 errors (TS 6, strict)                                                                             |
-| `npm run lint`                       | 0 problems                                                                                          |
-| `npm run format:check`               | clean                                                                                               |
-| `npm test`                           | 24 tests, 5 suites (engine color, seed validation, DB on real migrations, paint logic, StatusBadge) |
-| `npm run models:validate`            | both bodies pass the asset contract (33 meshes, 33 k / 32 k triangles, 0.7 MB each)                 |
-| `npx expo export --platform android` | bundles; exactly one `three` copy; GLBs, migrations and routes included                             |
+| Check                                | Result                                                                                                                          |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| `npm run typecheck`                  | 0 errors (TypeScript 6, strict, `noUncheckedIndexedAccess`)                                                                     |
+| `npm run lint`                       | 0 problems (Expo flat config incl. React Compiler rules)                                                                        |
+| `npm run format:check`               | clean                                                                                                                           |
+| `npm test`                           | 27 tests, 6 suites (engine color · seed validation · DB on the real migrations · paint logic · StatusBadge · asset-stub import) |
+| `npm run models:validate`            | both bodies pass the contract incl. winding/degenerate/name checks (33 meshes, 31.8 k / 30.9 k triangles, 0.67 MB each)         |
+| `npx expo export --platform android` | bundles with exactly one `three` copy; GLBs, migrations and routes included                                                     |
+| Adversarial review                   | 37 findings from 6 reviewers, all addressed (`DECISIONS.md` ADR-0015)                                                           |
 
 ## Done
 
 - Expo SDK 57 app, `expo-router` tabs **Log · History · Map · Progress · Settings**, light/dark theme tokens,
-  `APP_NAME` constant, strings file, boot gate (migrations → seed → profile → preload models).
-- DB: Drizzle schema for the whole §4.4 model, generated migration `0000`, repositories (profile, exercises
-  search/filter/custom, workouts/sets with recovery of the in-progress workout, muscle status cache), idempotent
-  seed loader, Jest tests on better-sqlite3 running the same migrations.
-- Seed: `tools/seed/import-free-exercise-db.ts` → 739 exercises, 2 518 credit rows, region distributions,
-  §4.2 overrides, 79 exercises flagged `needsReview`; license (Unlicense) and revision recorded.
+  `APP_NAME` constant, all copy in `src/strings.ts`, boot gate (migrations → seed → profile → preload models) with
+  an error screen and retry.
+- DB: Drizzle schema for the whole §4.4 model with `updatedAt`/`deletedAt` on every user-owned table, generated
+  migration `0000`, repositories (profile; exercise search over name + aliases via `json_each`, filters, custom
+  exercises; workouts/sets with one-in-progress guard, soft delete, recovery on relaunch; muscle status cache),
+  idempotent seed loader that protects seeded exercises the user turned custom, Jest tests on better-sqlite3
+  running the same migrations.
+- Seed: `tools/seed/import-free-exercise-db.ts` → 739 exercises, 2 358 credit rows, region distributions,
+  §4.2 overrides, 79 exercises flagged `needsReview`; Unlicense and upstream revision recorded.
 - Engine foundations: taxonomy (21 groups, 32 regions), status → OKLCH color with tests.
-- 3D spike: `MuscleMapView` (fiber v9 native on expo-gl) with frozen props; drag-rotate with inertia, pinch
-  zoom, two-finger pan, double-tap reset, snap buttons, tap-to-select with pulse + dimming, `frameloop="demand"`,
-  400 ms color lerps, provisional/optional-group rendering, GL-failure fallback; mock statuses; body switch that
-  keeps camera and selection; procedural MatCap.
-- Tools: placeholder body generator (both bodies, contract-compliant), CI validator, GitHub Actions workflow,
-  `eas.json`, `.nvmrc`.
-- Docs: `PLAN.md`, `DECISIONS.md` (14 ADRs), `CLAUDE.md`, this file.
+- 3D spike: `MuscleMapView` (fiber v9 native on expo-gl) with frozen props; drag-rotate with deterministic 1.5 s
+  inertia, pinch zoom, two-finger pan, double-tap reset, snap buttons, tap-to-select with pulse + dimming,
+  `frameloop="demand"`, 400 ms color lerps, provisional/optional-group rendering, per-mount scene clone, GL-failure
+  fallback; mock statuses; body switch that keeps camera and selection; procedural MatCap; sRGB-correct, no tone
+  mapping.
+- Tools: placeholder body generator (both bodies, contract-compliant, outward-wound), strict CI validator, GitHub
+  Actions workflow (green on this branch), `eas.json`, `.nvmrc`.
+- Docs: `PLAN.md`, `DECISIONS.md` (18 ADRs), `CLAUDE.md`, `docs/research/` (stack research, verified science
+  citations for Phase 3, Z-Anatomy/bpy findings for Phase 1), this file.
 
 ## Stubbed / placeholder
 
@@ -45,31 +51,36 @@ Everything the DoD requires that can be verified without a phone is done and ver
 ## Known gaps / risks
 
 - **Not yet run on a physical device.** The DoD item "60 fps on the Pixel" and the device behaviour of expo-gl +
-  fiber under the mandatory New Architecture are unverified. The WebView fallback is documented but not built.
-- `react-native-worklets` `scheduleOnRN` bridge and RNGH tap coordinates were verified from sources, not on a
-  device; if taps land offset, check that the GestureDetector view exactly wraps the Canvas.
-- No Maestro flows yet (Phase 2).
-- The `app` Jest project mocks `expo-sqlite`; screens that touch the DB are not component-tested yet.
+  fiber under the mandatory New Architecture are unverified. Research found no SDK 56/57 reports of failure and
+  Expo's own emulator CI exercises expo-gl on RN 0.86, but nobody has published a Pixel data point.
+- expo-gl ships as a prebuilt Android binary; the one historical release-only crash came from exactly that.
+  A release/preview APK must be tried once (see below).
+- The gesture bridge (`scheduleOnRN` → `invalidate()`), RNGH tap coordinates, and the Expo Go ↔ dev-client
+  behaviour were verified from library sources, not on a device.
+- No Maestro flows yet (Phase 2). The `app` Jest project mocks `expo-sqlite`; screens that touch the DB are not
+  component-tested yet.
 
 ## What the humans need to do to close Phase 0
 
-1. Confirm the app name (`APP_NAME`, slug `musclemap`) — see `docs/PLAN.md` open questions.
-2. Build and install on the Pixel, either
-   - **EAS:** `npm i -g eas-cli && eas login && eas build --profile development --platform android`
-     (free plan; expect a queue), install the APK, then `npx expo start --dev-client`; or
-   - **Local (Windows):** Android Studio + JDK 17 + SDK Platform 36, `ANDROID_HOME` set, USB debugging on,
-     then `npx expo run:android`.
-3. On the Map tab: rotate (inertia), pinch, two-finger pan, double-tap, tap regions (sheet opens, others dim),
-   switch Female/Male (camera + selection persist), Groups/Regions toggle. Enable the perf monitor (dev menu)
-   and note fps while rotating. Also try a **release** APK (`eas build --profile preview`) once — historical
-   expo-gl crashes only showed in release builds.
-4. Report fps and any crash/log here; if fiber v9 will not run cleanly, the next session switches to the
-   WebView fallback behind the same `MuscleMapView` props and writes the ADR.
+1. Confirm the app name (`APP_NAME`, slug `musclemap`) — `docs/PLAN.md` open question 1.
+2. **Fastest check (minutes):** install **Expo Go** (SDK 57) from Google Play on the Pixel, connect it by USB or
+   the same Wi-Fi, run `npm ci && npx expo start`, press `a` (or scan the QR). Every Phase 0 module runs in Expo Go.
+3. On the Map tab: rotate (inertia stops in ~1.5 s), pinch, two-finger pan, double-tap, tap regions (sheet opens,
+   others dim, the tapped one pulses), switch Female/Male (camera + selection persist), Groups/Regions toggle,
+   snap buttons. Open the dev menu → Performance monitor and note the UI/JS fps while rotating.
+   Also check the Log tab lists 739 exercises and search finds "OHP" and "RDL".
+4. **Release APK (required once):** either `eas build --profile preview --platform android` (free plan; expect a
+   queue) or, with Android Studio + JDK 17 + SDK Platform 36 installed, `npx expo run:android --variant release`.
+   Install it, open the Map tab, and keep `adb logcat` open. If it crashes inside expo-gl, add
+   `"expo": {"autolinking": {"android": {"buildFromSource": ["expo-gl"]}}}` to `package.json` and rebuild locally.
+5. Report fps and any crash/log in `docs/STATUS.md` (or the PR). If fiber v9 will not run cleanly, the next session
+   switches to the WebView fallback behind the same `MuscleMapView` props and writes the ADR.
 
 ## Next steps (Phase 1, do not start before the device check passes)
 
-- `tools/model-pipeline/build.py` on the bpy wheel: Z-Anatomy → `body-male.glb`; Path A morph →
-  `body-female.glb`; `region-objects-male.json`, `female-morph.json`; snapshot renders in `docs/models/`;
-  `LICENSE-model.md`; About attribution.
+- `tools/model-pipeline/build.py` on the bpy 4.5 wheel (opens Z-Anatomy's `Startup.blend`, Blender 3.5.10, headless
+  in ~7 s): 677 named leaf muscles with `.l/.r` suffixes → `region-objects-male.json` → `body-male.glb`; Path A
+  morph → `body-female.glb`; key regions on glTF node names; snapshot renders in `docs/models/`;
+  `LICENSE-model.md` with both required attribution lines; About attribution.
 - Full §6.2 Map chrome: legend, "What to train today" chip, bottom sheet shell, MatCap PNG.
 - Screen recordings on the Pixel for each body.
