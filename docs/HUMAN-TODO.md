@@ -106,34 +106,13 @@ Done when: everything on the Map works the same as it did in Expo Go.
 
 If the app crashes or the Map tab is blank: take a screenshot, write down exactly when it happened (on open, on the Map tab, on tap), and send that to me. Do not try to fix it.
 
-### Step 5. Fill in the mapping spreadsheet (1 to 3 hours, spread over a few days)
+### Step 5. Mapping spreadsheet: no longer your job
 
-The file is `C:\Users\Avi\BodyComp\docs\exercise-mapping-review.xlsx`. Open it in Excel.
-
-1. Read the **How to review** tab once.
-2. Go to the **Review** tab. Rows are sorted so Priority 1 (79 rows) and Priority 2 (60 rows) come first. Do those. Skip Priority 3 and 4 unless you feel like it.
-3. For each row, read the exercise name and the **Current mapping** column. The notation:
-
-```
-chest 1  [chest_upper 25 / chest_mid 50 / chest_lower 25]
-delt_front 0.5
-triceps 0.5  [triceps_long 30 / triceps_lateral_medial 70]
-```
-
-means: chest is the main muscle (weight 1), with 25% of that credit going to upper chest, 50% mid, 25% lower. Front delts and triceps get half credit (0.5) because they help but are not the target. Region percentages always add to 100.
-
-4. In the yellow **Verdict** column pick `OK`, `FIX` or `UNSURE` from the dropdown.
-5. If `FIX`, write what it should be in the yellow **Correction** column. Plain English is fine: "should credit rear delts, not side delts" or "add upper_back 0.5". The **Valid ids** tab lists the exact muscle names if you want to use them.
-6. Do not sort, delete or add rows. Save normally (keep it as .xlsx).
-
-Done when: every Priority 1 and Priority 2 row has a Verdict. Then send it back: either attach the file in this chat, or in PowerShell:
-
-```powershell
-cd ~\BodyComp
-git add docs/exercise-mapping-review.xlsx
-git commit -m "docs: mapping review"
-git push
-```
+You asked for the exercise-to-muscle table to be grounded in the research literature rather than reviewed by
+hand, so that is now Claude's job (ADR-0023). The spreadsheet stays in `docs/` as a way to spot-check the
+result later; you do not need to fill it in. When the evidence pass lands you will get a short list of places
+where the literature disagrees with the brief's own example rows, and those are the only decisions that come
+back to you.
 
 ### Step 6. Decide where the 3D bodies come from (30 minutes of looking, then one word)
 
@@ -207,7 +186,6 @@ Reply with the YouTube channels you trust for exercise technique. The brief sugg
 One message with these lines, whenever each is ready:
 
 - `release APK: works` or `release APK: crashed` plus screenshot and description
-- `mapping: done` (or attach the file)
 - `bodies: A` or `bodies: B` plus link
 - `nutrition: yes` or `nutrition: no`
 - `channels: ...`

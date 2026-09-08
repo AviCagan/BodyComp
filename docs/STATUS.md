@@ -80,9 +80,8 @@ Everything the DoD requires that can be verified without a phone is done and ver
 
 ## Homework that needs no code (do any of this while waiting)
 
-- **`docs/exercise-mapping-review.xlsx`** — the section 9 mapping review, prioritised. 79 flagged rows first,
-  then 60 common lifts, then the long tail. Fill in the Verdict and Correction columns; I regenerate
-  `src/data/exercise-muscles.json` from it in Phase 3.
+- ~~Mapping spreadsheet~~ — redirected on 2026-09-08: the table is being derived from the literature
+  (ADR-0023); the owner only spot-checks and rules on conflicts with the brief's anchor rows.
 - **Release APK** — still outstanding for the Phase 0 DoD; Expo Go cannot reveal a prebuilt-binary crash.
 - **Accounts with lead time** — Expo (free), Google Play ($25, identity verification plus a closed-testing
   period for new personal accounts), Apple Developer ($99/yr). Needed by the end of Phase 5, slow to obtain.

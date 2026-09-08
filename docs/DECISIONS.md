@@ -247,3 +247,19 @@ database, and the only option without a key or a bill is Open Food Facts (free, 
 for US products) with a local cache so scanning works offline afterwards; the export format and the DB schema
 grow three tables (`food_items`, `food_log_entries`, `nutrition_targets`). The same rules apply as elsewhere:
 offline-first, no third-party analytics SDKs, deterministic numbers, and copy that never moralizes about food.
+
+## ADR-0023 — The exercise → muscle table is derived from the literature, not from human review
+
+Brief §9 assigned the review of the full mapping table to the humans in Phase 3. On 2026-09-08 the product owner
+redirected it: the mappings are to be grounded in PubMed and other primary sources by Claude, and the humans only
+spot-check. Method: the 739 exercises are grouped into 11 movement areas and, inside those, into movement
+families (incline press, hip hinge, seated leg curl, …); one researcher per area searches PubMed and primary
+sources and proposes a per-family mapping with cited evidence graded by tier (longitudinal hypertrophy > EMG /
+MRI > anatomical reasoning > practitioner consensus), plus per-exercise overrides where grip, angle, implement or
+unilateral loading changes the emphasis; an independent verifier per area checks that every citation exists and
+supports its claim, that the §4.2 weight rules hold, and that exercises sit in the right family. The eleven
+anchor rows given verbatim in brief §4.2 are never changed; where evidence disagrees with them the conflict is
+recorded and raised with the owner (rule 6 of the brief). Output: `docs/research/exercise-muscle-evidence.md`
+(the cited evidence per family) and a data-driven family table that replaces most of the name-matching rules in
+`tools/seed/import-free-exercise-db.ts`, so a future correction is a data edit with a citation rather than a
+regex. `needsReview` then means "no evidence-backed family covers this exercise" instead of "the rule guessed".
