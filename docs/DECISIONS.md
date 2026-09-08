@@ -228,8 +228,10 @@ New direction: a **simplified, stylized, faceless** body that keeps the per-regi
 meshes and the asset contract are unchanged), and **two distinct sculpts** for female and male that share the same
 region set and framing. Consequences: the Z-Anatomy pipeline is demoted from source to _reference for region
 boundaries_, which also removes the CC BY-SA share-alike obligation on shipped model files; the new default source
-to evaluate first is a CC0 base body with separate female and male meshes (MakeHuman's base meshes are the
-candidate — verify the licence of the base mesh itself, not only of exported characters, before adopting; the owner chose this option on 2026-09-08),
+to evaluate first was a CC0 base body with separate female and male meshes; the owner chose this option on
+2026-09-08 and the source is the Blender Studio Human Base Meshes bundle (CC0; complete female and male figures,
+stylized and realistic variants, `.blend`, Blender 3.2+; confirmed via the bundle's public announcements, to be
+re-checked against the licence file inside the download),
 segmented into regions in Blender via vertex groups by the existing pipeline; a purchased matched stylized pair
 remains the paid alternative. The engine, the asset contract, `validate.ts` and `MuscleMapView` need no change.
 Everything else in §6.2 (interaction, budgets, MatCap look, neutral `body_base`) still applies.

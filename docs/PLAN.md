@@ -59,8 +59,11 @@ Escape hatch: if pinned fiber v9 native will not run cleanly on SDK 57 on the de
 
 ### Phase 1 — Body models + Map screen (amended by ADR-0021)
 
-- Source decision first: evaluate a CC0 base body with separate female and male meshes (MakeHuman base meshes;
-  verify the base-mesh licence) against a purchased matched stylized pair; pick one, log the ADR.
+- Source (owner chose option A on 2026-09-08): the **Blender Studio Human Base Meshes bundle** — CC0, complete
+  female and male figures in both realistic and stylized versions, clean quad topology, shipped as a `.blend`
+  (Blender 3.2+), downloaded from blender.org's demo-files page. CC0 means no attribution requirement and no
+  share-alike on the shipped GLBs. Verify the licence text inside the downloaded bundle before the first commit
+  of derived assets, and record the bundle version in `LICENSE-model.md`. MakeHuman is no longer needed.
 - `tools/model-pipeline/build.py` (bpy wheel, deterministic, CI-runnable): base body → smooth, **faceless** head →
   region segmentation by vertex groups (Z-Anatomy used only to place the seams) → 32 region meshes + `body_base`
   per sex → `body-female.glb` and `body-male.glb`; `validate.ts` for both; snapshot renders in `docs/models/`;
