@@ -41,6 +41,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7bc99624-12f8-479d-a38b-681effdc876d"
+      }
+    },
+    "owner": "avicagans-team"
   }
 }
