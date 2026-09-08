@@ -1,4 +1,4 @@
-# MuscleMap (working title)
+# Show up
 
 A workout logger with a 3D **Muscle Map**: every muscle region is colored by how well your logged training
 covers it, computed from evidence-based weekly-volume rules, plus a weekly report that says what to add, move,

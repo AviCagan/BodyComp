@@ -1,5 +1,5 @@
-/** Single place for the product name (working title — see docs/PLAN.md open question 1). */
-export const APP_NAME = 'MuscleMap';
+/** Single place for the product name. Decided by the product owner on 2026-09-08 (ADR-0020). */
+export const APP_NAME = 'Show up';
 
 /** Bundled asset budgets from the brief (§6.2). Enforced by tools/model-pipeline/validate.ts. */
 export const MODEL_BUDGET = {

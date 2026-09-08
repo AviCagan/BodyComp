@@ -1,6 +1,7 @@
-# MuscleMap — Build Plan
+# Show up — Build Plan
 
-> Working title. The name lives in one constant, `APP_NAME` in `src/config.ts`.
+> The product is **Show up** (ADR-0020); its differentiating feature is the **Muscle Map**. The name lives in one
+> constant, `APP_NAME` in `src/config.ts`.
 > This plan is derived from the build brief (`docs/brief.pdf` was supplied by the humans; §-references below point at it).
 > `docs/STATUS.md` says where we actually are; `docs/DECISIONS.md` says why.
 
@@ -11,6 +12,29 @@ A Strong-parity workout logger for iOS and Android (one Expo codebase) whose dif
 covers it, computed by a deterministic, fully tested engine from evidence-based weekly-volume rules,
 plus a weekly report that says exactly what to add, move, or cut. Offline-first, fast logging,
 science-based copy, never lose a set, data belongs to the user.
+
+## 1a. Amendments to the brief (2026-09-08, from the product owner)
+
+These override the brief where they conflict. Each is logged as an ADR.
+
+- **Bodies (ADR-0021).** Not an écorché. Simplified, stylized, **faceless**, same 32-region granularity. The female
+  body is a **distinct model**, not a morph of the male. Z-Anatomy becomes a reference for region boundaries only.
+- **Log tab home (extends §6.1).** Three stacked actions: **My templates** (empty state: "Nothing here, add one?"
+  with a _Create template_ button that opens the template builder) · **Start an empty workout** · **Suggest a
+  workout**.
+- **Intake (extends §5).** Ask which **split** the user prefers and how many **days per week** they will train.
+  Beginners who have no preference get the evidence-based default for that day count (2–3 days → full body,
+  4 → upper/lower, 5–6 → push/pull/legs or upper/lower/full), which is exactly how the §5.6 starter templates
+  are assigned.
+- **Suggest a workout + Ares (extends §5 and §6.4).** Suggestions are computed deterministically by the engine
+  from three inputs: the intake split, the muscle map's current gaps, and workout history (recency, what was
+  trained last, stalled lifts). A named assistant, **Ares**, presents them — it slides down over the Log tab and
+  walks the user through two or three options, each a ready-to-start workout. Ares is the LLM narration layer
+  from §3: it may phrase and explain, it never chooses the exercises or the set counts. Without a network it
+  still works, with plain template text instead of prose.
+- **Nutrition (ADR-0022, proposed — confirm).** New phase 5b: food log with barcode quick-add, fiber first-class,
+  detailed micronutrient view, calorie target visuals. See the ADR for the native-module and food-database
+  implications.
 
 ## 2. Phases and definitions of done (§8)
 
@@ -33,15 +57,21 @@ DoD (from §8): spike at 60 fps on the Pixel; rendering decision logged in `DECI
 
 Escape hatch: if pinned fiber v9 native will not run cleanly on SDK 57 on the device, switch to the WebView fallback (bundled three.js page + `OrbitControls`, `postMessage` bridge) behind the _same_ `MuscleMapView` props, and write the ADR.
 
-### Phase 1 — Model pipeline + Map screen
+### Phase 1 — Body models + Map screen (amended by ADR-0021)
 
-- `tools/model-pipeline/build.py` (bpy wheel / Blender headless, deterministic, CI-runnable): Z-Anatomy → `body-male.glb`; female via Path A morph (`female-morph.json`), then ≤ 1 session on Path B (Sketchfab CC-BY model + label transfer); `region-objects-male.json` (shared by both bodies); `validate.ts` for both; snapshot renders in `docs/models/`; `assets/models/LICENSE-model.md`; attribution in Settings → About.
+- Source decision first: evaluate a CC0 base body with separate female and male meshes (MakeHuman base meshes;
+  verify the base-mesh licence) against a purchased matched stylized pair; pick one, log the ADR.
+- `tools/model-pipeline/build.py` (bpy wheel, deterministic, CI-runnable): base body → smooth, **faceless** head →
+  region segmentation by vertex groups (Z-Anatomy used only to place the seams) → 32 region meshes + `body_base`
+  per sex → `body-female.glb` and `body-male.glb`; `validate.ts` for both; snapshot renders in `docs/models/`;
+  `assets/models/LICENSE-model.md`; attribution in Settings → About.
 - Map tab per §6.2: full interaction spec, snap buttons, legend, group/region toggle, female/male switch (asset swap, camera + selection preserved), bottom-sheet shell, "What to train today" chip (mock data), MatCap look, budgets (≤ 150k tris, ≤ 8 MB, cold load < 1.5 s).
 - DoD: every region tappable and colorable on both bodies; budgets met; switching bodies keeps camera and selection; screen recordings of rotate → tap → sheet on the Pixel for each body.
 
 ### Phase 2 — Tracker (Strong parity, §6.1, §6.5)
 
-Templates, exercise search (aliases, group/equipment/pattern filters, recent, "hits this muscle"), set rows with previous-performance ghosting, warm-up toggle and set-type menu, rest timer (notification + haptic, per-exercise defaults), supersets, notes, plate calculator, unit toggle, PR detection + toast, finish screen, edit/delete, history calendar heatmap + list, duplicate workout, CSV + JSON export, in-progress workout recovery on relaunch.
+Log tab home per the amendment (My templates → Create template → Start empty → Suggest a workout, the last one
+disabled with a hint until Phase 4 ships it). Template builder. Templates, exercise search (aliases, group/equipment/pattern filters, recent, "hits this muscle"), set rows with previous-performance ghosting, warm-up toggle and set-type menu, rest timer (notification + haptic, per-exercise defaults), supersets, notes, plate calculator, unit toggle, PR detection + toast, finish screen, edit/delete, history calendar heatmap + list, duplicate workout, CSV + JSON export, in-progress workout recovery on relaunch.
 DoD: a full PPL week logged from templates end-to-end; Maestro flow "start template → log 3 exercises → finish" passes.
 
 ### Phase 3 — Engine + wiring (§4.3)
@@ -49,14 +79,24 @@ DoD: a full PPL week logged from templates end-to-end; Maestro flow "start templ
 `src/engine/` pure functions with injected `now`, `constants.ts` with cited comments, `muscle_status_cache` recomputed incrementally on set save (< 50 ms on one year of history, never blocking the UI), map colored from real data, full bottom-sheet content, finish-workout recolor, provisional-data rendering.
 DoD: golden cases 1–6 from §8 pass; real data colors the model; tap → detail sheet with real history.
 
-### Phase 4 — Intake + Report (§5, §6.4)
+### Phase 4 — Intake + Report + Ares (§5, §6.4, amendments)
 
-Onboarding ≤ 3 min (level is the only mandatory step), priority picker on the 3D model (selection mode), program import (structured builder + free-text via Anthropic edge function, schema-validated, one retry, manual fallback), provisional stimulus, starter templates verified by an engine test, weekly report from engine JSON with optional ≤ 120-word narration, shareable image.
-Needs from humans: Supabase project, Anthropic key (server side only).
+Onboarding ≤ 3 min (level is the only mandatory step), **split preference and days per week**, priority picker on the 3D model (selection mode), program import (structured builder + free-text via Anthropic edge function, schema-validated, one retry, manual fallback), provisional stimulus, starter templates verified by an engine test, weekly report from engine JSON with optional ≤ 120-word narration, shareable image.
+**Suggest a workout:** engine ranks candidate sessions from split + map gaps + history; Ares (LLM narration via
+the edge function, schema-validated, plain-text fallback) presents two or three and starts the chosen one as a
+workout. Needs from humans: Supabase project, Anthropic key (server side only).
 
 ### Phase 5 — Videos (§6.6)
 
 Edge function (YouTube Data API v3, allowlist, 30-day cache), `video-channels.json`, `videos.json` overrides, player in the detail sheet, zero client-side API calls.
+
+### Phase 5b — Nutrition (proposed, ADR-0022; confirm before scheduling)
+
+Food log (barcode quick-add via `expo-camera`, Open Food Facts lookup with local cache, manual entry, recents),
+macros with fiber first-class, detail view (sugars, sodium, saturated fat, …), daily target with clear over/under
+visuals, bodyweight chart at ≥ 3 entries, CSV/JSON export extended. DoD: scan → log → daily view in ≤ 3 taps,
+works offline after first scan of an item.
+
 End of first build: EAS builds for both platforms, TestFlight + Play internal testing, `STATUS.md` current.
 
 ### Phase 6 — Accounts + sync
@@ -132,15 +172,19 @@ docs/
 
 Working assumptions are in _italics_; work proceeds on them until told otherwise.
 
-1. **App name (owed in Phase 0, §9).** _Assuming `MuscleMap` for `APP_NAME`, slug/scheme `musclemap`; the GitHub repo stays `BodyComp`._
+1. ~~App name~~ — **decided: "Show up"** (ADR-0020).
 2. **Exercise categories.** free-exercise-db has 123 stretching and 14 cardio entries that do not credit hypertrophy volume. _Excluded from the v1 seed_; users can still create custom exercises. Include them as non-crediting entries instead?
 3. **Odd exercises.** 79 exercises (olympic lifts, strongman, rotator-cuff work, "battling ropes"…) got heuristic mappings and are flagged `needsReview` in `exercise-muscles.json`. Review is scheduled for Phase 3 per §9; nothing to do now.
-4. **Region id `biceps` inside group `biceps`.** The brief names the region and the group identically. _Assuming the GLB mesh is named `biceps` and the region id equals the group id_ (same for `delt_front`, `lats`, … which are single-region groups).
-5. **Default units before intake.** _Assuming `lb`_ (US owners); intake asks.
-6. **Dark mode.** _Assuming both light and dark from day one_ via theme tokens.
-7. **Pixel dev build route.** Both are documented in STATUS.md: EAS `development` profile (needs a free Expo account; the plan-tier build queue is slow but free) or a local `npx expo run:android` from Windows with Android Studio. _Assuming EAS is acceptable since §3 already decided on it._
-8. **TypeScript major.** The SDK 57 template ships TS 6; _staying on the template's TS 6_ unless tooling breaks (then TS 5.9, logged).
-9. **Placeholder GLB in git.** _Assuming yes_ — it is the Phase 0 spike asset and is deleted in Phase 1.
+4. **Nutrition scope (ADR-0022).** Confirm that Show up should include a food log, and accept the `expo-camera`
+   native module and the Open Food Facts dependency that come with barcode scanning.
+5. **Body source (ADR-0021).** CC0 base bodies segmented by us (free, no share-alike) or a purchased stylized
+   female + male pair (proprietary, likely prettier, you buy and licence-check it)?
+6. **Region id `biceps` inside group `biceps`.** The brief names the region and the group identically. _Assuming the GLB mesh is named `biceps` and the region id equals the group id_ (same for `delt_front`, `lats`, … which are single-region groups).
+7. **Default units before intake.** _Assuming `lb`_ (US owners); intake asks.
+8. **Dark mode.** _Assuming both light and dark from day one_ via theme tokens.
+9. **Pixel dev build route.** Both are documented in STATUS.md: EAS `development` profile (needs a free Expo account; the plan-tier build queue is slow but free) or a local `npx expo run:android` from Windows with Android Studio. _Assuming EAS is acceptable since §3 already decided on it._
+10. **TypeScript major.** The SDK 57 template ships TS 6; _staying on the template's TS 6_ unless tooling breaks (then TS 5.9, logged).
+11. **Placeholder GLB in git.** _Assuming yes_ — it is the Phase 0 spike asset and is deleted in Phase 1.
 
 ## 6. Risks and how Phase 0 retires them
 

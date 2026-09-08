@@ -5,7 +5,7 @@ import migrations from './migrations/migrations';
 import * as schema from './schema';
 import type { Db } from './types';
 
-export const DB_FILE = 'musclemap.db';
+export const DB_FILE = 'showup.db';
 
 let cached: { sqlite: ReturnType<typeof openDatabaseSync>; db: Db } | null = null;
 

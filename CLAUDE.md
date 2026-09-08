@@ -1,4 +1,4 @@
-# MuscleMap — working agreement for Claude Code
+# Show up — working agreement for Claude Code
 
 Read `docs/PLAN.md` (phases, structure, open questions), `docs/STATUS.md` (where we are), and
 `docs/DECISIONS.md` (why) before touching code. The brief is `docs/brief.pdf`; §-references below point at it.

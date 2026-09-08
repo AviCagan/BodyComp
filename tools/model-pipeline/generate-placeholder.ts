@@ -181,7 +181,7 @@ async function writeBody(body: 'female' | 'male', outDir: string) {
     total += tris;
     if (id !== BODY_BASE_MESH) manifestRegions.push({ id, triangles: tris });
   }
-  doc.getRoot().getAsset().generator = 'musclemap tools/model-pipeline/generate-placeholder.ts';
+  doc.getRoot().getAsset().generator = 'showup tools/model-pipeline/generate-placeholder.ts';
 
   const io = new NodeIO();
   const glb = await io.writeBinary(doc);

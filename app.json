@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "MuscleMap",
-    "slug": "musclemap",
+    "name": "Show up",
+    "slug": "showup",
     "version": "0.1.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "musclemap",
+    "scheme": "showup",
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.musclemap.app"
+      "bundleIdentifier": "com.showup.app"
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +19,7 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.musclemap.app"
+      "package": "com.showup.app"
     },
     "web": {
       "bundler": "metro",

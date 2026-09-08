@@ -64,7 +64,7 @@ Everything the DoD requires that can be verified without a phone is done and ver
 
 0. **Node version.** Node 22 LTS (what CI and EAS Build use) or Node 24 both work; `package.json` requires
    > = 22.11. There are no native dependencies, so no Visual Studio or Xcode toolchain is needed.
-1. Confirm the app name (`APP_NAME`, slug `musclemap`) — `docs/PLAN.md` open question 1.
+1. ~~App name~~ decided: **Show up** (slug `showup`). If you already ran `eas build` under the old slug, run `eas init` once.
 2. **Fastest check (minutes):** install **Expo Go** (SDK 57) from Google Play on the Pixel, connect it by USB or
    the same Wi-Fi, run `npm ci && npx expo start`, press `a` (or scan the QR). Every Phase 0 module runs in Expo Go.
 3. On the Map tab: rotate (inertia stops in ~1.5 s), pinch, two-finger pan, double-tap, tap regions (sheet opens,
@@ -88,11 +88,17 @@ Everything the DoD requires that can be verified without a phone is done and ver
   period for new personal accounts), Apple Developer ($99/yr). Needed by the end of Phase 5, slow to obtain.
 - **Video channel allowlist** (Phase 5) and the open questions in `docs/PLAN.md`.
 
+## Direction changes recorded 2026-09-08
+
+Stylized faceless bodies with a distinct female model (ADR-0021), the Log-tab home layout, split preference in
+intake, "Suggest a workout" presented by Ares, and a proposed nutrition phase (ADR-0022) — all in `docs/PLAN.md`
+§1a. Phase 1 no longer builds an écorché from Z-Anatomy.
+
 ## Next steps (Phase 1, do not start before the device check passes)
 
-- `tools/model-pipeline/build.py` on the bpy 4.5 wheel (opens Z-Anatomy's `Startup.blend`, Blender 3.5.10, headless
-  in ~7 s): 677 named leaf muscles with `.l/.r` suffixes → `region-objects-male.json` → `body-male.glb`; Path A
-  morph → `body-female.glb`; key regions on glTF node names; snapshot renders in `docs/models/`;
-  `LICENSE-model.md` with both required attribution lines; About attribution.
+- Pick the body source (CC0 base bodies vs purchased pair — PLAN open question 5), then
+  `tools/model-pipeline/build.py` on the bpy 4.5 wheel: stylized faceless female and male bodies segmented into
+  the 32 regions (Z-Anatomy only as a seam reference) → `body-female.glb` / `body-male.glb`; snapshot renders in
+  `docs/models/`; `LICENSE-model.md`; About attribution.
 - Full §6.2 Map chrome: legend, "What to train today" chip, bottom sheet shell, MatCap PNG.
 - Screen recordings on the Pixel for each body.

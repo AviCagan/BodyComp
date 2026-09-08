@@ -210,3 +210,40 @@ Result: no native dependency anywhere in the tree, no compiler on any machine or
 verified clean. The only cost is an ExperimentalWarning from Node, filtered in `test/setup.node.ts`. If
 `node:sqlite` ever proves insufficient, `better-sqlite3` can come back as an _optional_ dependency so a failed
 build never blocks the app again.
+
+## ADR-0020 — The app is called "Show up"
+
+Decided by the product owner on 2026-09-08. `APP_NAME = 'Show up'`, slug and scheme `showup`, Android package and
+iOS bundle id `com.showup.app`, on-device database `showup.db`, npm package `showup`. The repository keeps its
+`BodyComp` name and the differentiating feature keeps its brief name — the component is still `MuscleMapView`
+and the tab is still "Map". No EAS build had been published under the old slug; if one was started, `eas init`
+simply creates the new project.
+
+## ADR-0021 — Stylized, faceless bodies; the female body is its own model (amends brief §6.2 and §6.3)
+
+The brief asked for a skinless écorché derived from Z-Anatomy, with the female body produced by morphing the male
+mesh (Path A). After seeing the direction the owner rejected both: the écorché reads as too anatomical and its
+face is off-putting, and a female body made by reshaping the male one "with breasts added" is not acceptable.
+New direction: a **simplified, stylized, faceless** body that keeps the per-region granularity (the 32 region
+meshes and the asset contract are unchanged), and **two distinct sculpts** for female and male that share the same
+region set and framing. Consequences: the Z-Anatomy pipeline is demoted from source to _reference for region
+boundaries_, which also removes the CC BY-SA share-alike obligation on shipped model files; the new default source
+to evaluate first is a CC0 base body with separate female and male meshes (MakeHuman's base meshes are the
+candidate — verify the licence of the base mesh itself, not only of exported characters, before adopting),
+segmented into regions in Blender via vertex groups by the existing pipeline; a purchased matched stylized pair
+remains the paid alternative. The engine, the asset contract, `validate.ts` and `MuscleMapView` need no change.
+Everything else in §6.2 (interaction, budgets, MatCap look, neutral `body_base`) still applies.
+
+## ADR-0022 — Nutrition logging (proposed, pending owner confirmation of scope)
+
+Requested on 2026-09-08 and not in the brief, whose §1 scopes the product to training. Proposed as its own phase
+after the first build so it cannot delay the map or the logger: a food log with a quick-add **barcode scanner**,
+manual entry and recent/favourite foods; **fiber as a first-class macro** beside protein, carbs and fat; a detail
+view with sugars, sodium, saturated fat and the rest; a daily calorie target with an unambiguous over / under
+visual; and the bodyweight line chart (already in §6.7) shown once three or more weights exist. Implications the
+owner should be aware of before confirming: the scanner needs `expo-camera` (a native module, so it lands in the
+next dev build — the brief asks a human before adding one, this is that ask); barcodes resolve through a food
+database, and the only option without a key or a bill is Open Food Facts (free, open data, coverage is uneven
+for US products) with a local cache so scanning works offline afterwards; the export format and the DB schema
+grow three tables (`food_items`, `food_log_entries`, `nutrition_targets`). The same rules apply as elsewhere:
+offline-first, no third-party analytics SDKs, deterministic numbers, and copy that never moralizes about food.
