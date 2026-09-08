@@ -229,14 +229,14 @@ meshes and the asset contract are unchanged), and **two distinct sculpts** for f
 region set and framing. Consequences: the Z-Anatomy pipeline is demoted from source to _reference for region
 boundaries_, which also removes the CC BY-SA share-alike obligation on shipped model files; the new default source
 to evaluate first is a CC0 base body with separate female and male meshes (MakeHuman's base meshes are the
-candidate — verify the licence of the base mesh itself, not only of exported characters, before adopting),
+candidate — verify the licence of the base mesh itself, not only of exported characters, before adopting; the owner chose this option on 2026-09-08),
 segmented into regions in Blender via vertex groups by the existing pipeline; a purchased matched stylized pair
 remains the paid alternative. The engine, the asset contract, `validate.ts` and `MuscleMapView` need no change.
 Everything else in §6.2 (interaction, budgets, MatCap look, neutral `body_base`) still applies.
 
-## ADR-0022 — Nutrition logging (proposed, pending owner confirmation of scope)
+## ADR-0022 — Nutrition logging (accepted 2026-09-08)
 
-Requested on 2026-09-08 and not in the brief, whose §1 scopes the product to training. Proposed as its own phase
+Requested on 2026-09-08 and not in the brief, whose §1 scopes the product to training; confirmed by the owner the same day. Scheduled as its own phase
 after the first build so it cannot delay the map or the logger: a food log with a quick-add **barcode scanner**,
 manual entry and recent/favourite foods; **fiber as a first-class macro** beside protein, carbs and fat; a detail
 view with sugars, sodium, saturated fat and the rest; a daily calorie target with an unambiguous over / under

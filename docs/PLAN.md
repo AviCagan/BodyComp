@@ -175,16 +175,27 @@ Working assumptions are in _italics_; work proceeds on them until told otherwise
 1. ~~App name~~ — **decided: "Show up"** (ADR-0020).
 2. **Exercise categories.** free-exercise-db has 123 stretching and 14 cardio entries that do not credit hypertrophy volume. _Excluded from the v1 seed_; users can still create custom exercises. Include them as non-crediting entries instead?
 3. **Odd exercises.** 79 exercises (olympic lifts, strongman, rotator-cuff work, "battling ropes"…) got heuristic mappings and are flagged `needsReview` in `exercise-muscles.json`. Review is scheduled for Phase 3 per §9; nothing to do now.
-4. **Nutrition scope (ADR-0022).** Confirm that Show up should include a food log, and accept the `expo-camera`
-   native module and the Open Food Facts dependency that come with barcode scanning.
-5. **Body source (ADR-0021).** CC0 base bodies segmented by us (free, no share-alike) or a purchased stylized
-   female + male pair (proprietary, likely prettier, you buy and licence-check it)?
+4. ~~Nutrition scope~~ — **decided 2026-09-08: yes.** ADR-0022 is accepted; Phase 5b is scheduled, with the
+   `expo-camera` native module and the Open Food Facts dependency.
+5. ~~Body source~~ — **decided 2026-09-08: option A**, CC0 base bodies segmented by us. Renders go to the owner for
+   approval before they are wired in.
 6. **Region id `biceps` inside group `biceps`.** The brief names the region and the group identically. _Assuming the GLB mesh is named `biceps` and the region id equals the group id_ (same for `delt_front`, `lats`, … which are single-region groups).
 7. **Default units before intake.** _Assuming `lb`_ (US owners); intake asks.
 8. **Dark mode.** _Assuming both light and dark from day one_ via theme tokens.
 9. **Pixel dev build route.** Both are documented in STATUS.md: EAS `development` profile (needs a free Expo account; the plan-tier build queue is slow but free) or a local `npx expo run:android` from Windows with Android Studio. _Assuming EAS is acceptable since §3 already decided on it._
 10. **TypeScript major.** The SDK 57 template ships TS 6; _staying on the template's TS 6_ unless tooling breaks (then TS 5.9, logged).
 11. **Placeholder GLB in git.** _Assuming yes_ — it is the Phase 0 spike asset and is deleted in Phase 1.
+
+### Settled inputs from §9 (2026-09-08)
+
+- **Video allowlist (Phase 5):** Jeff Nippard only for now; expand only if coverage gaps appear.
+- **Backend:** Supabase project **ShowUp**, ref `lkamzjbnbgkrzbdnymdo`, region us-west-2, Postgres 17. The Claude
+  Supabase connector is enabled for it. No keys live in this repository; server-side secrets (Anthropic key,
+  YouTube key) are set in Supabase by the owner, with exact steps given when Phase 4 and 5 start. A key that has
+  ever been pasted into a chat is treated as compromised and rotated.
+- **LLM cost:** narration and program parsing use the smallest Claude model that passes the schema-validated
+  tests; the owner asked to keep this cheap, so model choice is measured per call in Phase 4, not assumed.
+- **Store accounts (Google Play, Apple Developer):** deliberately deferred to the end of the first build.
 
 ## 6. Risks and how Phase 0 retires them
 

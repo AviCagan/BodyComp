@@ -114,7 +114,7 @@ result later; you do not need to fill it in. When the evidence pass lands you wi
 where the literature disagrees with the brief's own example rows, and those are the only decisions that come
 back to you.
 
-### Step 6. Decide where the 3D bodies come from (30 minutes of looking, then one word)
+### Step 6. ~~Decide where the 3D bodies come from~~ DONE: option A
 
 This blocks Phase 1. Two options:
 
@@ -129,7 +129,7 @@ This blocks Phase 1. Two options:
 
 Expect roughly 50 to 200 dollars. To choose this, reply **"bodies: B"** plus the link. Do not buy until I have looked at the link.
 
-### Step 7. Decide on nutrition (1 minute)
+### Step 7. ~~Decide on nutrition~~ DONE: yes
 
 Reply **"nutrition: yes"** or **"nutrition: no"**. Yes means two things you should be fine with: the app gets a camera permission for barcode scanning, and food lookups come from Open Food Facts, a free public database whose coverage of US products is decent but not perfect.
 
@@ -137,7 +137,7 @@ Reply **"nutrition: yes"** or **"nutrition: no"**. Yes means two things you shou
 
 You do not need these for weeks, but each can take days to approve, so start them and forget about them.
 
-### Step 8. Google Play developer account
+### Step 8. Google Play developer account (DEFERRED to the end of the first build, by owner decision)
 
 1. Go to https://play.google.com/console/signup with the Google account you want the app published under.
 2. Choose **Personal** unless you have a registered business.
@@ -146,14 +146,14 @@ You do not need these for weeks, but each can take days to approve, so start the
 
 Done when: the Play Console shows your account as verified.
 
-### Step 9. Apple Developer account
+### Step 9. Apple Developer account (DEFERRED to the end of the first build, by owner decision)
 
 1. Go to https://developer.apple.com/programs/enroll with an Apple ID that has two-factor authentication on.
 2. Enroll as an **Individual**. It costs 99 dollars a year. Approval is usually one to two days.
 
 Done when: you can sign in at https://appstoreconnect.apple.com.
 
-### Step 10. Supabase project
+### Step 10. ~~Supabase project~~ DONE (project ShowUp, connector enabled)
 
 Needed before Phase 4 (Ares and the weekly report).
 
@@ -165,7 +165,7 @@ Do not send me any keys or passwords. When Phase 4 starts I will tell you exactl
 
 Done when: the project exists and shows as healthy.
 
-### Step 11. Anthropic API key
+### Step 11. Anthropic API key: created, then ROTATE it (it was pasted into chat once; delete that key and make a new one)
 
 Also needed before Phase 4. Ares talks through this.
 
@@ -177,7 +177,7 @@ Never paste the key into this chat or into the repository. It will live only on 
 
 Done when: the key exists and is saved somewhere safe.
 
-### Step 12. Technique video channels (10 minutes)
+### Step 12. ~~Technique video channels~~ DONE: Jeff Nippard for now
 
 Reply with the YouTube channels you trust for exercise technique. The brief suggested Jeff Nippard, Sean Nalewanyj, Renaissance Periodization, Stronger By Science and Jeremy Ethier. Confirm, add or remove. If you have specific videos you love for specific exercises, send the links and the exercise name and they will be hand-picked over search results.
 

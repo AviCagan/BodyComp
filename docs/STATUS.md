@@ -93,6 +93,12 @@ Stylized faceless bodies with a distinct female model (ADR-0021), the Log-tab ho
 intake, "Suggest a workout" presented by Ares, and a proposed nutrition phase (ADR-0022) — all in `docs/PLAN.md`
 §1a. Phase 1 no longer builds an écorché from Z-Anatomy.
 
+## Decisions received 2026-09-08
+
+Bodies: option A (CC0 base bodies, our segmentation). Nutrition: yes (Phase 5b scheduled). Videos: Jeff Nippard.
+Supabase project ShowUp exists with the connector enabled. Store accounts deferred to the end of the first build.
+Evidence pass for the exercise → muscle table is running (ADR-0023). Phase 0 still waits on the release-APK result.
+
 ## Next steps (Phase 1, do not start before the device check passes)
 
 - Pick the body source (CC0 base bodies vs purchased pair — PLAN open question 5), then
