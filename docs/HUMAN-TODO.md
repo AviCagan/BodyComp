@@ -182,10 +182,10 @@ Done when: the key exists and is saved somewhere safe.
 
 Reply with the YouTube channels you trust for exercise technique. The brief suggested Jeff Nippard, Sean Nalewanyj, Renaissance Periodization, Stronger By Science and Jeremy Ethier. Confirm, add or remove. If you have specific videos you love for specific exercises, send the links and the exercise name and they will be hand-picked over search results.
 
-### Step 13. ~~YouTube Data API v3 key~~ DONE (created 2026-09-08, saved in the owner's password manager)
+### Step 13. ~~YouTube Data API v3 key~~ DONE (created 2026-09-08, in Supabase Edge Function secrets as `YOUTUBE_API_KEY`)
 
 A free Google Cloud project with the YouTube Data API v3 enabled and a **public data** API key, restricted to that
-one API. It goes into Supabase secrets as `YOUTUBE_API_KEY` when Phase 5 starts (or earlier, same Secrets page).
+one API. Saved in the owner's password manager and set in Supabase secrets the same day.
 
 ## What to send me
 

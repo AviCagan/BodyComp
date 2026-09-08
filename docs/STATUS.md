@@ -97,7 +97,7 @@ intake, "Suggest a workout" presented by Ares, and a proposed nutrition phase (A
 
 Bodies: option A (CC0 base bodies, our segmentation). Nutrition: yes (Phase 5b scheduled). Videos: Jeff Nippard.
 Supabase project ShowUp exists with the connector enabled; the rotated Anthropic key is in its Edge Function secrets
-as `ANTHROPIC_API_KEY`; a YouTube Data API v3 key exists and is saved by the owner for Phase 5. Store accounts
+as `ANTHROPIC_API_KEY` and the YouTube Data API v3 key as `YOUTUBE_API_KEY`. Store accounts
 deferred to the end of the first build.
 Evidence pass for the exercise → muscle table is running (ADR-0023). Phase 0 still waits on the release-APK result.
 
