@@ -193,9 +193,10 @@ Working assumptions are in _italics_; work proceeds on them until told otherwise
 
 - **Video allowlist (Phase 5):** Jeff Nippard only for now; expand only if coverage gaps appear.
 - **Backend:** Supabase project **ShowUp**, ref `lkamzjbnbgkrzbdnymdo`, region us-west-2, Postgres 17. The Claude
-  Supabase connector is enabled for it. No keys live in this repository; server-side secrets (Anthropic key,
-  YouTube key) are set in Supabase by the owner, with exact steps given when Phase 4 and 5 start. A key that has
-  ever been pasted into a chat is treated as compromised and rotated.
+  Supabase connector is enabled for it. No keys live in this repository; server-side secrets are set in Supabase by
+  the owner. Status 2026-09-08: `ANTHROPIC_API_KEY` is set in Edge Function secrets (rotated key); the YouTube Data
+  API v3 key exists (public-data, API-restricted) and goes in as `YOUTUBE_API_KEY` when Phase 5 starts. Edge functions
+  read both via `Deno.env.get`. A key that has ever been pasted into a chat is treated as compromised and rotated.
 - **LLM cost:** narration and program parsing use the smallest Claude model that passes the schema-validated
   tests; the owner asked to keep this cheap, so model choice is measured per call in Phase 4, not assumed.
 - **Store accounts (Google Play, Apple Developer):** deliberately deferred to the end of the first build.

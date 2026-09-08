@@ -82,7 +82,8 @@ Done when: golden cases pass, the model colours correctly from logged data, tap 
 
 ## Phase 4 — Intake, Ares, the weekly report (about 4 sessions)
 
-1. **You**: put the rotated Anthropic key into the Supabase project's secrets (exact clicks provided then).
+1. ~~**You**: put the rotated Anthropic key into the Supabase project's secrets~~ — done 2026-09-08
+   (`ANTHROPIC_API_KEY` in Edge Function secrets).
 2. Supabase edge functions: `parse-program` (free text → schema-validated program JSON, one retry, then manual
    fallback) and `narrate` (≤ 120 words, plain, no hype). The client never holds a key. Per-call cost is measured
    and the smallest model that passes the tests is chosen.
@@ -103,8 +104,9 @@ templates, provisional colours appear, the report renders with and without the n
 
 ## Phase 5 — Technique videos (about 1 session)
 
-1. **You**: create a Google Cloud project, enable YouTube Data API v3, make an API key, put it in Supabase secrets
-   (exact clicks provided then). Free quota is enough at our scale.
+1. ~~**You**: create a Google Cloud project, enable YouTube Data API v3, make an API key~~ — done 2026-09-08 (public-data
+   key, restricted to that API, in the owner's password manager). Still to do when this phase starts: add it to
+   Supabase Edge Function secrets as `YOUTUBE_API_KEY`. Free quota is enough at our scale.
 2. `video-channels.json` (Jeff Nippard) and `videos.json` for hand-picked overrides.
 3. Edge function: search by exercise and by muscle, filter to the allowlist, rank, cache 30 days. Zero client calls.
 4. Player in the detail sheet; show nothing rather than an unvetted video.

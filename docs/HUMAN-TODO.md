@@ -165,9 +165,10 @@ Do not send me any keys or passwords. When Phase 4 starts I will tell you exactl
 
 Done when: the project exists and shows as healthy.
 
-### Step 11. Anthropic API key: created, then ROTATE it (it was pasted into chat once; delete that key and make a new one)
+### Step 11. ~~Anthropic API key~~ DONE (rotated; the new key is in the Supabase project's Edge Function secrets)
 
-Also needed before Phase 4. Ares talks through this.
+Also needed before Phase 4. Ares talks through this. Completed 2026-09-08: the key pasted into chat was deleted, a new one
+was created and set as `ANTHROPIC_API_KEY` in Supabase secrets. It was never pasted anywhere again.
 
 1. Go to https://console.anthropic.com and sign up.
 2. Open **Billing**, add a payment method, and add a small prepaid balance. 10 dollars is plenty for months of testing.
@@ -181,6 +182,11 @@ Done when: the key exists and is saved somewhere safe.
 
 Reply with the YouTube channels you trust for exercise technique. The brief suggested Jeff Nippard, Sean Nalewanyj, Renaissance Periodization, Stronger By Science and Jeremy Ethier. Confirm, add or remove. If you have specific videos you love for specific exercises, send the links and the exercise name and they will be hand-picked over search results.
 
+### Step 13. ~~YouTube Data API v3 key~~ DONE (created 2026-09-08, saved in the owner's password manager)
+
+A free Google Cloud project with the YouTube Data API v3 enabled and a **public data** API key, restricted to that
+one API. It goes into Supabase secrets as `YOUTUBE_API_KEY` when Phase 5 starts (or earlier, same Secrets page).
+
 ## What to send me
 
 One message with these lines, whenever each is ready:
@@ -189,6 +195,6 @@ One message with these lines, whenever each is ready:
 - `bodies: A` or `bodies: B` plus link
 - `nutrition: yes` or `nutrition: no`
 - `channels: ...`
-- `accounts: Expo done / Play done / Apple done / Supabase done / Anthropic done` (whichever are)
+- `accounts: Expo done / Supabase done / Anthropic done / YouTube key done` (Play and Apple deferred)
 
 Steps 6 and 7 are the ones that actually block me. As soon as I have those two answers the next session starts Phase 1 (the real bodies and the full Map screen), then Phase 2 (the workout logger with your template layout), then the engine, then intake with Ares.
