@@ -5,17 +5,52 @@ Steps 1 to 7 are this week. Steps 8 to 12 are accounts that take days to approve
 
 ## Do this week
 
-### Step 1. Get the latest code (2 minutes)
+### Step 1. Get the code onto whichever computer you are using (5 to 15 minutes)
 
-Open PowerShell and run these three lines, one at a time:
+**If this computer already has the `BodyComp` folder** (the laptop you used before):
 
 ```powershell
-cd C:\Users\Avi\BodyComp
+cd ~\BodyComp
 git pull
 npm ci
 ```
 
-Done when: no red text, and the last line says something like `added 1177 packages`.
+**If this is a fresh computer** (no `BodyComp` folder yet):
+
+1. Check what is installed. Open PowerShell and run:
+
+```powershell
+git --version
+node --version
+```
+
+If either says "not recognized", install it and then close and reopen PowerShell:
+
+- Git: https://git-scm.com/download/win (accept every default)
+- Node: https://nodejs.org (the **LTS** button; Node 22 or 24 both work)
+
+2. Clone the project into your home folder:
+
+```powershell
+cd ~
+git clone https://github.com/AviCagan/BodyComp
+cd BodyComp
+npm ci
+```
+
+`cd ~` means your home folder, so this works whatever your username is on that machine. Every later step that
+says `cd ~\BodyComp` just means `cd ~\BodyComp`.
+
+3. If any command later complains that "running scripts is disabled on this system", run this once and retry:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+
+Done when: `npm ci` ends with a line like `added 1177 packages` and no red text.
+
+Using two computers is fine. Whichever one you sit down at, run `git pull` in the folder first so it has the
+latest code, and `git push` when you finish something (Steps 2 and 5 tell you when).
 
 ### Step 2. Create an Expo account and link the project (5 minutes)
 
@@ -94,7 +129,7 @@ means: chest is the main muscle (weight 1), with 25% of that credit going to upp
 Done when: every Priority 1 and Priority 2 row has a Verdict. Then send it back: either attach the file in this chat, or in PowerShell:
 
 ```powershell
-cd C:\Users\Avi\BodyComp
+cd ~\BodyComp
 git add docs/exercise-mapping-review.xlsx
 git commit -m "docs: mapping review"
 git push
