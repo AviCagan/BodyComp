@@ -1,0 +1,944 @@
+{
+  "batch": "triceps",
+  "families": [
+    {
+      "id": "cable_pushdown",
+      "name": "Cable / machine pushdowns (arm at side)",
+      "description": "Elbow extension with the upper arm pinned at or slightly in front of the torso (shoulder ~0-45 deg flexion). Includes bar, rope, V-bar, reverse-grip and one-arm pushdowns and the seated machine extension with arm pads. Isolation; no other group receives meaningful hypertrophic stimulus.",
+      "exerciseIds": [
+        "Triceps_Pushdown",
+        "Triceps_Pushdown_-_Rope_Attachment",
+        "Triceps_Pushdown_-_V-Bar_Attachment",
+        "Reverse_Grip_Triceps_Pushdown",
+        "Cable_One_Arm_Tricep_Extension",
+        "Machine_Triceps_Extension"
+      ],
+      "mapping": [
+        {
+          "groupId": "triceps",
+          "weight": 1,
+          "regionDistribution": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "rationale": "Sole mover. Long head is moderately shortened at the shoulder but still contributes substantially at 0 deg shoulder elevation (Kholinne 2018) and grew +19.6% vs +10.5% for the monoarticular heads in the neutral-arm cable condition of Maeo 2023, so the long-head share should sit above the compound-press anchor (.3) but below the overhead anchor (.7). Changed from current .3/.7."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "12 wk cable elbow extension in the neutral (arm-at-side, pushdown-like) position grew the long head +19.6% and lateral+medial heads +10.5%; overhead position grew them +28.5% and +14.6% (1.45x and 1.39x more). Arm position scaled total stimulus almost uniformly across heads rather than redistributing it.",
+          "source": "Maeo S, Wu Y, Huang M, et al. Triceps brachii hypertrophy is substantially greater after elbow extension training performed in the overhead versus neutral arm position. Eur J Sport Sci. 2023;23(7):1240-1250.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "35819335",
+          "doi": "10.1080/17461391.2022.2100279"
+        },
+        {
+          "claim": "At 0 deg shoulder elevation the long head produced significantly higher force and sEMG than lateral and medial heads; at >=90 deg elevation the medial head dominated.",
+          "source": "Kholinne E, Zulkarnain RF, Sun YC, Lim S, Chun JM, Jeon IH. The different role of each head of the triceps brachii muscle in elbow extension. Acta Orthop Traumatol Turc. 2018;52(3):201-205.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29503079",
+          "doi": "10.1016/j.aott.2018.02.005"
+        },
+        {
+          "claim": "Triceps EMG during pressing was not influenced by forearm supination/pronation (triceps has no forearm-rotation function), supporting identical head mapping for reverse-grip, rope and bar handles.",
+          "source": "Lehman GJ. The influence of grip width and forearm pronation/supination on upper-body myoelectric activity during the flat bench press. J Strength Cond Res. 2005;19(3):587-591.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "16095407",
+          "doi": "10.1519/R-15024.1"
+        },
+        {
+          "claim": "Bench dips, triangle push-ups and kickbacks produced the highest triceps EMG among 8 exercises; rope pushdowns and bar pushdowns were mid-ranked (~74% and ~67% of triangle push-up). Non-peer-reviewed ACE report.",
+          "source": "Boehler B, Porcari JP, Kline D, Hendrix R, Foster C. ACE-sponsored research: Best triceps exercises. ACE Certified News, 2011 (University of Wisconsin-La Crosse).",
+          "tier": "consensus",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [
+        "Maeo 2023 shows the overhead vs neutral arm position changes TOTAL triceps growth by ~1.4x in every head, with almost no change in the long:monoarticular ratio. The brief's anchors (overhead .7/.3 vs bench .3/.7) therefore express a head-emphasis contrast that the hypertrophy data only weakly support, and the weight cap of 1.0 cannot express that overhead work delivers more stimulus per set than pushdowns. Anchors left untouched; pushdown set to .4/.6 rather than .3/.7 as a partial correction.",
+        "Kholinne 2018 (EMG/modelling) found the long head MOST active with the arm at the side (0 deg elevation) and the medial head dominant overhead, the opposite of the practitioner consensus encoded in the anchors. Hypertrophy data (Maeo, Brandao) are weighted above it, but it is a genuine tier-2 conflict."
+      ],
+      "confidence": "medium",
+      "notes": "Current mapping already isolates triceps correctly; only the region split changes (.3/.7 -> .4/.6). Reverse-grip pushdown is popularly said to hit the medial head; there is no evidence for that, so it shares the family mapping. Machine_Triceps_Extension (arm pads, shoulder ~30-60 deg flexed) already had .4/.6 and stays there. Cable_One_Arm_Tricep_Extension is a standing supinated one-arm pushdown per its description."
+    },
+    {
+      "id": "overhead_extension",
+      "name": "Overhead / incline triceps extensions (French press)",
+      "description": "Elbow extension with the shoulder flexed >=120 deg (upper arm beside the head, or lying/incline with the bar travelling behind the head). Long head is at long length across the whole rep. Covers dumbbell, barbell, EZ, kettlebell, rope/cable, band, sled, towel, kneeling-cable and incline-bench versions, uni- and bilateral.",
+      "exerciseIds": [
+        "Standing_Dumbbell_Triceps_Extension",
+        "Seated_Triceps_Press",
+        "Dumbbell_One-Arm_Triceps_Extension",
+        "Standing_One-Arm_Dumbbell_Triceps_Extension",
+        "Cable_Rope_Overhead_Triceps_Extension",
+        "Triceps_Overhead_Extension_with_Rope",
+        "Kettlebell_Overhead_Triceps_Extension",
+        "Sled_Overhead_Triceps_Extension",
+        "Speed_Band_Overhead_Triceps",
+        "Standing_Overhead_Barbell_Triceps_Extension",
+        "Standing_Low-Pulley_One-Arm_Triceps_Extension",
+        "Standing_Towel_Triceps_Extension",
+        "Kneeling_Cable_Triceps_Extension",
+        "Incline_Barbell_Triceps_Extension",
+        "Cable_Incline_Triceps_Extension",
+        "Lying_Close-Grip_Barbell_Triceps_Extension_Behind_The_Head"
+      ],
+      "mapping": [
+        {
+          "groupId": "triceps",
+          "weight": 1,
+          "regionDistribution": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          },
+          "rationale": "Fixed anchor row (Standing_Dumbbell_Triceps_Extension). Overhead position produced the largest long-head growth of any studied position (Maeo 2023). No credit to delt_front, abs, chest or forearms: holding the humerus overhead is isometric shoulder flexion with no demonstrated hypertrophic stimulus."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Overhead cable extension produced 1.5x greater long-head and 1.4x greater whole-triceps volume gain than the neutral-arm position over 12 weeks despite 34-39% lower absolute loads.",
+          "source": "Maeo S, Wu Y, Huang M, et al. Triceps brachii hypertrophy is substantially greater after elbow extension training performed in the overhead versus neutral arm position. Eur J Sport Sci. 2023;23(7):1240-1250.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "35819335",
+          "doi": "10.1080/17461391.2022.2100279"
+        },
+        {
+          "claim": "Single-joint lying barbell triceps extension increased long-head CSA significantly more than bench press training, confirming that shoulder-flexed extension work biases the biarticular head.",
+          "source": "Brandao L, de Salles Painelli V, Lasevicius T, et al. Varying the order of combinations of single- and multi-joint exercises differentially affects resistance training adaptations. J Strength Cond Res. 2020;34(5):1254-1263.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "32149887",
+          "doi": "10.1519/JSC.0000000000003550"
+        },
+        {
+          "claim": "Overhead and lying dumbbell extensions showed the same long/lateral head activation pattern across ROM thirds in trained men (concentric > eccentric; initial and middle ROM > final), i.e. handle/implement does not change the pattern.",
+          "source": "Alves D, Matta T, Oliveira L. Effect of shoulder position on triceps brachii heads activity in dumbbell elbow extension exercises. J Sports Med Phys Fitness. 2018;58(9):1247-1252.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28677940",
+          "doi": "10.23736/S0022-4707.17.06849-9"
+        },
+        {
+          "claim": "The triceps long head is a shoulder extensor whose moment arm and shoulder-extension moment increase as the shoulder flexes toward 80 deg and beyond; overhead positions therefore load it at long length.",
+          "source": "Landin D, Thompson M. The shoulder extension function of the triceps brachii. J Electromyogr Kinesiol. 2011;21(1):161-165.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "20934352",
+          "doi": "10.1016/j.jelekin.2010.09.005"
+        }
+      ],
+      "conflictsWithBrief": [
+        "Kholinne 2018 reports the MEDIAL head taking over at >=90 deg shoulder elevation (EMG + OpenSim), which contradicts the .7 long-head share of the anchor. Hypertrophy data (Maeo 2023, Brandao 2020) support the anchor and are weighted higher."
+      ],
+      "confidence": "high",
+      "notes": "Current mapping is already .7/.3 for most members; overrides below only strip unjustified secondary credits (delt_front, abs, chest, forearms) and lift the one-arm/kneeling versions that were mis-set to .4/.6. Incline (45-75 deg bench, upper arm ~25 deg from floor) and lying behind-the-head versions have the shoulder at 120-180 deg flexion, so they share the overhead split. Speed_Band_Overhead_Triceps is normally done for speed with light bands; the set-hardness rule handles that, not the mapping."
+    },
+    {
+      "id": "lying_extension_skullcrusher",
+      "name": "Lying / skullcrusher extensions (upper arm vertical)",
+      "description": "Elbow extension lying supine (flat or decline) with the humerus roughly perpendicular to the torso (shoulder ~90 deg flexion), bar/dumbbell/cable/band/chain lowered to forehead, chin or beside the ears. Also the bodyweight lever versions (Body Tricep Press on a racked bar, Body-Up from forearm plank) and the elbows-out Tate press.",
+      "exerciseIds": [
+        "EZ-Bar_Skullcrusher",
+        "Band_Skull_Crusher",
+        "Lying_Triceps_Press",
+        "Cable_Lying_Triceps_Extension",
+        "Low_Cable_Triceps_Extension",
+        "Chain_Handle_Extension",
+        "Lying_Dumbbell_Tricep_Extension",
+        "Dumbbell_Tricep_Extension_-Pronated_Grip",
+        "One_Arm_Pronated_Dumbbell_Triceps_Extension",
+        "One_Arm_Supinated_Dumbbell_Triceps_Extension",
+        "Decline_Dumbbell_Triceps_Extension",
+        "Decline_EZ_Bar_Triceps_Extension",
+        "Lying_Close-Grip_Barbell_Triceps_Press_To_Chin",
+        "Body_Tricep_Press",
+        "Body-Up",
+        "Tate_Press"
+      ],
+      "mapping": [
+        {
+          "groupId": "triceps",
+          "weight": 1,
+          "regionDistribution": {
+            "triceps_long": 0.5,
+            "triceps_lateral_medial": 0.5
+          },
+          "rationale": "Shoulder at ~90 deg puts the long head at intermediate length: between the pushdown (.4) and overhead (.7) splits. Brandao 2020 showed the lying barbell extension grows the long head more than bench press and the lateral head less, so it must sit well above the .3 compound anchor. Current .5/.5 kept. No forearm, chest or delt credit (grip and shoulder are static)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Lying barbell triceps press (SJ) produced greater long-head CSA gains than bench press (MJ), while bench press produced greater lateral-head gains; medial head similar.",
+          "source": "Brandao L, de Salles Painelli V, Lasevicius T, et al. Varying the order of combinations of single- and multi-joint exercises differentially affects resistance training adaptations. J Strength Cond Res. 2020;34(5):1254-1263.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "32149887",
+          "doi": "10.1519/JSC.0000000000003550"
+        },
+        {
+          "claim": "12 wk of lying triceps extension produced non-uniform triceps hypertrophy whose regional pattern matched T2-MRI activation in the first session (less activation and growth distally), showing per-exercise activation maps onto growth.",
+          "source": "Wakahara T, Miyamoto N, Sugisaki N, et al. Association between regional differences in muscle activation in one session of resistance exercise and in muscle hypertrophy after resistance training. Eur J Appl Physiol. 2012;112(4):1569-1576.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "21858666",
+          "doi": "10.1007/s00421-011-2121-y"
+        },
+        {
+          "claim": "Overhead and lying dumbbell extensions produced the same long- and lateral-head activation pattern across the ROM, so implement (bar vs dumbbell vs cable) and grip do not change the family mapping.",
+          "source": "Alves D, Matta T, Oliveira L. Effect of shoulder position on triceps brachii heads activity in dumbbell elbow extension exercises. J Sports Med Phys Fitness. 2018;58(9):1247-1252.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28677940",
+          "doi": "10.23736/S0022-4707.17.06849-9"
+        },
+        {
+          "claim": "Long-head shoulder-extension moment rises steeply between 0 and 80 deg shoulder flexion, so at ~90 deg the long head is meaningfully lengthened but less than overhead.",
+          "source": "Landin D, Thompson M. The shoulder extension function of the triceps brachii. J Electromyogr Kinesiol. 2011;21(1):161-165.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "20934352",
+          "doi": "10.1016/j.jelekin.2010.09.005"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Tate_Press",
+          "mapping": [
+            {
+              "groupId": "triceps",
+              "weight": 1,
+              "regionDistribution": {
+                "triceps_long": 0.35,
+                "triceps_lateral_medial": 0.65
+              }
+            }
+          ],
+          "reason": "Elbows flared, dumbbells lowered to the chest with the humerus abducted rather than flexed: the long head is not lengthened, so the split moves toward the monoarticular heads. Chest 0.5 and delt_front 0.5 removed; the pecs only assist the final few degrees (tier 3/4)."
+        },
+        {
+          "exerciseId": "Body-Up",
+          "mapping": [
+            {
+              "groupId": "triceps",
+              "weight": 1,
+              "regionDistribution": {
+                "triceps_long": 0.4,
+                "triceps_lateral_medial": 0.6
+              }
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Forearm-plank to straight-arm press: shoulder stays near 0-45 deg flexion (pushdown-like split) and the whole set is a loaded plank, so a minor abs stabiliser credit (0.25, down from 0.5) is kept; forearms 0.5 removed (grip is passive)."
+        }
+      ],
+      "notes": "Forearm credit on EZ-Bar_Skullcrusher removed (no evidence the static grip is a hypertrophic stimulus). Chest/delt_front credit on Lying_Dumbbell_Tricep_Extension removed (upper arm is stationary). One_Arm_Pronated/Supinated lying extensions and the pronated-grip dumbbell version share the family mapping because forearm rotation does not alter triceps head recruitment. Decline versions keep .5/.5: on a decline the humerus is a few degrees less flexed relative to the torso, too small to change emphasis. Chain_Handle_Extension and Low_Cable_Triceps_Extension are lying extensions per their descriptions. Body_Tricep_Press is a bodyweight skullcrusher on a racked bar and shares the default."
+    },
+    {
+      "id": "triceps_kickback",
+      "name": "Triceps kickbacks (bent-over, shoulder extended)",
+      "description": "Elbow extension with the torso bent forward and the humerus held in extension (behind the trunk line). The long head is at its shortest shoulder length and is also working isometrically as a shoulder extensor. One- and two-arm, standing and seated.",
+      "exerciseIds": [
+        "Tricep_Dumbbell_Kickback",
+        "Standing_Bent-Over_One-Arm_Dumbbell_Triceps_Extension",
+        "Standing_Bent-Over_Two-Arm_Dumbbell_Triceps_Extension",
+        "Seated_Bent-Over_One-Arm_Dumbbell_Triceps_Extension",
+        "Seated_Bent-Over_Two-Arm_Dumbbell_Triceps_Extension"
+      ],
+      "mapping": [
+        {
+          "groupId": "triceps",
+          "weight": 1,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Whole-muscle EMG is high (ACE 2011) but the long head is shortened at the shoulder, and short-length training produced the least growth in Maeo 2023, so the long-head share is set to the low end of the scale. No delt_rear/delt_front credit: holding the arm extended is an isometric posterior-deltoid task with no hypertrophy evidence."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Kickbacks were among the three highest-EMG triceps exercises (~87-88% of the triangle push-up value) in 15 women; non-peer-reviewed ACE report.",
+          "source": "Boehler B, Porcari JP, Kline D, Hendrix R, Foster C. ACE-sponsored research: Best triceps exercises. ACE Certified News, 2011 (University of Wisconsin-La Crosse).",
+          "tier": "consensus",
+          "confidence": "likely"
+        },
+        {
+          "claim": "Triceps training at the neutral/short long-head length produced ~30% less hypertrophy than at long length; kickbacks place the long head even shorter than the neutral position.",
+          "source": "Maeo S, Wu Y, Huang M, et al. Triceps brachii hypertrophy is substantially greater after elbow extension training performed in the overhead versus neutral arm position. Eur J Sport Sci. 2023;23(7):1240-1250.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "35819335",
+          "doi": "10.1080/17461391.2022.2100279"
+        },
+        {
+          "claim": "Long-head shoulder-extension moment is smallest at 0 deg shoulder angle and rises with flexion, so in the extended kickback position the long head is at a length-tension disadvantage.",
+          "source": "Landin D, Thompson M. The shoulder extension function of the triceps brachii. J Electromyogr Kinesiol. 2011;21(1):161-165.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "20934352",
+          "doi": "10.1016/j.jelekin.2010.09.005"
+        },
+        {
+          "claim": "Kinetic/EMG analysis of the rest-pause kickback in women: triceps is the sole significant contributor; heavier dumbbells compromised form rather than raising triceps contraction proportionally.",
+          "source": "Serbest K, Eroglu M, Dereshgi HA. Effects of dumbbell weight on the rest-pause triceps kickback exercise in women: kinetic, finite element and EMG analyses. Phys Eng Sci Med. 2025.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "41222890",
+          "doi": "10.1007/s13246-025-01672-5"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Current triceps split (.3/.7 or .4/.6) is broadly right; standardised on .3/.7. The delt_front 0.5 on Standing_Bent-Over_One-Arm was a guess and is removed (the shoulder is extended, not flexed)."
+    },
+    {
+      "id": "close_grip_bench_press",
+      "name": "Close-grip and reverse-grip bench presses",
+      "description": "Full-ROM supine press with hands at or inside shoulder width and elbows tucked (barbell, EZ, dumbbells, Smith). Triceps become the limiting mover but pectoralis major activation is largely preserved.",
+      "exerciseIds": [
+        "Close-Grip_Barbell_Bench_Press",
+        "Close-Grip_Dumbbell_Press",
+        "Close-Grip_EZ-Bar_Press",
+        "Smith_Machine_Close-Grip_Bench_Press",
+        "Reverse_Triceps_Bench_Press"
+      ],
+      "mapping": [
+        {
+          "groupId": "triceps",
+          "weight": 1,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Narrow grip raises triceps EMG (Lehman 2005, Barnett 1995) and bench pressing grows the lateral head preferentially (Brandao 2020); same split as the bench anchor."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.75,
+          "regionDistribution": {
+            "chest_upper": 0.35,
+            "chest_mid": 0.45,
+            "chest_lower": 0.2
+          },
+          "rationale": "Pec EMG and the PM/TB ratio are essentially unchanged by grip width (Saeterbakken 2017, Tanimoto 2023) and 6RM loads are only 6-11% lower, so the chest is a strong synergist, not half-credit. Narrow, tucked grip shifts emphasis toward the clavicular head (Barnett 1995) and away from the sternocostal (Lehman 2005). Raised from current 0.5."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.5,
+          "rationale": "Same anterior-deltoid role as the bench anchor."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Moving from wide to narrow grip increased triceps activity and decreased sternocostal pec activity; a supinated grip increased clavicular pec and biceps activity; triceps increase with narrow grip was unaffected by supination.",
+          "source": "Lehman GJ. The influence of grip width and forearm pronation/supination on upper-body myoelectric activity during the flat bench press. J Strength Cond Res. 2005;19(3):587-591.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "16095407",
+          "doi": "10.1519/R-15024.1"
+        },
+        {
+          "claim": "In competitive bench pressers, narrow vs medium/wide grip produced no significant difference in pectoralis, anterior deltoid or triceps EMG (only 26-31% lower biceps), with 6RM loads 5.8-11.1% lower.",
+          "source": "Saeterbakken AH, Mo DA, Scott S, Andersen V. The effects of bench press variations in competitive athletes on muscle activity and performance. J Hum Kinet. 2017;57:61-71.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28713459",
+          "doi": "10.1515/hukin-2017-0047"
+        },
+        {
+          "claim": "The pectoralis major / triceps brachii EMG contribution ratio did not differ between 40 cm and 81 cm grips in trained or untrained men across concentric/eccentric and fatigue conditions.",
+          "source": "Tanimoto M, Arakawa H, Sato M, Nagano A. Lateral force and EMG activity in wide- and narrow-grip bench press in various conditions. Sports (Basel). 2023;11(8):154.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "37624134",
+          "doi": "10.3390/sports11080154"
+        },
+        {
+          "claim": "Narrow hand spacing increased triceps (and clavicular pec) EMG relative to wide spacing across bench inclinations in six trained men.",
+          "source": "Barnett C, Kippers V, Turner P. Effects of variations of the bench press exercise on the EMG activity of five shoulder muscles. J Strength Cond Res. 1995;9(4):222-227.",
+          "tier": "emg",
+          "confidence": "likely"
+        },
+        {
+          "claim": "Bench press training grew the triceps lateral head significantly more than single-joint extension, supporting the .3/.7 split for pressing.",
+          "source": "Brandao L, de Salles Painelli V, Lasevicius T, et al. Varying the order of combinations of single- and multi-joint exercises differentially affects resistance training adaptations. J Strength Cond Res. 2020;34(5):1254-1263.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "32149887",
+          "doi": "10.1519/JSC.0000000000003550"
+        },
+        {
+          "claim": "Close-grip bench press elicited clavicular pec, anterior deltoid and long-head triceps EMG comparable to the standard bench press across barbell and Smith machine modes.",
+          "source": "Bezerra ES, Schoenfeld BJ, Paz G, et al. Effect of exercise order with barbell and machine modalities on upper body volume load and myoelectric activity. Sports Biomech. 2019;19(6):778-791.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "30274549",
+          "doi": "10.1080/14763141.2018.1515980"
+        }
+      ],
+      "conflictsWithBrief": [
+        "Saeterbakken 2017 and Tanimoto 2023 suggest triceps and pec activation barely change with grip width, which argues the close-grip bench is closer to the bench anchor (chest 1.0 / triceps 0.5) than to a triceps-primary lift. The triceps-primary mapping is kept because the triceps limit the load (6RM 6-11% lower) and the app's users expect close-grip work to colour triceps first; chest is set to 0.75 rather than 0.5 to reflect the evidence."
+      ],
+      "confidence": "medium",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Reverse_Triceps_Bench_Press",
+          "mapping": [
+            {
+              "groupId": "triceps",
+              "weight": 1,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.75,
+              "regionDistribution": {
+                "chest_upper": 0.5,
+                "chest_mid": 0.35,
+                "chest_lower": 0.15
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Supinated grip increases clavicular pec activity and removes the narrow-grip drop in sternocostal activity (Lehman 2005); biceps activity rises but as a stabiliser, so no biceps credit."
+        }
+      ],
+      "notes": "Chest raised from 0.5 to 0.75 for the whole family; distribution shifted toward the upper/clavicular fibres for the tucked-elbow grip. Smith and dumbbell versions share the barbell mapping (Bezerra 2019 found near-identical activation for barbell vs Smith)."
+    },
+    {
+      "id": "close_grip_pushup",
+      "name": "Close-grip / triangle push-ups",
+      "description": "Push-ups with hands inside shoulder width (on a dumbbell, in a triangle, or elevated on a bench). Closed-chain equivalent of the close-grip bench press; narrow hand base raises both triceps and pec EMG.",
+      "exerciseIds": [
+        "Close-Grip_Push-Up_off_of_a_Dumbbell",
+        "Push-Ups_-_Close_Triceps_Position",
+        "Incline_Push-Up_Close-Grip"
+      ],
+      "mapping": [
+        {
+          "groupId": "triceps",
+          "weight": 1,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Narrow base gives the highest triceps EMG of any hand position (Cogley 2005; triangle push-up was the ACE top exercise). Pressing pattern uses the same .3/.7 split as the bench anchor."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.75,
+          "regionDistribution": {
+            "chest_upper": 0.3,
+            "chest_mid": 0.5,
+            "chest_lower": 0.2
+          },
+          "rationale": "Pec EMG also rises with the narrow base (Cogley 2005) and push-up prime-mover activation matches bench press at matched load (Gottschall 2018), so chest keeps strong-synergist credit like the close-grip bench."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.5,
+          "rationale": "Anterior deltoid is a consistent prime mover in push-up EMG reviews (Kowalski 2021)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Narrow-base push-ups produced greater pectoralis major and triceps brachii EMG than wide-base push-ups in 40 subjects.",
+          "source": "Cogley RM, Archambault TA, Fibeger JF, Koverman MM, Youdas JW, Hollman JH. Comparison of muscle activation using various hand positions during the push-up exercise. J Strength Cond Res. 2005;19(3):628-633.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "16095413",
+          "doi": "10.1519/15094.1"
+        },
+        {
+          "claim": "Prime-mover activation did not differ between push-up and bench press at normalised load; narrow hand positions yielded greater activation; only core activation differed (higher in push-up).",
+          "source": "Gottschall JS, Hastings B, Becker Z. Muscle activity patterns do not differ between push-up and bench press exercises. J Appl Biomech. 2018;34(6):442-447.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29809073",
+          "doi": "10.1123/jab.2017-0063"
+        },
+        {
+          "claim": "Across 30 studies, triceps and pectoralis major had the highest EMG amplitudes in standard and incline push-ups; anterior deltoid is a consistent secondary mover.",
+          "source": "Kowalski KL, Connelly DM, Jakobi JM, Sadi J. Shoulder electromyography activity during push-up variations: a scoping review. Shoulder Elbow. 2022;14(3):326-340.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "35599715",
+          "doi": "10.1177/17585732211019373"
+        },
+        {
+          "claim": "Floor push-ups activate rectus abdominis and obliques only at stabiliser levels compared with suspended variants; abdominal stimulus is a stability effect, not a hypertrophic dose.",
+          "source": "Calatayud J, Borreani S, Colado JC, Martin F, Rogers ME. Muscle activity levels in upper-body push exercises with different loads and stability conditions. Phys Sportsmed. 2014;42(4):106-119.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "25419894",
+          "doi": "10.3810/psm.2014.11.2097"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Incline_Push-Up_Close-Grip",
+          "mapping": [
+            {
+              "groupId": "triceps",
+              "weight": 1,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.5,
+              "regionDistribution": {
+                "chest_upper": 0.15,
+                "chest_mid": 0.45,
+                "chest_lower": 0.4
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Hands elevated: the press direction relative to the torso is decline-like (lower/costal pec bias) and the load is reduced, so chest credit drops to 0.5."
+        }
+      ],
+      "notes": "Abs 0.5 on Close-Grip_Push-Up_off_of_a_Dumbbell removed: rectus abdominis works as an isometric anti-extension stabiliser (Calatayud 2014, Gottschall 2018) and crediting it would inflate abs coverage for every pressing set. Chest raised from 0.5 to 0.75 for floor versions to match the close-grip bench family."
+    },
+    {
+      "id": "dips",
+      "name": "Dips (bar, ring, machine, bench)",
+      "description": "Closed-chain press from shoulder extension back to neutral with elbow extension. Upright-torso, elbows-in versions are triceps-dominant; forward-lean bar and ring dips load the pecs heavily; bench dips are low-load and triceps-dominant with large shoulder extension.",
+      "exerciseIds": [
+        "Dips_-_Triceps_Version",
+        "Dip_Machine",
+        "Parallel_Bar_Dip",
+        "Ring_Dips",
+        "Bench_Dips",
+        "Weighted_Bench_Dip"
+      ],
+      "mapping": [
+        {
+          "groupId": "triceps",
+          "weight": 1,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Triceps is the primary mover in upright/tucked dips (McKenzie 2022: 'triceps dip' label appropriate). The shoulder is extended behind the trunk so the long head is shortened and works as an antagonist to the concentric shoulder flexion, hence the low long-head share."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.5,
+          "regionDistribution": {
+            "chest_upper": 0.05,
+            "chest_mid": 0.35,
+            "chest_lower": 0.6
+          },
+          "rationale": "Pectoralis major is an agonist in every dip variant (McKenzie 2022a, 2022b) and, from the extended-shoulder start, the costal/lower sternal fibres do the shoulder flexion/adduction. Upright triceps versions hold pec credit at half."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.5,
+          "rationale": "Anterior deltoid is a prime shoulder flexor in bar and ring dips (McKenzie 2022a)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Bar and ring dips produced significantly greater peak pectoralis major, anterior deltoid and triceps activation than the bench dip; ring dip had the highest pec activation; bench dip was relatively triceps-dominant with low PM/AD activation but used ~101% of maximal shoulder extension ROM.",
+          "source": "McKenzie A, Crowley-McHattan Z, Meir R, Whitting J, Volschenk W. Bench, bar, and ring dips: do kinematics and muscle activity differ? Int J Environ Res Public Health. 2022;19(20):13211.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "36293792",
+          "doi": "10.3390/ijerph192013211"
+        },
+        {
+          "claim": "During bar dips to exhaustion, pectoralis major and triceps brachii were the agonists whose peak activation increased with fatigue; the exercise 'appears to target pectoralis major and triceps brachii effectively'.",
+          "source": "McKenzie A, Crowley-McHattan Z, Meir R, Whitting J, Volschenk W. Fatigue increases muscle activations but does not change maximal joint angles during the bar dip. Int J Environ Res Public Health. 2022;19(21):14390.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "36361276",
+          "doi": "10.3390/ijerph192114390"
+        },
+        {
+          "claim": "Dips (bench) were among the top three triceps exercises by EMG in the ACE comparison.",
+          "source": "Boehler B, Porcari JP, Kline D, Hendrix R, Foster C. ACE-sponsored research: Best triceps exercises. ACE Certified News, 2011 (University of Wisconsin-La Crosse).",
+          "tier": "consensus",
+          "confidence": "likely"
+        },
+        {
+          "claim": "Long head shoulder-extension moment is small near 0 deg and negative shoulder angles, so in the extended-shoulder dip position the long head is shortened and contributes less to elbow extension than the monoarticular heads.",
+          "source": "Landin D, Thompson M. The shoulder extension function of the triceps brachii. J Electromyogr Kinesiol. 2011;21(1):161-165.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "20934352",
+          "doi": "10.1016/j.jelekin.2010.09.005"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Parallel_Bar_Dip",
+          "mapping": [
+            {
+              "groupId": "triceps",
+              "weight": 1,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.75,
+              "regionDistribution": {
+                "chest_upper": 0.05,
+                "chest_mid": 0.35,
+                "chest_lower": 0.6
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Generic bar dip with self-selected forward lean: pec activation is significantly higher than the bench dip and pec is a co-agonist with triceps (McKenzie 2022a/b), so chest is a strong synergist."
+        },
+        {
+          "exerciseId": "Ring_Dips",
+          "mapping": [
+            {
+              "groupId": "triceps",
+              "weight": 1,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.75,
+              "regionDistribution": {
+                "chest_upper": 0.05,
+                "chest_mid": 0.35,
+                "chest_lower": 0.6
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Ring dip produced the greatest pectoralis major (and latissimus) activation of the three variants (McKenzie 2022a) because the arms must also adduct to stabilise the rings; lats not credited (stabiliser)."
+        },
+        {
+          "exerciseId": "Bench_Dips",
+          "mapping": [
+            {
+              "groupId": "triceps",
+              "weight": 1,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.05,
+                "chest_mid": 0.35,
+                "chest_lower": 0.6
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Feet on the floor remove much of the load; PM and AD activation were low relative to triceps in the bench dip (McKenzie 2022a), so pec and anterior deltoid drop to minor credit."
+        },
+        {
+          "exerciseId": "Weighted_Bench_Dip",
+          "mapping": [
+            {
+              "groupId": "triceps",
+              "weight": 1,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.05,
+                "chest_mid": 0.35,
+                "chest_lower": 0.6
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Same kinematics as the bench dip (feet supported, upright torso, large shoulder extension); added plate raises triceps load but does not change the pec/deltoid share."
+        }
+      ],
+      "notes": "Current mappings were close; changes are chest 0.75 for bar/ring dips, chest and delt_front 0.25 for bench dips, and a slightly stronger lower-chest bias (.05/.35/.60 vs .1/.4/.5). Dip_Machine (seated, elbows in) keeps the family default. Users who lean far forward on bar dips get more pec than the mapping shows; that is a per-user technique variable we cannot capture."
+    },
+    {
+      "id": "partial_rom_lockout_press",
+      "name": "Partial-range / lockout presses (board, pin, floor)",
+      "description": "Bench-press pattern with the bottom of the ROM removed: board press, pin press, floor press (barbell, dumbbell, one-arm, with chains). The stretched pec portion is absent and the elbow extensors dominate the remaining upper-half range.",
+      "exerciseIds": [
+        "Board_Press",
+        "Pin_Presses",
+        "Floor_Press",
+        "Floor_Press_with_Chains",
+        "Dumbbell_Floor_Press",
+        "One_Arm_Floor_Press"
+      ],
+      "mapping": [
+        {
+          "groupId": "triceps",
+          "weight": 1,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Upper-half bench ROM gives the highest mean and peak triceps excitation of any ROM condition (Fischer 2025) and elbow extensors become dominant near lockout (Evangelista 2025). Pressing split as per bench anchor."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.75,
+          "regionDistribution": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          },
+          "rationale": "Pec excitation in the upper-half ROM is still at least as high as full ROM (Fischer 2025), but the long-length portion that drives most pec growth is removed (Kassiano 2023), so chest drops from primary to strong synergist. Anchor bench distribution retained (medium grip)."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.5,
+          "rationale": "Anterior deltoid excitation in partial-ROM bench matched or exceeded full ROM (Fischer 2025)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Upper-half ROM bench press elicited the highest mean triceps excitation, and the triceps long and lateral heads showed significantly higher peak EMG in the upper-half ROM than full or lower-half ROM; pec and anterior deltoid mean excitation were also higher in both partials than full ROM.",
+          "source": "Fischer J, Burger C, Manieu Seguel JA, Rodoplu C, Paternoster FK, Tilp M, Konrad A. Acute muscle excitation response across various bench press ranges of motion. Sci Rep. 2025;15(1):14105.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "40269203",
+          "doi": "10.1038/s41598-025-98354-9"
+        },
+        {
+          "claim": "Link-chain model of the bench press: elbow extensors contribute minimally in early lift phases and become dominant near full extension; grip width and bar constraint shape the sticking region.",
+          "source": "Evangelista P, Rum L, Picerno P, Biscarini A. Decoding the contribution of shoulder and elbow mechanics to barbell kinematics and the sticking region in bench and overhead press exercises. J Funct Morphol Kinesiol. 2025;10(3):322.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "40843853",
+          "doi": "10.3390/jfmk10030322"
+        },
+        {
+          "claim": "Systematic review: training at long muscle lengths (full ROM or initial-range partials) favours hypertrophy of most muscles; a mid-range partial elicited greater triceps growth than full ROM in one study (ES 1.21), so removing the stretched pec range costs the pecs more than the triceps.",
+          "source": "Kassiano W, Costa B, Nunes JP, Ribeiro AS, Schoenfeld BJ, Cyrino ES. Which ROMs lead to Rome? A systematic review of the effects of range of motion on muscle hypertrophy. J Strength Cond Res. 2023;37(5):1135-1144.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "36662126",
+          "doi": "10.1519/JSC.0000000000004415"
+        },
+        {
+          "claim": "Westside-style board, pin and floor presses are programmed specifically as triceps/lockout accessories to the bench press.",
+          "source": "Practitioner consensus (Simmons L, Westside Barbell; Tate D, EliteFTS training articles).",
+          "tier": "consensus",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [
+        "The bench anchor gives chest 1.0 / triceps 0.5; making the partial-ROM versions triceps 1.0 / chest 0.75 assumes the missing bottom range is worth more to the pecs than to the triceps. Kassiano 2023 and Fischer 2025 support this direction, but there is no longitudinal study of board/floor presses; if the team prefers, chest 1.0 / triceps 0.75 is an equally defensible alternative."
+      ],
+      "confidence": "low",
+      "notes": "Forearms 0.5, lats 0.5 and upper_back 0.5 on Board_Press and Pin_Presses removed: bar grip, lat 'tightness' and scapular retraction are isometric setup tasks with no hypertrophy evidence. Pin_Presses set 'an inch off the chest' are effectively full ROM and would deserve the bench anchor mapping; the description allows any pin height so the lockout mapping is used. One_Arm_Floor_Press: no oblique credit for the anti-rotation demand (isometric)."
+    },
+    {
+      "id": "full_rom_bench_variants",
+      "name": "Full-ROM bench press variants (powerlifting style, chains, reverse bands)",
+      "description": "Complete bench press ROM with a medium-to-wide grip: competition-style arched bench, bench with chains, reverse-band bench. Accommodating resistance changes the load curve but not the muscles that move it.",
+      "exerciseIds": ["Bench_Press_-_Powerlifting", "Bench_Press_with_Chains", "Reverse_Band_Bench_Press"],
+      "mapping": [
+        {
+          "groupId": "chest",
+          "weight": 1,
+          "regionDistribution": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          },
+          "rationale": "Identical to the fixed Barbell_Bench_Press_-_Medium_Grip anchor: these are bench presses, not triceps exercises, and must colour the chest first. Current mapping (triceps 1.0 / chest 0.5) inherited the seed database's 'triceps primary' label and is wrong."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.5,
+          "rationale": "Anchor value."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Anchor value. Chains and reverse bands overload the lockout, where the triceps dominate (Evangelista 2025), which argues for 0.75, but no study shows a shift in triceps activation or growth with accommodating resistance, so the anchor is kept."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Competition-style wide-grip flat bench press activates pectoralis major, anterior deltoid and triceps with no significant difference from medium grip; lat and posterior-deltoid EMG were recorded but were not affected by variation and reflect stabilisation.",
+          "source": "Saeterbakken AH, Mo DA, Scott S, Andersen V. The effects of bench press variations in competitive athletes on muscle activity and performance. J Hum Kinet. 2017;57:61-71.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28713459",
+          "doi": "10.1515/hukin-2017-0047"
+        },
+        {
+          "claim": "Bench press training produced significant pectoralis major CSA growth and lateral-head triceps growth, but no significant whole-triceps CSA increase when performed alone, supporting chest 1.0 / triceps 0.5.",
+          "source": "Brandao L, de Salles Painelli V, Lasevicius T, et al. Varying the order of combinations of single- and multi-joint exercises differentially affects resistance training adaptations. J Strength Cond Res. 2020;34(5):1254-1263.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "32149887",
+          "doi": "10.1519/JSC.0000000000003550"
+        },
+        {
+          "claim": "Elbow extensor torque becomes dominant only near full extension, which is where chains/reverse bands add load; the early and mid lift remain shoulder-torque (pec/deltoid) dominated.",
+          "source": "Evangelista P, Rum L, Picerno P, Biscarini A. Decoding the contribution of shoulder and elbow mechanics to barbell kinematics and the sticking region in bench and overhead press exercises. J Funct Morphol Kinesiol. 2025;10(3):322.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "40843853",
+          "doi": "10.3390/jfmk10030322"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "These three ids sit in the triceps batch only because free-exercise-db tags them triceps-primary; the anchor row applies verbatim. Forearms 0.5, lats 0.5 and upper_back 0.5 removed (isometric grip/setup). The powerlifting arch turns the press slightly decline-like, which would nudge the chest split toward lower fibres (~.20/.50/.30); the anchor split is kept to avoid an untested deviation."
+    },
+    {
+      "id": "jm_press_hybrid",
+      "name": "JM press and press-to-skullcrusher hybrids",
+      "description": "Barbell lowered toward the chin/throat with elbows driven forward, then pressed: a hybrid between a close-grip bench press and a skullcrusher. Shoulder flexes to ~45-70 deg at the bottom, so the long head is more lengthened than in a close-grip press but less than in a skullcrusher.",
+      "exerciseIds": ["JM_Press", "Decline_Close-Grip_Bench_To_Skull_Crusher"],
+      "mapping": [
+        {
+          "groupId": "triceps",
+          "weight": 1,
+          "regionDistribution": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "rationale": "Primary mover; the forward-elbow bar path adds long-head length relative to the close-grip press (.3) without reaching the skullcrusher position (.5)."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.25,
+          "regionDistribution": {
+            "chest_upper": 0.3,
+            "chest_mid": 0.5,
+            "chest_lower": 0.2
+          },
+          "rationale": "The press-out portion recruits the pecs, but the bar never reaches the chest and loads used are far below close-grip bench, so only minor credit. Down from current 0.5."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.25,
+          "rationale": "Anterior deltoid assists the short press-out; minor credit (down from 0.5)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Narrow grip and elbows-forward pressing increase triceps EMG and reduce sternocostal pec activity relative to a standard bench press.",
+          "source": "Lehman GJ. The influence of grip width and forearm pronation/supination on upper-body myoelectric activity during the flat bench press. J Strength Cond Res. 2005;19(3):587-591.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "16095407",
+          "doi": "10.1519/R-15024.1"
+        },
+        {
+          "claim": "Bench press grows the lateral head and lying extension grows the long head; a hybrid between the two is expected to sit between the .3/.7 and .5/.5 splits.",
+          "source": "Brandao L, de Salles Painelli V, Lasevicius T, et al. Varying the order of combinations of single- and multi-joint exercises differentially affects resistance training adaptations. J Strength Cond Res. 2020;34(5):1254-1263.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "32149887",
+          "doi": "10.1519/JSC.0000000000003550"
+        },
+        {
+          "claim": "The JM press was designed by JM Blakley as a triceps lockout builder combining close-grip bench and skullcrusher mechanics; no peer-reviewed EMG or hypertrophy data exist for it.",
+          "source": "Practitioner consensus (Blakley JM; Westside Barbell / EliteFTS articles; Onnit Academy 'How to properly do the JM press').",
+          "tier": "consensus",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "low",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Decline_Close-Grip_Bench_To_Skull_Crusher",
+          "mapping": [
+            {
+              "groupId": "triceps",
+              "weight": 1,
+              "regionDistribution": {
+                "triceps_long": 0.4,
+                "triceps_lateral_medial": 0.6
+              }
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.5,
+              "regionDistribution": {
+                "chest_upper": 0.1,
+                "chest_mid": 0.4,
+                "chest_lower": 0.5
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Each rep includes a full decline close-grip press to the lower chest plus a skullcrusher, so the pec (lower/costal bias on the decline) and anterior deltoid keep half credit; triceps split averages the two halves."
+        }
+      ],
+      "notes": "Lying_Close-Grip_Barbell_Triceps_Press_To_Chin was considered for this family but its description keeps the upper arm stationary (bar to chin by elbow flexion only), so it is a skullcrusher variant and sits in lying_extension_skullcrusher."
+    }
+  ],
+  "unassignedExerciseIds": [],
+  "openQuestions": [
+    "Maeo 2023 implies overhead extensions deliver ~1.4x the per-set triceps stimulus of pushdowns in every head. The weight cap of 1.0 cannot express this; should the engine allow a >1.0 'stimulus multiplier' for long-length isolation work, or should the region split (.7/.3 vs .4/.6) remain the only lever?",
+    "The head split for arm-at-side pushdowns is genuinely uncertain: Kholinne 2018 (EMG/modelling) and Maeo 2023 (relative growth) both suggest the long head is well recruited at 0 deg shoulder elevation, contrary to bodybuilding consensus. .4/.6 is a compromise; a tier-1 study comparing head-specific growth from pushdowns vs skullcrushers would settle it.",
+    "Close-grip bench: Saeterbakken 2017 and Tanimoto 2023 show pec activation essentially unchanged by grip width. Should close-grip presses be chest 1.0 / triceps 0.75 (closer to the anchor) rather than triceps 1.0 / chest 0.75? The current recommendation follows load-limiting muscle and user expectation.",
+    "Partial-ROM presses (board/pin/floor) have no longitudinal data; the triceps 1.0 / chest 0.75 mapping is inferred from Fischer 2025 (acute EMG) and Kassiano 2023 (length-dependent growth). Pin height in Pin_Presses is user-defined and can range from lockout-only to near-full ROM.",
+    "Bench with chains / reverse bands: should lockout-overload variants bump triceps from 0.5 to 0.75? No activation or hypertrophy study supports a shift, so the anchor was kept.",
+    "Stabiliser credits removed across the batch (forearms on skullcrushers/presses, lats and upper_back on bench variants, abs on push-ups, delt_front on overhead and kickback holds). If the product wants stabilisers to receive colour, a uniform 0.25 rule should be decided centrally rather than per exercise.",
+    "Barnett 1995 and the ACE/Boehler 2011 report could not be opened as PubMed records (JSCR 1995 is not indexed; ACE is not peer reviewed) and are marked 'likely'."
+  ]
+}

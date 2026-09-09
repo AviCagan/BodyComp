@@ -1,0 +1,2020 @@
+{
+  "batch": "chest",
+  "scope": "Chest: horizontal/incline/decline presses, flyes, push-ups, dips (chest version), pullovers",
+  "exercises": [
+    {
+      "id": "Alternating_Floor_Press",
+      "name": "Alternating Floor Press",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Around_The_Worlds",
+      "name": "Around The Worlds",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Bench_Press_-_Medium_Grip",
+      "name": "Barbell Bench Press - Medium Grip",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Guillotine_Bench_Press",
+      "name": "Barbell Guillotine Bench Press",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Incline_Bench_Press_-_Medium_Grip",
+      "name": "Barbell Incline Bench Press - Medium Grip",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Bench_Press_-_With_Bands",
+      "name": "Bench Press - With Bands",
+      "equipment": "bands",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Bent-Arm_Barbell_Pullover",
+      "name": "Bent-Arm Barbell Pullover",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Bent-Arm_Dumbbell_Pullover",
+      "name": "Bent-Arm Dumbbell Pullover",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Bodyweight_Flyes",
+      "name": "Bodyweight Flyes",
+      "equipment": "ez_bar",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Butterfly",
+      "name": "Butterfly",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "id": "Cable_Chest_Press",
+      "name": "Cable Chest Press",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Cable_Crossover",
+      "name": "Cable Crossover",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Cable_Iron_Cross",
+      "name": "Cable Iron Cross",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "id": "Chain_Press",
+      "name": "Chain Press",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Clock_Push-Up",
+      "name": "Clock Push-Up",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Cross_Over_-_With_Bands",
+      "name": "Cross Over - With Bands",
+      "equipment": "bands",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Decline_Barbell_Bench_Press",
+      "name": "Decline Barbell Bench Press",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Decline_Dumbbell_Bench_Press",
+      "name": "Decline Dumbbell Bench Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Decline_Dumbbell_Flyes",
+      "name": "Decline Dumbbell Flyes",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Decline_Push-Up",
+      "name": "Decline Push-Up",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Decline_Smith_Press",
+      "name": "Decline Smith Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dips_-_Chest_Version",
+      "name": "Dips - Chest Version",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Bench_Press",
+      "name": "Dumbbell Bench Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Bench_Press_with_Neutral_Grip",
+      "name": "Dumbbell Bench Press with Neutral Grip",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Flyes",
+      "name": "Dumbbell Flyes",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Extended_Range_One-Arm_Kettlebell_Floor_Press",
+      "name": "Extended Range One-Arm Kettlebell Floor Press",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Flat_Bench_Cable_Flyes",
+      "name": "Flat Bench Cable Flyes",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Front_Raise_And_Pullover",
+      "name": "Front Raise And Pullover",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Hammer_Grip_Incline_DB_Bench_Press",
+      "name": "Hammer Grip Incline DB Bench Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Incline_Cable_Chest_Press",
+      "name": "Incline Cable Chest Press",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Incline_Cable_Flye",
+      "name": "Incline Cable Flye",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Incline_Dumbbell_Bench_With_Palms_Facing_In",
+      "name": "Incline Dumbbell Bench With Palms Facing In",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Incline_Dumbbell_Flyes",
+      "name": "Incline Dumbbell Flyes",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Incline_Dumbbell_Flyes_-_With_A_Twist",
+      "name": "Incline Dumbbell Flyes - With A Twist",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Incline_Dumbbell_Press",
+      "name": "Incline Dumbbell Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Incline_Push-Up",
+      "name": "Incline Push-Up",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Incline_Push-Up_Medium",
+      "name": "Incline Push-Up Medium",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Incline_Push-Up_Reverse_Grip",
+      "name": "Incline Push-Up Reverse Grip",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Incline_Push-Up_Wide",
+      "name": "Incline Push-Up Wide",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Isometric_Wipers",
+      "name": "Isometric Wipers",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Leg-Over_Floor_Press",
+      "name": "Leg-Over Floor Press",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Leverage_Chest_Press",
+      "name": "Leverage Chest Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Leverage_Decline_Chest_Press",
+      "name": "Leverage Decline Chest Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Leverage_Incline_Chest_Press",
+      "name": "Leverage Incline Chest Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Low_Cable_Crossover",
+      "name": "Low Cable Crossover",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Machine_Bench_Press",
+      "name": "Machine Bench Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Neck_Press",
+      "name": "Neck Press",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Flat_Bench_Dumbbell_Flye",
+      "name": "One-Arm Flat Bench Dumbbell Flye",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Kettlebell_Floor_Press",
+      "name": "One-Arm Kettlebell Floor Press",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "One_Arm_Dumbbell_Bench_Press",
+      "name": "One Arm Dumbbell Bench Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Plyo_Kettlebell_Pushups",
+      "name": "Plyo Kettlebell Pushups",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Push-Up_Wide",
+      "name": "Push-Up Wide",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "other",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Push-Ups_With_Feet_Elevated",
+      "name": "Push-Ups With Feet Elevated",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Push-Ups_With_Feet_On_An_Exercise_Ball",
+      "name": "Push-Ups With Feet On An Exercise Ball",
+      "equipment": "exercise_ball",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Push_Up_to_Side_Plank",
+      "name": "Push Up to Side Plank",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        },
+        {
+          "g": "obliques",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Pushups",
+      "name": "Pushups",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Pushups_Close_and_Wide_Hand_Positions",
+      "name": "Pushups (Close and Wide Hand Positions)",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Single-Arm_Cable_Crossover",
+      "name": "Single-Arm Cable Crossover",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Single-Arm_Push-Up",
+      "name": "Single-Arm Push-Up",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Bench_Press",
+      "name": "Smith Machine Bench Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Decline_Press",
+      "name": "Smith Machine Decline Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "other",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Incline_Bench_Press",
+      "name": "Smith Machine Incline Bench Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Cable_Chest_Press",
+      "name": "Standing Cable Chest Press",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Straight-Arm_Dumbbell_Pullover",
+      "name": "Straight-Arm Dumbbell Pullover",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Suspended_Push-Up",
+      "name": "Suspended Push-Up",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Svend_Press",
+      "name": "Svend Press",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Wide-Grip_Barbell_Bench_Press",
+      "name": "Wide-Grip Barbell Bench Press",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Wide-Grip_Decline_Barbell_Bench_Press",
+      "name": "Wide-Grip Decline Barbell Bench Press",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Wide-Grip_Decline_Barbell_Pullover",
+      "name": "Wide-Grip Decline Barbell Pullover",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    }
+  ]
+}

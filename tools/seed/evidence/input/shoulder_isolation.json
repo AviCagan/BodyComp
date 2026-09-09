@@ -1,0 +1,1802 @@
+{
+  "batch": "shoulder_isolation",
+  "scope": "Shoulder isolation: lateral raises, front raises, rear-delt raises/flyes, face pulls, upright rows, rotator-cuff rotations",
+  "exercises": [
+    {
+      "id": "Alternating_Deltoid_Raise",
+      "name": "Alternating Deltoid Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Back_Flyes_-_With_Bands",
+      "name": "Back Flyes - With Bands",
+      "equipment": "bands",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Band_Pull_Apart",
+      "name": "Band Pull Apart",
+      "equipment": "bands",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Incline_Shoulder_Raise",
+      "name": "Barbell Incline Shoulder Raise",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Rear_Delt_Row",
+      "name": "Barbell Rear Delt Row",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Battling_Ropes",
+      "name": "Battling Ropes",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench",
+      "name": "Bent Over Dumbbell Rear Delt Raise With Head On Bench",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Bent_Over_Low-Pulley_Side_Lateral",
+      "name": "Bent Over Low-Pulley Side Lateral",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Cable_Internal_Rotation",
+      "name": "Cable Internal Rotation",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Cable_Rear_Delt_Fly",
+      "name": "Cable Rear Delt Fly",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Cable_Rope_Rear-Delt_Rows",
+      "name": "Cable Rope Rear-Delt Rows",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Cable_Seated_Lateral_Raise",
+      "name": "Cable Seated Lateral Raise",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Car_Drivers",
+      "name": "Car Drivers",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Cuban_Press",
+      "name": "Cuban Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Double_Kettlebell_Jerk",
+      "name": "Double Kettlebell Jerk",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Double_Kettlebell_Snatch",
+      "name": "Double Kettlebell Snatch",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Incline_Shoulder_Raise",
+      "name": "Dumbbell Incline Shoulder Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Lying_One-Arm_Rear_Lateral_Raise",
+      "name": "Dumbbell Lying One-Arm Rear Lateral Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Lying_Rear_Lateral_Raise",
+      "name": "Dumbbell Lying Rear Lateral Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_One-Arm_Upright_Row",
+      "name": "Dumbbell One-Arm Upright Row",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.75
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Raise",
+      "name": "Dumbbell Raise",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Scaption",
+      "name": "Dumbbell Scaption",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "External_Rotation",
+      "name": "External Rotation",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "External_Rotation_with_Band",
+      "name": "External Rotation with Band",
+      "equipment": "bands",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "External_Rotation_with_Cable",
+      "name": "External Rotation with Cable",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Face_Pull",
+      "name": "Face Pull",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Front_Cable_Raise",
+      "name": "Front Cable Raise",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Front_Dumbbell_Raise",
+      "name": "Front Dumbbell Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Front_Incline_Dumbbell_Raise",
+      "name": "Front Incline Dumbbell Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Front_Plate_Raise",
+      "name": "Front Plate Raise",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Front_Two-Dumbbell_Raise",
+      "name": "Front Two-Dumbbell Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Internal_Rotation_with_Band",
+      "name": "Internal Rotation with Band",
+      "equipment": "bands",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Iron_Cross",
+      "name": "Iron Cross",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Halo",
+      "name": "Kettlebell Halo",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "other",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Halo_With_Overhead_Extension",
+      "name": "Kettlebell Halo with Overhead Extension",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 1,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Pirate_Ships",
+      "name": "Kettlebell Pirate Ships",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Thruster",
+      "name": "Kettlebell Thruster",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Turkish_Get-Up_Lunge_style",
+      "name": "Kettlebell Turkish Get-Up (Lunge style)",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Turkish_Get-Up_Squat_style",
+      "name": "Kettlebell Turkish Get-Up (Squat style)",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Lateral_Raise_-_With_Bands",
+      "name": "Lateral Raise - With Bands",
+      "equipment": "bands",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Low_Pulley_Row_To_Neck",
+      "name": "Low Pulley Row To Neck",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Lying_One-Arm_Lateral_Raise",
+      "name": "Lying One-Arm Lateral Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Lying_Rear_Delt_Raise",
+      "name": "Lying Rear Delt Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Incline_Lateral_Raise",
+      "name": "One-Arm Incline Lateral Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Kettlebell_Clean_and_Jerk",
+      "name": "One-Arm Kettlebell Clean and Jerk",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Kettlebell_Jerk",
+      "name": "One-Arm Kettlebell Jerk",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Kettlebell_Snatch",
+      "name": "One-Arm Kettlebell Snatch",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Kettlebell_Split_Jerk",
+      "name": "One-Arm Kettlebell Split Jerk",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Kettlebell_Split_Snatch",
+      "name": "One-Arm Kettlebell Split Snatch",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Side_Laterals",
+      "name": "One-Arm Side Laterals",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Power_Partials",
+      "name": "Power Partials",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Flyes",
+      "name": "Reverse Flyes",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Flyes_With_External_Rotation",
+      "name": "Reverse Flyes With External Rotation",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Machine_Flyes",
+      "name": "Reverse Machine Flyes",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Seated_Bent-Over_Rear_Delt_Raise",
+      "name": "Seated Bent-Over Rear Delt Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Seated_Side_Lateral_Raise",
+      "name": "Seated Side Lateral Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Side_Lateral_Raise",
+      "name": "Side Lateral Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Side_Laterals_to_Front_Raise",
+      "name": "Side Laterals to Front Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Single_Dumbbell_Raise",
+      "name": "Single Dumbbell Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Sled_Overhead_Backward_Walk",
+      "name": "Sled Overhead Backward Walk",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "carry",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Sled_Reverse_Flye",
+      "name": "Sled Reverse Flye",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_rear",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Smith_Incline_Shoulder_Raise",
+      "name": "Smith Incline Shoulder Raise",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_One-Arm_Upright_Row",
+      "name": "Smith Machine One-Arm Upright Row",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.75
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Upright_Row",
+      "name": "Smith Machine Upright Row",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.75
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Dumbbell_Straight-Arm_Front_Delt_Raise_Above_Head",
+      "name": "Standing Dumbbell Straight-Arm Front Delt Raise Above Head",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Standing_Dumbbell_Upright_Row",
+      "name": "Standing Dumbbell Upright Row",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.75
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Front_Barbell_Raise_Over_Head",
+      "name": "Standing Front Barbell Raise Over Head",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Standing_Low-Pulley_Deltoid_Raise",
+      "name": "Standing Low-Pulley Deltoid Raise",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Straight_Raises_on_Incline_Bench",
+      "name": "Straight Raises on Incline Bench",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Two-Arm_Kettlebell_Clean",
+      "name": "Two-Arm Kettlebell Clean",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Two-Arm_Kettlebell_Jerk",
+      "name": "Two-Arm Kettlebell Jerk",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Upright_Barbell_Row",
+      "name": "Upright Barbell Row",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.75
+        }
+      ]
+    },
+    {
+      "id": "Upright_Cable_Row",
+      "name": "Upright Cable Row",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.75
+        }
+      ]
+    },
+    {
+      "id": "Upright_Row_-_With_Bands",
+      "name": "Upright Row - With Bands",
+      "equipment": "bands",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.75
+        }
+      ]
+    }
+  ]
+}

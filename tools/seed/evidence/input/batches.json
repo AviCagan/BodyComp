@@ -1,0 +1,68 @@
+[
+  {
+    "batch": "chest",
+    "scope": "Chest: horizontal/incline/decline presses, flyes, push-ups, dips (chest version), pullovers",
+    "count": 69,
+    "file": "tools/seed/evidence/input/chest.json"
+  },
+  {
+    "batch": "shoulder_press",
+    "scope": "Shoulder pressing: overhead/military/Arnold/push press/landmine presses, handstand push-ups",
+    "count": 36,
+    "file": "tools/seed/evidence/input/shoulder_press.json"
+  },
+  {
+    "batch": "shoulder_isolation",
+    "scope": "Shoulder isolation: lateral raises, front raises, rear-delt raises/flyes, face pulls, upright rows, rotator-cuff rotations",
+    "count": 74,
+    "file": "tools/seed/evidence/input/shoulder_isolation.json"
+  },
+  {
+    "batch": "back",
+    "scope": "Back: pull-ups, chin-ups, pulldowns, straight-arm pulldowns; barbell/dumbbell/cable/machine/T-bar rows, inverted rows, mid-back shrugs, scapular work",
+    "count": 59,
+    "file": "tools/seed/evidence/input/back.json"
+  },
+  {
+    "batch": "biceps",
+    "scope": "Biceps: curls of every grip and implement, preacher/incline/concentration/hammer/reverse/Zottman",
+    "count": 50,
+    "file": "tools/seed/evidence/input/biceps.json"
+  },
+  {
+    "batch": "triceps",
+    "scope": "Triceps: pushdowns, kickbacks, overhead/French extensions, skullcrushers, close-grip presses, dips (triceps version), JM press",
+    "count": 68,
+    "file": "tools/seed/evidence/input/triceps.json"
+  },
+  {
+    "batch": "quads",
+    "scope": "Knee-dominant lower body: back/front/goblet/hack/box/overhead/Zercher squats, leg press, leg extension, sissy squat, step-ups, wall sits; lunges, split squats, Bulgarian split squats, pistol squats",
+    "count": 67,
+    "file": "tools/seed/evidence/input/quads.json"
+  },
+  {
+    "batch": "hinge_posterior",
+    "scope": "Hip hinge and posterior-chain isolation: deadlift variants, RDL, stiff-leg, good mornings, back extensions, pull-throughs, swings; lying/seated/standing leg curls, glute-ham raise, Nordic curl, hip thrusts, glute bridges, kickbacks, abductions/adductions",
+    "count": 67,
+    "file": "tools/seed/evidence/input/hinge_posterior.json"
+  },
+  {
+    "batch": "core",
+    "scope": "Core: crunches, sit-ups, leg raises, planks, rollouts, woodchops, Russian twists, side bends, Pallof, hanging work, dead bugs, bird dogs",
+    "count": 82,
+    "file": "tools/seed/evidence/input/core.json"
+  },
+  {
+    "batch": "small_groups",
+    "scope": "Calves and tibialis; upper traps, neck and spinal erectors as primaries (shrugs, high pulls, neck flexion/extension, supermans, rack pulls); forearms and grip (wrist curls, reverse wrist curls, wrist rollers, pinches, holds, farmer carries)",
+    "count": 50,
+    "file": "tools/seed/evidence/input/small_groups.json"
+  },
+  {
+    "batch": "olympic_strongman_plyo",
+    "scope": "Olympic lifts, strongman events, and plyometrics: cleans, snatches, jerks, tire flips, sled/yoke work, atlas stones, jumps, throws (map coarsely by family; these are niche)",
+    "count": 117,
+    "file": "tools/seed/evidence/input/olympic_strongman_plyo.json"
+  }
+]

@@ -1,0 +1,2441 @@
+{
+  "batch": "hinge_posterior",
+  "scope": "Hip hinge and posterior-chain isolation: deadlift variants, RDL, stiff-leg, good mornings, back extensions, pull-throughs, swings; lying/seated/standing leg curls, glute-ham raise, Nordic curl, hip thrusts, glute bridges, kickbacks, abductions/adductions",
+  "exercises": [
+    {
+      "id": "Alternating_Hang_Clean",
+      "name": "Alternating Hang Clean",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Band_Good_Morning",
+      "name": "Band Good Morning",
+      "equipment": "bands",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Band_Good_Morning_Pull_Through",
+      "name": "Band Good Morning (Pull Through)",
+      "equipment": "bands",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Deadlift",
+      "name": "Barbell Deadlift",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.75,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Deadlift_with_Bands",
+      "name": "Deadlift with Bands",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.75,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        },
+        {
+          "g": "lats",
+          "w": 0.25
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Deadlift_with_Chains",
+      "name": "Deadlift with Chains",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.75,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        },
+        {
+          "g": "lats",
+          "w": 0.25
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Deficit_Deadlift",
+      "name": "Deficit Deadlift",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.75,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        },
+        {
+          "g": "lats",
+          "w": 0.25
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Double_Kettlebell_Alternating_Hang_Clean",
+      "name": "Double Kettlebell Alternating Hang Clean",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Clean",
+      "name": "Dumbbell Clean",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Floor_Glute-Ham_Raise",
+      "name": "Floor Glute-Ham Raise",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Good_Morning",
+      "name": "Good Morning",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Good_Morning_off_Pins",
+      "name": "Good Morning off Pins",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Hanging_Bar_Good_Morning",
+      "name": "Hanging Bar Good Morning",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Hyperextensions_Back_Extensions",
+      "name": "Hyperextensions (Back Extensions)",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Hyperextensions_With_No_Hyperextension_Bench",
+      "name": "Hyperextensions With No Hyperextension Bench",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Dead_Clean",
+      "name": "Kettlebell Dead Clean",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Hang_Clean",
+      "name": "Kettlebell Hang Clean",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_One-Legged_Deadlift",
+      "name": "Kettlebell One-Legged Deadlift",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Lunge_Pass_Through",
+      "name": "Lunge Pass Through",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Kettlebell_Clean",
+      "name": "One-Arm Kettlebell Clean",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Kettlebell_Swings",
+      "name": "One-Arm Kettlebell Swings",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Open_Palm_Kettlebell_Clean",
+      "name": "One-Arm Open Palm Kettlebell Clean",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Open_Palm_Kettlebell_Clean",
+      "name": "Open Palm Kettlebell Clean",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Platform_Hamstring_Slides",
+      "name": "Platform Hamstring Slides",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Power_Clean",
+      "name": "Power Clean",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Prone_Manual_Hamstring",
+      "name": "Prone Manual Hamstring",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Band_Deadlift",
+      "name": "Reverse Band Deadlift",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.75,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        },
+        {
+          "g": "lats",
+          "w": 0.25
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Band_Sumo_Deadlift",
+      "name": "Reverse Band Sumo Deadlift",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Hyperextension",
+      "name": "Reverse Hyperextension",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Romanian_Deadlift",
+      "name": "Romanian Deadlift",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Seated_Good_Mornings",
+      "name": "Seated Good Mornings",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.75
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Hang_Power_Clean",
+      "name": "Smith Machine Hang Power Clean",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Stiff-Legged_Deadlift",
+      "name": "Smith Machine Stiff-Legged Deadlift",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Snatch_Pull",
+      "name": "Snatch Pull",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Stiff-Legged_Barbell_Deadlift",
+      "name": "Stiff-Legged Barbell Deadlift",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Stiff-Legged_Dumbbell_Deadlift",
+      "name": "Stiff-Legged Dumbbell Deadlift",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Stiff_Leg_Barbell_Good_Morning",
+      "name": "Stiff Leg Barbell Good Morning",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.75
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Sumo_Deadlift",
+      "name": "Sumo Deadlift",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Sumo_Deadlift_with_Bands",
+      "name": "Sumo Deadlift with Bands",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Sumo_Deadlift_with_Chains",
+      "name": "Sumo Deadlift with Chains",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Weighted_Ball_Hyperextension",
+      "name": "Weighted Ball Hyperextension",
+      "equipment": "exercise_ball",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Ball_Leg_Curl",
+      "name": "Ball Leg Curl",
+      "equipment": "exercise_ball",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.6,
+            "hamstrings_bf_short": 0.4
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Band_Hip_Adductions",
+      "name": "Band Hip Adductions",
+      "equipment": "bands",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "adductors",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Glute_Bridge",
+      "name": "Barbell Glute Bridge",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Hip_Thrust",
+      "name": "Barbell Hip Thrust",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Butt_Lift_Bridge",
+      "name": "Butt Lift (Bridge)",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Downward_Facing_Balance",
+      "name": "Downward Facing Balance",
+      "equipment": "exercise_ball",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Flutter_Kicks",
+      "name": "Flutter Kicks",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Glute_Ham_Raise",
+      "name": "Glute Ham Raise",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.5,
+            "hamstrings_bf_short": 0.5
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Glute_Kickback",
+      "name": "Glute Kickback",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Hip_Extension_with_Bands",
+      "name": "Hip Extension with Bands",
+      "equipment": "bands",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Hip_Lift_with_Band",
+      "name": "Hip Lift with Band",
+      "equipment": "bands",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kneeling_Squat",
+      "name": "Kneeling Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Leg_Lift",
+      "name": "Leg Lift",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Lying_Leg_Curls",
+      "name": "Lying Leg Curls",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.6,
+            "hamstrings_bf_short": 0.4
+          }
+        }
+      ]
+    },
+    {
+      "id": "Monster_Walk",
+      "name": "Monster Walk",
+      "equipment": "bands",
+      "mechanic": "compound",
+      "pattern": "carry",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.2,
+            "glute_med": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Natural_Glute_Ham_Raise",
+      "name": "Natural Glute Ham Raise",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.5,
+            "hamstrings_bf_short": 0.5
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "One-Legged_Cable_Kickback",
+      "name": "One-Legged Cable Kickback",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Physioball_Hip_Bridge",
+      "name": "Physioball Hip Bridge",
+      "equipment": "exercise_ball",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Pull_Through",
+      "name": "Pull Through",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Seated_Band_Hamstring_Curl",
+      "name": "Seated Band Hamstring Curl",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.6,
+            "hamstrings_bf_short": 0.4
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_Leg_Curl",
+      "name": "Seated Leg Curl",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.6,
+            "hamstrings_bf_short": 0.4
+          }
+        }
+      ]
+    },
+    {
+      "id": "Single_Leg_Glute_Bridge",
+      "name": "Single Leg Glute Bridge",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Leg_Curl",
+      "name": "Standing Leg Curl",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.6,
+            "hamstrings_bf_short": 0.4
+          }
+        }
+      ]
+    },
+    {
+      "id": "Step-up_with_Knee_Raise",
+      "name": "Step-up with Knee Raise",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Thigh_Abductor",
+      "name": "Thigh Abductor",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Thigh_Adductor",
+      "name": "Thigh Adductor",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "adductors",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    }
+  ]
+}

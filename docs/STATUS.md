@@ -99,7 +99,13 @@ Bodies: option A (CC0 base bodies, our segmentation). Nutrition: yes (Phase 5b s
 Supabase project ShowUp exists with the connector enabled; the rotated Anthropic key is in its Edge Function secrets
 as `ANTHROPIC_API_KEY` and the YouTube Data API v3 key as `YOUTUBE_API_KEY`. Store accounts
 deferred to the end of the first build.
-Evidence pass for the exercise → muscle table is running (ADR-0023). Phase 0 still waits on the release-APK result.
+Evidence pass for the exercise → muscle table (ADR-0023): 10 of 11 research batches finished and are saved under
+`tools/seed/evidence/` (622/739 exercises in 108 families, zero rule violations, 29 anchor-row conflicts for the owner);
+the last batch (olympic_strongman_plyo, 117 exercises) and all 11 verifiers stopped on the usage limit. Resume with
+`Workflow({scriptPath: <session>/workflows/scripts/exercise-muscle-evidence-wf_2ed394b5-ad7.js, resumeFromRunId:
+'wf_2ed394b5-ad7', args})` in the same session, or re-run `tools/seed/evidence/workflow.js.txt` with the batch index
+at `tools/seed/evidence/input/batches.json` (paths inside it are repo-relative now). The app still uses the rule-based
+mapping until the verified table lands. Phase 0 still waits on the release-APK result.
 
 ## Next steps (Phase 1, do not start before the device check passes)
 

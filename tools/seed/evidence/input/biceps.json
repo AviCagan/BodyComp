@@ -1,0 +1,1024 @@
+{
+  "batch": "biceps",
+  "scope": "Biceps: curls of every grip and implement, preacher/incline/concentration/hammer/reverse/Zottman",
+  "exercises": [
+    {
+      "id": "Alternate_Hammer_Curl",
+      "name": "Alternate Hammer Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Alternate_Incline_Dumbbell_Curl",
+      "name": "Alternate Incline Dumbbell Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Curl",
+      "name": "Barbell Curl",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Curls_Lying_Against_An_Incline",
+      "name": "Barbell Curls Lying Against An Incline",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Cable_Hammer_Curls_-_Rope_Attachment",
+      "name": "Cable Hammer Curls - Rope Attachment",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Cable_Preacher_Curl",
+      "name": "Cable Preacher Curl",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Close-Grip_EZ-Bar_Curl_with_Band",
+      "name": "Close-Grip EZ-Bar Curl with Band",
+      "equipment": "ez_bar",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Close-Grip_EZ_Bar_Curl",
+      "name": "Close-Grip EZ Bar Curl",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Close-Grip_Standing_Barbell_Curl",
+      "name": "Close-Grip Standing Barbell Curl",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Concentration_Curls",
+      "name": "Concentration Curls",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Cross_Body_Hammer_Curl",
+      "name": "Cross Body Hammer Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Drag_Curl",
+      "name": "Drag Curl",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Alternate_Bicep_Curl",
+      "name": "Dumbbell Alternate Bicep Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Bicep_Curl",
+      "name": "Dumbbell Bicep Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Prone_Incline_Curl",
+      "name": "Dumbbell Prone Incline Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "EZ-Bar_Curl",
+      "name": "EZ-Bar Curl",
+      "equipment": "ez_bar",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Flexor_Incline_Dumbbell_Curls",
+      "name": "Flexor Incline Dumbbell Curls",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Hammer_Curls",
+      "name": "Hammer Curls",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "High_Cable_Curls",
+      "name": "High Cable Curls",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Incline_Dumbbell_Curl",
+      "name": "Incline Dumbbell Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Incline_Hammer_Curls",
+      "name": "Incline Hammer Curls",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Incline_Inner_Biceps_Curl",
+      "name": "Incline Inner Biceps Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Lying_Cable_Curl",
+      "name": "Lying Cable Curl",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Lying_Close-Grip_Bar_Curl_On_High_Pulley",
+      "name": "Lying Close-Grip Bar Curl On High Pulley",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Lying_High_Bench_Barbell_Curl",
+      "name": "Lying High Bench Barbell Curl",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Lying_Supine_Dumbbell_Curl",
+      "name": "Lying Supine Dumbbell Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Machine_Bicep_Curl",
+      "name": "Machine Bicep Curl",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Machine_Preacher_Curls",
+      "name": "Machine Preacher Curls",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "One_Arm_Dumbbell_Preacher_Curl",
+      "name": "One Arm Dumbbell Preacher Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Overhead_Cable_Curl",
+      "name": "Overhead Cable Curl",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Preacher_Curl",
+      "name": "Preacher Curl",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Preacher_Hammer_Dumbbell_Curl",
+      "name": "Preacher Hammer Dumbbell Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Barbell_Curl",
+      "name": "Reverse Barbell Curl",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Barbell_Preacher_Curls",
+      "name": "Reverse Barbell Preacher Curls",
+      "equipment": "ez_bar",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Cable_Curl",
+      "name": "Reverse Cable Curl",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Plate_Curls",
+      "name": "Reverse Plate Curls",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_Close-Grip_Concentration_Barbell_Curl",
+      "name": "Seated Close-Grip Concentration Barbell Curl",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_Dumbbell_Curl",
+      "name": "Seated Dumbbell Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_Dumbbell_Inner_Biceps_Curl",
+      "name": "Seated Dumbbell Inner Biceps Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Spider_Curl",
+      "name": "Spider Curl",
+      "equipment": "ez_bar",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Biceps_Cable_Curl",
+      "name": "Standing Biceps Cable Curl",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Concentration_Curl",
+      "name": "Standing Concentration Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Dumbbell_Reverse_Curl",
+      "name": "Standing Dumbbell Reverse Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Inner-Biceps_Curl",
+      "name": "Standing Inner-Biceps Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_One-Arm_Cable_Curl",
+      "name": "Standing One-Arm Cable Curl",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_One-Arm_Dumbbell_Curl_Over_Incline_Bench",
+      "name": "Standing One-Arm Dumbbell Curl Over Incline Bench",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Two-Arm_Dumbbell_Preacher_Curl",
+      "name": "Two-Arm Dumbbell Preacher Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Wide-Grip_Standing_Barbell_Curl",
+      "name": "Wide-Grip Standing Barbell Curl",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Zottman_Curl",
+      "name": "Zottman Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Zottman_Preacher_Curl",
+      "name": "Zottman Preacher Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "biceps",
+          "w": 1,
+          "d": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    }
+  ]
+}

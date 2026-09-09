@@ -1,0 +1,1061 @@
+{
+  "batch": "shoulder_press",
+  "scope": "Shoulder pressing: overhead/military/Arnold/push press/landmine presses, handstand push-ups",
+  "exercises": [
+    {
+      "id": "Alternating_Cable_Shoulder_Press",
+      "name": "Alternating Cable Shoulder Press",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Alternating_Kettlebell_Press",
+      "name": "Alternating Kettlebell Press",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Anti-Gravity_Press",
+      "name": "Anti-Gravity Press",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Arnold_Dumbbell_Press",
+      "name": "Arnold Dumbbell Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Shoulder_Press",
+      "name": "Barbell Shoulder Press",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "id": "Bradford_Rocky_Presses",
+      "name": "Bradford/Rocky Presses",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Cable_Shoulder_Press",
+      "name": "Cable Shoulder Press",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Clean_and_Press",
+      "name": "Clean and Press",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Double_Kettlebell_Push_Press",
+      "name": "Double Kettlebell Push Press",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_One-Arm_Shoulder_Press",
+      "name": "Dumbbell One-Arm Shoulder Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Shoulder_Press",
+      "name": "Dumbbell Shoulder Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Handstand_Push-Ups",
+      "name": "Handstand Push-Ups",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Arnold_Press",
+      "name": "Kettlebell Arnold Press",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Seated_Press",
+      "name": "Kettlebell Seated Press",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Seesaw_Press",
+      "name": "Kettlebell Seesaw Press",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Landmine_Linear_Jammer",
+      "name": "Landmine Linear Jammer",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Leverage_Shoulder_Press",
+      "name": "Leverage Shoulder Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Machine_Shoulder_Military_Press",
+      "name": "Machine Shoulder (Military) Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Kettlebell_Military_Press_To_The_Side",
+      "name": "One-Arm Kettlebell Military Press To The Side",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Kettlebell_Para_Press",
+      "name": "One-Arm Kettlebell Para Press",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Kettlebell_Push_Press",
+      "name": "One-Arm Kettlebell Push Press",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_Barbell_Military_Press",
+      "name": "Seated Barbell Military Press",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_Cable_Shoulder_Press",
+      "name": "Seated Cable Shoulder Press",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_Dumbbell_Press",
+      "name": "Seated Dumbbell Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "See-Saw_Press_Alternating_Side_Press",
+      "name": "See-Saw Press (Alternating Side Press)",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Shoulder_Press_-_With_Bands",
+      "name": "Shoulder Press - With Bands",
+      "equipment": "bands",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Single-Arm_Linear_Jammer",
+      "name": "Single-Arm Linear Jammer",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Overhead_Shoulder_Press",
+      "name": "Smith Machine Overhead Shoulder Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Alternating_Dumbbell_Press",
+      "name": "Standing Alternating Dumbbell Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Barbell_Press_Behind_Neck",
+      "name": "Standing Barbell Press Behind Neck",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Bradford_Press",
+      "name": "Standing Bradford Press",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Dumbbell_Press",
+      "name": "Standing Dumbbell Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Military_Press",
+      "name": "Standing Military Press",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Palm-In_One-Arm_Dumbbell_Press",
+      "name": "Standing Palm-In One-Arm Dumbbell Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Palms-In_Dumbbell_Press",
+      "name": "Standing Palms-In Dumbbell Press",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Two-Arm_Kettlebell_Military_Press",
+      "name": "Two-Arm Kettlebell Military Press",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          }
+        }
+      ]
+    }
+  ]
+}

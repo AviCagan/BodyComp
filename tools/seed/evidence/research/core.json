@@ -1,0 +1,1802 @@
+{
+  "batch": "core",
+  "families": [
+    {
+      "id": "trunk_flexion_crunch",
+      "name": "Crunch (spinal flexion, hips fixed)",
+      "description": "Lumbar/thoracic flexion with the pelvis fixed: floor, machine, decline, ball, cable/rope crunches and their twisting hybrids. Rectus abdominis is the prime mover; external/internal obliques co-contract at a lower level; hip flexors are largely unloaded unless the feet are anchored on a decline or the legs cycle (bicycle-type variants).",
+      "exerciseIds": [
+        "Ab_Crunch_Machine",
+        "Air_Bike",
+        "Bosu_Ball_Cable_Crunch_With_Side_Bends",
+        "Cable_Crunch",
+        "Cable_Seated_Crunch",
+        "Cross-Body_Crunch",
+        "Crunch_-_Hands_Overhead",
+        "Crunch_-_Legs_On_Exercise_Ball",
+        "Crunches",
+        "Decline_Crunch",
+        "Elbow_to_Knee",
+        "Exercise_Ball_Crunch",
+        "Kneeling_Cable_Crunch_With_Alternating_Oblique_Twists",
+        "Rope_Crunch",
+        "Standing_Rope_Crunch",
+        "Tuck_Crunch",
+        "Weighted_Crunches"
+      ],
+      "mapping": [
+        {
+          "groupId": "abs",
+          "weight": 1,
+          "rationale": "Rectus abdominis is the prime mover of trunk flexion; curl-ups produce >50% MVC (Konrad 2001) and crunches produce the largest RA thickness change of crunch/sit-up/leg-raise (Gomirato 2023). Current mapping already correct."
+        },
+        {
+          "groupId": "obliques",
+          "weight": 0.25,
+          "rationale": "EO/IO co-contract at roughly 1/4-1/2 of RA level in a plain crunch (Vera-Garcia 2000: RA 21% vs EO 5% MVC on a stable surface; Escamilla 2010 crunch EO 14-30%). Minor credit so oblique colour reflects crunch volume without over-crediting."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Air_Bike",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.75
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Bicycle manoeuvre: rotation adds strong oblique work (ACE/Francis 2001 ranked it #1 RA and #2 obliques of 13 exercises) and the cycling legs load the hip flexors dynamically."
+        },
+        {
+          "exerciseId": "Elbow_to_Knee",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.75
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Same movement as the bicycle crunch (alternating elbow to opposite knee with the legs cycling)."
+        },
+        {
+          "exerciseId": "Cross-Body_Crunch",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.75
+            }
+          ],
+          "reason": "Rotational crunch: trunk-curl-with-twist raises EO relative to a straight curl (Willett 2001); legs stay on the floor so no hip-flexor credit."
+        },
+        {
+          "exerciseId": "Kneeling_Cable_Crunch_With_Alternating_Oblique_Twists",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.75
+            }
+          ],
+          "reason": "Loaded crunch with an alternating twist: obliques become a strong synergist, RA remains primary. Current mapping (obliques 1.0 / abs 0.5) inverts the emphasis; the load is still moved mainly by trunk flexion."
+        },
+        {
+          "exerciseId": "Bosu_Ball_Cable_Crunch_With_Side_Bends",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.75
+            }
+          ],
+          "reason": "Cable crunch plus lateral-flexion component: RA primary, obliques strong synergist (same reasoning as the twisting cable crunch)."
+        },
+        {
+          "exerciseId": "Exercise_Ball_Crunch",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Crunch on a labile ball roughly doubles EO relative to a floor crunch (Vera-Garcia 2000: EO 5% -> 10% MVC; Sternlicht 2007: RA and EO higher with the ball at the low back)."
+        },
+        {
+          "exerciseId": "Decline_Crunch",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Feet anchored on a decline: iliopsoas/rectus femoris contribute once the trunk lifts beyond a pure curl (Andersson 1997: supported legs increase hip-flexor activation). Minor credit only."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Pure spine-flexion exercises such as the curl-up produce isolated abdominal activation above 50% MVC; adding hip flexion (sit-up) increases peak activation.",
+          "source": "Konrad P, Schmitz K, Denner A. Neuromuscular evaluation of trunk-training exercises. J Athl Train. 2001;36(2):109-118.",
+          "pmid": "12937449",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Crunch produced the largest rectus abdominis thickness change (36% greater than a 90-degree leg raise); recruitment is biased toward the segments closest to the load.",
+          "source": "Gomirato AP, Grenier SG. Diagnostic ultrasound shows preferential activation of rectus abdominis segments with exercises targeting upper versus lower segments. Int J Exerc Sci. 2023;16(1):1077-1086.",
+          "pmid": "38288259",
+          "doi": "10.70252/BZWN2771",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Stable-surface curl-up: RA 21% MVC, EO 5% MVC; on a labile ball RA 35% and EO 10%, with the oblique increase proportionally larger.",
+          "source": "Vera-Garcia FJ, Grenier SG, McGill SM. Abdominal muscle response during curl-ups on both stable and labile surfaces. Phys Ther. 2000;80(6):564-569.",
+          "pmid": "10842409",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Stability-ball crunch (ball at low back) produced significantly higher upper/lower RA and EO EMG than a traditional crunch.",
+          "source": "Sternlicht E, Rugg S, Fujii LL, Tomomitsu KF, Seki MM. Electromyographic comparison of a stability ball crunch with a traditional crunch. J Strength Cond Res. 2007;21(2):506-509.",
+          "pmid": "17530978",
+          "doi": "10.1519/R-20436.1",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Trunk curl with a twist and the V-sit produced the greatest external oblique activity among five common abdominal exercises; upper RA activity was similar across curl variants.",
+          "source": "Willett GM, Hyde JE, Uhrlaub MB, Wendel CL, Karst GM. Relative activity of abdominal muscles during commonly prescribed strengthening exercises. J Strength Cond Res. 2001;15(4):480-485.",
+          "pmid": "11726260",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Bicycle manoeuvre ranked first for rectus abdominis (about 2.5x crunch EMG) and second for obliques among 13 exercises; crunch on exercise ball ranked third for RA.",
+          "source": "Francis P, Davis J. ACE-commissioned study: Best and worst abdominal exercises. ACE FitnessMatters, May/June 2001 (San Diego State University Biomechanics Lab; not peer reviewed).",
+          "tier": "consensus",
+          "confidence": "likely"
+        },
+        {
+          "claim": "Crunch and bent-knee sit-up produced the lowest latissimus dorsi (7-8% MVIC) and lowest rectus femoris (crunch 6-10% MVIC) of the exercises tested, supporting no lat or hip-flexor credit for plain crunches.",
+          "source": "Escamilla RF, Lewis C, Bell D, et al. Core muscle activation during Swiss ball and traditional abdominal exercises. J Orthop Sports Phys Ther. 2010;40(5):265-276.",
+          "pmid": "20436242",
+          "doi": "10.2519/jospt.2010.3073",
+          "tier": "emg",
+          "confidence": "verified"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Kept abs 1.0 everywhere (already correct). Added a small oblique credit (0.25) to plain crunches because EO/IO reliably co-activate; if the team prefers a cleaner map, dropping it to 0 is defensible. Twisting hybrids were re-ordered so RA is the 1.0 and obliques the strong synergist (0.75), the reverse of the current guess. No longitudinal regional-hypertrophy study of crunch training was found; ranking rests on EMG/ultrasound."
+    },
+    {
+      "id": "sit_up",
+      "name": "Sit-up (trunk + hip flexion)",
+      "description": "Full sit-ups from supine to upright: trunk flexion followed by hip flexion. Rectus abdominis and obliques drive the first 30 degrees and stabilise the pelvis, then iliopsoas/rectus femoris carry the hip-flexion phase. Includes V-ups and sit-ups combined with an overhead press.",
+      "exerciseIds": [
+        "3_4_Sit-Up",
+        "Sit-Up",
+        "Frog_Sit-Ups",
+        "Janda_Sit-Up",
+        "Jackknife_Sit-Up",
+        "Weighted_Sit-Ups_-_With_Bands",
+        "Press_Sit-Up",
+        "Otis-Up"
+      ],
+      "mapping": [
+        {
+          "groupId": "abs",
+          "weight": 1,
+          "rationale": "Abdominals show marked activation in both trunk-flexion and hip-flexion sit-ups (Andersson 1997); sit-up peak RA activation exceeds the curl-up (Konrad 2001). Current mapping already correct."
+        },
+        {
+          "groupId": "hip_flexors",
+          "weight": 0.5,
+          "rationale": "All sit-up forms activate psoas 15-35% MVC versus <10% in a curl-up (Juker 1998); rectus femoris EMG is among the highest in the bent-knee sit-up (Escamilla 2006). Half credit per the brief's secondary rule. Current mapping already correct."
+        },
+        {
+          "groupId": "obliques",
+          "weight": 0.25,
+          "rationale": "EO/IO stabilise the pelvis and trunk through the range (Andersson 1997; Maeo 2013 sit-up EO higher than bracing). Minor credit."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Jackknife_Sit-Up",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "V-up: straight legs lift simultaneously with the trunk, so long-lever hip flexion is a major share of the work (Andersson 1997: bilateral leg lifts give the highest iliacus/sartorius activity; Maeo 2013: V-sit gave among the highest RA/EO values)."
+        },
+        {
+          "exerciseId": "Press_Sit-Up",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.25,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            }
+          ],
+          "reason": "Light barbell pressed to overhead lockout during the sit-up: anterior deltoid does real work, triceps only lockout. Chest credit removed (the bar is not pressed horizontally against meaningful load)."
+        },
+        {
+          "exerciseId": "Otis-Up",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.25,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            }
+          ],
+          "reason": "Sit-up while pressing a plate overhead; same reasoning as the press sit-up. Chest credit removed."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "All forms of sit-ups activated psoas 15-35% MVC versus <10% for the curl-up.",
+          "source": "Juker D, McGill S, Kropf P, Steffen T. Quantitative intramuscular myoelectric activity of lumbar portions of psoas and the abdominal wall during a wide variety of tasks. Med Sci Sports Exerc. 1998;30(2):301-310.",
+          "pmid": "9502361",
+          "doi": "10.1097/00005768-199802000-00020",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Hip flexors (iliacus, RF, sartorius) are highly activated only in exercises involving hip flexion; abdominals are markedly active in both trunk-flexion and hip-flexion sit-ups; flexed and supported legs increase hip-flexor activation.",
+          "source": "Andersson EA, Nilsson J, Ma Z, Thorstensson A. Abdominal and hip flexor muscle activation during various training exercises. Eur J Appl Physiol Occup Physiol. 1997;75(2):115-123.",
+          "pmid": "9118976",
+          "doi": "10.1007/s004210050135",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Rectus femoris EMG was highest for the Power Wheel pike/knee-up, reverse crunch inclined 30 degrees and the bent-knee sit-up.",
+          "source": "Escamilla RF, Babb E, DeWitt R, et al. Electromyographic analysis of traditional and nontraditional abdominal exercises: implications for rehabilitation and training. Phys Ther. 2006;86(5):656-671.",
+          "pmid": "16649890",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "V-sits and sit-ups produced higher RA and EO %EMGmax than abdominal bracing and curl-ups.",
+          "source": "Maeo S, Takahashi T, Takai Y, Kanehisa H. Trunk muscle activities during abdominal bracing: comparison among muscles and exercises. J Sports Sci Med. 2013;12(3):467-474.",
+          "pmid": "24149153",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Twelve weeks of slow bodyweight training that included sit-ups increased hip-flexion strength in older adults, consistent with a training stimulus to the hip flexors from sit-ups.",
+          "source": "Tsuzuku S, Kajioka T, Sakakibara H, Shimaoka K. Slow movement resistance training using body weight improves muscle mass in the elderly: a randomized controlled trial. Scand J Med Sci Sports. 2018;28(4):1339-1344.",
+          "pmid": "29247985",
+          "doi": "10.1111/sms.13039",
+          "tier": "hypertrophy",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [
+        "In a full sit-up the hip flexors are a co-prime mover for the second half of the range (Juker 1998; Andersson 1997), so 0.5 under-represents them relative to the brief's 'primary mover = 1.0' rule; kept at 0.5 because the brief treats hip_flexors as an optional 0.5-multiplier group and users log sit-ups as ab work."
+      ],
+      "confidence": "high",
+      "notes": "Janda sit-up: the hamstring co-contraction cue is intended to inhibit the hip flexors, but there is no EMG evidence that it removes hip-flexor involvement; kept at the family default. 3/4 sit-up stops short of upright, reducing but not eliminating the hip-flexion phase; kept at default rather than inventing a finer step."
+    },
+    {
+      "id": "reverse_crunch_leg_tuck",
+      "name": "Reverse crunch / lying and seated leg raise / knee tuck",
+      "description": "Hip flexion with the trunk supported (supine, decline, seated on a bench, plank on a ball or TRX), ending in a posterior pelvic tilt. Rectus abdominis (lower segments) and obliques stabilise and tilt the pelvis; iliopsoas/rectus femoris/sartorius flex the hips and take a bigger share as the leg lever lengthens.",
+      "exerciseIds": [
+        "Bent-Knee_Hip_Raise",
+        "Bottoms_Up",
+        "Cable_Reverse_Crunch",
+        "Cocoons",
+        "Decline_Reverse_Crunch",
+        "Exercise_Ball_Pull-In",
+        "Flat_Bench_Leg_Pull-In",
+        "Flat_Bench_Lying_Leg_Raise",
+        "Leg_Pull-In",
+        "Reverse_Crunch",
+        "Seated_Flat_Bench_Leg_Pull-In",
+        "Seated_Leg_Tucks",
+        "Smith_Machine_Hip_Raise",
+        "Suspended_Reverse_Crunch"
+      ],
+      "mapping": [
+        {
+          "groupId": "abs",
+          "weight": 1,
+          "rationale": "The reverse curl gave the greatest lower-RA activity of five common exercises (Willett 2001); bilateral leg lifts require abdominal activation (Andersson 1997); leg-lifting exercises thicken the distal RA most (Dafkou 2020). Current mapping already correct."
+        },
+        {
+          "groupId": "hip_flexors",
+          "weight": 0.5,
+          "rationale": "Bent-knee hip flexion with a short lever: iliopsoas/RF are the joint movers but the load is small; psoas activity in supine hip-flexion tasks is well above curl-up levels (Juker 1998). Half credit per the brief."
+        },
+        {
+          "groupId": "obliques",
+          "weight": 0.25,
+          "rationale": "Reverse curl and V-sit produced the greatest EO activity among common floor exercises (Willett 2001); reverse crunch inclined 30 degrees was among the highest EO/IO exercises (Escamilla 2006). Minor credit at the family level, raised for the harder plank-based variants."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Flat_Bench_Lying_Leg_Raise",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Straight-leg lever: bilateral straight-leg lifts give the highest iliacus and sartorius activity of all tested exercises (Andersson 1997), so hip flexors become a strong synergist."
+        },
+        {
+          "exerciseId": "Decline_Reverse_Crunch",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Reverse crunch inclined 30 degrees was among the highest exercises for upper/lower RA, IO and rectus femoris (Escamilla 2006)."
+        },
+        {
+          "exerciseId": "Seated_Leg_Tucks",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Seated knee tuck: the trunk is held in a semi-V and the work is mostly hip flexion against the leg lever; hip flexors are a strong synergist (Andersson 1997 leg-lift data)."
+        },
+        {
+          "exerciseId": "Seated_Flat_Bench_Leg_Pull-In",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Same movement as seated leg tucks (bench-seated knee pull-in with V-hold)."
+        },
+        {
+          "exerciseId": "Leg_Pull-In",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Supine straight-leg extend-and-tuck: long-lever hip flexion on each rep (Andersson 1997)."
+        },
+        {
+          "exerciseId": "Flat_Bench_Leg_Pull-In",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Bench version of the leg pull-in: legs extend to horizontal and tuck; long-lever hip flexion."
+        },
+        {
+          "exerciseId": "Exercise_Ball_Pull-In",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Swiss-ball jackknife/knee-up from a push-up plank: lower RA is maximised (Duncan 2009), EO/IO and RF are among the highest of any exercise (Escamilla 2006, 2010 knee-up/pike); the supporting shoulders earn minor anterior-deltoid credit (Escamilla 2010 lats 17-25% in knee-up/pike, serratus/anterior delt hold the plank)."
+        },
+        {
+          "exerciseId": "Suspended_Reverse_Crunch",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "TRX knee tuck from a plank is mechanically the same as the ball pull-in (hanging knee-up with straps was among the top RA/EO/IO exercises in Escamilla 2006)."
+        },
+        {
+          "exerciseId": "Smith_Machine_Hip_Raise",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Legs held vertical under a loaded bar; the movement is a posterior pelvic tilt/lumbar flexion lifting the hips, so hip flexors work only isometrically at short length. Current abs-only mapping was nearly right; 0.25 hip flexors for the isometric hold under external load."
+        },
+        {
+          "exerciseId": "Bottoms_Up",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Legs raised vertical, hips lifted off the floor: same pelvic-lift mechanics as the Smith machine hip raise, unloaded."
+        },
+        {
+          "exerciseId": "Cocoons",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Simultaneous crunch and bent-knee tuck: family default (trunk flexion plus short-lever hip flexion)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Reverse curl produced the greatest lower rectus abdominis activity; reverse curl and V-sit produced the greatest external oblique activity.",
+          "source": "Willett GM, Hyde JE, Uhrlaub MB, Wendel CL, Karst GM. Relative activity of abdominal muscles during commonly prescribed strengthening exercises. J Strength Cond Res. 2001;15(4):480-485.",
+          "pmid": "11726260",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Bilateral (not unilateral) leg lifts require abdominal activation; bilateral leg lifts produce higher iliacus and sartorius activity than hip-flexion sit-ups.",
+          "source": "Andersson EA, Nilsson J, Ma Z, Thorstensson A. Abdominal and hip flexor muscle activation during various training exercises. Eur J Appl Physiol Occup Physiol. 1997;75(2):115-123.",
+          "pmid": "9118976",
+          "doi": "10.1007/s004210050135",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Reverse crunch inclined 30 degrees, Power Wheel pike/knee-up and hanging knee-up with straps gave the highest upper/lower RA, IO and lat activity and (with the bent-knee sit-up) the highest rectus femoris activity.",
+          "source": "Escamilla RF, Babb E, DeWitt R, et al. Electromyographic analysis of traditional and nontraditional abdominal exercises: implications for rehabilitation and training. Phys Ther. 2006;86(5):656-671.",
+          "pmid": "16649890",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Lower rectus abdominis activity exceeded upper RA only in the Swiss-ball jackknife; ball exercises exceeded the floor curl-up.",
+          "source": "Duncan M. Muscle activity of the upper and lower rectus abdominis during exercises performed on and off a Swiss ball. J Bodyw Mov Ther. 2009;13(4):364-367.",
+          "pmid": "19761961",
+          "doi": "10.1016/j.jbmt.2008.11.008",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Isometric leg lifting and combined trunk-plus-leg lifting increased thickness of the distal rectus abdominis segments more than the proximal segments (extended-field-of-view ultrasound).",
+          "source": "Dafkou K, Kellis E, Ellinoudis A, Sahinis C, Galanis N. Assessment of rectus abdominis muscle thickness during isometric trunk and leg lifting exercises using extended field of view (EFOV) ultrasound. Med Ultrason. 2020;22(4):430-437.",
+          "pmid": "32905563",
+          "doi": "10.11152/mu-2526",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Bilateral leg raise produced significantly greater rectus abdominis activation than the plank.",
+          "source": "Park DJ, Park SY. Which trunk exercise most effectively activates abdominal muscles? A comparative study of plank and isometric bilateral leg raise exercises. J Back Musculoskelet Rehabil. 2019;32(5):797-802.",
+          "pmid": "30856100",
+          "doi": "10.3233/BMR-181122",
+          "tier": "emg",
+          "confidence": "verified"
+        }
+      ],
+      "conflictsWithBrief": [
+        "For straight-leg and seated-tuck variants the hip flexors are arguably the prime mover (the abdominals mostly work isometrically to hold the pelvis); the brief's half-credit rule caps them below 1.0. Set to 0.75 as the strongest allowed synergist tier rather than 1.0."
+      ],
+      "confidence": "medium",
+      "notes": "Several exercises that the current table maps as abs-only (Bent-Knee Hip Raise, Cocoons, Leg Pull-In, Seated Leg Tucks, Exercise Ball Pull-In, Flat Bench Leg Pull-In, Seated Flat Bench Leg Pull-In, Smith Machine Hip Raise, Bottoms Up) are hip-flexion movements and now carry hip_flexors credit. hip_flexors is an opt-in group, so users who leave it off see no change."
+    },
+    {
+      "id": "hanging_leg_raise",
+      "name": "Hanging leg/knee raise and captain's chair",
+      "description": "Hip flexion (knees or straight legs) with the torso hanging from a bar or supported on parallel-bar elbow pads, finishing in a posterior pelvic tilt. Highest abdominal activation of any leg-raise variant; hip flexors are strong synergists; grip (bar versions) and shoulder extension (toes-to-bar) add small credits.",
+      "exerciseIds": ["Hanging_Leg_Raise", "Hanging_Pike", "Knee_Hip_Raise_On_Parallel_Bars", "Gorilla_Chin_Crunch"],
+      "mapping": [
+        {
+          "groupId": "abs",
+          "weight": 1,
+          "rationale": "Hanging knee-up with straps ranked among the highest exercises for upper and lower RA (Escamilla 2006); captain's chair ranked second for RA and first for obliques in the ACE study. Current mapping already correct."
+        },
+        {
+          "groupId": "hip_flexors",
+          "weight": 0.75,
+          "rationale": "Hanging leg raises are the highest-psoas task short of maximal hip flexion (Juker 1998 hip-flexion efforts; Andersson 1997 bilateral leg lifts). Strong synergist tier. Raised from 0.5."
+        },
+        {
+          "groupId": "obliques",
+          "weight": 0.5,
+          "rationale": "External oblique EMG was highest for the Power Wheel movements and hanging knee-up with straps (Escamilla 2006); captain's chair ranked first for obliques (ACE 2001). Standard secondary credit."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.25,
+          "regionDistribution": {
+            "forearm_flexors": 1,
+            "forearm_extensors_brachioradialis": 0
+          },
+          "rationale": "Sustained bar hang loads the finger/wrist flexors isometrically for the whole set; minor credit (anatomical reasoning, no hypertrophy data). Removed for the parallel-bar version."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Knee_Hip_Raise_On_Parallel_Bars",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Captain's chair: elbows rest on pads, so no grip demand; abdominal and oblique activation is otherwise the same class as the hanging knee-up (ACE 2001 #2 RA / #1 obliques)."
+        },
+        {
+          "exerciseId": "Hanging_Pike",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 1,
+                "forearm_extensors_brachioradialis": 0
+              }
+            }
+          ],
+          "reason": "Toes-to-bar: the finish pulls the pelvis toward the bar via shoulder extension, so lats do concentric work (Escamilla 2006 found lat EMG highest in the hanging knee-up/Power Wheel group)."
+        },
+        {
+          "exerciseId": "Gorilla_Chin_Crunch",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.8,
+                "brachialis": 0.2
+              }
+            },
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 1,
+                "forearm_extensors_brachioradialis": 0
+              }
+            }
+          ],
+          "reason": "A supinated chin-up performed together with a bent-knee raise: the chin-up half makes lats a prime mover (consistent with the Wide-Grip Lat Pulldown anchor: lats 1.0, biceps 0.5) and the knee raise half is a hanging knee-up. Two 1.0 groups is intentional for a genuine two-movement compound."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Hanging knee-up with straps was among the most effective exercises for upper/lower RA, IO, EO and latissimus dorsi, and also produced high rectus femoris activity.",
+          "source": "Escamilla RF, Babb E, DeWitt R, et al. Electromyographic analysis of traditional and nontraditional abdominal exercises: implications for rehabilitation and training. Phys Ther. 2006;86(5):656-671.",
+          "pmid": "16649890",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Captain's chair ranked second for rectus abdominis (212% of crunch EMG) and first for obliques among 13 exercises.",
+          "source": "Francis P, Davis J. ACE-commissioned study: Best and worst abdominal exercises. ACE FitnessMatters, May/June 2001 (San Diego State University; not peer reviewed).",
+          "tier": "consensus",
+          "confidence": "likely"
+        },
+        {
+          "claim": "Psoas is most active during maximal hip-flexion efforts and in all sit-up forms (15-35% MVC), far above the curl-up.",
+          "source": "Juker D, McGill S, Kropf P, Steffen T. Quantitative intramuscular myoelectric activity of lumbar portions of psoas and the abdominal wall during a wide variety of tasks. Med Sci Sports Exerc. 1998;30(2):301-310.",
+          "pmid": "9502361",
+          "doi": "10.1097/00005768-199802000-00020",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Bilateral straight-leg lifts require abdominal activation and produce the highest iliacus and sartorius activity of the tested exercises.",
+          "source": "Andersson EA, Nilsson J, Ma Z, Thorstensson A. Abdominal and hip flexor muscle activation during various training exercises. Eur J Appl Physiol Occup Physiol. 1997;75(2):115-123.",
+          "pmid": "9118976",
+          "doi": "10.1007/s004210050135",
+          "tier": "emg",
+          "confidence": "verified"
+        }
+      ],
+      "conflictsWithBrief": [
+        "Straight-leg hanging raises without a pelvic curl are hip-flexor dominant; the brief's secondary cap keeps hip_flexors at 0.75 where a strict prime-mover reading might give 1.0.",
+        "Forearm credit for the bar hang is an isometric-stabiliser credit that the brief discourages; included at the 0.25 floor because grip is commonly the limiting factor, flagged for the team to drop if unwanted."
+      ],
+      "confidence": "medium",
+      "notes": "No dedicated peer-reviewed EMG of the straight-leg hanging raise was found on PubMed; the mapping extrapolates from the hanging knee-up (Escamilla 2006) and leg-lift data (Andersson 1997)."
+    },
+    {
+      "id": "anti_extension_plank_rollout",
+      "name": "Anti-extension: rollouts, fallouts, planks, dead bug, plank crawls",
+      "description": "Resisting lumbar extension while the lever lengthens (ab wheel/barbell rollout, TRX fallout) or holding it statically (plank) or while limbs move (dead bug, spider crawl, mountain climbers). Rectus abdominis and obliques are the primary targets; in rollouts the lats (with pecs and long-head triceps) resist shoulder flexion eccentrically and are the meaningful 'extraneous' muscle.",
+      "exerciseIds": [
+        "Ab_Roller",
+        "Barbell_Ab_Rollout",
+        "Barbell_Ab_Rollout_-_On_Knees",
+        "Barbell_Rollout_from_Bench",
+        "Suspended_Fallout",
+        "Plank",
+        "Dead_Bug",
+        "Spider_Crawl",
+        "Wind_Sprints",
+        "Butt-Ups"
+      ],
+      "mapping": [
+        {
+          "groupId": "abs",
+          "weight": 1,
+          "rationale": "Roll-out gave the highest upper RA (63% MVIC) and near-highest lower RA (53%) of ten exercises (Escamilla 2010); Power Wheel roll-out was among the top RA exercises (Escamilla 2006). Current mapping already correct."
+        },
+        {
+          "groupId": "obliques",
+          "weight": 0.5,
+          "rationale": "Roll-out EO 46% and IO 46% MVIC, comparable to RA (Escamilla 2010); EO was highest in the Power Wheel group (Escamilla 2006). Standard secondary credit."
+        },
+        {
+          "groupId": "lats",
+          "weight": 0.5,
+          "rationale": "Latissimus dorsi EMG was highest in the Power Wheel roll-out/pike/knee-up group (Escamilla 2006; 17-25% MVIC for pike/knee-up in 2010): the lats resist shoulder flexion as the wheel rolls out and pull it back. Replaces the current delt_front 0.5, which is anatomically wrong (gravity flexes the shoulder; anterior deltoid is unloaded)."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Barbell_Ab_Rollout",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.5
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Standing (from the feet) rollout: the hips must be held in flexion against a much longer lever, so iliopsoas works hard isometrically; erectors credit removed (paraspinal EMG <10% MVIC in rollouts, Escamilla 2010)."
+        },
+        {
+          "exerciseId": "Barbell_Ab_Rollout_-_On_Knees",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Kneeling rollout = family default; erectors 0.5 removed (lumbar paraspinal EMG low and similar across abdominal exercises, Escamilla 2006/2010)."
+        },
+        {
+          "exerciseId": "Barbell_Rollout_from_Bench",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Kneeling on a bench with a longer roll: same mechanics as the kneeling rollout. Current glute/hamstring credit removed: the hips extend passively as the bar rolls out and there is no meaningful hip-extension load."
+        },
+        {
+          "exerciseId": "Ab_Roller",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Wheel rollout on knees = family default; delt_front 0.5 replaced by lats 0.5 (Escamilla 2006 lat data)."
+        },
+        {
+          "exerciseId": "Suspended_Fallout",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.5
+            }
+          ],
+          "reason": "TRX fallout is a standing rollout on straps: identical shoulder-flexion-resisting mechanics. Chest and erector credit removed."
+        },
+        {
+          "exerciseId": "Plank",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Front plank: RA ~46% and EO substantial (Calatayud 2019; García-Jaén 2020 shows EO/IO rise further with bracing); no arm lever moves, so no lat credit."
+        },
+        {
+          "exerciseId": "Dead_Bug",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Supine anti-extension with alternating leg lowering: RA/EO rise with progression level (Kim 2016); the extending leg is lowered and raised by the hip flexors against a long lever."
+        },
+        {
+          "exerciseId": "Spider_Crawl",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Moving push-up plank with knee-to-elbow: plank anti-extension plus repeated hip flexion; the supporting shoulder earns a minor anterior-deltoid credit. Chest/triceps credit removed (arms stay locked, no pressing)."
+        },
+        {
+          "exerciseId": "Wind_Sprints",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Mountain climbers: rapid alternating hip flexion in a plank; the hip flexors do the dynamic work, abs hold the plank."
+        },
+        {
+          "exerciseId": "Butt-Ups",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Forearm-plank pike (hips driven to the ceiling): a floor version of the Swiss-ball pike, which had the highest EO (84% MVIC) and high RA/IO (Escamilla 2010); hip flexors lift the pelvis."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Roll-out and pike produced the highest upper RA (63%/46% MVIC), lower RA (53%/55%), EO (46%/84%) and IO (46%/56%) of ten exercises while lumbar paraspinal EMG stayed under 10% MVIC; lat EMG 17-25% MVIC in pike/knee-up.",
+          "source": "Escamilla RF, Lewis C, Bell D, et al. Core muscle activation during Swiss ball and traditional abdominal exercises. J Orthop Sports Phys Ther. 2010;40(5):265-276.",
+          "pmid": "20436242",
+          "doi": "10.2519/jospt.2010.3073",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Upper/lower RA, IO and latissimus dorsi EMG were highest for the Power Wheel (pike, knee-up, roll-out) and hanging knee-up; lumbar paraspinal EMG was low and similar across exercises.",
+          "source": "Escamilla RF, Babb E, DeWitt R, et al. Electromyographic analysis of traditional and nontraditional abdominal exercises: implications for rehabilitation and training. Phys Ther. 2006;86(5):656-671.",
+          "pmid": "16649890",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Front plank RA median 46% nEMG (48% with brace) and front plank with brace EO 77% nEMG, the highest EO of the exercises tested.",
+          "source": "Calatayud J, Escriche-Escuder A, Cruz-Montecinos C, et al. Tolerability and muscle activity of core muscle exercises in chronic low-back pain. Int J Environ Res Public Health. 2019;16(19):3509.",
+          "pmid": "31547140",
+          "doi": "10.3390/ijerph16193509",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Adding abdominal hollowing to the prone plank significantly raised EO and IO (and erector) activation while RA was unchanged, confirming meaningful oblique involvement in planks.",
+          "source": "García-Jaén M, Cortell-Tormo JM, Hernández-Sánchez S, Tortosa-Martínez J. Influence of abdominal hollowing maneuver on the core musculature activation during the prone plank exercise. Int J Environ Res Public Health. 2020;17(20):7410.",
+          "pmid": "33053717",
+          "doi": "10.3390/ijerph17207410",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Across graded curl-up, dead bug, Superman and bird-dog progressions, RA and EO amplitude rose with dead-bug/curl-up intensity levels.",
+          "source": "Kim CR, Park DK, Lee ST, Ryu JS. Electromyographic changes in trunk muscles during graded lumbar stabilization exercises. PM R. 2016;8(10):979-989.",
+          "pmid": "27317910",
+          "doi": "10.1016/j.pmrj.2016.05.017",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Systematic review: free-weight and rollout-type exercises produce the greatest RA/EO activity; core-stability exercises the greatest IO activity.",
+          "source": "Oliva-Lozano JM, Muyor JM. Core muscle activity during physical fitness exercises: a systematic review. Int J Environ Res Public Health. 2020;17(12):4306.",
+          "pmid": "32560185",
+          "doi": "10.3390/ijerph17124306",
+          "tier": "emg",
+          "confidence": "verified"
+        }
+      ],
+      "conflictsWithBrief": [
+        "Planks are entirely isometric; the brief's rule against crediting isometric stabilisers cannot apply to the target muscle, so abs/obliques are credited on the EMG magnitude (RA ~45%, EO 45-77% MVIC)."
+      ],
+      "confidence": "high",
+      "notes": "Main correction versus current: rollouts move their arm credit from delt_front to lats (shoulder extensors resist the roll-out; Escamilla measured lats, not deltoid). Erector credit on rollouts removed on direct EMG evidence (<10% MVIC)."
+    },
+    {
+      "id": "trunk_rotation_anti_rotation",
+      "name": "Rotation and anti-rotation: twists, chops, lifts, Pallof, landmine, slams",
+      "description": "Transverse-plane trunk work: dynamic rotation (Russian/plate/cable twists, wood chop, cable lift, landmine 180, judo flip, kettlebell figure-8/pass) and isometric anti-rotation (Pallof press). External and internal obliques are the prime movers/targets; rectus abdominis co-contracts; the arms mostly transmit load.",
+      "exerciseIds": [
+        "Cable_Judo_Flip",
+        "Cable_Russian_Twists",
+        "Kettlebell_Figure_8",
+        "Kettlebell_Pass_Between_The_Legs",
+        "Landmine_180s",
+        "One-Arm_Medicine_Ball_Slam",
+        "Pallof_Press",
+        "Pallof_Press_With_Rotation",
+        "Plate_Twist",
+        "Russian_Twist",
+        "Seated_Barbell_Twist",
+        "Spell_Caster",
+        "Standing_Cable_Lift",
+        "Standing_Cable_Wood_Chop"
+      ],
+      "mapping": [
+        {
+          "groupId": "obliques",
+          "weight": 1,
+          "rationale": "Obliques (EO contralateral, IO ipsilateral) produce trunk rotation and resist it in anti-rotation holds (McGill 1996 twisting tasks; Willett 2001 twist curl highest EO). Current mapping already correct for most twists."
+        },
+        {
+          "groupId": "abs",
+          "weight": 0.5,
+          "rationale": "Rectus abdominis co-contracts to flex/brace the trunk in every twisting task and in V-sit twists holds the torso up (Maeo 2013 V-sit RA). Standard secondary credit; current mapping already correct."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Pallof_Press",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Isometric anti-rotation: load is set by the lateral band/cable force, not by pressing (Juan-Recio 2025 progression study). Chest, front-delt and triceps credit removed: the press-out is unloaded in the pressing direction."
+        },
+        {
+          "exerciseId": "Pallof_Press_With_Rotation",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Anti-rotation hold plus controlled rotation: obliques primary; arm-muscle credit removed for the same reason as the plain Pallof press."
+        },
+        {
+          "exerciseId": "Russian_Twist",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Performed in a V-sit with feet off the floor: hip flexors hold the position isometrically (Andersson 1997). Erector credit removed: the trunk is flexed, not extended against load."
+        },
+        {
+          "exerciseId": "Plate_Twist",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Weighted Russian twist; same V-sit hold."
+        },
+        {
+          "exerciseId": "Seated_Barbell_Twist",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            }
+          ],
+          "reason": "Unloaded bar-on-shoulders twist: very low external torque, mostly a mobility drill; obliques only, and even that is a small stimulus (anatomical reasoning)."
+        },
+        {
+          "exerciseId": "Landmine_180s",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            }
+          ],
+          "reason": "The arms hold a loaded bar end at shoulder height throughout and lower/raise it through the arc, so anterior deltoid does meaningful work. Glute/erector credit removed: the hips pivot but do not extend against load."
+        },
+        {
+          "exerciseId": "Spell_Caster",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Dumbbells swung across the body at arm's length hip-to-shoulder: anterior deltoid lifts the load each rep. Glute credit removed."
+        },
+        {
+          "exerciseId": "Standing_Cable_Wood_Chop",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "High-to-low chop: arms are kept nearly straight and transmit load; minor front-delt credit for holding the handle out in front (current 0.5 lowered)."
+        },
+        {
+          "exerciseId": "Standing_Cable_Lift",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Low-to-high lift: the same diagonal pattern reversed; obliques primary (current abs-1.0 mapping had the emphasis wrong), minor front-delt credit for the upward arm path."
+        },
+        {
+          "exerciseId": "Cable_Judo_Flip",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Rotational hip-hinge throw pulling the cable down and across: obliques primary (current abs-only mapping corrected), lats assist the downward pull."
+        },
+        {
+          "exerciseId": "One-Arm_Medicine_Ball_Slam",
+          "mapping": [
+            {
+              "groupId": "abs",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Overhead slam is primarily violent trunk flexion (abs) plus shoulder extension (lats); the one-arm version adds some rotation (obliques). Front delt lifts the ball overhead between reps."
+        },
+        {
+          "exerciseId": "Kettlebell_Figure_8",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.25,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.25,
+              "regionDistribution": {
+                "glute_max": 0.8,
+                "glute_med": 0.2
+              }
+            }
+          ],
+          "reason": "Low-intensity coordination drill passing the bell around the legs in a held hinge: the rotation loads the obliques, the static hinge gives minor hamstring/glute credit. Front-delt credit removed (arms hang)."
+        },
+        {
+          "exerciseId": "Kettlebell_Pass_Between_The_Legs",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.25,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.25,
+              "regionDistribution": {
+                "glute_max": 0.8,
+                "glute_med": 0.2
+              }
+            }
+          ],
+          "reason": "Same drill as the figure 8 (hand-to-hand pass around the legs in a hinge)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Surface electrodes over the obliques track intramuscular EO/IO activity during standing and sitting twisting tasks; obliques are the muscles loaded by twisting.",
+          "source": "McGill S, Juker D, Kropf P. Appropriately placed surface EMG electrodes reflect deep muscle activity (psoas, quadratus lumborum, abdominal wall) in the lumbar spine. J Biomech. 1996;29(11):1503-1507.",
+          "pmid": "8894932",
+          "doi": "10.1016/0021-9290(96)84547-7",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Adding a twist to the trunk curl and the V-sit produced the greatest external oblique activity of five common exercises.",
+          "source": "Willett GM, Hyde JE, Uhrlaub MB, Wendel CL, Karst GM. Relative activity of abdominal muscles during commonly prescribed strengthening exercises. J Strength Cond Res. 2001;15(4):480-485.",
+          "pmid": "11726260",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "V-sits produced among the highest RA and EO %EMGmax of ten static/dynamic trunk exercises, supporting RA co-credit in V-sit twists.",
+          "source": "Maeo S, Takahashi T, Takai Y, Kanehisa H. Trunk muscle activities during abdominal bracing: comparison among muscles and exercises. J Sports Sci Med. 2013;12(3):467-474.",
+          "pmid": "24149153",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Pallof press difficulty is set by stance/base of support and the lateral force applied, not by the pressing motion; lumbopelvic control demand ranked kneeling < standing < tandem < unstable surface.",
+          "source": "Juan-Recio C, Prat-Luri A, Rondón-Espinosa H, Barbado D, Vera-Garcia FJ. Effect of body position and support surface on the postural control challenge during the Pallof press exercise: a smartphone accelerometer-based study. Medicina (Kaunas). 2025;61(2):312.",
+          "pmid": "40005429",
+          "doi": "10.3390/medicina61020312",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "No peer-reviewed EMG of the cable wood chop, landmine 180 or kettlebell figure-8 was found; arm and hip credits rest on moment-arm reasoning (which segment moves the load through what range).",
+          "source": "Anatomical/biomechanical reasoning by the author of this mapping; practitioner descriptions (BarBend, Bodybuilding.com exercise guides) used only to confirm execution.",
+          "tier": "anatomical",
+          "confidence": "unverified"
+        }
+      ],
+      "conflictsWithBrief": [
+        "Pallof press is a pure isometric; the brief's isometric-stabiliser exclusion cannot apply to the target muscles, so obliques get 1.0 on the anti-rotation demand itself."
+      ],
+      "confidence": "medium",
+      "notes": "Largest corrections: Pallof presses lose chest/front-delt/triceps (no pressing load), Standing Cable Lift and Cable Judo Flip become oblique-primary, Russian twist loses erector credit. Rotation exercises have weak per-exercise EMG coverage; the family default is safe, the arm credits are judgment calls."
+    },
+    {
+      "id": "lateral_flexion_side_bend",
+      "name": "Lateral flexion: side bends, oblique crunches, side bridge",
+      "description": "Frontal-plane trunk work: standing/seated side bends with a load, side-lying or decline oblique crunches, side jackknife, and the isometric side bridge. Ipsilateral obliques (EO and IO) are the prime movers, with quadratus lumborum and the ipsilateral erector group assisting; rectus abdominis contributes little except in the crunch-type variants.",
+      "exerciseIds": [
+        "Alternate_Heel_Touchers",
+        "Barbell_Side_Bend",
+        "Dumbbell_Side_Bend",
+        "One-Arm_High-Pulley_Cable_Side_Bends",
+        "Weighted_Ball_Side_Bend",
+        "Oblique_Crunches",
+        "Oblique_Crunches_-_On_The_Floor",
+        "Decline_Oblique_Crunch",
+        "Side_Bridge",
+        "Side_Jackknife"
+      ],
+      "mapping": [
+        {
+          "groupId": "obliques",
+          "weight": 1,
+          "rationale": "Lateral-flexion tasks target primarily the external oblique, with high activity in side-lying flexion (Konrad 2001); side bridge EO 69% MVIC (Ekstrom 2007). Current mapping already correct."
+        },
+        {
+          "groupId": "abs",
+          "weight": 0.25,
+          "rationale": "Rectus abdominis has a small lateral-flexion moment arm and co-contracts modestly in side bends; lowered from the current 0.5 for the standing side-bend variants, kept at 0.5 for crunch-type variants."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.25,
+          "rationale": "Quadratus lumborum (no group of its own) and the ipsilateral erectors are strong lateral flexors: QL was 54% MVC in the horizontal side support and rose with standing lateral-bend load (McGill 1996). Credited to the nearest visible group at the minor tier."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Barbell_Side_Bend",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.25
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Bar across the shoulders raises the load and its lever above the lumbar spine, so QL/erectors work harder than in a dumbbell-at-the-side bend (McGill 1996 QL rises with compressive load); current erectors 0.5 kept."
+        },
+        {
+          "exerciseId": "Oblique_Crunches",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Side-lying crunch: lateral flexion with a trunk-curl component, no posterior-chain load; current mapping kept."
+        },
+        {
+          "exerciseId": "Oblique_Crunches_-_On_The_Floor",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Supine crunch with knees dropped to one side: same as the oblique crunch; current mapping kept."
+        },
+        {
+          "exerciseId": "Alternate_Heel_Touchers",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Shoulders held off the floor (RA isometric) while reaching side to side (oblique lateral flexion): the dynamic work is oblique, so the current abs-only mapping is corrected."
+        },
+        {
+          "exerciseId": "Decline_Oblique_Crunch",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Twisting crunch on a decline with the feet anchored: obliques primary, RA secondary, minor hip-flexor credit for the anchored decline (Andersson 1997 supported-leg effect)."
+        },
+        {
+          "exerciseId": "Side_Bridge",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.25,
+              "regionDistribution": {
+                "glute_max": 0,
+                "glute_med": 1
+              }
+            }
+          ],
+          "reason": "Side plank: EO 69% and gluteus medius 74% MVIC (Ekstrom 2007), QL 54% MVC (McGill 1996), rated the best abdominal-wall exercise for activation per unit psoas (Juker 1998). Gluteus medius credit at the minor tier despite being isometric because its activation is above the 45% MVIC strengthening threshold. Front-delt credit removed (passive shoulder support)."
+        },
+        {
+          "exerciseId": "Side_Jackknife",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.25
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.25,
+              "regionDistribution": {
+                "glute_max": 0,
+                "glute_med": 1
+              }
+            }
+          ],
+          "reason": "Side-lying, the top leg abducts while the torso laterally flexes toward it: the leg is lifted by hip abductors (gluteus medius), not the hip flexors, so the current hip_flexors 0.5 moves to glute_med 0.25."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Lateral-flexion tasks primarily targeted the external oblique, which showed high activity in side-lying flexion tasks.",
+          "source": "Konrad P, Schmitz K, Denner A. Neuromuscular evaluation of trunk-training exercises. J Athl Train. 2001;36(2):109-118.",
+          "pmid": "12937449",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Side-bridge produced external oblique 69% MVIC and gluteus medius 74% MVIC, the only exercise of nine exceeding the 45% MVIC strengthening threshold for those muscles.",
+          "source": "Ekstrom RA, Donatelli RA, Carp KC. Electromyographic analysis of core trunk, hip, and thigh muscles during 9 rehabilitation exercises. J Orthop Sports Phys Ther. 2007;37(12):754-762.",
+          "pmid": "18560185",
+          "doi": "10.2519/jospt.2007.2471",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Quadratus lumborum was 54% of maximum in the horizontal side-support posture and 74% during heavy barbell lifts, and increased with compressive load in standing.",
+          "source": "McGill S, Juker D, Kropf P. Quantitative intramuscular myoelectric activity of quadratus lumborum during a wide variety of tasks. Clin Biomech (Bristol). 1996;11(3):170-172.",
+          "pmid": "11415616",
+          "doi": "10.1016/0268-0033(95)00056-9",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Among isometric abdominal exercises, the side bridge maximised abdominal-wall activation while minimising psoas activity.",
+          "source": "Juker D, McGill S, Kropf P, Steffen T. Quantitative intramuscular myoelectric activity of lumbar portions of psoas and the abdominal wall during a wide variety of tasks. Med Sci Sports Exerc. 1998;30(2):301-310.",
+          "pmid": "9502361",
+          "doi": "10.1097/00005768-199802000-00020",
+          "tier": "emg",
+          "confidence": "verified"
+        }
+      ],
+      "conflictsWithBrief": [
+        "Quadratus lumborum has no group; its work in side bends and side bridges is credited to erectors at 0.25-0.5 as the nearest visible group, per the brief's proxy instruction.",
+        "Gluteus medius credit in the side bridge/side jackknife is an isometric-stabiliser credit; included at 0.25 because 74% MVIC exceeds the strengthening threshold used in the source study."
+      ],
+      "confidence": "medium",
+      "notes": "No hypertrophy study of side-bend training exists; mapping rests on EMG and moment-arm reasoning."
+    },
+    {
+      "id": "windmill_bent_press",
+      "name": "Kettlebell windmill and bent press",
+      "description": "Overhead-loaded lateral flexion plus hip hinge/rotation: the loaded arm is locked overhead while the trunk side-bends and rotates and the hips hinge back. Obliques (with QL) control the trunk; hamstrings and glutes load eccentrically in the hinge; the overhead arm is an isometric shoulder hold. The bent press adds a press-out/lockout under the bell.",
+      "exerciseIds": [
+        "Advanced_Kettlebell_Windmill",
+        "Double_Kettlebell_Windmill",
+        "Kettlebell_Windmill",
+        "Bent_Press"
+      ],
+      "mapping": [
+        {
+          "groupId": "obliques",
+          "weight": 1,
+          "rationale": "Loaded lateral flexion/rotation of the trunk is the defining action (Konrad 2001 lateral-flexion tasks target EO; McGill 1996 QL/obliques in lateral bending). Current mapping already correct."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.5,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "The descent is a single-leg-biased hip hinge that lengthens the hamstrings under load; short head does not cross the hip (anatomical). Current 0.8/0.2 split corrected to 1.0/0 as in the Romanian Deadlift anchor."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.5,
+          "regionDistribution": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          },
+          "rationale": "Hip extension out of the hinge (glute max) with the pelvis rotated and weight shifted to one leg (glute med frontal-plane control). Anatomical reasoning."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.5,
+          "rationale": "The hinged, side-bent spine is held under an overhead load; erectors/QL resist flexion and lateral flexion (McGill 1996 QL rises with load). Secondary credit."
+        },
+        {
+          "groupId": "abs",
+          "weight": 0.25,
+          "rationale": "Rectus abdominis braces but is not a mover; lowered from current 0.5."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.25,
+          "rationale": "Overhead arm is a locked isometric hold; deltoid/rotator cuff stabilise but produce no movement. Minor credit as the visible proxy for overhead stability; lowered from current 0.5. Triceps credit removed for windmills (elbow locked, no extension work)."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Bent_Press",
+          "mapping": [
+            {
+              "groupId": "obliques",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.5,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.5,
+              "regionDistribution": {
+                "glute_max": 0.7,
+                "glute_med": 0.3
+              }
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.25
+            }
+          ],
+          "reason": "The bent press actively presses the bell to lockout while the body bends under it, so anterior deltoid and triceps do real concentric work (kept at 0.5 as in the current row); quad credit removed (knee stays mostly extended on the loaded side; the slight knee bend is unloaded)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Lateral-flexion tasks primarily target the external oblique; back- and hip-extension components load the erectors only moderately.",
+          "source": "Konrad P, Schmitz K, Denner A. Neuromuscular evaluation of trunk-training exercises. J Athl Train. 2001;36(2):109-118.",
+          "pmid": "12937449",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Quadratus lumborum and obliques are the loaded muscles in standing lateral bending and increase activation with compressive load.",
+          "source": "McGill S, Juker D, Kropf P. Quantitative intramuscular myoelectric activity of quadratus lumborum during a wide variety of tasks. Clin Biomech (Bristol). 1996;11(3):170-172.",
+          "pmid": "11415616",
+          "doi": "10.1016/0268-0033(95)00056-9",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "No peer-reviewed EMG study of the kettlebell windmill or bent press exists on PubMed (search 'kettlebell windmill OR bent press electromyography' returned only unrelated records); hip/hamstring/shoulder credits follow from the hinge and overhead-hold mechanics described in practitioner guides.",
+          "source": "Author's anatomical reasoning; execution confirmed against BarBend and StrongFirst windmill guides (practitioner sources).",
+          "tier": "anatomical",
+          "confidence": "unverified"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "low",
+      "notes": "Low confidence because no direct EMG exists. Changes versus current: hamstring split corrected to hip_ext 1.0 (short head cannot be loaded by a hinge), triceps removed from windmills, delt_front reduced to 0.25, abs reduced to 0.25."
+    },
+    {
+      "id": "balance_board_ankle_stability",
+      "name": "Balance board",
+      "description": "Standing balance on a wobble/rocker board. Ankle plantarflexors (soleus > gastrocnemius), peroneals and tibialis anterior make small, continuous corrective contractions; thigh and hip muscles are minimally loaded. This is a proprioceptive drill with little hypertrophic stimulus for any group.",
+      "exerciseIds": ["Balance_Board"],
+      "mapping": [
+        {
+          "groupId": "calves",
+          "weight": 1,
+          "regionDistribution": {
+            "gastrocnemius": 0.4,
+            "soleus": 0.6
+          },
+          "rationale": "Soleus shows the highest activation of the lower-leg muscles during single-leg stance on unstable platforms (Tan 2024); soleus is the dominant postural plantarflexor, so the split is biased toward it (current 0.7/0.3 reversed). Given 1.0 only because every family needs a primary; absolute stimulus is low."
+        },
+        {
+          "groupId": "tibialis",
+          "weight": 0.5,
+          "rationale": "Tibialis anterior and peroneus longus co-contract to correct anterior/lateral sway on wobble boards (Silva 2015: peroneus longus significantly higher on the board; Sánchez-Barbadora 2022: high activation on BOSU and wobble board). Peroneals have no group; tibialis is the nearest visible anterior/lateral shin proxy."
+        }
+      ],
+      "perExerciseOverrides": [],
+      "evidence": [
+        {
+          "claim": "Soleus displayed the highest activation during single-leg stance and single-leg squat on an unstable platform; peroneus longus the highest during the lunge; unstable platforms increased ankle-muscle activation versus flat ground.",
+          "source": "Tan F, Harput G, Ulusoy B, Guney-Deniz H. The influence of unstable surfaces on ankle muscle activation during functional exercises. J Bodyw Mov Ther. 2024;40:602-609.",
+          "pmid": "39593651",
+          "doi": "10.1016/j.jbmt.2024.05.006",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "Single-leg standing on a wobble board significantly increased peroneus longus and biceps femoris activity relative to a firm surface.",
+          "source": "Silva PB, Oliveira AS, Mrachacz-Kersting N, Laessoe U, Kersting UG. Strategies for equilibrium maintenance during single leg standing on a wobble board. Gait Posture. 2016;44:149-154.",
+          "pmid": "27004649",
+          "doi": "10.1016/j.gaitpost.2015.12.005",
+          "tier": "emg",
+          "confidence": "verified"
+        },
+        {
+          "claim": "BOSU and wobble board produced high EMG in most lower-limb muscles during single-leg stance, with no device-specific difference for peroneus longus.",
+          "source": "Sánchez-Barbadora M, Cuerda-Del Pino A, González-Rosalén J, Moreno-Segura N, Escriche-Escuder A, Martín-San Agustín R. Differences in lower limb muscle activation between global and selective instability devices in single-leg stance in healthy active subjects. PeerJ. 2022;10:e13317.",
+          "pmid": "35462768",
+          "doi": "10.7717/peerj.13317",
+          "tier": "emg",
+          "confidence": "verified"
+        }
+      ],
+      "conflictsWithBrief": [
+        "Balance-board work does not produce a hypertrophic stimulus comparable to a hard set; counting it as 1.0 calf sets inflates calf coverage. Recommend either excluding pattern 'other' balance drills from volume scoring or applying a low hardness so it colours without counting."
+      ],
+      "confidence": "low",
+      "notes": "Current hamstring and quad credit removed: activation is postural-level and would mislead users into thinking a balance drill contributes leg volume."
+    }
+  ],
+  "unassignedExerciseIds": [],
+  "openQuestions": [
+    "Should straight-leg raise variants (hanging leg raise, lying leg raise, seated tucks) credit hip_flexors at 1.0 alongside abs? EMG says hip flexors are the movers; the brief's secondary cap kept them at 0.75.",
+    "Should plain crunches carry the 0.25 oblique credit at all? It is EMG-defensible but adds low-value colour; dropping it to 0 is equally defensible.",
+    "Balance_Board: should pattern 'other' balance/proprioception drills be excluded from volume scoring entirely rather than mapped to calves 1.0?",
+    "Forearm 0.25 on bar-hanging exercises is an isometric grip credit the brief discourages; keep or drop?",
+    "Time-based sets (plank, side bridge, Pallof holds): the engine's repFactor treats <3 reps as 0.5; confirm how held exercises are logged so a 45 s plank is not scored as a 1-rep set.",
+    "Gorilla Chin/Crunch has two 1.0 groups (lats and abs); confirm the engine allows multiple primaries for genuine two-movement compounds.",
+    "No longitudinal regional-hypertrophy studies exist for any core movement; every mapping in this batch is EMG/anatomy-based (tier 2-3)."
+  ]
+}

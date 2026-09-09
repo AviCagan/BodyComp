@@ -1,0 +1,2121 @@
+{
+  "batch": "quads",
+  "scope": "Knee-dominant lower body: back/front/goblet/hack/box/overhead/Zercher squats, leg press, leg extension, sissy squat, step-ups, wall sits; lunges, split squats, Bulgarian split squats, pistol squats",
+  "exercises": [
+    {
+      "id": "Barbell_Full_Squat",
+      "name": "Barbell Full Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Hack_Squat",
+      "name": "Barbell Hack Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Squat",
+      "name": "Barbell Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Squat_To_A_Bench",
+      "name": "Barbell Squat To A Bench",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Bodyweight_Squat",
+      "name": "Bodyweight Squat",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Box_Squat",
+      "name": "Box Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Box_Squat_with_Bands",
+      "name": "Box Squat with Bands",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Box_Squat_with_Chains",
+      "name": "Box Squat with Chains",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Cable_Deadlifts",
+      "name": "Cable Deadlifts",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Cable_Hip_Adduction",
+      "name": "Cable Hip Adduction",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Chair_Squat",
+      "name": "Chair Squat",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Squat",
+      "name": "Dumbbell Squat",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Squat_To_A_Bench",
+      "name": "Dumbbell Squat To A Bench",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Freehand_Jump_Squat",
+      "name": "Freehand Jump Squat",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Front_Barbell_Squat",
+      "name": "Front Barbell Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Front_Barbell_Squat_To_A_Bench",
+      "name": "Front Barbell Squat To A Bench",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Front_Squat_Clean_Grip",
+      "name": "Front Squat (Clean Grip)",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Front_Squats_With_Two_Kettlebells",
+      "name": "Front Squats With Two Kettlebells",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Goblet_Squat",
+      "name": "Goblet Squat",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Hack_Squat",
+      "name": "Hack Squat",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Hip_Flexion_with_Band",
+      "name": "Hip Flexion with Band",
+      "equipment": "bands",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Jefferson_Squats",
+      "name": "Jefferson Squats",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Leg_Extensions",
+      "name": "Leg Extensions",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.3,
+            "quads_vasti": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Leg_Press",
+      "name": "Leg Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Leverage_Deadlift",
+      "name": "Leverage Deadlift",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Lying_Machine_Squat",
+      "name": "Lying Machine Squat",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Narrow_Stance_Hack_Squats",
+      "name": "Narrow Stance Hack Squats",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Narrow_Stance_Leg_Press",
+      "name": "Narrow Stance Leg Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Narrow_Stance_Squats",
+      "name": "Narrow Stance Squats",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Overhead_Kettlebell_Squats",
+      "name": "One-Arm Overhead Kettlebell Squats",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Side_Deadlift",
+      "name": "One-Arm Side Deadlift",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "One_Leg_Barbell_Squat",
+      "name": "One Leg Barbell Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Plie_Dumbbell_Squat",
+      "name": "Plie Dumbbell Squat",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Band_Box_Squat",
+      "name": "Reverse Band Box Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Band_Power_Squat",
+      "name": "Reverse Band Power Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Single-Leg_High_Box_Squat",
+      "name": "Single-Leg High Box Squat",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Single-Leg_Leg_Extension",
+      "name": "Single-Leg Leg Extension",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.3,
+            "quads_vasti": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Leg_Press",
+      "name": "Smith Machine Leg Press",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Squat",
+      "name": "Smith Machine Squat",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Speed_Box_Squat",
+      "name": "Speed Box Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Speed_Squats",
+      "name": "Speed Squats",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Squat_Jerk",
+      "name": "Squat Jerk",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Squat_with_Bands",
+      "name": "Squat with Bands",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Squat_with_Chains",
+      "name": "Squat with Chains",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Squat_with_Plate_Movers",
+      "name": "Squat with Plate Movers",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Squats_-_With_Bands",
+      "name": "Squats - With Bands",
+      "equipment": "bands",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Trap_Bar_Deadlift",
+      "name": "Trap Bar Deadlift",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Weighted_Jump_Squat",
+      "name": "Weighted Jump Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Weighted_Sissy_Squat",
+      "name": "Weighted Sissy Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Weighted_Squat",
+      "name": "Weighted Squat",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Wide_Stance_Barbell_Squat",
+      "name": "Wide Stance Barbell Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Zercher_Squats",
+      "name": "Zercher Squats",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Lunge",
+      "name": "Barbell Lunge",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Side_Split_Squat",
+      "name": "Barbell Side Split Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.25
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Step_Ups",
+      "name": "Barbell Step Ups",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Walking_Lunge",
+      "name": "Barbell Walking Lunge",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Bodyweight_Walking_Lunge",
+      "name": "Bodyweight Walking Lunge",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Lunges",
+      "name": "Dumbbell Lunges",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Rear_Lunge",
+      "name": "Dumbbell Rear Lunge",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Step_Ups",
+      "name": "Dumbbell Step Ups",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Elevated_Back_Lunge",
+      "name": "Elevated Back Lunge",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Pistol_Squat",
+      "name": "Kettlebell Pistol Squat",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Lunge_Sprint",
+      "name": "Lunge Sprint",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Pistol_Squat",
+      "name": "Smith Machine Pistol Squat",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Smith_Single-Leg_Split_Squat",
+      "name": "Smith Single-Leg Split Squat",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Split_Squat_with_Dumbbells",
+      "name": "Split Squat with Dumbbells",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Suspended_Split_Squat",
+      "name": "Suspended Split Squat",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "lunge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    }
+  ]
+}

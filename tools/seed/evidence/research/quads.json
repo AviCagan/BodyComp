@@ -1,0 +1,1735 @@
+{
+  "batch": "quads",
+  "families": [
+    {
+      "id": "back_squat",
+      "name": "Bilateral back / hands-at-side squat",
+      "description": "Bilateral squat with the load on the upper back, on the shoulders (Smith), in the hands at the sides (dumbbell, Jefferson) or bodyweight. Simultaneous knee extension (vasti, RF weakly), hip extension (glute max, adductor magnus), isometric trunk extension under a compressive load (erectors). Depth, stance width and bar position shift the knee/hip share but not the muscle list.",
+      "exerciseIds": [
+        "Barbell_Squat",
+        "Barbell_Full_Squat",
+        "Bodyweight_Squat",
+        "Chair_Squat",
+        "Dumbbell_Squat",
+        "Narrow_Stance_Squats",
+        "Wide_Stance_Barbell_Squat",
+        "Plie_Dumbbell_Squat",
+        "Smith_Machine_Squat",
+        "Speed_Squats",
+        "Squat_with_Bands",
+        "Squat_with_Chains",
+        "Squat_with_Plate_Movers",
+        "Squats_-_With_Bands",
+        "Reverse_Band_Power_Squat",
+        "Weighted_Squat",
+        "Jefferson_Squats"
+      ],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Anchor row. Vasti grow 4-7% from squat training; RF volume does not change (Kubo 2019, Bloomquist 2013, Zabaleta-Korta 2021), and RF EMG is well below vasti in a parallel squat (Ema 2017)."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Anchor row. Glute max volume +6.7% after full-squat training, similar to hip thrust; glute med+min showed little to no growth (Kubo 2019, Plotkin 2023)."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.5,
+          "rationale": "Anchor row. Adductor volume +6.2% with full squats and grew more with squats than with hip thrusts (Kubo 2019, Plotkin 2023)."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.5,
+          "rationale": "Anchor row. Erector spinae is the most active trunk muscle in a loaded back squat (Aspe & Swinton 2014); kept at half credit per brief."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "10 weeks of full or half squat training increased knee extensor volume ~5%, adductor volume 6.2% and glute max volume 6.7% (full squats) while rectus femoris and hamstring volumes did not change.",
+          "source": "Kubo K, Ikebukuro T, Yata H. Effects of squat training with different depths on lower limb muscle volumes. Eur J Appl Physiol. 2019;119(9):1933-1942.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "31230110",
+          "doi": "10.1007/s00421-019-04181-y"
+        },
+        {
+          "claim": "Squat training grew the quadriceps and adductors more than hip-thrust training; glute max growth was similar; glute med+min and hamstrings showed little to no growth in either group.",
+          "source": "Plotkin DL, Rodas MA, Vigotsky AD, et al. Hip thrust and back squat training elicit similar gluteus muscle hypertrophy and transfer similarly to the deadlift. Front Physiol. 2023;14:1279170.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "37877099",
+          "doi": "10.3389/fphys.2023.1279170"
+        },
+        {
+          "claim": "Deep-squat training produced greater front-thigh CSA gains (4-7%) than shallow-squat training over 12 weeks.",
+          "source": "Bloomquist K, Langberg H, Karlsen S, et al. Effect of range of motion in heavy load squatting on muscle and tendon adaptations. Eur J Appl Physiol. 2013;113(8):2133-2142.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "23604798",
+          "doi": "10.1007/s00421-013-2642-7"
+        },
+        {
+          "claim": "Smith-machine squat training grew only the central vastus lateralis region; leg-extension training grew all three rectus femoris regions.",
+          "source": "Zabaleta-Korta A, Fernandez-Pena E, Torres-Unda J, et al. The role of exercise selection in regional muscle hypertrophy: a randomized controlled trial. J Sports Sci. 2021;39(20):2298-2304.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "34743671",
+          "doi": "10.1080/02640414.2021.1929736"
+        },
+        {
+          "claim": "Rectus femoris activation during a parallel squat is significantly lower than vastus lateralis and medialis.",
+          "source": "Ema R, Takayama H, Miyamoto N, Akagi R. Effect of prolonged vibration to synergistic and antagonistic muscles on the rectus femoris activation during multi-joint exercises. Eur J Appl Physiol. 2017;117(10):2109-2118.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28849258",
+          "doi": "10.1007/s00421-017-3702-1"
+        },
+        {
+          "claim": "Stance width does not change quadriceps EMG; a wide stance raises adductor longus and glute max activity, narrow stance lowers them.",
+          "source": "McCaw ST, Melrose DR. Stance width and bar load effects on leg muscle activity during the parallel squat. Med Sci Sports Exerc. 1999;31(3):428-436.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "10188748",
+          "doi": "10.1097/00005768-199903000-00012"
+        },
+        {
+          "claim": "Across three stance widths only glute max EMG differed, being higher at the widest stance; quads, hamstrings, glute med and adductor major did not differ.",
+          "source": "Paoli A, Marcolin G, Petrone N. The effect of stance width on the electromyographical activity of eight superficial thigh muscles during back squat with different bar loads. J Strength Cond Res. 2009;23(1):246-250.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "19130646",
+          "doi": "10.1519/jsc.0b013e3181876811"
+        },
+        {
+          "claim": "High-bar narrow-stance squats give higher vastus lateralis and lower glute max EMG with greater knee contribution; low-bar wide stance shifts moment share to the hip.",
+          "source": "Larsen S, Kristiansen E, Helms E, van den Tillaar R. Effects of stance width and barbell placement on kinematics, kinetics, and myoelectric activity in back squats. Front Sports Act Living. 2021;3:719013.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "34541522",
+          "doi": "10.3389/fspor.2021.719013"
+        },
+        {
+          "claim": "In loaded back squats erector spinae shows the highest posterior-trunk activity; anterior trunk (RA/EO) activity is small.",
+          "source": "Aspe RR, Swinton PA. Electromyographic and kinetic comparison of the back squat and overhead squat. J Strength Cond Res. 2014;28(10):2827-2836.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24662228",
+          "doi": "10.1519/JSC.0000000000000462"
+        },
+        {
+          "claim": "Review of 18 EMG studies: prime-mover activation rises with load; stance width, hip rotation and front vs back bar position do not materially change which muscles are activated.",
+          "source": "Clark DR, Lambert MI, Hunter AM. Muscle activation in the loaded free barbell squat: a brief review. J Strength Cond Res. 2012;26(4):1169-1178.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22373894",
+          "doi": "10.1519/JSC.0b013e31822d533d"
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Bodyweight_Squat",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.5
+            }
+          ],
+          "reason": "No external load on the spine; erector demand is trivial. Current mapping already omits erectors and is kept."
+        },
+        {
+          "exerciseId": "Chair_Squat",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Sit-to-stand style squat with no bar on the back; keep current mapping (no erector credit)."
+        },
+        {
+          "exerciseId": "Narrow_Stance_Squats",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.5,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.25
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Narrow stance lowers adductor and glute max activity with no change in quads (McCaw 1999, Paoli 2009, Larsen 2021)."
+        },
+        {
+          "exerciseId": "Wide_Stance_Barbell_Squat",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Wide stance raises adductor and glute max EMG and hip moment share (McCaw 1999, Paoli 2009, Larsen 2021); adductors promoted to strong synergist."
+        },
+        {
+          "exerciseId": "Plie_Dumbbell_Squat",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Very wide (sumo) stance: adductors up as for wide stance. Dumbbell hangs between the legs, so spinal loading is low (erectors 0.25). Abs credit removed: no evidence of meaningful stimulus."
+        },
+        {
+          "exerciseId": "Dumbbell_Squat",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.8,
+                "forearm_extensors_brachioradialis": 0.2
+              }
+            }
+          ],
+          "reason": "Load is carried in the hands, so grip (finger flexors) is loaded for the whole set; minor credit."
+        },
+        {
+          "exerciseId": "Jefferson_Squats",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.5,
+              "regionDistribution": {
+                "forearm_flexors": 0.8,
+                "forearm_extensors_brachioradialis": 0.2
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Straddle-stance squat holding the bar between the legs: heavy grip load (forearms 0.5) and a deadlift-like arm hang; traps_upper is isometric, so reduced from the current 0.5 to 0.25."
+        }
+      ],
+      "confidence": "high",
+      "conflictsWithBrief": [],
+      "notes": "Barbell_Squat kept exactly as the anchor. Barbell_Full_Squat uses the same row; Kubo 2019 shows full depth grows glutes and adductors more than half depth, but the app does not model depth so no override. Speed squats, band/chain/reverse-band and plate-mover variants change load profile only, not the muscle list. Smith_Machine_Squat kept at family values (Zabaleta-Korta 2021 shows Smith squats grow the vasti). Reverse_Band_Power_Squat: no forearm credit (bar on the back)."
+    },
+    {
+      "id": "box_squat",
+      "name": "Box squat and squat-to-bench",
+      "description": "Back squat with the descent stopped on a box or bench. Wide stance and vertical shins in the powerlifting version shift the moment share from knee to hip; squat-to-bench is simply a depth-limited squat.",
+      "exerciseIds": [
+        "Box_Squat",
+        "Box_Squat_with_Bands",
+        "Box_Squat_with_Chains",
+        "Reverse_Band_Box_Squat",
+        "Speed_Box_Squat",
+        "Barbell_Squat_To_A_Bench",
+        "Dumbbell_Squat_To_A_Bench"
+      ],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Knee extension still drives the movement; same RF/vasti split as the squat anchor."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Box squat is performed with a wide stance and posterior COM shift, giving hip moments at least equal to the traditional squat (Swinton 2012); raised from the current 0.5 to the squat anchor's 0.75."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.5,
+          "rationale": "Wide-stance hip extension loads adductor magnus (McCaw 1999); keep squat anchor value."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.5,
+          "rationale": "Loaded bar on the back; same as squat anchor."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Powerlifting and box squats are performed with a wide stance and vertical shin, shifting the system COM posteriorly and producing the largest hip moments in all three planes; spine and ankle moments are lower than in the traditional squat.",
+          "source": "Swinton PA, Lloyd R, Keogh JW, Agouris I, Stewart AD. A biomechanical comparison of the traditional squat, powerlifting squat, and box squat. J Strength Cond Res. 2012;26(7):1805-1816.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "22505136",
+          "doi": "10.1519/JSC.0b013e3182577067"
+        },
+        {
+          "claim": "Wide stance raises adductor longus and glute max activity without changing quadriceps EMG.",
+          "source": "McCaw ST, Melrose DR. Stance width and bar load effects on leg muscle activity during the parallel squat. Med Sci Sports Exerc. 1999;31(3):428-436.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "10188748",
+          "doi": "10.1097/00005768-199903000-00012"
+        },
+        {
+          "claim": "Shallow (60 degree) squat training still grew the front thigh but less than deep squats; depth-limited squats remain a quad exercise.",
+          "source": "Bloomquist K, Langberg H, Karlsen S, et al. Effect of range of motion in heavy load squatting on muscle and tendon adaptations. Eur J Appl Physiol. 2013;113(8):2133-2142.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "23604798",
+          "doi": "10.1007/s00421-013-2642-7"
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Dumbbell_Squat_To_A_Bench",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.8,
+                "forearm_extensors_brachioradialis": 0.2
+              }
+            }
+          ],
+          "reason": "Dumbbells held at the sides load grip throughout the set."
+        }
+      ],
+      "confidence": "medium",
+      "conflictsWithBrief": [],
+      "notes": "Main change vs current: glutes 0.5 -> 0.75 for all box variants, because the box squat is, if anything, more hip-dominant than the traditional squat. Reverse_Band_Box_Squat loses its current forearm credit (bar on the back, hands only steady it). Speed_Box_Squat gains adductors and erectors to match the family."
+    },
+    {
+      "id": "front_loaded_squat",
+      "name": "Front-loaded squat (front, goblet, Zercher, kettlebell rack)",
+      "description": "Bilateral squat with the load in front of the body (front rack, goblet, Zercher, double kettlebell rack). More upright trunk, slightly more knee-dominant, same prime movers as the back squat. Arms and upper back hold the load isometrically.",
+      "exerciseIds": [
+        "Front_Barbell_Squat",
+        "Front_Barbell_Squat_To_A_Bench",
+        "Front_Squat_Clean_Grip",
+        "Front_Squats_With_Two_Kettlebells",
+        "Goblet_Squat",
+        "Zercher_Squats"
+      ],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Vastus medialis EMG is equal or higher than in back squats (Yavuz 2015, Gullett 2009); RF remains low in any deep squat."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "No glute max EMG difference between front, full and parallel squats (Contreras 2016)."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.5,
+          "rationale": "Same deep hip flexion/extension as the back squat; adductors grow from squatting (Kubo 2019)."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.5,
+          "rationale": "Erector activity is not lower in front squats (Gullett 2009; iliocostalis higher in McCormick 2023); keep squat anchor value."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Front and back squats produced the same muscle activation (quads, hamstrings, erector spinae) with lower knee compressive forces in the front squat.",
+          "source": "Gullett JC, Tillman MD, Gutierrez GM, Chow JW. A biomechanical comparison of back and front squats in healthy trained individuals. J Strength Cond Res. 2009;23(1):284-292.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "19002072",
+          "doi": "10.1519/JSC.0b013e31818546bb"
+        },
+        {
+          "claim": "At maximal loads vastus medialis EMG was greater in the front squat while semitendinosus was greater in the back squat; the back squat had more trunk lean.",
+          "source": "Yavuz HU, Erdag D, Amca AM, Aritan S. Kinematic and EMG activities during front and back squat variations in maximum loads. J Sports Sci. 2015;33(10):1058-1066.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "25630691",
+          "doi": "10.1080/02640414.2014.984240"
+        },
+        {
+          "claim": "No differences in glute max, biceps femoris or vastus lateralis EMG between front, full and parallel squats at 10RM in trained women.",
+          "source": "Contreras B, Vigotsky AD, Schoenfeld BJ, Beardsley C, Cronin J. A comparison of gluteus maximus, biceps femoris, and vastus lateralis EMG amplitude in the parallel, full, and front squat variations in resistance-trained females. J Appl Biomech. 2016;32(1):16-22.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26252837",
+          "doi": "10.1123/jab.2015-0113"
+        },
+        {
+          "claim": "Trunk muscle activity (internal/external oblique, iliocostalis) is higher in front than back squats at matched relative load.",
+          "source": "McCormick JB, Drusch AS, Lynch DJ, et al. The effect of volitional preemptive abdominal contraction on biomechanical measures during a front versus back loaded barbell squat. Int J Sports Phys Ther. 2023;18(4):831-844.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "37547830",
+          "doi": "10.26603/001c.84306"
+        },
+        {
+          "claim": "Squat training does not grow the hamstrings (no change in hamstring volume/CSA).",
+          "source": "Kubo K, Ikebukuro T, Yata H. Effects of squat training with different depths on lower limb muscle volumes. Eur J Appl Physiol. 2019;119(9):1933-1942.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "31230110",
+          "doi": "10.1007/s00421-019-04181-y"
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Goblet_Squat",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Load is light relative to a barbell and is held at the chest, so spinal load is modest (erectors 0.25). Current delt_front 0.5 removed: the arms only hold the bell isometrically."
+        }
+      ],
+      "confidence": "high",
+      "conflictsWithBrief": [],
+      "notes": "Front_Squat_Clean_Grip: current abs 0.5 and hamstrings 0.5 removed. Abdominal EMG rises only a few percent MVIC and is isometric; hamstrings do not hypertrophy from squats and the brief gives squats no hamstring credit. Zercher_Squats: biceps and upper back hold the bar isometrically, no credit per brief; erectors kept at 0.5. Front_Squats_With_Two_Kettlebells: rack hold is isometric for the shoulders, no delt credit."
+    },
+    {
+      "id": "overhead_squat",
+      "name": "Overhead squat and squat jerk",
+      "description": "Squat with the load locked out overhead (kettlebell or barbell). Lower limb pattern is a narrow, upright squat at lighter loads; shoulders and trunk stabilise isometrically. The squat jerk adds a ballistic dip-and-drive with active shoulder/triceps lockout.",
+      "exerciseIds": ["One-Arm_Overhead_Kettlebell_Squats", "Squat_Jerk"],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Knee extension is the prime mover; overhead squats keep a very upright trunk (knee-dominant)."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Deep hip extension as in any full squat; back squat showed higher lower-body EMG but the pattern is the same (Aspe & Swinton 2014)."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.5,
+          "rationale": "Full-depth squat pattern; same as squat anchor."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.5,
+          "rationale": "Erector spinae is the dominant trunk muscle in both back and overhead squats (Aspe & Swinton 2014)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Overhead squat showed slightly (2-7%) greater rectus abdominis and external oblique EMG than the back squat; back squat had greater erector spinae and all lower-body EMG and higher peak force.",
+          "source": "Aspe RR, Swinton PA. Electromyographic and kinetic comparison of the back squat and overhead squat. J Strength Cond Res. 2014;28(10):2827-2836.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24662228",
+          "doi": "10.1519/JSC.0000000000000462"
+        },
+        {
+          "claim": "In a clean-and-jerk pattern the erector spinae is most active in the lowest (deep squat) position while rectus abdominis and obliquus internus show little activation.",
+          "source": "Eriksson Crommert M, Ekblom MM, Thorstensson A. Motor control of the trunk during a modified clean and jerk lift. Scand J Med Sci Sports. 2014;24(5):758-763.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "23489349",
+          "doi": "10.1111/sms.12064"
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Squat_Jerk",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.25
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.25,
+              "regionDistribution": {
+                "gastrocnemius": 0.7,
+                "soleus": 0.3
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Ballistic dip-drive with triple extension (calves 0.25, traps shrug 0.25) and an active punch to lockout (delt_front, triceps at half credit as in an overhead press). Hamstrings removed (no squat hamstring credit per brief); adductors reduced because the receiving squat is brief."
+        }
+      ],
+      "confidence": "medium",
+      "conflictsWithBrief": [],
+      "notes": "One-Arm_Overhead_Kettlebell_Squats: current delt_front 0.5 removed because the overhead arm works isometrically; the brief excludes isometric stabiliser credit. Flagged as an open question since users may expect shoulder colour. Trunk anti-lateral-flexion (obliques) is also isometric and left uncredited."
+    },
+    {
+      "id": "machine_leg_press_hack",
+      "name": "Leg press, hack squat and machine squat",
+      "description": "Back-supported or sled-guided bilateral knee/hip extension: 45-degree and horizontal leg presses, hack squat sled, lying machine squat, and the barbell hack squat (bar behind the legs). Trunk is supported so erectors are unloaded; hip range is shorter than a free squat so glute credit is lower.",
+      "exerciseIds": [
+        "Leg_Press",
+        "Narrow_Stance_Leg_Press",
+        "Smith_Machine_Leg_Press",
+        "Hack_Squat",
+        "Narrow_Stance_Hack_Squats",
+        "Lying_Machine_Squat",
+        "Barbell_Hack_Squat"
+      ],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Closed-chain pressing recruits the vasti far more than RF (Escamilla 1998); leg press and squat produce comparable quad development (Rossi 2016)."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.5,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Hip extension is present but hip ROM and hip moment are smaller than in a free squat with back support; half credit (current mapping kept)."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.5,
+          "rationale": "Adductor magnus acts as a hip extensor in the flexed-hip bottom position; stance-dependent (McCaw 1999, Escamilla 2001)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Squat produced roughly twice the hamstring activity of the leg press; closed-chain exercises (squat, leg press) produced more vasti and less rectus femoris activity than open-chain knee extension.",
+          "source": "Escamilla RF, Fleisig GS, Zheng N, Barrentine SW, Wilk KE, Andrews JR. Biomechanics of the knee during closed kinetic chain and open kinetic chain exercises. Med Sci Sports Exerc. 1998;30(4):556-569.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "9565938",
+          "doi": "10.1097/00005768-199804000-00014"
+        },
+        {
+          "claim": "Squat generated more quadriceps and hamstring activity than high- or low-foot leg press; wide-stance high-foot leg press had more hamstring activity than narrow stance; foot angle made no difference.",
+          "source": "Escamilla RF, Fleisig GS, Zheng N, et al. Effects of technique variations on knee biomechanics during the squat and leg press. Med Sci Sports Exerc. 2001;33(9):1552-1566.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "11528346",
+          "doi": "10.1097/00005768-200109000-00020"
+        },
+        {
+          "claim": "During the leg press quadriceps EMG was ~39-52% MVIC while hamstring activity was minimal (~12% MVIC).",
+          "source": "Wilk KE, Escamilla RF, Fleisig GS, Barrentine SW, Andrews JR, Boyd ML. A comparison of tibiofemoral joint forces and electromyographic activity during open and closed kinetic chain exercises. Am J Sports Med. 1996;24(4):518-527.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "8827313",
+          "doi": "10.1177/036354659602400418"
+        },
+        {
+          "claim": "10 weeks of squat-only, leg-press-only or combined training produced similar body-composition and lower-body outcomes; transfer was task specific.",
+          "source": "Rossi FE, Schoenfeld BJ, Ocetnik S, et al. Strength, body composition, and functional outcomes in the squat versus leg press exercises. J Sports Med Phys Fitness. 2018;58(3):263-270.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "27735888",
+          "doi": "10.23736/S0022-4707.16.06698-6"
+        },
+        {
+          "claim": "Narrow stance lowers adductor and glute max activity; quads unchanged.",
+          "source": "McCaw ST, Melrose DR. Stance width and bar load effects on leg muscle activity during the parallel squat. Med Sci Sports Exerc. 1999;31(3):428-436.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "10188748",
+          "doi": "10.1097/00005768-199903000-00012"
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Narrow_Stance_Leg_Press",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.5,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Narrow stance reduces adductor involvement (McCaw 1999; Escamilla 2001 wide vs narrow leg press)."
+        },
+        {
+          "exerciseId": "Narrow_Stance_Hack_Squats",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.5,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Narrow stance reduces adductor involvement (McCaw 1999)."
+        },
+        {
+          "exerciseId": "Barbell_Hack_Squat",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.5,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.5,
+              "regionDistribution": {
+                "forearm_flexors": 0.8,
+                "forearm_extensors_brachioradialis": 0.2
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Free-weight version: bar is gripped behind the legs from the floor, so grip is loaded (forearms 0.5, split toward finger flexors) and the trunk carries the bar (erectors 0.25). Current forearm credit kept; erectors added."
+        }
+      ],
+      "confidence": "high",
+      "conflictsWithBrief": [],
+      "notes": "Current family values (quads 1.0, glutes 0.5, adductors 0.5, no erectors) are already right and are kept. Lying_Machine_Squat is a horizontal sled squat with the shoulders under pads; its current glutes 0.75 is lowered to the family 0.5 because the back is supported. Hack/leg-press place the hip in less flexion than a free squat, which lengthens RF slightly, but no data justify moving the RF share off 0.10."
+    },
+    {
+      "id": "leg_extension",
+      "name": "Leg extension (bilateral and single-leg)",
+      "description": "Open-chain seated knee extension against a pad. Isolates the quadriceps; the only knee-dominant exercise where rectus femoris is a strong contributor because the hip is flexed and no hip extension torque suppresses it.",
+      "exerciseIds": ["Leg_Extensions", "Single-Leg_Leg_Extension"],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.3,
+            "quads_vasti": 0.7
+          },
+          "rationale": "RF grows proportionally more than the vasti with knee-extension training (17% vs 10-11%, Lundberg 2019; Ema 2013) and is the region that separates leg extensions from squats (Zabaleta-Korta 2021). RF is only ~15% of quad volume, so 0.30 already over-weights it to express the emphasis. Current value kept."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "12 weeks of knee-extension training increased rectus femoris CSA, thickness and pennation relatively more than the vasti.",
+          "source": "Ema R, Wakahara T, Miyamoto N, Kanehisa H, Kawakami Y. Inhomogeneous architectural changes of the quadriceps femoris induced by resistance training. Eur J Appl Physiol. 2013;113(11):2691-2703.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "23949789",
+          "doi": "10.1007/s00421-013-2700-1"
+        },
+        {
+          "claim": "8 weeks of knee-extension training (flywheel or weight stack) grew RF 17% versus VL 10-11%, VM 6-8%, VI 5%.",
+          "source": "Lundberg TR, Garcia-Gutierrez MT, Mandic M, Lilja M, Fernandez-Gonzalo R. Regional and muscle-specific adaptations in knee extensor hypertrophy using flywheel versus conventional weight-stack resistance exercise. Appl Physiol Nutr Metab. 2019;44(8):827-833.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "30620623",
+          "doi": "10.1139/apnm-2018-0774"
+        },
+        {
+          "claim": "Leg-extension training grew all three RF regions whereas Smith squat training grew only central VL.",
+          "source": "Zabaleta-Korta A, Fernandez-Pena E, Torres-Unda J, et al. The role of exercise selection in regional muscle hypertrophy: a randomized controlled trial. J Sports Sci. 2021;39(20):2298-2304.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "34743671",
+          "doi": "10.1080/02640414.2021.1929736"
+        },
+        {
+          "claim": "Leg extension with the hip at 40 degrees (more reclined) produced clearly greater RF hypertrophy than at 90 degrees, with no difference for VL.",
+          "source": "Larsen S, Sandvik Kristiansen B, Swinton PA, et al. The effects of hip flexion angle on quadriceps femoris muscle hypertrophy in the leg extension exercise. J Sports Sci. 2024;42(24):2400-2408.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "39699974",
+          "doi": "10.1080/02640414.2024.2444713"
+        },
+        {
+          "claim": "Open-chain knee extension produces more rectus femoris activity than squat or leg press.",
+          "source": "Escamilla RF, Fleisig GS, Zheng N, Barrentine SW, Wilk KE, Andrews JR. Biomechanics of the knee during closed kinetic chain and open kinetic chain exercises. Med Sci Sports Exerc. 1998;30(4):556-569.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "9565938",
+          "doi": "10.1097/00005768-199804000-00014"
+        }
+      ],
+      "perExerciseOverrides": [],
+      "confidence": "high",
+      "conflictsWithBrief": [],
+      "notes": "Current mapping (quads 1.0 {rf .3, vasti .7}) is kept. Single-leg version is identical; unilateral work does not change the muscle list."
+    },
+    {
+      "id": "sissy_squat",
+      "name": "Sissy squat",
+      "description": "Knee flexion/extension with the hips held extended and the torso leaning back, heels raised. Knee-only movement that puts rectus femoris at long length (hip extended + knee flexed) with essentially no hip extension torque.",
+      "exerciseIds": ["Weighted_Sissy_Squat"],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.35,
+            "quads_vasti": 0.65
+          },
+          "rationale": "Quad isolation like a leg extension, but with the hip extended, which lengthens RF further than any seated leg extension; Larsen 2024 shows less hip flexion produces more RF growth, so RF share is set slightly above the leg-extension row."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Reducing hip flexion during knee extension (40 vs 90 degrees) markedly increases RF hypertrophy with no change in VL; sissy squats take this to ~0 degrees of hip flexion.",
+          "source": "Larsen S, Sandvik Kristiansen B, Swinton PA, et al. The effects of hip flexion angle on quadriceps femoris muscle hypertrophy in the leg extension exercise. J Sports Sci. 2024;42(24):2400-2408.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "39699974",
+          "doi": "10.1080/02640414.2024.2444713"
+        },
+        {
+          "claim": "RF is biarticular (hip flexor + knee extensor); with the hip held extended and the knee flexed it is at maximal length under load, while glute max and adductors produce no shortening work because the hip does not move.",
+          "source": "Anatomical reasoning (moment arms and length-tension); no sissy-squat-specific study indexed in PubMed as of 2026-09 (query 'sissy squat' returned 0 records).",
+          "tier": "anatomical",
+          "confidence": "likely"
+        },
+        {
+          "claim": "Practitioners classify the sissy squat as a quadriceps isolation movement with negligible glute contribution.",
+          "source": "Practitioner consensus (strength-coaching texts and exercise libraries).",
+          "tier": "consensus",
+          "confidence": "likely"
+        }
+      ],
+      "perExerciseOverrides": [],
+      "confidence": "medium",
+      "conflictsWithBrief": [],
+      "notes": "Current glutes 0.75 and adductors 0.5 removed: the hip stays extended through the rep, so glute max and adductor magnus do no dynamic work. Only quads are credited."
+    },
+    {
+      "id": "jump_squat",
+      "name": "Jump squat (bodyweight and loaded)",
+      "description": "Ballistic countermovement squat into a vertical jump. Shallow-to-parallel squat pattern plus explosive triple extension (hip, knee, ankle), so the plantar flexors do concentric work that ordinary squats do not require.",
+      "exerciseIds": ["Freehand_Jump_Squat", "Weighted_Jump_Squat"],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Knee extension drives take-off; RF stays minor as in all squats."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Hip extension is a major contributor to jump power; glute max force rises with external load in squats (Kipp 2022). Raised from current 0.5 to the squat anchor value."
+        },
+        {
+          "groupId": "calves",
+          "weight": 0.5,
+          "regionDistribution": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "rationale": "Take-off and landing require concentric/eccentric plantar flexion under body-plus-load; gastrocnemius and soleus forces scale with load in squat-type movements (Kipp 2022). Gastrocnemius-biased because the knee is near extension at toe-off."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.25,
+          "rationale": "Shallower squat depth than a full squat, so adductor magnus works over a shorter range; minor credit."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Soleus, gastrocnemius medialis/lateralis, glute max and vasti forces all increase with external load during squat-type exercises (musculoskeletal modelling).",
+          "source": "Kipp K, Kim H, Wolf WI. Muscle forces during the squat, split squat, and step-up across a range of external loads in college-aged men. J Strength Cond Res. 2022;36(2):314-323.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "32569122",
+          "doi": "10.1519/JSC.0000000000003688"
+        },
+        {
+          "claim": "Lateral gastrocnemius is one of the lower-limb muscles whose EMG rises after squat conditioning during countermovement and squat jumps, consistent with plantar-flexor involvement in the jump.",
+          "source": "Gao Z. Load-specific post-activation performance enhancement from back squats in male collegiate basketball players. Front Physiol. 2026;17:1847856.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "42620624",
+          "doi": "10.3389/fphys.2026.1847856"
+        },
+        {
+          "claim": "Jump squats are a ballistic triple-extension movement; the ankle plantar flexors perform positive work at take-off that a standing squat does not require.",
+          "source": "Anatomical / biomechanical reasoning; no longitudinal hypertrophy study of jump squats found.",
+          "tier": "anatomical",
+          "confidence": "likely"
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Weighted_Jump_Squat",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.5,
+              "regionDistribution": {
+                "gastrocnemius": 0.7,
+                "soleus": 0.3
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.25
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Barbell on the back adds spinal load and a landing impulse; current erectors 0.5 halved because loads are light (typically <= 30% 1RM)."
+        }
+      ],
+      "confidence": "medium",
+      "conflictsWithBrief": [],
+      "notes": "Jump squats are trained for power at low loads and high velocity; the credit table describes which muscles are loaded, while the engine's set factors (reps, RIR) should account for the lower hypertrophic stimulus per set. Calves added because plantar flexion is dynamic here, unlike in a regular squat."
+    },
+    {
+      "id": "quad_dominant_deadlift",
+      "name": "Trap-bar, machine, cable and suitcase deadlift",
+      "description": "Floor pulls where the handles sit beside the body and the trunk stays more upright than a straight-bar deadlift: knee moment is higher and hip/lumbar moments lower, so the quads are a prime mover alongside the hip extensors. Grip and upper traps carry the load.",
+      "exerciseIds": ["Trap_Bar_Deadlift", "Leverage_Deadlift", "Cable_Deadlifts", "One-Arm_Side_Deadlift"],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Hex bar raises knee moment and vastus lateralis EMG above the straight-bar deadlift (Swinton 2011, Camara 2016)."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Hex-bar deadlift is a very-high glute max activation exercise (Neto 2020); hip extension is a primary joint action, kept at the RDL anchor's 0.75."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.5,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Biceps femoris EMG is 28-39% lower with the hex bar than a straight bar (Andersen 2018, Camara 2016); hip-extension hamstrings only, half credit versus the RDL anchor's 1.0."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.75,
+          "rationale": "Lumbar moment is lower than a straight-bar pull but still substantial; erector EMG did not differ between bars (Andersen 2018). Between the squat anchor (0.5) and a conventional deadlift."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.5,
+          "regionDistribution": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          },
+          "rationale": "Heavy grip-limited hold; finger flexors dominate."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.25,
+          "rationale": "Upper traps resist scapular depression isometrically under heavy load; minor credit to keep the expected colour (consensus), reduced from the current 0.5."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.25,
+          "rationale": "Adductor magnus assists hip extension from the flexed start position; less range than a squat."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Hexagonal-bar deadlift lowered peak lumbar, hip and ankle moments and increased peak knee moment versus the straight bar; lifters also pulled a heavier 1RM.",
+          "source": "Swinton PA, Stewart A, Agouris I, Keogh JW, Lloyd R. A biomechanical analysis of straight and hexagonal barbell deadlifts using submaximal loads. J Strength Cond Res. 2011;25(7):2000-2009.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "21659894",
+          "doi": "10.1519/JSC.0b013e3181e73f87"
+        },
+        {
+          "claim": "Hex-bar deadlift produced greater vastus lateralis EMG (concentric and eccentric) while the straight bar produced greater biceps femoris (concentric) and erector spinae (eccentric) EMG.",
+          "source": "Camara KD, Coburn JW, Dunnick DD, Brown LE, Galpin AJ, Costa PB. An examination of muscle activation and power characteristics while performing the deadlift exercise with straight and hexagonal barbells. J Strength Cond Res. 2016;30(5):1183-1188.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26840440",
+          "doi": "10.1519/JSC.0000000000001352"
+        },
+        {
+          "claim": "Barbell deadlift activated biceps femoris 28% more than the hex-bar deadlift; erector spinae activation did not differ between hex bar, barbell deadlift and hip thrust.",
+          "source": "Andersen V, Fimland MS, Mo DA, et al. Electromyographic comparison of barbell deadlift, hex bar deadlift, and hip thrust exercises: a cross-over study. J Strength Cond Res. 2018;32(3):587-593.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28151780",
+          "doi": "10.1519/JSC.0000000000001826"
+        },
+        {
+          "claim": "Hex-bar deadlift is classed as a very-high (>60% MVIC) glute max activation exercise.",
+          "source": "Neto WK, Soares EG, Vieira TL, et al. Gluteus maximus activation during common strength and hypertrophy exercises: a systematic review. J Sports Sci Med. 2020;19(1):195-203.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32132843"
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Cable_Deadlifts",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.5,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.8,
+                "forearm_extensors_brachioradialis": 0.2
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Low-pulley loads are much lighter than a bar, so grip and trap demand are minor; erectors at the squat level. No traps_upper credit."
+        },
+        {
+          "exerciseId": "One-Arm_Side_Deadlift",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.5,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.5,
+              "regionDistribution": {
+                "forearm_flexors": 0.8,
+                "forearm_extensors_brachioradialis": 0.2
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.25
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Suitcase-style pull with the bar at one side: obliques resist lateral flexion (isometric, so only 0.25, flagged in open questions). Current abs 0.5 and calves 0.5 removed: no dynamic work for either."
+        }
+      ],
+      "confidence": "medium",
+      "conflictsWithBrief": [],
+      "notes": "These four are hinge-pattern exercises that were placed in the quads batch; the mapping deliberately keeps quads at 1.0 because the evidence (higher knee moment and VL EMG than a straight-bar pull) supports it, while hamstrings are held at half the RDL anchor. Leverage_Deadlift (plate-loaded machine with side handles) uses the family row: same geometry as the trap bar; forearms and erectors added versus current."
+    },
+    {
+      "id": "lunge_split_squat",
+      "name": "Lunges and split squats (incl. Bulgarian)",
+      "description": "Unilateral knee/hip extension of the front leg in a split stance: forward, walking, reverse and deficit lunges, static split squats and rear-foot-elevated (Bulgarian) split squats. Hip-dominant relative to a back squat, with frontal-plane glute med demand and a small but real hamstring contribution from the forward trunk lean.",
+      "exerciseIds": [
+        "Barbell_Lunge",
+        "Barbell_Walking_Lunge",
+        "Bodyweight_Walking_Lunge",
+        "Dumbbell_Lunges",
+        "Dumbbell_Rear_Lunge",
+        "Elevated_Back_Lunge",
+        "Lunge_Sprint",
+        "Split_Squat_with_Dumbbells",
+        "Smith_Single-Leg_Split_Squat",
+        "Suspended_Split_Squat",
+        "One_Leg_Barbell_Squat"
+      ],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Vasti show the highest EMG of all muscles in lunges (Muyor 2020, Khaiyat 2018); RF remains minor because the front hip is flexed."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          },
+          "rationale": "Split squat and lunges are very-high glute max exercises (Neto 2020); glute max and glute med forces rise more steeply with load than in a back squat (Kipp 2022). Glute med share raised because single-leg stance loads the abductors (Muyor 2020)."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.25,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Hamstring forces are highest in the front leg of a split squat (Jaeggi 2024), BF long head force scales more with load than in a squat (Kipp 2022), and walking-lunge training improved hamstring strength (Jonhagen 2009). Minor credit only; no direct hypertrophy data."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.25,
+          "rationale": "Hip adductor EMG rises with a longer step (Escamilla 2025); less range than a bilateral deep squat, so kept at the current 0.25."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Split squat, in-line lunge and traditional lunge are classed as very-high (>60% MVIC) glute max activation exercises.",
+          "source": "Neto WK, Soares EG, Vieira TL, et al. Gluteus maximus activation during common strength and hypertrophy exercises: a systematic review. J Sports Sci Med. 2020;19(1):195-203.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32132843"
+        },
+        {
+          "claim": "Load-dependent increases in glute max, vasti and biceps femoris long head forces were more pronounced in the split squat and step-up than in the back squat.",
+          "source": "Kipp K, Kim H, Wolf WI. Muscle forces during the squat, split squat, and step-up across a range of external loads in college-aged men. J Strength Cond Res. 2022;36(2):314-323.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "32569122",
+          "doi": "10.1519/JSC.0000000000003688"
+        },
+        {
+          "claim": "Bulgarian split squat and back squat are both hip-dominant; knee moment impulse and knee displacement are lower in the Bulgarian split squat.",
+          "source": "Mackey ER, Riemann BL. Biomechanical differences between the Bulgarian split-squat and back squat. Int J Exerc Sci. 2021;14(1):533-543.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "34055144",
+          "doi": "10.70252/CIYT8956"
+        },
+        {
+          "claim": "In musculoskeletal models the gluteal muscles were most active in the front leg of the split squat and the hamstrings (esp. semimembranosus) generated their highest forces there.",
+          "source": "Jaeggi JS, Achermann B, Lorenzetti SR. Female lower body muscle forces: a musculoskeletal modeling comparison of back squats, split squats and good mornings. J Funct Morphol Kinesiol. 2024;9(2):68.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "38651426",
+          "doi": "10.3390/jfmk9020068"
+        },
+        {
+          "claim": "Quadriceps, hamstrings, gastrocnemius, hip adductor and glute max EMG were all greater in long-step than short-step forward lunges.",
+          "source": "Escamilla RF, Thompson IS, Asuncion R, et al. Effects of step length and stride variation during forward lunges on lower-extremity muscle activity. J Funct Morphol Kinesiol. 2025;10(1):42.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "39982282",
+          "doi": "10.3390/jfmk10010042"
+        },
+        {
+          "claim": "Six weeks of walking forward lunges improved hamstring strength in soccer players.",
+          "source": "Jonhagen S, Ackermann P, Saartok T. Forward lunge: a training study of eccentric exercises of the lower limbs. J Strength Cond Res. 2009;23(3):972-978.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "19387378",
+          "doi": "10.1519/JSC.0b013e3181a00d98"
+        },
+        {
+          "claim": "In forward lunge, monopodal squat and lateral step-up the vasti showed the highest EMG followed by glute med and glute max.",
+          "source": "Muyor JM, Martin-Fuentes I, Rodriguez-Ridao D, Antequera-Vique JA. Electromyographic activity in the gluteus medius, gluteus maximus, biceps femoris, vastus lateralis, vastus medialis and rectus femoris during the Monopodal Squat, Forward Lunge and Lateral Step-Up exercises. PLoS One. 2020;15(4):e0230841.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32236133",
+          "doi": "10.1371/journal.pone.0230841"
+        },
+        {
+          "claim": "Trunk flexion during the Bulgarian split squat increases glute max, biceps femoris and RF activation; suspension-based rear foot increases erector spinae activation.",
+          "source": "Aygun-Polat E, Guzel NA, Guruhan S, Polat Y, Karatas N. Targeted muscle activation in Bulgarian split squat variations: effects of trunk position and suspension-based execution. BMC Sports Sci Med Rehabil. 2025;17(1):251.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "40867012",
+          "doi": "10.1186/s13102-025-01306-z"
+        }
+      ],
+      "perExerciseOverrides": [],
+      "confidence": "medium",
+      "conflictsWithBrief": [],
+      "notes": "Only change vs current: hamstrings 0.25 added across the family and the glute med share confirmed at 0.3. One_Leg_Barbell_Squat is the free-exercise-db name for a barbell Bulgarian split squat and belongs here rather than with pistols; its current glute split {.9/.1} and adductors 0.5 are replaced by the family values. Suspended_Split_Squat adductors lowered from 0.5 to the family 0.25. Bar-on-back variants get no erector credit because the unilateral load is roughly half a back-squat load."
+    },
+    {
+      "id": "step_up",
+      "name": "Step-up",
+      "description": "Unilateral concentric-dominant hip and knee extension onto a box. The lead-leg hip extensors do the largest share of work of any squat-pattern exercise, with substantial glute med demand for pelvic control.",
+      "exerciseIds": ["Barbell_Step_Ups", "Dumbbell_Step_Ups"],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Knee extension of the lead leg; vasti dominant."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 1,
+          "regionDistribution": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          },
+          "rationale": "Step-ups and their variations show the highest glute max activation of all reviewed exercises (Neto 2020) and glute max/glute med forces scale more with load than in the squat (Kipp 2022); treated as a co-primary mover. Raised from current 0.75."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.25,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Biceps femoris long head force rises with load more in the step-up than the squat (Kipp 2022); minor credit."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.25,
+          "rationale": "Adductor activation is higher in the step-up than the step-down position (Park 2019); minor credit."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Step-up and its variations (lateral, diagonal, cross-over) present the highest glute max activation levels of all exercises reviewed, above deadlifts, hip thrusts, lunges and squats.",
+          "source": "Neto WK, Soares EG, Vieira TL, et al. Gluteus maximus activation during common strength and hypertrophy exercises: a systematic review. J Sports Sci Med. 2020;19(1):195-203.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32132843"
+        },
+        {
+          "claim": "Load-dependent increases in glute max, glute med, vasti and BF long head forces were more pronounced in the step-up and split squat than in the back squat.",
+          "source": "Kipp K, Kim H, Wolf WI. Muscle forces during the squat, split squat, and step-up across a range of external loads in college-aged men. J Strength Cond Res. 2022;36(2):314-323.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "32569122",
+          "doi": "10.1519/JSC.0000000000003688"
+        },
+        {
+          "claim": "Adductor activation relative to glute med, VL and BF is greater in the step-up than the step-down position.",
+          "source": "Park SH, Lee YS, Cheon SH. Analysis of the ratios of medial-lateral and proximal-distal muscle activities surrounding the hip joint in the step-up and step-down positions. J Back Musculoskelet Rehabil. 2019;32(4):589-595.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "30347585",
+          "doi": "10.3233/BMR-160779"
+        },
+        {
+          "claim": "Step-up tasks are performed with high glute med and glute max activity in healthy women; weakness reduces it.",
+          "source": "Glaviano NR, Saliba S. Differences in gluteal and quadriceps muscle activation during weight-bearing exercises between female subjects with and without patellofemoral pain. J Strength Cond Res. 2022;36(1):55-62.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "31725556",
+          "doi": "10.1519/JSC.0000000000003392"
+        }
+      ],
+      "perExerciseOverrides": [],
+      "confidence": "medium",
+      "conflictsWithBrief": [],
+      "notes": "Glutes promoted to 1.0 on tier-2 evidence (EMG systematic review plus modelled forces). No longitudinal hypertrophy study of step-ups exists, so this is listed as an open question. Trailing-leg push-off, if used, reduces lead-leg load; the table assumes a strict step-up."
+    },
+    {
+      "id": "single_leg_squat",
+      "name": "Pistol / single-leg squat",
+      "description": "Bilateral-depth squat on one leg with the free leg held forward (pistol) or a partial single-leg squat to a high box. Very high vasti, glute max and glute med demand for the stance leg; the free-leg hip flexors work isometrically.",
+      "exerciseIds": ["Kettlebell_Pistol_Squat", "Smith_Machine_Pistol_Squat", "Single-Leg_High_Box_Squat"],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Monopodal squat produced higher EMG than lunge and lateral step-up in VL and VM (Muyor 2020); RF minor with the hip deeply flexed."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.65,
+            "glute_med": 0.35
+          },
+          "rationale": "Modified single-leg squat is a very-high glute max exercise (Neto 2020); glute med EMG is high in the monopodal squat (Muyor 2020) and the free-leg-forward variant carries the largest hip extensor moment (Khuu 2016)."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.25,
+          "rationale": "Deep unilateral hip flexion loads adductor magnus as a hip extensor, but over one leg with bodyweight-scale loads; minor credit."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "The monopodal (single-leg) squat produced higher EMG than the forward lunge and lateral step-up in glute med, glute max, BF, VL and VM.",
+          "source": "Muyor JM, Martin-Fuentes I, Rodriguez-Ridao D, Antequera-Vique JA. Electromyographic activity in the gluteus medius, gluteus maximus, biceps femoris, vastus lateralis, vastus medialis and rectus femoris during the Monopodal Squat, Forward Lunge and Lateral Step-Up exercises. PLoS One. 2020;15(4):e0230841.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32236133",
+          "doi": "10.1371/journal.pone.0230841"
+        },
+        {
+          "claim": "Holding the non-stance leg in front (pistol style) produces greater hip extensor moment and less knee extensor moment than holding it behind.",
+          "source": "Khuu A, Foch E, Lewis CL. Not all single leg squats are equal: a biomechanical comparison of three variations. Int J Sports Phys Ther. 2016;11(2):201-211.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "27104053"
+        },
+        {
+          "claim": "Modified single-leg squat is classed as a very-high glute max activation exercise.",
+          "source": "Neto WK, Soares EG, Vieira TL, et al. Gluteus maximus activation during common strength and hypertrophy exercises: a systematic review. J Sports Sci Med. 2020;19(1):195-203.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32132843"
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Single-Leg_High_Box_Squat",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.5,
+              "regionDistribution": {
+                "glute_max": 0.65,
+                "glute_med": 0.35
+              }
+            }
+          ],
+          "reason": "Partial range to a high box: hip flexion is limited, so glute and adductor work is reduced (glutes 0.5, no adductors). Matches the current mapping apart from the glute split."
+        }
+      ],
+      "confidence": "medium",
+      "conflictsWithBrief": [],
+      "notes": "Kettlebell_Pistol_Squat: current delt_front 0.5 removed (the bell is a counterbalance held isometrically). Smith_Machine_Pistol_Squat: current erectors 0.5 removed because the fixed bar removes the balance and trunk demand. Free-leg hip flexors/RF work hard isometrically in a pistol but are not credited per brief; see open questions."
+    },
+    {
+      "id": "lateral_squat",
+      "name": "Lateral (side) split squat / Cossack squat",
+      "description": "Frontal-plane lunge: one leg squats while the other stays straight and abducted. The working leg's quads and glutes extend the knee and hip; the adductors of both legs are loaded (stretched on the straight leg, hip-extending on the bent leg) and glute med controls the pelvis.",
+      "exerciseIds": ["Barbell_Side_Split_Squat"],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Knee extension of the bent leg is the prime mover."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.75,
+          "rationale": "Adductors are the distinguishing feature of the lateral lunge: stretched under load on the trailing leg and acting as hip extensors on the working leg; strong synergist (raised from current 0.25)."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.6,
+            "glute_med": 0.4
+          },
+          "rationale": "Hip extension plus frontal-plane control; glute med is high in side-step lunges (Bouillon 2012)."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.25,
+          "rationale": "Barbell on the back with a forward-inclined trunk at moderate loads; minor credit (lowered from current 0.5)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "In the side-step lunge glute max and glute med produced higher activity than trunk, hip flexor or hamstring muscles.",
+          "source": "Bouillon LE, Wilhelm J, Eisel P, Wiesner J, Rachow M, Hatteberg L. Electromyographic assessment of muscle activity between genders during unilateral weight-bearing tasks using adjusted distances. Int J Sports Phys Ther. 2012;7(6):595-605.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "23316423"
+        },
+        {
+          "claim": "Wide-stance hip extension raises adductor activity (adductor longus/magnus) relative to a shoulder-width stance; the lateral lunge is the extreme case of a wide stance.",
+          "source": "McCaw ST, Melrose DR. Stance width and bar load effects on leg muscle activity during the parallel squat. Med Sci Sports Exerc. 1999;31(3):428-436.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "10188748",
+          "doi": "10.1097/00005768-199903000-00012"
+        },
+        {
+          "claim": "During a lateral lunge the trailing-leg adductors are lengthened under load and the lead-leg adductor magnus acts as a hip extensor from deep hip flexion, so both limbs' adductors are loaded eccentrically or concentrically.",
+          "source": "Anatomical reasoning (adductor magnus hip-extension moment arm at high flexion angles).",
+          "tier": "anatomical",
+          "confidence": "likely"
+        }
+      ],
+      "perExerciseOverrides": [],
+      "confidence": "medium",
+      "conflictsWithBrief": [],
+      "notes": "Adductors raised to 0.75 because this is the only knee-dominant exercise in the batch that loads them through length. No direct EMG of adductors in loaded lateral lunges was found in PubMed; tier-3 reasoning fills the gap."
+    },
+    {
+      "id": "hip_adduction",
+      "name": "Cable hip adduction",
+      "description": "Standing single-leg hip adduction against a low cable. Isolates the adductor group (longus, brevis, magnus, gracilis); no knee action.",
+      "exerciseIds": ["Cable_Hip_Adduction"],
+      "mapping": [
+        {
+          "groupId": "adductors",
+          "weight": 1,
+          "rationale": "Single-joint adduction; adductors are the only prime mover. Current mapping to quads was a placement error."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Hip adduction is produced by adductor longus, brevis, magnus, pectineus and gracilis; the quadriceps have no adduction moment arm.",
+          "source": "Anatomical reasoning (standard functional anatomy of the hip).",
+          "tier": "anatomical",
+          "confidence": "likely"
+        },
+        {
+          "claim": "The adductors are a trainable, hypertrophy-responsive group (adductor volume +6.2% from squat training), so an isolation movement warrants full credit.",
+          "source": "Kubo K, Ikebukuro T, Yata H. Effects of squat training with different depths on lower limb muscle volumes. Eur J Appl Physiol. 2019;119(9):1933-1942.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "31230110",
+          "doi": "10.1007/s00421-019-04181-y"
+        }
+      ],
+      "perExerciseOverrides": [],
+      "confidence": "high",
+      "conflictsWithBrief": [],
+      "notes": "Misfiled in the quads batch; current quads 1.0 replaced with adductors 1.0. The stance-leg glute med works isometrically and is not credited."
+    },
+    {
+      "id": "hip_flexion",
+      "name": "Banded hip flexion",
+      "description": "Standing or supine hip flexion against a band with the knee extended or bent. Prime movers are iliopsoas and the biarticular rectus femoris; no knee extension torque is required.",
+      "exerciseIds": ["Hip_Flexion_with_Band"],
+      "mapping": [
+        {
+          "groupId": "hip_flexors",
+          "weight": 1,
+          "rationale": "Iliopsoas (and TFL/sartorius) are the primary hip flexors; single-joint hip flexion."
+        },
+        {
+          "groupId": "quads",
+          "weight": 0.5,
+          "regionDistribution": {
+            "quads_rf": 1,
+            "quads_vasti": 0
+          },
+          "rationale": "Rectus femoris is a major hip flexor and is highly responsive to hip-angle manipulation (Larsen 2024); the vasti do not cross the hip and get no credit. Half credit, all to the RF region."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Rectus femoris hypertrophy depends strongly on hip position (greater growth with the hip less flexed), showing RF is trained through its hip-flexion function, not only knee extension.",
+          "source": "Larsen S, Sandvik Kristiansen B, Swinton PA, et al. The effects of hip flexion angle on quadriceps femoris muscle hypertrophy in the leg extension exercise. J Sports Sci. 2024;42(24):2400-2408.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "39699974",
+          "doi": "10.1080/02640414.2024.2444713"
+        },
+        {
+          "claim": "High-volume loaded hip flexor stretching increased rectus femoris thickness proximally and distally, with inconsistent VL effects, confirming RF responds to hip-flexor-directed loading.",
+          "source": "Siegel SD, Sproll M, Lohmann LH, et al. Stretch-mediated hypertrophy and strength increases and their impact on dynamic balance performance - a randomized controlled intervention study. Sci Rep. 2026;16(1).",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "41796242",
+          "doi": "10.1038/s41598-026-43038-1"
+        },
+        {
+          "claim": "Rectus femoris produced its highest EMG in hip-flexion tasks (double leg raise, sit-up) among common rehabilitation exercises.",
+          "source": "Khaiyat OA, Norris J. Electromyographic activity of selected trunk, core, and thigh muscles in commonly used exercises for ACL rehabilitation. J Phys Ther Sci. 2018;30(4):642-648.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29706723",
+          "doi": "10.1589/jpts.30.642"
+        }
+      ],
+      "perExerciseOverrides": [],
+      "confidence": "medium",
+      "conflictsWithBrief": [],
+      "notes": "Misfiled in the quads batch. hip_flexors is an opt-in group (off by default), so for most users the visible effect is the RF half-credit. The vasti get an explicit 0 share so the region check does not flag them."
+    }
+  ],
+  "unassignedExerciseIds": [],
+  "openQuestions": [
+    "Hamstrings 0.25 for lunges, split squats and step-ups: supported by modelled forces (Kipp 2022, Jaeggi 2024) and a walking-lunge strength study (Jonhagen 2009), but no study has measured hamstring hypertrophy from lunges. If the product wants strict parity with the 'no hamstring credit for squats' anchor, drop it to 0.",
+    "Step-up glutes at 1.0 rests on EMG (Neto 2020) and modelling, not longitudinal hypertrophy. A step-up performed with a trailing-leg push-off would justify 0.75 instead.",
+    "Isometric stabiliser credit was removed from goblet/overhead/pistol (delt_front), Zercher (biceps), front squat (abs) and Smith pistol (erectors) per the brief. Users may expect shoulder colour on overhead squats; obliques 0.25 was kept on the suitcase deadlift and traps_upper 0.25 on heavy pulls as the only isometric exceptions, flagged for product review.",
+    "No PubMed record exists for the sissy squat; RF 0.35 is anatomical reasoning extrapolated from Larsen 2024. A regional-hypertrophy study of sissy squats vs leg extensions would settle it.",
+    "Box squat glutes raised from 0.5 to 0.75 on kinetics (Swinton 2012). If the app treats 'squat to a bench' as a beginner depth cue rather than a Westside box squat, the two 'To_A_Bench' rows could stay on the plain back-squat row (identical numbers except the Dumbbell forearm credit).",
+    "Trap-bar/leverage deadlift quads 1.0 assumes a high-handle, upright pull. A low-handle trap-bar pull behaves closer to a conventional deadlift (erectors and hamstrings higher); the app has one row per exercise, so the high-handle interpretation was used.",
+    "Cable_Hip_Adduction and Hip_Flexion_with_Band are not quad exercises and should move to an adductor/hip-flexor batch; they were mapped here so no id is left unassigned.",
+    "Traps_upper and forearm credit on deadlift variants are consensus, not literature: no study measured trap or forearm hypertrophy from deadlifts."
+  ]
+}

@@ -1,0 +1,5373 @@
+{
+  "batch": "olympic_strongman_plyo",
+  "scope": "Olympic lifts, strongman events, and plyometrics: cleans, snatches, jerks, tire flips, sled/yoke work, atlas stones, jumps, throws (map coarsely by family; these are niche)",
+  "exercises": [
+    {
+      "id": "Alternate_Leg_Diagonal_Bound",
+      "name": "Alternate Leg Diagonal Bound",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Atlas_Stone_Trainer",
+      "name": "Atlas Stone Trainer",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Atlas_Stones",
+      "name": "Atlas Stones",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "adductors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Axle_Deadlift",
+      "name": "Axle Deadlift",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.75,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "lats",
+          "w": 0.25,
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Backward_Drag",
+      "name": "Backward Drag",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Backward_Medicine_Ball_Throw",
+      "name": "Backward Medicine Ball Throw",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Bear_Crawl_Sled_Drags",
+      "name": "Bear Crawl Sled Drags",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "carry",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Bench_Jump",
+      "name": "Bench Jump",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Bench_Sprint",
+      "name": "Bench Sprint",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Box_Jump_Multiple_Response",
+      "name": "Box Jump (Multiple Response)",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Box_Skip",
+      "name": "Box Skip",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Car_Deadlift",
+      "name": "Car Deadlift",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Carioca_Quick_Step",
+      "name": "Carioca Quick Step",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "other",
+      "current": [
+        {
+          "g": "adductors",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Catch_and_Overhead_Throw",
+      "name": "Catch and Overhead Throw",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Chest_Push_from_3_point_stance",
+      "name": "Chest Push from 3 point stance",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Chest_Push_multiple_response",
+      "name": "Chest Push (multiple response)",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Chest_Push_single_response",
+      "name": "Chest Push (single response)",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Chest_Push_with_Run_Release",
+      "name": "Chest Push with Run Release",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Circus_Bell",
+      "name": "Circus Bell",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Clean",
+      "name": "Clean",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Clean_Deadlift",
+      "name": "Clean Deadlift",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Clean_Pull",
+      "name": "Clean Pull",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Clean_Shrug",
+      "name": "Clean Shrug",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "traps_upper",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Clean_and_Jerk",
+      "name": "Clean and Jerk",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Clean_from_Blocks",
+      "name": "Clean from Blocks",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Conans_Wheel",
+      "name": "Conan's Wheel",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Crucifix",
+      "name": "Crucifix",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Depth_Jump_Leap",
+      "name": "Depth Jump Leap",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Double_Leg_Butt_Kick",
+      "name": "Double Leg Butt Kick",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Drop_Push",
+      "name": "Drop Push",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Seated_Box_Jump",
+      "name": "Dumbbell Seated Box Jump",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Farmers_Walk",
+      "name": "Farmer's Walk",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "carry",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.75,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Fast_Skipping",
+      "name": "Fast Skipping",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Forward_Drag_with_Press",
+      "name": "Forward Drag with Press",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Frankenstein_Squat",
+      "name": "Frankenstein Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "flag": true
+        },
+        {
+          "g": "adductors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Front_Box_Jump",
+      "name": "Front Box Jump",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Front_Cone_Hops_or_hurdle_hops",
+      "name": "Front Cone Hops (or hurdle hops)",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Hang_Clean",
+      "name": "Hang Clean",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Hang_Clean_-_Below_the_Knees",
+      "name": "Hang Clean - Below the Knees",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Hang_Snatch",
+      "name": "Hang Snatch",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Hang_Snatch_-_Below_Knees",
+      "name": "Hang Snatch - Below Knees",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Heaving_Snatch_Balance",
+      "name": "Heaving Snatch Balance",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Heavy_Bag_Thrust",
+      "name": "Heavy Bag Thrust",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Hurdle_Hops",
+      "name": "Hurdle Hops",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Incline_Push-Up_Depth_Jump",
+      "name": "Incline Push-Up Depth Jump",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.4,
+            "chest_lower": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Isometric_Chest_Squeezes",
+      "name": "Isometric Chest Squeezes",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "other",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Jerk_Balance",
+      "name": "Jerk Balance",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Jerk_Dip_Squat",
+      "name": "Jerk Dip Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "flag": true
+        },
+        {
+          "g": "adductors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Keg_Load",
+      "name": "Keg Load",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Knee_Tuck_Jump",
+      "name": "Knee Tuck Jump",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kneeling_Arm_Drill",
+      "name": "Kneeling Arm Drill",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Kneeling_Jump_Squat",
+      "name": "Kneeling Jump Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "glutes",
+          "w": 1,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Lateral_Bound",
+      "name": "Lateral Bound",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "adductors",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Lateral_Box_Jump",
+      "name": "Lateral Box Jump",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "adductors",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Lateral_Cone_Hops",
+      "name": "Lateral Cone Hops",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "adductors",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Linear_3-Part_Start_Technique",
+      "name": "Linear 3-Part Start Technique",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Linear_Acceleration_Wall_Drill",
+      "name": "Linear Acceleration Wall Drill",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "other",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Linear_Depth_Jump",
+      "name": "Linear Depth Jump",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Log_Lift",
+      "name": "Log Lift",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Medicine_Ball_Chest_Pass",
+      "name": "Medicine Ball Chest Pass",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Medicine_Ball_Full_Twist",
+      "name": "Medicine Ball Full Twist",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Medicine_Ball_Scoop_Throw",
+      "name": "Medicine Ball Scoop Throw",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Mountain_Climbers",
+      "name": "Mountain Climbers",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Moving_Claw_Series",
+      "name": "Moving Claw Series",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "other",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Muscle_Snatch",
+      "name": "Muscle Snatch",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Olympic_Squat",
+      "name": "Olympic Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "flag": true
+        },
+        {
+          "g": "adductors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Overhead_Slam",
+      "name": "Overhead Slam",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Overhead_Squat",
+      "name": "Overhead Squat",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "flag": true
+        },
+        {
+          "g": "adductors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Plyo_Push-up",
+      "name": "Plyo Push-up",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "chest",
+          "w": 1,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Power_Clean_from_Blocks",
+      "name": "Power Clean from Blocks",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Power_Jerk",
+      "name": "Power Jerk",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Power_Snatch",
+      "name": "Power Snatch",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Power_Snatch_from_Blocks",
+      "name": "Power Snatch from Blocks",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Power_Stairs",
+      "name": "Power Stairs",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "adductors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Push_Press",
+      "name": "Push Press",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Push_Press_-_Behind_the_Neck",
+      "name": "Push Press - Behind the Neck",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_front",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Quick_Leap",
+      "name": "Quick Leap",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Rack_Delivery",
+      "name": "Rack Delivery",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Return_Push_from_Stance",
+      "name": "Return Push from Stance",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Rickshaw_Carry",
+      "name": "Rickshaw Carry",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "carry",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.75,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Rickshaw_Deadlift",
+      "name": "Rickshaw Deadlift",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "carry",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.75,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Rocket_Jump",
+      "name": "Rocket Jump",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Romanian_Deadlift_from_Deficit",
+      "name": "Romanian Deadlift from Deficit",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Sandbag_Load",
+      "name": "Sandbag Load",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Scissors_Jump",
+      "name": "Scissors Jump",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Side_Hop-Sprint",
+      "name": "Side Hop-Sprint",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Side_Standing_Long_Jump",
+      "name": "Side Standing Long Jump",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Side_to_Side_Box_Shuffle",
+      "name": "Side to Side Box Shuffle",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Single-Cone_Sprint_Drill",
+      "name": "Single-Cone Sprint Drill",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Single-Leg_Hop_Progression",
+      "name": "Single-Leg Hop Progression",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Single-Leg_Lateral_Hop",
+      "name": "Single-Leg Lateral Hop",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Single-Leg_Stride_Jump",
+      "name": "Single-Leg Stride Jump",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Single_Leg_Butt_Kick",
+      "name": "Single Leg Butt Kick",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Single_Leg_Push-off",
+      "name": "Single Leg Push-off",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Sled_Drag_-_Harness",
+      "name": "Sled Drag - Harness",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "carry",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Sled_Push",
+      "name": "Sled Push",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "carry",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Sledgehammer_Swings",
+      "name": "Sledgehammer Swings",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Snatch",
+      "name": "Snatch",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Snatch_Balance",
+      "name": "Snatch Balance",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Snatch_Deadlift",
+      "name": "Snatch Deadlift",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Snatch_Shrug",
+      "name": "Snatch Shrug",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "traps_upper",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Snatch_from_Blocks",
+      "name": "Snatch from Blocks",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Split_Clean",
+      "name": "Split Clean",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Split_Jerk",
+      "name": "Split Jerk",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Split_Jump",
+      "name": "Split Jump",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Split_Snatch",
+      "name": "Split Snatch",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Standing_Long_Jump",
+      "name": "Standing Long Jump",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Two-Arm_Overhead_Throw",
+      "name": "Standing Two-Arm Overhead Throw",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "delt_side",
+          "w": 1,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Star_Jump",
+      "name": "Star Jump",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Stride_Jump_Crossover",
+      "name": "Stride Jump Crossover",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          }
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Supine_Chest_Throw",
+      "name": "Supine Chest Throw",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "push",
+      "current": [
+        {
+          "g": "triceps",
+          "w": 1,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Supine_One-Arm_Overhead_Throw",
+      "name": "Supine One-Arm Overhead Throw",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Supine_Two-Arm_Overhead_Throw",
+      "name": "Supine Two-Arm Overhead Throw",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Tire_Flip",
+      "name": "Tire Flip",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          },
+          "flag": true
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Vertical_Swing",
+      "name": "Vertical Swing",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "hinge",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Wide_Stance_Stiff_Legs",
+      "name": "Wide Stance Stiff Legs",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "hamstrings",
+          "w": 1,
+          "d": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.75,
+          "d": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "adductors",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    },
+    {
+      "id": "Yoke_Walk",
+      "name": "Yoke Walk",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "carry",
+      "current": [
+        {
+          "g": "quads",
+          "w": 1,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "flag": true
+        },
+        {
+          "g": "abs",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "adductors",
+          "w": 0.5,
+          "flag": true
+        },
+        {
+          "g": "calves",
+          "w": 0.5,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "flag": true
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          },
+          "flag": true
+        },
+        {
+          "g": "erectors",
+          "w": 0.5,
+          "flag": true
+        }
+      ]
+    }
+  ]
+}

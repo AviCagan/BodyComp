@@ -1,0 +1,1057 @@
+{
+  "batch": "small_groups",
+  "families": [
+    {
+      "id": "standing_calf_raise",
+      "name": "Standing / knee-extended calf raise",
+      "description": "Ankle plantar flexion with the knee at or near full extension (standing, donkey, leg-press calf press, Smith, band, dumbbell). Gastrocnemius is at long length and contributes >=40% of torque; soleus is a co-primary plantar flexor.",
+      "exerciseIds": [
+        "Calf_Press",
+        "Calf_Press_On_The_Leg_Press_Machine",
+        "Calf_Raise_On_A_Dumbbell",
+        "Calf_Raises_-_With_Bands",
+        "Donkey_Calf_Raises",
+        "Rocking_Standing_Calf_Raise",
+        "Smith_Machine_Calf_Raise",
+        "Standing_Barbell_Calf_Raise",
+        "Standing_Calf_Raises",
+        "Standing_Dumbbell_Calf_Raise"
+      ],
+      "mapping": [
+        {
+          "groupId": "calves",
+          "weight": 1,
+          "regionDistribution": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "rationale": "Matches the Standing_Calf_Raises anchor. Kinoshita 2023: 12 wk knee-extended calf raises grew medial/lateral gastrocnemius 9-12% vs soleus ~2%, so emphasis is strongly gastrocnemius even though soleus also grows. Current mapping is already right for every exercise here; kept."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Rocking_Standing_Calf_Raise",
+          "mapping": [
+            {
+              "groupId": "calves",
+              "weight": 1,
+              "regionDistribution": {
+                "gastrocnemius": 0.7,
+                "soleus": 0.3
+              }
+            },
+            {
+              "groupId": "tibialis",
+              "weight": 0.5
+            }
+          ],
+          "reason": "The 'rocking' phase rolls back onto the heels and lifts the forefoot (loaded dorsiflexion) between calf raises, so tibialis anterior does concentric work each rep; secondary credit because the dorsiflexion load is only body + bar mass through a short arc."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Knee-extended (standing) calf-raise training produced 9.2% (medial) and 12.4% (lateral) gastrocnemius volume gains vs 0.6%/1.7% for knee-flexed; soleus grew similarly in both (2.1% vs 2.9%).",
+          "source": "Kinoshita M, Maeo S, Kobayashi Y, et al. Triceps surae muscle hypertrophy is greater after standing versus seated calf-raise training. Front Physiol. 2023;14:1272106.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "38156065",
+          "doi": "10.3389/fphys.2023.1272106"
+        },
+        {
+          "claim": "With the knee extended the gastrocnemius contributes at least 40% of plantar-flexor torque; its EMG falls with knee flexion while soleus EMG is unchanged.",
+          "source": "Cresswell AG, Loscher WN, Thorstensson A. Influence of gastrocnemius muscle length on triceps surae torque development and electromyographic activity in man. Exp Brain Res. 1995;105(2):283-290.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "7498381",
+          "doi": "10.1007/BF00240964"
+        },
+        {
+          "claim": "Calf raises on a horizontal leg press (knee extended) increased medial and lateral gastrocnemius thickness 4-9% in 9 weeks; foot-out biased the medial head, foot-in the lateral head.",
+          "source": "Nunes JP, Costa BDV, Kassiano W, et al. Different foot positioning during calf training to induce portion-specific gastrocnemius muscle hypertrophy. J Strength Cond Res. 2020;34(8):2347-2351.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "32735428",
+          "doi": "10.1519/JSC.0000000000003674"
+        },
+        {
+          "claim": "Leg-press calf raises performed in the stretched (dorsiflexed) half of the ROM produced ~15% gastrocnemius thickness gains vs ~7% full ROM and ~3-6% shortened ROM, confirming long-length loading drives gastrocnemius growth.",
+          "source": "Kassiano W, Costa B, Kunevaliki G, et al. Greater gastrocnemius muscle hypertrophy after partial range of motion training performed at long muscle lengths. J Strength Cond Res. 2023;37(9):1746-1753.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "37015016",
+          "doi": "10.1519/JSC.0000000000004460"
+        },
+        {
+          "claim": "Donkey calf raises flex the hip, not the knee; gastrocnemius crosses the knee only, so its length and share are the same as a standing raise.",
+          "source": "Neumann DA. Kinesiology of the Musculoskeletal System. 3rd ed. Elsevier; 2017 (ankle/foot chapter: triceps surae attachments and actions).",
+          "tier": "anatomical",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "All ten exercises keep the anchor distribution. Calf_Press and Calf_Press_On_The_Leg_Press_Machine are performed with a near-straight knee (the studies above used exactly this setup), so they belong with standing rather than seated raises."
+    },
+    {
+      "id": "seated_calf_raise",
+      "name": "Seated / knee-flexed calf raise",
+      "description": "Plantar flexion with the knee flexed ~90 deg, which slackens the gastrocnemius and shifts the work to the soleus.",
+      "exerciseIds": ["Barbell_Seated_Calf_Raise", "Dumbbell_Seated_One-Leg_Calf_Raise", "Seated_Calf_Raise"],
+      "mapping": [
+        {
+          "groupId": "calves",
+          "weight": 1,
+          "regionDistribution": {
+            "gastrocnemius": 0.2,
+            "soleus": 0.8
+          },
+          "rationale": "Seated_Calf_Raise anchor. Gastrocnemius is actively insufficient at 90 deg knee flexion (Cresswell 1995) and did not grow at all after 12 wk seated training (Kinoshita 2023). Current mapping already correct for all three; kept."
+        }
+      ],
+      "perExerciseOverrides": [],
+      "evidence": [
+        {
+          "claim": "Knee-flexed calf-raise training produced no significant gastrocnemius growth (0.6-1.7%) but soleus growth (2.9%) equal to standing training.",
+          "source": "Kinoshita M, Maeo S, Kobayashi Y, et al. Triceps surae muscle hypertrophy is greater after standing versus seated calf-raise training. Front Physiol. 2023;14:1272106.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "38156065",
+          "doi": "10.3389/fphys.2023.1272106"
+        },
+        {
+          "claim": "Maximal plantar-flexor torque falls to ~60% at 60 deg knee flexion and gastrocnemius EMG decreases with knee flexion while soleus EMG is unchanged.",
+          "source": "Cresswell AG, Loscher WN, Thorstensson A. Influence of gastrocnemius muscle length on triceps surae torque development and electromyographic activity in man. Exp Brain Res. 1995;105(2):283-290.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "7498381",
+          "doi": "10.1007/BF00240964"
+        }
+      ],
+      "conflictsWithBrief": [
+        "Kinoshita 2023 measured essentially zero gastrocnemius growth from seated raises (0.6%/1.7%, not significant), which argues the anchor's 0.2 gastrocnemius share is generous; 0.1/0.9 would fit the data better. Anchor kept as instructed."
+      ],
+      "confidence": "high",
+      "notes": "Barbell and dumbbell seated variants are mechanically identical to the machine; the one-leg dumbbell version is unilateral but that changes load, not emphasis."
+    },
+    {
+      "id": "tibialis_raise",
+      "name": "Tibialis (reverse calf) raise",
+      "description": "Loaded ankle dorsiflexion: heels on the ground or a step, forefoot lifts against the load. Tibialis anterior is the prime mover; the triceps surae is unloaded.",
+      "exerciseIds": ["Smith_Machine_Reverse_Calf_Raises"],
+      "mapping": [
+        {
+          "groupId": "tibialis",
+          "weight": 1,
+          "rationale": "A 'reverse calf raise' is dorsiflexion with the bar on the shoulders and heels on a block; the plantar flexors do no concentric work. The current calves 1.0 mapping is a naming error and should be replaced with tibialis 1.0 (calves 0)."
+        }
+      ],
+      "perExerciseOverrides": [],
+      "evidence": [
+        {
+          "claim": "Tibialis anterior EMG peak during resisted isometric dorsiflexion is closely tied to its thickness and pennation (R2 = 0.69), i.e. dorsiflexion loading directly targets this muscle.",
+          "source": "Ruiz-Munoz M, Cuesta-Vargas AI. Electromyography and sonomyography analysis of the tibialis anterior: a cross sectional study. J Foot Ankle Res. 2014;7:11.",
+          "tier": "emg",
+          "confidence": "likely",
+          "doi": "10.1186/1757-1146-7-11"
+        },
+        {
+          "claim": "Progressive dorsiflexion resistance training (300 reps/day for 2 months) raised tibialis anterior active EMG RMS and dorsiflexion function versus standard rehab in a randomized trial.",
+          "source": "Li Q, Chen L. Effect of tibialis anterior muscle resistance training on ankle and foot dorsum extension function in hypertensive cerebral hemorrhage hemiplegia patients: a randomized controlled trial. Medicine (Baltimore). 2023;102(31):e33827.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "37543805",
+          "doi": "10.1097/MD.0000000000033827"
+        },
+        {
+          "claim": "Tibialis anterior is the largest dorsiflexor (with extensor digitorum longus and extensor hallucis longus assisting); the triceps surae is the antagonist and is not loaded in dorsiflexion.",
+          "source": "Neumann DA. Kinesiology of the Musculoskeletal System. 3rd ed. Elsevier; 2017 (ankle/foot chapter).",
+          "tier": "anatomical",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Tibialis is an opt-in group; if a user has it disabled the exercise will show no colour, which is correct (it should not light the calves)."
+    },
+    {
+      "id": "shrug",
+      "name": "Shrug (scapular elevation)",
+      "description": "Scapular elevation against a load held in the hands or on the shoulders: barbell, dumbbell, cable, Smith, leverage machine, calf-machine shrug, behind-the-back variants. Upper trapezius and levator scapulae elevate; middle trapezius and rhomboids assist elevation/retraction; grip is loaded isometrically in the handheld versions.",
+      "exerciseIds": [
+        "Barbell_Shrug",
+        "Barbell_Shrug_Behind_The_Back",
+        "Cable_Shrugs",
+        "Dumbbell_Shrug",
+        "Leverage_Shrug",
+        "Smith_Machine_Behind_the_Back_Shrug",
+        "Calf-Machine_Shoulder_Shrug"
+      ],
+      "mapping": [
+        {
+          "groupId": "traps_upper",
+          "weight": 1,
+          "rationale": "Shrugs produce the highest upper-trapezius EMG of any exercise tested (Ekstrom 2003; ~100% MVC in Andersen 2008). Levator scapulae has no group of its own and is folded into traps_upper."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.25,
+          "regionDistribution": {
+            "traps_mid_lower": 0.7,
+            "rhomboids": 0.3
+          },
+          "rationale": "Middle trapezius and rhomboids shorten during elevation and were highly active (>60% MVC) in shrug sets (Jakobsen 2012); minor credit so the mid-back shows colour without competing with rows."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.25,
+          "regionDistribution": {
+            "forearm_flexors": 0.9,
+            "forearm_extensors_brachioradialis": 0.1
+          },
+          "rationale": "Handheld shrugs are usually the heaviest load a lifter grips; finger-flexor EMG scales with grip demand (Krings 2021). Minor credit only because the work is isometric; the machine (shoulder-pad) shrug gets none."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Calf-Machine_Shoulder_Shrug",
+          "mapping": [
+            {
+              "groupId": "traps_upper",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.25,
+              "regionDistribution": {
+                "traps_mid_lower": 0.7,
+                "rhomboids": 0.3
+              }
+            }
+          ],
+          "reason": "Load sits on the shoulder pads, nothing is gripped, so no forearm credit."
+        },
+        {
+          "exerciseId": "Smith_Machine_Behind_the_Back_Shrug",
+          "mapping": [
+            {
+              "groupId": "traps_upper",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.25,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.9,
+                "forearm_extensors_brachioradialis": 0.1
+              }
+            }
+          ],
+          "reason": "Bar behind the body pulls the scapulae into slight retraction, so nudge the upper_back split toward rhomboids. The current delt_front 0.5 is unsupported: there is no shoulder flexion in a shrug; remove it."
+        },
+        {
+          "exerciseId": "Barbell_Shrug_Behind_The_Back",
+          "mapping": [
+            {
+              "groupId": "traps_upper",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.25,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.9,
+                "forearm_extensors_brachioradialis": 0.1
+              }
+            }
+          ],
+          "reason": "Same as the Smith behind-the-back: retraction bias. The current upper_back 0.5 and forearms 0.5 are higher than any other shrug for no measured reason; brought in line with the family (0.25 each)."
+        },
+        {
+          "exerciseId": "Leverage_Shrug",
+          "mapping": [
+            {
+              "groupId": "traps_upper",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.25,
+              "regionDistribution": {
+                "traps_mid_lower": 0.7,
+                "rhomboids": 0.3
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.9,
+                "forearm_extensors_brachioradialis": 0.1
+              }
+            }
+          ],
+          "reason": "Current forearms 0.5 with a 50/50 split is out of line with the other handheld shrugs; grip is finger-flexor work, and a machine handle is no harder to hold than a barbell."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "The unilateral shoulder shrug produced the greatest upper-trapezius EMG of ten trapezius/serratus exercises.",
+          "source": "Ekstrom RA, Donatelli RA, Soderberg GL. Surface electromyographic analysis of exercises for the trapezius and serratus anterior muscles. J Orthop Sports Phys Ther. 2003;33(5):247-258.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "12774999",
+          "doi": "10.2519/jospt.2003.33.5.247"
+        },
+        {
+          "claim": "Shrugs elicited 102 +/- 11% MVC trapezius activation, higher than lateral raise (97%) and upright row (85%), at 20-30 kg loads.",
+          "source": "Andersen LL, Kjaer M, Andersen CH, et al. Muscle activation during selected strength exercises in women with chronic neck muscle pain. Phys Ther. 2008;88(6):703-711.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "18339796",
+          "doi": "10.2522/ptj.20070304"
+        },
+        {
+          "claim": "During 15RM shrug sets normalized EMG of upper, middle and lower trapezius was high (>60% MVC) and rose within each set.",
+          "source": "Jakobsen MD, Sundstrup E, Andersen CH, Zebis MK, Mortensen P, Andersen LL. Evaluation of muscle activity during a standardized shoulder resistance training bout in novice individuals. J Strength Cond Res. 2012;26(9):2515-2522.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22067242",
+          "doi": "10.1519/JSC.0b013e31823f29d9"
+        },
+        {
+          "claim": "Shrugging with the arms abducted ~30 deg increases upper- and lower-trapezius activity versus the standard shrug, showing the whole trapezius participates in elevation.",
+          "source": "Pizzari T, Wickham J, Balster S, Ganderton C, Watson L. Modifying a shrug exercise can facilitate the upward rotator muscles of the scapula. Clin Biomech (Bristol). 2014;29(2):201-205.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24342452",
+          "doi": "10.1016/j.clinbiomech.2013.11.011"
+        },
+        {
+          "claim": "Increasing grip demand (fat grips) raised flexor/extensor carpi EMG during deadlift and bent-over row while lowering 1RM, i.e. forearm activity in heavy holds is real but load-limiting rather than hypertrophy-optimal.",
+          "source": "Krings BM, Shepherd BD, Swain JC, et al. Impact of fat grip attachments on muscular strength and neuromuscular activation during resistance exercise. J Strength Cond Res. 2021;35(2S):S152-S157.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "30694963",
+          "doi": "10.1519/JSC.0000000000002954"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "No study directly compares behind-the-back with front shrugs; the retraction nudge is anatomical only. Levator scapulae is credited to traps_upper because it has no group of its own."
+    },
+    {
+      "id": "high_pull",
+      "name": "Sumo high pull",
+      "description": "Explosive wide-stance hip/knee extension flowing into a narrow-grip upright-row: the bell is pulled to chest height by scapular elevation and shoulder abduction with elbows leading.",
+      "exerciseIds": ["Kettlebell_Sumo_High_Pull"],
+      "mapping": [
+        {
+          "groupId": "traps_upper",
+          "weight": 1,
+          "rationale": "The finish is a shrug plus upright row; upper trapezius shows 85%+ MVC in upright rows (Andersen 2008) and is the dominant elevator."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.5,
+          "rationale": "Elbows-high abduction loads the lateral deltoid; with a single-handle (narrow) grip deltoid involvement is lower than a wide-grip upright row (McAllister 2013), so 0.5 not 1.0."
+        },
+        {
+          "groupId": "delt_rear",
+          "weight": 0.25,
+          "rationale": "Posterior deltoid activity in the upright row rises with grip width; a narrow kettlebell grip keeps it minor."
+        },
+        {
+          "groupId": "biceps",
+          "weight": 0.25,
+          "regionDistribution": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          },
+          "rationale": "Narrow grip increases biceps involvement in the upright row (McAllister 2013); pronated grip biases brachialis/brachioradialis."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.5,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Each rep starts from a sumo hinge/squat and drives through hip extension (kettlebell hinge patterns show very high hip-extensor activity, Zebis 2013)."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.25,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Hip-extension contribution in a shortened hinge; short head is not involved."
+        },
+        {
+          "groupId": "quads",
+          "weight": 0.25,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Knee extension from a partial sumo squat with a light bell; minor."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.25,
+          "rationale": "Wide sumo stance recruits adductor magnus as a hip extensor (Escamilla 2002: adductor activity greater at higher knee flexion in deadlifts); minor because the bell is light."
+        }
+      ],
+      "perExerciseOverrides": [],
+      "evidence": [
+        {
+          "claim": "In the upright row, lateral and posterior deltoid and trapezius activity increase with grip width while biceps activity decreases; narrow grips shift work toward the biceps.",
+          "source": "McAllister MJ, Schilling BK, Hammond KG, Weiss LW, Farney TM. Effect of grip width on electromyographic activity during the upright row. J Strength Cond Res. 2013;27(1):181-187.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22362088",
+          "doi": "10.1519/JSC.0b013e31824f23ad"
+        },
+        {
+          "claim": "Upright rows produced 85% MVC trapezius activation.",
+          "source": "Andersen LL, Kjaer M, Andersen CH, et al. Muscle activation during selected strength exercises in women with chronic neck muscle pain. Phys Ther. 2008;88(6):703-711.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "18339796",
+          "doi": "10.2522/ptj.20070304"
+        },
+        {
+          "claim": "Kettlebell hinge/swing patterns load the hamstrings (semitendinosus 73-115% MVC) and hip extensors at very high levels.",
+          "source": "Zebis MK, Skotte J, Andersen CH, et al. Kettlebell swing targets semitendinosus and supine leg curl targets biceps femoris: an EMG study with rehabilitation implications. Br J Sports Med. 2013;47(18):1192-1198.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22736206",
+          "doi": "10.1136/bjsports-2011-090281"
+        },
+        {
+          "claim": "In deadlift variants hip adductor and gluteus maximus EMG were greater in the more knee-flexed intervals, supporting adductor credit for wide-stance pulls.",
+          "source": "Escamilla RF, Francisco AC, Kayes AV, Speer KP, Moorman CT. An electromyographic analysis of sumo and conventional style deadlifts. Med Sci Sports Exerc. 2002;34(4):682-688.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "11932579",
+          "doi": "10.1097/00005768-200204000-00019"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Versus current: delt_rear 0.5 -> 0.25, hamstrings/quads/adductors 0.5 -> 0.25, glutes kept 0.5, biceps 0.25 added. The kettlebell load is small relative to the legs, so lower-body credit is minor stabiliser/synergist credit rather than half."
+    },
+    {
+      "id": "rack_pull",
+      "name": "Rack pull (partial deadlift from knee height)",
+      "description": "Top-half deadlift from pins at or just below the knee: near-isometric spinal erector bracing under very heavy load with hip extension to lockout; little knee extension. Upper traps and grip are loaded heavily at lockout.",
+      "exerciseIds": ["Rack_Pulls", "Rack_Pull_with_Bands"],
+      "mapping": [
+        {
+          "groupId": "erectors",
+          "weight": 1,
+          "rationale": "Erector spinae is among the most active muscles in deadlift variants and its activation scales with external torque (Martin-Fuentes 2020; Moreira 2023); rack pulls allow supra-maximal loads so ES demand stays highest. Current 1.0 kept."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.5,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Hip extension from ~knee height to lockout; glute max share raised to 0.9 to match the squat/RDL anchors (current 0.8/0.2)."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.5,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Biceps femoris/gastrocnemius activity is greatest in the mid-pull/lockout portion (Moreira 2023). Knee is nearly straight so only the hip-extending heads work; current 0.8/0.2 split changed to 1.0/0 to match the Romanian_Deadlift anchor."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.5,
+          "rationale": "Upper trapezius EMG is greatest in the low-knee-flexion (lockout) intervals of a deadlift (Escamilla 2002), which is the whole range of a rack pull. Kept at 0.5."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.25,
+          "regionDistribution": {
+            "traps_mid_lower": 0.6,
+            "rhomboids": 0.4
+          },
+          "rationale": "Middle trapezius is active throughout the deadlift (Escamilla 2002) holding the scapulae against very heavy loads; minor credit."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.5,
+          "regionDistribution": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          },
+          "rationale": "Rack pulls are typically the heaviest thing a lifter holds; finger-flexor EMG tracks grip demand (Krings 2021). Split changed from 50/50 to flexor-biased because gripping is finger flexion; extensors only stabilise the wrist."
+        }
+      ],
+      "perExerciseOverrides": [],
+      "evidence": [
+        {
+          "claim": "Across deadlift variants erector spinae and quadriceps show greater activation than gluteus maximus and biceps femoris; semitendinosus slightly exceeds biceps femoris.",
+          "source": "Martin-Fuentes I, Oliva-Lozano JM, Muyor JM. Electromyographic activity in deadlift exercise and its variants. A systematic review. PLoS One. 2020;15(2):e0229507.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32107499",
+          "doi": "10.1371/journal.pone.0229507"
+        },
+        {
+          "claim": "In isometric pulls at lift-off, mid-pull and lockout, rectus femoris and erector spinae were highest at lift-off, biceps femoris and lateral gastrocnemius highest at mid-pull, and erector spinae activation increased with external torque.",
+          "source": "Moreira VM, Lima LCR, Mortatti AL, et al. Analysis of muscle strength and electromyographic activity during different deadlift positions. Muscles. 2023;2(2):218-227.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "40757569",
+          "doi": "10.3390/muscles2020016"
+        },
+        {
+          "claim": "Quadriceps, hip adductor, gluteus maximus, paraspinal and middle trapezius EMG were greater in higher knee-flexion intervals, whereas hamstring, gastrocnemius and upper trapezius EMG were greater in lower knee-flexion (lockout) intervals.",
+          "source": "Escamilla RF, Francisco AC, Kayes AV, Speer KP, Moorman CT. An electromyographic analysis of sumo and conventional style deadlifts. Med Sci Sports Exerc. 2002;34(4):682-688.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "11932579",
+          "doi": "10.1097/00005768-200204000-00019"
+        },
+        {
+          "claim": "Forearm flexor/extensor EMG in the deadlift rises with grip difficulty.",
+          "source": "Krings BM, Shepherd BD, Swain JC, et al. Impact of fat grip attachments on muscular strength and neuromuscular activation during resistance exercise. J Strength Cond Res. 2021;35(2S):S152-S157.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "30694963",
+          "doi": "10.1519/JSC.0000000000002954"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Quads removed for both variants (Rack_Pull_with_Bands currently has quads 0.5, Rack_Pulls none): from knee height the knee-extension moment is small and quadriceps EMG concentrates at lift-off. Lats are not credited: they act isometrically to keep the bar close. No rack-pull-specific EMG exists; mapping is interpolated from deadlift position studies."
+    },
+    {
+      "id": "neck_flexion_extension",
+      "name": "Neck flexion / extension / lateral flexion",
+      "description": "Direct cervical loading: weighted or manually-resisted head extension (splenius, semispinalis, upper cervical erectors), head flexion (sternocleidomastoid, longus colli/capitis, scalenes) and side-bending (both groups). Only these direct exercises hypertrophy the neck; heavy compound lifts do not.",
+      "exerciseIds": [
+        "Isometric_Neck_Exercise_-_Front_And_Back",
+        "Isometric_Neck_Exercise_-_Sides",
+        "Lying_Face_Down_Plate_Neck_Resistance",
+        "Lying_Face_Up_Plate_Neck_Resistance",
+        "Seated_Head_Harness_Neck_Resistance"
+      ],
+      "mapping": [
+        {
+          "groupId": "neck",
+          "weight": 1,
+          "regionDistribution": {
+            "neck_flexors": 0.5,
+            "neck_extensors": 0.5
+          },
+          "rationale": "Family default for the two isometric exercises that load both directions in one set; overrides below assign single-direction exercises 100% to one region. Current mappings are already correct for all five; kept."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Lying_Face_Down_Plate_Neck_Resistance",
+          "mapping": [
+            {
+              "groupId": "neck",
+              "weight": 1,
+              "regionDistribution": {
+                "neck_flexors": 0,
+                "neck_extensors": 1
+              }
+            }
+          ],
+          "reason": "Prone plate-resisted head extension: Conley 1997 showed 24-25% CSA gains in splenius capitis and semispinalis capitis/cervicis from exactly this movement."
+        },
+        {
+          "exerciseId": "Seated_Head_Harness_Neck_Resistance",
+          "mapping": [
+            {
+              "groupId": "neck",
+              "weight": 1,
+              "regionDistribution": {
+                "neck_flexors": 0,
+                "neck_extensors": 1
+              }
+            }
+          ],
+          "reason": "Head harness with the plate hanging in front resists extension (the standard use in free-exercise-db); same movers as the prone plate extension."
+        },
+        {
+          "exerciseId": "Lying_Face_Up_Plate_Neck_Resistance",
+          "mapping": [
+            {
+              "groupId": "neck",
+              "weight": 1,
+              "regionDistribution": {
+                "neck_flexors": 1,
+                "neck_extensors": 0
+              }
+            }
+          ],
+          "reason": "Supine plate-resisted head flexion: sternocleidomastoid CSA is the morphological correlate of flexor strength and endurance (Rozenstoka 2026); extensors are unloaded."
+        },
+        {
+          "exerciseId": "Isometric_Neck_Exercise_-_Sides",
+          "mapping": [
+            {
+              "groupId": "neck",
+              "weight": 1,
+              "regionDistribution": {
+                "neck_flexors": 0.5,
+                "neck_extensors": 0.5
+              }
+            }
+          ],
+          "reason": "Lateral flexion is produced by ipsilateral SCM and scalenes (flexor bucket) together with splenius, levator scapulae and upper cervical erectors (extensor bucket); equal split."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "12 weeks of 3x10 head-extension exercise increased total neck CSA (19.5 -> 22.0 cm2), driven by ~24% CSA gains in splenius capitis, semispinalis capitis and semispinalis cervicis; heavy compound lifting alone (squat, deadlift, push press, row, mid-thigh pull) produced no neck hypertrophy.",
+          "source": "Conley MS, Stone MH, Nimmons M, Dudley GA. Specificity of resistance training responses in neck muscle size and strength. Eur J Appl Physiol Occup Physiol. 1997;75(5):443-448.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "9189733",
+          "doi": "10.1007/s004210050186"
+        },
+        {
+          "claim": "MRI T2-shift mapping showed head extension recruits splenius capitis, semispinalis capitis/cervicis and multifidus (60% of their CSA pre-training), with levator scapulae, longissimus and scalenes contributing before training.",
+          "source": "Conley MS, Stone MH, Nimmons M, Dudley GA. Resistance training and human cervical muscle recruitment plasticity. J Appl Physiol (1985). 1997;83(6):2105-2111.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "9390988",
+          "doi": "10.1152/jappl.1997.83.6.2105"
+        },
+        {
+          "claim": "Sternocleidomastoid CSA is independently associated with neck flexor strength (beta = 1.32 kg per cm2) and flexor endurance but not extensor strength, confirming SCM as the flexion prime mover.",
+          "source": "Rozenstoka S, Comadran de Barnola E, Kauzena S, Akuratere G, Galeja Z, Deicmane D. Sternocleidomastoid muscle morphology is independently associated with neck strength and endurance in athletes and para-athletes. Front Physiol. 2026;17:1852707.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "42661709",
+          "doi": "10.3389/fphys.2026.1852707"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Conley's finding that isometric neck bracing during heavy compounds caused no hypertrophy supports the brief's rule of not crediting isometric stabilisers; the two Isometric_Neck exercises are still credited at 1.0 because the neck is the direct target and manual resistance can be near-maximal. Upper trapezius is not credited for extension: it did not appear among the hypertrophying muscles."
+    },
+    {
+      "id": "wrist_curl",
+      "name": "Wrist curl (palms-up) and finger curl",
+      "description": "Concentric wrist flexion (and, for finger curls, finger flexion) with a supinated forearm: flexor carpi radialis/ulnaris, palmaris longus and flexor digitorum superficialis/profundus. Wrist extensors are antagonists and nearly silent.",
+      "exerciseIds": [
+        "Cable_Wrist_Curl",
+        "Finger_Curls",
+        "Palms-Up_Barbell_Wrist_Curl_Over_A_Bench",
+        "Palms-Up_Dumbbell_Wrist_Curl_Over_A_Bench",
+        "Seated_Dumbbell_Palms-Up_Wrist_Curl",
+        "Seated_One-Arm_Dumbbell_Palms-Up_Wrist_Curl",
+        "Seated_Palm-Up_Barbell_Wrist_Curl",
+        "Seated_Two-Arm_Palms-Up_Low-Pulley_Wrist_Curl",
+        "Standing_Palms-Up_Barbell_Behind_The_Back_Wrist_Curl"
+      ],
+      "mapping": [
+        {
+          "groupId": "forearms",
+          "weight": 1,
+          "regionDistribution": {
+            "forearm_flexors": 0.9,
+            "forearm_extensors_brachioradialis": 0.1
+          },
+          "rationale": "Only the anterior-compartment flexors shorten under load; the extensor/brachioradialis region gets a token 0.1 for wrist-stabilising co-contraction. Current 0.8/0.2 is close; sharpened to 0.9/0.1 so that palms-up and palms-down curls are visibly distinct on the map."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Finger_Curls",
+          "mapping": [
+            {
+              "groupId": "forearms",
+              "weight": 1,
+              "regionDistribution": {
+                "forearm_flexors": 0.9,
+                "forearm_extensors_brachioradialis": 0.1
+              }
+            }
+          ],
+          "reason": "Current 0.5/0.5 is wrong: letting the bar roll to the fingertips and curling it back is pure flexor digitorum superficialis/profundus work; extensors do nothing concentric."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Flexor carpi radialis and palmaris longus are the primary wrist flexors and flexor digitorum superficialis/profundus the primary finger flexors; all lie in the anterior (flexor) compartment, while the wrist extensors and brachioradialis are posterior/lateral and are antagonists to wrist flexion.",
+          "source": "Neumann DA. Kinesiology of the Musculoskeletal System. 3rd ed. Elsevier; 2017 (wrist and hand chapters).",
+          "tier": "anatomical",
+          "confidence": "likely"
+        },
+        {
+          "claim": "Flexor carpi radialis, palmaris longus and other anterior-compartment muscles show substantial activity in gripping/pronating efforts; wrist extensors contribute mainly stabilising co-activation.",
+          "source": "Bader J, Boland MR, Greybe D, Nitz A, Uhl T, Pienkowski D. Muscle activity during maximal isometric forearm rotation using a power grip. J Biomech. 2018;68:24-32.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29305049",
+          "doi": "10.1016/j.jbiomech.2017.12.011"
+        },
+        {
+          "claim": "Forearm flexor and extensor EMG increase when grip demand rises (fat grip vs standard bar) during pulling exercises, showing forearm loading is grip-driven.",
+          "source": "Krings BM, Shepherd BD, Swain JC, et al. Impact of fat grip attachments on muscular strength and neuromuscular activation during resistance exercise. J Strength Cond Res. 2021;35(2S):S152-S157.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "30694963",
+          "doi": "10.1519/JSC.0000000000002954"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "No longitudinal study of wrist-curl hypertrophy was found; the mapping rests on anatomy and grip/forearm EMG. The behind-the-back standing version changes wrist position slightly but not the movers. Unilateral dumbbell versions change load, not emphasis."
+    },
+    {
+      "id": "reverse_wrist_curl",
+      "name": "Reverse (palms-down) wrist curl",
+      "description": "Concentric wrist extension with a pronated forearm: extensor carpi radialis longus/brevis, extensor carpi ulnaris and extensor digitorum, with the finger flexors gripping the implement isometrically throughout.",
+      "exerciseIds": [
+        "Palms-Down_Dumbbell_Wrist_Curl_Over_A_Bench",
+        "Palms-Down_Wrist_Curl_Over_A_Bench",
+        "Seated_Dumbbell_Palms-Down_Wrist_Curl",
+        "Seated_One-Arm_Dumbbell_Palms-Down_Wrist_Curl",
+        "Seated_Palms-Down_Barbell_Wrist_Curl"
+      ],
+      "mapping": [
+        {
+          "groupId": "forearms",
+          "weight": 1,
+          "regionDistribution": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          },
+          "rationale": "Extensors do the concentric/eccentric work; flexors keep 0.2 because the bar must be gripped against gravity the whole set (finger-flexor isometric loading), unlike the palms-up curl where the bar rests in the fingers. Current mapping already correct; kept."
+        }
+      ],
+      "perExerciseOverrides": [],
+      "evidence": [
+        {
+          "claim": "Extensor carpi radialis longus/brevis and extensor carpi ulnaris are the prime wrist extensors; extensor digitorum assists. They occupy the posterior compartment together with brachioradialis, which is grouped with them in this taxonomy.",
+          "source": "Neumann DA. Kinesiology of the Musculoskeletal System. 3rd ed. Elsevier; 2017 (wrist chapter).",
+          "tier": "anatomical",
+          "confidence": "likely"
+        },
+        {
+          "claim": "Wrist extensors (ECR, ECU) and flexors (FCR, FCU) co-activate during dynamic wrist extension, with ECR/ECU dominant.",
+          "source": "Eraktas I, Ayhan C, Hayran M, Soylu AR. Alterations in forearm muscle activation patterns after scapholunate interosseous ligament injury: a dynamic electromyography study. J Hand Ther. 2021;34(3):384-395.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32620427",
+          "doi": "10.1016/j.jht.2020.03.018"
+        },
+        {
+          "claim": "Brachioradialis is primarily an elbow flexor (most active in neutral/supinated flexion), not a wrist extensor; its share of this region's credit in a reverse wrist curl is therefore incidental.",
+          "source": "Caufriez B, Dugailly PM, Brassinne E, Schuind F. The role of the muscle brachioradialis in elbow flexion: an electromyographic study. J Hand Surg Asian Pac Vol. 2018;23(1):102-110.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29409427",
+          "doi": "10.1142/S2424835518500145"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "The taxonomy lumps brachioradialis with the extensors; reverse wrist curls light that region even though brachioradialis itself is barely working. Reverse curls (elbow flexion, batch elsewhere) are the exercise that actually trains brachioradialis."
+    },
+    {
+      "id": "forearm_rotation",
+      "name": "Forearm pronation / supination",
+      "description": "Resisted rotation of the radius about the ulna with the elbow flexed. Pronation: pronator teres and pronator quadratus (anterior compartment) with brachioradialis, FCR and palmaris longus assisting. Supination: supinator (posterior compartment) and biceps brachii, with brachioradialis assisting from the pronated position.",
+      "exerciseIds": ["Dumbbell_Lying_Pronation", "Dumbbell_Lying_Supination", "Wrist_Rotations_with_Straight_Bar"],
+      "mapping": [
+        {
+          "groupId": "forearms",
+          "weight": 1,
+          "regionDistribution": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          },
+          "rationale": "Family default for the bar rotation that alternates both directions; pronation is anterior-compartment work, supination is posterior-compartment (supinator) plus brachioradialis, so the two directions together split evenly. Current 0.5/0.5 for the bar rotation kept."
+        },
+        {
+          "groupId": "biceps",
+          "weight": 0.25,
+          "regionDistribution": {
+            "biceps": 1,
+            "brachialis": 0
+          },
+          "rationale": "Biceps brachii is the strongest supinator (52% MVC in maximal supination vs 5% in pronation, Bader 2018); credited for the supination half of the bar rotation only."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Dumbbell_Lying_Pronation",
+          "mapping": [
+            {
+              "groupId": "forearms",
+              "weight": 1,
+              "regionDistribution": {
+                "forearm_flexors": 0.7,
+                "forearm_extensors_brachioradialis": 0.3
+              }
+            }
+          ],
+          "reason": "Pronator teres, pronator quadratus, FCR and palmaris longus (all anterior/flexor compartment) drive pronation; brachioradialis is also significantly more active when pronating (Bader 2018), hence 0.3 to the extensor/brachioradialis region. Current 0.5/0.5 changed. No biceps credit: biceps EMG is ~5% MVC in pronation."
+        },
+        {
+          "exerciseId": "Dumbbell_Lying_Supination",
+          "mapping": [
+            {
+              "groupId": "forearms",
+              "weight": 1,
+              "regionDistribution": {
+                "forearm_flexors": 0.3,
+                "forearm_extensors_brachioradialis": 0.7
+              }
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 1,
+                "brachialis": 0
+              }
+            }
+          ],
+          "reason": "Supinator sits in the posterior compartment and brachioradialis helps return from pronation, so the extensor/brachioradialis region takes the larger share; biceps brachii is the dominant high-torque supinator (Bader 2018; Kondi 2026) and gets half credit with all of it on the biceps region (brachialis does not supinate)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Biceps brachii was the only muscle active in one direction only: 52.1% MVC supinating vs 5.1% pronating. Brachioradialis, FCR, palmaris longus, pronator quadratus and pronator teres were significantly more active pronating; abductor pollicis longus and biceps more active supinating.",
+          "source": "Bader J, Boland MR, Greybe D, Nitz A, Uhl T, Pienkowski D. Muscle activity during maximal isometric forearm rotation using a power grip. J Biomech. 2018;68:24-32.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29305049",
+          "doi": "10.1016/j.jbiomech.2017.12.011"
+        },
+        {
+          "claim": "Supinator and pronator quadratus dominate low-torque rotation; as torque rises biceps brachii (supination) and pronator teres (pronation) take over, i.e. loaded dumbbell rotations recruit biceps and pronator teres.",
+          "source": "Kondi S, Murugesan T, Postans N, et al. An electromyographic study comparing muscle function during supination and pronation of the forearm. Cureus. 2026;18(1):e101255.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "41674760",
+          "doi": "10.7759/cureus.101255"
+        },
+        {
+          "claim": "Brachioradialis is highly active in resisted elbow flexion in all forearm positions and acts as a rotator toward neutral, so it participates in both pronation from supination and supination from pronation.",
+          "source": "Caufriez B, Dugailly PM, Brassinne E, Schuind F. The role of the muscle brachioradialis in elbow flexion: an electromyographic study. J Hand Surg Asian Pac Vol. 2018;23(1):102-110.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29409427",
+          "doi": "10.1142/S2424835518500145"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Pronator teres/quadratus and supinator have no region of their own; they are assigned to the flexor and extensor regions by compartment. Loads in these exercises are light, so absolute stimulus is small, but the credit shows the user which side of the forearm is being worked."
+    },
+    {
+      "id": "grip_hold_pinch",
+      "name": "Static grip, pinch and wrist roller",
+      "description": "Sustained or repeated maximal gripping: crush/support grip (FDS, FDP, FCU/FCR stabilising), pinch grip (flexor pollicis longus, thumb intrinsics, FDS/FDP) and the wrist roller (alternating wrist flexion/extension under continuous grip, arms held out front).",
+      "exerciseIds": ["Plate_Pinch", "Standing_Olympic_Plate_Hand_Squeeze", "Wrist_Roller"],
+      "mapping": [
+        {
+          "groupId": "forearms",
+          "weight": 1,
+          "regionDistribution": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          },
+          "rationale": "Gripping and pinching are finger/thumb flexion; extensors co-contract to hold the wrist in slight extension (the position of strongest grip). Plate_Pinch's current 0.7/0.3 nudged to 0.8/0.2 to match the hand squeeze; the squeeze's current 0.5/0.5 changed."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Standing_Olympic_Plate_Hand_Squeeze",
+          "mapping": [
+            {
+              "groupId": "forearms",
+              "weight": 1,
+              "regionDistribution": {
+                "forearm_flexors": 0.8,
+                "forearm_extensors_brachioradialis": 0.2
+              }
+            }
+          ],
+          "reason": "Arm hangs straight and the plate is squeezed by the fingers: no elbow flexion occurs, so the current biceps 0.5 credit is removed."
+        },
+        {
+          "exerciseId": "Wrist_Roller",
+          "mapping": [
+            {
+              "groupId": "forearms",
+              "weight": 1,
+              "regionDistribution": {
+                "forearm_flexors": 0.6,
+                "forearm_extensors_brachioradialis": 0.4
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Rolling the cord up with palms down is repeated wrist extension, rolling it back down (or palms-up) is wrist flexion, and the grip is continuous: both compartments work, flexor-biased. Arms held horizontally for 30-90 s is a real anterior-deltoid isometric, but per the brief isometric stabilisers get minor credit only, so delt_front drops from 0.5 to 0.25."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Power-grip efforts strongly activate flexor carpi radialis, palmaris longus, flexor digitorum and other anterior-compartment muscles, with the extensors active as wrist stabilisers.",
+          "source": "Bader J, Boland MR, Greybe D, Nitz A, Uhl T, Pienkowski D. Muscle activity during maximal isometric forearm rotation using a power grip. J Biomech. 2018;68:24-32.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29305049",
+          "doi": "10.1016/j.jbiomech.2017.12.011"
+        },
+        {
+          "claim": "Forearm flexor and extensor EMG both rise as grip becomes harder (fat grips) in loaded holds/pulls, and grip becomes the limiting factor.",
+          "source": "Krings BM, Shepherd BD, Swain JC, et al. Impact of fat grip attachments on muscular strength and neuromuscular activation during resistance exercise. J Strength Cond Res. 2021;35(2S):S152-S157.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "30694963",
+          "doi": "10.1519/JSC.0000000000002954"
+        },
+        {
+          "claim": "Pinch grip is produced by flexor pollicis longus, adductor pollicis and the finger flexors; support grip by FDS/FDP with the wrist held in extension by ECRL/ECRB for optimal flexor length.",
+          "source": "Neumann DA. Kinesiology of the Musculoskeletal System. 3rd ed. Elsevier; 2017 (hand chapter).",
+          "tier": "anatomical",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Farmer carries are not in this batch but belong here (forearms 1.0 {0.8/0.2}, traps_upper 0.5, upper_back 0.25) if encountered. No hypertrophy study of grip-only training was found; PubMed searches returned only correlational forearm-thickness/grip-strength work."
+    },
+    {
+      "id": "kettlebell_bottoms_up_clean",
+      "name": "Bottoms-up kettlebell clean (hang)",
+      "description": "Hip-hinge hang clean into an inverted (bottoms-up) rack: explosive hip extension and shrug propel the bell, then a maximal crush grip and forearm/shoulder stabilisation keep it balanced upside down. The grip, not the legs, limits the load.",
+      "exerciseIds": ["Bottoms-Up_Clean_From_The_Hang_Position"],
+      "mapping": [
+        {
+          "groupId": "forearms",
+          "weight": 1,
+          "regionDistribution": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          },
+          "rationale": "Holding the bell inverted requires near-maximal crush grip on every rep (McGill & Marshall 2012 chose the bottoms-up carry specifically for its grip/stiffening demand); this is the exercise's limiting muscle. Split changed from 0.7/0.3 to 0.8/0.2: crush grip is finger flexion, extensors stabilise the wrist."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.5,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Each rep is driven by a hang-position hip snap; kettlebell hinge patterns show high hip-extensor activity (Zebis 2013; McGill 2012)."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.5,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Hip-extension half of the hinge; knee stays nearly straight so no short-head involvement."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.5,
+          "rationale": "The pull finishes with a shrug (upper trapezius shrug activity is characteristic of the clean pull, Fukuda 2021); half credit because the bell is light."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.25,
+          "rationale": "Anterior deltoid and rotator cuff stabilise the inverted bell in the rack; minor isometric credit. Rotator-cuff work has no group and is folded here rather than delt_rear because the rack position is shoulder flexion, not external rotation."
+        },
+        {
+          "groupId": "biceps",
+          "weight": 0.25,
+          "regionDistribution": {
+            "biceps": 0.4,
+            "brachialis": 0.6
+          },
+          "rationale": "A small arm pull/curl guides the bell into the rack; neutral grip biases brachialis. Reduced from current 0.5 and rebalanced."
+        }
+      ],
+      "perExerciseOverrides": [],
+      "evidence": [
+        {
+          "claim": "The bottoms-up kettlebell carry was studied as a grip- and stiffness-demanding variant; kettlebell swings/cleans create a rapid hip-hinge pattern with high gluteal and spinal-extensor activation.",
+          "source": "McGill SM, Marshall LW. Kettlebell swing, snatch, and bottoms-up carry: back and hip muscle activation, motion, and low back loads. J Strength Cond Res. 2012;26(1):16-27.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "21997449",
+          "doi": "10.1519/JSC.0b013e31823a4063"
+        },
+        {
+          "claim": "Kettlebell hinge/swing patterns load the hamstrings (semitendinosus 73-115% MVC) at very high levels.",
+          "source": "Zebis MK, Skotte J, Andersen CH, et al. Kettlebell swing targets semitendinosus and supine leg curl targets biceps femoris: an EMG study with rehabilitation implications. Br J Sports Med. 2013;47(18):1192-1198.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22736206",
+          "doi": "10.1136/bjsports-2011-090281"
+        },
+        {
+          "claim": "Shrug motion and upper-trapezius activity are integral to the second pull of the power clean.",
+          "source": "Fukuda DH, et al. Characteristics of the shrug motion and trapezius muscle activity during the power clean. J Strength Cond Res. 2021;35(11):3288-3295.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "31453932",
+          "doi": "10.1519/JSC.0000000000003355"
+        },
+        {
+          "claim": "Bottoms-up kettlebell positions increase shoulder-stabiliser (deltoid/rotator cuff) activation relative to conventional holds.",
+          "source": "Shoulder muscular activation during common kettlebell exercises: a randomized cross-sectional surface EMG study. Physiother Theory Pract. 2026 (online ahead of print).",
+          "tier": "emg",
+          "confidence": "unverified",
+          "pmid": "41944385",
+          "doi": "10.1080/09593985.2026.2654028"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "low",
+      "notes": "Versus current (forearms 1.0, biceps 0.5, delt_front 0.5): hip-hinge credit added because a clean from the hang is a hip-driven lift; biceps and delt_front reduced. The 2026 kettlebell shoulder-EMG paper's abstract did not state per-muscle results, so it is marked unverified."
+    }
+  ],
+  "unassignedExerciseIds": [],
+  "openQuestions": [
+    "Seated calf raise anchor: Kinoshita 2023 found essentially no gastrocnemius growth from seated raises; should the anchor 0.2/0.8 move to 0.1/0.9? (Reported under conflictsWithBrief, anchor left unchanged.)",
+    "Forearm credit for heavy holds (shrugs 0.25, rack pulls 0.5): no longitudinal study shows forearm hypertrophy from isometric gripping alone; the weights are a product call between 'grip is the limiting muscle' and the brief's rule against crediting isometric stabilisers. Consistency matters more than the exact value: today Leverage_Shrug and Barbell_Shrug_Behind_The_Back credit forearms while Barbell_Shrug and Dumbbell_Shrug do not.",
+    "Wrist_Roller delt_front: proposed 0.25 (isometric front hold). If the product prefers zero credit for isometric work, drop it; the forearm mapping is unaffected.",
+    "Seated_Head_Harness_Neck_Resistance is mapped as extension (plate hanging in front). Some users wear the harness backwards for flexion; the app cannot tell, so a note in the exercise copy may be warranted.",
+    "No PubMed study exists for rack pulls specifically; the mapping interpolates from deadlift position studies (Moreira 2023, Escamilla 2002). A user-visible note that the erectors' loaded range is short could help set expectations.",
+    "Quads on Rack_Pull_with_Bands: currently 0.5 while plain Rack_Pulls has none; proposal removes both. If the band version is meant as a from-the-floor pull, restore quads 0.25 for it.",
+    "Wrist curls: no hypertrophy trial isolates wrist-flexor training; all distributions are anatomical/EMG. Low priority to research further because the group is 0.5x-multiplied in TARGETS."
+  ]
+}

@@ -1,0 +1,1804 @@
+{
+  "batch": "chest",
+  "families": [
+    {
+      "id": "flat_barbell_bench_press",
+      "name": "Flat bilateral press (barbell / Smith / machine / cable)",
+      "description": "Supine or seated horizontal press with a fixed-width bilateral implement: shoulder horizontal adduction + flexion from ~90 deg abduction with elbow extension. Torso horizontal, bar path to mid/lower sternum.",
+      "exerciseIds": [
+        "Barbell_Bench_Press_-_Medium_Grip",
+        "Wide-Grip_Barbell_Bench_Press",
+        "Bench_Press_-_With_Bands",
+        "Chain_Press",
+        "Smith_Machine_Bench_Press",
+        "Machine_Bench_Press",
+        "Leverage_Chest_Press",
+        "Cable_Chest_Press",
+        "Standing_Cable_Chest_Press",
+        "Barbell_Guillotine_Bench_Press",
+        "Neck_Press"
+      ],
+      "mapping": [
+        {
+          "groupId": "chest",
+          "weight": 1,
+          "regionDistribution": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          },
+          "rationale": "Anchor row. At 0 deg all three pec portions sit at ~27% MVIC (Rodriguez-Ridao 2020) and the flat press grows the 3rd/5th intercostal sites more than the 2nd (Chaves 2020), so a sternal-centred split with equal upper/lower tails is right."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.5,
+          "rationale": "Anchor row. AD ~26% MVIC vs pec ~27% at 0 deg (Rodriguez-Ridao 2020); AD CSA +15% vs PM +20% after 10 wk bench-only training (Lanza 2024)."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Anchor row. Bench-only training grew the lateral head but not the long head (Brandao 2020); triceps MTH rises after bench training but later and less than pec (Ogasawara 2012; Lanza 2024 TB +12% vs PM +20%)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "10 weeks of bench-press-only training increased CSA of pectoralis major (~20%), anterior deltoid (~15%), triceps brachii (~12%) and pec minor; PM grew more than TB.",
+          "source": "Lanza MB, Prado GC, Lacerda LT, et al. Muscle hypertrophy response across four muscles involved in the bench press exercise: Randomized 10 weeks training intervention. J Bodyw Mov Ther. 2024;40:1417-1422.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "39593465",
+          "doi": "10.1016/j.jbmt.2024.07.054"
+        },
+        {
+          "claim": "Barbell bench press alone produced significant lateral-head triceps CSA gains but no significant long-head gains; lying triceps extension was needed for the long head.",
+          "source": "Brandao L, de Salles Painelli V, Lasevicius T, et al. Varying the Order of Combinations of Single- and Multi-Joint Exercises Differentially Affects Resistance Training Adaptations. J Strength Cond Res. 2020;34(5):1254-1263.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "32149887",
+          "doi": "10.1519/JSC.0000000000003550"
+        },
+        {
+          "claim": "Pectoralis major thickness increased from week 1 of bench training; triceps thickness increased later (week 5); biceps unchanged.",
+          "source": "Ogasawara R, Thiebaud RS, Loenneke JP, Loftin M, Abe T. Time course for arm and chest muscle thickness changes following bench press training. Interv Med Appl Sci. 2012;4(4):217-220.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "24265879",
+          "doi": "10.1556/IMAS.4.2012.4.7"
+        },
+        {
+          "claim": "Flat (0 deg) bench: upper, middle and lower pec portions all ~27% MVIC, AD ~26%, triceps ~15%; middle and lower portions peak at 0 deg.",
+          "source": "Rodriguez-Ridao S, Antequera-Vique JA, Martin-Fuentes I, Muyor JM. Effect of Five Bench Inclinations on the Electromyographic Activity of the Pectoralis Major, Anterior Deltoid, and Triceps Brachii during the Bench Press Exercise. Int J Environ Res Public Health. 2020;17(19):7339.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33049982",
+          "doi": "10.3390/ijerph17197339"
+        },
+        {
+          "claim": "Horizontal bench training for 8 weeks grew the 3rd and 5th intercostal sites (+6.1 / +5.4 mm) more than the 2nd intercostal site (+3.8 mm).",
+          "source": "Chaves SFN, Rocha-Junior VA, Encarnacao IGA, et al. Effects of Horizontal and Incline Bench Press on Neuromuscular Adaptations in Untrained Young Men. Int J Exerc Sci. 2020;13(6):859-872.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "32922646",
+          "doi": "10.70252/FDNB1158"
+        },
+        {
+          "claim": "Wide grip lowered triceps EMG vs medium/narrow; narrow grip raised triceps, AD and clavicular-head EMG; wider grip raised abdominal-head pec EMG and shoulder joint moments.",
+          "source": "Mausehund L, Werkhausen A, Bartsch J, Krosshaug T. Understanding Bench Press Biomechanics-The Necessity of Measuring Lateral Barbell Forces. J Strength Cond Res. 2022;36(10):2685-2695.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33555823",
+          "doi": "10.1519/JSC.0000000000003948"
+        },
+        {
+          "claim": "Wide grip displayed lower triceps activation than medium and narrow grips in both novice and trained men; pec activity similar across widths.",
+          "source": "Saeterbakken AH, Stien N, Pedersen H, et al. The Effect of Grip Width on Muscle Strength and Electromyographic Activity in Bench Press among Novice- and Resistance-Trained Men. Int J Environ Res Public Health. 2021;18(12):6444.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "34198674",
+          "doi": "10.3390/ijerph18126444"
+        },
+        {
+          "claim": "Moving from wide to narrower grips increased triceps activity and decreased sternocostal pec activity; supinated grip increased clavicular pec and biceps activity.",
+          "source": "Lehman GJ. The influence of grip width and forearm pronation/supination on upper-body myoelectric activity during the flat bench press. J Strength Cond Res. 2005;19(3):587-591.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "16095407",
+          "doi": "10.1519/R-15024.1"
+        },
+        {
+          "claim": "Wide pronated grip at 0 deg maximised activation of all three pec heads; close pronated grip favoured the clavicular head and triceps long head.",
+          "source": "Roy X, Arseneault K, Sercia P. The effect of 12 variations of the bench press exercise on the EMG activity of three heads of the pectoralis major. Int J Strength Cond. 2021;1(1).",
+          "tier": "emg",
+          "confidence": "likely",
+          "doi": "10.47206/ijsc.v1i1.39"
+        },
+        {
+          "claim": "Smith machine and barbell presses elicited greater triceps activity than dumbbell press; chest press machine excited the clavicular head less than free-weight variants.",
+          "source": "Farias DA, Willardson JM, Paz GA, Bezerra ES, Miranda H. Maximal Strength Performance and Muscle Activation for the Bench Press and Triceps Extension Exercises Adopting Dumbbell, Barbell, and Machine Modalities Over Multiple Sets. J Strength Cond Res. 2017;31(7):1879-1887.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "27669189",
+          "doi": "10.1519/JSC.0000000000001651"
+        },
+        {
+          "claim": "Seated chest press (neutral or wide prone grip) and lying bench press showed similar pec, AD (~24% MVIC) and triceps activity; only clavicular head was slightly higher with a neutral machine grip.",
+          "source": "Muyor JM, Rodriguez-Ridao D, Oliva-Lozano JM. Comparison of Muscle Activity between the Horizontal Bench Press and the Seated Chest Press Exercises Using Several Grips. J Hum Kinet. 2023;87:23-34.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "37229415",
+          "doi": "10.5114/jhk/161468"
+        },
+        {
+          "claim": "Standing cable press is limited by trunk stability; pec major and erector EMG were larger in the bench press, while abdominal/latissimus activity rose in the standing single-arm press.",
+          "source": "Santana JC, Vera-Garcia FJ, McGill SM. A kinetic and electromyographic comparison of the standing cable press and bench press. J Strength Cond Res. 2007;21(4):1271-1277.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "18076235",
+          "doi": "10.1519/R-20476.1"
+        },
+        {
+          "claim": "Systematic review: triceps and pectoralis major show similar, high activity in the flat bench press; anterior deltoid is the third prime mover.",
+          "source": "Stastny P, Golas A, Blazek D, et al. A systematic review of surface electromyography analyses of the bench press movement task. PLoS One. 2017;12(2):e0171632.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28170449",
+          "doi": "10.1371/journal.pone.0171632"
+        }
+      ],
+      "conflictsWithBrief": [
+        "delt_front 0.5 may under-credit the front delt: Lanza 2024 (MRI) found anterior deltoid CSA +15% vs pec +20% after bench-only training, i.e. ~75% of the primary mover's growth; 0.75 would be defensible. Anchor kept.",
+        "Chest split {.25/.50/.25}: Rodriguez-Ridao 2020 shows equal EMG across all three portions at 0 deg, so as an activation statement the split would be ~{.33/.33/.33}; Chaves 2020 hypertrophy supports upper being the smallest share. Anchor kept (emphasis, not absolute)."
+      ],
+      "confidence": "high",
+      "notes": "Bands/chains change the strength curve, not the mover pattern; Smith/leverage/cable presses stay on the anchor row (Farias 2017, Muyor 2023). Standing cable press: trunk work is isometric bracing and is not credited (Santana 2007 shows lower pec EMG, higher trunk EMG). Guillotine and Neck Press (same movement in this DB) are wide-grip, flared-elbow presses to the neck: the practitioner claim of more upper chest has no EMG support, so the flat split is kept, but triceps drop to 0.25 like other wide-grip presses. Current mapping kept unchanged for every exercise except wide-grip and neck-press variants."
+    },
+    {
+      "id": "flat_dumbbell_press",
+      "name": "Flat dumbbell / kettlebell press and floor press",
+      "description": "Horizontal press with independent implements (dumbbell or kettlebell), supine on bench or floor, bilateral, alternating or unilateral. Floor press stops the eccentric at ~90 deg elbow when the upper arm meets the floor.",
+      "exerciseIds": [
+        "Dumbbell_Bench_Press",
+        "Dumbbell_Bench_Press_with_Neutral_Grip",
+        "One_Arm_Dumbbell_Bench_Press",
+        "Alternating_Floor_Press",
+        "Extended_Range_One-Arm_Kettlebell_Floor_Press",
+        "One-Arm_Kettlebell_Floor_Press",
+        "Leg-Over_Floor_Press"
+      ],
+      "mapping": [
+        {
+          "groupId": "chest",
+          "weight": 1,
+          "regionDistribution": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          },
+          "rationale": "Same movement as the barbell anchor; dumbbell press pec activation is equal to or higher than barbell (Welsch 2005; Farias 2017)."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.5,
+          "rationale": "AD not different between barbell and dumbbell press (Welsch 2005). Calibrated to the flat anchor."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Dumbbell press shows somewhat lower triceps EMG than barbell/Smith (Farias 2017) but still well above half of pec; keep the anchor 0.5. Lateral/medial bias as in the barbell anchor (Brandao 2020)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Pectoralis major and anterior deltoid activation were not different between barbell bench press, dumbbell bench press and dumbbell fly at 6RM.",
+          "source": "Welsch EA, Bird M, Mayhew JL. Electromyographic activity of the pectoralis major and anterior deltoid muscles during three upper-body lifts. J Strength Cond Res. 2005;19(2):449-452.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "15903389",
+          "doi": "10.1519/14513.1"
+        },
+        {
+          "claim": "Dumbbell bench press elicited greater pec major activity than barbell, lower triceps activity than barbell/Smith, and higher biceps (stabiliser) activity.",
+          "source": "Farias DA, Willardson JM, Paz GA, Bezerra ES, Miranda H. Maximal Strength Performance and Muscle Activation for the Bench Press and Triceps Extension Exercises Adopting Dumbbell, Barbell, and Machine Modalities Over Multiple Sets. J Strength Cond Res. 2017;31(7):1879-1887.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "27669189",
+          "doi": "10.1519/JSC.0000000000001651"
+        },
+        {
+          "claim": "Neutral-grip pressing produced slightly higher clavicular-head activity (~30% vs ~25% MVIC) than a 150% biacromial pronated grip; AD and triceps unchanged.",
+          "source": "Muyor JM, Rodriguez-Ridao D, Oliva-Lozano JM. Comparison of Muscle Activity between the Horizontal Bench Press and the Seated Chest Press Exercises Using Several Grips. J Hum Kinet. 2023;87:23-34.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "37229415",
+          "doi": "10.5114/jhk/161468"
+        },
+        {
+          "claim": "Unilateral (one-dumbbell) chest press produced significantly greater external and internal oblique activation than holding two dumbbells; pec activation unchanged; ROM larger with one dumbbell.",
+          "source": "Patterson JM, Vigotsky AD, Oppenheimer NE, Feser EH. Differences in unilateral chest press muscle activation and kinematics on a stable versus unstable surface while holding one versus two dumbbells. PeerJ. 2015;3:e1365.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26528421",
+          "doi": "10.7717/peerj.1365"
+        },
+        {
+          "claim": "Asymmetric bench-press loads increased external oblique activation on both sides versus symmetric loading.",
+          "source": "Saeterbakken AH, Solstad TEJ, Behm DG, et al. Muscle activity in asymmetric bench press among resistance-trained individuals. Eur J Appl Physiol. 2020;120(11):2517-2524.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32856145",
+          "doi": "10.1007/s00421-020-04476-5"
+        },
+        {
+          "claim": "Dumbbell training produced task-specific strength gains and stability demand but the prime movers remain pec, AD and triceps across Smith, dumbbell and Swiss-ball presses.",
+          "source": "Saeterbakken AH, Andersen V, Behm DG, et al. Resistance-training exercises with different stability requirements: time course of task specificity. Eur J Appl Physiol. 2016;116(11-12):2247-2256.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "27671996",
+          "doi": "10.1007/s00421-016-3470-3"
+        },
+        {
+          "claim": "Floor press shortens the eccentric (upper arm stops on the floor), removing the stretched-pec bottom range; the movement is a reduced-ROM flat press with the same prime movers.",
+          "source": "Anatomical / biomechanical reasoning (no dedicated floor-press EMG study located on PubMed).",
+          "tier": "anatomical",
+          "confidence": "unverified"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Current mapping for bilateral dumbbell press is already the flat anchor and is kept. Changes: (1) unilateral and alternating variants get obliques 0.25 (Patterson 2015, Saeterbakken 2020 show real oblique work; kept at the minor-stabiliser level because there is no hypertrophy data); (2) Alternating_Floor_Press loses its abs 0.5 (supine on the floor, no rectus demand shown) in favour of obliques 0.25; (3) neutral grip gets a small upper tilt per Muyor 2023 and the tucked-elbow line of pull. Floor press keeps full chest credit; the ROM cut is noted but the brief has no ROM modifier.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Dumbbell_Bench_Press_with_Neutral_Grip",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.3,
+                "chest_mid": 0.5,
+                "chest_lower": 0.2
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            }
+          ],
+          "reason": "Neutral grip tucks the elbows (more shoulder flexion, less abduction) which favours the clavicular head slightly (Muyor 2023; Lehman 2005 narrow/supinated pattern)."
+        },
+        {
+          "exerciseId": "One_Arm_Dumbbell_Bench_Press",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.25,
+                "chest_mid": 0.5,
+                "chest_lower": 0.25
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Unilateral load: external/internal oblique EMG significantly higher than bilateral (Patterson 2015; Saeterbakken 2020)."
+        },
+        {
+          "exerciseId": "Alternating_Floor_Press",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.25,
+                "chest_mid": 0.5,
+                "chest_lower": 0.25
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Alternating arms create an asymmetric load; oblique credit 0.25 replaces the current abs 0.5, for which no evidence exists in a supine floor press."
+        },
+        {
+          "exerciseId": "Extended_Range_One-Arm_Kettlebell_Floor_Press",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.25,
+                "chest_mid": 0.5,
+                "chest_lower": 0.25
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Unilateral load (Patterson 2015; Saeterbakken 2020). 'Extended range' (torso on a pad so the elbow passes below the shoulder) restores the stretched bottom position; region split unchanged."
+        },
+        {
+          "exerciseId": "One-Arm_Kettlebell_Floor_Press",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.25,
+                "chest_mid": 0.5,
+                "chest_lower": 0.25
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Unilateral load (Patterson 2015; Saeterbakken 2020)."
+        },
+        {
+          "exerciseId": "Leg-Over_Floor_Press",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.25,
+                "chest_mid": 0.5,
+                "chest_lower": 0.25
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Unilateral kettlebell press with the contralateral leg crossed over, an anti-rotation setup; oblique credit 0.25 (Patterson 2015)."
+        }
+      ]
+    },
+    {
+      "id": "incline_press",
+      "name": "Incline press (30-45 deg)",
+      "description": "Press with the torso inclined 30-45 deg: shoulder flexion dominates over horizontal adduction, loading the clavicular head and anterior deltoid; elbow extension.",
+      "exerciseIds": [
+        "Incline_Dumbbell_Press",
+        "Barbell_Incline_Bench_Press_-_Medium_Grip",
+        "Hammer_Grip_Incline_DB_Bench_Press",
+        "Incline_Dumbbell_Bench_With_Palms_Facing_In",
+        "Incline_Cable_Chest_Press",
+        "Leverage_Incline_Chest_Press",
+        "Smith_Machine_Incline_Bench_Press"
+      ],
+      "mapping": [
+        {
+          "groupId": "chest",
+          "weight": 1,
+          "regionDistribution": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          },
+          "rationale": "Anchor row. Incline training grew the 2nd intercostal (clavicular) site 0.5-0.6 cm more than horizontal training (Chaves 2020); 45 deg incline shifts excitation and acute CSA change to the clavicular head (Albarello 2022; Cabral 2021; Trebs 2010)."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.5,
+          "rationale": "Anchor row. AD rises with inclination (~33% MVIC at 30-60 deg vs pec-upper ~30%; Rodriguez-Ridao 2020)."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Anchor gives triceps 0.5 with no split; triceps EMG is identical across inclinations (Rodriguez-Ridao 2020) so the flat lateral/medial split is carried over."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "8 weeks of incline bench press grew pec thickness at the 2nd intercostal space more than horizontal (+0.62 cm) or combined (+0.50 cm) training; 3rd and 5th intercostal sites grew similarly in all groups.",
+          "source": "Chaves SFN, Rocha-Junior VA, Encarnacao IGA, et al. Effects of Horizontal and Incline Bench Press on Neuromuscular Adaptations in Untrained Young Men. Int J Exerc Sci. 2020;13(6):859-872.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "32922646",
+          "doi": "10.70252/FDNB1158"
+        },
+        {
+          "claim": "45 deg incline press: clavicular-head RMS greater than sternocostal for every set, and greater acute CSA increase in the clavicular head; flat press showed the opposite.",
+          "source": "Albarello JCS, Cabral HV, Leitao BFM, Halmenschlager GH, Lima LFF, de Oliveira LF. Non-uniform excitation of pectoralis major induced by changes in bench press inclination leads to uneven variations in the cross-sectional area measured by panoramic ultrasonography. J Electromyogr Kinesiol. 2022;67:102722.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "36334406",
+          "doi": "10.1016/j.jelekin.2022.102722"
+        },
+        {
+          "claim": "High-density EMG: flat press excites more caudal (sternocostal) pec regions, 45 deg incline shifts excitation cranially toward the clavicular region.",
+          "source": "Cabral HV, Albarello JCS, Ribeiro NS, Almeida MFA, Vieira TM, de Oliveira LF. Non-uniform excitation of the pectoralis major muscle during flat and inclined bench press exercises. Scand J Med Sci Sports. 2022;32(2):297-305.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "34644424",
+          "doi": "10.1111/sms.14082"
+        },
+        {
+          "claim": "Upper-pec EMG peaked at 30 deg; middle and lower portions were highest at 0 deg; AD highest at 60 deg; triceps unchanged across 0-60 deg.",
+          "source": "Rodriguez-Ridao S, Antequera-Vique JA, Martin-Fuentes I, Muyor JM. Effect of Five Bench Inclinations on the Electromyographic Activity of the Pectoralis Major, Anterior Deltoid, and Triceps Brachii during the Bench Press Exercise. Int J Environ Res Public Health. 2020;17(19):7339.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33049982",
+          "doi": "10.3390/ijerph17197339"
+        },
+        {
+          "claim": "Clavicular head activation greater at 44 and 56 deg than 0 deg; sternocostal head greater at 0 deg than 28/44/56 deg; anterior deltoid greater at 44/56 deg.",
+          "source": "Trebs AA, Brandenburg JP, Pitney WA. An electromyography analysis of 3 muscles surrounding the shoulder joint during the performance of a chest press exercise at several angles. J Strength Cond Res. 2010;24(7):1925-1930.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "20512064",
+          "doi": "10.1519/JSC.0b013e3181ddfae7"
+        },
+        {
+          "claim": "Lower pec EMG at 45 deg (72% MVIC) was lower than at 0, -15 and 30 deg (~87-100% MVIC); upper pec showed higher EMG at 30/45 deg only in the mid-concentric window.",
+          "source": "Lauver JD, Cayot TE, Scheuermann BW. Influence of bench angle on upper extremity muscular activation during bench press exercise. Eur J Sport Sci. 2016;16(3):309-316.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "25799093",
+          "doi": "10.1080/17461391.2015.1022605"
+        },
+        {
+          "claim": "In competitive bodybuilders the clavicular head was most excited in the 45 deg incline press and the sternocostal head least; chest-press machine excited the clavicular head least.",
+          "source": "Coratella G, Tornatore G, Longo S, Esposito F, Ce E. Specific prime movers' excitation during free-weight bench press variations and chest press machine in competitive bodybuilders. Eur J Sport Sci. 2020;20(5):571-579.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "31397215",
+          "doi": "10.1080/17461391.2019.1655101"
+        },
+        {
+          "claim": "Neutral (hammer) grip raised clavicular-head activity slightly relative to a wide pronated grip.",
+          "source": "Muyor JM, Rodriguez-Ridao D, Oliva-Lozano JM. Comparison of Muscle Activity between the Horizontal Bench Press and the Seated Chest Press Exercises Using Several Grips. J Hum Kinet. 2023;87:23-34.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "37229415",
+          "doi": "10.5114/jhk/161468"
+        }
+      ],
+      "conflictsWithBrief": [
+        "delt_front 0.5: at 45 deg and above the anterior deltoid EMG equals or exceeds the clavicular pec (Rodriguez-Ridao 2020: AD ~33% vs PMUP ~30% MVIC; Trebs 2010; Barnett 1995), so 0.75 would be justified for steep inclines. Anchor kept.",
+        "chest_lower 0.05: Lauver 2016 still recorded ~72% MVIC in the lower pec at 45 deg and Chaves 2020 found similar 5th-intercostal growth in the incline group, so the costal region is not unloaded; 0.05 is acceptable only as an emphasis share, not as activation. Anchor kept."
+      ],
+      "confidence": "high",
+      "notes": "Every current incline entry already matches the anchor and is kept. Barbell, Smith, leverage and cable incline presses share the pattern (Coratella 2020 shows machines excite the clavicular head somewhat less, not enough to change credit). Hammer/palms-in grips get a small extra upper tilt (Muyor 2023).",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Hammer_Grip_Incline_DB_Bench_Press",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.65,
+                "chest_mid": 0.3,
+                "chest_lower": 0.05
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            }
+          ],
+          "reason": "Neutral grip tucks the elbows and adds shoulder flexion, further favouring the clavicular head (Muyor 2023; Lehman 2005)."
+        },
+        {
+          "exerciseId": "Incline_Dumbbell_Bench_With_Palms_Facing_In",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.65,
+                "chest_mid": 0.3,
+                "chest_lower": 0.05
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            }
+          ],
+          "reason": "Same movement as the hammer-grip incline press."
+        }
+      ]
+    },
+    {
+      "id": "decline_press",
+      "name": "Decline press (-15 to -30 deg)",
+      "description": "Press with the head below the hips: pressing direction relative to the torso moves caudally, loading the sternocostal/abdominal fibres; less shoulder flexion so less anterior deltoid.",
+      "exerciseIds": [
+        "Decline_Barbell_Bench_Press",
+        "Decline_Dumbbell_Bench_Press",
+        "Decline_Smith_Press",
+        "Smith_Machine_Decline_Press",
+        "Leverage_Decline_Chest_Press",
+        "Wide-Grip_Decline_Barbell_Bench_Press"
+      ],
+      "mapping": [
+        {
+          "groupId": "chest",
+          "weight": 1,
+          "regionDistribution": {
+            "chest_upper": 0.15,
+            "chest_mid": 0.4,
+            "chest_lower": 0.45
+          },
+          "rationale": "Lower pec more active in decline than incline and equal to flat (Glass & Armstrong 1997; Lauver 2016 -15 deg lower pec 100% MVIC); abdominal head highest with wide pronated decline (Roy 2021). Upper pec at -15 deg was not lower than flat in Lauver 2016 and only modestly lower in Barnett 1995, so upper is set to 0.15 rather than the current 0.10."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.25,
+          "rationale": "Anterior deltoid activity increases with inclination and is lowest on the decline bench (Barnett 1995; Rodriguez-Ridao 2020 trend), so one step below the flat anchor's 0.5."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Triceps long head more active in decline and flat than incline (Barnett 1995); triceps overall unchanged with angle (Rodriguez-Ridao 2020). Anchor split kept."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Lower pec (5th intercostal) activation was significantly greater during -15 deg decline than +30 deg incline press in both phases; upper pec did not differ.",
+          "source": "Glass SC, Armstrong T. Electromyographical activity of the pectoralis muscle during incline and decline bench presses. J Strength Cond Res. 1997;11(3):163-167.",
+          "tier": "emg",
+          "confidence": "likely",
+          "doi": "10.1519/00124278-199708000-00006"
+        },
+        {
+          "claim": "Sternocostal head more active on the horizontal than decline bench; clavicular head less active on decline; anterior deltoid tended to increase with trunk inclination; triceps long head more active in decline and flat than incline.",
+          "source": "Barnett C, Kippers V, Turner P. Effects of variations of the bench press exercise on the EMG activity of five shoulder muscles. J Strength Cond Res. 1995;9(4):222-227.",
+          "tier": "emg",
+          "confidence": "likely",
+          "doi": "10.1519/00124278-199511000-00003"
+        },
+        {
+          "claim": "At -15 deg, lower pec EMG (100% MVIC) equalled flat and exceeded 45 deg incline; upper pec at -15 deg (96%) was not different from flat (98%).",
+          "source": "Lauver JD, Cayot TE, Scheuermann BW. Influence of bench angle on upper extremity muscular activation during bench press exercise. Eur J Sport Sci. 2016;16(3):309-316.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "25799093",
+          "doi": "10.1080/17461391.2015.1022605"
+        },
+        {
+          "claim": "Abdominal-head EMG was greatest with a wide pronated grip at -15 deg and 0 deg versus all 30 deg incline conditions.",
+          "source": "Roy X, Arseneault K, Sercia P. The effect of 12 variations of the bench press exercise on the EMG activity of three heads of the pectoralis major. Int J Strength Cond. 2021;1(1).",
+          "tier": "emg",
+          "confidence": "likely",
+          "doi": "10.47206/ijsc.v1i1.39"
+        },
+        {
+          "claim": "In bodybuilders the sternocostal head was similarly excited in -15 deg decline and flat press and more than in 45 deg incline.",
+          "source": "Coratella G, Tornatore G, Longo S, Esposito F, Ce E. Specific prime movers' excitation during free-weight bench press variations and chest press machine in competitive bodybuilders. Eur J Sport Sci. 2020;20(5):571-579.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "31397215",
+          "doi": "10.1080/17461391.2019.1655101"
+        },
+        {
+          "claim": "Wide grip lowers triceps activity and raises abdominal-head pec activity.",
+          "source": "Mausehund L, Werkhausen A, Bartsch J, Krosshaug T. Understanding Bench Press Biomechanics-The Necessity of Measuring Lateral Barbell Forces. J Strength Cond Res. 2022;36(10):2685-2695.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33555823",
+          "doi": "10.1519/JSC.0000000000003948"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "No decline-specific hypertrophy study exists. Changes from current: upper share raised 0.10 -> 0.15 (Lauver 2016 shows the clavicular head is not switched off at -15 deg) and delt_front lowered 0.5 -> 0.25 (Barnett 1995). Wide-grip decline keeps a stronger lower bias and drops triceps to 0.25 like other wide-grip presses.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Wide-Grip_Decline_Barbell_Bench_Press",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.1,
+                "chest_mid": 0.4,
+                "chest_lower": 0.5
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.25,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            }
+          ],
+          "reason": "Wide pronated grip at -15 deg is the condition that maximised abdominal-head EMG (Roy 2021) and wide grips reduce triceps EMG (Saeterbakken 2021; Mausehund 2022; Lehman 2005)."
+        }
+      ]
+    },
+    {
+      "id": "chest_dip",
+      "name": "Parallel-bar dip, forward lean (chest version)",
+      "description": "Closed-chain press from a shoulder-extended, elbow-flexed bottom position with ~35 deg forward trunk lean; shoulder flexion/adduction from extension plus elbow extension. Loads the costal pec fibres at long length.",
+      "exerciseIds": ["Dips_-_Chest_Version"],
+      "mapping": [
+        {
+          "groupId": "chest",
+          "weight": 1,
+          "regionDistribution": {
+            "chest_upper": 0.05,
+            "chest_mid": 0.35,
+            "chest_lower": 0.6
+          },
+          "rationale": "Bar dip peak pec activation ~65% (non-fatigued) rising to >100% of peak with fatigue (McKenzie 2022); with the forward lean the movement is a steep decline press, so costal/abdominal fibres dominate (anatomical; Roy 2021 decline pattern)."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.75,
+          "regionDistribution": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "rationale": "Triceps peak activation (~80%) exceeded pec (~65%) and AD (~66%) in the bar dip (McKenzie 2022); the long head works from a shoulder-extended (lengthened) position (Kholinne 2018), so a stronger long-head share than in the bench anchor."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.5,
+          "rationale": "AD peak ~66% in the bar dip, comparable to pec (McKenzie 2022); anchor-calibrated to the flat press 0.5."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Bar dip: peak activation pec major 64.8%, triceps 79.5%, anterior deltoid 66.0% of peak in the non-fatigued state, with ~37 deg anterior trunk lean; pec, triceps, serratus, lower trap and lats all rose with fatigue.",
+          "source": "McKenzie A, Crowley-McHattan Z, Meir R, Whitting J, Volschenk W. Fatigue Increases Muscle Activations but Does Not Change Maximal Joint Angles during the Bar Dip. Int J Environ Res Public Health. 2022;19(21):14390.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "36361276",
+          "doi": "10.3390/ijerph192114390"
+        },
+        {
+          "claim": "Bar and ring dips produced greater pec major, anterior deltoid and triceps activation than bench dips; triceps peak 1.04 mV on the bar.",
+          "source": "McKenzie A, Crowley-McHattan Z, Meir R, Whitting J, Volschenk W. Bench, Bar, and Ring Dips: Do Kinematics and Muscle Activity Differ? Int J Environ Res Public Health. 2022;19(20):13211.",
+          "tier": "emg",
+          "confidence": "likely",
+          "doi": "10.3390/ijerph192013211"
+        },
+        {
+          "claim": "Triceps long head produces the greatest force and activation of the three heads when the shoulder is near 0 deg elevation (arm by the side / extended), the medial head takes over at >=90 deg elevation.",
+          "source": "Kholinne E, Zulkarnain RF, Sun YC, Lim S, Chun JM, Jeon IH. The different role of each head of the triceps brachii muscle in elbow extension. Acta Orthop Traumatol Turc. 2018;52(3):201-205.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29503079",
+          "doi": "10.1016/j.aott.2018.02.005"
+        },
+        {
+          "claim": "Abdominal-head EMG is maximal in decline pressing conditions; the forward-lean dip presses in the same caudal direction relative to the torso.",
+          "source": "Roy X, Arseneault K, Sercia P. The effect of 12 variations of the bench press exercise on the EMG activity of three heads of the pectoralis major. Int J Strength Cond. 2021;1(1).",
+          "tier": "emg",
+          "confidence": "likely",
+          "doi": "10.47206/ijsc.v1i1.39"
+        },
+        {
+          "claim": "ACE-sponsored EMG comparison ranked dips near the top for pec major activation alongside barbell bench, pec deck and crossover (non-peer-reviewed).",
+          "source": "Schanke W. Electromyographical analysis of the pectoralis major muscle during various chest exercises. Master's thesis, University of Wisconsin-La Crosse (ACE-sponsored), 2012.",
+          "tier": "consensus",
+          "confidence": "unverified"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Change from current: triceps raised 0.5 -> 0.75 with a longer-head share (McKenzie 2022 shows triceps peak >= pec even in the chest-lean dip) and the lower-pec share strengthened. No dip hypertrophy study exists; the triceps result rests on peak EMG in 13-15 trained men."
+    },
+    {
+      "id": "flat_flye",
+      "name": "Horizontal flye / crossover / pec deck",
+      "description": "Single-joint shoulder horizontal adduction at ~90 deg abduction with the elbow held at a fixed angle; supine dumbbell, cable, machine, band or bodyweight-slider versions. Standing high-pulley crossovers add a downward (adduction) component.",
+      "exerciseIds": [
+        "Dumbbell_Flyes",
+        "One-Arm_Flat_Bench_Dumbbell_Flye",
+        "Flat_Bench_Cable_Flyes",
+        "Butterfly",
+        "Cable_Crossover",
+        "Single-Arm_Cable_Crossover",
+        "Cable_Iron_Cross",
+        "Cross_Over_-_With_Bands",
+        "Bodyweight_Flyes",
+        "Around_The_Worlds",
+        "Decline_Dumbbell_Flyes",
+        "Svend_Press"
+      ],
+      "mapping": [
+        {
+          "groupId": "chest",
+          "weight": 1,
+          "regionDistribution": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          },
+          "rationale": "Pec major is the sole prime mover; pec activation in the flye equals the press in some data (Welsch 2005) and is 8-16% lower in others (Solstad 2020), still primary. Horizontal path at 90 deg abduction loads all heads with a sternal centre, as in the flat anchor."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.25,
+          "rationale": "Anterior deltoid is a secondary horizontal adductor; its activity in the flye is lower than in the barbell press (Solstad 2020), so one step below the press anchor's 0.5. Welsch 2005 and Soncin 2014 (AD ~66% MVIC in chest fly) show it is not negligible."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Barbell bench press showed higher pec major, anterior deltoid and triceps activation than dumbbell flyes at 6RM (8-81% across phases); biceps was higher in flyes.",
+          "source": "Solstad TEJ, Andersen V, Shaw M, Hoel EM, Vonheim A, Saeterbakken AH. A Comparison of Muscle Activation between Barbell Bench Press and Dumbbell Flyes in Resistance-Trained Males. J Sports Sci Med. 2020;19(4):645-651.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33239937"
+        },
+        {
+          "claim": "Pec major and anterior deltoid motor-unit activation did not differ between barbell press, dumbbell press and dumbbell fly, but the fly had a shorter relative time of activation.",
+          "source": "Welsch EA, Bird M, Mayhew JL. Electromyographic activity of the pectoralis major and anterior deltoid muscles during three upper-body lifts. J Strength Cond Res. 2005;19(2):449-452.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "15903389",
+          "doi": "10.1519/14513.1"
+        },
+        {
+          "claim": "During the chest fly, sternocostal pec reached ~100% MVIC and anterior deltoid ~66-87% MVIC depending on exercise order.",
+          "source": "Soncin R, Pennone J, Guimaraes TM, Mezencio B, Amadio AC, Serrao JC. Influence of exercise order on electromyographic activity during upper body resistance training. J Hum Kinet. 2014;44:203-210.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "25713681",
+          "doi": "10.2478/hukin-2014-0127"
+        },
+        {
+          "claim": "Pec deck and bent-forward cable crossover produced ~98% and ~93% of barbell-bench pec activation; push-ups ~61-63% (non-peer-reviewed).",
+          "source": "Schanke W. Electromyographical analysis of the pectoralis major muscle during various chest exercises. Master's thesis, University of Wisconsin-La Crosse (ACE-sponsored), 2012.",
+          "tier": "consensus",
+          "confidence": "unverified"
+        },
+        {
+          "claim": "Wide pronated grip at -15 deg or 0 deg maximised abdominal-head EMG; the high-to-low crossover reproduces that downward, wide arm path.",
+          "source": "Roy X, Arseneault K, Sercia P. The effect of 12 variations of the bench press exercise on the EMG activity of three heads of the pectoralis major. Int J Strength Cond. 2021;1(1).",
+          "tier": "emg",
+          "confidence": "likely",
+          "doi": "10.47206/ijsc.v1i1.39"
+        },
+        {
+          "claim": "Sling/suspension push-up positions raise abdominal muscle activity 15-27% over the ground condition; the slider/suspension flye shares this plank base.",
+          "source": "Maeo S, Chou T, Yamamoto M, Kanehisa H. Muscular activities during sling- and ground-based push-up exercise. BMC Res Notes. 2014;7:192.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24678968",
+          "doi": "10.1186/1756-0500-7-192"
+        },
+        {
+          "claim": "No elbow extension occurs in a flye, so triceps receive no dynamic work; pec fibre lines (clavicular fibres pull up-and-in, costal fibres down-and-in) predict emphasis from the direction of the arm path.",
+          "source": "Anatomical reasoning (pectoralis major fibre architecture; standard kinesiology).",
+          "tier": "anatomical",
+          "confidence": "unverified"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Kept: chest 1.0 with the flat split for dumbbell/cable/pec-deck flyes. Changed: delt_front unified at 0.25 (current entries mix 0.25 and 0.5; Solstad 2020 places the flye below the press anchor); Cross_Over_-_With_Bands loses its biceps 0.5 (biceps only co-contracts, Solstad 2020, no hypertrophic case); Bodyweight_Flyes loses triceps 0.5 (elbows are locked, no extension) and keeps abs at 0.25 rather than 0.5 (Maeo 2014). Standing high-pulley crossovers get a lower-fibre tilt; the iron cross (arms at shoulder height) and band crossover stay on the horizontal split. Decline flye sits here with a decline override rather than a one-exercise family. Svend Press is an isometric plate squeeze pressed forward at chest height: chest 1.0 (adduction), delt_front 0.5 (shoulder flexion to 90 deg), triceps 0.25 (elbow extension under light load), forearms 0.25 (squeeze); no literature, consensus only.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Cable_Crossover",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.15,
+                "chest_mid": 0.45,
+                "chest_lower": 0.4
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "High-pulley crossover: hands travel from above shoulder height down to the waist (adduction + slight extension), the line of pull of the costal/abdominal fibres (Roy 2021 decline pattern; anatomical)."
+        },
+        {
+          "exerciseId": "Single-Arm_Cable_Crossover",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.15,
+                "chest_mid": 0.45,
+                "chest_lower": 0.4
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Same high-to-low path as the bilateral crossover; unilateral cable adds an anti-rotation demand (Santana 2007 standing single-arm press showed raised oblique activity)."
+        },
+        {
+          "exerciseId": "Decline_Dumbbell_Flyes",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.1,
+                "chest_mid": 0.4,
+                "chest_lower": 0.5
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Decline bench biases the arc toward the costal fibres (Glass & Armstrong 1997; Roy 2021)."
+        },
+        {
+          "exerciseId": "Around_The_Worlds",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.3,
+                "chest_mid": 0.45,
+                "chest_lower": 0.25
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Arc from hips to overhead sweeps through flexion as well as adduction; the overhead half is shoulder flexion, so anterior deltoid stays at 0.5 and the clavicular share rises slightly."
+        },
+        {
+          "exerciseId": "Bodyweight_Flyes",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.25,
+                "chest_mid": 0.5,
+                "chest_lower": 0.25
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Slider/suspension flye from a plank: elbows locked (no triceps credit), abdominals loaded above ground push-up levels (Maeo 2014) but still a stabiliser, so 0.25 not 0.5."
+        },
+        {
+          "exerciseId": "Svend_Press",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.25,
+                "chest_mid": 0.5,
+                "chest_lower": 0.25
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.25,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.7,
+                "forearm_extensors_brachioradialis": 0.3
+              }
+            }
+          ],
+          "reason": "Isometric pec squeeze while pressing plates forward to arm's length at chest height: pec adduction is the intent, anterior deltoid flexes the shoulder to 90 deg, triceps extend under light load, forearm flexors hold the squeeze. Practitioner consensus only; no EMG study located."
+        }
+      ]
+    },
+    {
+      "id": "incline_flye",
+      "name": "Incline flye / low-to-high crossover",
+      "description": "Single-joint shoulder flexion-plus-adduction from a low, abducted position toward the upper chest: incline-bench dumbbell or cable flye and standing low-pulley crossover. Clavicular-head line of pull.",
+      "exerciseIds": [
+        "Incline_Dumbbell_Flyes",
+        "Incline_Dumbbell_Flyes_-_With_A_Twist",
+        "Incline_Cable_Flye",
+        "Low_Cable_Crossover"
+      ],
+      "mapping": [
+        {
+          "groupId": "chest",
+          "weight": 1,
+          "regionDistribution": {
+            "chest_upper": 0.55,
+            "chest_mid": 0.35,
+            "chest_lower": 0.1
+          },
+          "rationale": "Incline arm paths shift pec excitation and acute CSA change to the clavicular head (Albarello 2022; Trebs 2010); a flye keeps the same torso/arm geometry as the incline press anchor, with the lower tail set slightly above the press anchor because the arc passes through the horizontal plane at the bottom."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.5,
+          "rationale": "The upward arc is shoulder flexion, the anterior deltoid's primary action; AD rises with inclination in pressing (Rodriguez-Ridao 2020) and the same geometry applies here, so it stays at the incline anchor's 0.5 rather than the flat flye's 0.25."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "45 deg incline pressing shifts pec excitation and acute cross-sectional change to the clavicular head.",
+          "source": "Albarello JCS, Cabral HV, Leitao BFM, Halmenschlager GH, Lima LFF, de Oliveira LF. Non-uniform excitation of pectoralis major induced by changes in bench press inclination leads to uneven variations in the cross-sectional area measured by panoramic ultrasonography. J Electromyogr Kinesiol. 2022;67:102722.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "36334406",
+          "doi": "10.1016/j.jelekin.2022.102722"
+        },
+        {
+          "claim": "Clavicular head EMG greater at 44-56 deg than flat; anterior deltoid also greater at those angles.",
+          "source": "Trebs AA, Brandenburg JP, Pitney WA. An electromyography analysis of 3 muscles surrounding the shoulder joint during the performance of a chest press exercise at several angles. J Strength Cond Res. 2010;24(7):1925-1930.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "20512064",
+          "doi": "10.1519/JSC.0b013e3181ddfae7"
+        },
+        {
+          "claim": "Supinated grip at 30 deg incline was among the conditions with the highest clavicular-head EMG (relevant to the twisting/supinating incline flye).",
+          "source": "Roy X, Arseneault K, Sercia P. The effect of 12 variations of the bench press exercise on the EMG activity of three heads of the pectoralis major. Int J Strength Cond. 2021;1(1).",
+          "tier": "emg",
+          "confidence": "likely",
+          "doi": "10.47206/ijsc.v1i1.39"
+        },
+        {
+          "claim": "Incline training selectively increased pec thickness at the 2nd intercostal (clavicular) site.",
+          "source": "Chaves SFN, Rocha-Junior VA, Encarnacao IGA, et al. Effects of Horizontal and Incline Bench Press on Neuromuscular Adaptations in Untrained Young Men. Int J Exerc Sci. 2020;13(6):859-872.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "32922646",
+          "doi": "10.70252/FDNB1158"
+        },
+        {
+          "claim": "Anterior deltoid activation in a flye is below that of a press at matched relative load.",
+          "source": "Solstad TEJ, Andersen V, Shaw M, Hoel EM, Vonheim A, Saeterbakken AH. A Comparison of Muscle Activation between Barbell Bench Press and Dumbbell Flyes in Resistance-Trained Males. J Sports Sci Med. 2020;19(4):645-651.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33239937"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Current entries already carry the incline split and delt_front 0.5; only the lower tail is nudged from 0.05 to 0.10 for the flye arc. Low_Cable_Crossover is moved from the flat split to this family: the low-to-high path is shoulder flexion, the clavicular head's action. No flye-specific hypertrophy data exist; region emphasis is inferred from incline-press EMG/hypertrophy plus fibre geometry."
+    },
+    {
+      "id": "push_up",
+      "name": "Standard push-up (hands at floor level)",
+      "description": "Closed-chain horizontal press against ~64-66% body mass (Ebben 2011; Gouvali 2005; Suprak 2011) with the trunk held rigid; hand width, suspension, single-arm and plyometric variants.",
+      "exerciseIds": [
+        "Pushups",
+        "Push-Up_Wide",
+        "Pushups_Close_and_Wide_Hand_Positions",
+        "Clock_Push-Up",
+        "Single-Arm_Push-Up",
+        "Suspended_Push-Up",
+        "Plyo_Kettlebell_Pushups",
+        "Push_Up_to_Side_Plank",
+        "Isometric_Wipers"
+      ],
+      "mapping": [
+        {
+          "groupId": "chest",
+          "weight": 1,
+          "regionDistribution": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          },
+          "rationale": "Push-up training at matched load produced the same pec thickness gain as bench press (Kikuchi 2017) and matched bench-press EMG (Calatayud 2015); horizontal torso, so the flat split."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.5,
+          "rationale": "AD ~59% MVC vs pec ~64% in the traditional push-up (Snarr 2013); calibrated to the flat anchor."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Triceps EMG is at least as high as pec in push-ups (Snarr 2013: 74% vs 64% MVC; Kowalski 2022 review), but triceps thickness grew less than pec in push-up training (Kikuchi 2017), so the bench anchor's 0.5 and lateral/medial bias are kept."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "8 weeks of push-ups at a load matched to 40% 1RM bench press increased pec major and triceps thickness and bench 1RM to the same degree as bench press (pec 17.0->20.8 mm bench group; similar in push-up group).",
+          "source": "Kikuchi N, Nakazato K. Low-load bench press and push-up induce similar muscle hypertrophy and strength gain. J Exerc Sci Fit. 2017;15(1):37-42.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "29541130",
+          "doi": "10.1016/j.jesf.2017.06.003"
+        },
+        {
+          "claim": "6RM band-resisted push-up and 6RM bench press produced equal pec/AD/triceps EMG and equal strength gains after 5 weeks.",
+          "source": "Calatayud J, Borreani S, Colado JC, Martin F, Tella V, Andersen LL. Bench press and push-up at comparable levels of muscle activity results in similar strength gains. J Strength Cond Res. 2015;29(1):246-253.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24983847",
+          "doi": "10.1519/JSC.0000000000000589"
+        },
+        {
+          "claim": "Traditional push-up: pec major 63.6%, anterior deltoid 58.9%, triceps 74.3% MVC; suspension push-up raised all three (69.5%, 81.1%, 105.8% MVC).",
+          "source": "Snarr RL, Esco MR. Electromyographic comparison of traditional and suspension push-ups. J Hum Kinet. 2013;39:75-83.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24511343",
+          "doi": "10.2478/hukin-2013-0070"
+        },
+        {
+          "claim": "Narrow-base push-ups produced greater pec major and triceps EMG than wide-base push-ups.",
+          "source": "Cogley RM, Archambault TA, Fibeger JF, Koverman MM, Youdas JW, Hollman JH. Comparison of muscle activation using various hand positions during the push-up exercise. J Strength Cond Res. 2005;19(3):628-633.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "16095413",
+          "doi": "10.1519/15094.1"
+        },
+        {
+          "claim": "Triceps (long and lateral heads) and pec major (sternal and clavicular) were most active in the narrow variant; forward/backward-leaning variants loaded abdominal and back muscles most.",
+          "source": "Marcolin G, Petrone N, Moro T, Battaglia G, Bianco A, Paoli A. Selective Activation of Shoulder, Trunk, and Arm Muscles: A Comparative Analysis of Different Push-Up Variants. J Athl Train. 2015;50(11):1126-1132.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26488636",
+          "doi": "10.4085/1062-6050-50.9.09"
+        },
+        {
+          "claim": "Scoping review of 30 studies: triceps and pec major carry the highest EMG amplitude across standard, unstable and suspension push-ups; serratus is highest in push-up plus and incline push-ups.",
+          "source": "Kowalski KL, Connelly DM, Jakobi JM, Sadi J. Shoulder electromyography activity during push-up variations: a scoping review. Shoulder Elbow. 2022;14(3):326-340.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "35599715",
+          "doi": "10.1177/17585732211019373"
+        },
+        {
+          "claim": "Regular push-up ground reaction force ~64% body mass, knee push-up ~49%; feet elevated raised GRF, hands elevated lowered it.",
+          "source": "Ebben WP, Wurm B, VanderZanden TL, et al. Kinetic analysis of several variations of push-ups. J Strength Cond Res. 2011;25(10):2891-2894.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "21873902",
+          "doi": "10.1519/JSC.0b013e31820c8587"
+        },
+        {
+          "claim": "Sling-based dynamic push-ups raised pec major (+29%), triceps, biceps and all three abdominal muscles (+19 to +144%) relative to ground push-ups.",
+          "source": "Maeo S, Chou T, Yamamoto M, Kanehisa H. Muscular activities during sling- and ground-based push-up exercise. BMC Res Notes. 2014;7:192.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24678968",
+          "doi": "10.1186/1756-0500-7-192"
+        },
+        {
+          "claim": "Pec major EMG was unchanged by surface instability; rectus abdominis in standard push-ups ~13-19% MVC and rose only with hands on an unstable surface.",
+          "source": "Lehman GJ, MacMillan B, MacIntyre I, Chivers M, Fluter M. Shoulder muscle EMG activity during push up variations on and off a Swiss ball. Dyn Med. 2006;5:7.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "16762080",
+          "doi": "10.1186/1476-5918-5-7"
+        },
+        {
+          "claim": "Plyometric push-up variants (countermovement, jump, fall) differ in impact force and rate of force development but recruit the same pec/triceps pattern.",
+          "source": "Garcia-Masso X, Colado JC, Gonzalez LM, et al. Myoelectric activation and kinetics of different plyometric push-up exercises. J Strength Cond Res. 2011;25(7):2040-2047.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "21701289",
+          "doi": "10.1519/JSC.0b013e3181e4f7ce"
+        },
+        {
+          "claim": "Asymmetric/unilateral pressing loads raise external oblique activation on both sides.",
+          "source": "Saeterbakken AH, Solstad TEJ, Behm DG, et al. Muscle activity in asymmetric bench press among resistance-trained individuals. Eur J Appl Physiol. 2020;120(11):2517-2524.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32856145",
+          "doi": "10.1007/s00421-020-04476-5"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Standard push-up keeps the current (anchor-identical) mapping. The current abs 0.5 on Push-Up_Wide is removed: rectus activity in a plain push-up is ~13-19% MVC (Lehman 2006) and is isometric bracing, which the brief says not to credit; abs 0.25 is retained only where the literature shows a real step up (suspension: Maeo 2014). Wide hand position drops triceps to 0.25 (Cogley 2005; Marcolin 2015). Single-arm and suspended push-ups raise triceps to 0.75 (Snarr 2013 triceps 106% MVC in suspension; single-arm doubles the per-arm load with a tucked elbow). Push_Up_to_Side_Plank keeps obliques 0.5 because the side plank is the deliberate second half of the movement. Isometric_Wipers (weight shifted arm to arm from a wide push-up hold) is an isometric chest/shoulder hold with minimal elbow travel.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Push-Up_Wide",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.2,
+                "chest_mid": 0.5,
+                "chest_lower": 0.3
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.25,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            }
+          ],
+          "reason": "Wide base lowers triceps (and slightly pec) EMG versus narrow (Cogley 2005; Marcolin 2015); wide pronated hand spacing favours the sternocostal/abdominal fibres (Lehman 2005; Roy 2021). Current abs 0.5 removed (Lehman 2006)."
+        },
+        {
+          "exerciseId": "Single-Arm_Push-Up",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.25,
+                "chest_mid": 0.5,
+                "chest_lower": 0.25
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.75,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            }
+          ],
+          "reason": "One arm carries ~64% body mass with a tucked elbow (Ebben 2011; narrow-base pattern of Cogley 2005), and the strongly asymmetric load demands anti-rotation from the obliques (Saeterbakken 2020; Patterson 2015)."
+        },
+        {
+          "exerciseId": "Suspended_Push-Up",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.25,
+                "chest_mid": 0.5,
+                "chest_lower": 0.25
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.75,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Suspension push-up: triceps 106% and AD 81% MVC vs pec 70% (Snarr 2013); abdominals rise 19-144% over ground push-ups (Maeo 2014)."
+        },
+        {
+          "exerciseId": "Push_Up_to_Side_Plank",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.25,
+                "chest_mid": 0.5,
+                "chest_lower": 0.25
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Each rep ends in a side plank, a deliberate oblique loading phase; kept at the current 0.5."
+        },
+        {
+          "exerciseId": "Isometric_Wipers",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.25,
+                "chest_mid": 0.5,
+                "chest_lower": 0.25
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.25,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Isometric wide push-up hold with side-to-side weight shift: elbow angle barely changes (triceps 0.25), and the alternating single-arm load adds an anti-rotation demand (obliques 0.25 replaces the current abs 0.5)."
+        }
+      ]
+    },
+    {
+      "id": "incline_push_up",
+      "name": "Incline push-up (hands elevated)",
+      "description": "Push-up with hands on a bench or bar: lighter load (~40-55% body mass) and a pressing direction that is caudal relative to the torso, the decline-press pattern.",
+      "exerciseIds": [
+        "Incline_Push-Up",
+        "Incline_Push-Up_Medium",
+        "Incline_Push-Up_Reverse_Grip",
+        "Incline_Push-Up_Wide"
+      ],
+      "mapping": [
+        {
+          "groupId": "chest",
+          "weight": 1,
+          "regionDistribution": {
+            "chest_upper": 0.15,
+            "chest_mid": 0.4,
+            "chest_lower": 0.45
+          },
+          "rationale": "Hands elevated tilts the torso so the arm presses downward relative to the trunk, the geometry of the decline press, which favours the costal fibres (Glass & Armstrong 1997; Roy 2021) while the clavicular head is not switched off (Lauver 2016)."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.25,
+          "rationale": "Decline-like geometry reduces the shoulder-flexion component; anterior deltoid lowest in decline pressing (Barnett 1995). One step below the flat anchor, matching the decline_press family."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Elbow extension against the reduced load; triceps EMG unchanged with bench angle (Rodriguez-Ridao 2020)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Hands elevated on 30-60 cm boxes lowered ground reaction force below all other push-up variants (regular ~64% body mass).",
+          "source": "Ebben WP, Wurm B, VanderZanden TL, et al. Kinetic analysis of several variations of push-ups. J Strength Cond Res. 2011;25(10):2891-2894.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "21873902",
+          "doi": "10.1519/JSC.0b013e31820c8587"
+        },
+        {
+          "claim": "Lower pec activation greater in decline than incline pressing; upper pec unchanged.",
+          "source": "Glass SC, Armstrong T. Electromyographical activity of the pectoralis muscle during incline and decline bench presses. J Strength Cond Res. 1997;11(3):163-167.",
+          "tier": "emg",
+          "confidence": "likely",
+          "doi": "10.1519/00124278-199708000-00006"
+        },
+        {
+          "claim": "At -15 deg the lower pec kept 100% MVIC and the upper pec 96% MVIC, i.e. decline geometry loads the costal fibres without unloading the clavicular head.",
+          "source": "Lauver JD, Cayot TE, Scheuermann BW. Influence of bench angle on upper extremity muscular activation during bench press exercise. Eur J Sport Sci. 2016;16(3):309-316.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "25799093",
+          "doi": "10.1080/17461391.2015.1022605"
+        },
+        {
+          "claim": "Supinated (reverse) grip increased clavicular-head pec activity and biceps activity in the flat press.",
+          "source": "Lehman GJ. The influence of grip width and forearm pronation/supination on upper-body myoelectric activity during the flat bench press. J Strength Cond Res. 2005;19(3):587-591.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "16095407",
+          "doi": "10.1519/R-15024.1"
+        },
+        {
+          "claim": "Wide-base push-ups lower triceps and pec EMG relative to narrow base.",
+          "source": "Cogley RM, Archambault TA, Fibeger JF, Koverman MM, Youdas JW, Hollman JH. Comparison of muscle activation using various hand positions during the push-up exercise. J Strength Cond Res. 2005;19(3):628-633.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "16095413",
+          "doi": "10.1519/15094.1"
+        },
+        {
+          "claim": "Serratus anterior is the muscle most emphasised in incline (hands-elevated) push-ups; there is no serratus group, so no extra credit is assigned.",
+          "source": "Kowalski KL, Connelly DM, Jakobi JM, Sadi J. Shoulder electromyography activity during push-up variations: a scoping review. Shoulder Elbow. 2022;14(3):326-340.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "35599715",
+          "doi": "10.1177/17585732211019373"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Current chest split {.10/.40/.50} is moderated to {.15/.40/.45} to align with the decline_press family (Lauver 2016 shows the clavicular head stays active). delt_front lowered 0.5 -> 0.25 as for decline presses. The abs 0.5 on Medium/Reverse/Wide is removed (isometric bracing at low load, Lehman 2006). Reverse grip shifts emphasis back up (Lehman 2005 supinated pattern); wide hands drop triceps to 0.25.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Incline_Push-Up_Reverse_Grip",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.25,
+                "chest_mid": 0.4,
+                "chest_lower": 0.35
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            }
+          ],
+          "reason": "Supinated hand position raises clavicular-head activity (Lehman 2005), partly offsetting the decline-like geometry."
+        },
+        {
+          "exerciseId": "Incline_Push-Up_Wide",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.1,
+                "chest_mid": 0.4,
+                "chest_lower": 0.5
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.25,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            }
+          ],
+          "reason": "Wide base lowers triceps EMG (Cogley 2005) and wide spacing with a caudal press direction is the abdominal-head condition of Roy 2021."
+        }
+      ]
+    },
+    {
+      "id": "decline_push_up",
+      "name": "Decline push-up (feet elevated)",
+      "description": "Push-up with feet on a box, bench or ball: heavier load (~70-75% body mass) and a cranial pressing direction relative to the torso, equivalent to a 15-30 deg incline press.",
+      "exerciseIds": ["Decline_Push-Up", "Push-Ups_With_Feet_Elevated", "Push-Ups_With_Feet_On_An_Exercise_Ball"],
+      "mapping": [
+        {
+          "groupId": "chest",
+          "weight": 1,
+          "regionDistribution": {
+            "chest_upper": 0.45,
+            "chest_mid": 0.4,
+            "chest_lower": 0.15
+          },
+          "rationale": "A 30-60 cm foot elevation over a ~1 m hand-to-foot span gives a 15-35 deg torso angle, i.e. the 15-30 deg incline zone where upper-pec EMG peaks but middle/lower portions remain substantial (Rodriguez-Ridao 2020: PMUP peak at 30 deg); less extreme than the 45 deg incline anchor, so the upper share is 0.45 rather than 0.60."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.5,
+          "rationale": "AD rises with inclination and at 30 deg (~33% MVIC) already matches the upper pec (Rodriguez-Ridao 2020); anchor 0.5."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Triceps EMG unchanged with angle (Rodriguez-Ridao 2020); heavier load than the standard push-up but the same share."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Feet elevated on 30 or 60 cm boxes produced higher ground reaction force than all other push-up variants.",
+          "source": "Ebben WP, Wurm B, VanderZanden TL, et al. Kinetic analysis of several variations of push-ups. J Strength Cond Res. 2011;25(10):2891-2894.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "21873902",
+          "doi": "10.1519/JSC.0b013e31820c8587"
+        },
+        {
+          "claim": "Upper-pec EMG peaked at 30 deg inclination; AD ~33% MVIC at 30 deg and above; middle/lower pec highest at 0 deg.",
+          "source": "Rodriguez-Ridao S, Antequera-Vique JA, Martin-Fuentes I, Muyor JM. Effect of Five Bench Inclinations on the Electromyographic Activity of the Pectoralis Major, Anterior Deltoid, and Triceps Brachii during the Bench Press Exercise. Int J Environ Res Public Health. 2020;17(19):7339.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33049982",
+          "doi": "10.3390/ijerph17197339"
+        },
+        {
+          "claim": "Incline pressing selectively increased clavicular-region pec thickness after 8 weeks.",
+          "source": "Chaves SFN, Rocha-Junior VA, Encarnacao IGA, et al. Effects of Horizontal and Incline Bench Press on Neuromuscular Adaptations in Untrained Young Men. Int J Exerc Sci. 2020;13(6):859-872.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "32922646",
+          "doi": "10.70252/FDNB1158"
+        },
+        {
+          "claim": "Placing the feet on a Swiss ball instead of a bench changed no muscle's activation (pec, triceps, abdominals), so a feet-on-ball push-up behaves as a feet-elevated push-up.",
+          "source": "Lehman GJ, MacMillan B, MacIntyre I, Chivers M, Fluter M. Shoulder muscle EMG activity during push up variations on and off a Swiss ball. Dyn Med. 2006;5:7.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "16762080",
+          "doi": "10.1186/1476-5918-5-7"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Decline_Push-Up currently uses the 45 deg incline anchor split {.60/.35/.05}; a typical foot elevation produces a 15-35 deg torso angle, so the split is moderated to {.45/.40/.15}. Push-Ups_With_Feet_Elevated and Push-Ups_With_Feet_On_An_Exercise_Ball currently use the flat split; they are the same movement (Lehman 2006 shows the ball adds nothing for feet) and are moved here."
+    },
+    {
+      "id": "pullover",
+      "name": "Pullover (bent-arm and straight-arm)",
+      "description": "Supine shoulder extension from an overhead, stretched position back to vertical with the elbows fixed (bent or straight). Sternocostal pec fibres, latissimus and the long head of triceps extend the humerus; the clavicular head and anterior deltoid are flexors and act only near the top.",
+      "exerciseIds": [
+        "Bent-Arm_Barbell_Pullover",
+        "Bent-Arm_Dumbbell_Pullover",
+        "Straight-Arm_Dumbbell_Pullover",
+        "Front_Raise_And_Pullover",
+        "Wide-Grip_Decline_Barbell_Pullover"
+      ],
+      "mapping": [
+        {
+          "groupId": "chest",
+          "weight": 1,
+          "regionDistribution": {
+            "chest_upper": 0.15,
+            "chest_mid": 0.45,
+            "chest_lower": 0.4
+          },
+          "rationale": "Barbell pullover EMG emphasised pec major far more than latissimus (Marchetti & Uchida 2011); the review literature calls the pullover pec-dominant (Di Fonza 2026). Sternocostal/abdominal fibres are the humeral extensors from overhead, the clavicular head is a flexor, hence the lower-biased split."
+        },
+        {
+          "groupId": "lats",
+          "weight": 0.5,
+          "rationale": "Latissimus is a genuine shoulder extensor here but its EMG was well below pec in the barbell pullover (Marchetti & Uchida 2011); activation depends on joint position (Teixeira 2022). Half credit."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.7,
+            "triceps_lateral_medial": 0.3
+          },
+          "rationale": "With the elbow fixed the long head acts as a shoulder extensor at long muscle length; overhead-position loading of the long head produced 1.5x the hypertrophy of neutral-position work (Maeo 2023). Long-head bias mirrors the overhead-extension anchor."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.25,
+          "rationale": "Anterior deltoid is an antagonist to the extension but showed moderate-to-strong EMG in pullovers, strongest in the bent-arm version (Electromyogr Clin Neurophysiol 2007); minor credit."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "The barbell pullover (30% body weight) emphasised pectoralis major activity more than latissimus dorsi in both concentric and eccentric phases; activation depended on the external lever arm.",
+          "source": "Marchetti PH, Uchida MC. Effects of the pullover exercise on the pectoralis major and latissimus dorsi muscles as evaluated by EMG. J Appl Biomech. 2011;27(4):380-384.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "21975179",
+          "doi": "10.1123/jab.27.4.380"
+        },
+        {
+          "claim": "Narrative review: the pullover preferentially activates pectoralis major rather than selectively targeting latissimus dorsi; relative amplitude depends strongly on shoulder joint position.",
+          "source": "Di Fonza et al. Electromyographic Analysis of Latissimus Dorsi Activation During Common Resistance Training Exercises: A Narrative Review. J Funct Morphol Kinesiol. 2026;11(3):315.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "42647355",
+          "doi": "10.3390/jfmk11030315"
+        },
+        {
+          "claim": "Pec major, latissimus and posterior deltoid iEMG in isometric pullover vs pulldown varied with shoulder position (0-180 deg), with a pullover-specific interaction for pec major.",
+          "source": "Teixeira FGS, et al. Differences Between Pullover and Pulldown Exercises on Maximal Isometric Force and Myoelectric Activity in Recreationally-Trained Men. Int J Exerc Sci. 2022;15(4).",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "35992501",
+          "doi": "10.70252/SYAL7537"
+        },
+        {
+          "claim": "In 24 men, clavicular pec activity was weak-to-moderate in both pullover modalities while anterior deltoid was moderate in the straight-arm and strong in the bent-arm pullover.",
+          "source": "Electromyographic validation of the deltoideus (anterior portion) and pectoralis major (clavicular portion) muscles in pull-over exercises. Electromyogr Clin Neurophysiol. 2007;47(6).",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "18051626"
+        },
+        {
+          "claim": "Elbow extension training with the shoulder overhead (long head lengthened) produced ~1.5x greater long-head and whole-triceps hypertrophy than in the neutral arm position.",
+          "source": "Maeo S, Wu Y, Huang M, et al. Triceps brachii hypertrophy is substantially greater after elbow extension training performed in the overhead versus neutral arm position. Eur J Sport Sci. 2023;23(7):1240-1250.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "35819335",
+          "doi": "10.1080/17461391.2022.2100279"
+        },
+        {
+          "claim": "Comparison of EMG during bench press and barbell pullover reported pec-dominant, lat-minor activation in the pullover (Campos & Silva, Motriz 2014).",
+          "source": "Campos YAC, Silva SF. Comparison of electromyographic activity during the bench press and barbell pullover exercises. Motriz Rev Educ Fis. 2014;20(2):200-205.",
+          "tier": "emg",
+          "confidence": "unverified"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Biggest correction in the batch: Bent-Arm_Barbell_Pullover currently has lats 1.0 / chest 0.5, the reverse of every EMG dataset; all pullovers are set chest 1.0 / lats 0.5. Triceps split flipped to long-head bias (the long head is the head that crosses the shoulder). delt_front reduced from 0.5 to 0.25 (antagonist with moderate co-activation). No pullover hypertrophy study exists; the lats share might be higher for the straight-arm variant executed with the arms kept behind the head (Teixeira 2022 position dependence), listed under open questions.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Straight-Arm_Dumbbell_Pullover",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.15,
+                "chest_mid": 0.45,
+                "chest_lower": 0.4
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.25,
+              "regionDistribution": {
+                "triceps_long": 0.8,
+                "triceps_lateral_medial": 0.2
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "With the elbow locked the triceps do no elbow work; only the long head contributes as a shoulder extensor, so triceps 0.25 with a stronger long-head share."
+        },
+        {
+          "exerciseId": "Front_Raise_And_Pullover",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.15,
+                "chest_mid": 0.45,
+                "chest_lower": 0.4
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.75
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.25,
+              "regionDistribution": {
+                "triceps_long": 0.8,
+                "triceps_lateral_medial": 0.2
+              }
+            }
+          ],
+          "reason": "Combination of a supine straight-arm front raise (anterior deltoid prime mover through 0-90 deg flexion) and a straight-arm pullover; the front-raise half earns delt_front 0.75."
+        },
+        {
+          "exerciseId": "Wide-Grip_Decline_Barbell_Pullover",
+          "mapping": [
+            {
+              "groupId": "chest",
+              "weight": 1,
+              "regionDistribution": {
+                "chest_upper": 0.1,
+                "chest_mid": 0.4,
+                "chest_lower": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.7,
+                "triceps_lateral_medial": 0.3
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Decline bench and wide grip push the arc toward the costal/abdominal fibres (Roy 2021 wide-pronated decline pattern); lats added at 0.5, missing from the current row."
+        }
+      ]
+    }
+  ],
+  "unassignedExerciseIds": [],
+  "openQuestions": [
+    "Product decision on stabiliser credit for push-ups: this batch removes the inconsistent abs 0.5 from Push-Up_Wide and the incline push-up variants (rectus ~13-19% MVC, isometric; Lehman 2006) and keeps abs/obliques only at 0.25 for suspension, unilateral and alternating variants. If the team wants planks and push-ups to colour the abs at all, apply one rule across all closed-chain pressing rather than per exercise.",
+    "Anterior deltoid credit for the flat press anchor: Lanza 2024 (MRI, 10 weeks bench-only) found AD CSA +15% vs pec +20%, and incline EMG at >=45 deg shows AD >= clavicular pec. The anchors fix delt_front at 0.5; consider whether steep inclines (>=45 deg) or a 0.75 value belong in a future brief revision.",
+    "Guillotine / Neck Press: the practitioner claim of extra upper-chest stimulus has no EMG or hypertrophy support; both are mapped as wide-grip flat presses (triceps 0.25). A dedicated study would settle whether they deserve an upper tilt.",
+    "Floor press: no EMG or hypertrophy study on PubMed; the bottom-range cut plausibly reduces the stretched-pec stimulus, but the brief has no ROM modifier, so full chest credit is kept.",
+    "Pullover lats share: EMG consistently shows pec-dominant activation, but Teixeira 2022 shows strong joint-position dependence; a straight-arm pullover performed only in the top half (arms behind the head) may be more lat-biased than the 0.5 given here. No pullover hypertrophy data exist.",
+    "Triceps region split in push-ups and dips: the anchors' lateral/medial bias comes from bench data (Brandao 2020). Dips and floor presses work the long head from a shoulder-extended position (Kholinne 2018), so the dip row uses {long .4}; there is no hypertrophy evidence for that shift.",
+    "Two citations are pre-1999 JSCR papers that PubMed does not index (Barnett 1995; Glass & Armstrong 1997) and one is from the non-indexed Int J Strength Cond (Roy/Arseneault/Sercia 2021); all three were read via publisher or journal pages and are marked 'likely'. The ACE/Schanke 2012 thesis and Campos & Silva 2014 are marked 'unverified' and used only as consensus support."
+  ]
+}

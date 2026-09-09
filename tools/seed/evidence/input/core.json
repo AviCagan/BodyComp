@@ -1,0 +1,1614 @@
+{
+  "batch": "core",
+  "scope": "Core: crunches, sit-ups, leg raises, planks, rollouts, woodchops, Russian twists, side bends, Pallof, hanging work, dead bugs, bird dogs",
+  "exercises": [
+    {
+      "id": "3_4_Sit-Up",
+      "name": "3/4 Sit-Up",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Ab_Crunch_Machine",
+      "name": "Ab Crunch Machine",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Ab_Roller",
+      "name": "Ab Roller",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Advanced_Kettlebell_Windmill",
+      "name": "Advanced Kettlebell Windmill",
+      "equipment": "kettlebell",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Air_Bike",
+      "name": "Air Bike",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Alternate_Heel_Touchers",
+      "name": "Alternate Heel Touchers",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Balance_Board",
+      "name": "Balance Board",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "other",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Ab_Rollout",
+      "name": "Barbell Ab Rollout",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Ab_Rollout_-_On_Knees",
+      "name": "Barbell Ab Rollout - On Knees",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Rollout_from_Bench",
+      "name": "Barbell Rollout from Bench",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Side_Bend",
+      "name": "Barbell Side Bend",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Bent-Knee_Hip_Raise",
+      "name": "Bent-Knee Hip Raise",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Bent_Press",
+      "name": "Bent Press",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Bosu_Ball_Cable_Crunch_With_Side_Bends",
+      "name": "Bosu Ball Cable Crunch With Side Bends",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Bottoms_Up",
+      "name": "Bottoms Up",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Butt-Ups",
+      "name": "Butt-Ups",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Cable_Crunch",
+      "name": "Cable Crunch",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Cable_Judo_Flip",
+      "name": "Cable Judo Flip",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Cable_Reverse_Crunch",
+      "name": "Cable Reverse Crunch",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Cable_Russian_Twists",
+      "name": "Cable Russian Twists",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Cable_Seated_Crunch",
+      "name": "Cable Seated Crunch",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Cocoons",
+      "name": "Cocoons",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Cross-Body_Crunch",
+      "name": "Cross-Body Crunch",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Crunch_-_Hands_Overhead",
+      "name": "Crunch - Hands Overhead",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Crunch_-_Legs_On_Exercise_Ball",
+      "name": "Crunch - Legs On Exercise Ball",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Crunches",
+      "name": "Crunches",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Dead_Bug",
+      "name": "Dead Bug",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Decline_Crunch",
+      "name": "Decline Crunch",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Decline_Oblique_Crunch",
+      "name": "Decline Oblique Crunch",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Decline_Reverse_Crunch",
+      "name": "Decline Reverse Crunch",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Double_Kettlebell_Windmill",
+      "name": "Double Kettlebell Windmill",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Side_Bend",
+      "name": "Dumbbell Side Bend",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Elbow_to_Knee",
+      "name": "Elbow to Knee",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Exercise_Ball_Crunch",
+      "name": "Exercise Ball Crunch",
+      "equipment": "exercise_ball",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Exercise_Ball_Pull-In",
+      "name": "Exercise Ball Pull-In",
+      "equipment": "exercise_ball",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Flat_Bench_Leg_Pull-In",
+      "name": "Flat Bench Leg Pull-In",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Flat_Bench_Lying_Leg_Raise",
+      "name": "Flat Bench Lying Leg Raise",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Frog_Sit-Ups",
+      "name": "Frog Sit-Ups",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Gorilla_Chin_Crunch",
+      "name": "Gorilla Chin/Crunch",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Hanging_Leg_Raise",
+      "name": "Hanging Leg Raise",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Hanging_Pike",
+      "name": "Hanging Pike",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Jackknife_Sit-Up",
+      "name": "Jackknife Sit-Up",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Janda_Sit-Up",
+      "name": "Janda Sit-Up",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Figure_8",
+      "name": "Kettlebell Figure 8",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Pass_Between_The_Legs",
+      "name": "Kettlebell Pass Between The Legs",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Windmill",
+      "name": "Kettlebell Windmill",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Knee_Hip_Raise_On_Parallel_Bars",
+      "name": "Knee/Hip Raise On Parallel Bars",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Kneeling_Cable_Crunch_With_Alternating_Oblique_Twists",
+      "name": "Kneeling Cable Crunch With Alternating Oblique Twists",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Landmine_180s",
+      "name": "Landmine 180's",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Leg_Pull-In",
+      "name": "Leg Pull-In",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Oblique_Crunches",
+      "name": "Oblique Crunches",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Oblique_Crunches_-_On_The_Floor",
+      "name": "Oblique Crunches - On The Floor",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_High-Pulley_Cable_Side_Bends",
+      "name": "One-Arm High-Pulley Cable Side Bends",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Medicine_Ball_Slam",
+      "name": "One-Arm Medicine Ball Slam",
+      "equipment": "medicine_ball",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Otis-Up",
+      "name": "Otis-Up",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Pallof_Press",
+      "name": "Pallof Press",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Pallof_Press_With_Rotation",
+      "name": "Pallof Press With Rotation",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Plank",
+      "name": "Plank",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Plate_Twist",
+      "name": "Plate Twist",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Press_Sit-Up",
+      "name": "Press Sit-Up",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Crunch",
+      "name": "Reverse Crunch",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Rope_Crunch",
+      "name": "Rope Crunch",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Russian_Twist",
+      "name": "Russian Twist",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Seated_Barbell_Twist",
+      "name": "Seated Barbell Twist",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Seated_Flat_Bench_Leg_Pull-In",
+      "name": "Seated Flat Bench Leg Pull-In",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Seated_Leg_Tucks",
+      "name": "Seated Leg Tucks",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Side_Bridge",
+      "name": "Side Bridge",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Side_Jackknife",
+      "name": "Side Jackknife",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Sit-Up",
+      "name": "Sit-Up",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Hip_Raise",
+      "name": "Smith Machine Hip Raise",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Spell_Caster",
+      "name": "Spell Caster",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Spider_Crawl",
+      "name": "Spider Crawl",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Cable_Lift",
+      "name": "Standing Cable Lift",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Standing_Cable_Wood_Chop",
+      "name": "Standing Cable Wood Chop",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Standing_Rope_Crunch",
+      "name": "Standing Rope Crunch",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Suspended_Fallout",
+      "name": "Suspended Fallout",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Suspended_Reverse_Crunch",
+      "name": "Suspended Reverse Crunch",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Tuck_Crunch",
+      "name": "Tuck Crunch",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Weighted_Ball_Side_Bend",
+      "name": "Weighted Ball Side Bend",
+      "equipment": "exercise_ball",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "obliques",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Weighted_Crunches",
+      "name": "Weighted Crunches",
+      "equipment": "medicine_ball",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Weighted_Sit-Ups_-_With_Bands",
+      "name": "Weighted Sit-Ups - With Bands",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        },
+        {
+          "g": "hip_flexors",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Wind_Sprints",
+      "name": "Wind Sprints",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "core",
+      "current": [
+        {
+          "g": "abs",
+          "w": 1
+        }
+      ]
+    }
+  ]
+}

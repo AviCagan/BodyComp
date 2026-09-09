@@ -1,0 +1,968 @@
+{
+  "batch": "small_groups",
+  "scope": "Calves and tibialis; upper traps, neck and spinal erectors as primaries (shrugs, high pulls, neck flexion/extension, supermans, rack pulls); forearms and grip (wrist curls, reverse wrist curls, wrist rollers, pinches, holds, farmer carries)",
+  "exercises": [
+    {
+      "id": "Barbell_Seated_Calf_Raise",
+      "name": "Barbell Seated Calf Raise",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.2,
+            "soleus": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Calf-Machine_Shoulder_Shrug",
+      "name": "Calf-Machine Shoulder Shrug",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "traps_upper",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Calf_Press",
+      "name": "Calf Press",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Calf_Press_On_The_Leg_Press_Machine",
+      "name": "Calf Press On The Leg Press Machine",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "squat",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Calf_Raise_On_A_Dumbbell",
+      "name": "Calf Raise On A Dumbbell",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Calf_Raises_-_With_Bands",
+      "name": "Calf Raises - With Bands",
+      "equipment": "bands",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Donkey_Calf_Raises",
+      "name": "Donkey Calf Raises",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Seated_One-Leg_Calf_Raise",
+      "name": "Dumbbell Seated One-Leg Calf Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.2,
+            "soleus": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Rocking_Standing_Calf_Raise",
+      "name": "Rocking Standing Calf Raise",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_Calf_Raise",
+      "name": "Seated Calf Raise",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.2,
+            "soleus": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Calf_Raise",
+      "name": "Smith Machine Calf Raise",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Reverse_Calf_Raises",
+      "name": "Smith Machine Reverse Calf Raises",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Barbell_Calf_Raise",
+      "name": "Standing Barbell Calf Raise",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Calf_Raises",
+      "name": "Standing Calf Raises",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Dumbbell_Calf_Raise",
+      "name": "Standing Dumbbell Calf Raise",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "calves",
+          "w": 1,
+          "d": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Shrug",
+      "name": "Barbell Shrug",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "traps_upper",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Barbell_Shrug_Behind_The_Back",
+      "name": "Barbell Shrug Behind The Back",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "traps_upper",
+          "w": 1
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Cable_Shrugs",
+      "name": "Cable Shrugs",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "traps_upper",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Shrug",
+      "name": "Dumbbell Shrug",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "traps_upper",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Isometric_Neck_Exercise_-_Front_And_Back",
+      "name": "Isometric Neck Exercise - Front And Back",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "neck",
+          "w": 1,
+          "d": {
+            "neck_flexors": 0.5,
+            "neck_extensors": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Isometric_Neck_Exercise_-_Sides",
+      "name": "Isometric Neck Exercise - Sides",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "neck",
+          "w": 1,
+          "d": {
+            "neck_flexors": 0.5,
+            "neck_extensors": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kettlebell_Sumo_High_Pull",
+      "name": "Kettlebell Sumo High Pull",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "traps_upper",
+          "w": 1
+        },
+        {
+          "g": "delt_side",
+          "w": 0.5
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "adductors",
+          "w": 0.5
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Leverage_Shrug",
+      "name": "Leverage Shrug",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "traps_upper",
+          "w": 1
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Lying_Face_Down_Plate_Neck_Resistance",
+      "name": "Lying Face Down Plate Neck Resistance",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "neck",
+          "w": 1,
+          "d": {
+            "neck_flexors": 0,
+            "neck_extensors": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Lying_Face_Up_Plate_Neck_Resistance",
+      "name": "Lying Face Up Plate Neck Resistance",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "neck",
+          "w": 1,
+          "d": {
+            "neck_flexors": 1,
+            "neck_extensors": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Rack_Pull_with_Bands",
+      "name": "Rack Pull with Bands",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "quads",
+          "w": 0.5,
+          "d": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Rack_Pulls",
+      "name": "Rack Pulls",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "erectors",
+          "w": 1
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "glutes",
+          "w": 0.5,
+          "d": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          }
+        },
+        {
+          "g": "hamstrings",
+          "w": 0.5,
+          "d": {
+            "hamstrings_hip_ext": 0.8,
+            "hamstrings_bf_short": 0.2
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Seated_Head_Harness_Neck_Resistance",
+      "name": "Seated Head Harness Neck Resistance",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "neck",
+          "w": 1,
+          "d": {
+            "neck_flexors": 0,
+            "neck_extensors": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Behind_the_Back_Shrug",
+      "name": "Smith Machine Behind the Back Shrug",
+      "equipment": "machine",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "traps_upper",
+          "w": 1
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Bottoms-Up_Clean_From_The_Hang_Position",
+      "name": "Bottoms-Up Clean From The Hang Position",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "olympic",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Cable_Wrist_Curl",
+      "name": "Cable Wrist Curl",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Lying_Pronation",
+      "name": "Dumbbell Lying Pronation",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Lying_Supination",
+      "name": "Dumbbell Lying Supination",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Finger_Curls",
+      "name": "Finger Curls",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Palms-Down_Dumbbell_Wrist_Curl_Over_A_Bench",
+      "name": "Palms-Down Dumbbell Wrist Curl Over A Bench",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Palms-Down_Wrist_Curl_Over_A_Bench",
+      "name": "Palms-Down Wrist Curl Over A Bench",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Palms-Up_Barbell_Wrist_Curl_Over_A_Bench",
+      "name": "Palms-Up Barbell Wrist Curl Over A Bench",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Palms-Up_Dumbbell_Wrist_Curl_Over_A_Bench",
+      "name": "Palms-Up Dumbbell Wrist Curl Over A Bench",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Plate_Pinch",
+      "name": "Plate Pinch",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_Dumbbell_Palms-Down_Wrist_Curl",
+      "name": "Seated Dumbbell Palms-Down Wrist Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_Dumbbell_Palms-Up_Wrist_Curl",
+      "name": "Seated Dumbbell Palms-Up Wrist Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_One-Arm_Dumbbell_Palms-Down_Wrist_Curl",
+      "name": "Seated One-Arm Dumbbell Palms-Down Wrist Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_One-Arm_Dumbbell_Palms-Up_Wrist_Curl",
+      "name": "Seated One-Arm Dumbbell Palms-Up Wrist Curl",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_Palm-Up_Barbell_Wrist_Curl",
+      "name": "Seated Palm-Up Barbell Wrist Curl",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_Palms-Down_Barbell_Wrist_Curl",
+      "name": "Seated Palms-Down Barbell Wrist Curl",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_Two-Arm_Palms-Up_Low-Pulley_Wrist_Curl",
+      "name": "Seated Two-Arm Palms-Up Low-Pulley Wrist Curl",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Olympic_Plate_Hand_Squeeze",
+      "name": "Standing Olympic Plate Hand Squeeze",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Standing_Palms-Up_Barbell_Behind_The_Back_Wrist_Curl",
+      "name": "Standing Palms-Up Barbell Behind The Back Wrist Curl",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Wrist_Roller",
+      "name": "Wrist Roller",
+      "equipment": "other",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Wrist_Rotations_with_Straight_Bar",
+      "name": "Wrist Rotations with Straight Bar",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "forearms",
+          "w": 1,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    }
+  ]
+}

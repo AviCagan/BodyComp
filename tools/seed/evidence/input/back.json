@@ -1,0 +1,2050 @@
+{
+  "batch": "back",
+  "scope": "Back: pull-ups, chin-ups, pulldowns, straight-arm pulldowns; barbell/dumbbell/cable/machine/T-bar rows, inverted rows, mid-back shrugs, scapular work",
+  "exercises": [
+    {
+      "id": "Band_Assisted_Pull-Up",
+      "name": "Band Assisted Pull-Up",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "other",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.25
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Chin-Up",
+      "name": "Chin-Up",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.25
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Close-Grip_Front_Lat_Pulldown",
+      "name": "Close-Grip Front Lat Pulldown",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Full_Range-Of-Motion_Lat_Pulldown",
+      "name": "Full Range-Of-Motion Lat Pulldown",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Gironda_Sternum_Chins",
+      "name": "Gironda Sternum Chins",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Mixed_Grip_Chin",
+      "name": "Mixed Grip Chin",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "One_Arm_Chin-Up",
+      "name": "One Arm Chin-Up",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.25
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "One_Arm_Lat_Pulldown",
+      "name": "One Arm Lat Pulldown",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Pullups",
+      "name": "Pullups",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Rocky_Pull-Ups_Pulldowns",
+      "name": "Rocky Pull-Ups/Pulldowns",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Rope_Straight-Arm_Pulldown",
+      "name": "Rope Straight-Arm Pulldown",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Side_To_Side_Chins",
+      "name": "Side To Side Chins",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Straight-Arm_Pulldown",
+      "name": "Straight-Arm Pulldown",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Underhand_Cable_Pulldowns",
+      "name": "Underhand Cable Pulldowns",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "V-Bar_Pulldown",
+      "name": "V-Bar Pulldown",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "V-Bar_Pullup",
+      "name": "V-Bar Pullup",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Wide-Grip_Lat_Pulldown",
+      "name": "Wide-Grip Lat Pulldown",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Wide-Grip_Pulldown_Behind_The_Neck",
+      "name": "Wide-Grip Pulldown Behind The Neck",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Wide-Grip_Rear_Pull-Up",
+      "name": "Wide-Grip Rear Pull-Up",
+      "equipment": "bodyweight",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Alternating_Kettlebell_Row",
+      "name": "Alternating Kettlebell Row",
+      "equipment": "kettlebell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Alternating_Renegade_Row",
+      "name": "Alternating Renegade Row",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "chest",
+          "w": 0.5,
+          "d": {
+            "chest_upper": 0.25,
+            "chest_mid": 0.5,
+            "chest_lower": 0.25
+          }
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Bent_Over_Barbell_Row",
+      "name": "Bent Over Barbell Row",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Bent_Over_One-Arm_Long_Bar_Row",
+      "name": "Bent Over One-Arm Long Bar Row",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.5
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Bent_Over_Two-Arm_Long_Bar_Row",
+      "name": "Bent Over Two-Arm Long Bar Row",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Bent_Over_Two-Dumbbell_Row",
+      "name": "Bent Over Two-Dumbbell Row",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Bent_Over_Two-Dumbbell_Row_With_Palms_In",
+      "name": "Bent Over Two-Dumbbell Row With Palms In",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Bodyweight_Mid_Row",
+      "name": "Bodyweight Mid Row",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Cable_Incline_Pushdown",
+      "name": "Cable Incline Pushdown",
+      "equipment": "cable",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "Dumbbell_Incline_Row",
+      "name": "Dumbbell Incline Row",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Elevated_Cable_Rows",
+      "name": "Elevated Cable Rows",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Incline_Bench_Pull",
+      "name": "Incline Bench Pull",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Inverted_Row",
+      "name": "Inverted Row",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Inverted_Row_with_Straps",
+      "name": "Inverted Row with Straps",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kipping_Muscle_Up",
+      "name": "Kipping Muscle Up",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kneeling_High_Pulley_Row",
+      "name": "Kneeling High Pulley Row",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kneeling_Single-Arm_High_Pulley_Row",
+      "name": "Kneeling Single-Arm High Pulley Row",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Leverage_High_Row",
+      "name": "Leverage High Row",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Leverage_Iso_Row",
+      "name": "Leverage Iso Row",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "London_Bridges",
+      "name": "London Bridges",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Lying_Cambered_Barbell_Row",
+      "name": "Lying Cambered Barbell Row",
+      "equipment": "barbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.25
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Lying_T-Bar_Row",
+      "name": "Lying T-Bar Row",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Middle_Back_Shrug",
+      "name": "Middle Back Shrug",
+      "equipment": "dumbbell",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.8,
+            "rhomboids": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Muscle_Up",
+      "name": "Muscle Up",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "abs",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        },
+        {
+          "g": "triceps",
+          "w": 0.5,
+          "d": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Dumbbell_Row",
+      "name": "One-Arm Dumbbell Row",
+      "equipment": "dumbbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Kettlebell_Row",
+      "name": "One-Arm Kettlebell Row",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "One-Arm_Long_Bar_Row",
+      "name": "One-Arm Long Bar Row",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Reverse_Grip_Bent-Over_Rows",
+      "name": "Reverse Grip Bent-Over Rows",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Rope_Climb",
+      "name": "Rope Climb",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "forearms",
+          "w": 0.5,
+          "d": {
+            "forearm_flexors": 0.5,
+            "forearm_extensors_brachioradialis": 0.5
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "delt_front",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Scapular_Pull-Up",
+      "name": "Scapular Pull-Up",
+      "equipment": "bodyweight",
+      "mechanic": "isolation",
+      "pattern": "isolation",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.8,
+            "rhomboids": 0.2
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Seated_Cable_Rows",
+      "name": "Seated Cable Rows",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Seated_One-arm_Cable_Pulley_Rows",
+      "name": "Seated One-arm Cable Pulley Rows",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "traps_upper",
+          "w": 0.5
+        }
+      ]
+    },
+    {
+      "id": "Shotgun_Row",
+      "name": "Shotgun Row",
+      "equipment": "cable",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "Sled_Row",
+      "name": "Sled Row",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Smith_Machine_Bent_Over_Row",
+      "name": "Smith Machine Bent Over Row",
+      "equipment": "machine",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Straight_Bar_Bench_Mid_Rows",
+      "name": "Straight Bar Bench Mid Rows",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Suspended_Row",
+      "name": "Suspended Row",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "T-Bar_Row_with_Handle",
+      "name": "T-Bar Row with Handle",
+      "equipment": "barbell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "erectors",
+          "w": 0.25
+        }
+      ]
+    },
+    {
+      "id": "Two-Arm_Kettlebell_Row",
+      "name": "Two-Arm Kettlebell Row",
+      "equipment": "kettlebell",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "upper_back",
+          "w": 1,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        },
+        {
+          "g": "lats",
+          "w": 0.75
+        },
+        {
+          "g": "delt_rear",
+          "w": 0.5
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "Weighted_Pull_Ups",
+      "name": "Weighted Pull Ups",
+      "equipment": "other",
+      "mechanic": "compound",
+      "pattern": "pull",
+      "current": [
+        {
+          "g": "lats",
+          "w": 1
+        },
+        {
+          "g": "biceps",
+          "w": 0.5,
+          "d": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          }
+        },
+        {
+          "g": "upper_back",
+          "w": 0.5,
+          "d": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          }
+        }
+      ]
+    }
+  ]
+}

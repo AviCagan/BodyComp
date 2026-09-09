@@ -1,0 +1,1486 @@
+{
+  "batch": "shoulder_isolation",
+  "families": [
+    {
+      "id": "lateral_raise",
+      "name": "Lateral raise (frontal / scapular-plane abduction, straight arm)",
+      "description": "Glenohumeral abduction from the side to ~90 degrees with a near-straight arm, with the load path lateral to the body (dumbbell, cable, band, side-lying). Middle deltoid is the prime mover; supraspinatus assists (invisible); upper trapezius upwardly rotates the scapula but is not credited (anchor row Side_Lateral_Raise = delt_side 1.0 only).",
+      "exerciseIds": [
+        "Side_Lateral_Raise",
+        "Seated_Side_Lateral_Raise",
+        "One-Arm_Side_Laterals",
+        "Lateral_Raise_-_With_Bands",
+        "Standing_Low-Pulley_Deltoid_Raise",
+        "One-Arm_Incline_Lateral_Raise",
+        "Power_Partials",
+        "Alternating_Deltoid_Raise",
+        "Dumbbell_Scaption",
+        "Iron_Cross"
+      ],
+      "mapping": [
+        {
+          "groupId": "delt_side",
+          "weight": 1,
+          "rationale": "Anchor row. Longitudinal ultrasound trial (Larsen 2025) shows 3-5% lateral-deltoid thickness gain from lateral raises alone; EMG consistently ranks lateral raise as the top middle-deltoid exercise."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Eight weeks of dumbbell or cable lateral raises to failure increased lateral deltoid muscle thickness 3.3-4.6% with no difference between implements; supports delt_side 1.0 for both dumbbell and cable variants.",
+          "source": "Larsen S, Wolf M, Schoenfeld BJ, et al. Dumbbell versus cable lateral raises for lateral deltoid hypertrophy: an experimental study. Front Physiol. 2025;16:1611468.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "40692697",
+          "doi": "10.3389/fphys.2025.1611468"
+        },
+        {
+          "claim": "In competitive bodybuilders, lateral raise with internal rotation produced the highest middle-deltoid and upper-trapezius EMG; neutral-humerus lateral raise still exceeded frontal raise for middle deltoid. Frontal raise mainly activated anterior deltoid and clavicular pec.",
+          "source": "Coratella G, Tornatore G, Longo S, Esposito F, Cè E. An Electromyographic Analysis of Lateral Raise Variations and Frontal Raise in Competitive Bodybuilders. Int J Environ Res Public Health. 2020;17(17):6015.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32824894",
+          "doi": "10.3390/ijerph17176015"
+        },
+        {
+          "claim": "Lateral raise at 60% 1RM gave the highest medial deltoid activation (30% MVIC) of bench press, fly, shoulder press and lateral raise, and also the highest posterior deltoid (24%); anterior deltoid was modest (21%).",
+          "source": "Campos YAC, Vianna JM, Guimarães MP, et al. Different Shoulder Exercises Affect the Activation of Deltoid Portions in Resistance-Trained Individuals. J Hum Kinet. 2020;75:5-14.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33312291",
+          "doi": "10.2478/hukin-2020-0033"
+        },
+        {
+          "claim": "Systematic review of 33 EMG studies: abductions and horizontal abductions produce the greatest middle-deltoid activation; lateral raise with internal rotation is the single highest.",
+          "source": "Rabello R, Bertozzi F, Hauschild de Freitas IL, et al. Activation of the three deltoid muscle portions during common strengthening exercises: A systematic review. J Bodyw Mov Ther. 2022;40:1309-1325.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "39593452",
+          "doi": "10.1016/j.jbmt.2022.12.002"
+        },
+        {
+          "claim": "Scapular-plane elevation ('full can') recruits middle deltoid ~52% MVIC and posterior deltoid ~38% MVIC; supraspinatus activity is similar across planes. Supports scaption as a middle-deltoid movement with extra anterior-deltoid share (scapular plane is 30 degrees anterior).",
+          "source": "Reinold MM, Macrina LC, Wilk KE, et al. Electromyographic analysis of the supraspinatus and deltoid muscles during 3 common rehabilitation exercises. J Athl Train. 2007;42(4):464-469.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "18174934"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Kept current delt_side 1.0 for the plain variants (anchor). Removed the unexplained forearms 0.5 on Standing_Low-Pulley_Deltoid_Raise (grip is not loaded meaningfully) and the flagged delt_front 0.5 on Power_Partials (palms-down/pinky-up partial is an internally rotated lateral raise, which biases middle deltoid further per Coratella 2020). Upper trapezius shows high EMG in lateral raises but is not credited, consistent with the anchor row. One-Arm_Incline_Lateral_Raise is side-lying on an incline: same mover, tension shifted to the bottom of the range.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Alternating_Deltoid_Raise",
+          "mapping": [
+            {
+              "groupId": "delt_side",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.75
+            }
+          ],
+          "reason": "Seed instructions: reps alternate front raise and lateral raise, so each head gets half the reps. delt_side keeps the family 1.0; delt_front 0.75 reflects a half-set of dedicated flexion work."
+        },
+        {
+          "exerciseId": "Dumbbell_Scaption",
+          "mapping": [
+            {
+              "groupId": "delt_side",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Scapular-plane raise (30 degrees forward) with thumbs up: anterior deltoid moment arm for elevation is large in this plane (Ackland 2008, Alenabi 2015 plane effect) so delt_front earns 0.5. Replaces the current traps_upper 0.5 (upper trap works as upward rotator; not credited in the anchor lateral raise either)."
+        },
+        {
+          "exerciseId": "Iron_Cross",
+          "mapping": [
+            {
+              "groupId": "delt_side",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.3,
+                "chest_mid": 0.5,
+                "chest_lower": 0.2
+              }
+            },
+            {
+              "groupId": "quads",
+              "weight": 0.5,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.5,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "No seed instructions; published descriptions (FitnessVolt, Fitbod) agree it is a squat performed while sweeping straight arms from a front-raise position out to a T and back. Lateral-raise hold under load is the limiting element (delt_side 1.0); the front position adds delt_front 0.5 and a light horizontal-adduction pec component (chest 0.25). Squat portion with very light load: quads/glutes 0.5, erectors 0.25. Removed the current hamstrings credit (the squat anchor gives none)."
+        }
+      ]
+    },
+    {
+      "id": "front_raise",
+      "name": "Front raise (sagittal-plane shoulder flexion, straight arm)",
+      "description": "Shoulder flexion from the thigh to shoulder height or overhead with a near-straight arm (dumbbell, plate, barbell, cable, incline-seated, both-hands). Anterior deltoid is the prime mover; clavicular pectoralis major is the main synergist (small credit). Includes isometric-front-hold and rotational variants (Car Drivers, Pirate Ships).",
+      "exerciseIds": [
+        "Front_Dumbbell_Raise",
+        "Front_Two-Dumbbell_Raise",
+        "Front_Cable_Raise",
+        "Front_Plate_Raise",
+        "Front_Incline_Dumbbell_Raise",
+        "Single_Dumbbell_Raise",
+        "Standing_Dumbbell_Straight-Arm_Front_Delt_Raise_Above_Head",
+        "Standing_Front_Barbell_Raise_Over_Head",
+        "Straight_Raises_on_Incline_Bench",
+        "Car_Drivers",
+        "Kettlebell_Pirate_Ships",
+        "Side_Laterals_to_Front_Raise"
+      ],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Prime mover of sagittal flexion; frontal raise is the exercise that most selectively activates anterior deltoid (Coratella 2020)."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.25,
+          "regionDistribution": {
+            "chest_upper": 0.8,
+            "chest_mid": 0.2,
+            "chest_lower": 0
+          },
+          "rationale": "Clavicular pec major is a shoulder flexor and was co-activated in frontal raise (Coratella 2020); minor credit, strongly upper-biased."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Frontal raise produced the greatest anterior deltoid and clavicular pectoralis major sEMG of all raise variations, with much lower middle and posterior deltoid activity.",
+          "source": "Coratella G, Tornatore G, Longo S, Esposito F, Cè E. An Electromyographic Analysis of Lateral Raise Variations and Frontal Raise in Competitive Bodybuilders. Int J Environ Res Public Health. 2020;17(17):6015.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32824894",
+          "doi": "10.3390/ijerph17176015"
+        },
+        {
+          "claim": "Front raise at 15RM elicits high normalized EMG (>60% MVIC for most recorded muscles incl. serratus anterior and trapezius) in novices, confirming it is a hard, not accessory, shoulder set.",
+          "source": "Jakobsen MD, Sundstrup E, Andersen CH, Zebis MK, Mortensen P, Andersen LL. Evaluation of muscle activity during a standardized shoulder resistance training bout in novice individuals. J Strength Cond Res. 2012;26(9):2515-2522.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22067242",
+          "doi": "10.1519/JSC.0b013e31823f29d9"
+        },
+        {
+          "claim": "Cadaveric tendon-excursion data: anterior deltoid and clavicular pectoralis major have the largest flexion moment arms of the muscles crossing the shoulder; middle deltoid's flexion moment arm is small.",
+          "source": "Ackland DC, Pak P, Richardson M, Pandy MG. Moment arms of the muscles crossing the anatomical shoulder. J Anat. 2008;213(4):383-390.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "18691376",
+          "doi": "10.1111/j.1469-7580.2008.00965.x"
+        },
+        {
+          "claim": "Prone overhead arm raise in line with the lower trapezius produces maximal lower-trapezius EMG and top-two middle-trapezius EMG; supports upper_back credit for the prone incline front raise.",
+          "source": "Ekstrom RA, Donatelli RA, Soderberg GL. Surface electromyographic analysis of exercises for the trapezius and serratus anterior muscles. J Orthop Sports Phys Ther. 2003;33(5):247-258.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "12774999",
+          "doi": "10.2519/jospt.2003.33.5.247"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Current delt_front 1.0 kept for all plain variants; chest 0.25 added as minor clavicular-pec credit. Single_Dumbbell_Raise is a two-hand front raise per the seed text (current flagged delt_side 1.0 was wrong). Front_Incline_Dumbbell_Raise gets the family mapping (incline seat lengthens the anterior deltoid at the bottom but does not change the mover).",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Standing_Dumbbell_Straight-Arm_Front_Delt_Raise_Above_Head",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.8,
+                "chest_mid": 0.2,
+                "chest_lower": 0
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Range continues past 90 degrees to overhead; the upper trapezius/serratus upward-rotation couple carries the top third (Ekstrom 2003)."
+        },
+        {
+          "exerciseId": "Standing_Front_Barbell_Raise_Over_Head",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.8,
+                "chest_mid": 0.2,
+                "chest_lower": 0
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Same as the dumbbell overhead front raise: full flexion to overhead adds an upward-rotation demand."
+        },
+        {
+          "exerciseId": "Straight_Raises_on_Incline_Bench",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.7,
+                "rhomboids": 0.3
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Seed instructions: prone on an incline bench, barbell hanging, raised out in front of the head with straight arms. This is a prone front raise toward a Y position: anterior deltoid moves the arm, lower/middle trapezius are heavily loaded (Ekstrom 2003 prone overhead raise). Current flagged delt_side 1.0 was wrong; no pec credit because gravity now loads the flexors against a prone torso."
+        },
+        {
+          "exerciseId": "Car_Drivers",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.5,
+              "regionDistribution": {
+                "forearm_flexors": 0.5,
+                "forearm_extensors_brachioradialis": 0.5
+              }
+            }
+          ],
+          "reason": "Plate held at arm's length in front while rotating like a steering wheel: a loaded isometric at 90 degrees flexion is the whole exercise (anterior deltoid), with pronation/supination work for the forearms. Current delt_side 1.0 was wrong."
+        },
+        {
+          "exerciseId": "Kettlebell_Pirate_Ships",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Seed text: two-hand kettlebell swung diagonally to head height while rotating side to side. Straight-arm flexion to head height with rotation: anterior deltoid prime, obliques drive the rotation, small middle-deltoid share on the diagonal. Removed flagged delt_side 1.0 and abs."
+        },
+        {
+          "exerciseId": "Side_Laterals_to_Front_Raise",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.75
+            }
+          ],
+          "reason": "Seed text: each rep is a front raise followed by a lateral sweep and lateral lowering, then the reverse order next rep; both heads get concentric and eccentric work on alternate reps. Replaces current traps_upper 0.5."
+        }
+      ]
+    },
+    {
+      "id": "rear_delt_fly",
+      "name": "Rear-delt raise / reverse fly (horizontal abduction, straight arm)",
+      "description": "Horizontal abduction of the humerus from ~90 degrees flexion toward the frontal plane with a near-straight arm, torso bent over, prone, seated-bent, or upright against a cable/band/machine/sled. Posterior deltoid is the prime mover; middle deltoid (posterior fibres) is a strong synergist in horizontal abduction; middle trapezius and rhomboids retract at end range.",
+      "exerciseIds": [
+        "Reverse_Flyes",
+        "Reverse_Flyes_With_External_Rotation",
+        "Reverse_Machine_Flyes",
+        "Cable_Rear_Delt_Fly",
+        "Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench",
+        "Seated_Bent-Over_Rear_Delt_Raise",
+        "Bent_Over_Low-Pulley_Side_Lateral",
+        "Dumbbell_Lying_One-Arm_Rear_Lateral_Raise",
+        "Dumbbell_Lying_Rear_Lateral_Raise",
+        "Lying_Rear_Delt_Raise",
+        "Lying_One-Arm_Lateral_Raise",
+        "Cable_Seated_Lateral_Raise",
+        "Sled_Reverse_Flye",
+        "Back_Flyes_-_With_Bands",
+        "Band_Pull_Apart"
+      ],
+      "mapping": [
+        {
+          "groupId": "delt_rear",
+          "weight": 1,
+          "rationale": "Highest posterior-deltoid activation of any single-joint exercise (reverse pec deck 87% MVIC prone horizontal abduction in Reinold 2007; Franke 2014)."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.5,
+          "rationale": "Middle deltoid EMG in prone horizontal abduction is 63-87% MVIC (Reinold 2004/2007) and the systematic review ranks horizontal abductions among the top middle-deltoid movements; secondary credit."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.5,
+          "regionDistribution": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          },
+          "rationale": "Scapular retraction at end range loads middle trapezius and rhomboids; horizontal extension with ER is a top middle-trapezius exercise (Ekstrom 2003)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Prone horizontal abduction at 100 degrees with full external rotation gave the highest posterior deltoid (88% MVIC), middle deltoid (87% MVIC) and supraspinatus activity of seven external-rotation exercises (fine-wire EMG).",
+          "source": "Reinold MM, Wilk KE, Fleisig GS, et al. Electromyographic analysis of the rotator cuff and deltoid musculature during common shoulder external rotation exercises. J Orthop Sports Phys Ther. 2004;34(7):385-394.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "15296366",
+          "doi": "10.2519/jospt.2004.34.7.385"
+        },
+        {
+          "claim": "Prone full-can (horizontal abduction with ER) recruited posterior deltoid 87% MVIC and middle deltoid 63% MVIC, significantly more than standing scaption; supports delt_side secondary credit in rear-delt raises.",
+          "source": "Reinold MM, Macrina LC, Wilk KE, et al. Electromyographic analysis of the supraspinatus and deltoid muscles during 3 common rehabilitation exercises. J Athl Train. 2007;42(4):464-469.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "18174934"
+        },
+        {
+          "claim": "On the reverse-fly machine a neutral hand position increased posterior deltoid and infraspinatus EMG versus a pronated grip; either grip trains the posterior deltoid as the target.",
+          "source": "Schoenfeld B, Sonmez RGT, Kolber MJ, Contreras B, Harris R, Ozen S. Effect of hand position on EMG activity of the posterior shoulder musculature during a horizontal abduction exercise. J Strength Cond Res. 2013;27(10):2644-2649.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "23302754",
+          "doi": "10.1519/JSC.0b013e318281e1e9"
+        },
+        {
+          "claim": "Reverse pec deck produced greater posterior deltoid activation than seated row and lat pulldown, and greater middle deltoid activation than pulldown.",
+          "source": "Franke Rde A, Botton CE, Rodrigues R, Pinto RS, Lima CS. Analysis of anterior, middle and posterior deltoid activation during single and multijoint exercises. J Sports Med Phys Fitness. 2015;55(7-8):714-721.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24947920"
+        },
+        {
+          "claim": "Prone horizontal abduction at 90 degrees with full ER (thumb up) produced the highest iEMG of posterior deltoid, infraspinatus, teres minor, middle and lower trapezius among six rehabilitation exercises.",
+          "source": "Kumar M, Srivastava S, Das VS. Electromyographic analysis of selected shoulder muscles during rehabilitation exercises. J Back Musculoskelet Rehabil. 2018;31(5):947-954.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "30010102",
+          "doi": "10.3233/BMR-171020"
+        },
+        {
+          "claim": "Shoulder horizontal extension with external rotation is one of the two exercises producing the greatest middle-trapezius EMG.",
+          "source": "Ekstrom RA, Donatelli RA, Soderberg GL. Surface electromyographic analysis of exercises for the trapezius and serratus anterior muscles. J Orthop Sports Phys Ther. 2003;33(5):247-258.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "12774999",
+          "doi": "10.2519/jospt.2003.33.5.247"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Kept delt_rear 1.0 everywhere. Added delt_side 0.5 across the family on EMG grounds (middle deltoid 63-87% MVIC in horizontal abduction); this is a calibration choice the reviewer may trim to 0.25. Fixed four mis-mapped rows: Reverse_Machine_Flyes (was delt_side/delt_front, flagged), Cable_Seated_Lateral_Raise (seed text is a seated bent-over cable raise with crossed cables, i.e. a rear-delt raise, not a lateral raise), Lying_One-Arm_Lateral_Raise (prone on a flat bench = rear-delt raise; current delt_rear was already right), Back_Flyes_-_With_Bands (dropped triceps 0.5; the arms stay straight so triceps do no meaningful work). Dropped erectors and traps_upper from Bent_Over_Low-Pulley_Side_Lateral (isometric torso hold only). Reverse_Flyes_With_External_Rotation: thumbs-up adds infraspinatus/teres minor, which the taxonomy proxies through delt_rear, so the family mapping stands.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Band_Pull_Apart",
+          "mapping": [
+            {
+              "groupId": "delt_rear",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.75,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Band tension peaks at full retraction, shifting emphasis to middle trapezius/rhomboids; the arm stays at shoulder height so middle-deltoid share is smaller. Removed the current traps_upper 0.5 (shrugging is a form fault here)."
+        }
+      ]
+    },
+    {
+      "id": "face_pull_rear_delt_row",
+      "name": "Face pull / rear-delt row (elbows-high horizontal pull)",
+      "description": "Horizontal abduction with flexed, flared elbows pulling a rope or bar toward the face, neck or upper chest, usually with external rotation at the end. Posterior deltoid and middle trapezius/rhomboids share the work; elbow flexors and upper trapezius assist.",
+      "exerciseIds": ["Face_Pull", "Cable_Rope_Rear-Delt_Rows", "Low_Pulley_Row_To_Neck", "Barbell_Rear_Delt_Row"],
+      "mapping": [
+        {
+          "groupId": "delt_rear",
+          "weight": 1,
+          "rationale": "Horizontal abduction plus external rotation at 90 degrees abduction: posterior deltoid, infraspinatus and teres minor (proxied by delt_rear) are the movers."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.75,
+          "regionDistribution": {
+            "traps_mid_lower": 0.6,
+            "rhomboids": 0.4
+          },
+          "rationale": "Retraction against the cable is a larger share than in a straight-arm fly; horizontal extension with ER is a top middle-trapezius exercise (Ekstrom 2003). Kept below the row anchor's 1.0 because elbows stay high and the load is light."
+        },
+        {
+          "groupId": "biceps",
+          "weight": 0.25,
+          "regionDistribution": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          },
+          "rationale": "Elbows flex under load through the pull; smaller than a row's 0.5 because the rope travels little and the grip is neutral/pronated."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.25,
+          "rationale": "Elbows-high line of pull involves upper trapezius (highest upper-trap iEMG in standing ER at 90 degrees abduction, Kumar 2018)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Standing ER at 90 degrees abduction with 90 degrees elbow flexion (the face-pull end position) produced the highest upper-trapezius iEMG, while prone horizontal abduction with ER produced the highest posterior deltoid, infraspinatus, teres minor, middle and lower trapezius iEMG.",
+          "source": "Kumar M, Srivastava S, Das VS. Electromyographic analysis of selected shoulder muscles during rehabilitation exercises. J Back Musculoskelet Rehabil. 2018;31(5):947-954.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "30010102",
+          "doi": "10.3233/BMR-171020"
+        },
+        {
+          "claim": "ER at 90 degrees abduction with 90 degrees elbow flexion produces high infraspinatus + teres minor synergy with the least posterior-deltoid activity of three exercises; face pulls therefore load the cuff (delt_rear proxy) as much as the deltoid itself.",
+          "source": "Singh GK, Srivastava S, Kumar M, Ratnakar S. Effects of selected rehabilitative exercises on external rotator muscles and trapezius muscles of masonry workers. Work. 2018;60(3):437-444.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "30040788",
+          "doi": "10.3233/WOR-182757"
+        },
+        {
+          "claim": "Shoulder horizontal extension with external rotation produced among the greatest middle-trapezius EMG amplitudes of ten exercises.",
+          "source": "Ekstrom RA, Donatelli RA, Soderberg GL. Surface electromyographic analysis of exercises for the trapezius and serratus anterior muscles. J Orthop Sports Phys Ther. 2003;33(5):247-258.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "12774999",
+          "doi": "10.2519/jospt.2003.33.5.247"
+        },
+        {
+          "claim": "No PubMed-indexed EMG study of the cable face pull itself was found; mapping is calibrated between the reverse-fly EMG data and the Bent_Over_Barbell_Row anchor (upper_back 1.0, delt_rear 0.5, biceps 0.5).",
+          "source": "Practitioner consensus (face pull programmed as a rear-delt / mid-trap exercise), calibrated against brief anchors.",
+          "tier": "consensus",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Face_Pull: kept delt_rear 1.0, raised upper_back from 0.5 to 0.75 and added the small biceps/upper-trap credits. Low_Pulley_Row_To_Neck is a seated rope face pull per the seed text (elbows parallel to floor, hands to the ears); the current flagged delt_side/delt_front mapping was wrong. Cable_Rope_Rear-Delt_Rows: same movement, dropped biceps from 0.5 to 0.25.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Barbell_Rear_Delt_Row",
+          "mapping": [
+            {
+              "groupId": "delt_rear",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.75,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.5,
+                "brachialis": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.25
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Bent-over barbell row with elbows flared and bar pulled to the upper chest: heavier load than a cable face pull, so biceps 0.5 (row anchor), a small lats share (0.25, the flared elbow removes most lat leverage vs the anchor's 0.75) and erectors 0.25 for the bent-over hold (matches the row anchor). No upper-trap credit."
+        }
+      ]
+    },
+    {
+      "id": "upright_row",
+      "name": "Upright row (elbows-lead vertical pull)",
+      "description": "Pulling a bar, dumbbells, cable or band vertically along the body to chin/upper-chest height with the elbows leading: shoulder abduction (largely internally rotated) plus scapular elevation and elbow flexion. Middle deltoid and upper trapezius are the movers; elbow flexors and anterior deltoid assist.",
+      "exerciseIds": [
+        "Upright_Barbell_Row",
+        "Upright_Cable_Row",
+        "Upright_Row_-_With_Bands",
+        "Smith_Machine_Upright_Row",
+        "Smith_Machine_One-Arm_Upright_Row",
+        "Dumbbell_One-Arm_Upright_Row",
+        "Standing_Dumbbell_Upright_Row",
+        "Dumbbell_Raise"
+      ],
+      "mapping": [
+        {
+          "groupId": "delt_side",
+          "weight": 1,
+          "rationale": "Abduction with internal rotation is the highest middle-deltoid activation pattern (Coratella 2020; Rabello 2022); lateral deltoid EMG rises with grip width (McAllister 2013)."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.75,
+          "rationale": "Scapular elevation under load throughout; upper trapezius EMG is high and increases with grip width (McAllister 2013). Strong synergist."
+        },
+        {
+          "groupId": "biceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "biceps": 0.4,
+            "brachialis": 0.6
+          },
+          "rationale": "Elbows flex to ~90 degrees or more against the load; pronated grip favours brachialis (and brachioradialis) over biceps brachii. Biceps EMG falls as grip widens (McAllister 2013)."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.25,
+          "rationale": "Anterior deltoid is active (significant eccentric differences across grips in McAllister 2013) because the bar path is slightly anterior to the frontal plane; minor credit."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "In the upright row, lateral and posterior deltoid and upper/middle trapezius EMG increased and biceps EMG decreased as grip width increased from 50% to 200% biacromial breadth; wide grip maximises deltoid and trapezius involvement.",
+          "source": "McAllister MJ, Schilling BK, Hammond KG, Weiss LW, Farney TM. Effect of grip width on electromyographic activity during the upright row. J Strength Cond Res. 2013;27(1):181-187.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22362088",
+          "doi": "10.1519/JSC.0b013e31824f23ad"
+        },
+        {
+          "claim": "Lateral raise with humeral internal rotation (the upright-row shoulder position) produced the greatest middle-deltoid and upper-trapezius activation of all raise variants.",
+          "source": "Coratella G, Tornatore G, Longo S, Esposito F, Cè E. An Electromyographic Analysis of Lateral Raise Variations and Frontal Raise in Competitive Bodybuilders. Int J Environ Res Public Health. 2020;17(17):6015.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32824894",
+          "doi": "10.3390/ijerph17176015"
+        },
+        {
+          "claim": "Biceps, brachialis and brachioradialis are all strongly active in resisted elbow flexion in neutral, pronated and supinated forearm positions; brachioradialis peaks late in flexion. Supports brachialis-biased elbow-flexor credit for the pronated upright row.",
+          "source": "Caufriez B, Dugailly PM, Brassinne E, Schuind F. The Role of the Muscle Brachioradialis in Elbow Flexion: An Electromyographic Study. J Hand Surg Asian Pac Vol. 2018;23(1):102-110.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29409427",
+          "doi": "10.1142/S2424835518500145"
+        },
+        {
+          "claim": "Systematic review: abduction-type exercises (incl. upright row) rank highest for middle deltoid activation.",
+          "source": "Rabello R, Bertozzi F, Hauschild de Freitas IL, et al. Activation of the three deltoid muscle portions during common strengthening exercises: A systematic review. J Bodyw Mov Ther. 2022;40:1309-1325.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "39593452",
+          "doi": "10.1016/j.jbmt.2022.12.002"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Current delt_side 1.0 / traps_upper 0.75 kept. Added the missing biceps 0.5 to the barbell, cable and band rows (dumbbell and Smith rows already had it) and dropped the current upper_back 0.5 on Smith_Machine_Upright_Row (retraction is minimal; the scapula elevates and upwardly rotates). Dumbbell_Raise belongs here: the seed text describes dumbbells drawn up along the sides of the body to chin height with the elbows leading, i.e. a dumbbell upright row (current flagged delt_side/delt_front/biceps mapping was close but mislabeled). One-arm variants keep the same mapping.",
+      "perExerciseOverrides": []
+    },
+    {
+      "id": "external_rotation",
+      "name": "Shoulder external rotation (rotator-cuff isolation)",
+      "description": "Rotation of the humerus outward at 0 degrees abduction (dumbbell side-lying, cable, band) or at 90 degrees abduction. Infraspinatus and teres minor are the movers, with posterior deltoid assisting. There is no rotator-cuff group, so delt_rear is credited at 1.0 as the brief's proxy.",
+      "exerciseIds": [
+        "External_Rotation",
+        "External_Rotation_with_Band",
+        "External_Rotation_with_Cable",
+        "Cuban_Press"
+      ],
+      "mapping": [
+        {
+          "groupId": "delt_rear",
+          "weight": 1,
+          "rationale": "Proxy per brief: infraspinatus/teres minor are the prime movers (62-67% MVIC in side-lying ER); posterior deltoid is the visible external rotator and assists, so the user sees the rear delt coloured."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Side-lying ER at 0 degrees abduction produced the greatest infraspinatus (62% MVIC) and teres minor (67% MVIC) activity of seven ER exercises; posterior deltoid was moderately active in standing/side-lying ER.",
+          "source": "Reinold MM, Wilk KE, Fleisig GS, et al. Electromyographic analysis of the rotator cuff and deltoid musculature during common shoulder external rotation exercises. J Orthop Sports Phys Ther. 2004;34(7):385-394.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "15296366",
+          "doi": "10.2519/jospt.2004.34.7.385"
+        },
+        {
+          "claim": "Standing ER and side-lying ER produced higher infraspinatus and lower-trapezius activity than middle deltoid or supraspinatus, confirming these are cuff-dominant with little deltoid work.",
+          "source": "Fukunaga T, Orishimo KF, McHugh MP. Electromyographic analysis of select eccentric-focused rotator cuff exercises. Physiother Theory Pract. 2022;38(13):2554-2562.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "34313183",
+          "doi": "10.1080/09593985.2021.1949767"
+        },
+        {
+          "claim": "ER at 90 degrees abduction with 90 degrees elbow flexion produces high infraspinatus/teres minor synergy with the least posterior-deltoid activity of the three exercises tested (relevant to the Cuban press rotation phase).",
+          "source": "Singh GK, Srivastava S, Kumar M, Ratnakar S. Effects of selected rehabilitative exercises on external rotator muscles and trapezius muscles of masonry workers. Work. 2018;60(3):437-444.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "30040788",
+          "doi": "10.3233/WOR-182757"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Kept current delt_rear 1.0 for all three plain ER rows: correct under the brief's proxy rule. Note in copy that this colour represents rotator-cuff work, not posterior-deltoid hypertrophy. Cuban_Press is placed here because its limiting phase is the externally rotated 'scarecrow' segment.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Cuban_Press",
+          "mapping": [
+            {
+              "groupId": "delt_rear",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Seed text: upright-row position (upper arms parallel to floor, middle deltoid/upper trap hold), external rotation to vertical forearms (cuff, delt_rear proxy 1.0), then an overhead press (anterior deltoid + triceps). Load is limited by the rotation phase, so the press phase gets secondary credit. Replaced current triceps distribution {long .7} with the press pattern {long .3, lateral_medial .7} because the long head is shortened at the shoulder during an overhead press lockout."
+        }
+      ]
+    },
+    {
+      "id": "internal_rotation",
+      "name": "Shoulder internal rotation (rotator-cuff isolation)",
+      "description": "Rotation of the humerus inward at 0 degrees abduction against a cable or band. Subscapularis is the prime mover, with pectoralis major, latissimus dorsi/teres major and anterior deltoid as internal-rotation synergists. No cuff group exists, so the anterior deltoid is credited as the visible proxy.",
+      "exerciseIds": ["Cable_Internal_Rotation", "Internal_Rotation_with_Band"],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Proxy: subscapularis is invisible; anterior deltoid is an internal rotator and is the front-of-shoulder region a user expects coloured after cuff work. Mirrors the brief's ER -> delt_rear rule."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.25,
+          "regionDistribution": {
+            "chest_upper": 0.3,
+            "chest_mid": 0.5,
+            "chest_lower": 0.2
+          },
+          "rationale": "Pectoralis major is an internal rotator recorded during IR exercises (Decker 2003); minor credit because the load is light at 0 degrees abduction."
+        },
+        {
+          "groupId": "lats",
+          "weight": 0.25,
+          "rationale": "Latissimus dorsi/teres major are internal rotators recorded during IR exercises (Decker 2003); minor credit."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Across seven strengthening exercises with EMG of latissimus dorsi, teres major, pectoralis major and upper/lower subscapularis, internal rotation at 0 degrees abduction activated both subscapularis portions, and push-up plus/diagonal patterns activated them more; pec major and lats are co-active in IR tasks.",
+          "source": "Decker MJ, Tokish JM, Ellis HB, Torry MR, Hawkins RJ. Subscapularis muscle activity during selected rehabilitation exercises. Am J Sports Med. 2003;31(1):126-134.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "12531769",
+          "doi": "10.1177/03635465030310010601"
+        },
+        {
+          "claim": "Cadaveric moment-arm data show the anterior deltoid, pectoralis major and latissimus dorsi possess internal-rotation moment arms at low abduction angles, supporting them as synergists to subscapularis.",
+          "source": "Ackland DC, Pandy MG. Moment arms of the shoulder muscles during axial rotation. J Orthop Res. 2011;29(5):658-667.",
+          "tier": "anatomical",
+          "confidence": "unverified",
+          "doi": "10.1002/jor.21269"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "low",
+      "notes": "Current flagged delt_front 1.0 kept as the proxy and de-flagged with the rationale above; chest and lats 0.25 added so the two real synergists get a little colour. If the product later adds a rotator-cuff group both IR and ER families should move to it.",
+      "perExerciseOverrides": []
+    },
+    {
+      "id": "scapular_protraction",
+      "name": "Incline shoulder raise (loaded scapular protraction)",
+      "description": "Lying back on an incline bench with arms locked overhead and lifting the load by protracting the scapulae only (serratus anterior 'plus' movement). Serratus anterior and pectoralis minor are the movers; the anterior deltoid holds the arm isometrically and clavicular pec assists protraction. No serratus group exists, so credit goes to the nearest visible groups per the brief.",
+      "exerciseIds": [
+        "Barbell_Incline_Shoulder_Raise",
+        "Dumbbell_Incline_Shoulder_Raise",
+        "Smith_Incline_Shoulder_Raise"
+      ],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Proxy per brief ('serratus work -> chest at 0.5 or delt_front'): the family needs a 1.0 and the front of the shoulder is where the user feels the movement; anterior deltoid holds ~110 degrees flexion under load throughout."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.5,
+          "regionDistribution": {
+            "chest_upper": 0.5,
+            "chest_mid": 0.4,
+            "chest_lower": 0.1
+          },
+          "rationale": "Proxy for serratus anterior/pectoralis minor plus genuine clavicular/sternal pec contribution to protraction on an incline (Torres 2016 recorded pec major during push-up plus)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Exercises with a scapular protraction component (dynamic hug plus, push-up plus) selectively activate middle and lower serratus anterior with low upper-trapezius involvement.",
+          "source": "Park SY, Yoo WG, Kim MH, Oh JS, An DH. Differences in EMG activity during exercises targeting the scapulothoracic region: a preliminary study. Man Ther. 2013;18(6):512-518.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "23669437",
+          "doi": "10.1016/j.math.2013.04.002"
+        },
+        {
+          "claim": "During the push-up plus, serratus anterior, anterior deltoid, pectoralis major and triceps are all recorded as active; the protraction phase increases serratus and lower/middle trapezius activity.",
+          "source": "Torres RJB, Pirauá ALT, Nascimento VYS, et al. Shoulder Muscle Activation Levels During the Push-Up-Plus Exercise on Stable and Unstable Surfaces. J Sport Rehabil. 2017;26(4):281-286.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "27632870",
+          "doi": "10.1123/jsr.2016-0050"
+        },
+        {
+          "claim": "Serratus anterior is maximally activated by exercises requiring large scapular upward rotation/protraction; push-up plus and diagonal patterns are superior to conventional pressing for serratus.",
+          "source": "Ekstrom RA, Donatelli RA, Soderberg GL. Surface electromyographic analysis of exercises for the trapezius and serratus anterior muscles. J Orthop Sports Phys Ther. 2003;33(5):247-258.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "12774999",
+          "doi": "10.2519/jospt.2003.33.5.247"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "low",
+      "notes": "All three current rows were flagged guesses (delt_side 1.0 / delt_front 0.5 / chest 0.5). Seed text confirms the movement is a straight-arm protraction, not abduction, so delt_side is removed. Both credited groups are proxies; a future serratus group would take the 1.0.",
+      "perExerciseOverrides": []
+    },
+    {
+      "id": "kb_jerk_overhead",
+      "name": "Kettlebell jerk / thruster (leg-drive overhead press)",
+      "description": "Overhead ballistic press from the rack: a shallow dip and drive with the legs, the arm(s) lock the bell(s) out overhead (jerk, split jerk, clean-and-jerk, thruster). Anterior deltoid and triceps finish the lift; quadriceps/glutes/calves supply the drive.",
+      "exerciseIds": [
+        "Double_Kettlebell_Jerk",
+        "One-Arm_Kettlebell_Jerk",
+        "One-Arm_Kettlebell_Split_Jerk",
+        "Two-Arm_Kettlebell_Jerk",
+        "One-Arm_Kettlebell_Clean_and_Jerk",
+        "Kettlebell_Thruster"
+      ],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Overhead press pattern: anterior deltoid has the highest activation of the deltoid heads in shoulder pressing (Campos 2020) and controls the catch and lockout."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.5,
+          "rationale": "Middle deltoid activation in shoulder press is close to that of anterior deltoid (27.9 vs 33.3% MVIC, Campos 2020); the bell sits slightly lateral in the rack."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Elbow lockout under load; the long head is shortened at the shoulder overhead so lateral/medial heads dominate (opposite of the overhead-extension anchor)."
+        },
+        {
+          "groupId": "quads",
+          "weight": 0.5,
+          "regionDistribution": {
+            "quads_rf": 0.15,
+            "quads_vasti": 0.85
+          },
+          "rationale": "Dip-and-drive is a quarter squat performed explosively; the legs generate most of the vertical impulse in kettlebell ballistics (Lake 2014)."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.25,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Hip extension in the drive is short-range; minor credit."
+        },
+        {
+          "groupId": "calves",
+          "weight": 0.25,
+          "regionDistribution": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "rationale": "Explosive plantarflexion completes the drive (triple extension); minor credit."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Shoulder press produced the highest anterior deltoid activation (33.3% MVIC) and near-equal medial deltoid activation (27.9% MVIC) with low posterior deltoid, establishing the delt_front 1.0 / delt_side 0.5 split for overhead pressing.",
+          "source": "Campos YAC, Vianna JM, Guimarães MP, et al. Different Shoulder Exercises Affect the Activation of Deltoid Portions in Resistance-Trained Individuals. J Hum Kinet. 2020;75:5-14.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33312291",
+          "doi": "10.2478/hukin-2020-0033"
+        },
+        {
+          "claim": "Kettlebell ballistic exercise performs most of its mechanical work displacing the lifter+bell centre of mass vertically (253 J vs 3 J horizontally), i.e. the legs and hips, not the arms, generate the impulse.",
+          "source": "Lake JP, Hetzler BS, Lauder MA. Magnitude and relative distribution of kettlebell snatch force-time characteristics. J Strength Cond Res. 2014;28(11):3063-3072.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24845206",
+          "doi": "10.1519/JSC.0000000000000538"
+        },
+        {
+          "claim": "No PubMed-indexed EMG study of the kettlebell jerk or thruster was found; the leg-drive/lockout split follows triple-extension biomechanics and practitioner consensus for push press/jerk.",
+          "source": "Practitioner consensus and biomechanical reasoning (dip-drive quarter squat + arm lockout).",
+          "tier": "consensus",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Kept current delt_front 1.0 / delt_side 0.5 / triceps 0.5 / quads 0.5 / calves 0.5-0.25 shape, but switched the triceps distribution from the overhead-extension pattern {long .7} to the press pattern {long .3, lateral_medial .7} and trimmed calves to 0.25. Split jerks land in a lunge but the load is caught, not driven by the split legs, so they keep the family mapping.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "One-Arm_Kettlebell_Clean_and_Jerk",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "quads",
+              "weight": 0.5,
+              "regionDistribution": {
+                "quads_rf": 0.15,
+                "quads_vasti": 0.85
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.5,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.5,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.25,
+              "regionDistribution": {
+                "gastrocnemius": 0.7,
+                "soleus": 0.3
+              }
+            }
+          ],
+          "reason": "Each rep includes a swing-style clean (hip hinge: glute max ~80% MVC, erectors ~50% MVC in McGill 2012) before the jerk, so hinge muscles are added at 0.5."
+        },
+        {
+          "exerciseId": "Kettlebell_Thruster",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            }
+          ],
+          "reason": "A full front squat followed by a press: the squat half takes the Barbell_Squat anchor (quads 1.0, glutes 0.75, adductors 0.5, erectors 0.5) and the press half takes the family shoulder credits. Two primary movers, both at 1.0."
+        }
+      ]
+    },
+    {
+      "id": "kb_snatch_clean",
+      "name": "Kettlebell snatch / clean (ballistic hip hinge)",
+      "description": "Swing-based ballistic lifts: the bell is hiked between the legs and driven by explosive hip extension to the rack (clean) or overhead (snatch). Gluteus maximus, hamstrings and erectors generate the power; shoulders guide and receive the bell.",
+      "exerciseIds": [
+        "Double_Kettlebell_Snatch",
+        "One-Arm_Kettlebell_Snatch",
+        "One-Arm_Kettlebell_Split_Snatch",
+        "Two-Arm_Kettlebell_Clean"
+      ],
+      "mapping": [
+        {
+          "groupId": "glutes",
+          "weight": 1,
+          "regionDistribution": {
+            "glute_max": 0.85,
+            "glute_med": 0.15
+          },
+          "rationale": "Kettlebell swing/snatch pattern: gluteal activation ~80% MVC per rep (McGill 2012); prime mover of the hip hinge."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.75,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Hip-extension hamstrings work eccentrically in the backswing and concentrically in the drive; strong synergist, no knee-flexion component (mirrors the RDL anchor)."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.75,
+          "rationale": "Low-back extensors ~50% MVC with rapid activation-relaxation cycles and ~3,200 N compression (McGill 2012); erector EMG was significantly higher in swings than snatches (Lyons 2017), so 0.75 rather than 1.0."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.5,
+          "rationale": "High-pull/shrug phase guiding the bell up the body before the punch-through; secondary credit."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.5,
+          "rationale": "Anterior deltoid guides the bell through the arc and receives it overhead; recorded in the Lyons 2017 snatch/clean EMG set. Secondary, not primary: the arm does little of the work (Lake 2014)."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.25,
+          "rationale": "Middle deltoid assists the overhead receive; minor credit."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.25,
+          "regionDistribution": {
+            "forearm_flexors": 0.7,
+            "forearm_extensors_brachioradialis": 0.3
+          },
+          "rationale": "Grip is the classic limiter of high-rep snatch sets; minor credit for the loaded isometric grip."
+        },
+        {
+          "groupId": "obliques",
+          "weight": 0.25,
+          "rationale": "Contralateral external oblique activity was significantly higher in one-arm snatch and clean than in swings (Lyons 2017); anti-rotation credit for the one-arm lifts."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Kettlebell swings and snatches create a hip-hinge pattern with rapid muscle bursts of ~50% MVC in the low-back extensors and ~80% MVC in the gluteals, with ~3,200 N low-back compression.",
+          "source": "McGill SM, Marshall LW. Kettlebell swing, snatch, and bottoms-up carry: back and hip muscle activation, motion, and low back loads. J Strength Cond Res. 2012;26(1):16-27.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "21997449",
+          "doi": "10.1519/JSC.0b013e31823a4063"
+        },
+        {
+          "claim": "Across one-arm swing, snatch and clean (8-10RM loads), erector spinae was higher in the swing than the snatch, contralateral external oblique was higher in snatch and clean than swing, and vastus lateralis was higher in swing than clean; biceps, anterior and posterior deltoid, biceps femoris and gluteus maximus were recorded as active in all three.",
+          "source": "Lyons BC, Mayo JJ, Tucker WS, Wax B, Hendrix RC. Electromyographical Comparison of Muscle Activation Patterns Across Three Commonly Performed Kettlebell Exercises. J Strength Cond Res. 2017;31(9):2363-2370.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28394829",
+          "doi": "10.1519/JSC.0000000000001771"
+        },
+        {
+          "claim": "Kettlebell snatch and two-hand swing produce near-identical vertical impulse and work; the snatch is mechanically a swing with a larger vertical CM displacement, confirming the hip hinge as the primary work source.",
+          "source": "Lake JP, Hetzler BS, Lauder MA. Magnitude and relative distribution of kettlebell snatch force-time characteristics. J Strength Cond Res. 2014;28(11):3063-3072.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24845206",
+          "doi": "10.1519/JSC.0000000000000538"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "The current flagged delt_side 1.0 / delt_front 0.5 mapping treats these as shoulder lifts; the biomechanics and EMG say they are hip-hinge ballistics with secondary shoulder work, so glutes take the 1.0. Quads are dropped (short-range knee extension, VL lower than in swings per Lyons 2017); triceps are dropped from One-Arm_Kettlebell_Snatch (the arm is straight throughout the punch-through). Split snatch lands in a lunge under a received bell; same mapping.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Double_Kettlebell_Snatch",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.85,
+                "glute_med": 0.15
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.75,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.7,
+                "forearm_extensors_brachioradialis": 0.3
+              }
+            }
+          ],
+          "reason": "Two bells: symmetrical, so the anti-rotation obliques credit is removed."
+        },
+        {
+          "exerciseId": "Two-Arm_Kettlebell_Clean",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.85,
+                "glute_med": 0.15
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.75,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.25,
+              "regionDistribution": {
+                "biceps": 0.6,
+                "brachialis": 0.4
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.7,
+                "forearm_extensors_brachioradialis": 0.3
+              }
+            }
+          ],
+          "reason": "No overhead phase: the bell is received in the rack, so delt_front drops to 0.25, delt_side is removed, and a small elbow-flexor credit is added for guiding the bell into the rack (biceps recorded active in cleans, Lyons 2017). Symmetrical, no obliques."
+        }
+      ]
+    },
+    {
+      "id": "overhead_stability_carry",
+      "name": "Overhead stability / carry (Turkish get-up, overhead walk, halo)",
+      "description": "Movements where the load is held or moved overhead while the body moves under it: Turkish get-ups, overhead sled walk, kettlebell halos. The deltoid (all heads) and triceps hold the arm vertical; trunk and hip muscles move the body. Credited as loaded work because the shoulder is under continuous load through large ranges, not a brief isometric.",
+      "exerciseIds": [
+        "Kettlebell_Turkish_Get-Up_Lunge_style",
+        "Kettlebell_Turkish_Get-Up_Squat_style",
+        "Sled_Overhead_Backward_Walk",
+        "Kettlebell_Halo",
+        "Kettlebell_Halo_With_Overhead_Extension"
+      ],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Anterior deltoid keeps the humerus flexed to vertical through the whole get-up; greatest glenohumeral demand in the press-to-elbow and leg-sweep stages (St-Onge 2018)."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.5,
+          "rationale": "Middle deltoid shares the vertical hold, especially as the trunk rotates under the bell."
+        },
+        {
+          "groupId": "delt_rear",
+          "weight": 0.25,
+          "rationale": "Posterior deltoid and cuff (proxied) control the bell as the arm passes through horizontal-abduction positions in the roll and sweep."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.25,
+          "regionDistribution": {
+            "triceps_long": 0.5,
+            "triceps_lateral_medial": 0.5
+          },
+          "rationale": "Elbow lockout held under load; minor credit."
+        },
+        {
+          "groupId": "abs",
+          "weight": 0.5,
+          "rationale": "Roll-to-elbow and sit-up phases are loaded trunk flexion."
+        },
+        {
+          "groupId": "obliques",
+          "weight": 0.5,
+          "rationale": "Asymmetric load creates anti-lateral-flexion and rotation demands throughout (St-Onge 2018 highlights the asymmetric nature)."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.5,
+          "regionDistribution": {
+            "glute_max": 0.7,
+            "glute_med": 0.3
+          },
+          "rationale": "Bridge and lunge stand-up; glute med for pelvic control on one leg."
+        },
+        {
+          "groupId": "quads",
+          "weight": 0.5,
+          "regionDistribution": {
+            "quads_rf": 0.2,
+            "quads_vasti": 0.8
+          },
+          "rationale": "Lunge/squat stand-up and reverse."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Bilateral surface EMG of 8 glenohumeral muscle groups during the Turkish get-up: greatest shoulder demand in the press-to-elbow and leg-sweep stages; ipsilateral (bell-side) muscles work hardest when the other arm is not supporting the body; the exercise is markedly asymmetric.",
+          "source": "St-Onge E, Robb A, Beach TAC, Howarth SJ. A descriptive analysis of shoulder muscle activities during individual stages of the Turkish Get-Up exercise. J Bodyw Mov Ther. 2019;23(1):23-31.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "30691756",
+          "doi": "10.1016/j.jbmt.2018.01.013"
+        },
+        {
+          "claim": "Loaded carries (bottoms-up kettlebell carry) create abdominal bracing pulses and kettlebell-specific trunk training opportunities.",
+          "source": "McGill SM, Marshall LW. Kettlebell swing, snatch, and bottoms-up carry: back and hip muscle activation, motion, and low back loads. J Strength Cond Res. 2012;26(1):16-27.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "21997449",
+          "doi": "10.1519/JSC.0b013e31823a4063"
+        },
+        {
+          "claim": "Backward locomotion loads the quadriceps concentrically at push-off and raises tibialis anterior demand relative to forward walking; used for the sled overhead backward walk override.",
+          "source": "Flynn TW, Soutas-Little RW. Mechanical power and muscle action during forward and backward running. J Orthop Sports Phys Ther. 1993;17(2):108-112.",
+          "tier": "emg",
+          "confidence": "unverified"
+        },
+        {
+          "claim": "No PubMed-indexed EMG study of the kettlebell halo or overhead sled walk was found; deltoid/triceps splits follow overhead-hold anatomy and coaching consensus.",
+          "source": "Practitioner consensus and anatomical reasoning.",
+          "tier": "consensus",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "low",
+      "notes": "Current TGU mapping (delt_front 1.0, delt_side 0.5, triceps 0.5, abs 0.5, quads 0.5) is close; trimmed triceps to 0.25, added obliques, glutes and delt_rear. Lunge- and squat-style get-ups differ only in how you stand up; identical mapping.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Sled_Overhead_Backward_Walk",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.5
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.5
+            },
+            {
+              "groupId": "quads",
+              "weight": 0.75,
+              "regionDistribution": {
+                "quads_rf": 0.2,
+                "quads_vasti": 0.8
+              }
+            },
+            {
+              "groupId": "tibialis",
+              "weight": 0.5
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.25,
+              "regionDistribution": {
+                "gastrocnemius": 0.5,
+                "soleus": 0.5
+              }
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Seed text: hands overhead holding sled handles, walking backward. Overhead hold under a horizontal pull (delt_front/side plus upper trapezius holding the scapula elevated); backward sled walking is a knee-extension-dominant, quad/tibialis-heavy gait. Removed the current upper_back 0.5 (no retraction) and demoted calves."
+        },
+        {
+          "exerciseId": "Kettlebell_Halo",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.6,
+                "triceps_lateral_medial": 0.4
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.25,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            }
+          ],
+          "reason": "Circling a light bell around the head: all three deltoid heads move the arms through flexion, abduction and extension behind the head; triceps stabilise the bent elbow with the load behind the head (long-head biased). Dropped abs and traps_upper from the current row (bracing only; shrugging is a fault)."
+        },
+        {
+          "exerciseId": "Kettlebell_Halo_With_Overhead_Extension",
+          "mapping": [
+            {
+              "groupId": "triceps",
+              "weight": 1,
+              "regionDistribution": {
+                "triceps_long": 0.7,
+                "triceps_lateral_medial": 0.3
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Adds a full overhead triceps extension each rep, which is the loaded portion (matches the overhead-extension anchor distribution {long .7}); the halo circles keep the deltoid credits. Removed abs, traps_upper and upper_back."
+        }
+      ]
+    },
+    {
+      "id": "battle_ropes",
+      "name": "Battle ropes (alternating / double waves)",
+      "description": "Rapid, repeated shoulder flexion-extension slamming heavy ropes, with trunk bracing and anti-rotation. Anterior deltoid, obliques and lumbar erectors carry moderate-to-high activation; grip and forearms work continuously.",
+      "exerciseIds": ["Battling_Ropes"],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Anterior deltoid 51-73% MVIC during waves (Calatayud 2015); the shoulder flexion drive is the primary loaded action."
+        },
+        {
+          "groupId": "obliques",
+          "weight": 0.5,
+          "rationale": "External oblique 51-73% MVIC, higher with alternating waves (Calatayud 2015)."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.5,
+          "rationale": "Lumbar erector spinae 51-73% MVIC, higher with double waves (Calatayud 2015)."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.25,
+          "rationale": "Middle deltoid assists each upward drive; minor credit."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.5,
+          "regionDistribution": {
+            "forearm_flexors": 0.6,
+            "forearm_extensors_brachioradialis": 0.4
+          },
+          "rationale": "Continuous gripping and wrist snapping of a heavy rope; forearm flexors dominate with wrist extensors decelerating."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Battle rope waves produced 51-73% MVIC in anterior deltoid, external oblique and lumbar erector spinae, with gluteus medius only 14-18%; unilateral waves raised oblique activity, bilateral waves raised lumbar activity.",
+          "source": "Calatayud J, Martin F, Colado JC, Benítez JC, Jakobsen MD, Andersen LL. Muscle Activity During Unilateral vs. Bilateral Battle Rope Exercises. J Strength Cond Res. 2015;29(10):2854-2859.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "25853917",
+          "doi": "10.1519/JSC.0000000000000963"
+        },
+        {
+          "claim": "During battle rope undulation, double-arm waves produced greater vastus medialis/lateralis, rectus abdominis and multifidus activity than alternating waves, while biceps and triceps were recorded as active in both; leg activity remains low relative to trunk and shoulder.",
+          "source": "Marín PJ, García-Gutiérrez MT, Da Silva-Grigoletto ME, Hazell TJ. The addition of synchronous whole-body vibration to battling rope exercise increases skeletal muscle activity. J Musculoskelet Neuronal Interact. 2015;15(3):240-248.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26350942"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Current flagged mapping (delt_side 1.0, delt_front 0.5, chest 0.5, forearms 0.5) is inverted: EMG shows anterior deltoid, obliques and erectors as the main workers with no pectoral emphasis. Chest removed.",
+      "perExerciseOverrides": []
+    }
+  ],
+  "unassignedExerciseIds": [],
+  "openQuestions": [
+    "Six seed rows are mislabeled relative to their instructions and should probably be renamed/aliased in the catalogue, not only remapped: Dumbbell_Raise (a dumbbell upright row), Cable_Seated_Lateral_Raise (a seated bent-over cable rear-delt raise), Lying_One-Arm_Lateral_Raise (prone rear-delt raise), Barbell/Dumbbell/Smith_Incline_Shoulder_Raise (scapular protraction), Straight_Raises_on_Incline_Bench (prone front raise), Low_Pulley_Row_To_Neck (seated face pull).",
+    "Serratus anterior and the rotator cuff have no group. Three families (scapular_protraction, external_rotation, internal_rotation) are mapped entirely to proxies (delt_front/chest, delt_rear, delt_front) as the brief instructs; if a 'shoulder stabilisers' or serratus group is ever added these should move first. Copy for these rows should say the colour reflects cuff/serratus work, not deltoid volume.",
+    "rear_delt_fly credits delt_side 0.5 on the strength of middle-deltoid EMG in horizontal abduction (63-87% MVIC in Reinold 2004/2007). This is the largest deviation from the current table and from common practice; the reviewer may prefer 0.25. No longitudinal study separates middle- vs posterior-deltoid growth after reverse flyes.",
+    "The only longitudinal per-exercise deltoid hypertrophy trial found (Larsen 2025, dumbbell vs cable lateral raise) covers only the lateral raise; front raise, upright row, rear-delt fly and face pull mappings rest on EMG plus anatomy. No regional-hypertrophy evidence exists to weight upper-trapezius credit in upright rows or lateral raises.",
+    "Iron_Cross has no instructions in the seed data; the mapping assumes the common 'squat while sweeping straight arms between front and T positions' description (FitnessVolt/Fitbod). If the catalogue's intended movement differs, remap.",
+    "Overhead-press triceps distribution: this batch uses {long .3, lateral_medial .7} for jerks/thruster/Cuban press lockouts (long head shortened at the shoulder), the opposite of the overhead-extension anchor {long .7}. The press batch should adopt one convention so kettlebell jerks and barbell presses agree.",
+    "Kettlebell snatch/clean rows are in this 'shoulder isolation' batch by name only; they were remapped as hip-hinge ballistics (glutes 1.0). If a hinge/olympic batch also covers them, reconcile so each id has one owner.",
+    "Isometric-hold credit: Car_Drivers (front hold), Sled_Overhead_Backward_Walk and the Turkish get-ups credit the deltoid at 1.0 although the shoulder work is largely isometric. The brief allows this only where the isometric is the exercise's loaded element; confirm the product is comfortable with these counting as full anterior-deltoid sets, or cap them at 0.75."
+  ]
+}

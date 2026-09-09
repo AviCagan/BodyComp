@@ -1,0 +1,183 @@
+export const meta = {
+  name: 'exercise-muscle-evidence',
+  description: 'Evidence-based exercise-to-muscle mapping: one researcher per movement area (PubMed + primary sources) with an independent verifier per batch',
+  phases: [
+    { title: 'Research', detail: 'one researcher per batch of exercises, grouped into movement families with cited mappings' },
+    { title: 'Verify', detail: 'independent verifier per batch checks citations, rule compliance and assignments' },
+  ],
+}
+
+const FAMILY_RESULT = {
+  type: 'object',
+  required: ['batch', 'families', 'unassignedExerciseIds', 'openQuestions'],
+  properties: {
+    batch: { type: 'string' },
+    families: {
+      type: 'array',
+      items: {
+        type: 'object',
+        required: ['id', 'name', 'description', 'exerciseIds', 'mapping', 'evidence', 'conflictsWithBrief', 'confidence'],
+        properties: {
+          id: { type: 'string', description: 'snake_case family id, e.g. incline_press' },
+          name: { type: 'string' },
+          description: { type: 'string', description: 'what movement pattern / joint actions define this family' },
+          exerciseIds: { type: 'array', items: { type: 'string' }, description: 'ids from the batch file that belong to this family' },
+          mapping: {
+            type: 'array',
+            description: 'recommended credits for the family; weights 0.25..1.0, at least one 1.0; distributions only for multi-region groups and summing to 1',
+            items: {
+              type: 'object', required: ['groupId', 'weight'],
+              properties: {
+                groupId: { type: 'string' },
+                weight: { type: 'number' },
+                regionDistribution: { type: 'object', additionalProperties: { type: 'number' } },
+                rationale: { type: 'string' },
+              },
+            },
+          },
+          perExerciseOverrides: {
+            type: 'array',
+            description: 'exercises in this family whose mapping should differ (grip, angle, implement, unilateral, etc.)',
+            items: {
+              type: 'object', required: ['exerciseId', 'mapping', 'reason'],
+              properties: {
+                exerciseId: { type: 'string' },
+                mapping: { type: 'array', items: { type: 'object', required: ['groupId', 'weight'], properties: { groupId: { type: 'string' }, weight: { type: 'number' }, regionDistribution: { type: 'object', additionalProperties: { type: 'number' } } } } },
+                reason: { type: 'string' },
+              },
+            },
+          },
+          evidence: {
+            type: 'array',
+            items: {
+              type: 'object', required: ['claim', 'source', 'tier', 'confidence'],
+              properties: {
+                claim: { type: 'string' },
+                source: { type: 'string', description: 'full citation: authors, title, journal, year' },
+                pmid: { type: 'string' },
+                doi: { type: 'string' },
+                tier: { type: 'string', enum: ['hypertrophy', 'emg', 'anatomical', 'consensus'] },
+                confidence: { type: 'string', enum: ['verified', 'likely', 'unverified'] },
+              },
+            },
+          },
+          conflictsWithBrief: { type: 'array', items: { type: 'string' }, description: 'where the evidence disagrees with a fixed anchor row or the half-credit rule; do NOT change anchors, report here' },
+          confidence: { type: 'string', enum: ['high', 'medium', 'low'] },
+          notes: { type: 'string' },
+        },
+      },
+    },
+    unassignedExerciseIds: { type: 'array', items: { type: 'string' }, description: 'ids you could not place in any family (say why in openQuestions)' },
+    openQuestions: { type: 'array', items: { type: 'string' } },
+  },
+}
+
+const VERIFY_RESULT = {
+  type: 'object',
+  required: ['batch', 'families', 'overallNotes'],
+  properties: {
+    batch: { type: 'string' },
+    families: {
+      type: 'array',
+      items: {
+        type: 'object', required: ['familyId', 'verdict', 'issues', 'corrections', 'citationChecks'],
+        properties: {
+          familyId: { type: 'string' },
+          verdict: { type: 'string', enum: ['accept', 'revise', 'reject'] },
+          issues: { type: 'array', items: { type: 'string' } },
+          corrections: {
+            type: 'array',
+            items: { type: 'object', required: ['field', 'from', 'to', 'reason'], properties: { field: { type: 'string' }, from: { type: 'string' }, to: { type: 'string' }, reason: { type: 'string' } } },
+          },
+          citationChecks: {
+            type: 'array',
+            items: { type: 'object', required: ['source', 'exists', 'supportsClaim', 'note'], properties: { source: { type: 'string' }, exists: { type: 'boolean' }, supportsClaim: { type: 'boolean' }, note: { type: 'string' } } },
+          },
+          misassignedExerciseIds: { type: 'array', items: { type: 'string' } },
+        },
+      },
+    },
+    overallNotes: { type: 'string' },
+  },
+}
+
+const TAXONOMY = [
+  'GROUPS (the only valid groupId values) and their REGIONS (the only valid regionDistribution keys; groups with one region take no distribution):',
+  'chest: chest_upper (clavicular), chest_mid (sternal), chest_lower (costal)',
+  'delt_front | delt_side | delt_rear | lats | traps_upper | erectors | abs | obliques | adductors | tibialis | hip_flexors  (single-region groups)',
+  'upper_back: traps_mid_lower, rhomboids',
+  'biceps: biceps, brachialis',
+  'triceps: triceps_long, triceps_lateral_medial',
+  'forearms: forearm_flexors, forearm_extensors_brachioradialis',
+  'glutes: glute_max, glute_med',
+  'quads: quads_rf (rectus femoris), quads_vasti',
+  'hamstrings: hamstrings_hip_ext (semis + biceps femoris long head), hamstrings_bf_short (short head, knee flexion only)',
+  'calves: gastrocnemius, soleus',
+  'neck: neck_flexors, neck_extensors',
+  'There is no rotator-cuff, serratus, pec-minor or hip-adductor-magnus group: credit the nearest visible group the user would expect to see coloured (external rotation -> delt_rear at 1.0 as a proxy; serratus work -> chest at 0.5 or delt_front), and say so in notes.',
+].join('\n')
+
+const RULES = [
+  'WEIGHT RULES (from the product brief, not negotiable):',
+  '- A primary mover gets weight 1.0. Every family needs at least one 1.0.',
+  '- Indirect / secondary work counts at roughly half credit: 0.5 by default, tunable 0.25..1.0. Use 0.75 for a strong synergist (e.g. glutes in a squat), 0.25 for minor stabiliser credit that still deserves colour. Do not credit muscles that merely stabilise isometrically unless the literature shows meaningful hypertrophic stimulus.',
+  '- Region distributions are shares of the group credit and must sum exactly to 1.0. Give one for EVERY multi-region group you credit. They express EMPHASIS (where within the muscle the stimulus is biased), not absolute activation.',
+  '- FIXED ANCHOR ROWS from the brief (keep exactly; calibrate everything else relative to them; if evidence disagrees put it in conflictsWithBrief):',
+  '  Barbell_Bench_Press_-_Medium_Grip: chest 1.0 {upper .25, mid .50, lower .25}; delt_front 0.5; triceps 0.5 {long .3, lateral_medial .7}',
+  '  Incline_Dumbbell_Press: chest 1.0 {upper .60, mid .35, lower .05}; delt_front 0.5; triceps 0.5',
+  '  Bent_Over_Barbell_Row: lats 0.75; upper_back 1.0; delt_rear 0.5; biceps 0.5; erectors 0.25',
+  '  Wide-Grip_Lat_Pulldown: lats 1.0; upper_back 0.5; biceps 0.5; delt_rear 0.25',
+  '  Barbell_Squat: quads 1.0 {rf .10, vasti .90}; glutes 0.75 {max .9, med .1}; adductors 0.5; erectors 0.5   (note: no hamstring or calf credit for squats)',
+  '  Romanian_Deadlift: hamstrings 1.0 {hip_ext 1.0, bf_short 0}; glutes 0.75; erectors 0.5',
+  '  Seated_Leg_Curl: hamstrings 1.0 {hip_ext .6, bf_short .4}',
+  '  Standing_Dumbbell_Triceps_Extension (overhead): triceps 1.0 {long .7, lateral_medial .3}',
+  '  Side_Lateral_Raise: delt_side 1.0',
+  '  Standing_Calf_Raises: calves 1.0 {gastrocnemius .7, soleus .3};  Seated_Calf_Raise: calves 1.0 {gastrocnemius .2, soleus .8}',
+  'EVIDENCE HIERARCHY: (1) longitudinal hypertrophy studies measuring regional or per-muscle growth after training a specific exercise; (2) EMG / MRI-T2 activation studies; (3) anatomical and biomechanical reasoning (moment arms, muscle actions, length-tension); (4) practitioner consensus. Label every evidence item with its tier. Prefer 2015-2026 literature but classic studies are fine.',
+  'HOW TO WORK: read the batch file (path given below). Group its exercises into movement families (typically 4-12 per batch). For each family search PubMed FIRST using the MCP tools - load them with ToolSearch: "select:mcp__PubMed__search_articles,mcp__PubMed__get_article_metadata,mcp__PubMed__lookup_article_by_citation,mcp__PubMed__get_full_text_article" - and WebSearch/WebFetch for anything PubMed lacks. Cite real papers with PMID or DOI; mark a citation "unverified" if you could not open its record. Then decide the family mapping, list per-exercise overrides where grip/angle/implement/unilateral changes the emphasis, and put every exercise id from the batch into exactly one family (or unassignedExerciseIds). Do not modify any repository file. Return ONLY the structured output.',
+].join('\n')
+
+const batches = args.batches
+
+phase('Research')
+log('Researching ' + batches.length + ' movement areas against PubMed and primary sources')
+const results = await pipeline(
+  batches,
+  (b) => agent(
+    [
+      'You are building the evidence base for a workout app\'s exercise-to-muscle credit table. Today is 2026-09-08.',
+      TAXONOMY, '', RULES, '',
+      'BATCH: ' + b.batch + ' (' + b.count + ' exercises)',
+      'SCOPE: ' + b.scope,
+      'BATCH FILE (read it with the Read tool): ' + b.file,
+      'Each exercise entry has: id, name, equipment, mechanic, pattern, and `current` = the mapping the app uses today (g = groupId, w = weight, d = regionDistribution, flag = the rule was a guess). Improve on `current` only where evidence or anatomy says so; where the current mapping is already right, keep it and say why in one line.',
+      'Also read /home/user/BodyComp/src/engine/taxonomy.ts if you need the exact ids.',
+    ].join('\n'),
+    { label: 'research:' + b.batch, phase: 'Research', schema: FAMILY_RESULT, effort: 'high' },
+  ).then(r => r ? Object.assign({ file: b.file, scope: b.scope }, r) : null),
+  (research, b) => {
+    if (!research) return null
+    return agent(
+      [
+        'You are an independent, skeptical verifier for an exercise-to-muscle evidence table. Today is 2026-09-08.',
+        TAXONOMY, '', RULES, '',
+        'A researcher produced the family mappings below for the batch "' + b.batch + '" (' + b.scope + '). The batch file with every exercise is at ' + b.file + ' (read it).',
+        'Check, for EVERY family:',
+        '1. Citations: look each one up (PubMed MCP tools via ToolSearch "select:mcp__PubMed__search_articles,mcp__PubMed__get_article_metadata,mcp__PubMed__lookup_article_by_citation", or WebSearch for preprints/books). Does it exist? Does it actually support the claim it is attached to? Mark hallucinated or misattributed citations.',
+        '2. Rule compliance: at least one 1.0 weight; weights within 0.25..1.0; a distribution present for every multi-region group credited, keys valid for that group, summing to 1.0 (tolerance 0.001); only valid groupIds; anchor rows untouched.',
+        '3. Assignment sanity: spot-check at least 15 exercise ids against their names; flag any exercise placed in a family that does not fit (e.g. a decline press in the incline family, a seated calf raise in the standing family). Flag ids from the batch that appear in no family and were not listed as unassigned, and ids listed twice.',
+        '4. Substance: does the mapping follow from the evidence tier claimed? Is a strong claim resting only on consensus? Are secondary credits inflated (everything at 0.5) or missing (an obvious synergist omitted)?',
+        'Verdict per family: accept (use as is), revise (use with the listed corrections), reject (send back). Be concrete: every correction names the field, the current value and the value it should be. Do not modify any repository file. Return ONLY the structured output.',
+        '',
+        'RESEARCHER OUTPUT:',
+        JSON.stringify(research, null, 1).slice(0, 150000),
+      ].join('\n'),
+      { label: 'verify:' + b.batch, phase: 'Verify', schema: VERIFY_RESULT, effort: 'high' },
+    ).then(v => ({ batch: b.batch, research, verification: v }))
+  },
+)
+
+const done = results.filter(Boolean)
+log('Completed ' + done.length + '/' + batches.length + ' batches')
+if (done.length < batches.length) log('Missing: ' + batches.filter(b => !done.find(d => d.batch === b.batch)).map(b => b.batch).join(', '))
+return done

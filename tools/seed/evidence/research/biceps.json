@@ -1,0 +1,557 @@
+{
+  "batch": "biceps",
+  "families": [
+    {
+      "id": "supinated_curl_neutral_shoulder",
+      "name": "Supinated curl, arm at side (barbell / EZ / dumbbell / cable / machine)",
+      "description": "Elbow flexion with a supinated (or partly supinated, EZ) grip and the upper arm hanging roughly vertical at the side of the torso. Biceps brachii is the primary mover with brachialis as the constant deep synergist; brachioradialis contributes as a secondary elbow flexor; wrist flexors only hold the wrist isometrically.",
+      "exerciseIds": [
+        "Barbell_Curl",
+        "Close-Grip_EZ-Bar_Curl_with_Band",
+        "Close-Grip_EZ_Bar_Curl",
+        "Close-Grip_Standing_Barbell_Curl",
+        "Drag_Curl",
+        "Dumbbell_Alternate_Bicep_Curl",
+        "Dumbbell_Bicep_Curl",
+        "EZ-Bar_Curl",
+        "Lying_Cable_Curl",
+        "Seated_Dumbbell_Curl",
+        "Seated_Dumbbell_Inner_Biceps_Curl",
+        "Standing_Biceps_Cable_Curl",
+        "Standing_Inner-Biceps_Curl",
+        "Standing_One-Arm_Cable_Curl",
+        "Wide-Grip_Standing_Barbell_Curl"
+      ],
+      "mapping": [
+        {
+          "groupId": "biceps",
+          "weight": 1,
+          "regionDistribution": {
+            "biceps": 0.75,
+            "brachialis": 0.25
+          },
+          "rationale": "Biceps brachii is the dominant flexor when the forearm is supinated (highest biceps excitation of all grips; brachialis activity is lowest in supination). Brachialis still works in every curl, so it keeps a quarter share."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.25,
+          "regionDistribution": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          },
+          "rationale": "Brachioradialis is a genuine elbow flexor that is active in all grips (slightly higher in supination in two EMG studies) and deserves colour, but it is not the target; wrist flexors work only isometrically, so they get a small share of a small credit rather than a credit of their own."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Bilateral barbell curl in bodybuilders: biceps brachii excitation was 19% higher supinated vs pronated and 12% higher vs neutral; brachioradialis excitation was slightly higher (5-6%) with the supinated grip than with pronated or neutral.",
+          "source": "Coratella G, Tornatore G, Longo S, Toninelli N, Padovan R, Esposito F, Cè E. Biceps Brachii and Brachioradialis Excitation in Biceps Curl Exercise: Different Handgrips, Different Synergy. Sports (Basel). 2023;11(3):64.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "36976950",
+          "doi": "10.3390/sports11030064"
+        },
+        {
+          "claim": "Brachialis and brachioradialis EMG falls as the forearm supinates while biceps EMG rises; biceps contraction level is higher with the forearm supine, the reverse for brachialis and brachioradialis.",
+          "source": "Naito A, Sun YJ, Yajima M, Fukamachi H, Ushikoshi K. Electromyographic study of the elbow flexors and extensors in a motion of forearm pronation/supination while maintaining elbow flexion in humans. Tohoku J Exp Med. 1998;186(4):267-77.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "10328159",
+          "doi": "10.1620/tjem.186.267"
+        },
+        {
+          "claim": "Brachioradialis is EMG-active throughout resisted elbow flexion in neutral, pronated and supinated forearm positions, peaking near end-range flexion, and slightly higher in supination; it is one of the main elbow flexors, not a mere stabiliser.",
+          "source": "Caufriez B, Dugailly PM, Brassinne E, Schuind F. The Role of the Muscle Brachioradialis in Elbow Flexion: An Electromyographic Study. J Hand Surg Asian Pac Vol. 2018;23(1):102-110.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29409427",
+          "doi": "10.1142/S2424835518500145"
+        },
+        {
+          "claim": "EZ-bar, straight-bar and dumbbell curls activate both biceps brachii and brachioradialis; EZ and barbell produce slightly higher EMG than dumbbell, but differences between EZ and straight bar are small - implement does not change which muscles are credited.",
+          "source": "Marcolin G, Panizzolo FA, Petrone N, Moro T, Grigoletto D, Piccolo D, Paoli A. Differences in electromyographic activity of biceps brachii and brachioradialis while performing three variants of curl. PeerJ. 2018;6:e5165.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "30013836",
+          "doi": "10.7717/peerj.5165"
+        },
+        {
+          "claim": "After 4 sets of dumbbell curls to failure, biceps brachii swelled more (18.7%) than brachialis (12.3%), supporting a biceps-biased region split for the supinated curl.",
+          "source": "Leitão BFM, Albarello JCS, Halmenschlager GH, de Salles BF, Matta TT. Exercise selection plays an important role in inducing non-uniform acute responses on elbow flexors muscle thickness. J Bodyw Mov Ther. 2024;40:1097-1101.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "39593419",
+          "doi": "10.1016/j.jbmt.2024.07.028"
+        },
+        {
+          "claim": "Brachialis can be recorded separately from biceps with surface EMG and predicts flexion force as well as biceps during pure flexion, i.e. it is a co-primary flexor in every curl.",
+          "source": "Staudenmann D, Taube W. Brachialis muscle activity can be assessed with surface electromyography. J Electromyogr Kinesiol. 2015;25(2):199-204.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "25468488",
+          "doi": "10.1016/j.jelekin.2014.11.003"
+        },
+        {
+          "claim": "The short head of the biceps is relatively more efficient at elbow flexion; the long head is the more efficient supinator when the forearm is supinated. Grip width has no verified EMG or hypertrophy evidence for head-selective loading, so close/wide grips keep the family mapping.",
+          "source": "Jarrett CD, Weir DM, Stuffmann ES, Jain S, Miller MC, Schmidt CC. Anatomic and biomechanical analysis of the short and long head components of the distal biceps tendon. J Shoulder Elbow Surg. 2012;21(7):942-8.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "21813298",
+          "doi": "10.1016/j.jse.2011.04.030"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Kept biceps 1.0 as current. Changed region split from 0.8/0.2 to 0.75/0.25 (brachialis is a co-primary flexor in all grips) and made the forearm credit consistent across the family: current rows are inconsistent (some 0.5 at 50/50, some none). Forearm credit is now 0.25 biased to brachioradialis because the wrist flexors only stabilise isometrically. Drag_Curl adds shoulder extension through the rep (long head at longer length) but recruits the same muscles, so no override. Lying_Cable_Curl (supine on the floor, low pulley at the feet) keeps the shoulder near neutral and belongs here rather than with incline curls. Wide-, close- and 'inner-biceps' variants: no override, see evidence on grip width."
+    },
+    {
+      "id": "incline_curl_shoulder_extended",
+      "name": "Incline / supine dumbbell curl (shoulder extended, long-length)",
+      "description": "Supinated curl with the upper arm behind the torso line (incline bench 45-60 degrees or lying supine with arms hanging). Puts the biarticular biceps, especially the long head, at a longer length and shifts growth proximally; brachialis is unaffected by shoulder angle.",
+      "exerciseIds": [
+        "Alternate_Incline_Dumbbell_Curl",
+        "Flexor_Incline_Dumbbell_Curls",
+        "Incline_Dumbbell_Curl",
+        "Incline_Inner_Biceps_Curl",
+        "Lying_Supine_Dumbbell_Curl"
+      ],
+      "mapping": [
+        {
+          "groupId": "biceps",
+          "weight": 1,
+          "regionDistribution": {
+            "biceps": 0.8,
+            "brachialis": 0.2
+          },
+          "rationale": "Shoulder extension lengthens only the biarticular biceps, so emphasis tilts a little further toward biceps brachii than the standing curl; brachialis credit stays small but non-zero."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.25,
+          "regionDistribution": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          },
+          "rationale": "Same brachioradialis synergist role as any supinated curl; wrist flexors only isometric."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "8 weeks of incline curls produced greater proximal elbow-flexor thickness gains than preacher curls, while preacher curls produced greater distal gains; total elbow flexor growth occurred with both.",
+          "source": "Kassiano W, Costa B, Kunevaliki G, et al. Distinct muscle growth and strength adaptations after preacher and incline biceps curls. Int J Sports Med. 2025;46(5):334-343.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "39809454",
+          "doi": "10.1055/a-2517-0509"
+        },
+        {
+          "claim": "Training elbow flexors at extended joint angles (0-50 degrees, long length) increased biceps+brachialis thickness 8.9% vs 3.4% for flexed-angle training over 5 weeks.",
+          "source": "Sato S, Yoshida R, Kiyono R, et al. Elbow Joint Angles in Elbow Flexor Unilateral Resistance Exercise Training Determine Its Effects on Muscle Strength and Thickness of Trained and Non-trained Arms. Front Physiol. 2021;12:734509.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "34616309",
+          "doi": "10.3389/fphys.2021.734509"
+        },
+        {
+          "claim": "When resistance profile and elbow ROM were matched, cable curls at maximal shoulder extension vs neutral shoulder produced equivalent elbow-flexor hypertrophy (7-9%) - shoulder angle changes emphasis, not which muscles are credited.",
+          "source": "Larsen S, Sandvik Kristiansen B, Osteras Sandberg N, et al. The effects of shoulder extension angle on elbow flexor hypertrophy in the cable curl exercise. Front Physiol. 2026;17:1750722.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "41988507",
+          "doi": "10.3389/fphys.2026.1750722"
+        },
+        {
+          "claim": "Incline dumbbell curl training (3 weeks LL-BFR) increased elbow flexor CSA at 45%, 65% and 85% humerus length - confirms it is a whole-elbow-flexor exercise.",
+          "source": "Vendruscolo LDS, Brendon H, Larrain VH, Aihara AY, de Salles Painelli V. Protein supplementation optimizes muscle strength and hypertrophic responses induced by low-load training with blood flow restriction in resistance-trained individuals. Clin Nutr ESPEN. 2025;67:206-216.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "40107357",
+          "doi": "10.1016/j.clnesp.2025.03.018"
+        },
+        {
+          "claim": "Incline dumbbell curl and standard dumbbell curl produced similar biceps long-head EMG patterns across the full ROM (up to ~95% max RMS), unlike the preacher curl.",
+          "source": "Oliveira LF, Matta TT, Alves DS, Garcia MAC, Vieira TMM. Effect of the shoulder position on the biceps brachii EMG in different dumbbell curls. J Sports Sci Med. 2009;8(1):24-9.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24150552"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Current biceps 0.8/0.2 is kept - it is right for this family. Added the same small forearm credit as the other supinated curls for consistency (current rows have it on Alternate_Incline but not on Incline_Dumbbell_Curl). Lying_Supine_Dumbbell_Curl (arms hanging off a flat bench) is biomechanically the extreme incline curl. 'Flexor' and 'Inner biceps' name variants have no evidence for a different mapping."
+    },
+    {
+      "id": "braced_arm_curl_preacher_spider_concentration",
+      "name": "Preacher / spider / concentration / machine curl (shoulder flexed, arm braced)",
+      "description": "Supinated curl with the upper arm fixed in front of the torso (preacher pad, prone incline bench, elbow on thigh, machine arm pad). Shoulder flexion shortens the biarticular biceps, bias shifts toward the distal elbow flexors (brachialis and distal biceps); tension peaks in the stretched/mid range.",
+      "exerciseIds": [
+        "Barbell_Curls_Lying_Against_An_Incline",
+        "Cable_Preacher_Curl",
+        "Concentration_Curls",
+        "Dumbbell_Prone_Incline_Curl",
+        "Lying_High_Bench_Barbell_Curl",
+        "Machine_Bicep_Curl",
+        "Machine_Preacher_Curls",
+        "One_Arm_Dumbbell_Preacher_Curl",
+        "Preacher_Curl",
+        "Seated_Close-Grip_Concentration_Barbell_Curl",
+        "Spider_Curl",
+        "Standing_Concentration_Curl",
+        "Standing_One-Arm_Dumbbell_Curl_Over_Incline_Bench",
+        "Two-Arm_Dumbbell_Preacher_Curl"
+      ],
+      "mapping": [
+        {
+          "groupId": "biceps",
+          "weight": 1,
+          "regionDistribution": {
+            "biceps": 0.7,
+            "brachialis": 0.3
+          },
+          "rationale": "Preacher-style training grows the distal elbow flexors more than incline curls and produced a slightly larger brachialis than biceps response in a matched cable study, so brachialis share rises to 0.3 while biceps remains the primary."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.25,
+          "regionDistribution": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          },
+          "rationale": "Brachioradialis synergist as in every supinated curl; wrist flexors isometric only."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Preacher curls produced greater distal elbow-flexor thickness gains than incline curls over 8 weeks (mean difference 0.10 cm), incline greater proximal gains.",
+          "source": "Kassiano W, Costa B, Kunevaliki G, et al. Distinct muscle growth and strength adaptations after preacher and incline biceps curls. Int J Sports Med. 2025;46(5):334-343.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "39809454",
+          "doi": "10.1055/a-2517-0509"
+        },
+        {
+          "claim": "10 weeks of cable preacher curl (shoulder ~50 degrees flexed) increased biceps brachii thickness 6-7% and brachialis 10%; Bayesian (shoulder extended) curl 9% biceps and 8% brachialis; no significant between-condition difference in total growth.",
+          "source": "Attarieh P, Nunes JP, Khani S, et al. Comparison Between Shoulder Flexed and Extended Positions in Elbow Flexion Resistance Training on Regional Hypertrophy and Maximum Strength: Preacher versus Bayesian Cable Curls. Eur J Sport Sci. 2025;25(4):e12279.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "40082069",
+          "doi": "10.1002/ejsc.12279"
+        },
+        {
+          "claim": "Seated dumbbell preacher curl training for 12 weeks increased elbow flexor CSA 8% (1 set) to 13% (3 sets) by MRI - preacher curls are a full-credit elbow flexor exercise.",
+          "source": "Sooneste H, Tanimoto M, Kakigi R, Saga N, Katamoto S. Effects of training volume on strength and hypertrophy in young men. J Strength Cond Res. 2013;27(1):8-13.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "23249767",
+          "doi": "10.1519/JSC.0b013e3182679215"
+        },
+        {
+          "claim": "In the preacher curl, training the initial (stretched) 0-68 degree range grew distal biceps CSA more than the final range and gave larger full-ROM strength gains.",
+          "source": "Pedrosa GF, Simoes MG, Figueiredo MOC, et al. Training in the Initial Range of Motion Promotes Greater Muscle Adaptations Than at Final in the Arm Curl. Sports (Basel). 2023;11(2):39.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "36828324",
+          "doi": "10.3390/sports11020039"
+        },
+        {
+          "claim": "Dumbbell preacher curl elicited high biceps long-head EMG (~80% max RMS) only over a short range near the start of the movement, versus the full-ROM activity of incline and standing curls - consistent with a relatively smaller biceps-long-head share.",
+          "source": "Oliveira LF, Matta TT, Alves DS, Garcia MAC, Vieira TMM. Effect of the shoulder position on the biceps brachii EMG in different dumbbell curls. J Sports Sci Med. 2009;8(1):24-9.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24150552"
+        },
+        {
+          "claim": "The widely quoted ACE-commissioned concentration-curl EMG comparison (concentration curl highest biceps activation of eight curl variants) is a non-peer-reviewed report; it supports keeping the concentration curl at full biceps credit but does not justify a distinct mapping.",
+          "source": "Young S, Porcari JP, Camic C, Kovacs A, Foster C. ACE-sponsored research: Best biceps exercises. ACE ProSource / American Council on Exercise, 2014.",
+          "tier": "consensus",
+          "confidence": "unverified"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Biceps 1.0 kept; region split moved from 0.8/0.2 to 0.7/0.3 on the strength of two 2025 hypertrophy trials that show a distal/brachialis tilt for shoulder-flexed curls. Concentration curls (elbow braced on the thigh or arm hanging while bent over) and spider/prone-incline curls are biomechanically the same shoulder-flexed, fixed-humerus pattern and are grouped here. Barbell_Curls_Lying_Against_An_Incline and Lying_High_Bench_Barbell_Curl are prone (chest on the bench) with the arms hanging forward, i.e. spider curls, not incline curls. Machine_Bicep_Curl (seated arm-pad machine) is placed here; if the app's machine is a free-arm cable machine, move it to the standing family - the mapping difference is only the 0.05 brachialis share. Standing_Concentration_Curl and Concentration_Curls lose the current forearms 0.5 at 50/50 in favour of the family's 0.25 brachioradialis-biased credit."
+    },
+    {
+      "id": "hammer_neutral_grip_curl",
+      "name": "Hammer / neutral-grip curl (dumbbell, rope, cross-body, incline, preacher)",
+      "description": "Elbow flexion with the forearm in neutral (thumbs up). Biceps loses part of its mechanical advantage, so brachialis and brachioradialis carry a larger share of the flexion torque; biceps still contributes substantially.",
+      "exerciseIds": [
+        "Alternate_Hammer_Curl",
+        "Cable_Hammer_Curls_-_Rope_Attachment",
+        "Cross_Body_Hammer_Curl",
+        "Hammer_Curls",
+        "Incline_Hammer_Curls",
+        "Preacher_Hammer_Dumbbell_Curl"
+      ],
+      "mapping": [
+        {
+          "groupId": "biceps",
+          "weight": 1,
+          "regionDistribution": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          },
+          "rationale": "Biceps excitation drops ~12% vs supinated while brachialis activity rises in non-supinated positions; an even split reflects the shared load."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.5,
+          "regionDistribution": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          },
+          "rationale": "Brachioradialis is at its mechanically strongest in neutral and is the reason lifters choose hammer curls for forearm size; standard half credit, biased to the brachioradialis region."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Neutral-grip barbell curl produced 12% lower biceps brachii excitation than the supinated grip in bodybuilders; brachioradialis remained highly active in all grips.",
+          "source": "Coratella G, Tornatore G, Longo S, Toninelli N, Padovan R, Esposito F, Cè E. Biceps Brachii and Brachioradialis Excitation in Biceps Curl Exercise: Different Handgrips, Different Synergy. Sports (Basel). 2023;11(3):64.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "36976950",
+          "doi": "10.3390/sports11030064"
+        },
+        {
+          "claim": "Brachialis and brachioradialis EMG increases as the forearm moves out of supination while biceps EMG decreases (reciprocal synergy among the flexors).",
+          "source": "Naito A, Yajima M, Fukamachi H, Ushikoshi K, Sun YJ, Shimizu Y. Electromyographic (EMG) study of the elbow flexors during supination and pronation of the forearm. Tohoku J Exp Med. 1995;175(4):285-8.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "7570586",
+          "doi": "10.1620/tjem.175.285"
+        },
+        {
+          "claim": "Brachioradialis contribution to elbow flexion increases when the biceps is at a biomechanical disadvantage (pronated hand); the biceps did not fully compensate across hand positions.",
+          "source": "Kleiber T, Kunz L, Disselhorst-Klug C. Muscular coordination of biceps brachii and brachioradialis in elbow flexion with respect to hand position. Front Physiol. 2015;6:215.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26300781",
+          "doi": "10.3389/fphys.2015.00215"
+        },
+        {
+          "claim": "Brachioradialis is a main elbow flexor in the neutral forearm position, active through the full resisted flexion arc.",
+          "source": "Caufriez B, Dugailly PM, Brassinne E, Schuind F. The Role of the Muscle Brachioradialis in Elbow Flexion: An Electromyographic Study. J Hand Surg Asian Pac Vol. 2018;23(1):102-110.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29409427",
+          "doi": "10.1142/S2424835518500145"
+        },
+        {
+          "claim": "No longitudinal study has compared biceps vs brachialis vs brachioradialis hypertrophy after neutral-grip vs supinated curls; the 50/50 split and the 0.5 forearm credit are EMG-plus-anatomy estimates.",
+          "source": "Practitioner consensus (hammer curl = brachialis/brachioradialis emphasis), e.g. Schoenfeld BJ. Science and Development of Muscle Hypertrophy, 2nd ed. Human Kinetics, 2021.",
+          "tier": "consensus",
+          "confidence": "unverified"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Current biceps 0.5/0.5 is kept - it matches the EMG picture. The forearm credit is made consistent (current: Hammer_Curls, Cable_Hammer_Curls and Incline_Hammer_Curls have none; the others have 0.5 at 50/50) and re-biased to the brachioradialis region because that is the muscle actually doing flexion work; wrist flexors only grip. Cross_Body_Hammer_Curl adds slight shoulder rotation but no different muscle credit. Incline_Hammer_Curls and Preacher_Hammer_Dumbbell_Curl: shoulder angle changes biceps length but the neutral grip is the dominant factor, so no override."
+    },
+    {
+      "id": "reverse_pronated_curl",
+      "name": "Reverse (pronated-grip) curl (barbell, EZ preacher, cable, plate, dumbbell)",
+      "description": "Elbow flexion with a fully pronated grip. Biceps is at its greatest mechanical disadvantage; brachialis and brachioradialis become the primary flexors and the wrist extensors work hard to keep the wrist from collapsing into flexion under the bar.",
+      "exerciseIds": [
+        "Reverse_Barbell_Curl",
+        "Reverse_Barbell_Preacher_Curls",
+        "Reverse_Cable_Curl",
+        "Reverse_Plate_Curls",
+        "Standing_Dumbbell_Reverse_Curl"
+      ],
+      "mapping": [
+        {
+          "groupId": "biceps",
+          "weight": 1,
+          "regionDistribution": {
+            "biceps": 0.35,
+            "brachialis": 0.65
+          },
+          "rationale": "Brachialis is the workhorse when the forearm is pronated; biceps excitation is ~19% lower than supinated but still substantial, so the group keeps full credit with a brachialis-biased split."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.75,
+          "regionDistribution": {
+            "forearm_flexors": 0.1,
+            "forearm_extensors_brachioradialis": 0.9
+          },
+          "rationale": "Brachioradialis contribution is significantly higher in the pronated hand position and the wrist extensors are loaded throughout; strong-synergist credit, nearly all to the brachioradialis/extensor region."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Brachioradialis contribution to elbow flexion is significantly greater in the pronated hand position than in supinated or neutral positions.",
+          "source": "Kleiber T, Kunz L, Disselhorst-Klug C. Muscular coordination of biceps brachii and brachioradialis in elbow flexion with respect to hand position. Front Physiol. 2015;6:215.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26300781",
+          "doi": "10.3389/fphys.2015.00215"
+        },
+        {
+          "claim": "Pronated-grip barbell curl produced 19% lower biceps brachii excitation than the supinated grip, with anterior deltoid stabilisation increasing.",
+          "source": "Coratella G, Tornatore G, Longo S, Toninelli N, Padovan R, Esposito F, Cè E. Biceps Brachii and Brachioradialis Excitation in Biceps Curl Exercise: Different Handgrips, Different Synergy. Sports (Basel). 2023;11(3):64.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "36976950",
+          "doi": "10.3390/sports11030064"
+        },
+        {
+          "claim": "Brachialis contraction level and gain are higher with the forearm prone than supine; biceps the reverse.",
+          "source": "Naito A, Sun YJ, Yajima M, Fukamachi H, Ushikoshi K. Electromyographic study of the elbow flexors and extensors in a motion of forearm pronation/supination while maintaining elbow flexion in humans. Tohoku J Exp Med. 1998;186(4):267-77.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "10328159",
+          "doi": "10.1620/tjem.186.267"
+        },
+        {
+          "claim": "In the pronated forearm the short head of the biceps has the larger supination moment arm and the biceps as a whole is a less efficient flexor - anatomical basis for the reduced biceps share.",
+          "source": "Jarrett CD, Weir DM, Stuffmann ES, Jain S, Miller MC, Schmidt CC. Anatomic and biomechanical analysis of the short and long head components of the distal biceps tendon. J Shoulder Elbow Surg. 2012;21(7):942-8.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "21813298",
+          "doi": "10.1016/j.jse.2011.04.030"
+        },
+        {
+          "claim": "No longitudinal hypertrophy study isolates reverse curls; the brachialis/brachioradialis emphasis rests on EMG and anatomy plus long-standing practitioner use of reverse curls as a brachioradialis exercise.",
+          "source": "Practitioner consensus, e.g. Schoenfeld BJ. Science and Development of Muscle Hypertrophy, 2nd ed. Human Kinetics, 2021.",
+          "tier": "consensus",
+          "confidence": "unverified"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Corrects three current rows: Reverse_Barbell_Preacher_Curls (biceps 0.8/0.2), Reverse_Cable_Curl and Reverse_Plate_Curls (biceps 0.8/0.2 and forearms 50/50) are anatomically wrong for a pronated grip - they should match Reverse_Barbell_Curl / Standing_Dumbbell_Reverse_Curl. Forearm credit raised from 0.5 to 0.75 because this is the variant users log specifically for forearms and brachioradialis becomes a primary mover. Reverse_Barbell_Preacher_Curls could carry brachialis 0.7 by the preacher logic, but the difference is within noise, so no override."
+    },
+    {
+      "id": "zottman_curl",
+      "name": "Zottman curl (supinated concentric, pronated eccentric)",
+      "description": "Curl up with a supinated grip, rotate to pronated at the top, lower pronated. Concentric loads biceps as a supinated curl; eccentric loads brachialis, brachioradialis and wrist extensors as a reverse curl. Credit is a blend of the two families.",
+      "exerciseIds": ["Zottman_Curl", "Zottman_Preacher_Curl"],
+      "mapping": [
+        {
+          "groupId": "biceps",
+          "weight": 1,
+          "regionDistribution": {
+            "biceps": 0.55,
+            "brachialis": 0.45
+          },
+          "rationale": "Half the rep is a supinated curl (biceps-dominant) and half a pronated eccentric (brachialis-dominant); blend of the two family splits."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.5,
+          "regionDistribution": {
+            "forearm_flexors": 0.15,
+            "forearm_extensors_brachioradialis": 0.85
+          },
+          "rationale": "The pronated eccentric loads brachioradialis and wrist extensors hard (eccentric phase carries a large share of hypertrophic stimulus), so forearm credit sits between the supinated (0.25) and reverse (0.75) families."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Supinated grip maximises biceps excitation; pronated grip reduces it ~19% and shifts load to brachioradialis - the two halves of a Zottman rep.",
+          "source": "Coratella G, Tornatore G, Longo S, Toninelli N, Padovan R, Esposito F, Cè E. Biceps Brachii and Brachioradialis Excitation in Biceps Curl Exercise: Different Handgrips, Different Synergy. Sports (Basel). 2023;11(3):64.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "36976950",
+          "doi": "10.3390/sports11030064"
+        },
+        {
+          "claim": "Brachioradialis contribution is significantly higher with the pronated hand, i.e. during the Zottman lowering phase.",
+          "source": "Kleiber T, Kunz L, Disselhorst-Klug C. Muscular coordination of biceps brachii and brachioradialis in elbow flexion with respect to hand position. Front Physiol. 2015;6:215.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26300781",
+          "doi": "10.3389/fphys.2015.00215"
+        },
+        {
+          "claim": "Reciprocal biceps vs brachialis/brachioradialis activity as the forearm rotates between supination and pronation under load.",
+          "source": "Naito A, Yajima M, Fukamachi H, Ushikoshi K, Sun YJ, Shimizu Y. Electromyographic (EMG) study of the elbow flexors during supination and pronation of the forearm. Tohoku J Exp Med. 1995;175(4):285-8.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "7570586",
+          "doi": "10.1620/tjem.175.285"
+        },
+        {
+          "claim": "No study has measured the Zottman curl directly; mapping is an interpolation of the supinated and pronated families.",
+          "source": "Anatomical/biomechanical reasoning from the grip studies above.",
+          "tier": "anatomical",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "low",
+      "notes": "Current 0.5/0.5 with forearms 0.5 at 50/50 is close; tightened the split slightly toward biceps (the concentric, where most lifters fail, is supinated) and re-biased the forearm distribution to the brachioradialis/extensor region since that is what the pronated eccentric loads. Zottman_Preacher_Curl keeps the family mapping."
+    },
+    {
+      "id": "overhead_high_cable_curl",
+      "name": "Overhead / high-pulley cable curl (shoulder flexed or abducted ~90 degrees)",
+      "description": "Curl performed with the upper arm held at or above shoulder height (double-biceps pose position, or lying under a high pulley). The long head of the biceps is shortened at the shoulder, so the short head and brachialis take a relatively larger share and peak tension sits at full elbow flexion. The deltoids only hold the arm position isometrically.",
+      "exerciseIds": ["High_Cable_Curls", "Lying_Close-Grip_Bar_Curl_On_High_Pulley", "Overhead_Cable_Curl"],
+      "mapping": [
+        {
+          "groupId": "biceps",
+          "weight": 1,
+          "regionDistribution": {
+            "biceps": 0.7,
+            "brachialis": 0.3
+          },
+          "rationale": "Biceps is still the prime mover with a supinated grip, but shoulder flexion shortens the long head and reduces its length-tension contribution, so the split matches the other shoulder-flexed (preacher) family."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.25,
+          "regionDistribution": {
+            "forearm_flexors": 0.2,
+            "forearm_extensors_brachioradialis": 0.8
+          },
+          "rationale": "Brachioradialis synergist as in every supinated curl."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Shoulder-flexed (preacher) cable curls produced slightly larger brachialis (10%) than biceps (6-7%) thickness gains, supporting a brachialis tilt when the biceps is shortened at the shoulder.",
+          "source": "Attarieh P, Nunes JP, Khani S, et al. Comparison Between Shoulder Flexed and Extended Positions in Elbow Flexion Resistance Training on Regional Hypertrophy and Maximum Strength: Preacher versus Bayesian Cable Curls. Eur J Sport Sci. 2025;25(4):e12279.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "40082069",
+          "doi": "10.1002/ejsc.12279"
+        },
+        {
+          "claim": "Preacher (shoulder flexed) curls grew the distal elbow flexors more and the proximal region less than incline curls.",
+          "source": "Kassiano W, Costa B, Kunevaliki G, et al. Distinct muscle growth and strength adaptations after preacher and incline biceps curls. Int J Sports Med. 2025;46(5):334-343.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "39809454",
+          "doi": "10.1055/a-2517-0509"
+        },
+        {
+          "claim": "Elbow flexor load sharing depends on joint angle and muscle length; the long head of biceps is biarticular and loses tension when the shoulder is flexed, whereas brachialis is unaffected.",
+          "source": "Praagman M, Chadwick EKJ, van der Helm FCT, Veeger HEJ. The effect of elbow angle and external moment on load sharing of elbow muscles. J Electromyogr Kinesiol. 2010;20(5):912-22.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "20452784",
+          "doi": "10.1016/j.jelekin.2010.04.003"
+        },
+        {
+          "claim": "No study has measured the overhead/high-cable curl specifically; the mapping extrapolates from the shoulder-flexed preacher data and biceps anatomy.",
+          "source": "Anatomical/biomechanical reasoning.",
+          "tier": "anatomical",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Current 0.8/0.2 changed to 0.7/0.3 to match the other shoulder-flexed family. No deltoid credit: holding the arms up is isometric stabilisation (the brief excludes it). Lying_Close-Grip_Bar_Curl_On_High_Pulley (supine, pulling the bar toward the forehead from a high pulley) has the shoulder flexed ~90 degrees and belongs here rather than with lying incline curls."
+    }
+  ],
+  "unassignedExerciseIds": [],
+  "openQuestions": [
+    "Forearm credit policy: I gave every curl a forearm credit (0.25 supinated, 0.5 neutral, 0.75 pronated) biased to the brachioradialis region, because brachioradialis is a real elbow flexor with meaningful stimulus, while wrist flexors only stabilise. The current table is inconsistent (some rows 0.5 at 50/50, some none). Confirm the product wants forearms coloured by ordinary supinated curls at all; if not, drop the 0.25 rows and keep only the hammer/reverse/Zottman credits.",
+    "Machine_Bicep_Curl was placed in the braced (preacher-style) family assuming an arm-pad machine. If the seed's machine is a free-arm cable-stack curl, move it to the standing family (only the brachialis share changes, 0.3 vs 0.25).",
+    "Grip width (close/wide/'inner-biceps') has no verified EMG or hypertrophy evidence for short- vs long-head selectivity, so no overrides were created. If the product later adds a biceps short/long-head region split, revisit with Jarrett 2012 anatomy.",
+    "Reverse curls: the 0.75 forearm credit is a judgement call between 'strong synergist' and 'primary mover'; there is no longitudinal brachioradialis hypertrophy study for any curl variant. Coratella 2023 also reports slightly higher brachioradialis excitation with the supinated than pronated grip in bodybuilders, which conflicts with Kleiber 2015 and with practice; I followed Kleiber plus the wrist-extensor load argument.",
+    "Drag curl: adds active shoulder extension against load; I left it in the standing family without a delt_rear/lats credit because the extension moment is small relative to the elbow moment. Add delt_rear 0.25 if the product wants that visible.",
+    "The ACE 2014 concentration-curl EMG report (Young et al.) is non-peer-reviewed and could not be opened; it is cited only as consensus support and does not drive any number."
+  ]
+}

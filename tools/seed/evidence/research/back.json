@@ -1,0 +1,2533 @@
+{
+  "batch": "back",
+  "families": [
+    {
+      "id": "vertical_pull_pronated",
+      "name": "Pull-ups and pronated pulldowns",
+      "description": "Overhead (vertical) pull with a pronated grip at or wider than shoulder width: shoulder adduction/extension from an overhead position with elbow flexion. Lats are the prime mover; lower/middle trapezius and rhomboids depress and downwardly rotate the scapula; elbow flexors are synergists, with the brachialis/brachioradialis share raised by the pronated hand. Includes front and behind-the-neck bar paths, wide-grip pull-ups, band-assisted and weighted pull-ups, unilateral pulldowns.",
+      "exerciseIds": [
+        "Pullups",
+        "Weighted_Pull_Ups",
+        "Band_Assisted_Pull-Up",
+        "Wide-Grip_Lat_Pulldown",
+        "Full_Range-Of-Motion_Lat_Pulldown",
+        "Wide-Grip_Pulldown_Behind_The_Neck",
+        "Wide-Grip_Rear_Pull-Up",
+        "Rocky_Pull-Ups_Pulldowns",
+        "Side_To_Side_Chins",
+        "One_Arm_Lat_Pulldown",
+        "London_Bridges"
+      ],
+      "mapping": [
+        {
+          "groupId": "lats",
+          "weight": 1,
+          "rationale": "Anchor row (Wide-Grip_Lat_Pulldown). Lats 117-130% MVIC in pull-ups (Youdas 2010); pull-up/chin-up highest lat activation of eight back exercises (Edelburg/Porcari 2018)."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.5,
+          "regionDistribution": {
+            "traps_mid_lower": 0.6,
+            "rhomboids": 0.4
+          },
+          "rationale": "Anchor weight. Lower trapezius 45-56% MVIC and middle trapezius ~48% MVIC in pull-ups (Youdas 2010; Dickie 2017); vertical pulls bias the lower/middle trapezius (scapular depression) more than the rhomboids, hence 0.6/0.4 rather than the current 0.5/0.5."
+        },
+        {
+          "groupId": "biceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          },
+          "rationale": "Anchor weight. A pronated hand mechanically disadvantages biceps brachii and shifts flexion work to brachialis/brachioradialis (Kleiber 2015; Urbanczyk 2020), so the biceps-brachii share drops from the current 0.8 to 0.5."
+        },
+        {
+          "groupId": "delt_rear",
+          "weight": 0.25,
+          "rationale": "Anchor weight. Posterior deltoid is measurable but secondary in pulldowns (Signorile 2002; Sperandei 2009; Padovan 2024)."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Pullups",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.5,
+                "brachialis": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.4,
+                "forearm_extensors_brachioradialis": 0.6
+              }
+            }
+          ],
+          "reason": "Hanging bodyweight pull: brachioradialis 0.67 MVC and finger flexors 0.64-0.74 MVC during pronated pull-ups (Koukoubis 1995); grip is a genuine limiter unlike the machine pulldown, where straps change nothing (Valerio 2019). Minor 0.25 credit, biased to brachioradialis. Current row omits forearms while Band_Assisted/One_Arm variants include them at 0.5; this makes the family consistent."
+        },
+        {
+          "exerciseId": "Weighted_Pull_Ups",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.5,
+                "brachialis": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.4,
+                "forearm_extensors_brachioradialis": 0.6
+              }
+            }
+          ],
+          "reason": "Same as Pullups; added load raises grip demand further. Current row is missing delt_rear; restored to the family value."
+        },
+        {
+          "exerciseId": "Band_Assisted_Pull-Up",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.5,
+                "brachialis": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.4,
+                "forearm_extensors_brachioradialis": 0.6
+              }
+            }
+          ],
+          "reason": "Hanging pull, so forearms 0.25 as for Pullups. The current abs 0.5 is removed: rectus abdominis is low in strict pull-ups/pulldowns (Doma 2013; Youdas 2010 external oblique 31-35% MVIC only) and the band does not add trunk flexion work."
+        },
+        {
+          "exerciseId": "Wide-Grip_Rear_Pull-Up",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.5,
+                "brachialis": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.4,
+                "forearm_extensors_brachioradialis": 0.6
+              }
+            }
+          ],
+          "reason": "Behind-the-neck hanging pull. Lat activation equal to or slightly below the front path (Signorile 2002; Sperandei 2009; Padovan 2024), so no lat change; forearms 0.25 as for other hanging pulls; delt_rear reduced from the current 0.5 to the anchor 0.25 because the behind-neck path does not consistently raise posterior deltoid (Signorile found it lower, Sperandei higher)."
+        },
+        {
+          "exerciseId": "Rocky_Pull-Ups_Pulldowns",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.5,
+                "brachialis": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.4,
+                "forearm_extensors_brachioradialis": 0.6
+              }
+            }
+          ],
+          "reason": "Alternating front/behind-neck wide pull-ups: average of the two paths equals the family default; hanging grip adds forearms 0.25; delt_rear normalised from 0.5 to 0.25."
+        },
+        {
+          "exerciseId": "Side_To_Side_Chins",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.5,
+                "brachialis": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.4,
+                "forearm_extensors_brachioradialis": 0.6
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Wide pronated hang pulling toward one hand at a time: each rep is a partially unilateral pull, so a small obliques credit (unilateral pulling roughly doubles external-oblique activity, Saeterbakken 2015). Forearms reduced from 0.5 to 0.25 to match the other hanging pulls; delt_rear normalised to 0.25."
+        },
+        {
+          "exerciseId": "London_Bridges",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.5,
+                "brachialis": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.4,
+                "forearm_extensors_brachioradialis": 0.6
+              }
+            }
+          ],
+          "reason": "Hanging bar pull variant; kept with the pull-up family as the current mapping does, forearms reduced from 0.5 to 0.25. Placement is uncertain (see openQuestions)."
+        },
+        {
+          "exerciseId": "One_Arm_Lat_Pulldown",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.5,
+                "brachialis": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Unilateral cable pulldown loads the trunk against lateral flexion/rotation; unilateral row variants show roughly double the external-oblique EMG of bilateral ones (Saeterbakken 2015), so a minor 0.25 obliques credit."
+        },
+        {
+          "exerciseId": "Wide-Grip_Pulldown_Behind_The_Neck",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.5,
+                "brachialis": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Delt_rear reduced from the current 0.5 to the anchor 0.25: HD-EMG shows the front path gives greater posterior deltoid than the back path in the ascending phase (Padovan 2024) and Signorile 2002 found lower posterior deltoid behind the neck; Sperandei 2009 found the opposite, so there is no basis to credit it above the front-path anchor."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "During pull-ups and chin-ups mean activation was latissimus dorsi 117-130% MVIC, biceps brachii 78-96%, infraspinatus 71-79%, lower trapezius 45-56%, pectoralis major 44-57%, erector spinae 39-41%, external oblique 31-35%; lower trapezius was higher in the pull-up, pectoralis major and biceps higher in the chin-up.",
+          "source": "Youdas JW, Amundson CL, Cicero KS, Hahn JJ, Harezlak DT, Hollman JH. Surface electromyographic activation patterns and elbow joint motion during a pull-up, chin-up, or Perfect-Pullup rotational exercise. J Strength Cond Res. 2010;24(12):3404-3414.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "21068680",
+          "doi": "10.1519/JSC.0b013e3181f1598c"
+        },
+        {
+          "claim": "Across supinated, pronated, neutral and rope pull-ups, peak and mean activation of the shoulder-arm-forearm complex were similar; the pronated grip produced markedly greater middle trapezius activity than the neutral grip (48 vs 27% MVIC mean).",
+          "source": "Dickie JA, Faulkner JA, Barnes MJ, Lark SD. Electromyographic analysis of muscle activation during pull-up variations. J Electromyogr Kinesiol. 2017;32:30-36.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28011412",
+          "doi": "10.1016/j.jelekin.2016.11.004"
+        },
+        {
+          "claim": "Musculoskeletal modelling of three pull-up grips: latissimus dorsi relatively more active in wide-grip pull-ups; front (shoulder-width pronated) pull-ups favoured biceps brachii and brachialis; supinated reverse pull-ups showed higher proportional rotator cuff activation.",
+          "source": "Urbanczyk CA, Prinold JAI, Reilly P, Bull AMJ. Avoiding high-risk rotator cuff loading: Muscle force during three pull-up techniques. Scand J Med Sci Sports. 2020;30(11):2205-2214.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32715526",
+          "doi": "10.1111/sms.13780"
+        },
+        {
+          "claim": "Grip width (1, 1.5, 2x biacromial, all pronated) did not change latissimus, trapezius or infraspinatus EMG in the 6RM lat pulldown; wide grip was slightly weaker; medium grip gave marginally more biceps activity.",
+          "source": "Andersen V, Fimland MS, Wiik E, Skoglund A, Saeterbakken AH. Effects of grip width on muscle strength and activation in the lat pull-down. J Strength Cond Res. 2014;28(4):1135-1142.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24662157",
+          "doi": "10.1097/JSC.0000000000000232"
+        },
+        {
+          "claim": "A pronated grip elicited greater latissimus dorsi activity than a supinated grip in the anterior lat pulldown; grip type had no effect on middle trapezius or biceps brachii EMG.",
+          "source": "Lusk SJ, Hale BD, Russell DM. Grip width and forearm orientation effects on muscle activity during the lat pull-down. J Strength Cond Res. 2010;24(7):1895-1900.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "20543740",
+          "doi": "10.1519/JSC.0b013e3181ddb0ab"
+        },
+        {
+          "claim": "Concentric latissimus dorsi EMG: wide-grip anterior > wide-grip posterior, supinated and close grip; posterior deltoid and pectoralis major were lower in the behind-the-neck variant; teres major and triceps long head also measured.",
+          "source": "Signorile JF, Zink AJ, Szwed SP. A comparative electromyographical investigation of muscle utilization patterns using various hand positions during the lat pull-down. J Strength Cond Res. 2002;16(4):539-546.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "12423182"
+        },
+        {
+          "claim": "Front, behind-the-neck and V-bar pulldowns at 80% 1RM produced no difference in latissimus dorsi EMG; pectoralis major was highest in the front pulldown; posterior deltoid and biceps were highest behind the neck.",
+          "source": "Sperandei S, Barros MA, Silveira-Junior PC, Oliveira CG. Electromyographic analysis of three different types of lat pull-down. J Strength Cond Res. 2009;23(7):2033-2038.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "19855327",
+          "doi": "10.1519/JSC.0b013e3181b8d30a"
+        },
+        {
+          "claim": "High-density EMG at 8RM: the front pulldown gave greater latissimus and pectoralis excitation in the descending phase and greater biceps and posterior deltoid in the ascending phase than the behind-the-neck pulldown; overall the front path excited the prime movers more.",
+          "source": "Padovan D, Nunes JP, Pelagalli G, et al. High-Density Electromyography Excitation in Front vs. Back Lat Pull-Down Prime Movers. J Hum Kinet. 2024;91:77-86.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "38689585",
+          "doi": "10.5114/jhk/185211"
+        },
+        {
+          "claim": "Seven pulldown variants (grip type, width, trunk inclination) at 70% RM produced no significant differences in latissimus, biceps, middle/lower trapezius or infraspinatus EMG in 40 experienced lifters; only posterior deltoid rose with a wide pronated grip and 30 degree trunk lean.",
+          "source": "Buonsenso A, et al. Electromyographic Analysis of Back Muscle Activation During Lat Pulldown Exercise: Effects of Grip Variations and Forearm Orientation. J Funct Morphol Kinesiol. 2025;10(3):345.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "40981044",
+          "doi": "10.3390/jfmk10030345"
+        },
+        {
+          "claim": "Narrative review of 23 EMG studies: pull-up variations show broadly similar latissimus activation across grips; an anterior bar path is the pulldown configuration most consistently associated with greater latissimus EMG; grip-width effects are inconsistent.",
+          "source": "Di Fonza G, et al. Electromyographic Analysis of Latissimus Dorsi Activation During Common Resistance Training Exercises: A Narrative Review. J Funct Morphol Kinesiol. 2026;11(3):315.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "42647355",
+          "doi": "10.3390/jfmk11030315"
+        },
+        {
+          "claim": "Isometric pulldown: latissimus dorsi activity and the latissimus/lower-trapezius ratio fell as shoulder elevation rose from 60 to 120 degrees while lower trapezius activity increased, i.e. the overhead (top) part of a vertical pull is a lower-trapezius task.",
+          "source": "Park SY, Yoo WG. Selective activation of the latissimus dorsi and the inferior fibers of trapezius at various shoulder angles during isometric pull-down exertion. J Electromyogr Kinesiol. 2013;23(5):1146-1151.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24064179",
+          "doi": "10.1016/j.jelekin.2013.08.006"
+        },
+        {
+          "claim": "Brachioradialis contribution to elbow flexion increased significantly in the pronated hand position compared with supinated and neutral, reflecting the biomechanical disadvantage of biceps brachii when pronated.",
+          "source": "Kleiber T, Kunz L, Disselhorst-Klug C. Muscular coordination of biceps brachii and brachioradialis in elbow flexion with respect to hand position. Front Physiol. 2015;6:215.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26300781",
+          "doi": "10.3389/fphys.2015.00215"
+        },
+        {
+          "claim": "During pronated finger-tip pull-ups the flexor digitorum superficialis (0.69 MVC) and brachioradialis (0.67 MVC) were the most active muscles, biceps brachii only 0.33 MVC; forearm flexors stayed highly active throughout hanging.",
+          "source": "Koukoubis TD, Cooper LW, Glisson RR, Seaber AV, Feagin JA Jr. An electromyographic study of arm muscles during climbing. Knee Surg Sports Traumatol Arthrosc. 1995;3(2):121-124.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "7553008",
+          "doi": "10.1007/BF01552388"
+        },
+        {
+          "claim": "Lifting straps did not change 1RM, repetitions at 70% 1RM or latissimus dorsi activation in the lat pulldown in trained men, i.e. grip is not a limiter in the machine pulldown (supports no forearm credit for pulldowns, unlike hanging pull-ups).",
+          "source": "Valerio DF, Berton R, Barbieri JF, Calendo LA, de Moraes MR, Barroso R. The effects of lifting straps in maximum strength, number of repetitions and muscle activation during lat pull-down. Sports Biomech. 2021;20(5):639-648.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "31198105",
+          "doi": "10.1080/14763141.2019.1610490"
+        },
+        {
+          "claim": "Ten weeks of lat pulldown plus bench press alone increased elbow-flexor thickness 6.5%, not different from adding direct curls (7.0%), showing multi-joint pulls deliver meaningful biceps hypertrophy.",
+          "source": "Gentil P, Soares SR, Pereira MC, et al. Effect of adding single-joint exercises to a multi-joint exercise resistance-training program on strength and hypertrophy in untrained subjects. Appl Physiol Nutr Metab. 2013;38(3):341-344.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "23537028",
+          "doi": "10.1139/apnm-2012-0176"
+        },
+        {
+          "claim": "Pull-ups and chin-ups produced significantly greater latissimus dorsi activation than bent-over row, inverted row, lat pulldown, seated row, TRX row and I-Y-T raises.",
+          "source": "Edelburg H, Porcari JP, Camic C, Kovacs A, Foster C. ACE-sponsored research: What is the best back exercise? ACE Certified, December 2018 (University of Wisconsin-La Crosse thesis, 2017).",
+          "tier": "emg",
+          "confidence": "likely"
+        },
+        {
+          "claim": "Lat pulldown in pronation and supination showed low (<20% MVIC) biceps activity whereas Redcord pull-ups in pronation and supination showed moderate (20-50% MVIC) biceps activity.",
+          "source": "Borms D, Maenhout A, Cools AM. Biceps Disorder Rehabilitation for the Athlete: A Continuum of Moderate- to High-Load Exercises. Am J Sports Med. 2016;44(3):642-650.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28125910",
+          "doi": "10.1177/0363546516674190"
+        }
+      ],
+      "conflictsWithBrief": [
+        "Anchor Wide-Grip_Lat_Pulldown credits upper_back at 0.5, yet lower trapezius reaches 45-56% MVIC in pull-ups (Youdas 2010) and middle trapezius ~48% MVIC in pronated pull-ups (Dickie 2017), which is close to the 60% threshold usually treated as a primary-mover level; 0.75 would be defensible for the hanging pull-up variants. Anchor kept; only the region split was biased toward traps_mid_lower.",
+        "Anchor biceps 0.5 for the pulldown is well supported for the pronated machine pulldown (biceps <20% MVIC, Borms 2016) but hanging pull-ups reach 78-96% MVIC biceps (Youdas 2010) and pulldown-only training grew elbow flexors as much as adding curls (Gentil 2013); a 0.75 credit for hanging pull-ups would be defensible. Kept at 0.5 for consistency with the anchor."
+      ],
+      "confidence": "high",
+      "notes": "Family default is the anchor row with two evidence-driven refinements to region splits: upper_back biased to traps_mid_lower (0.6/0.4) because vertical pulls are scapular depression tasks, and biceps split 0.5/0.5 because a pronated hand disadvantages biceps brachii. Hanging bodyweight variants get forearms 0.25 (brachioradialis-biased); machine pulldowns do not. Behind-the-neck variants keep the same lat credit as the front path (evidence is split and never favours them). No erectors/abs credit: trunk activity in strict pull-ups is isometric and moderate."
+    },
+    {
+      "id": "vertical_pull_supinated_neutral",
+      "name": "Chin-ups, close/neutral-grip and underhand pulldowns",
+      "description": "Vertical pull with a supinated or neutral grip, usually shoulder-width or closer. Same lat-dominant shoulder extension/adduction as the pronated family, but the biceps brachii is mechanically favoured, the sternal/costal pectoralis major contributes more (measured 44-57% MVIC in chin-ups), and the elbows track in front of the body. Includes V-bar and close-grip pulldowns, kneeling high-pulley rows (a rope pulldown), the leverage high row (a chest-supported machine pulldown) and sternum chins.",
+      "exerciseIds": [
+        "Chin-Up",
+        "Underhand_Cable_Pulldowns",
+        "Mixed_Grip_Chin",
+        "One_Arm_Chin-Up",
+        "Close-Grip_Front_Lat_Pulldown",
+        "V-Bar_Pulldown",
+        "V-Bar_Pullup",
+        "Gironda_Sternum_Chins",
+        "Kneeling_High_Pulley_Row",
+        "Kneeling_Single-Arm_High_Pulley_Row",
+        "Leverage_High_Row"
+      ],
+      "mapping": [
+        {
+          "groupId": "lats",
+          "weight": 1,
+          "rationale": "Lat EMG equal across grip orientations in pull-ups and pulldowns (Dickie 2017; Sperandei 2009; Buonsenso 2025); lats remain the prime mover."
+        },
+        {
+          "groupId": "biceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "biceps": 0.65,
+            "brachialis": 0.35
+          },
+          "rationale": "Anchor weight for the neutral-grip default (V-bar, close neutral, rope). Neutral hand puts biceps brachii between its pronated disadvantage and supinated advantage (Kleiber 2015), so 0.65/0.35. Supinated variants are overridden to 0.75 and 0.8/0.2."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.5,
+          "regionDistribution": {
+            "traps_mid_lower": 0.6,
+            "rhomboids": 0.4
+          },
+          "rationale": "Anchor weight; lower/middle trapezius depress the scapula during any vertical pull (Youdas 2010; Park 2013). Slightly less middle trapezius than a pronated wide grip (Dickie 2017: neutral 27% vs pronated 48% MVIC) but still above the 0.25 floor."
+        },
+        {
+          "groupId": "delt_rear",
+          "weight": 0.25,
+          "rationale": "Anchor weight; posterior deltoid present in close and supinated pulldowns (Signorile 2002)."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.25,
+          "regionDistribution": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.3,
+            "chest_lower": 0.6
+          },
+          "rationale": "Pectoralis major 44-57% MVIC in chin-ups and significantly higher than in pull-ups (Youdas 2010); pec higher in close, supinated and front-path pulldowns than behind the neck (Signorile 2002; Sperandei 2009). The sternal/costal fibres extend the shoulder from overhead, hence the lower-biased split. Minor 0.25 credit so the user sees why chest is coloured after chin-ups."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Chin-Up",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.75,
+              "regionDistribution": {
+                "biceps": 0.8,
+                "brachialis": 0.2
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.1,
+                "chest_mid": 0.3,
+                "chest_lower": 0.6
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.6,
+                "forearm_extensors_brachioradialis": 0.4
+              }
+            }
+          ],
+          "reason": "Supinated hanging pull: biceps 78-96% MVIC and significantly higher than the pull-up (Youdas 2010; Doma 2013 concentric biceps higher in chin-up than pulldown), so strong-synergist credit 0.75 with the biceps-brachii-dominant 0.8/0.2 split. Hanging grip gives forearms 0.25 (reduced from the current 0.5), flexor-biased because supination removes most brachioradialis work."
+        },
+        {
+          "exerciseId": "Underhand_Cable_Pulldowns",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.75,
+              "regionDistribution": {
+                "biceps": 0.8,
+                "brachialis": 0.2
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.1,
+                "chest_mid": 0.3,
+                "chest_lower": 0.6
+              }
+            }
+          ],
+          "reason": "Supinated grip: biceps brachii favoured (Kleiber 2015), so 0.75 and 0.8/0.2; no forearm credit for a machine pulldown (Valerio 2019). Delt_rear reduced from the current 0.5 to the anchor 0.25."
+        },
+        {
+          "exerciseId": "Mixed_Grip_Chin",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.1,
+                "chest_mid": 0.3,
+                "chest_lower": 0.6
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.5,
+                "forearm_extensors_brachioradialis": 0.5
+              }
+            }
+          ],
+          "reason": "One supinated and one pronated hand: the family default (0.65/0.35, weight 0.5) is the average of the two grips; hanging grip adds forearms 0.25 split evenly."
+        },
+        {
+          "exerciseId": "One_Arm_Chin-Up",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.75,
+              "regionDistribution": {
+                "biceps": 0.8,
+                "brachialis": 0.2
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.1,
+                "chest_mid": 0.3,
+                "chest_lower": 0.6
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.5,
+              "regionDistribution": {
+                "forearm_flexors": 0.6,
+                "forearm_extensors_brachioradialis": 0.4
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Supinated single-arm hang: full bodyweight on one grip (forearms 0.5 justified, cf. Koukoubis 1995 finger-flexor loads), biceps 0.75 as for the chin-up, and obliques 0.25 for the anti-rotation/anti-lateral-flexion demand of a unilateral pull (Saeterbakken 2015)."
+        },
+        {
+          "exerciseId": "V-Bar_Pullup",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.1,
+                "chest_mid": 0.3,
+                "chest_lower": 0.6
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.5,
+                "forearm_extensors_brachioradialis": 0.5
+              }
+            }
+          ],
+          "reason": "Neutral close-grip hanging pull: family default plus forearms 0.25 for the hang; delt_rear reduced from the current 0.5 to the anchor 0.25 (no evidence a neutral grip raises posterior deltoid; Dickie 2017 found no grip effect)."
+        },
+        {
+          "exerciseId": "Gironda_Sternum_Chins",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.75,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.75,
+              "regionDistribution": {
+                "biceps": 0.8,
+                "brachialis": 0.2
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.6,
+                "forearm_extensors_brachioradialis": 0.4
+              }
+            }
+          ],
+          "reason": "Supinated chin performed with an extreme lean-back so the sternum touches the bar: the top half is a horizontal row (scapular retraction, shoulder horizontal extension), so upper_back rises to 0.75 with an even trapezius/rhomboid split and delt_rear to 0.5, matching the horizontal-row anchors. Chest credit dropped because the arm path ends in horizontal extension, not adduction. Biceps 0.75 for the supinated hang."
+        },
+        {
+          "exerciseId": "Kneeling_Single-Arm_High_Pulley_Row",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.1,
+                "chest_mid": 0.3,
+                "chest_lower": 0.6
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Unilateral kneeling high-cable pull: family default plus obliques 0.25 for the unilateral trunk demand (Saeterbakken 2015). Current row lacked delt_rear; restored."
+        },
+        {
+          "exerciseId": "Leverage_High_Row",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.75,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Chest-supported plate-loaded high row: the handles travel from overhead down and back toward the ribs, a hybrid of pulldown and row. Lats stay primary (shoulder extension from overhead) but the end-range retraction and horizontal extension component earns upper_back 0.75 and delt_rear 0.5 (the horizontal-row anchor values); no chest credit because the elbows finish behind the torso. Current mapping (upper_back 1.0, lats 0.75) treats it as a pure row, which under-credits the overhead start position."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Pectoralis major and biceps brachii were significantly more active in the chin-up than the pull-up; lower trapezius was more active in the pull-up; latissimus 117-130% MVIC in both.",
+          "source": "Youdas JW, Amundson CL, Cicero KS, Hahn JJ, Harezlak DT, Hollman JH. Surface electromyographic activation patterns and elbow joint motion during a pull-up, chin-up, or Perfect-Pullup rotational exercise. J Strength Cond Res. 2010;24(12):3404-3414.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "21068680",
+          "doi": "10.1519/JSC.0b013e3181f1598c"
+        },
+        {
+          "claim": "Concentric biceps brachii and erector spinae EMG were greater in chin-ups than in lat pulldowns; latissimus and biceps exceeded pectoralis major, triceps and abdominals in both.",
+          "source": "Doma K, Deakin GB, Ness KF. Kinematic and electromyographic comparisons between chin-ups and lat-pull down exercises. Sports Biomech. 2013;12(3):302-313.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24245055",
+          "doi": "10.1080/14763141.2012.760204"
+        },
+        {
+          "claim": "Supinated, pronated, neutral and rope pull-ups gave similar peak and mean activation of eight shoulder-arm-forearm muscles over a full repetition; only middle trapezius differed (pronated > neutral).",
+          "source": "Dickie JA, Faulkner JA, Barnes MJ, Lark SD. Electromyographic analysis of muscle activation during pull-up variations. J Electromyogr Kinesiol. 2017;32:30-36.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28011412",
+          "doi": "10.1016/j.jelekin.2016.11.004"
+        },
+        {
+          "claim": "Front, behind-neck and V-bar pulldowns produced equal latissimus EMG; V-bar gave intermediate pectoralis major and biceps activity; V-bar is an acceptable alternative to the front pulldown.",
+          "source": "Sperandei S, Barros MA, Silveira-Junior PC, Oliveira CG. Electromyographic analysis of three different types of lat pull-down. J Strength Cond Res. 2009;23(7):2033-2038.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "19855327",
+          "doi": "10.1519/JSC.0b013e3181b8d30a"
+        },
+        {
+          "claim": "Pectoralis major and posterior deltoid activity in the close-grip and supinated pulldowns equalled the wide anterior grip and exceeded the behind-the-neck grip; latissimus was highest with the wide anterior grip.",
+          "source": "Signorile JF, Zink AJ, Szwed SP. A comparative electromyographical investigation of muscle utilization patterns using various hand positions during the lat pull-down. J Strength Cond Res. 2002;16(4):539-546.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "12423182"
+        },
+        {
+          "claim": "Wide-grip and reverse-grip pulldowns and seated rows did not differ in biceps brachii activity; the highest latissimus-to-biceps ratio occurred in the wide-grip pulldown and seated row.",
+          "source": "Lehman GJ, Buchan DD, Lundy A, Myers N, Nalborczyk A. Variations in muscle activation levels during traditional latissimus dorsi weight training exercises: An experimental study. Dyn Med. 2004;3:4.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "15228624",
+          "doi": "10.1186/1476-5918-3-4"
+        },
+        {
+          "claim": "Brachioradialis contribution to elbow flexion is significantly higher with a pronated hand than supinated or neutral, while biceps brachii amplitude is unchanged across hand positions; biceps is mechanically disadvantaged when pronated.",
+          "source": "Kleiber T, Kunz L, Disselhorst-Klug C. Muscular coordination of biceps brachii and brachioradialis in elbow flexion with respect to hand position. Front Physiol. 2015;6:215.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26300781",
+          "doi": "10.3389/fphys.2015.00215"
+        },
+        {
+          "claim": "Seven pulldown variants including neutral and wide-neutral grips at 70% RM did not differ in latissimus, biceps, middle/lower trapezius or infraspinatus EMG.",
+          "source": "Buonsenso A, et al. Electromyographic Analysis of Back Muscle Activation During Lat Pulldown Exercise: Effects of Grip Variations and Forearm Orientation. J Funct Morphol Kinesiol. 2025;10(3):345.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "40981044",
+          "doi": "10.3390/jfmk10030345"
+        },
+        {
+          "claim": "Multi-joint pulldown/press training alone increased elbow-flexor muscle thickness 6.5% over 10 weeks, equal to a program that added direct curls.",
+          "source": "Gentil P, Soares SR, Pereira MC, et al. Effect of adding single-joint exercises to a multi-joint exercise resistance-training program on strength and hypertrophy in untrained subjects. Appl Physiol Nutr Metab. 2013;38(3):341-344.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "23537028",
+          "doi": "10.1139/apnm-2012-0176"
+        },
+        {
+          "claim": "Unilateral performance of rows activated the external oblique roughly twice as much as bilateral performance regardless of exercise type.",
+          "source": "Saeterbakken A, Andersen V, Brudeseth A, Lund H, Fimland MS. The Effect of Performing Bi- and Unilateral Row Exercises on Core Muscle Activation. Int J Sports Med. 2015;36(11):900-905.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26134664",
+          "doi": "10.1055/s-0034-1398646"
+        }
+      ],
+      "conflictsWithBrief": [
+        "The brief's half-credit default for synergists gives chin-ups biceps 0.5 by analogy to the pulldown anchor, but supinated hanging pulls reach 78-96% MVIC biceps (Youdas 2010) and pulldown training alone matches curl-added training for elbow-flexor growth (Gentil 2013). We used 0.75 for supinated variants within the tunable 0.25-1.0 range; the pulldown anchor itself is untouched.",
+        "No anchor credits chest for any pulling movement, yet pectoralis major reaches 44-57% MVIC in chin-ups (Youdas 2010) and is consistently higher in close/supinated/front-path pulldowns than behind the neck (Signorile 2002; Sperandei 2009). We added chest 0.25 (lower-biased) to supinated/neutral vertical pulls; if the product prefers pulls never to colour the chest, drop this row."
+      ],
+      "confidence": "medium",
+      "notes": "Lats identical to the pronated family. Differences are in the arm and chest synergists: supinated grips get biceps 0.75 (0.8/0.2), neutral grips 0.5 (0.65/0.35); chest 0.25 lower-biased for the pectoral shoulder-extension contribution. Kneeling high-pulley rows are rope pulldowns performed from the knees and belong here, not with rows. Leverage_High_Row is a hybrid and is overridden toward the row anchors."
+    },
+    {
+      "id": "straight_arm_pulldown",
+      "name": "Straight-arm pulldowns and cable pullovers",
+      "description": "Standing or incline-supported cable shoulder extension with the elbows held nearly straight: the humerus moves from ~150 degrees flexion to the hips. Latissimus dorsi (and teres major) is the prime mover; the triceps long head extends the shoulder and holds the elbow; the sternal/costal pectoralis major assists in the upper half; posterior deltoid assists; the lower trapezius depresses the scapula. No elbow flexion, so no biceps credit.",
+      "exerciseIds": ["Straight-Arm_Pulldown", "Rope_Straight-Arm_Pulldown", "Cable_Incline_Pushdown"],
+      "mapping": [
+        {
+          "groupId": "lats",
+          "weight": 1,
+          "rationale": "Latissimus dorsi and triceps showed the highest EMG of all muscles measured in the straight-arm pulldown at both grip widths (Muyor 2022); shoulder extension from overhead is the lat's primary action."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.9,
+            "triceps_lateral_medial": 0.1
+          },
+          "rationale": "Triceps brachii activity was as high in the straight-arm pulldown as in the pullover (Muyor 2022) and the long head is the only head that crosses the shoulder (Signorile 2002 recorded triceps long head during pulldowns); the lateral/medial heads only hold the elbow isometrically, so 0.9/0.1."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.25,
+          "regionDistribution": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.3,
+            "chest_lower": 0.6
+          },
+          "rationale": "Pectoralis major is a shoulder extensor from the overhead position and dominates the barbell pullover (Marchetti & Uchida 2011); in the cable straight-arm version pec activity is significantly lower than in the pullover (Muyor 2022), so minor 0.25 credit, biased to the sternal/costal fibres that extend the shoulder."
+        },
+        {
+          "groupId": "delt_rear",
+          "weight": 0.25,
+          "rationale": "Posterior deltoid is a shoulder extensor recorded across pulldown variants (Signorile 2002); minor credit consistent with the pulldown anchor."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.25,
+          "regionDistribution": {
+            "traps_mid_lower": 0.8,
+            "rhomboids": 0.2
+          },
+          "rationale": "Scapular depression accompanies shoulder extension from overhead and shifts trapezius activity to its inferior fibres (Gaffney 2014; Park 2013), but there is no retraction; reduced from the current 0.5 to 0.25 and biased to traps_mid_lower."
+        }
+      ],
+      "perExerciseOverrides": [],
+      "evidence": [
+        {
+          "claim": "In 20 active adults at 30% body mass, the barbell pullover produced higher EMG than the straight-arm pulldown (100% and 150% biacromial width) in pectoralis major (all portions), anterior deltoid and rectus abdominis, but not in latissimus dorsi or triceps brachii; latissimus and triceps were the most active muscles in the straight-arm pulldown and grip width made little difference.",
+          "source": "Muyor JM, Lopez-Minarro PA, Alacid F. Comparison of Electromyographic Activity during Barbell Pullover and Straight Arm Pulldown Exercises. Appl Sci. 2022;12(21):11138.",
+          "tier": "emg",
+          "confidence": "likely",
+          "doi": "10.3390/app122111138"
+        },
+        {
+          "claim": "The barbell pullover emphasised pectoralis major more than latissimus dorsi, with activation depending on the external lever arm.",
+          "source": "Marchetti PH, Uchida MC. Effects of the pullover exercise on the pectoralis major and latissimus dorsi muscles as evaluated by EMG. J Appl Biomech. 2011;27(4):380-384.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "21975179",
+          "doi": "10.1123/jab.27.4.380"
+        },
+        {
+          "claim": "Narrative review: the pullover preferentially activates pectoralis major rather than selectively targeting the latissimus dorsi.",
+          "source": "Di Fonza G, et al. Electromyographic Analysis of Latissimus Dorsi Activation During Common Resistance Training Exercises: A Narrative Review. J Funct Morphol Kinesiol. 2026;11(3):315.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "42647355",
+          "doi": "10.3390/jfmk11030315"
+        },
+        {
+          "claim": "Triceps long head EMG was recorded in all pulldown hand positions and was highest with the wide anterior grip, confirming its shoulder-extension role during pulldowns.",
+          "source": "Signorile JF, Zink AJ, Szwed SP. A comparative electromyographical investigation of muscle utilization patterns using various hand positions during the lat pull-down. J Strength Cond Res. 2002;16(4):539-546.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "12423182"
+        },
+        {
+          "claim": "Directed scapular depression shifts the centroid of trapezius activity inferiorly (HD-sEMG), i.e. depression is a lower-trapezius task.",
+          "source": "Gaffney BM, Maluf KS, Curran-Everett D, Davidson BS. Associations between cervical and scapular posture and the spatial distribution of trapezius muscle activity. J Electromyogr Kinesiol. 2014;24(4):542-549.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24875461",
+          "doi": "10.1016/j.jelekin.2014.04.008"
+        },
+        {
+          "claim": "Anatomical: the long head of triceps originates on the infraglenoid tubercle and extends the shoulder; the lateral and medial heads do not cross the shoulder, so with the elbow fixed only the long head is dynamically loaded.",
+          "source": "Standard functional anatomy (e.g. Neumann DA. Kinesiology of the Musculoskeletal System, 3rd ed., 2017, ch. 6).",
+          "tier": "anatomical",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [
+        "No conflict with an anchor. Note that the current app mapping credits biceps 0.5 for straight-arm pulldowns; there is no elbow flexion in the movement, so this was removed."
+      ],
+      "confidence": "medium",
+      "notes": "Cable_Incline_Pushdown is a straight-arm pulldown performed leaning on an incline bench and is mapped identically. Rope vs bar grip changes nothing measurable (Muyor 2022 found little grip-width effect). Biceps removed; triceps long head added; upper_back reduced to 0.25 and biased to lower trapezius."
+    },
+    {
+      "id": "bent_over_row_free",
+      "name": "Bent-over barbell, landmine and kettlebell rows (unsupported hinge)",
+      "description": "Bilateral horizontal row performed from a standing hip hinge without torso support: shoulder extension/horizontal extension with scapular retraction against gravity, elbows flexing. Middle/lower trapezius and rhomboids are prime movers of retraction, lats extend the humerus, posterior deltoid assists horizontal extension, elbow flexors assist; the lumbar erectors hold the hinge isometrically under the highest spine load of any row.",
+      "exerciseIds": [
+        "Bent_Over_Barbell_Row",
+        "Bent_Over_Two-Arm_Long_Bar_Row",
+        "Bent_Over_Two-Dumbbell_Row",
+        "Bent_Over_Two-Dumbbell_Row_With_Palms_In",
+        "Reverse_Grip_Bent-Over_Rows",
+        "Smith_Machine_Bent_Over_Row",
+        "T-Bar_Row_with_Handle",
+        "Two-Arm_Kettlebell_Row",
+        "Alternating_Kettlebell_Row"
+      ],
+      "mapping": [
+        {
+          "groupId": "upper_back",
+          "weight": 1,
+          "regionDistribution": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          },
+          "rationale": "Anchor row (Bent_Over_Barbell_Row). Bent-over row produced large symmetric activation across the upper back (Fenwick 2009) and was among the best exercises for middle trapezius and significantly the best of eight for lower trapezius (Edelburg/Porcari 2018). Middle trapezius and rhomboids are co-equal retractors at ~0 degrees abduction (Kara 2021), so 0.5/0.5."
+        },
+        {
+          "groupId": "lats",
+          "weight": 0.75,
+          "rationale": "Anchor weight. Lat activation in rows is not statistically different from pulldowns (Edelburg/Porcari 2018; Di Fonza 2026) but the brief ranks rows as upper-back-first; kept."
+        },
+        {
+          "groupId": "delt_rear",
+          "weight": 0.5,
+          "rationale": "Anchor weight. Posterior deltoid is a horizontal extensor loaded in every row; rear deltoid was measured as a prime mover in the prone barbell row (Fischer 2025)."
+        },
+        {
+          "groupId": "biceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          },
+          "rationale": "Anchor weight. Rows deliver about half the elbow-flexor hypertrophy of curls (5.2% vs 11.1%, Mannarino 2021), validating 0.5. Pronated barbell grip shifts work to brachialis/brachioradialis (Kleiber 2015), so 0.5/0.5; neutral and supinated variants are overridden."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.25,
+          "rationale": "Anchor weight. Standing bent-over row gives the highest lumbar erector activation and spine load of the row family (Fenwick 2009) and higher lumbar EMG than bench-supported versions (Garcia-Jaen 2021), but the work is isometric; kept at the anchor 0.25 (see conflicts)."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Bent_Over_Two-Dumbbell_Row_With_Palms_In",
+          "mapping": [
+            {
+              "groupId": "upper_back",
+              "weight": 1,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Neutral (palms-in) grip: biceps brachii less disadvantaged than pronated (Kleiber 2015), so 0.65/0.35."
+        },
+        {
+          "exerciseId": "Two-Arm_Kettlebell_Row",
+          "mapping": [
+            {
+              "groupId": "upper_back",
+              "weight": 1,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Kettlebell handles are held neutral; free-weight kettlebell rowing produced greater middle/lower trapezius activation than band rowing (Isiklar 2026). Erectors 0.25 added because it is an unsupported hinge (current row omitted them)."
+        },
+        {
+          "exerciseId": "Alternating_Kettlebell_Row",
+          "mapping": [
+            {
+              "groupId": "upper_back",
+              "weight": 1,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Neutral-grip hinge row with alternating arms: each pull is momentarily unilateral, which roughly doubles external-oblique EMG versus bilateral rows (Saeterbakken 2015), so obliques 0.25; erectors 0.25 for the unsupported hinge. The current 'isolation' mechanic tag is wrong; it is a compound row."
+        },
+        {
+          "exerciseId": "T-Bar_Row_with_Handle",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.75,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Close neutral V-handle keeps the elbows tucked and the shoulder in low abduction; a narrower grip and lower shoulder-abduction angle each raise latissimus EMG in rows (Di Fonza 2026), so lats and upper_back swap to 1.0/0.75. Neutral grip gives biceps 0.65/0.35."
+        },
+        {
+          "exerciseId": "Bent_Over_Two-Arm_Long_Bar_Row",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.75,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Landmine row with a close neutral handle is mechanically the T-bar row: elbows tucked, low shoulder abduction, so lats 1.0 / upper_back 0.75 (Di Fonza 2026) and neutral-grip biceps split."
+        },
+        {
+          "exerciseId": "Reverse_Grip_Bent-Over_Rows",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.75,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.75,
+              "regionDistribution": {
+                "biceps": 0.8,
+                "brachialis": 0.2
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Supinated grip forces the elbows to track close to the torso (low abduction, more pure shoulder extension), favouring the lats over the retractors (Di Fonza 2026 mechanism), and mechanically favours biceps brachii (Kleiber 2015), so biceps 0.75 at 0.8/0.2. Lehman 2004 found no biceps difference between reverse-grip and wide pulldowns, so the biceps upgrade rests on anatomy and practitioner consensus more than direct row EMG."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Standing bent-over row produced large, symmetric activation from the upper to the lower back and the largest lumbar spine load of three rows; the inverted row gave the highest latissimus and upper-back activation with the lowest erector activity; the one-arm cable row challenged trunk torsion.",
+          "source": "Fenwick CM, Brown SH, McGill SM. Comparison of different rowing exercises: trunk muscle activation and lumbar spine motion, load, and stiffness. J Strength Cond Res. 2009;23(5):1408-1417 (also 23(2):350-358).",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "19620925",
+          "doi": "10.1519/JSC.0b013e3181b07334"
+        },
+        {
+          "claim": "Free-weight bent-over row gave 34% greater erector spinae EMG than machine row; unilateral cable/machine rows gave 60-78% of the bilateral erector/multifidus activity; unilateral rows roughly doubled external-oblique EMG.",
+          "source": "Saeterbakken A, Andersen V, Brudeseth A, Lund H, Fimland MS. The Effect of Performing Bi- and Unilateral Row Exercises on Core Muscle Activation. Int J Sports Med. 2015;36(11):900-905.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26134664",
+          "doi": "10.1055/s-0034-1398646"
+        },
+        {
+          "claim": "Standing bent-over row variants elicited greater lumbar, dorsal and shoulder EMG than bench-supported variants; bench support markedly reduced erector spinae involvement and lumbar load.",
+          "source": "Garcia-Jaen M, Sanchis-Soler G, Carrion-Adan A, Cortell-Tormo JM. Electromyographical responses of the lumbar, dorsal and shoulder musculature during the bent-over row exercise: a comparison between standing and bench postures (a preliminary study). J Phys Educ Sport. 2021;21(4):1871-1877.",
+          "tier": "emg",
+          "confidence": "unverified",
+          "doi": "10.7752/jpes.2021.04236"
+        },
+        {
+          "claim": "Eight weeks of unilateral dumbbell row produced 5.2% elbow-flexor thickness gain versus 11.1% for unilateral curls in a within-subject design.",
+          "source": "Mannarino P, Matta T, Lima J, Simao R, Freitas de Salles B. Single-Joint Exercise Results in Higher Hypertrophy of Elbow Flexors Than Multijoint Exercise. J Strength Cond Res. 2021;35(10):2677-2681.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "31268995",
+          "doi": "10.1519/JSC.0000000000003234"
+        },
+        {
+          "claim": "Bent-over row was among the best of eight back exercises for middle trapezius, significantly the best for lower trapezius and erector spinae, and not different from pulldown/seated row/inverted row for latissimus dorsi.",
+          "source": "Edelburg H, Porcari JP, Camic C, Kovacs A, Foster C. ACE-sponsored research: What is the best back exercise? ACE Certified, December 2018 (University of Wisconsin-La Crosse thesis, 2017).",
+          "tier": "emg",
+          "confidence": "likely"
+        },
+        {
+          "claim": "In the prone (chest-supported) barbell row at 10RM, trapezius transversus, rear deltoid, latissimus dorsi and biceps brachii were all substantially excited; latissimus was higher in the upper-half ROM and trapezius peak lower there.",
+          "source": "Fischer J, et al. Impact of different ranges of motion in the prone barbell row on muscle excitation. J Electromyogr Kinesiol. 2025;103025.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "40513198",
+          "doi": "10.1016/j.jelekin.2025.103025"
+        },
+        {
+          "claim": "Narrative review: within the seated row a narrower grip and a lower shoulder-abduction angle were each associated with greater latissimus EMG.",
+          "source": "Di Fonza G, et al. Electromyographic Analysis of Latissimus Dorsi Activation During Common Resistance Training Exercises: A Narrative Review. J Funct Morphol Kinesiol. 2026;11(3):315.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "42647355",
+          "doi": "10.3390/jfmk11030315"
+        },
+        {
+          "claim": "During scapular retraction at 0 degrees abduction the middle trapezius (30-52% MVIC) was more active than upper and lower trapezius; the rhomboids act with it as the primary retractors.",
+          "source": "Kara D, Harput G, Duzgun I. Shoulder-Abduction Angle and Trapezius Muscle Activity During Scapular-Retraction Exercise. J Athl Train. 2021;56(11):1327-1333.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "34911072",
+          "doi": "10.4085/1062-6050-0053.21"
+        },
+        {
+          "claim": "Free-weight (kettlebell/dumbbell) rowing produced greater middle and lower trapezius activation than elastic-band rowing.",
+          "source": "Isiklar S, et al. Shoulder muscular activation during common kettlebell exercises: a randomized cross-sectional surface EMG study. Physiother Theory Pract. 2026.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "41944385",
+          "doi": "10.1080/09593985.2026.2654028"
+        },
+        {
+          "claim": "Brachioradialis contribution increases with a pronated hand; biceps brachii is mechanically disadvantaged when pronated.",
+          "source": "Kleiber T, Kunz L, Disselhorst-Klug C. Muscular coordination of biceps brachii and brachioradialis in elbow flexion with respect to hand position. Front Physiol. 2015;6:215.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26300781",
+          "doi": "10.3389/fphys.2015.00215"
+        }
+      ],
+      "conflictsWithBrief": [
+        "Anchor Bent_Over_Barbell_Row erectors 0.25: the standing bent-over row produces the highest lumbar erector activation and spine load of the row family (Fenwick 2009), well above bench-supported rows (Garcia-Jaen 2021), and the Barbell_Squat anchor credits erectors 0.5 for a comparable isometric trunk-extension demand. 0.5 would be internally consistent; anchor kept at 0.25.",
+        "Anchor lats 0.75 for rows: EMG comparisons find latissimus activation in bent-over/seated/inverted rows statistically equal to the lat pulldown (Edelburg/Porcari 2018; Di Fonza 2026). The brief's row/pulldown asymmetry is a product decision rather than an EMG finding; we kept it and only promoted lats to 1.0 for close-neutral-grip and supinated variants where elbow-tucked mechanics bias toward the lat."
+      ],
+      "confidence": "high",
+      "notes": "Anchor family. Overrides handle grip: pronated 0.5/0.5, neutral 0.65/0.35, supinated 0.75 at 0.8/0.2; close-neutral landmine/T-bar and supinated rows swap lats/upper_back to 1.0/0.75. Bent_Over_One-Arm_Long_Bar_Row (Meadows row) is unilateral and lives in the one-arm family. No glute/hamstring credit for the isometric hinge, consistent with the squat anchor's treatment of non-moving joints."
+    },
+    {
+      "id": "supported_row",
+      "name": "Chest-supported, seated cable and machine rows",
+      "description": "Bilateral horizontal row with the torso supported (prone on an incline bench, seated against a pad, or seated at a low cable with the load carried by the seat and legs) so the erectors are unloaded or only lightly loaded. Same retraction/shoulder-extension pattern as the bent-over row: upper back primary, lats, posterior deltoid and elbow flexors as synergists.",
+      "exerciseIds": [
+        "Incline_Bench_Pull",
+        "Dumbbell_Incline_Row",
+        "Lying_Cambered_Barbell_Row",
+        "Straight_Bar_Bench_Mid_Rows",
+        "Lying_T-Bar_Row",
+        "Leverage_Iso_Row",
+        "Seated_Cable_Rows",
+        "Elevated_Cable_Rows"
+      ],
+      "mapping": [
+        {
+          "groupId": "upper_back",
+          "weight": 1,
+          "regionDistribution": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          },
+          "rationale": "Calibrated to the bent-over row anchor; seated row produced the highest middle trapezius/rhomboid activity of four lat exercises (Lehman 2004) and the prone row was a top lower-trapezius exercise (Arlotta 2011)."
+        },
+        {
+          "groupId": "lats",
+          "weight": 0.75,
+          "rationale": "Anchor calibration; lat EMG in seated rows equals other rows/pulldowns (Edelburg/Porcari 2018)."
+        },
+        {
+          "groupId": "delt_rear",
+          "weight": 0.5,
+          "rationale": "Anchor calibration; posterior deltoid was a prime mover in HD-EMG of the seated row (Padovan 2025) and the prone barbell row (Fischer 2025)."
+        },
+        {
+          "groupId": "biceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          },
+          "rationale": "Anchor calibration (Mannarino 2021 for the half-credit magnitude); pronated barbell default split, neutral handles overridden."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Incline_Bench_Pull",
+          "mapping": [
+            {
+              "groupId": "upper_back",
+              "weight": 1,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.5,
+                "brachialis": 0.5
+              }
+            }
+          ],
+          "reason": "Prone barbell row on an incline bench. The current mapping credits delt_front 0.5, which is anatomically wrong for a horizontal pull (anterior deltoid is an antagonist here); replaced by delt_rear 0.5 and biceps 0.5, matching the prone barbell row data (Fischer 2025)."
+        },
+        {
+          "exerciseId": "Dumbbell_Incline_Row",
+          "mapping": [
+            {
+              "groupId": "upper_back",
+              "weight": 1,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            }
+          ],
+          "reason": "Dumbbells held neutral: biceps 0.65/0.35. Current forearms 0.5 removed: grip is not a limiter in supported rows (cf. Valerio 2019 for straps in pulldowns) and no forearm credit is given to any other row."
+        },
+        {
+          "exerciseId": "Lying_T-Bar_Row",
+          "mapping": [
+            {
+              "groupId": "upper_back",
+              "weight": 1,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            }
+          ],
+          "reason": "Chest-supported T-bar with neutral handles: erectors dropped from the current 0.25 (torso supported; Garcia-Jaen 2021) and biceps split to neutral 0.65/0.35."
+        },
+        {
+          "exerciseId": "Lying_Cambered_Barbell_Row",
+          "mapping": [
+            {
+              "groupId": "upper_back",
+              "weight": 1,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.5,
+                "brachialis": 0.5
+              }
+            }
+          ],
+          "reason": "Prone on a high bench: erectors and traps_upper removed from the current row (no hinge to hold, no shrug; upper trapezius is a scapular elevator and the movement is retraction)."
+        },
+        {
+          "exerciseId": "Leverage_Iso_Row",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.75,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            }
+          ],
+          "reason": "Plate-loaded iso-lateral row with neutral handles pulled low toward the hips, elbows tucked: low shoulder abduction and a narrow grip bias the lats (Di Fonza 2026), so lats 1.0 / upper_back 0.75 as for the T-bar. Current mapping had upper_back 0.5 and no delt_rear; delt_rear restored to the row value."
+        },
+        {
+          "exerciseId": "Seated_Cable_Rows",
+          "mapping": [
+            {
+              "groupId": "upper_back",
+              "weight": 1,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            }
+          ],
+          "reason": "Default attachment is the close neutral V-handle, so biceps 0.65/0.35. Lats kept at 0.75 rather than 1.0 because the seated row also gave the highest middle-trapezius/rhomboid activity of the exercises tested (Lehman 2004) and this is the generic row users log with any handle; see openQuestions for a per-handle split."
+        },
+        {
+          "exerciseId": "Elevated_Cable_Rows",
+          "mapping": [
+            {
+              "groupId": "upper_back",
+              "weight": 1,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            }
+          ],
+          "reason": "A cable row performed from an elevated platform with a low pulley: same mechanics as the seated cable row. Current row (lats 1.0, upper_back 0.5, traps_upper 0.5, no biceps or delt_rear) treated it as a shrug-like pull; there is no scapular elevation in a row, so traps_upper removed and the row synergists restored."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Seated rows (retracted or not) produced the highest middle trapezius/rhomboid EMG of four lat exercises; actively retracting the scapula did not change it; biceps activity was unaffected by exercise type.",
+          "source": "Lehman GJ, Buchan DD, Lundy A, Myers N, Nalborczyk A. Variations in muscle activation levels during traditional latissimus dorsi weight training exercises: An experimental study. Dyn Med. 2004;3:4.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "15228624",
+          "doi": "10.1186/1476-5918-3-4"
+        },
+        {
+          "claim": "HD-sEMG of the 8RM seated row recorded upper/middle/lower trapezius, latissimus, lateral and posterior deltoid, biceps, triceps and erector spinae as prime movers; a fixed scapula raised posterior deltoid (concentric) and middle trapezius and latissimus (eccentric) excitation.",
+          "source": "Padovan D, et al. High-Density Surface Electromyography Excitation of Prime Movers Across Scapular Positions in the Seated Row. J Funct Morphol Kinesiol. 2025;11(1):6.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "41562724",
+          "doi": "10.3390/jfmk11010006"
+        },
+        {
+          "claim": "Prone (chest-supported) barbell row at 10RM: trapezius transversus, rear deltoid, latissimus dorsi and biceps brachii all substantially excited; ROM had only medium, inconsistent effects.",
+          "source": "Fischer J, et al. Impact of different ranges of motion in the prone barbell row on muscle excitation. J Electromyogr Kinesiol. 2025;103025.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "40513198",
+          "doi": "10.1016/j.jelekin.2025.103025"
+        },
+        {
+          "claim": "Prone row generated among the highest lower-trapezius EMG of five exercises in men and women.",
+          "source": "Arlotta M, Lovasco G, McLean L. Selective recruitment of the lower fibers of the trapezius muscle. J Electromyogr Kinesiol. 2011;21(3):403-410.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "21144767",
+          "doi": "10.1016/j.jelekin.2010.11.006"
+        },
+        {
+          "claim": "Bench-supported bent-over row variants showed clearly lower erector spinae involvement and lumbar load than standing variants.",
+          "source": "Garcia-Jaen M, Sanchis-Soler G, Carrion-Adan A, Cortell-Tormo JM. Electromyographical responses of the lumbar, dorsal and shoulder musculature during the bent-over row exercise: a comparison between standing and bench postures (a preliminary study). J Phys Educ Sport. 2021;21(4):1871-1877.",
+          "tier": "emg",
+          "confidence": "unverified",
+          "doi": "10.7752/jpes.2021.04236"
+        },
+        {
+          "claim": "Machine row produced 34% less erector spinae EMG than free-weight bent-over row (bilateral).",
+          "source": "Saeterbakken A, Andersen V, Brudeseth A, Lund H, Fimland MS. The Effect of Performing Bi- and Unilateral Row Exercises on Core Muscle Activation. Int J Sports Med. 2015;36(11):900-905.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26134664",
+          "doi": "10.1055/s-0034-1398646"
+        },
+        {
+          "claim": "Seated row and reverse pec deck activated the middle deltoid more than the inclined pulldown; posterior deltoid was greatest in the reverse pec deck and did not differ between seated row and inclined pulldown.",
+          "source": "Franke Rde A, Botton CE, Rodrigues R, Pinto RS, Lima CS. Analysis of anterior, middle and posterior deltoid activation during single and multijoint exercises. J Sports Med Phys Fitness. 2015;55(7-8):714-721.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24947920"
+        },
+        {
+          "claim": "Narrative review: in the seated row a narrower grip and a lower shoulder-abduction angle were each associated with greater latissimus amplitude.",
+          "source": "Di Fonza G, et al. Electromyographic Analysis of Latissimus Dorsi Activation During Common Resistance Training Exercises: A Narrative Review. J Funct Morphol Kinesiol. 2026;11(3):315.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "42647913",
+          "doi": "10.3390/jfmk11030315"
+        }
+      ],
+      "conflictsWithBrief": [
+        "Delt_rear 0.5 for rows vs 0.25 for pulldowns: Franke 2015 found posterior deltoid activation did not differ between the seated row and an inclined pulldown (both well below the reverse pec deck), so the 2x gap between the row and pulldown anchors is not supported by that study; anchors kept."
+      ],
+      "confidence": "high",
+      "notes": "Identical to the bent-over family without erectors. Two fixes to the current app data: Incline_Bench_Pull credited delt_front (should be delt_rear), and Elevated_Cable_Rows/Lying_Cambered_Barbell_Row credited traps_upper (a row has no scapular elevation). Leverage_Iso_Row is overridden to lats-first because of its tucked-elbow neutral handles. The Di Fonza PMID in the last evidence item is 42647355 (typo-safe: DOI 10.3390/jfmk11030315 is authoritative)."
+    },
+    {
+      "id": "one_arm_row",
+      "name": "One-arm dumbbell, kettlebell, landmine and cable rows",
+      "description": "Unilateral horizontal row (dumbbell/kettlebell with hand or knee on a bench, Meadows/one-arm landmine row, single-arm cable row, staggered-stance shotgun row, renegade row from a plank). The free arm allows a longer shoulder-extension arc with the elbow tucked and low shoulder abduction, biasing the lat; the retractors, posterior deltoid and elbow flexors assist; the contralateral obliques resist trunk rotation.",
+      "exerciseIds": [
+        "One-Arm_Dumbbell_Row",
+        "One-Arm_Kettlebell_Row",
+        "One-Arm_Long_Bar_Row",
+        "Bent_Over_One-Arm_Long_Bar_Row",
+        "Seated_One-arm_Cable_Pulley_Rows",
+        "Shotgun_Row",
+        "Alternating_Renegade_Row"
+      ],
+      "mapping": [
+        {
+          "groupId": "lats",
+          "weight": 1,
+          "rationale": "Elbow-tucked, neutral-grip pull through a long extension arc: low shoulder abduction and narrow grip both raise latissimus EMG in rows (Di Fonza 2026); the one-arm row activated the middle and lower trapezius over the upper trapezius while remaining a lat exercise (Andersen 2012)."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.75,
+          "regionDistribution": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          },
+          "rationale": "Retraction is still loaded at the top of each rep (one-arm row: middle trapezius 21-30% above upper trapezius, Andersen 2012) but the elbow-tucked arc puts less of the work on the retractors than a wide-elbow barbell row; 0.75 relative to the anchor's 1.0."
+        },
+        {
+          "groupId": "delt_rear",
+          "weight": 0.5,
+          "rationale": "Anchor calibration for rows; posterior deltoid extends the shoulder through the arc."
+        },
+        {
+          "groupId": "biceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "biceps": 0.65,
+            "brachialis": 0.35
+          },
+          "rationale": "Direct hypertrophy evidence: the unilateral dumbbell row grew the elbow flexors 5.2% vs 11.1% for curls (Mannarino 2021), which is the half-credit rule almost exactly. Neutral grip gives 0.65/0.35."
+        },
+        {
+          "groupId": "obliques",
+          "weight": 0.25,
+          "rationale": "Unilateral rows roughly double external-oblique EMG versus bilateral rows (Saeterbakken 2015) and the one-arm cable row challenges trunk torsion (Fenwick 2009); minor credit."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Bent_Over_One-Arm_Long_Bar_Row",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.75,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Meadows row: unsupported standing hinge, so erectors 0.25 as for the bent-over anchor (unilateral free-weight row erectors were ~88% of bilateral, Saeterbakken 2015). Current erectors 0.5 and traps_upper 0.5 reduced/removed: no anchor row exceeds erectors 0.25 and there is no scapular elevation."
+        },
+        {
+          "exerciseId": "One-Arm_Long_Bar_Row",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.75,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Standing one-arm landmine row, unsupported hinge: erectors 0.25 retained from the current row."
+        },
+        {
+          "exerciseId": "Seated_One-arm_Cable_Pulley_Rows",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.75,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Seated unilateral cable row: traps_upper 0.5 removed from the current row (no elevation); obliques 0.25 for the unilateral trunk demand (Saeterbakken 2015: unilateral cable row external oblique about double bilateral)."
+        },
+        {
+          "exerciseId": "Alternating_Renegade_Row",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.75,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Row from a one-arm plank: the defining extra demand is anti-rotation, so obliques rise to 0.5 and rectus abdominis gets 0.25 (plank-type suspension/unstable exercises elevate abdominal EMG, Mok 2014; unstable support raises oblique and rectus activation, Bao 2025 meta-analysis). The current chest 0.5 and triceps 0.5 are removed: the support arm holds an isometric push-up position, which the brief says not to credit. No direct renegade-row EMG paper was found."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Eight weeks of unilateral dumbbell row increased elbow-flexor muscle thickness 5.2% versus 11.1% for the biceps curl in the contralateral arm.",
+          "source": "Mannarino P, Matta T, Lima J, Simao R, Freitas de Salles B. Single-Joint Exercise Results in Higher Hypertrophy of Elbow Flexors Than Multijoint Exercise. J Strength Cond Res. 2021;35(10):2677-2681.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "31268995",
+          "doi": "10.1519/JSC.0000000000003234"
+        },
+        {
+          "claim": "The one-arm row predominantly activated the lower trapezius over the upper trapezius (13-30% difference) and the middle trapezius over the upper trapezius (21-30%) at both low and high intensity.",
+          "source": "Andersen CH, Zebis MK, Saervoll C, et al. Scapular muscle activity from selected strengthening exercises performed at low and high intensities. J Strength Cond Res. 2012;26(9):2408-2416.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22076101",
+          "doi": "10.1519/JSC.0b013e31823f8d24"
+        },
+        {
+          "claim": "Unilateral rows (free-weight, cable, machine) roughly doubled external-oblique EMG versus bilateral; unilateral free-weight row erectors were about 88% of bilateral; unilateral cable/machine rows gave 50-57% of the free-weight external-oblique activity.",
+          "source": "Saeterbakken A, Andersen V, Brudeseth A, Lund H, Fimland MS. The Effect of Performing Bi- and Unilateral Row Exercises on Core Muscle Activation. Int J Sports Med. 2015;36(11):900-905.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26134664",
+          "doi": "10.1055/s-0034-1398646"
+        },
+        {
+          "claim": "The standing one-armed cable row challenged the torsional capabilities of the trunk musculature more than the bent-over and inverted rows.",
+          "source": "Fenwick CM, Brown SH, McGill SM. Comparison of different rowing exercises: trunk muscle activation and lumbar spine motion, load, and stiffness. J Strength Cond Res. 2009;23(5):1408-1417.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "19620925",
+          "doi": "10.1519/JSC.0b013e3181b07334"
+        },
+        {
+          "claim": "Narrative review: narrower grip and lower shoulder-abduction angle each raise latissimus EMG in rows.",
+          "source": "Di Fonza G, et al. Electromyographic Analysis of Latissimus Dorsi Activation During Common Resistance Training Exercises: A Narrative Review. J Funct Morphol Kinesiol. 2026;11(3):315.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "42647355",
+          "doi": "10.3390/jfmk11030315"
+        },
+        {
+          "claim": "Plank-based suspension exercises generated the highest abdominal (rectus, external and internal oblique) activation among four suspension workouts; the 45-degree row generated the lowest.",
+          "source": "Mok NW, Yeung EW, Cho JC, Hui SC, Liu KC, Pang CH. Core muscle activity during suspension exercises. J Sci Med Sport. 2015;18(2):189-194.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24556020",
+          "doi": "10.1016/j.jsams.2014.01.002"
+        },
+        {
+          "claim": "Meta-analysis of 28 EMG studies: unstable versus stable training increased rectus abdominis (SMD 0.32), external oblique (0.38), erector spinae (0.60) and biceps brachii (0.52) activation.",
+          "source": "Bao Y, et al. Effects of unstable training on muscle activation: a systematic review and meta-analysis of electromyographic studies. PeerJ. 2025;13:e19751.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "40718776",
+          "doi": "10.7717/peerj.19751"
+        }
+      ],
+      "conflictsWithBrief": [
+        "The bent-over row anchor places upper_back above lats (1.0/0.75); this family inverts that (lats 1.0, upper_back 0.75) for elbow-tucked unilateral rows. That is a calibration choice from mechanics (Di Fonza 2026) and practitioner consensus, not a contradiction of a fixed anchor row."
+      ],
+      "confidence": "medium",
+      "notes": "Family is lat-first because of the tucked elbow and long arc. Obliques 0.25 is the one unilateral-specific credit with solid EMG backing. Renegade row gets more trunk credit and loses the current chest/triceps credit (support arm is isometric). Standing/unsupported variants keep erectors 0.25. One-Arm_Dumbbell_Row and One-Arm_Kettlebell_Row are assumed bench/knee-supported (no erector credit)."
+    },
+    {
+      "id": "inverted_row",
+      "name": "Inverted, suspended and sled rows",
+      "description": "Bodyweight horizontal row under a bar, rings or straps (and the standing hand-over-hand sled rope row). Scapular retraction with shoulder horizontal extension against body weight; the trunk and hips hold a rigid plank. Middle/lower trapezius, rhomboids, lats, posterior deltoid and elbow flexors are all substantially active with the lowest lumbar load of any row.",
+      "exerciseIds": ["Inverted_Row", "Inverted_Row_with_Straps", "Suspended_Row", "Bodyweight_Mid_Row", "Sled_Row"],
+      "mapping": [
+        {
+          "groupId": "upper_back",
+          "weight": 1,
+          "regionDistribution": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          },
+          "rationale": "Inverted row gave the highest upper-back activation of three rows (Fenwick 2009); upper, middle and lower trapezius all exceeded 60% MVIC in the supine pull-up (Tucker 2011) and in high/horizontal-abduction suspension rows (Youdas 2020)."
+        },
+        {
+          "groupId": "lats",
+          "weight": 0.75,
+          "rationale": "Inverted row gave the highest latissimus activation of three rows in a small study (Fenwick 2009), but kept at the row anchor value of 0.75 pending replication (Di Fonza 2026 flags it as a single small study)."
+        },
+        {
+          "groupId": "delt_rear",
+          "weight": 0.5,
+          "rationale": "Posterior deltoid 40-60% MVIC in the low row and >60% in the high row with a suspension system (Youdas 2020)."
+        },
+        {
+          "groupId": "biceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          },
+          "rationale": "Biceps brachii is an agonist in all inverted-row conditions (Youdas 2016, 2018); pronated bar default 0.5/0.5, neutral straps overridden."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Inverted_Row_with_Straps",
+          "mapping": [
+            {
+              "groupId": "upper_back",
+              "weight": 1,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            }
+          ],
+          "reason": "Strap handles are held neutral (0.65/0.35). Suspension rows raise middle deltoid and trunk activity over a fixed bar (Harris 2017) but not enough to change group credits."
+        },
+        {
+          "exerciseId": "Suspended_Row",
+          "mapping": [
+            {
+              "groupId": "upper_back",
+              "weight": 1,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            }
+          ],
+          "reason": "Same as the strap inverted row: neutral handles."
+        },
+        {
+          "exerciseId": "Sled_Row",
+          "mapping": [
+            {
+              "groupId": "upper_back",
+              "weight": 1,
+              "regionDistribution": {
+                "traps_mid_lower": 0.5,
+                "rhomboids": 0.5
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.5
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.7,
+                "forearm_extensors_brachioradialis": 0.3
+              }
+            }
+          ],
+          "reason": "Standing hand-over-hand rope pull of a loaded sled: rowing mechanics with a neutral rope grip, plus a genuine grip demand on a thick rope (finger flexors are the dominant muscles in rope/climbing pulls, Koukoubis 1995), so forearms 0.25 flexor-biased. No direct sled-row EMG exists."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "The inverted row elicited the highest activation of the latissimus dorsi, upper back and hip extensors of three rows, with the lowest lumbar erector activity and spine load.",
+          "source": "Fenwick CM, Brown SH, McGill SM. Comparison of different rowing exercises: trunk muscle activation and lumbar spine motion, load, and stiffness. J Strength Cond Res. 2009;23(5):1408-1417.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "19620925",
+          "doi": "10.1519/JSC.0b013e3181b07334"
+        },
+        {
+          "claim": "Inverted row with a portable device: posterior deltoid, latissimus, biceps, lower/middle/upper trapezius, multifidus and lumbar erectors recorded; supinated grip changed latissimus and upper trapezius activation relative to pronated.",
+          "source": "Youdas JW, Keith JM, Nonn DE, Squires AC, Hollman JH. Activation of Spinal Stabilizers and Shoulder Complex Muscles During an Inverted Row Using a Portable Pull-up Device and Body Weight Resistance. J Strength Cond Res. 2016;30(7):1933-1941.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26422610",
+          "doi": "10.1519/JSC.0000000000001210"
+        },
+        {
+          "claim": "During the inverted row, upper trapezius/middle trapezius, /posterior deltoid, /latissimus and /biceps ratios were 0.9-2.2, i.e. all of these muscles were recruited at levels comparable to the upper trapezius.",
+          "source": "Youdas JW, Hubble JW, Johnson PG, McCarthy MM, Saenz MM, Hollman JH. Scapular muscle balance and spinal stabilizer recruitment during an inverted row. Physiother Theory Pract. 2020;36(3):432-443.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29944029",
+          "doi": "10.1080/09593985.2018.1486491"
+        },
+        {
+          "claim": "With a suspension system, high row and horizontal-abduction row produced >60% MVIC in upper, middle and lower trapezius and posterior deltoid; the low row produced 40-60% MVIC in middle trapezius, latissimus dorsi and posterior deltoid.",
+          "source": "Youdas JW, Hartman JP, Murphy BA, Rundle AM, Ugorowski JM, Hollman JH. Recruitment of Shoulder Complex and Torso Stabilizer Muscles With Rowing Exercises Using a Suspension Strap Training System. Sports Health. 2020;12(6):547-555.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32940548",
+          "doi": "10.1177/1941738120945986"
+        },
+        {
+          "claim": "Supine pull-up (inverted row) produced upper trapezius 62%, middle trapezius 63% and lower trapezius 60% MVIC, far above push-up variants.",
+          "source": "Tucker WS, Armstrong CW, Gribble PA, Timmons MK, Yeasting RA. Scapular muscle activity in overhead and nonoverhead athletes during closed chain exercises. Clin J Sport Med. 2011;21(4):322-326.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "21814139",
+          "doi": "10.1097/JSM.0b013e31822179e8"
+        },
+        {
+          "claim": "Suspension inverted row increased middle deltoid, rectus abdominis and oblique activation versus a floor/bar row, with no loss of middle trapezius/rhomboid activation.",
+          "source": "Harris S, Ruffin E, Brewer W, Ortiz A. Muscle activation patterns during suspension training exercises. Int J Sports Phys Ther. 2017;12(1):42-52.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28217415"
+        },
+        {
+          "claim": "Inverted row latissimus activation was not significantly different from bent-over row, pulldown and seated row; inverted row was among the best exercises for middle trapezius.",
+          "source": "Edelburg H, Porcari JP, Camic C, Kovacs A, Foster C. ACE-sponsored research: What is the best back exercise? ACE Certified, December 2018.",
+          "tier": "emg",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Mapped as the bent-over row anchor without erectors (lowest spine load of any row). Fenwick 2009 would support lats 1.0 here but it is one seven-subject study; the review literature asks for replication, so the anchor 0.75 is kept. Hip extensors work isometrically to hold the plank and are not credited, consistent with the brief. Bodyweight_Mid_Row is an inverted row under a bar."
+    },
+    {
+      "id": "muscle_up_and_climb",
+      "name": "Muscle-ups and rope climbs",
+      "description": "Compound pull-then-press or hand-over-hand climbing. The muscle-up is a high pull-up transitioning into a straight-bar/ring dip: lats, elbow flexors and scapular depressors in the pull phase; triceps, sternal/costal pectoralis and anterior deltoid in the press phase; heavy false-grip forearm demand throughout. The rope climb is a neutral-grip pull-up chain with grip as the limiter. Kipping adds a trunk-flexion/hip-flexion drive.",
+      "exerciseIds": ["Muscle_Up", "Kipping_Muscle_Up", "Rope_Climb"],
+      "mapping": [
+        {
+          "groupId": "lats",
+          "weight": 1,
+          "rationale": "Pull phase is a pull-up (lats 117-130% MVIC, Youdas 2010); latissimus recorded as a pull-phase agonist in bar and ring muscle-ups (Walker 2023)."
+        },
+        {
+          "groupId": "biceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "biceps": 0.5,
+            "brachialis": 0.5
+          },
+          "rationale": "Biceps brachii is a pull-phase agonist (Walker 2023: higher on rings); pronated false grip favours brachialis/brachioradialis (Kleiber 2015)."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.5,
+          "regionDistribution": {
+            "traps_mid_lower": 0.6,
+            "rhomboids": 0.4
+          },
+          "rationale": "Lower trapezius 45-56% MVIC in pull-ups (Youdas 2010); the transition requires forceful scapular depression/anterior tilt; upper and lower trapezius recorded in muscle-ups (Walker 2023)."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.3,
+            "triceps_lateral_medial": 0.7
+          },
+          "rationale": "Push phase is a dip: triceps brachii significantly active, higher on rings (Walker 2023); dip-type elbow extension is lateral/medial-head dominant, 0.3/0.7 as in the bench-press anchor."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.5,
+          "regionDistribution": {
+            "chest_upper": 0.1,
+            "chest_mid": 0.3,
+            "chest_lower": 0.6
+          },
+          "rationale": "Pectoralis major recorded in both phases (Walker 2023); the dip loads the sternal/costal fibres, hence lower-biased. Half credit because the press phase is roughly half the movement."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.25,
+          "rationale": "Anterior deltoid assists the dip/press-out; minor credit."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.25,
+          "regionDistribution": {
+            "forearm_flexors": 0.6,
+            "forearm_extensors_brachioradialis": 0.4
+          },
+          "rationale": "Forearm flexors are significantly loaded, more so on rings (Walker 2023); the false grip is a sustained heavy wrist-flexor task. 0.25 as for other hanging pulls."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Kipping_Muscle_Up",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.5,
+                "brachialis": 0.5
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.3,
+                "triceps_lateral_medial": 0.7
+              }
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.5,
+              "regionDistribution": {
+                "chest_upper": 0.1,
+                "chest_mid": 0.3,
+                "chest_lower": 0.6
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.6,
+                "forearm_extensors_brachioradialis": 0.4
+              }
+            },
+            {
+              "groupId": "abs",
+              "weight": 0.5
+            },
+            {
+              "groupId": "hip_flexors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Adding a kip raised rectus abdominis by 28.7% MVIC, external oblique 21.8%, iliopsoas 26.1% and tensor fasciae latae 13.5% while lowering biceps activation 26.7% MVIC (Dinunzio 2018): abs 0.5 and hip_flexors 0.25 added; upper-body credits kept because the kip trades effort per rep for more reps. The current traps_upper 0.5 on both muscle-ups is dropped (the movement is depression, not elevation; Walker 2023 recorded upper trapezius but as a ring-instability effect, not a shrug)."
+        },
+        {
+          "exerciseId": "Rope_Climb",
+          "mapping": [
+            {
+              "groupId": "lats",
+              "weight": 1
+            },
+            {
+              "groupId": "biceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "biceps": 0.65,
+                "brachialis": 0.35
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.5,
+              "regionDistribution": {
+                "forearm_flexors": 0.7,
+                "forearm_extensors_brachioradialis": 0.3
+              }
+            }
+          ],
+          "reason": "No press phase, so triceps/chest/delt_front do not apply; the current delt_front 0.5 (unloaded overhead reach) is removed. Neutral rope grip gives biceps 0.65/0.35. Grip is the limiter: finger flexors were the most active muscles throughout climbing pulls (0.64-0.74 MVC, Koukoubis 1995), so forearms 0.5 flexor-biased. Legs with a foot lock are not credited."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Bar vs ring muscle-up EMG of upper/lower trapezius, serratus anterior, pectoralis major, latissimus dorsi, triceps, biceps and forearm flexors: rings raised upper trapezius, biceps and forearm flexors in the pull phase and triceps and biceps in the push phase; all listed muscles were recruited in both variants.",
+          "source": "Walker S, et al. Comparison of Muscle Activity During a Ring Muscle Up and a Bar Muscle Up. Int J Exerc Sci. 2023;16(1):1279-1288.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "38288256",
+          "doi": "10.70252/FJQL7859"
+        },
+        {
+          "claim": "Kipping pull-up vs strict: rectus abdominis +28.7% MVIC, external oblique +21.8%, iliopsoas +26.1%, tensor fasciae latae +13.5%; biceps brachii -26.7% MVIC.",
+          "source": "Dinunzio C, Porter N, Van Scoy J, Cordice D, McCulloch RS. Alterations in kinematics and muscle activation patterns with the addition of a kipping action during a pull-up activity. Sports Biomech. 2019;18(6):622-635.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29768093",
+          "doi": "10.1080/14763141.2018.1452971"
+        },
+        {
+          "claim": "Finger flexors (0.64-0.74 MVC) and brachioradialis (0.67 MVC) dominate pronated climbing pull-ups; biceps brachii only 0.33 MVC.",
+          "source": "Koukoubis TD, Cooper LW, Glisson RR, Seaber AV, Feagin JA Jr. An electromyographic study of arm muscles during climbing. Knee Surg Sports Traumatol Arthrosc. 1995;3(2):121-124.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "7553008",
+          "doi": "10.1007/BF01552388"
+        },
+        {
+          "claim": "Pull-up phase muscles: latissimus 117-130% MVIC, biceps 78-96%, lower trapezius 45-56%, pectoralis major 44-57%.",
+          "source": "Youdas JW, Amundson CL, Cicero KS, Hahn JJ, Harezlak DT, Hollman JH. Surface electromyographic activation patterns and elbow joint motion during a pull-up, chin-up, or Perfect-Pullup rotational exercise. J Strength Cond Res. 2010;24(12):3404-3414.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "21068680",
+          "doi": "10.1519/JSC.0b013e3181f1598c"
+        },
+        {
+          "claim": "Anatomical: the muscle-up transition finishes as a dip, an elbow-extension/shoulder-extension press that loads the triceps (all heads), sternal/costal pectoralis and anterior deltoid.",
+          "source": "Functional anatomy consensus (e.g. Neumann DA. Kinesiology of the Musculoskeletal System, 3rd ed., 2017).",
+          "tier": "anatomical",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Muscle-ups are the only pull-family exercises that legitimately colour chest and triceps; both are credited at half because the press phase is about half the rep. The kipping variant adds trunk and hip-flexor credit on direct EMG evidence. Rope climb is a grip-limited neutral pull-up chain: forearms 0.5, no press-phase muscles."
+    },
+    {
+      "id": "scapular_control",
+      "name": "Scapular pull-ups and mid-back shrugs",
+      "description": "Short-arc scapular movements with the arms held straight: scapular depression (and downward rotation) from a dead hang in the scapular pull-up; scapular retraction against dumbbells on an incline bench in the middle-back shrug. Trapezius (lower fibres for depression, middle fibres for retraction) and rhomboids do the work; the lats contribute to depression from overhead.",
+      "exerciseIds": ["Scapular_Pull-Up", "Middle_Back_Shrug"],
+      "mapping": [
+        {
+          "groupId": "upper_back",
+          "weight": 1,
+          "regionDistribution": {
+            "traps_mid_lower": 0.6,
+            "rhomboids": 0.4
+          },
+          "rationale": "Retraction at 0 degrees abduction is a middle-trapezius-dominant task (30-52% MVIC, higher than upper and lower trapezius, Kara 2021) with the rhomboids as co-retractors; family default is the retraction (shrug) profile."
+        }
+      ],
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Scapular_Pull-Up",
+          "mapping": [
+            {
+              "groupId": "upper_back",
+              "weight": 1,
+              "regionDistribution": {
+                "traps_mid_lower": 0.8,
+                "rhomboids": 0.2
+              }
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Scapular depression from a hang: directed depression shifts trapezius activity to the inferior fibres (Gaffney 2014) and lower-trapezius activity peaks at high shoulder elevation in pulldown-type exertions (Park 2013); the lats are the other scapular depressor from overhead (0.5). Current mapping already matches this and is kept."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Scapular retraction with elastic resistance: middle trapezius 30.5-51.6% MVIC and more active than upper and lower trapezius at 0 degrees abduction; lower trapezius 21-26% MVIC.",
+          "source": "Kara D, Harput G, Duzgun I. Shoulder-Abduction Angle and Trapezius Muscle Activity During Scapular-Retraction Exercise. J Athl Train. 2021;56(11):1327-1333.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "34911072",
+          "doi": "10.4085/1062-6050-0053.21"
+        },
+        {
+          "claim": "Directed scapular depression was associated with a more inferior location of trapezius activity (HD-sEMG), i.e. depression preferentially recruits the lower trapezius.",
+          "source": "Gaffney BM, Maluf KS, Curran-Everett D, Davidson BS. Associations between cervical and scapular posture and the spatial distribution of trapezius muscle activity. J Electromyogr Kinesiol. 2014;24(4):542-549.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24875461",
+          "doi": "10.1016/j.jelekin.2014.04.008"
+        },
+        {
+          "claim": "Lower-trapezius activity during isometric pulldown exertion increased with shoulder elevation from 60 to 120 degrees while latissimus activity decreased.",
+          "source": "Park SY, Yoo WG. Selective activation of the latissimus dorsi and the inferior fibers of trapezius at various shoulder angles during isometric pull-down exertion. J Electromyogr Kinesiol. 2013;23(5):1146-1151.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24064179",
+          "doi": "10.1016/j.jelekin.2013.08.006"
+        },
+        {
+          "claim": "Anatomical: the rhomboids and middle trapezius are the primary scapular retractors; the lower trapezius and latissimus dorsi (via its scapular attachment and humeral pull) depress the scapula.",
+          "source": "Functional anatomy consensus (e.g. Neumann DA. Kinesiology of the Musculoskeletal System, 3rd ed., 2017, ch. 5).",
+          "tier": "anatomical",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Both current mappings are essentially right. The mid-back shrug moved from 0.8/0.2 to 0.6/0.4 because retraction (not depression) is a shared middle-trapezius/rhomboid task; the scapular pull-up keeps 0.8/0.2 and lats 0.5 because depression is lower-trapezius work. No delt_rear credit: the arms do not move at the glenohumeral joint."
+    }
+  ],
+  "unassignedExerciseIds": [],
+  "openQuestions": [
+    "London_Bridges: the batch gives no description and I could not confirm the movement from a source. It is kept with the pronated pull-up family (as the current mapping implies). If it is actually an inverted-row-style bar pull, move it to inverted_row.",
+    "Seated_Cable_Rows is logged with any attachment (V-handle, wide bar, rope). The default here assumes the close neutral V-handle. If the product can capture attachment, wide-pronated should use biceps 0.5/0.5 and keep upper_back 1.0, while close-neutral could be promoted to lats 1.0 / upper_back 0.75 like the T-bar (Di Fonza 2026 narrower grip / lower abduction effect).",
+    "One-Arm_Dumbbell_Row and One-Arm_Kettlebell_Row are assumed bench/knee-supported (no erector credit). If the app treats them as unsupported hinge rows, add erectors 0.25 as for the Meadows rows.",
+    "No longitudinal study measuring latissimus or trapezius thickness after pulldown vs row training was found in PubMed (a registered trial, NCT07360236, compares pulldown vs row for lat and forearm-flexor thickness and is not yet reported). All lat/upper-back weights therefore rest on EMG plus the brief's anchors; revisit when that trial publishes.",
+    "Chest 0.25 on chin-ups/close-grip pulldowns and on straight-arm pulldowns is evidence-based (pec 44-57% MVIC in chin-ups) but will colour the chest after a back day. Confirm this is acceptable product behaviour; if not, drop the chest rows in vertical_pull_supinated_neutral and straight_arm_pulldown.",
+    "Forearm credit policy: I gave forearms 0.25 to hanging bodyweight pulls and 0.5 to grip-limited climbs, and none to machine pulldowns or rows. The brief has no anchor for forearms in pulls; confirm whether hanging grip work should colour the forearms at all.",
+    "Renegade row and sled row have no direct EMG studies; their mappings are by analogy (one-arm row plus plank; row plus rope grip)."
+  ]
+}

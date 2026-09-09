@@ -1,0 +1,2138 @@
+{
+  "batch": "hinge_posterior",
+  "families": [
+    {
+      "id": "conventional_deadlift",
+      "name": "Conventional deadlift (floor pull, hip-width stance)",
+      "description": "Bilateral hip-and-knee extension from the floor with a barbell in front of the shins; large lumbar-extensor moment held near-isometrically, hip extension by glute max and biarticular hamstrings, knee extension by the vasti in the first pull, static scapular/grip load. Includes accommodating-resistance (bands, chains, reverse bands) and deficit variants.",
+      "exerciseIds": [
+        "Barbell_Deadlift",
+        "Deadlift_with_Bands",
+        "Deadlift_with_Chains",
+        "Deficit_Deadlift",
+        "Reverse_Band_Deadlift"
+      ],
+      "mapping": [
+        {
+          "groupId": "erectors",
+          "weight": 1,
+          "rationale": "Erector spinae is among the most activated muscles in deadlift variants (Martín-Fuentes 2020) and conventional/sumo produce the largest hip and lumbar moments at lockout (Gundersen 2025). Kept as current."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Conventional deadlift is classed as very high glute max activation (>60% MVIC; Neto 2020) and both hip thrust and squat training transfer to the deadlift (Plotkin 2023); strong synergist = 0.75, matching the squat anchor. Kept as current."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.75,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Biarticular hamstrings extend the hip; knee is extending so the short head is unloaded. Hamstring EMG greatest at low knee-flexion intervals near lockout (Escamilla 2002). Kept as current."
+        },
+        {
+          "groupId": "quads",
+          "weight": 0.5,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Quadriceps activation is consistently greater than glute max and biceps femoris in deadlift EMG (Martín-Fuentes 2020) but the knee moment is well below a squat's; half credit. Kept as current."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.25,
+          "rationale": "Deadlift is tier 1 for adductor magnus (ischiocondylar) force in an EMG-driven model (Collings 2026) and hip adductor EMG rises with knee flexion (Escamilla 2002); minor credit because the inner-thigh adductors (longus/brevis) the user sees coloured are only tier 2-3. Added (was absent)."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.5,
+          "regionDistribution": {
+            "traps_mid_lower": 0.6,
+            "rhomboids": 0.4
+          },
+          "rationale": "Middle trapezius is active throughout the pull (Escamilla 2002); load is near-isometric scapular retraction/depression under very heavy load, which practitioners consistently credit for upper-back size. Kept at 0.5."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.5,
+          "rationale": "Upper trapezius EMG greatest in the low-knee-flexion (lockout) intervals (Escamilla 2002); heavy static shrug load. Kept as current."
+        },
+        {
+          "groupId": "lats",
+          "weight": 0.25,
+          "rationale": "Lats keep the bar against the body via near-isometric shoulder extension; no hypertrophy evidence, so minor credit only. Harmonised: Barbell_Deadlift currently 0.5, the variants 0.25."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.5,
+          "regionDistribution": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          },
+          "rationale": "Maximal isometric grip on the heaviest lift most users perform; consensus credits deadlifts for grip/forearm development. Kept at 0.5 with a stronger flexor bias than current (.7/.3)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Systematic review of deadlift EMG: erector spinae and quadriceps show greater activation than glute max and biceps femoris; semitendinosus slightly exceeds biceps femoris; RDL shows lower erector activation than the biarticular hamstrings.",
+          "source": "Martín-Fuentes I, Oliva-Lozano JM, Muyor JM. Electromyographic activity in deadlift exercise and its variants. A systematic review. PLoS One. 2020;15(2):e0229507.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32107499",
+          "doi": "10.1371/journal.pone.0229507"
+        },
+        {
+          "claim": "16-muscle EMG of sumo vs conventional deadlift: vastus medialis/lateralis and tibialis anterior greater in sumo, medial gastrocnemius greater in conventional; quads, adductors, glute max, paraspinals and middle trapezius peak in high knee-flexion intervals, hamstrings and upper trapezius near lockout; moderate-to-high quad/hamstring/gastrocnemius co-contraction.",
+          "source": "Escamilla RF, Francisco AC, Kayes AV, Speer KP, Moorman CT. An electromyographic analysis of sumo and conventional style deadlifts. Med Sci Sports Exerc. 2002;34(4):682-688.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "11932579",
+          "doi": "10.1097/00005768-200204000-00019"
+        },
+        {
+          "claim": "Conventional deadlift and hex-bar deadlift are among exercises eliciting very high (>60% MVIC) gluteus maximus activation.",
+          "source": "Neto WK, Soares EG, Vieira TL, et al. Gluteus Maximus Activation during Common Strength and Hypertrophy Exercises: A Systematic Review. J Sports Sci Med. 2020;19(1):195-203.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32132843"
+        },
+        {
+          "claim": "Conventional and sumo 3RM deadlifts produce larger hip net joint moments near lockout than hex-bar; hex-bar shifts load to the knee extensors.",
+          "source": "Gundersen AH, van den Tillaar R, Falch HN, Fredriksen AB, Larsen S. A Biomechanical Comparison Between Conventional, Sumo, and Hex-Bar Deadlifts Among Resistance Trained Women. J Strength Cond Res. 2025;39(3):281-288.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "39705135",
+          "doi": "10.1519/JSC.0000000000005011"
+        },
+        {
+          "claim": "EMG-assisted musculoskeletal model: deadlift and sumo deadlift are tier 1 for adductor magnus (ischiocondylar) and gracilis force; high adductor magnus forces occur in hip-extension-oriented exercises.",
+          "source": "Collings TJ, et al. Hip Adductor Muscle Forces during Strength Training and Rehabilitation Exercises. Med Sci Sports Exerc. 2026 (epub Apr 3).",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "41931009",
+          "doi": "10.1249/MSS.0000000000004002"
+        },
+        {
+          "claim": "Nine weeks of hip thrust or back squat training produced similar gluteus mCSA growth and transferred similarly to deadlift 3RM, indicating the deadlift shares the glute-max hip-extension demand.",
+          "source": "Plotkin DL, Rodas MA, Vigotsky AD, et al. Hip thrust and back squat training elicit similar gluteus muscle hypertrophy and transfer similarly to the deadlift. Front Physiol. 2023;14:1279170.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "37877099",
+          "doi": "10.3389/fphys.2023.1279170"
+        }
+      ],
+      "conflictsWithBrief": [
+        "The brief says not to credit muscles that only stabilise isometrically; forearms (grip), lats, and upper back in the deadlift are largely isometric, yet practitioner consensus and the loads involved argue for colour. Kept forearms/upper_back/traps_upper at 0.5 and lats at 0.25 as an explicit exception; flag if the product wants isometric work zeroed."
+      ],
+      "confidence": "high",
+      "notes": "Calves removed from Barbell_Deadlift (current 0.5): the squat anchor gives no calf credit and the deadlift has less ankle motion; Escamilla's gastrocnemius co-contraction is mostly stabilising. Bands/chains/reverse bands change the strength curve (more lockout load) but not the muscle set. Adductors added at 0.25 on evidence that was not available to the original guess.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Deficit_Deadlift",
+          "mapping": [
+            {
+              "groupId": "erectors",
+              "weight": 1
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.75,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "quads",
+              "weight": 0.75,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.25
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.5
+            },
+            {
+              "groupId": "lats",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.5,
+              "regionDistribution": {
+                "forearm_flexors": 0.8,
+                "forearm_extensors_brachioradialis": 0.2
+              }
+            }
+          ],
+          "reason": "Standing on a platform increases starting knee and hip flexion; quadriceps, adductor and glute EMG all peak in the high-knee-flexion intervals (Escamilla 2002), so the vasti earn strong-synergist credit (anatomical reasoning; no deficit-specific hypertrophy data)."
+        }
+      ]
+    },
+    {
+      "id": "sumo_deadlift",
+      "name": "Sumo deadlift (wide stance, toes out)",
+      "description": "Wide-stance floor pull with a more upright torso: shorter lumbar moment arm, more knee extension and more hip abduction/external-rotation demand, so the vasti, adductors and gluteals share more of the work than in the conventional pull.",
+      "exerciseIds": [
+        "Sumo_Deadlift",
+        "Sumo_Deadlift_with_Bands",
+        "Sumo_Deadlift_with_Chains",
+        "Reverse_Band_Sumo_Deadlift"
+      ],
+      "mapping": [
+        {
+          "groupId": "glutes",
+          "weight": 1,
+          "regionDistribution": {
+            "glute_max": 0.8,
+            "glute_med": 0.2
+          },
+          "rationale": "Hip extension from an abducted, externally rotated position; sumo shares the largest hip lockout moments with conventional (Gundersen 2025). The abducted stance recruits glute med/upper glute max more than a hip-width pull, hence .8/.2. Changed from current (hamstrings 1.0, glutes 0.5)."
+        },
+        {
+          "groupId": "quads",
+          "weight": 0.75,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Vastus medialis and lateralis EMG significantly greater in sumo than conventional (Escamilla 2002); more vertical shin and larger knee moment. Raised from 0.5."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.75,
+          "rationale": "Sumo deadlift is tier 1 for adductor magnus and gracilis force (Collings 2026) and the abducted stance puts the adductor mass on stretch; stronger than the squat anchor's 0.5. Raised from 0.5."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.5,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Hamstring EMG did not differ between styles (Escamilla 2002) but less hip flexion at the start means a shorter hamstring working range; secondary credit. Lowered from 1.0."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.75,
+          "rationale": "Paraspinal EMG similar between styles (Escamilla 2002) but the upright torso shortens the lumbar moment arm; strong synergist rather than primary. Raised from 0.5."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.5,
+          "regionDistribution": {
+            "traps_mid_lower": 0.6,
+            "rhomboids": 0.4
+          },
+          "rationale": "Same static scapular load as the conventional pull (middle trapezius active; Escamilla 2002). Kept."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.5,
+          "rationale": "Upper trapezius active near lockout (Escamilla 2002). Kept."
+        },
+        {
+          "groupId": "lats",
+          "weight": 0.25,
+          "rationale": "Near-isometric bar-path control only; minor credit for consistency with the conventional family."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.5,
+          "regionDistribution": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          },
+          "rationale": "Maximal grip; consistent with the conventional family."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Vastus medialis, vastus lateralis and tibialis anterior EMG were significantly greater in the sumo deadlift; medial gastrocnemius greater in conventional; hamstring and paraspinal EMG did not differ between styles.",
+          "source": "Escamilla RF, Francisco AC, Kayes AV, Speer KP, Moorman CT. An electromyographic analysis of sumo and conventional style deadlifts. Med Sci Sports Exerc. 2002;34(4):682-688.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "11932579",
+          "doi": "10.1097/00005768-200204000-00019"
+        },
+        {
+          "claim": "Sumo deadlift is tier 1 for adductor magnus (ischiocondylar) and gracilis muscle force in an EMG-assisted neuromusculoskeletal model.",
+          "source": "Collings TJ, et al. Hip Adductor Muscle Forces during Strength Training and Rehabilitation Exercises. Med Sci Sports Exerc. 2026 (epub Apr 3).",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "41931009",
+          "doi": "10.1249/MSS.0000000000004002"
+        },
+        {
+          "claim": "Sumo and conventional deadlifts both produce large hip net joint moments near lockout in strength-trained women (3RM), i.e. sumo remains a hip-extensor-dominant lift.",
+          "source": "Gundersen AH, van den Tillaar R, Falch HN, Fredriksen AB, Larsen S. A Biomechanical Comparison Between Conventional, Sumo, and Hex-Bar Deadlifts Among Resistance Trained Women. J Strength Cond Res. 2025;39(3):281-288.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "39705135",
+          "doi": "10.1519/JSC.0000000000005011"
+        },
+        {
+          "claim": "Across deadlift variants, erector spinae and quadriceps activation exceed glute max and biceps femoris activation.",
+          "source": "Martín-Fuentes I, Oliva-Lozano JM, Muyor JM. Electromyographic activity in deadlift exercise and its variants. A systematic review. PLoS One. 2020;15(2):e0229507.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32107499",
+          "doi": "10.1371/journal.pone.0229507"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Current mapping made hamstrings the sole primary mover, which the EMG does not support (hamstring EMG equal to conventional while quads, adductors and hip moment are higher). Calves dropped (current 0.5 on two variants): plantarflexor range is minimal and the squat anchor gives no calf credit. Accommodating resistance variants share the family mapping.",
+      "perExerciseOverrides": []
+    },
+    {
+      "id": "romanian_stiff_leg_deadlift",
+      "name": "Romanian / stiff-legged deadlift",
+      "description": "Hip hinge with near-locked knees and the load descending along the thigh: hamstrings lengthen under load at the hip while the knee stays extended, so the biarticular hamstrings (semis and BF long head) and glute max extend the hip and the erectors hold the spine.",
+      "exerciseIds": [
+        "Romanian_Deadlift",
+        "Stiff-Legged_Barbell_Deadlift",
+        "Stiff-Legged_Dumbbell_Deadlift",
+        "Smith_Machine_Stiff-Legged_Deadlift",
+        "Kettlebell_One-Legged_Deadlift"
+      ],
+      "mapping": [
+        {
+          "groupId": "hamstrings",
+          "weight": 1,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Fixed anchor row. RDL hamstring EMG 73-115% MVC with ST over BF (Zebis 2013); stiff-leg deadlift activates BFlh and ST almost equally (Hegyi 2018); the short head does not cross the hip and the knee does not flex, so it gets no share."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Fixed anchor row. RDL glute max activation not different from barbell hip thrust at 1RM (Delgado 2019) and equal to the 45-degree Roman chair (Andersen 2021)."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.5,
+          "rationale": "Fixed anchor row. RDL erector activation is lower than biceps femoris/semitendinosus (Martín-Fuentes 2020); largely isometric spinal hold."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Romanian deadlift and kettlebell swing target semitendinosus over biceps femoris at very high normalised EMG (73-115% MVC).",
+          "source": "Zebis MK, Skotte J, Andersen CH, et al. Kettlebell swing targets semitendinosus and supine leg curl targets biceps femoris: an EMG study with rehabilitation implications. Br J Sports Med. 2013;47(18):1192-1198.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22736206",
+          "doi": "10.1136/bjsports-2011-090281"
+        },
+        {
+          "claim": "RDL was as effective as the barbell hip thrust for glute max activation at 1RM and both isolated the hip extensors relative to the back squat; vastus lateralis activity was far lower in RDL than squat.",
+          "source": "Delgado J, Drinkwater EJ, Banyard HG, Haff GG, Nosaka K. Comparison Between Back Squat, Romanian Deadlift, and Barbell Hip Thrust for Leg and Hip Muscle Activities During Hip Extension. J Strength Cond Res. 2019;33(10):2595-2601.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "31356511",
+          "doi": "10.1519/JSC.0000000000003290"
+        },
+        {
+          "claim": "High-density EMG: in the stiff-leg deadlift BFlh and ST activity were near-identical (d=0.19) with small regional differences, unlike the Nordic where ST dominated.",
+          "source": "Hegyi A, Péter A, Finni T, Cronin NJ. Region-dependent hamstrings activity in Nordic hamstring exercise and stiff-leg deadlift defined with high-density electromyography. Scand J Med Sci Sports. 2018;28(3):992-1000.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29143379",
+          "doi": "10.1111/sms.13016"
+        },
+        {
+          "claim": "Nine weeks of seated leg curl plus stiff-leg deadlift at high load increased semitendinosus volume by ~26% (3D ultrasound); BF long head did not change significantly.",
+          "source": "Frouin A, Le Sant G, Barbier L, et al. Individual distribution of muscle hypertrophy among hamstring muscle heads: Adding muscle volume where you need is not so simple. Scand J Med Sci Sports. 2024;34(3):e14608.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "38515303",
+          "doi": "10.1111/sms.14608"
+        },
+        {
+          "claim": "6RM RDL, 45-degree Roman chair and seated back extension produced equal erector spinae activation; RDL and Roman chair activated glute max 94-140% more than the seated machine.",
+          "source": "Andersen V, Pedersen H, Fimland MS, et al. Comparison of Muscle Activity in Three Single-Joint, Hip Extension Exercises in Resistance-Trained Women. J Sports Sci Med. 2021;20(2):181-187.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33948095",
+          "doi": "10.52082/jssm.2021.181"
+        },
+        {
+          "claim": "Single-limb deadlift activated gluteus medius (59% MVIC) and gluteus maximus (59% MVIC) similarly, well above lateral band walk and clam for glute max.",
+          "source": "Distefano LJ, Blackburn JT, Marshall SW, Padua DA. Gluteal muscle activation during common therapeutic exercises. J Orthop Sports Phys Ther. 2009;39(7):532-540.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "19574661",
+          "doi": "10.2519/jospt.2009.2796"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Current mapping already equals the anchor for the four bilateral variants; kept. Stiff-legged (straighter knee, more lumbar rounding in practice) shares the RDL mapping: the extra spinal flexion is not a reason to raise erector credit beyond the anchor. Smith machine version is identical in muscle set.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Kettlebell_One-Legged_Deadlift",
+          "mapping": [
+            {
+              "groupId": "hamstrings",
+              "weight": 1,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.75,
+              "regionDistribution": {
+                "glute_max": 0.7,
+                "glute_med": 0.3
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Unilateral stance: glute med must control the pelvis in the frontal plane (single-limb deadlift glute med 59% MVIC, Distefano 2009), so the glute share shifts toward glute_med; the light kettlebell load means the lumbar extensors see far less than a barbell RDL, so erectors drop to minor credit."
+        }
+      ]
+    },
+    {
+      "id": "good_morning",
+      "name": "Good morning (bar-on-back hinge)",
+      "description": "Hip hinge with the load on the upper back: same hip-extensor demand as an RDL but a much longer lever on the lumbar spine, so the erectors take a larger share while the biarticular hamstrings and glute max extend the hip.",
+      "exerciseIds": [
+        "Good_Morning",
+        "Good_Morning_off_Pins",
+        "Hanging_Bar_Good_Morning",
+        "Seated_Good_Mornings",
+        "Stiff_Leg_Barbell_Good_Morning",
+        "Band_Good_Morning",
+        "Band_Good_Morning_Pull_Through"
+      ],
+      "mapping": [
+        {
+          "groupId": "hamstrings",
+          "weight": 1,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Hamstring IEMG rises with load and the movement is a knee-near-locked hinge (Vigotsky 2015); knee flexion increases slightly with load but the short head is not a hip extensor. Kept as current."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.75,
+          "rationale": "Spinal erector IEMG increases with load (Vigotsky 2015); the bar sits on the shoulders so the lumbar extensor moment arm is far longer than in an RDL, justifying strong-synergist credit above the RDL anchor's 0.5. Raised from 0.5 on barbell versions."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Bilateral hip extension from moderate hip flexion, same as the RDL anchor. Kept."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Across 50-90% 1RM good mornings, integrated EMG of hamstrings and spinal erectors tended to increase with load; knee flexion increased and estimated hamstring length decreased with load; lumbar and hip flexion unchanged.",
+          "source": "Vigotsky AD, Harper EN, Ryan DR, Contreras B. Effects of load on good morning kinematics and EMG activity. PeerJ. 2015;3:e708.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "25653899",
+          "doi": "10.7717/peerj.708"
+        },
+        {
+          "claim": "Hip-extension (hinge) training lengthens BFlh fascicles and increases BFlh and semitendinosus volume, more than the Nordic for BFlh.",
+          "source": "Bourne MN, Duhig SJ, Timmins RG, et al. Impact of the Nordic hamstring and hip extension exercises on hamstring architecture and morphology: implications for injury prevention. Br J Sports Med. 2017;51(5):469-477.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "27660368",
+          "doi": "10.1136/bjsports-2016-096130"
+        },
+        {
+          "claim": "RDL, Roman chair and seated back extension produced equal erector spinae activation at 6RM, i.e. loaded hinges load the erectors near their exercise-specific maximum regardless of variant.",
+          "source": "Andersen V, Pedersen H, Fimland MS, et al. Comparison of Muscle Activity in Three Single-Joint, Hip Extension Exercises in Resistance-Trained Women. J Sports Sci Med. 2021;20(2):181-187.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33948095",
+          "doi": "10.52082/jssm.2021.181"
+        },
+        {
+          "claim": "Bar-on-back placement lengthens the external moment arm about L5/S1 relative to a bar held in the hands, increasing lumbar extensor demand for the same hip moment.",
+          "source": "Standard biomechanical reasoning (lever arm of external load about the lumbar spine); consistent with Vigotsky 2015 kinematics.",
+          "tier": "anatomical",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Abs 0.5 removed from the three barbell versions: trunk bracing is isometric and the brief excludes stabiliser credit. Band good mornings (including the 'pull through' variant, which is a band around the neck anchored behind) share the mapping; band tension peaks at lockout, which shifts load away from the stretched position but does not change the muscle set.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Seated_Good_Mornings",
+          "mapping": [
+            {
+              "groupId": "erectors",
+              "weight": 1
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.5,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.5,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            }
+          ],
+          "reason": "Seated with knees at ~90 degrees the hamstrings are slack at the knee and hip range is limited, so the movement becomes mainly lumbar/thoracic extension against the bar; erectors become primary and hip extensors drop to half credit (anatomical reasoning)."
+        }
+      ]
+    },
+    {
+      "id": "back_extension",
+      "name": "Back extension / hyperextension (45-degree, flat bench, ball, reverse)",
+      "description": "Trunk or leg raised against gravity with the pelvis (or trunk) fixed: lumbar erectors extend the spine while glute max and the biarticular hamstrings extend the hip. The 45-degree bench version is the '45-degree hip extension' used in the hamstring literature.",
+      "exerciseIds": [
+        "Hyperextensions_Back_Extensions",
+        "Hyperextensions_With_No_Hyperextension_Bench",
+        "Weighted_Ball_Hyperextension",
+        "Reverse_Hyperextension"
+      ],
+      "mapping": [
+        {
+          "groupId": "erectors",
+          "weight": 1,
+          "rationale": "Roman chair back extension produced erector activation equal to a 6RM RDL (Andersen 2021); prone back extension loads ES with GM and hamstrings as co-extensors (Plamondon 2004). Kept as current."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.75,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "45-degree hip extension training grew BFlh volume more than the Nordic (Bourne 2017) and activates all three biarticular heads (Messer 2018); Roman chair BF activation exceeded RDL (Andersen 2021). Raised from 0.5; knee is straight so bf_short gets 0."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Roman chair glute max activation equals RDL and far exceeds the seated machine (Andersen 2021); strong synergist. Raised from 0.5."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "10 weeks of 45-degree hip extension training increased BFlh volume more than Nordic training and control, and increased semitendinosus volume as much as the Nordic.",
+          "source": "Bourne MN, Duhig SJ, Timmins RG, et al. Impact of the Nordic hamstring and hip extension exercises on hamstring architecture and morphology: implications for injury prevention. Br J Sports Med. 2017;51(5):469-477.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "27660368",
+          "doi": "10.1136/bjsports-2016-096130"
+        },
+        {
+          "claim": "fMRI: 45-degree hip extension increased T2 of BFlh, ST and SM more than BFsh and gave a higher BFlh:ST ratio than the Nordic, i.e. it evenly loads the biarticular hamstrings.",
+          "source": "Messer DJ, Bourne MN, Williams MD, Al Najjar A, Shield AJ. Hamstring Muscle Use in Women During Hip Extension and the Nordic Hamstring Exercise: A Functional Magnetic Resonance Imaging Study. J Orthop Sports Phys Ther. 2018;48(8):607-612.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29685059",
+          "doi": "10.2519/jospt.2018.7748"
+        },
+        {
+          "claim": "45-degree Roman chair back extension activated biceps femoris 71-174% more than RDL and seated back extension, glute max equal to RDL, and erector spinae equal across all three.",
+          "source": "Andersen V, Pedersen H, Fimland MS, et al. Comparison of Muscle Activity in Three Single-Joint, Hip Extension Exercises in Resistance-Trained Women. J Sports Sci Med. 2021;20(2):181-187.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33948095",
+          "doi": "10.52082/jssm.2021.181"
+        },
+        {
+          "claim": "Reverse hyperextension vs hyperextension at equal load: HE gave greater integrated biceps femoris and glute max activity, RHE gave greater low-back moment, greater hip ROM, less lumbar flexion and equivalent erector spinae activity.",
+          "source": "Lawrence MA, Chin A, Swanson BT. Biomechanical Comparison of the Reverse Hyperextension Machine and the Hyperextension Exercise. J Strength Cond Res. 2019;33(8):2053-2056.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "30946266",
+          "doi": "10.1519/JSC.0000000000003146"
+        },
+        {
+          "claim": "Compared with the RDL at 50% RM, the open-chain reverse hyperextension increased glute max (+19.5%), biceps femoris (+27.9%) and semitendinosus (+18.2%) activation.",
+          "source": "Dicus JR, et al. A Comparison of Muscle Recruitment Across Three Straight-Legged, Hinge-Pattern Resistance Training Exercises. Int J Exerc Sci. 2023;16(1).",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "37113509",
+          "doi": "10.70252/ZAOJ6139"
+        },
+        {
+          "claim": "Prone bench back extension recruits erector spinae with glute max and hamstrings; adding a 45 N weight increased hamstring more than erector activation and hip-extensor fatigue limited task performance.",
+          "source": "Plamondon A, Trimble K, Larivière C, Desjardins P. Back muscle fatigue during intermittent prone back extension exercise. Scand J Med Sci Sports. 2004;14(4):221-230.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "15265144",
+          "doi": "10.1111/j.1600-0838.2004.00363.x"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "The 45-degree 'hyperextension' is one of the best-evidenced hamstring hypertrophy exercises (Bourne 2017), so hamstring credit is raised to 0.75 rather than the current 0.5. Technique varies (rounded-back = erector emphasis; flat-back hinge = hip-extensor emphasis); the family mapping sits between.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Reverse_Hyperextension",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 1,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Trunk is fixed and the legs swing: hip extensors are the movers (higher GM, BF and ST than RDL, Dicus 2023) while the lumbar extensors hold a large but near-isometric moment with little lumbar flexion (Lawrence 2019). Current mapping's calves 0.5 dropped (no ankle work) and hamstring distribution set to hip_ext only (knees stay straight)."
+        },
+        {
+          "exerciseId": "Weighted_Ball_Hyperextension",
+          "mapping": [
+            {
+              "groupId": "erectors",
+              "weight": 1
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.5,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.5,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            }
+          ],
+          "reason": "Prone over a ball with feet on the floor the motion is mostly trunk extension over the ball, so the hip extensors assist at half credit. Upper_back 0.5 removed: holding a plate to the chest is not scapular retraction work."
+        }
+      ]
+    },
+    {
+      "id": "pull_through_swing",
+      "name": "Cable pull-through and kettlebell swing",
+      "description": "Hip hinge with the resistance pulled between the legs from behind, finishing in forceful hip extension (glute lockout); the swing is the ballistic version. Line of pull is horizontal so the lumbar extensors are loaded less than in a barbell hinge.",
+      "exerciseIds": ["Pull_Through", "One-Arm_Kettlebell_Swings"],
+      "mapping": [
+        {
+          "groupId": "glutes",
+          "weight": 1,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Redirected resistance loads the hip extension lockout; pull-through glute max activation did not differ from RDL while erector and hamstring activation fell (Dicus 2023). Kept as current."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.75,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Kettlebell swing hamstring EMG 73-115% MVC, ST-dominant (Zebis 2013; Sahinis 2025); the hip-hinge swing gives the highest hamstring EMG of the swing styles (Del Monte 2020). Raised from 0.5; bf_short 0 because the knee is nearly locked."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.5,
+          "rationale": "Erector activation is lower than in the RDL when resistance is redirected through a pulley (Dicus 2023); in the swing the spine is held isometrically neutral. Kept."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Switching from RDL to cable pull-through significantly decreased longissimus (-11%), multifidus (-14%), biceps femoris (-13%) and semitendinosus (-7%) activation with no significant change in glute max.",
+          "source": "Dicus JR, et al. A Comparison of Muscle Recruitment Across Three Straight-Legged, Hinge-Pattern Resistance Training Exercises. Int J Exerc Sci. 2023;16(1).",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "37113509",
+          "doi": "10.70252/ZAOJ6139"
+        },
+        {
+          "claim": "Kettlebell swing targeted semitendinosus over biceps femoris at very high normalised EMG (73-115% MVC).",
+          "source": "Zebis MK, Skotte J, Andersen CH, et al. Kettlebell swing targets semitendinosus and supine leg curl targets biceps femoris: an EMG study with rehabilitation implications. Br J Sports Med. 2013;47(18):1192-1198.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22736206",
+          "doi": "10.1136/bjsports-2011-090281"
+        },
+        {
+          "claim": "Hip-hinge style kettlebell swing produced greater medial hamstring and biceps femoris sEMG than squat-style or double-knee-extension swings; medial hamstrings exceeded BF across styles.",
+          "source": "Del Monte MJ, Opar DA, Timmins RG, Ross JA, Keogh JWL, Lorenzen C. Hamstring Myoelectrical Activity During Three Different Kettlebell Swing Exercises. J Strength Cond Res. 2020;34(7):1953-1958.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28930870",
+          "doi": "10.1519/JSC.0000000000002254"
+        },
+        {
+          "claim": "Meta-analysis: semitendinosus EMG exceeds biceps femoris in kettlebell swings (SMD -0.59) while BF exceeds ST in back extensions.",
+          "source": "Sahinis C, et al. Differences in activation amplitude between semitendinosus and biceps femoris during hamstring exercises: A systematic and critical review with meta-analysis. J Sports Sci. 2025.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "40192215",
+          "doi": "10.1080/02640414.2025.2486879"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "No longitudinal hypertrophy study exists for either exercise; weights are calibrated to the RDL anchor via the EMG comparisons above. Ballistic swings are usually done for high reps, so the repFactor rule already discounts them.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "One-Arm_Kettlebell_Swings",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.75,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.25,
+              "regionDistribution": {
+                "forearm_flexors": 0.9,
+                "forearm_extensors_brachioradialis": 0.1
+              }
+            }
+          ],
+          "reason": "The arm is a passive lever in a correct swing (hips project the bell), so front delt credit drops from the current 0.5 to minor; one-arm grip on a swinging bell earns minor forearm-flexor credit. Calves 0.5 removed: plantarflexion is not loaded. Obliques (anti-rotation) deliberately not credited per the isometric-stabiliser rule."
+        }
+      ]
+    },
+    {
+      "id": "olympic_clean_pull",
+      "name": "Cleans and pulls (barbell, dumbbell, kettlebell)",
+      "description": "Explosive triple extension (hip, knee, ankle) with a shrug and, for cleans, a front-rack catch. Muscle set is a deadlift-like pull plus a violent shrug/plantarflexion; the lower-body work is quad-and-glute dominant rather than hamstring dominant.",
+      "exerciseIds": [
+        "Alternating_Hang_Clean",
+        "Double_Kettlebell_Alternating_Hang_Clean",
+        "Dumbbell_Clean",
+        "Kettlebell_Dead_Clean",
+        "Kettlebell_Hang_Clean",
+        "One-Arm_Kettlebell_Clean",
+        "One-Arm_Open_Palm_Kettlebell_Clean",
+        "Open_Palm_Kettlebell_Clean",
+        "Power_Clean",
+        "Smith_Machine_Hang_Power_Clean",
+        "Snatch_Pull"
+      ],
+      "mapping": [
+        {
+          "groupId": "glutes",
+          "weight": 1,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Glute max is a predominant muscle in hang power clean/pull EMG (Geisler 2023) and hip extension velocity drives the second pull. Changed: current has hamstrings 1.0 and glutes 0.5."
+        },
+        {
+          "groupId": "quads",
+          "weight": 0.75,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Vastus lateralis is one of the highest-activity muscles in cleans and pulls (Geisler 2023); knee re-bend and extension in the second pull plus deadlift-like first pull from the floor. Raised from 0.5."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.75,
+          "rationale": "Erector spinae activity is high and greater in the clean than the pull for beginners (Geisler 2023); holding the torso angle through the first pull is a large lumbar moment. Raised from 0.5."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.75,
+          "rationale": "Trapezius EMG is high in both cleans and pulls and greater in pulls at lighter loads (Geisler 2023); the shrug is the defining upper-body action. Raised from 0.5."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.5,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Hamstrings extend the hip in the first pull but the second pull is quad/glute driven; secondary. Lowered from 1.0; knee is extending so the short head gets 0."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.5,
+          "regionDistribution": {
+            "traps_mid_lower": 0.6,
+            "rhomboids": 0.4
+          },
+          "rationale": "Scapular retraction/elevation during the pull and catch; same static load as a deadlift. Kept where present, added to variants lacking it."
+        },
+        {
+          "groupId": "calves",
+          "weight": 0.5,
+          "regionDistribution": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "rationale": "Ballistic plantarflexion is part of triple extension (unlike squats/deadlifts), so calves earn secondary credit."
+        },
+        {
+          "groupId": "forearms",
+          "weight": 0.5,
+          "regionDistribution": {
+            "forearm_flexors": 0.8,
+            "forearm_extensors_brachioradialis": 0.2
+          },
+          "rationale": "Hook/overhand grip on an accelerating load."
+        },
+        {
+          "groupId": "delt_front",
+          "weight": 0.25,
+          "rationale": "Anterior deltoid works in the front-rack catch and turnover; minor credit."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "During hang power clean/snatch and their pulls, EMG of vastus lateralis, glute max, erector spinae and trapezius was recorded; pattern of the predominant muscles is similar between lifts and pulls above 70% 1RM, with trapezius favouring pulls at lighter loads and erector spinae greater in the full lifts.",
+          "source": "Geisler S, Havers T, Isenmann E, et al. Effects of Expertise on Muscle Activity during the Hang Power Clean and Hang Power Snatch Compared to Snatch and Clean Pulls - An Explorative Analysis. J Sports Sci Med. 2023;22(4):778-789.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "38045750",
+          "doi": "10.52082/jssm.2023.778"
+        },
+        {
+          "claim": "Deadlift-type pulls from the floor activate erector spinae and quadriceps more than glute max and biceps femoris.",
+          "source": "Martín-Fuentes I, Oliva-Lozano JM, Muyor JM. Electromyographic activity in deadlift exercise and its variants. A systematic review. PLoS One. 2020;15(2):e0229507.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32107499",
+          "doi": "10.1371/journal.pone.0229507"
+        },
+        {
+          "claim": "Upper trapezius and gastrocnemius EMG peak in the low-knee-flexion (extension/lockout) phase of a pull, consistent with the shrug and plantarflexion of the second pull.",
+          "source": "Escamilla RF, Francisco AC, Kayes AV, Speer KP, Moorman CT. An electromyographic analysis of sumo and conventional style deadlifts. Med Sci Sports Exerc. 2002;34(4):682-688.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "11932579",
+          "doi": "10.1097/00005768-200204000-00019"
+        },
+        {
+          "claim": "Weightlifting derivatives are triple-extension movements where the knee re-bends (double knee bend) and extends explosively; the arms act as hooks until the catch.",
+          "source": "Practitioner consensus (NSCA Essentials of Strength Training and Conditioning, weightlifting technique chapters).",
+          "tier": "consensus",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "These are power exercises, typically 1-5 reps and rarely to failure; the repFactor (<3 reps -> 0.5, <5 -> 0.75) already discounts them and no per-muscle hypertrophy data exist. Biceps 0.5 removed from Alternating_Hang_Clean (arms should not curl the bell). Kettlebell cleans are light, so the set counts but the loading is modest; consider a global implement discount (open question).",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Alternating_Hang_Clean",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "quads",
+              "weight": 0.5,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.75
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.5,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.5,
+              "regionDistribution": {
+                "gastrocnemius": 0.7,
+                "soleus": 0.3
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.5,
+              "regionDistribution": {
+                "forearm_flexors": 0.8,
+                "forearm_extensors_brachioradialis": 0.2
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Hang start removes the floor first pull, so quadriceps and erector demand fall to standard secondary credit; rest as family."
+        },
+        {
+          "exerciseId": "Double_Kettlebell_Alternating_Hang_Clean",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "quads",
+              "weight": 0.5,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.75
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.5,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.5,
+              "regionDistribution": {
+                "gastrocnemius": 0.7,
+                "soleus": 0.3
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.5,
+              "regionDistribution": {
+                "forearm_flexors": 0.8,
+                "forearm_extensors_brachioradialis": 0.2
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Hang start: quads and erectors at 0.5 (no first pull from the floor)."
+        },
+        {
+          "exerciseId": "Kettlebell_Hang_Clean",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "quads",
+              "weight": 0.5,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.75
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.5,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.5,
+              "regionDistribution": {
+                "gastrocnemius": 0.7,
+                "soleus": 0.3
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.5,
+              "regionDistribution": {
+                "forearm_flexors": 0.8,
+                "forearm_extensors_brachioradialis": 0.2
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Hang start: quads and erectors at 0.5."
+        },
+        {
+          "exerciseId": "Smith_Machine_Hang_Power_Clean",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "quads",
+              "weight": 0.5,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.75
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.5,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.5,
+              "regionDistribution": {
+                "gastrocnemius": 0.7,
+                "soleus": 0.3
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.5,
+              "regionDistribution": {
+                "forearm_flexors": 0.8,
+                "forearm_extensors_brachioradialis": 0.2
+              }
+            },
+            {
+              "groupId": "delt_front",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Hang start on a fixed bar path: quads and erectors at 0.5; the guided bar does not change the muscle set."
+        },
+        {
+          "exerciseId": "Snatch_Pull",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "quads",
+              "weight": 0.75,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.75
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.75
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.5,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "upper_back",
+              "weight": 0.5,
+              "regionDistribution": {
+                "traps_mid_lower": 0.6,
+                "rhomboids": 0.4
+              }
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.5,
+              "regionDistribution": {
+                "gastrocnemius": 0.7,
+                "soleus": 0.3
+              }
+            },
+            {
+              "groupId": "forearms",
+              "weight": 0.5,
+              "regionDistribution": {
+                "forearm_flexors": 0.8,
+                "forearm_extensors_brachioradialis": 0.2
+              }
+            }
+          ],
+          "reason": "No catch, so no front-delt credit; wide grip and heavy loads make the shrug/trapezius demand at least as high as in the clean (Geisler 2023 found greater trapezius EMG in pulls at submaximal loads)."
+        }
+      ]
+    },
+    {
+      "id": "leg_curl",
+      "name": "Leg curl (knee-flexion isolation: seated, lying, standing, band, ball/slide, manual)",
+      "description": "Knee flexion against resistance with the hip fixed (or, in bridge-type curls, held extended by the glutes). Loads all four hamstring heads including the short head; gastrocnemius assists knee flexion. Hip angle sets biarticular-head length: seated (hip flexed) lengthens them and grows the biarticular heads more than prone.",
+      "exerciseIds": [
+        "Lying_Leg_Curls",
+        "Seated_Leg_Curl",
+        "Standing_Leg_Curl",
+        "Seated_Band_Hamstring_Curl",
+        "Ball_Leg_Curl",
+        "Platform_Hamstring_Slides",
+        "Prone_Manual_Hamstring",
+        "Leg_Lift"
+      ],
+      "mapping": [
+        {
+          "groupId": "hamstrings",
+          "weight": 1,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 0.6,
+            "hamstrings_bf_short": 0.4
+          },
+          "rationale": "Fixed anchor row for Seated_Leg_Curl. Flywheel leg curl produced the largest T2 shifts of any hamstring exercise in BFsh (51%) and ST (65%) (Fernandez-Gonzalo 2016); seated curl training grows the whole hamstring more than prone (Maeo 2021); seated curl + SLDL program grew ST ~26% (Frouin 2024)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "12 weeks of seated vs prone leg curl (within-subject): seated (long muscle length) produced greater hypertrophy of the biarticular hamstrings and the whole hamstring group than prone; both grew the short head.",
+          "source": "Maeo S, Huang M, Wu Y, et al. Greater Hamstrings Muscle Hypertrophy but Similar Damage Protection after Training at Long versus Short Muscle Lengths. Med Sci Sports Exerc. 2021;53(4):825-837.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "33009197",
+          "doi": "10.1249/MSS.0000000000002523"
+        },
+        {
+          "claim": "fMRI after flywheel leg curl: T2 increased in gracilis (95%), ST (65%), BFsh (51%) and BFlh (14%); the most substantial hamstring use of the four exercises tested.",
+          "source": "Fernandez-Gonzalo R, Tesch PA, Linnehan RM, et al. Individual Muscle use in Hamstring Exercises by Soccer Players Assessed using Functional MRI. Int J Sports Med. 2016;37(7):559-564.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "27116347",
+          "doi": "10.1055/s-0042-100290"
+        },
+        {
+          "claim": "Regional fMRI: flywheel leg curl raised T2 in all regions of BFlh (9-16%), BFsh (41-71%) and ST (60-69%), confirming strong short-head and semitendinosus loading in knee-flexion curls.",
+          "source": "Mendez-Villanueva A, Suarez-Arrones L, Rodas G, et al. MRI-Based Regional Muscle Use during Hamstring Strengthening Exercises in Elite Soccer Players. PLoS One. 2016;11(9):e0161356.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "27583444",
+          "doi": "10.1371/journal.pone.0161356"
+        },
+        {
+          "claim": "High-load seated leg curl + stiff-leg deadlift training for 9 weeks selectively increased semitendinosus volume (~26%).",
+          "source": "Frouin A, Le Sant G, Barbier L, et al. Individual distribution of muscle hypertrophy among hamstring muscle heads: Adding muscle volume where you need is not so simple. Scand J Med Sci Sports. 2024;34(3):e14608.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "38515303",
+          "doi": "10.1111/sms.14608"
+        },
+        {
+          "claim": "Meta-analysis: biceps femoris EMG exceeds semitendinosus during prone-lying curls (SMD 0.94); supine leg curl targets BF over ST (Zebis 2013).",
+          "source": "Sahinis C, et al. Differences in activation amplitude between semitendinosus and biceps femoris during hamstring exercises: A systematic and critical review with meta-analysis. J Sports Sci. 2025.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "40192215",
+          "doi": "10.1080/02640414.2025.2486879"
+        },
+        {
+          "claim": "Supine leg curl (bridge-type) and hip extension specifically targeted biceps femoris over semitendinosus at 75-87% MVC.",
+          "source": "Zebis MK, Skotte J, Andersen CH, et al. Kettlebell swing targets semitendinosus and supine leg curl targets biceps femoris: an EMG study with rehabilitation implications. Br J Sports Med. 2013;47(18):1192-1198.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22736206",
+          "doi": "10.1136/bjsports-2011-090281"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Seated_Leg_Curl and Seated_Band_Hamstring_Curl keep the anchor exactly. Gastrocnemius contributes to knee flexion in every curl (and grows with flywheel curls per fMRI gracilis/gastroc co-activation reports) but is not credited on the anchor row, so it is only added on the bridge-type curls where the ankle is also loaded. Leg_Lift (free-exercise-db: standing, lift one leg behind you 'as if performing a leg curl') is a bodyweight standing leg curl and belongs here, not with glute kickbacks.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Lying_Leg_Curls",
+          "mapping": [
+            {
+              "groupId": "hamstrings",
+              "weight": 1,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 0.5,
+                "hamstrings_bf_short": 0.5
+              }
+            }
+          ],
+          "reason": "Prone (hip extended) shortens the biarticular heads, which grow less than in the seated curl (Maeo 2021) while the short head is unaffected by hip angle; emphasis shifts one step toward bf_short relative to the seated anchor."
+        },
+        {
+          "exerciseId": "Standing_Leg_Curl",
+          "mapping": [
+            {
+              "groupId": "hamstrings",
+              "weight": 1,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 0.5,
+                "hamstrings_bf_short": 0.5
+              }
+            }
+          ],
+          "reason": "Hip neutral (same length state as prone), unilateral; same shift toward the short head as the lying curl."
+        },
+        {
+          "exerciseId": "Prone_Manual_Hamstring",
+          "mapping": [
+            {
+              "groupId": "hamstrings",
+              "weight": 1,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 0.5,
+                "hamstrings_bf_short": 0.5
+              }
+            }
+          ],
+          "reason": "Partner-resisted prone curl: identical joint configuration to the lying machine curl."
+        },
+        {
+          "exerciseId": "Ball_Leg_Curl",
+          "mapping": [
+            {
+              "groupId": "hamstrings",
+              "weight": 1,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 0.6,
+                "hamstrings_bf_short": 0.4
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.5,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.25,
+              "regionDistribution": {
+                "gastrocnemius": 1,
+                "soleus": 0
+              }
+            }
+          ],
+          "reason": "Supine bridge-curl: hips are held extended by glute max through the curl (secondary credit) and the heels drive into the ball so gastrocnemius is loaded as a knee flexor; supine curl is BF-dominant (Zebis 2013). Calves lowered from current 0.5 to minor."
+        },
+        {
+          "exerciseId": "Platform_Hamstring_Slides",
+          "mapping": [
+            {
+              "groupId": "hamstrings",
+              "weight": 1,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 0.6,
+                "hamstrings_bf_short": 0.4
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.5,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.25,
+              "regionDistribution": {
+                "gastrocnemius": 1,
+                "soleus": 0
+              }
+            }
+          ],
+          "reason": "Single-leg supine slide curl: same mechanics as the ball curl (bridge held by glutes, heel-loaded gastrocnemius)."
+        },
+        {
+          "exerciseId": "Leg_Lift",
+          "mapping": [
+            {
+              "groupId": "hamstrings",
+              "weight": 1,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 0.5,
+                "hamstrings_bf_short": 0.5
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.25,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            }
+          ],
+          "reason": "Standing bodyweight/ankle-weight leg curl with slight hip extension: knee flexion is the loaded action (standing-curl distribution), glute max earns only minor credit for the small hip-extension component. Replaces the current glutes-1.0 guess."
+        }
+      ]
+    },
+    {
+      "id": "glute_ham_raise_nordic",
+      "name": "Glute-ham raise and Nordic curl",
+      "description": "Bodyweight knee flexion with the feet anchored: the lower leg is fixed and the body is the lever, giving a very high (largely eccentric) knee-flexor load. Machine GHR adds a hip-extension phase from the pad; floor/'natural' versions are Nordic curls with the hips held extended isometrically.",
+      "exerciseIds": ["Glute_Ham_Raise", "Natural_Glute_Ham_Raise", "Floor_Glute-Ham_Raise"],
+      "mapping": [
+        {
+          "groupId": "hamstrings",
+          "weight": 1,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 0.6,
+            "hamstrings_bf_short": 0.4
+          },
+          "rationale": "Nordic training grew ST 26%, BFsh 22%, BFlh 9%, SM 6% (Pai 2025) and preferentially recruits ST over BFlh (Bourne 2015/2017; Hegyi 2018); ST is in the hip_ext region and the short head is one small muscle, so .6/.4 mirrors the seated-curl anchor. Kept as current for the machine GHR distribution? No: current is .5/.5 for GHR and .8/.2 for Floor GHR; harmonised to .6/.4."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.5,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Machine GHR starts with hip extension from a flexed position over the pad before the curl; secondary credit. Kept."
+        },
+        {
+          "groupId": "calves",
+          "weight": 0.25,
+          "regionDistribution": {
+            "gastrocnemius": 1,
+            "soleus": 0
+          },
+          "rationale": "Feet are plantarflexed into the plate/anchor and gastrocnemius assists knee flexion; minor credit (current 0.5 lowered)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "9 weeks of Nordic training produced non-uniform hamstring hypertrophy (MRI): BFsh +22%, BFlh +9%, ST +26%, SM +6%.",
+          "source": "Pai S A, Andrews MH, Gurchiek RD, et al. Hamstring muscle architecture and microstructure changes following Nordic hamstring exercise training and detraining. J Sport Health Sci. 2025;14:101070.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "40578759",
+          "doi": "10.1016/j.jshs.2025.101070"
+        },
+        {
+          "claim": "10 weeks of Nordic training increased semitendinosus volume as much as hip extension training but produced less BFlh hypertrophy than hip extension.",
+          "source": "Bourne MN, Duhig SJ, Timmins RG, et al. Impact of the Nordic hamstring and hip extension exercises on hamstring architecture and morphology: implications for injury prevention. Br J Sports Med. 2017;51(5):469-477.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "27660368",
+          "doi": "10.1136/bjsports-2016-096130"
+        },
+        {
+          "claim": "fMRI: during the Nordic, semitendinosus T2 increase was 16-20% greater than BFlh, BFsh and SM; the Nordic preferentially activates ST.",
+          "source": "Bourne MN, Opar DA, Williams MD, Al Najjar A, Shield AJ. Muscle activation patterns in the Nordic hamstring exercise: Impact of prior strain injury. Scand J Med Sci Sports. 2016;26(6):666-674.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26059634",
+          "doi": "10.1111/sms.12494"
+        },
+        {
+          "claim": "High-density EMG: in the Nordic, ST activity was substantially higher than BFlh (d=1.06) with the distal BFlh region most active.",
+          "source": "Hegyi A, Péter A, Finni T, Cronin NJ. Region-dependent hamstrings activity in Nordic hamstring exercise and stiff-leg deadlift defined with high-density electromyography. Scand J Med Sci Sports. 2018;28(3):992-1000.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29143379",
+          "doi": "10.1111/sms.13016"
+        },
+        {
+          "claim": "Eccentric and concentric Nordic and bent-knee bridge gave the lowest BF:medial-hamstring EMG ratios of ten exercises, i.e. knee-flexion-dominant tasks bias the medial hamstrings.",
+          "source": "Bourne MN, Williams MD, Opar DA, Al Najjar A, Kerr GK, Shield AJ. Impact of exercise selection on hamstring muscle activation. Br J Sports Med. 2017;51(13):1021-1028.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "27467123",
+          "doi": "10.1136/bjsports-2015-095739"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Erectors 0.5 removed from Natural_Glute_Ham_Raise (spine is held neutral isometrically). Distribution harmonised across the three to .6/.4: the Nordic literature shows the short head hypertrophies strongly (22%) but ST (a hip_ext-region muscle) grows at least as much, so the split matches the seated-curl anchor rather than the current .5/.5 or .8/.2 guesses.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Natural_Glute_Ham_Raise",
+          "mapping": [
+            {
+              "groupId": "hamstrings",
+              "weight": 1,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 0.6,
+                "hamstrings_bf_short": 0.4
+              }
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.25,
+              "regionDistribution": {
+                "gastrocnemius": 1,
+                "soleus": 0
+              }
+            }
+          ],
+          "reason": "Nordic curl: hips stay extended isometrically, so no dynamic glute work (stabiliser rule); the whole load is knee flexion."
+        },
+        {
+          "exerciseId": "Floor_Glute-Ham_Raise",
+          "mapping": [
+            {
+              "groupId": "hamstrings",
+              "weight": 1,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 0.6,
+                "hamstrings_bf_short": 0.4
+              }
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.25,
+              "regionDistribution": {
+                "gastrocnemius": 1,
+                "soleus": 0
+              }
+            }
+          ],
+          "reason": "Partner-held Nordic (instructions say do not flex the hips): same as Natural_Glute_Ham_Raise; glute credit removed."
+        }
+      ]
+    },
+    {
+      "id": "hip_thrust_bridge",
+      "name": "Hip thrust and glute bridge",
+      "description": "Supine/upper-back-supported hip extension with the knees bent ~90 degrees: glute max produces the hip moment with peak load at full extension; hamstrings assist as hip extensors at a shortened knee angle; quads and erectors hold position.",
+      "exerciseIds": [
+        "Barbell_Hip_Thrust",
+        "Barbell_Glute_Bridge",
+        "Butt_Lift_Bridge",
+        "Physioball_Hip_Bridge",
+        "Single_Leg_Glute_Bridge",
+        "Hip_Lift_with_Band",
+        "Kneeling_Squat"
+      ],
+      "mapping": [
+        {
+          "groupId": "glutes",
+          "weight": 1,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Hip thrust training produces gluteus hypertrophy equal to back squat training (Plotkin 2023); very high upper and lower glute max EMG (Contreras 2015; Neto 2020). Kept as current."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.5,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Biceps femoris mean EMG ~41% MVIC in the barbell hip thrust, higher than squat (Contreras 2015); knee is fixed so the short head is not loaded. Kept."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Nine weeks of set-equated hip thrust vs back squat training in untrained adults produced similar gluteus maximus mCSA increases (upper, mid, lower) and similar glute med/min growth; hip thrust sEMG for glutes was higher.",
+          "source": "Plotkin DL, Rodas MA, Vigotsky AD, et al. Hip thrust and back squat training elicit similar gluteus muscle hypertrophy and transfer similarly to the deadlift. Front Physiol. 2023;14:1279170.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "37877099",
+          "doi": "10.3389/fphys.2023.1279170"
+        },
+        {
+          "claim": "Meta-analysis of 12 studies: hip-extension resistance training has a moderate effect on gluteus maximus hypertrophy (SMD 0.71), with hip thrust and squat variants both effective.",
+          "source": "Krause Neto W, et al. The impact of resistance training on gluteus maximus hypertrophy: a systematic review and meta-analysis. Front Physiol. 2025;16:1542334.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "40276368",
+          "doi": "10.3389/fphys.2025.1542334"
+        },
+        {
+          "claim": "Barbell hip thrust elicited greater mean upper (69.5 vs 29.4%) and lower (86.8 vs 45.4%) glute max and biceps femoris (40.8 vs 14.9%) EMG than the back squat at 10RM; vastus lateralis did not differ.",
+          "source": "Contreras B, Vigotsky AD, Schoenfeld BJ, Beardsley C, Cronin J. A Comparison of Gluteus Maximus, Biceps Femoris, and Vastus Lateralis Electromyographic Activity in the Back Squat and Barbell Hip Thrust Exercises. J Appl Biomech. 2015;31(6):452-458.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26214739",
+          "doi": "10.1123/jab.2014-0301"
+        },
+        {
+          "claim": "In well-trained women, 12 weeks of back squat produced greater glute max thickness gains (9.4%) than hip thrust (3.7%); a conflicting result to Plotkin 2023.",
+          "source": "Barbalho M, Coswig V, Souza D, Serrão JC, Hebling Campos M, Gentil P. Back Squat vs. Hip Thrust Resistance-training Programs in Well-trained Women. Int J Sports Med. 2020;41(5):306-310.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "31975359",
+          "doi": "10.1055/a-1082-1126"
+        },
+        {
+          "claim": "Barbell hip thrust glute max activity at 1RM exceeded the back squat and matched the RDL; hip thrust glute activation at 60 kg already equalled MVIC.",
+          "source": "Delgado J, Drinkwater EJ, Banyard HG, Haff GG, Nosaka K. Comparison Between Back Squat, Romanian Deadlift, and Barbell Hip Thrust for Leg and Hip Muscle Activities During Hip Extension. J Strength Cond Res. 2019;33(10):2595-2601.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "31356511",
+          "doi": "10.1519/JSC.0000000000003290"
+        },
+        {
+          "claim": "Bent-knee bridge had among the lowest BF:medial-hamstring EMG ratios, i.e. bridge-pattern hamstring work is medial-biased and modest.",
+          "source": "Bourne MN, Williams MD, Opar DA, Al Najjar A, Kerr GK, Shield AJ. Impact of exercise selection on hamstring muscle activation. Br J Sports Med. 2017;51(13):1021-1028.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "27467123",
+          "doi": "10.1136/bjsports-2015-095739"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Calves 0.5 removed from Barbell_Hip_Thrust, Barbell_Glute_Bridge and Hip_Lift_with_Band: the heel-driven position produces no plantarflexion range (consistent with the squat anchor). Quads and erectors (position holders) are not credited under the stabiliser rule; Plotkin 2023 found squat-favoured leg growth, not hip-thrust quad growth. Adductor magnus is a large contributor to hip-thrust hip extension but sits outside the visible 'adductors' group, so it is not credited (see open question).",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Single_Leg_Glute_Bridge",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.8,
+                "glute_med": 0.2
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.5,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            }
+          ],
+          "reason": "Unilateral: the stance-side glute med must prevent pelvic drop, shifting emphasis toward glute_med (single-limb tasks recruit glute med ~60% MVIC, Distefano 2009)."
+        },
+        {
+          "exerciseId": "Physioball_Hip_Bridge",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.75,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            }
+          ],
+          "reason": "Feet on a ball lengthen the lever and keep the knees closer to extension, so the hamstrings do more of the hip extension than in a bent-knee bridge (Bourne 2017 bridge ratios; anatomical)."
+        },
+        {
+          "exerciseId": "Kneeling_Squat",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.25,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            }
+          ],
+          "reason": "Kneeling with a bar on the back the knee is fully flexed and fixed, so the movement is pure hip extension by glute max; hamstrings are maximally shortened at the knee (minor credit). Abs 0.5 and erectors 0.5 removed (isometric trunk hold)."
+        }
+      ]
+    },
+    {
+      "id": "hip_extension_kickback",
+      "name": "Hip extension isolation (kickbacks, band/cable hip extension, prone leg raises)",
+      "description": "Single-joint hip extension of one or both legs with the trunk fixed (quadruped, standing, prone). Glute max is the mover; hamstring contribution depends on knee angle (straight leg = biarticular hamstrings load, bent knee = glute isolation).",
+      "exerciseIds": [
+        "Glute_Kickback",
+        "One-Legged_Cable_Kickback",
+        "Hip_Extension_with_Bands",
+        "Flutter_Kicks",
+        "Downward_Facing_Balance"
+      ],
+      "mapping": [
+        {
+          "groupId": "glutes",
+          "weight": 1,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Isolated hip extension; hip extension exercises reach very high glute max EMG (Neto 2020; Macadam 2015). Kept as current."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.5,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Hip extension specifically targets biceps femoris over ST at 75-87% MVC (Zebis 2013) and the conic-pulley hip extension raised T2 in proximal BFlh and ST (Mendez-Villanueva 2016); secondary because the glute is the intended mover. Kept."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Hip extension (with knee near extension) specifically targeted biceps femoris over semitendinosus at very high normalised EMG (75-87% MVC).",
+          "source": "Zebis MK, Skotte J, Andersen CH, et al. Kettlebell swing targets semitendinosus and supine leg curl targets biceps femoris: an EMG study with rehabilitation implications. Br J Sports Med. 2013;47(18):1192-1198.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22736206",
+          "doi": "10.1136/bjsports-2011-090281"
+        },
+        {
+          "claim": "Cable/conic-pulley standing hip extension raised T2 only in proximal and middle regions of BFlh and ST, i.e. moderate biarticular hamstring loading proximally.",
+          "source": "Mendez-Villanueva A, Suarez-Arrones L, Rodas G, et al. MRI-Based Regional Muscle Use during Hamstring Strengthening Exercises in Elite Soccer Players. PLoS One. 2016;11(9):e0161356.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "27583444",
+          "doi": "10.1371/journal.pone.0161356"
+        },
+        {
+          "claim": "Systematic review of glute max activation in loaded hip-extension exercises; many single- and multi-joint hip extension variants exceed 60% MVIC.",
+          "source": "Neto WK, Soares EG, Vieira TL, et al. Gluteus Maximus Activation during Common Strength and Hypertrophy Exercises: A Systematic Review. J Sports Sci Med. 2020;19(1):195-203.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32132843"
+        },
+        {
+          "claim": "Eccentric hip extension training (6 weeks) increased BFlh (+13%) and semimembranosus (+12.5%) volume, showing straight-leg hip extension is a hypertrophic stimulus for the biarticular hamstrings.",
+          "source": "Carmichael DS, Hickey JT, Tofari PJ, Bourne MN, Ward MR, Timmins RG. Effect of an Isometric or Eccentric Hip Extension Exercise Intervention on Hamstring Strength, Architecture, and Morphology. Med Sci Sports Exerc. 2022;54(12):2196-2207.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "35941515",
+          "doi": "10.1249/MSS.0000000000003012"
+        },
+        {
+          "claim": "Flexing the knee shortens the biarticular hamstrings and reduces their capacity to contribute to hip extension, making bent-knee kickbacks more glute-isolated.",
+          "source": "Length-tension / biarticular muscle reasoning (standard functional anatomy).",
+          "tier": "anatomical",
+          "confidence": "likely"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "One-Legged_Cable_Kickback (straight/slightly bent leg, cable at ankle) keeps the family mapping. There is no serratus/pec-minor-style proxy issue here; TFL is not modelled.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Glute_Kickback",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.25,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            }
+          ],
+          "reason": "Quadruped with the knee held at 90 degrees: hamstrings are shortened at the knee and contribute little; glute max isolation (anatomical)."
+        },
+        {
+          "exerciseId": "Hip_Extension_with_Bands",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.75,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            }
+          ],
+          "reason": "Standing straight-knee band hip extension is the 'hip extension' condition in which BF reached 75-87% MVC (Zebis 2013) and the pattern that grew BFlh/SM (Carmichael 2022); strong-synergist hamstring credit."
+        },
+        {
+          "exerciseId": "Flutter_Kicks",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.5,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Prone on a bench with hips at the edge, alternating straight-leg raises: bodyweight hip extension with the lumbar extensors resisting the leg load (minor credit, cf. prone back extension hip-extensor/erector co-activation, Plamondon 2004)."
+        },
+        {
+          "exerciseId": "Downward_Facing_Balance",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "erectors",
+              "weight": 0.5
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.25,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            }
+          ],
+          "reason": "Prone over a ball, legs and arms extended: a 'superman on a ball' whose only external load is the legs, so glute max and lumbar erectors hold hip and spine extension; low absolute stimulus. Abs 0.5 removed (no trunk flexion load)."
+        }
+      ]
+    },
+    {
+      "id": "hip_abduction",
+      "name": "Hip abduction (machine, band walks)",
+      "description": "Frontal-plane hip abduction against a machine pad or band, standing or seated. Gluteus medius/minimus and the upper glute max fibres are the movers; TFL assists (not modelled).",
+      "exerciseIds": ["Thigh_Abductor", "Monster_Walk"],
+      "mapping": [
+        {
+          "groupId": "glutes",
+          "weight": 1,
+          "regionDistribution": {
+            "glute_max": 0.3,
+            "glute_med": 0.7
+          },
+          "rationale": "Abduction is the primary action of glute med; standing band abduction and side-lying abduction reach 81-103% MVIC glute med (Macadam 2015; Distefano 2009). Upper glute max fibres abduct, and in the seated machine (hip flexed 90 degrees) the posterior glute max fibres also abduct, so glute_max keeps a real share. Changed from current .8/.2 for the machine."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Systematic review (23 studies): highest glute med activity in side bridge with abduction, standing hip abduction with elastic resistance at the ankle, and side-lying abduction (81-103% MVIC).",
+          "source": "Macadam P, Cronin J, Contreras B. An examination of the gluteal muscle activity associated with dynamic hip abduction and hip external rotation exercise: a systematic review. Int J Sports Phys Ther. 2015;10(5):573-591.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26491608"
+        },
+        {
+          "claim": "Side-lying hip abduction produced the greatest glute med activation (81% MVIC); lateral band walk produced low glute max activation (27% MVIC).",
+          "source": "Distefano LJ, Blackburn JT, Marshall SW, Padua DA. Gluteal muscle activation during common therapeutic exercises. J Orthop Sports Phys Ther. 2009;39(7):532-540.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "19574661",
+          "doi": "10.2519/jospt.2009.2796"
+        },
+        {
+          "claim": "Dynamic partner-resisted hip abduction evoked 88% nEMG in gluteus medius, high enough to count as strength training.",
+          "source": "Krommes K, Bandholm T, Jakobsen MD, et al. Dynamic hip adduction, abduction and abdominal exercises from the Holmich groin-injury prevention program are intense enough to be considered strengthening exercises - a cross-sectional study. Int J Sports Phys Ther. 2017;12(3):371-380.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28593090"
+        },
+        {
+          "claim": "Hip rotation alters the glute med / TFL / glute max share during side-lying abduction; medial rotation increases glute med relative to glute max and TFL.",
+          "source": "Lee JH, Cynn HS, Kwon OY, et al. Different hip rotations influence hip abductor muscles activity during isometric side-lying hip abduction in subjects with gluteus medius weakness. J Electromyogr Kinesiol. 2014;24(2):318-324.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "24560168",
+          "doi": "10.1016/j.jelekin.2014.01.008"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Current Thigh_Abductor mapping (.8 max / .2 med) had the emphasis backwards; abduction machines are the user's main glute-med exercise and should colour that region. No hypertrophy study isolates the abduction machine; Plotkin 2023 shows glute med/min do grow with heavy hip work generally.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Monster_Walk",
+          "mapping": [
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.2,
+                "glute_med": 0.8
+              }
+            }
+          ],
+          "reason": "Banded lateral/diagonal walking in a partial squat: glute med dominant with low glute max activation (lateral band walk glute max 27% MVIC, Distefano 2009). Matches current."
+        }
+      ]
+    },
+    {
+      "id": "hip_adduction",
+      "name": "Hip adduction (machine, band)",
+      "description": "Frontal-plane hip adduction against a pad or band: adductor longus/brevis/magnus and gracilis are the movers; nothing else is meaningfully loaded.",
+      "exerciseIds": ["Thigh_Adductor", "Band_Hip_Adductions"],
+      "mapping": [
+        {
+          "groupId": "adductors",
+          "weight": 1,
+          "rationale": "Adduction with an elastic band is a dynamic high-intensity adductor longus exercise (up to ~108% nEMG, Serner 2014); gluteal and abdominal activity during adduction exercises is low (5-48%). Kept; glutes 0.5 and hamstrings 0.5 removed from Thigh_Adductor."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Across eight adduction exercises adductor longus peak nEMG ranged 14-108%; hip adduction with an elastic band and the Copenhagen adduction were dynamic high-intensity exercises; gluteal and abdominal activation was low (5-48% nEMG).",
+          "source": "Serner A, Jakobsen MD, Andersen LL, Hölmich P, Sundstrup E, Thorborg K. EMG evaluation of hip adduction exercises for soccer players: implications for exercise selection in prevention and treatment of groin injuries. Br J Sports Med. 2014;48(14):1108-1114.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "23511698",
+          "doi": "10.1136/bjsports-2012-091746"
+        },
+        {
+          "claim": "Lying leg lift (side-lying adduction) is tier 2 for adductor brevis and longus force; Copenhagen variants tier 1; hip-extension-oriented lifts load adductor magnus instead.",
+          "source": "Collings TJ, et al. Hip Adductor Muscle Forces during Strength Training and Rehabilitation Exercises. Med Sci Sports Exerc. 2026 (epub Apr 3).",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "41931009",
+          "doi": "10.1249/MSS.0000000000004002"
+        },
+        {
+          "claim": "Isometric ball-squeeze adduction reached 84-118% nEMG in adductor longus and dynamic partner adduction 87%, i.e. adduction tasks load the adductors near maximum.",
+          "source": "Krommes K, Bandholm T, Jakobsen MD, et al. Dynamic hip adduction, abduction and abdominal exercises from the Holmich groin-injury prevention program are intense enough to be considered strengthening exercises - a cross-sectional study. Int J Sports Phys Ther. 2017;12(3):371-380.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "28593090"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Seated adduction machines with the hip flexed bias adductor longus/brevis/gracilis (the visible inner thigh) over the posterior adductor magnus, which is fine for a single-region group.",
+      "perExerciseOverrides": []
+    },
+    {
+      "id": "step_up_lunge_misfiled",
+      "name": "Step-up and lunge (misfiled into this batch)",
+      "description": "Unilateral knee-and-hip extension of the lead leg (step-up, forward lunge). Quadriceps and glute max are the movers, glute med stabilises the pelvis, hamstrings contribute little. These belong with the squat/lunge batch; mapped here so the batch is complete.",
+      "exerciseIds": ["Lunge_Pass_Through", "Step-up_with_Knee_Raise"],
+      "mapping": [
+        {
+          "groupId": "quads",
+          "weight": 1,
+          "regionDistribution": {
+            "quads_rf": 0.15,
+            "quads_vasti": 0.85
+          },
+          "rationale": "Lead-leg knee extension under bodyweight/load; standard for lunge-pattern movements. Changed: current lunge mapping had quads at 0.5 and hamstrings at 1.0, which the EMG does not support."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.75,
+          "regionDistribution": {
+            "glute_max": 0.75,
+            "glute_med": 0.25
+          },
+          "rationale": "Lunges are very-high (>60% MVIC) glute max exercises (Neto 2020) and unilateral stance loads glute med; strong synergist. Distribution shifted toward glute_med for the single-leg stance."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.25,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Lunge concentric phase has a high BF:MH ratio but low absolute hamstring EMG relative to hinge exercises (Bourne 2017); minor credit."
+        },
+        {
+          "groupId": "adductors",
+          "weight": 0.25,
+          "rationale": "Step-up is tier 1 for adductor magnus (ischiocondylar) force (Collings 2026); minor visible-group credit consistent with the deadlift family."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Step-up and its variations produce the highest gluteus maximus activation of all reviewed exercises (>60% MVIC), followed by deadlifts, hip thrusts, lunges and squats.",
+          "source": "Neto WK, Soares EG, Vieira TL, et al. Gluteus Maximus Activation during Common Strength and Hypertrophy Exercises: A Systematic Review. J Sports Sci Med. 2020;19(1):195-203.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "32132843"
+        },
+        {
+          "claim": "At 6RM the standard step-up elicited the greatest glute max, biceps femoris and semitendinosus activation of four step-up variants and the greatest eccentric glute med activation; crossover step-up the greatest concentric glute med.",
+          "source": "Simenz CJ, Garceau LR, Lutsch BN, Suchomel TJ, Ebben WP. Electromyographical analysis of lower extremity muscle activation during variations of the loaded step-up exercise. J Strength Cond Res. 2012;26(12):3398-3405.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22237139",
+          "doi": "10.1519/JSC.0b013e3182472fad"
+        },
+        {
+          "claim": "Lateral step-up, crossover step-up and rotational single-leg squat produced the highest glute max activity (79-113% MVIC) across 23 studies.",
+          "source": "Macadam P, Cronin J, Contreras B. An examination of the gluteal muscle activity associated with dynamic hip abduction and hip external rotation exercise: a systematic review. Int J Sports Phys Ther. 2015;10(5):573-591.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "26491608"
+        },
+        {
+          "claim": "Step-up was tier 1 for adductor magnus (ischiocondylar) force and tier 2 for gracilis in an EMG-driven model.",
+          "source": "Collings TJ, et al. Hip Adductor Muscle Forces during Strength Training and Rehabilitation Exercises. Med Sci Sports Exerc. 2026 (epub Apr 3).",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "41931009",
+          "doi": "10.1249/MSS.0000000000004002"
+        },
+        {
+          "claim": "Concentrically the lunge had one of the highest BF:medial-hamstring ratios of ten exercises, but hip-extension exercises, not lunges, are the ones shown to grow the hamstrings.",
+          "source": "Bourne MN, Williams MD, Opar DA, Al Najjar A, Kerr GK, Shield AJ. Impact of exercise selection on hamstring muscle activation. Br J Sports Med. 2017;51(13):1021-1028.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "27467123",
+          "doi": "10.1136/bjsports-2015-095739"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Both exercises should be reconciled with whatever the squat/lunge batch decides for lunges and step-ups; the weights here are chosen to match the squat anchor's quads-primary / glutes-0.75 structure. Hip flexors for the knee-raise are not credited (unloaded bodyweight knee lift).",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Step-up_with_Knee_Raise",
+          "mapping": [
+            {
+              "groupId": "quads",
+              "weight": 1,
+              "regionDistribution": {
+                "quads_rf": 0.15,
+                "quads_vasti": 0.85
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 1,
+              "regionDistribution": {
+                "glute_max": 0.7,
+                "glute_med": 0.3
+              }
+            },
+            {
+              "groupId": "hamstrings",
+              "weight": 0.25,
+              "regionDistribution": {
+                "hamstrings_hip_ext": 1,
+                "hamstrings_bf_short": 0
+              }
+            },
+            {
+              "groupId": "adductors",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Step-ups show the highest glute max activation in the literature (Neto 2020; Macadam 2015) with strong glute med demand in single-leg stance (Simenz 2012), so glutes join quads as a primary mover; current mapping had quads at only 0.5."
+        }
+      ]
+    }
+  ],
+  "unassignedExerciseIds": [],
+  "openQuestions": [
+    "Adductor magnus is a major hip extensor in deadlifts, hip thrusts and step-ups (Collings 2026 tier 1) but the only adductor group is the visible inner-thigh 'adductors'. I gave deadlift/step-up 0.25 and sumo 0.75 and left hip thrust/RDL/good morning at 0; decide whether hip-extension work should colour the adductors region at all, and apply one rule across batches (the squat anchor's adductors 0.5 suggests yes).",
+    "Isometric credit policy: deadlifts and cleans credit forearms 0.5, upper_back 0.5, traps_upper 0.5-0.75 and lats 0.25 even though this work is near-isometric; the brief's stabiliser rule would zero it. Confirm the exception or drop these rows batch-wide.",
+    "Olympic-lift derivatives (11 exercises) are power work usually done for 1-5 non-failure reps; the repFactor discount applies but the credit table still counts a set of kettlebell cleans like a set of deadlifts. Consider an implement/pattern-level discount for kettlebell and Smith 'olympic' entries or accept the repFactor as sufficient.",
+    "Lunge_Pass_Through and Step-up_with_Knee_Raise belong to the squat/lunge batch; whatever that batch decides for lunge and step-up should override the mapping here to avoid two different lunge rules.",
+    "Prone/standing leg curl distribution (.5/.5) vs the seated anchor (.6/.4) is based on Maeo 2021 (seated grows biarticular heads more) plus anatomical reasoning; no study measures short-head vs biarticular growth for prone vs seated directly. Keep or collapse to the anchor.",
+    "Hip abduction machine: I set glute_max .3 / glute_med .7 (was .8/.2). Confirm the product wants the abduction machine to colour glute_med strongly; there is no per-region hypertrophy study for it.",
+    "Barbalho 2020 (squat > hip thrust for glute growth) conflicts with Plotkin 2023 (equal); I followed Plotkin (larger, MRI, preregistered) but the disagreement is worth noting in the ADR."
+  ]
+}

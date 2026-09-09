@@ -1,0 +1,1197 @@
+{
+  "batch": "shoulder_press",
+  "families": [
+    {
+      "id": "overhead_press",
+      "name": "Overhead press (bilateral, in front of the head)",
+      "description": "Bilateral vertical press from the clavicles/shoulders to lockout with the bar or implements passing in front of the face: shoulder flexion-abduction in the scapular plane, elbow extension, scapular upward rotation/elevation. Covers barbell, dumbbell, kettlebell, cable, band, Smith, leverage and selectorised machine versions, seated or standing.",
+      "exerciseIds": [
+        "Barbell_Shoulder_Press",
+        "Seated_Barbell_Military_Press",
+        "Standing_Military_Press",
+        "Dumbbell_Shoulder_Press",
+        "Seated_Dumbbell_Press",
+        "Standing_Dumbbell_Press",
+        "Standing_Palms-In_Dumbbell_Press",
+        "Cable_Shoulder_Press",
+        "Seated_Cable_Shoulder_Press",
+        "Leverage_Shoulder_Press",
+        "Machine_Shoulder_Military_Press",
+        "Smith_Machine_Overhead_Shoulder_Press",
+        "Shoulder_Press_-_With_Bands",
+        "Two-Arm_Kettlebell_Military_Press"
+      ],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Prime mover; highest anterior deltoid activation of the four shoulder exercises compared by Campos 2020 (33% MVIC at 60% 1RM), ~58-63% MVIC in Dicus 2018. Kept from current."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.5,
+          "rationale": "Strong synergist: medial deltoid 27.9% MVIC in the shoulder press vs 30.3% in the lateral raise (Campos 2020); Saeterbakken 2013 shows it rises further standing with dumbbells. Kept at 0.5 (consensus: OHP is a secondary, not primary, side-delt builder)."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "rationale": "Half credit as elbow extensor (kept). Distribution CHANGED from .7/.3: with the shoulder elevated 90-180 degrees the medial head produces the most elbow-extension force and the long head the least (Kholinne 2018), and the long head's shoulder-extension torque opposes the press. .4/.6 sits between the bench anchor (.3/.7) and the overhead-extension anchor (.7/.3, where the shoulder is static and the long head is stretched)."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.5,
+          "rationale": "ADDED. Upper trapezius is a dynamic upward rotator/elevator through the top half of the press and was measured at meaningful levels in every OHP EMG study that included it (Coratella 2022: no difference between barbell and machine; Isiklar 2026: up to 30% MVIC in KB press; Blazkiewicz 2022). Practitioner consensus credits OHP as a trap builder."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.25,
+          "regionDistribution": {
+            "chest_upper": 0.8,
+            "chest_mid": 0.2,
+            "chest_lower": 0
+          },
+          "rationale": "REVISED from Barbell_Shoulder_Press current chest 0.5 {.25/.5/.25}. The clavicular pec is a shoulder flexor active in the bottom half of a front press; Coratella 2022 found pectoralis major significantly more excited in front than behind-neck pressing (ES 3.1-20.5). Minor credit, upper-biased, applied to the whole family rather than only the barbell row."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Anterior deltoid is the most activated deltoid head in the shoulder press (33.3% MVIC) and medial deltoid (27.9%) is close to its lateral-raise value (30.3%); posterior deltoid is low (11.4%).",
+          "source": "Campos YAC, Vianna JM, Guimaraes MP, et al. Different Shoulder Exercises Affect the Activation of Deltoid Portions in Resistance-Trained Individuals. J Hum Kinet. 2020;75:5-14.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33312291",
+          "doi": "10.2478/hukin-2020-0033"
+        },
+        {
+          "claim": "Standing dumbbell press produced the highest anterior/medial/posterior deltoid EMG; barbell produced ~39% more triceps EMG than dumbbells standing; seated reduces deltoid activity modestly. Supports one mapping across implements/positions.",
+          "source": "Saeterbakken AH, Fimland MS. Effects of body position and loading modality on muscle activity and strength in shoulder presses. J Strength Cond Res. 2013;27(7):1824-1831.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "23096062",
+          "doi": "10.1519/JSC.0b013e318276b873"
+        },
+        {
+          "claim": "Front barbell press favours pectoralis major over behind-neck press; barbell excites muscles more than machine; upper trapezius active with no between-variant difference.",
+          "source": "Coratella G, Tornatore G, Longo S, Esposito F, Ce E. Front vs Back and Barbell vs Machine Overhead Press: An Electromyographic Analysis and Implications For Resistance Training. Front Physiol. 2022;13:825880.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "35936912",
+          "doi": "10.3389/fphys.2022.825880"
+        },
+        {
+          "claim": "At 90, 135 and 180 degrees of shoulder elevation the medial head of triceps generates significantly more force than the long and lateral heads; the long head dominates only at 0 degrees. Basis for .4/.6 triceps split in overhead pressing.",
+          "source": "Kholinne E, Zulkarnain RF, Sun YC, Lim S, Chun JM, Jeon IH. The different role of each head of the triceps brachii muscle in elbow extension. Acta Orthop Traumatol Turc. 2018;52(3):201-205.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29503079",
+          "doi": "10.1016/j.aott.2018.02.005"
+        },
+        {
+          "claim": "Long-head hypertrophy is greater when elbow extension is trained overhead (stretched); this is the anchor's isolation case and does not transfer directly to a press, where the long head's length changes little and it acts antagonistically at the shoulder.",
+          "source": "Maeo S, Wu Y, Huang M, et al. Triceps brachii hypertrophy is substantially greater after elbow extension training performed in the overhead versus neutral arm position. Eur J Sport Sci. 2023;23(7):1240-1250.",
+          "tier": "hypertrophy",
+          "confidence": "verified",
+          "pmid": "35819335",
+          "doi": "10.1080/17461391.2022.2100279"
+        },
+        {
+          "claim": "Dumbbell OHP gives slightly higher anterior deltoid EMG than kettlebell at equal load (63% vs 58% MVIC); pectoralis major was also recorded during the press.",
+          "source": "Dicus JR, Holmstrup ME, Shuler KT, Rice TT, Raybuck SD, Siddons CA. Stability of Resistance Training Implement alters EMG Activity during the Overhead Press. Int J Exerc Sci. 2018;11(1):708-716.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29997723",
+          "doi": "10.70252/CUDK5288"
+        },
+        {
+          "claim": "Dumbbell vs kettlebell vs bottoms-up kettlebell press: medial deltoid highest with dumbbell; no change in prime-mover identity across implements.",
+          "source": "Busch A, Sarver X, Comstock K. Electromyographic analysis of shoulder-complex muscles performing overhead presses with dumbbell, kettlebell, and bottom-up kettlebell. J Bodyw Mov Ther. 2023;37:308-314.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "38432822",
+          "doi": "10.1016/j.jbmt.2023.10.001"
+        },
+        {
+          "claim": "Seated kettlebell vs dumbbell press: no significant differences in anterior/posterior deltoid, upper/lower trapezius, serratus or erector activity.",
+          "source": "Blazkiewicz M, Hadamus A. The Effect of the Weight and Type of Equipment on Shoulder and Back Muscle Activity in Surface Electromyography during the Overhead Press-Preliminary Report. Sensors (Basel). 2022;22(24):9762.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "36560129",
+          "doi": "10.3390/s22249762"
+        },
+        {
+          "claim": "Kettlebell overhead press recruits upper trapezius substantially (up to 30.4% MVIC in the bottoms-up variant) alongside deltoid.",
+          "source": "Isiklar C, Pakoz B, Turgut E. Shoulder muscular activation during common kettlebell exercises: a randomized cross-sectional surface EMG study. Physiother Theory Pract. 2026:1-13.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "41944385",
+          "doi": "10.1080/09593985.2026.2654028"
+        },
+        {
+          "claim": "Seated barbell press on a bench yields the highest triceps activation; rectus abdominis and obliques are low and erector activity only rises on an unstable surface, so trunk muscles are not credited for bilateral presses.",
+          "source": "Kohler JM, Flanagan SP, Whiting WC. Muscle activation patterns while lifting stable and unstable loads on stable and unstable surfaces. J Strength Cond Res. 2010;24(2):313-321.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "20072068",
+          "doi": "10.1519/JSC.0b013e3181c8655a"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "Kept delt_front 1.0 / delt_side 0.5 / triceps 0.5 from current; changed triceps split to long .4 / lateral_medial .6, added traps_upper 0.5 and a 0.25 upper-biased chest credit, and removed the barbell-only chest 0.5 row. Serratus anterior (no group) is heavily active in pressing; it is not separately credited (the chest 0.25 row is not a serratus proxy). Seated vs standing and implement type do not change the mapping.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Standing_Palms-In_Dumbbell_Press",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.25
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.4,
+                "triceps_lateral_medial": 0.6
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.5
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.8,
+                "chest_mid": 0.2,
+                "chest_lower": 0
+              }
+            }
+          ],
+          "reason": "Neutral (palms-in) grip brings the elbows toward the sagittal plane: less abduction moment for the middle deltoid, more flexion for anterior deltoid and clavicular pec (anatomical reasoning; Coratella 2022 front machine press with neutral grip showed the largest pec-major advantage over back press). delt_side reduced to 0.25."
+        }
+      ]
+    },
+    {
+      "id": "overhead_press_unilateral",
+      "name": "Unilateral and alternating overhead press",
+      "description": "Same vertical press pattern performed one arm at a time or alternating (dumbbell, kettlebell, cable), standing or seated on the floor. The offset load adds a lateral-flexion moment the contralateral obliques must resist; otherwise the prime movers are identical to the bilateral press.",
+      "exerciseIds": [
+        "Alternating_Cable_Shoulder_Press",
+        "Alternating_Kettlebell_Press",
+        "Dumbbell_One-Arm_Shoulder_Press",
+        "Kettlebell_Seated_Press",
+        "Kettlebell_Seesaw_Press",
+        "One-Arm_Kettlebell_Military_Press_To_The_Side",
+        "One-Arm_Kettlebell_Para_Press",
+        "See-Saw_Press_Alternating_Side_Press",
+        "Standing_Alternating_Dumbbell_Press",
+        "Standing_Palm-In_One-Arm_Dumbbell_Press"
+      ],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Prime mover, unchanged from bilateral press (Campos 2020; Saeterbakken 2013)."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.5,
+          "rationale": "Synergist as in bilateral press; kept."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "rationale": "Elbow extensor; medial-head-biased split for overhead work (Kholinne 2018)."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.5,
+          "rationale": "Scapular upward rotation/elevation, same as bilateral press."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.25,
+          "regionDistribution": {
+            "chest_upper": 0.8,
+            "chest_mid": 0.2,
+            "chest_lower": 0
+          },
+          "rationale": "Clavicular pec assists shoulder flexion in front pressing (Coratella 2022)."
+        },
+        {
+          "groupId": "obliques",
+          "weight": 0.25,
+          "rationale": "ADDED. External oblique EMG is 68-81% higher in unilateral than bilateral dumbbell presses, seated or standing (Saeterbakken & Fimland 2012); Behm 2005 also found unilateral pressing raises trunk stabiliser activity. Anti-lateral-flexion work is quasi-isometric, so minor credit only."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "External oblique EMG ~81% lower in seated bilateral vs unilateral and ~68% lower in standing bilateral vs unilateral dumbbell shoulder press; rectus abdominis rises standing vs seated; erector spinae largely unchanged.",
+          "source": "Saeterbakken AH, Fimland MS. Muscle activity of the core during bilateral, unilateral, seated and standing resistance exercise. Eur J Appl Physiol. 2012;112(5):1671-1678.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "21877146",
+          "doi": "10.1007/s00421-011-2141-7"
+        },
+        {
+          "claim": "Unilateral shoulder press produced greater activation of the back stabilisers than bilateral press regardless of surface stability.",
+          "source": "Behm DG, Leonard AM, Young WB, Bonsey WA, MacKinnon SN. Trunk muscle electromyographic activity with unstable and unilateral exercises. J Strength Cond Res. 2005;19(1):193-201.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "15705034",
+          "doi": "10.1519/1533-4287(2005)19<193:TMEAWU>2.0.CO;2"
+        },
+        {
+          "claim": "Deltoid activation pattern (anterior > medial >> posterior) in the dumbbell shoulder press; dumbbells standing give the highest deltoid EMG.",
+          "source": "Saeterbakken AH, Fimland MS. Effects of body position and loading modality on muscle activity and strength in shoulder presses. J Strength Cond Res. 2013;27(7):1824-1831.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "23096062",
+          "doi": "10.1519/JSC.0b013e318276b873"
+        },
+        {
+          "claim": "Kettlebell vs dumbbell press changes deltoid EMG only marginally; prime movers unchanged.",
+          "source": "Dicus JR, Holmstrup ME, Shuler KT, Rice TT, Raybuck SD, Siddons CA. Stability of Resistance Training Implement alters EMG Activity during the Overhead Press. Int J Exerc Sci. 2018;11(1):708-716.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29997723",
+          "doi": "10.70252/CUDK5288"
+        },
+        {
+          "claim": "Medial head of triceps dominates elbow extension at 90-180 degrees shoulder elevation.",
+          "source": "Kholinne E, et al. The different role of each head of the triceps brachii muscle in elbow extension. Acta Orthop Traumatol Turc. 2018;52(3):201-205.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29503079",
+          "doi": "10.1016/j.aott.2018.02.005"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Kettlebell_Seated_Press is seated on the floor pressing one bell; obliques still work (seated unilateral is only ~28% below standing unilateral in Saeterbakken 2012). See-Saw_Press_Alternating_Side_Press current row already carried abs 0.5; that is replaced by obliques 0.5 because the described side-bend loads lateral flexion, not trunk flexion. One-Arm_Kettlebell_Para_Press (palm forward, elbow out) and the Seesaw press get the family default.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "See-Saw_Press_Alternating_Side_Press",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.4,
+                "triceps_lateral_medial": 0.6
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.5
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.8,
+                "chest_mid": 0.2,
+                "chest_lower": 0
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            }
+          ],
+          "reason": "The exercise deliberately bends the trunk toward the opposite side on every rep (a loaded, dynamic lateral flexion), so obliques get the full indirect 0.5 rather than the stabiliser 0.25; abs 0.5 from current is replaced (the motion is lateral flexion, not trunk flexion)."
+        },
+        {
+          "exerciseId": "One-Arm_Kettlebell_Military_Press_To_The_Side",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.4,
+                "triceps_lateral_medial": 0.6
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.5
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.8,
+                "chest_mid": 0.2,
+                "chest_lower": 0
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Pressing 'up and out' to the side with a lateral lean loads the obliques dynamically like the see-saw press; 0.5 rather than 0.25."
+        },
+        {
+          "exerciseId": "Standing_Palm-In_One-Arm_Dumbbell_Press",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.25
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.4,
+                "triceps_lateral_medial": 0.6
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.5
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.25,
+              "regionDistribution": {
+                "chest_upper": 0.8,
+                "chest_mid": 0.2,
+                "chest_lower": 0
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Neutral grip with the elbow forward reduces the abduction component for the middle deltoid (anatomical reasoning, consistent with Coratella 2022 neutral-grip front press favouring pec major); delt_side 0.25, obliques 0.25 for the unilateral load."
+        }
+      ]
+    },
+    {
+      "id": "arnold_press",
+      "name": "Arnold press",
+      "description": "Dumbbell/kettlebell press that starts palms-facing with the elbows in front of the body and rotates to palms-forward at the top, adding a horizontal-abduction and external-rotation sweep to the vertical press and extending the anterior-deltoid range of motion at the bottom.",
+      "exerciseIds": ["Arnold_Dumbbell_Press", "Kettlebell_Arnold_Press"],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Prime mover; the extra bottom-range flexion from the palms-in start lengthens the anterior deltoid. An unverified EMG comparison reports higher anterior and medial deltoid activity than the standard dumbbell press."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.5,
+          "rationale": "Synergist; the rotate-out phase adds abduction work (kept from current)."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "rationale": "Elbow extension with the shoulder elevated; medial-head bias per Kholinne 2018."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.5,
+          "rationale": "Scapular upward rotation/elevation as in any overhead press."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.25,
+          "regionDistribution": {
+            "chest_upper": 0.8,
+            "chest_mid": 0.2,
+            "chest_lower": 0
+          },
+          "rationale": "Palms-in, elbows-forward start puts the clavicular pec in a flexion/horizontal-adduction role in the bottom range (front-press pec finding of Coratella 2022 applies at least as strongly)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Arnold dumbbell press produced higher anterior (1346 vs 1043 uV) and medial deltoid sEMG than the overhead dumbbell press in 10 men.",
+          "source": "Raizada S, Bagchi A. Comparison among the EMG Activity of the Anterior Deltoid and Medial Deltoid During Two Variations of Dumbbell Shoulder Press Exercise. Indian J Public Health Res Dev. 2017;8(4).",
+          "tier": "emg",
+          "confidence": "unverified"
+        },
+        {
+          "claim": "Front-of-head pressing with a neutral handgrip favours pectoralis major excitation compared with behind-neck pressing.",
+          "source": "Coratella G, Tornatore G, Longo S, Esposito F, Ce E. Front vs Back and Barbell vs Machine Overhead Press: An Electromyographic Analysis and Implications For Resistance Training. Front Physiol. 2022;13:825880.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "35936912",
+          "doi": "10.3389/fphys.2022.825880"
+        },
+        {
+          "claim": "Anterior deltoid is the dominant deltoid head in dumbbell shoulder pressing; medial deltoid is a strong secondary.",
+          "source": "Campos YAC, et al. Different Shoulder Exercises Affect the Activation of Deltoid Portions in Resistance-Trained Individuals. J Hum Kinet. 2020;75:5-14.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33312291",
+          "doi": "10.2478/hukin-2020-0033"
+        },
+        {
+          "claim": "Medial head of triceps dominates elbow extension at high shoulder elevation.",
+          "source": "Kholinne E, et al. The different role of each head of the triceps brachii muscle in elbow extension. Acta Orthop Traumatol Turc. 2018;52(3):201-205.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29503079",
+          "doi": "10.1016/j.aott.2018.02.005"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Mapping ends up identical to the bilateral front press; kept as its own family because the only direct EMG comparison (Raizada & Bagchi 2017) could not be opened in PubMed and users expect the Arnold press to be recognised. If the table needs fewer rows, merge into overhead_press with no override.",
+      "perExerciseOverrides": []
+    },
+    {
+      "id": "behind_neck_press",
+      "name": "Behind-the-neck and Bradford press",
+      "description": "Barbell press with the bar travelling behind the head (or, in the Bradford/Rocky press, alternating front-to-back over the head without lockout). The humerus is held in the frontal plane in full external rotation, shifting the moment demand from the anterior to the middle and posterior deltoid and removing the pec's flexion contribution.",
+      "exerciseIds": ["Standing_Barbell_Press_Behind_Neck", "Bradford_Rocky_Presses", "Standing_Bradford_Press"],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Still the largest mover; Coratella 2022 found anterior deltoid equal or higher in back vs front barbell press (higher in the descending phase, ES 7.7)."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.75,
+          "rationale": "RAISED from 0.5: medial deltoid RMS was much greater in back than front barbell press (ES 3.68 ascending, 4.56 descending) because the frontal-plane arm path is nearly pure abduction."
+        },
+        {
+          "groupId": "delt_rear",
+          "weight": 0.25,
+          "rationale": "ADDED: posterior deltoid was far more excited in back than front press (ES 9.0 ascending, 8.65 descending); the externally rotated, frontal-plane humerus recruits it as an abductor/external rotator. Still a minor contributor in absolute terms."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "rationale": "Elbow extension to lockout; medial-head bias per Kholinne 2018."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.5,
+          "rationale": "Upper trapezius active in all overhead press variants with no front/back difference (Coratella 2022)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Behind-neck barbell press produces greater medial (ES 3.68) and posterior (ES 9.0) deltoid excitation than front press, while front press favours pectoralis major (ES 3.11); upper trapezius did not differ.",
+          "source": "Coratella G, Tornatore G, Longo S, Esposito F, Ce E. Front vs Back and Barbell vs Machine Overhead Press: An Electromyographic Analysis and Implications For Resistance Training. Front Physiol. 2022;13:825880.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "35936912",
+          "doi": "10.3389/fphys.2022.825880"
+        },
+        {
+          "claim": "Behind-head and in-front pressing differ in shoulder ROM and spine posture; both are tolerable for lifters with normal mobility. Describes the frontal-plane arm path that drives the middle/posterior deltoid emphasis.",
+          "source": "McKean MR, Burkett BJ. Overhead shoulder press - In-front of the head or behind the head? J Sport Health Sci. 2015;4(3):250-257.",
+          "tier": "anatomical",
+          "confidence": "likely",
+          "doi": "10.1016/j.jshs.2013.11.007"
+        },
+        {
+          "claim": "Medial head of triceps dominates elbow extension at 90-180 degrees of shoulder elevation.",
+          "source": "Kholinne E, et al. The different role of each head of the triceps brachii muscle in elbow extension. Acta Orthop Traumatol Turc. 2018;52(3):201-205.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29503079",
+          "doi": "10.1016/j.aott.2018.02.005"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "high",
+      "notes": "No chest credit (front-press pec contribution disappears behind the neck). External-rotation demand is high; per the brief's proxy rule this is expressed through delt_rear rather than a rotator-cuff group. Bradford presses never lock out, so triceps credit is halved for them.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Bradford_Rocky_Presses",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.25,
+              "regionDistribution": {
+                "triceps_long": 0.4,
+                "triceps_lateral_medial": 0.6
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Bar passes over the head at partial elbow extension and is never locked out, so the triceps see only the mid-range; constant-tension deltoid work is the point of the exercise. Triceps reduced to 0.25 (anatomical/consensus)."
+        },
+        {
+          "exerciseId": "Standing_Bradford_Press",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.75
+            },
+            {
+              "groupId": "delt_rear",
+              "weight": 0.25
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.25,
+              "regionDistribution": {
+                "triceps_long": 0.4,
+                "triceps_lateral_medial": 0.6
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.5
+            }
+          ],
+          "reason": "Same as Bradford_Rocky_Presses: no lockout, triceps 0.25."
+        }
+      ]
+    },
+    {
+      "id": "push_press",
+      "name": "Push press",
+      "description": "Overhead press initiated by a shallow dip-and-drive of the legs (quarter-squat depth, triple extension of hips, knees and ankles) that launches the implement, with the arms finishing the lockout and controlling the eccentric. Kettlebell single- and double-arm versions.",
+      "exerciseIds": ["Double_Kettlebell_Push_Press", "One-Arm_Kettlebell_Push_Press"],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Prime mover for the arm phase and the loaded eccentric; heavier loads than the strict press offset the leg assist (consensus; Soriano 2019)."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.5,
+          "rationale": "Synergist as in the strict press."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "rationale": "Finishes the lockout; medial-head bias per Kholinne 2018."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.5,
+          "rationale": "Upward rotation/elevation at lockout plus a shrug component in the drive."
+        },
+        {
+          "groupId": "quads",
+          "weight": 0.5,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Kept at 0.5: the dip-drive produces jump-squat-level peak and mean power (Lake 2014), so the knee extensors do real work, but only through a quarter-squat range. Vasti-dominant as in the squat anchor."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.25,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "ADDED at minor credit: hip extension is part of the triple extension (Soriano 2019) but from a shallow, near-upright position where glute demand is small."
+        },
+        {
+          "groupId": "calves",
+          "weight": 0.25,
+          "regionDistribution": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "rationale": "REDUCED from 0.5: ankle plantarflexion is a brief terminal pop of the drive, not a loaded through-range contraction; standing (knee-extended) so gastrocnemius-biased as in the standing calf raise anchor."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Push press peak and mean power are maximised at 65-75% 1RM and are comparable to (mean power ~9.5% greater than) the jump squat, showing a substantial lower-body contribution.",
+          "source": "Lake JP, Mundy PD, Comfort P. Power and impulse applied during push press exercise. J Strength Cond Res. 2014;28(9):2552-2559.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "24584046",
+          "doi": "10.1519/JSC.0000000000000438"
+        },
+        {
+          "claim": "Weightlifting overhead pressing derivatives (push press, push jerk, split jerk) rely on an impulsive triple extension of hips, knees and ankles from a shallow dip; longitudinal hypertrophy data are lacking.",
+          "source": "Soriano MA, Suchomel TJ, Comfort P. Weightlifting Overhead Pressing Derivatives: A Review of the Literature. Sports Med. 2019;49(6):867-885.",
+          "tier": "consensus",
+          "confidence": "verified",
+          "pmid": "30924081",
+          "doi": "10.1007/s40279-019-01096-8"
+        },
+        {
+          "claim": "Kinetic/kinematic profile of push press vs push jerk vs split jerk; the push press has the longest, most muscularly driven arm phase of the three.",
+          "source": "Soriano MA, Jimenez-Ormeno E, Lake JP, et al. Kinetics and Kinematics of the Push Press, Push Jerk, and Split Jerk. J Strength Cond Res. 2024;38(8):1359-1365.",
+          "tier": "anatomical",
+          "confidence": "verified",
+          "pmid": "39072653",
+          "doi": "10.1519/JSC.0000000000004810"
+        },
+        {
+          "claim": "Deltoid activation pattern of the standing overhead press (anterior > medial) carries over to the arm phase of the push press.",
+          "source": "Saeterbakken AH, Fimland MS. Effects of body position and loading modality on muscle activity and strength in shoulder presses. J Strength Cond Res. 2013;27(7):1824-1831.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "23096062",
+          "doi": "10.1519/JSC.0b013e318276b873"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "No direct EMG of the push press in PubMed; leg credits rest on kinetics plus anatomy. No hamstring credit (quarter-squat, knee-dominant dip) and no abs credit (isometric bracing).",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "One-Arm_Kettlebell_Push_Press",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.5
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.4,
+                "triceps_lateral_medial": 0.6
+              }
+            },
+            {
+              "groupId": "traps_upper",
+              "weight": 0.5
+            },
+            {
+              "groupId": "quads",
+              "weight": 0.5,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.25,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.25,
+              "regionDistribution": {
+                "gastrocnemius": 0.7,
+                "soleus": 0.3
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Unilateral load adds an anti-lateral-flexion demand (Saeterbakken & Fimland 2012: external oblique 68% higher in standing unilateral vs bilateral press); obliques 0.25."
+        }
+      ]
+    },
+    {
+      "id": "clean_and_press",
+      "name": "Clean and press",
+      "description": "Barbell power clean from the floor (hip-dominant pull, triple extension, shrug, rack) followed by a strict overhead press. Two movements in one rep: a posterior-chain/quad pull and a vertical press.",
+      "exerciseIds": ["Clean_and_Press"],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Prime mover of the press half; the exercise is logged under shoulder pressing."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.5,
+          "rationale": "Press synergist."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "rationale": "Press lockout; medial-head bias overhead (Kholinne 2018)."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.25,
+          "regionDistribution": {
+            "chest_upper": 0.8,
+            "chest_mid": 0.2,
+            "chest_lower": 0
+          },
+          "rationale": "Front-press clavicular pec contribution (Coratella 2022)."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.75,
+          "rationale": "RAISED from 0.5: trapezius is a dominant muscle in the hang power clean (Geisler 2023) via the second-pull shrug, and it works again in the press lockout."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.5,
+          "regionDistribution": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          },
+          "rationale": "Kept: scapular retraction/fixation during the pull and rack."
+        },
+        {
+          "groupId": "erectors",
+          "weight": 0.5,
+          "rationale": "Kept: erector spinae is highly active through the first and second pull (Geisler 2023), consistent with the RDL anchor's 0.5."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.5,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "Kept at 0.5: gluteus maximus drives hip extension in the pull (Geisler 2023). Region split aligned to the squat anchor (.9/.1) instead of current .8/.2."
+        },
+        {
+          "groupId": "hamstrings",
+          "weight": 0.5,
+          "regionDistribution": {
+            "hamstrings_hip_ext": 1,
+            "hamstrings_bf_short": 0
+          },
+          "rationale": "Kept at 0.5 but region split CHANGED from .8/.2 to 1.0/0: the pull is hip extension with the knee extending, which the short head (knee flexor only) cannot contribute to, matching the RDL anchor."
+        },
+        {
+          "groupId": "quads",
+          "weight": 0.5,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Kept: vastus lateralis strongly active in the first pull and catch (Geisler 2023)."
+        },
+        {
+          "groupId": "calves",
+          "weight": 0.25,
+          "regionDistribution": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "rationale": "REDUCED from 0.5: plantarflexion is a brief terminal component of the second pull."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "During the hang power clean, vastus lateralis, gluteus maximus, erector spinae and trapezius are the predominant active muscles (with rectus abdominis as stabiliser), with a similar pattern to the clean pull at 70-90% 1RM.",
+          "source": "Geisler S, Havers T, Isenmann E, et al. Effects of Expertise on Muscle Activity during the Hang Power Clean and Hang Power Snatch Compared to Snatch and Clean Pulls - An Explorative Analysis. J Sports Sci Med. 2023;22(4):778-789.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "38045750",
+          "doi": "10.52082/jssm.2023.778"
+        },
+        {
+          "claim": "Overhead pressing derivatives depend on triple extension of hips, knees and ankles; the strict press on top follows standard OHP mechanics.",
+          "source": "Soriano MA, Suchomel TJ, Comfort P. Weightlifting Overhead Pressing Derivatives: A Review of the Literature. Sports Med. 2019;49(6):867-885.",
+          "tier": "consensus",
+          "confidence": "verified",
+          "pmid": "30924081",
+          "doi": "10.1007/s40279-019-01096-8"
+        },
+        {
+          "claim": "Standing barbell press: anterior deltoid prime mover, medial deltoid synergist, triceps 39% higher with barbell than dumbbells.",
+          "source": "Saeterbakken AH, Fimland MS. Effects of body position and loading modality on muscle activity and strength in shoulder presses. J Strength Cond Res. 2013;27(7):1824-1831.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "23096062",
+          "doi": "10.1519/JSC.0b013e318276b873"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Abs 0.5 from current is dropped: rectus abdominis acts as an isometric brace in the clean (Geisler 2023 labels it a stabiliser). Forearms/grip not credited, consistent with the RDL and row anchors. Eleven rows is a lot; if the UI needs fewer, drop calves and chest first.",
+      "perExerciseOverrides": []
+    },
+    {
+      "id": "landmine_jammer_press",
+      "name": "Landmine (jammer) press",
+      "description": "Angled press along a landmine bar from the shoulders, driven from an athletic squat with explosive hip/knee/ankle extension. The bar path is roughly 45-60 degrees from horizontal, between an incline bench press and an overhead press, so the clavicular pec shares the work with the anterior deltoid.",
+      "exerciseIds": ["Landmine_Linear_Jammer", "Single-Arm_Linear_Jammer"],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Prime mover: shoulder flexion to ~120-140 degrees along the bar's arc."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.75,
+          "regionDistribution": {
+            "chest_upper": 0.6,
+            "chest_mid": 0.35,
+            "chest_lower": 0.05
+          },
+          "rationale": "RAISED from 0.5 and re-split to the incline-press anchor's distribution: at 45-60 degrees the clavicular head has a large flexion moment arm and the front-press pec effect (Coratella 2022) is amplified by the more horizontal bar path (incline-bench EMG, Rodriguez-Ridao 2020)."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "rationale": "Elbow extension at 45-135 degrees of shoulder elevation: intermediate between the bench and overhead splits (Kholinne 2018)."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.25,
+          "rationale": "REDUCED from 0.5: the arm path is close to the sagittal plane with little abduction, so middle-deltoid demand is smaller than in a true overhead press."
+        },
+        {
+          "groupId": "quads",
+          "weight": 0.5,
+          "regionDistribution": {
+            "quads_rf": 0.1,
+            "quads_vasti": 0.9
+          },
+          "rationale": "Kept: the jammer starts from a real squat ('squat by flexing your hips... extend powerfully'), deeper than a push-press dip."
+        },
+        {
+          "groupId": "glutes",
+          "weight": 0.5,
+          "regionDistribution": {
+            "glute_max": 0.9,
+            "glute_med": 0.1
+          },
+          "rationale": "ADDED: hip extension out of the squat is the main lower-body driver of the jammer; mirrors the squat anchor's glute credit scaled to half."
+        },
+        {
+          "groupId": "calves",
+          "weight": 0.25,
+          "regionDistribution": {
+            "gastrocnemius": 0.7,
+            "soleus": 0.3
+          },
+          "rationale": "REDUCED from 0.5: terminal plantarflexion only."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Front-of-head pressing excites pectoralis major far more than behind-neck pressing; the more horizontal the press vector, the larger the pec share.",
+          "source": "Coratella G, Tornatore G, Longo S, Esposito F, Ce E. Front vs Back and Barbell vs Machine Overhead Press: An Electromyographic Analysis and Implications For Resistance Training. Front Physiol. 2022;13:825880.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "35936912",
+          "doi": "10.3389/fphys.2022.825880"
+        },
+        {
+          "claim": "Across five bench inclinations the clavicular pec peaks around 30 degrees and anterior deltoid activation rises with inclination, placing a 45-60 degree press in a zone shared by upper pec and anterior deltoid.",
+          "source": "Rodriguez-Ridao D, Antequera-Vique JA, Martin-Fuentes I, Muyor JM. Effect of Five Bench Inclinations on the Electromyographic Activity of the Pectoralis Major, Anterior Deltoid, and Triceps Brachii during the Bench Press Exercise. Int J Environ Res Public Health. 2020;17(19):7339.",
+          "tier": "emg",
+          "confidence": "likely",
+          "doi": "10.3390/ijerph17197339"
+        },
+        {
+          "claim": "Landmine loading shifts force posteriorly/horizontally and reduces quadriceps activity relative to a vertical goblet squat, so leg credit for the jammer squat is indirect (0.5), not primary.",
+          "source": "Collins KS, Klawitter LA, Waldera RW, Mahoney SJ, Christensen BK. Differences in Muscle Activity and Kinetics Between the Goblet Squat and Landmine Squat in Men and Women. J Strength Cond Res. 2021;35(10):2661-2668.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "34341315",
+          "doi": "10.1519/JSC.0000000000004094"
+        },
+        {
+          "claim": "Medial/lateral heads of triceps dominate at 90 degrees and above, long head at low shoulder elevation; the landmine arc spans both, hence the .4/.6 split.",
+          "source": "Kholinne E, et al. The different role of each head of the triceps brachii muscle in elbow extension. Acta Orthop Traumatol Turc. 2018;52(3):201-205.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29503079",
+          "doi": "10.1016/j.aott.2018.02.005"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "low",
+      "notes": "No direct landmine-press EMG exists in PubMed; the chest/deltoid split is anatomical, bracketed by the incline-press anchor and the front OHP. Hamstrings 0.5 and abs 0.5 from current are dropped (squat pattern: no hamstring credit per the squat anchor; abs are an isometric brace). Serratus anterior is heavily involved in the protracted finish and is not separately credited. Single-Arm_Linear_Jammer's current row lacked leg credit although the movement is the same squat-drive; it now inherits the family's leg rows.",
+      "perExerciseOverrides": [
+        {
+          "exerciseId": "Single-Arm_Linear_Jammer",
+          "mapping": [
+            {
+              "groupId": "delt_front",
+              "weight": 1
+            },
+            {
+              "groupId": "chest",
+              "weight": 0.75,
+              "regionDistribution": {
+                "chest_upper": 0.6,
+                "chest_mid": 0.35,
+                "chest_lower": 0.05
+              }
+            },
+            {
+              "groupId": "triceps",
+              "weight": 0.5,
+              "regionDistribution": {
+                "triceps_long": 0.4,
+                "triceps_lateral_medial": 0.6
+              }
+            },
+            {
+              "groupId": "delt_side",
+              "weight": 0.25
+            },
+            {
+              "groupId": "quads",
+              "weight": 0.5,
+              "regionDistribution": {
+                "quads_rf": 0.1,
+                "quads_vasti": 0.9
+              }
+            },
+            {
+              "groupId": "glutes",
+              "weight": 0.5,
+              "regionDistribution": {
+                "glute_max": 0.9,
+                "glute_med": 0.1
+              }
+            },
+            {
+              "groupId": "calves",
+              "weight": 0.25,
+              "regionDistribution": {
+                "gastrocnemius": 0.7,
+                "soleus": 0.3
+              }
+            },
+            {
+              "groupId": "obliques",
+              "weight": 0.25
+            }
+          ],
+          "reason": "Single-arm loading adds an anti-lateral-flexion/anti-rotation demand on the obliques (unilateral-press principle from Saeterbakken & Fimland 2012); obliques 0.25."
+        }
+      ]
+    },
+    {
+      "id": "handstand_push_up",
+      "name": "Handstand push-up",
+      "description": "Inverted bodyweight vertical press: from a handstand (usually wall-supported) the head lowers to the floor and the body is pressed back to lockout. Mechanically an overhead press with ~85-100% bodyweight, elbows typically tracking forward of the wrists (tripod head position), with heavy demand on the upper trapezius for scapular elevation/stability.",
+      "exerciseIds": ["Handstand_Push-Ups"],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "Prime mover; anterior deltoid is the dominant shoulder contributor in the handstand (Kochanowicz 2018) and the press adds its dynamic flexion role."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.5,
+          "rationale": "Abduction synergist as in a front press (Campos 2020)."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "rationale": "Elbow extension against bodyweight; triceps was a top-four contributor in the handstand (13-16%) and works through full range in the push-up; medial-head bias overhead (Kholinne 2018)."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.5,
+          "rationale": "Trapezius descendens was the single largest contributor (20-26%) in the static handstand (Kochanowicz 2018) and the press adds a loaded shrug at lockout."
+        },
+        {
+          "groupId": "chest",
+          "weight": 0.25,
+          "regionDistribution": {
+            "chest_upper": 0.8,
+            "chest_mid": 0.2,
+            "chest_lower": 0
+          },
+          "rationale": "Front-press clavicular pec contribution, larger when the head is placed forward of the hands (tripod), which angles the press toward an incline path."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "In a handstand, trapezius descendens (20-26%) and wrist flexors are the largest contributors, followed by anterior deltoid (15-18%) and triceps brachii (13-16%).",
+          "source": "Kochanowicz A, Niespodzinski B, Marina M, Mieszkowski J, Biskup L, Kochanowicz K. Relationship between postural control and muscle activity during a handstand in young and adult gymnasts. Hum Mov Sci. 2018;58:195-204.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29471194",
+          "doi": "10.1016/j.humov.2018.02.007"
+        },
+        {
+          "claim": "Systematic review of handstand biomechanics: only ~10% of studies report EMG; no study measures the handstand push-up itself, so the press mapping is transferred from overhead-press EMG.",
+          "source": "MacDonald M, Baker JS, Gu Y, Ugbolue UC. Biomechanical analyses of the handstand: a systematic review. Front Sports Act Living. 2025;7:1694648.",
+          "tier": "consensus",
+          "confidence": "verified",
+          "pmid": "41473027",
+          "doi": "10.3389/fspor.2025.1694648"
+        },
+        {
+          "claim": "Anterior deltoid > medial deltoid >> posterior deltoid in the shoulder press.",
+          "source": "Campos YAC, et al. Different Shoulder Exercises Affect the Activation of Deltoid Portions in Resistance-Trained Individuals. J Hum Kinet. 2020;75:5-14.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "33312291",
+          "doi": "10.2478/hukin-2020-0033"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "medium",
+      "notes": "Forearm/wrist flexors were the most active muscles in the handstand EMG but that is postural balance work; not credited (consistent with no forearm credit elsewhere in pressing). Same rows as the bilateral press family; kept separate because it is bodyweight and the user expects it listed.",
+      "perExerciseOverrides": []
+    },
+    {
+      "id": "prone_incline_press_out",
+      "name": "Anti-gravity (prone incline) press-out",
+      "description": "Lying face-down on an incline bench, the bar is reverse-curled to the chest then pressed forward past the head with the arms kept parallel to the floor. Gravity loads the shoulder in ~135-150 degrees of flexion throughout (anterior deltoid and scapular retractors/upward rotators hold the arms up) while the elbows extend to push the bar away.",
+      "exerciseIds": ["Anti-Gravity_Press"],
+      "mapping": [
+        {
+          "groupId": "delt_front",
+          "weight": 1,
+          "rationale": "The arms are held horizontal against gravity in deep flexion for the whole rep: the anterior deltoid carries the largest load moment (anatomical reasoning; free-exercise-db lists shoulders primary)."
+        },
+        {
+          "groupId": "upper_back",
+          "weight": 0.5,
+          "regionDistribution": {
+            "traps_mid_lower": 0.5,
+            "rhomboids": 0.5
+          },
+          "rationale": "Kept: prone with the arms out front, the middle/lower trapezius and rhomboids must fix and upwardly rotate the scapula against the load (prone-flexion exercises load lower/middle trapezius strongly, Andersen 2012)."
+        },
+        {
+          "groupId": "triceps",
+          "weight": 0.5,
+          "regionDistribution": {
+            "triceps_long": 0.4,
+            "triceps_lateral_medial": 0.6
+          },
+          "rationale": "Elbow extension is the described movement; load moment about the elbow rises as the forearm comes level. Shoulder elevated >90 degrees so medial-head bias (Kholinne 2018)."
+        },
+        {
+          "groupId": "traps_upper",
+          "weight": 0.25,
+          "rationale": "REDUCED from 0.5: upper trapezius assists elevation/upward rotation but in the prone position the load line favours the lower/middle fibres."
+        },
+        {
+          "groupId": "delt_side",
+          "weight": 0.25,
+          "rationale": "REDUCED from 0.5: some abduction component with the arms out at shoulder width, but the position is predominantly sagittal-plane flexion."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Prone flexion (arms raised in front while lying prone) predominantly activates the lower and middle trapezius over the upper trapezius.",
+          "source": "Andersen CH, Zebis MK, Saervoll C, et al. Scapular muscle activity from selected strengthening exercises performed at low and high intensities. J Strength Cond Res. 2012;26(9):2408-2416.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "22076101",
+          "doi": "10.1519/JSC.0b013e31823f8d24"
+        },
+        {
+          "claim": "Medial head of triceps dominates elbow extension at 135-180 degrees shoulder elevation.",
+          "source": "Kholinne E, et al. The different role of each head of the triceps brachii muscle in elbow extension. Acta Orthop Traumatol Turc. 2018;52(3):201-205.",
+          "tier": "emg",
+          "confidence": "verified",
+          "pmid": "29503079",
+          "doi": "10.1016/j.aott.2018.02.005"
+        },
+        {
+          "claim": "Anterior deltoid is the primary shoulder flexor loaded when the arm is held forward against gravity (free-exercise-db lists shoulders primary; middle back, traps, triceps secondary).",
+          "source": "yuhonas/free-exercise-db exercise record 'Anti-Gravity Press' (Unlicense), plus standard functional anatomy of deltoid.",
+          "tier": "consensus",
+          "confidence": "verified"
+        }
+      ],
+      "conflictsWithBrief": [],
+      "confidence": "low",
+      "notes": "Obscure exercise with no direct literature; mapping is anatomical. Kept close to current, trimming traps_upper and delt_side to 0.25.",
+      "perExerciseOverrides": []
+    }
+  ],
+  "unassignedExerciseIds": [],
+  "openQuestions": [
+    "delt_side weight for front overhead presses: Campos 2020 measured medial deltoid at 27.9% MVIC in the shoulder press vs 30.3% in the lateral raise (anchor delt_side 1.0). A strict EMG reading argues for 0.75; I kept 0.5 on practitioner consensus that OHP is a secondary side-delt builder. Product should decide whether EMG parity with the anchor should win.",
+    "traps_upper 0.5 on every press family: each OHP set then contributes half a set to a group with a 0.5 target multiplier, so heavy pressers will show traps_upper covered without any shrug work. If that reads wrong on the map, 0.25 is the conservative alternative; the EMG (Coratella 2022, Isiklar 2026, Kochanowicz 2018) supports meaningful but not primary involvement.",
+    "chest 0.25 {upper .8, mid .2, lower 0} for front overhead presses is inferred from Coratella 2022 (front > back pec excitation) and anatomy; no study reports pec % MVIC in a strict OHP relative to a bench press. If this makes chest colour in on shoulder days in a way users dislike, drop it to 0 for the bilateral/unilateral families and keep it only for the landmine family.",
+    "Triceps split .4/.6 for all overhead pressing is derived from Kholinne 2018 (n=10, submaximal elbow extension at fixed shoulder angles), not from a pressing study. Note this makes overhead pressing a lateral/medial-head exercise in the table while the overhead-extension anchor stays long-head-biased; confirm this is the intended contrast.",
+    "Push press leg credits (quads 0.5, glutes 0.25, calves 0.25) rest on kinetics (Lake 2014) plus anatomy; no EMG or hypertrophy data exist for the push press. If the app wants leg colour only from dedicated leg work, reduce all three to 0.25.",
+    "Arnold press: the only direct EMG comparison (Raizada & Bagchi 2017, Indian J Public Health Res Dev) is not indexed in PubMed and could not be opened; the family mapping equals the plain front press and could be merged.",
+    "Region distributions containing an explicit 0 share (chest_lower 0, hamstrings_bf_short 0) follow the Romanian_Deadlift anchor's precedent; confirm the validator accepts zeros."
+  ]
+}
