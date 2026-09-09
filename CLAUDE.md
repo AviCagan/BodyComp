@@ -30,7 +30,9 @@ and ask.
 - Testing: Jest (`node` project for engine/data/db/tools; `jest-expo` project for components), RNTL, Maestro
   later. CI: GitHub Actions — `tsc`, `expo lint`, `prettier --check`, migrations up to date, `jest`, GLB validation.
 - Exercise seed: `yuhonas/free-exercise-db` (Unlicense) imported by `tools/seed/import-free-exercise-db.ts`.
-  `src/data/*.json` are generated — never hand-edit.
+  Muscle credits come from the literature-derived table `tools/seed/evidence/table.json` (ADR-0023; built from
+  `research/`, `verify/` and `corrections.json` by `build-evidence-table.ts`); the name rules are only the fallback.
+  `src/data/*.json`, `table.json` and `docs/research/exercise-muscle-evidence.md` are generated — never hand-edit.
 
 ## Engine rules (§4.3) — `src/engine/`, pure TypeScript
 
@@ -71,4 +73,5 @@ and ask.
 ## Commands
 
 `npm run typecheck` · `npm run lint` · `npm run format` · `npm test` · `npm run db:generate` (after schema edits) ·
+`npm run evidence:build` (after editing anything under `tools/seed/evidence/`) ·
 `npm run seed:import -- <path-to-free-exercise-db>` · `npm run models:placeholder` · `npm run models:validate`.

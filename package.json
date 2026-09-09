@@ -66,6 +66,7 @@
     "test": "jest",
     "db:generate": "drizzle-kit generate",
     "seed:import": "tsx tools/seed/import-free-exercise-db.ts",
+    "evidence:build": "tsx tools/seed/build-evidence-table.ts",
     "models:placeholder": "tsx tools/model-pipeline/generate-placeholder.ts assets/models",
     "models:validate": "tsx tools/model-pipeline/validate.ts assets/models",
     "check": "npm run typecheck && npm run lint && npm run format:check && npm test && npm run models:validate"

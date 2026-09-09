@@ -8,3 +8,5 @@ assets
 android
 ios
 package-lock.json
+tools/seed/evidence/table.json
+docs/research/exercise-muscle-evidence.md

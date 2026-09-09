@@ -30,13 +30,23 @@ overrides, 622/739 exercises placed exactly once, all 11 anchor rows present, 52
 distributions summing to 1). `CONFLICTS.txt` lists the 29 places where a researcher says the literature disagrees
 with a fixed anchor row or the half-credit rule; those go to the owner, the anchors are not changed.
 
+## Build
+
+`npm run evidence:build` reads `research/`, `verify/` (when present) and `corrections.json` (curated patches,
+each with a reason), validates every mapping against the §4.2 rules and the anchor rows, and writes `table.json`
+plus `docs/research/exercise-muscle-evidence.md`. `npm run seed:import` then prefers `table.json` over the name
+rules for every exercise it covers. `tools/seed/evidence.test.ts` fails CI when either generated file is stale.
+
 ## Layout
 
 - `input/` — the batch files given to each researcher (exercise id, name, equipment, mechanic, pattern, and the
   mapping the app uses today) plus `batches.json`.
 - `research/<batch>.json` — researcher output: families, mappings, overrides, evidence with PMIDs/DOIs, conflicts,
   open questions.
-- `CONFLICTS.txt`, `RULE_ISSUES.txt` — generated summaries.
+- `verify/<batch>.json` — verifier output (verdicts, citation checks), added when the verify pass lands.
+- `corrections.json` — curated patches written after reading the verifier output (see `Correction` in the builder).
+- `table.json` — generated; the per-exercise mapping the import script consumes.
+- `CONFLICTS.txt`, `RULE_ISSUES.txt` — one-off summaries from the first pass.
 
 ## Next
 

@@ -13,10 +13,12 @@
  *
  * plus a region distribution inside each multi-region group, derived from
  * deterministic name/pattern rules (incline → chest_upper, seated calf → soleus, …).
- * The §4.2 example table is applied last as explicit overrides.
  *
- * Everything here is data-shaping, not science: the humans review the full table
- * in Phase 3 (§9). Rows that were produced by a weak rule are flagged `needsReview`.
+ * Since ADR-0023 the rules are only the fallback: exercises present in the literature-derived
+ * table (`tools/seed/evidence/table.json`, built by `build-evidence-table.ts`) take their
+ * mapping from it. The §4.2 anchor rows are applied last as explicit overrides either way
+ * (the builder guarantees the table agrees with them). Rows that came from a weak rule, or
+ * from a low-confidence family, are flagged `needsReview`.
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { execSync } from 'node:child_process';
@@ -698,6 +700,28 @@ const OVERRIDES: Record<string, Credits> = {
   Seated_Calf_Raise: { calves: { weight: 1, dist: DIST.calves_seated } },
 };
 
+// ---------- evidence table (ADR-0023) ----------
+type EvidenceEntry = {
+  familyId: string;
+  batch: string;
+  mapping: Array<{ groupId: GroupId; weight: number; regionDistribution?: Dist }>;
+  confidence: 'high' | 'medium' | 'low';
+  verified: boolean;
+};
+type EvidenceTable = { batches: string[]; verifiedBatches: string[]; exercises: Record<string, EvidenceEntry> };
+
+function loadEvidenceTable(): EvidenceTable | null {
+  const p = resolve(__dirname, 'evidence', 'table.json');
+  return existsSync(p) ? (JSON.parse(readFileSync(p, 'utf8')) as EvidenceTable) : null;
+}
+
+function creditsFromEvidence(t: EvidenceEntry): Credits {
+  const c: Credits = {};
+  for (const m of t.mapping)
+    c[m.groupId] = { weight: m.weight, dist: m.regionDistribution, review: t.confidence === 'low' };
+  return c;
+}
+
 // ---------- main ----------
 const EXCLUDED_CATEGORIES = new Set(['stretching', 'cardio']);
 
@@ -722,7 +746,18 @@ function main() {
   const allNames = new Set(raw.filter((e) => !EXCLUDED_CATEGORIES.has(e.category)).map((e) => e.name.toLowerCase()));
   const exercises: SeedExercise[] = [];
   const mappings: SeedMapping[] = [];
-  const stats = { total: raw.length, excluded: 0, imported: 0, flaggedExercises: 0, overrides: 0 };
+  const evidence = loadEvidenceTable();
+  const stats = {
+    total: raw.length,
+    excluded: 0,
+    imported: 0,
+    flaggedExercises: 0,
+    overrides: 0,
+    evidenceMapped: 0,
+    ruleMapped: 0,
+  };
+  for (const id of Object.keys(evidence?.exercises ?? {}))
+    if (!raw.find((e) => e.id === id)) throw new Error(`Evidence table references unknown upstream id: ${id}`);
 
   for (const id of Object.keys(OVERRIDES))
     if (!raw.find((e) => e.id === id)) throw new Error(`Override references unknown upstream id: ${id}`);
@@ -734,8 +769,11 @@ function main() {
       stats.excluded++;
       continue;
     }
-    const credits = OVERRIDES[e.id] ?? creditsFor(e);
+    const fromEvidence = evidence?.exercises[e.id];
+    const credits = OVERRIDES[e.id] ?? (fromEvidence ? creditsFromEvidence(fromEvidence) : creditsFor(e));
     if (OVERRIDES[e.id]) stats.overrides++;
+    if (fromEvidence || OVERRIDES[e.id]) stats.evidenceMapped++;
+    else stats.ruleMapped++;
     const rows = Object.entries(credits) as Array<[GroupId, Credit]>;
     if (!rows.some(([, c]) => c.weight >= 1))
       throw new Error(`No primary (weight 1.0) group for ${e.id}: ${JSON.stringify(credits)}`);
@@ -784,6 +822,8 @@ function main() {
         license: 'Unlicense (public domain)',
         revisionDate,
         excludedCategories: [...EXCLUDED_CATEGORIES],
+        evidenceBatches: evidence?.batches ?? [],
+        verifiedBatches: evidence?.verifiedBatches ?? [],
         ...stats,
       },
       null,
